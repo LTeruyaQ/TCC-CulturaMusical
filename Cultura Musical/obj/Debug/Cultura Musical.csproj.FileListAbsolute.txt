@@ -1,1 +1,2 @@
 c:\users\infoc24\documents\visual studio 2015\Projects\Cultura Musical\Cultura Musical\bin\Debug\Cultura Musical.exe.config
+C:\Users\infoc11\Source\Repos\tcc-cultura-musical\Cultura Musical\bin\Debug\Cultura Musical.exe.config
