@@ -9,3 +9,14 @@ C:\Users\infoc11\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cult
 C:\Users\infoc11\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.csproj.GenerateResource.Cache
 C:\Users\infoc11\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.exe
 C:\Users\infoc11\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.pdb
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\bin\Debug\Cultura Musical.exe.config
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.exe
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.pdb
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\bin\Debug\Cultura Musical.exe
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\bin\Debug\Cultura Musical.pdb
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.csprojResolveAssemblyReference.cache
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura_Musical.Properties.Resources.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmHomePage.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmLogin.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura_Musical.UserControl1.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.csproj.GenerateResource.Cache
