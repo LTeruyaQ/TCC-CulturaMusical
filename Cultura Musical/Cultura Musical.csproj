@@ -186,11 +186,11 @@
     <Compile Include="Telas\Holerite\GerarFolha.Designer.cs">
       <DependentUpon>GerarFolha.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Inicialização\FrmCadastro.cs">
+    <Compile Include="Telas\Inicialização\FrmCadastroFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Inicialização\FrmCadastro.Designer.cs">
-      <DependentUpon>FrmCadastro.cs</DependentUpon>
+    <Compile Include="Telas\Inicialização\FrmCadastroFuncionario.Designer.cs">
+      <DependentUpon>FrmCadastroFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Inicialização\FrmHomePage.cs">
       <SubType>Form</SubType>
@@ -304,6 +304,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Telas\Colaboradores\FrmJornadaDeTrabalho.resx">
+      <DependentUpon>FrmJornadaDeTrabalho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Inicialização\FrmCadastroFuncionario.resx">
+      <DependentUpon>FrmCadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicialização\FrmHomePage.resx">
       <DependentUpon>FrmHomePage.cs</DependentUpon>
     </EmbeddedResource>
