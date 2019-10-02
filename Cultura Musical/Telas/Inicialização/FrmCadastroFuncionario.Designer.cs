@@ -280,7 +280,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(202, 478);
+            this.btnCadastrar.Location = new System.Drawing.Point(187, 483);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(75, 23);
             this.btnCadastrar.TabIndex = 35;
@@ -290,9 +290,10 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(171, 29);
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(106, 18);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(127, 13);
+            this.label14.Size = new System.Drawing.Size(250, 24);
             this.label14.TabIndex = 62;
             this.label14.Text = "Cadastro de Funcionários";
             // 

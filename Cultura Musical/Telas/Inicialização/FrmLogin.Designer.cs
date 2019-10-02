@@ -87,9 +87,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.giphy;
-            this.pictureBox1.Location = new System.Drawing.Point(-88, -26);
+            this.pictureBox1.Location = new System.Drawing.Point(-104, -18);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(532, 350);
+            this.pictureBox1.Size = new System.Drawing.Size(566, 338);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -123,7 +123,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
             this.BackgroundImage = global::Cultura_Musical.Properties.Resources.giphy;
-            this.ClientSize = new System.Drawing.Size(440, 320);
+            this.ClientSize = new System.Drawing.Size(464, 320);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox2);

@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Telas\Agenda\FrmAlterarAgenda.cs">
@@ -304,8 +298,29 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Telas\Agenda\FrmConsultarAgenda.resx">
+      <DependentUpon>FrmConsultarAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Agenda\FrmInserirAgenda.resx">
+      <DependentUpon>FrmInserirAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Colaboradores\FrmConsultarColaboradores.resx">
+      <DependentUpon>FrmConsultarColaboradores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Colaboradores\FrmJornadaDeTrabalho.resx">
       <DependentUpon>FrmJornadaDeTrabalho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Compras\FrmAdicionarCompra.resx">
+      <DependentUpon>FrmAdicionarCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CRM\FrmAdicionarCliente.resx">
+      <DependentUpon>FrmAdicionarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Fornecedores\FrmAdicionarFornecedor.resx">
+      <DependentUpon>FrmAdicionarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Holerite\GerarFolha.resx">
+      <DependentUpon>GerarFolha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicialização\FrmCadastroFuncionario.resx">
       <DependentUpon>FrmCadastroFuncionario.cs</DependentUpon>
@@ -315,6 +330,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicialização\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Logistica\Fluxo de Caixa\FrmConsultarEntradasESaidas.resx">
+      <DependentUpon>FrmConsultarEntradasESaidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Pedidos\FrmAdicionarProduto.resx">
+      <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Vendas\FrmAdicionarVenda.resx">
+      <DependentUpon>FrmAdicionarVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Vendas\FrmAlterarVenda.resx">
+      <DependentUpon>FrmAlterarVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Vendas\FrmConsultarVenda.resx">
+      <DependentUpon>FrmConsultarVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Vendas\FrmDeletarVenda.resx">
+      <DependentUpon>FrmDeletarVenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>

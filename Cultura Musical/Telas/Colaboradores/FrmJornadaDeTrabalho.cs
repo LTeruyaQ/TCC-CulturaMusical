@@ -16,5 +16,10 @@ namespace Cultura_Musical.Telas.Funcionario
         {
             InitializeComponent();
         }
+
+        private void FrmJornadaDeTrabalho_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
