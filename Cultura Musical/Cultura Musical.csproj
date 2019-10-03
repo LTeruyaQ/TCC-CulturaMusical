@@ -33,8 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +53,82 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\Business_Agenda.cs" />
+    <Compile Include="Business\Business_Compras.cs" />
+    <Compile Include="Business\Business_CRM.cs" />
+    <Compile Include="Business\Business_Fornecedores.cs" />
+    <Compile Include="Business\Business_Funcionarios.cs" />
+    <Compile Include="Business\Business_Holerite.cs" />
+    <Compile Include="Business\Business_Inicialização.cs" />
+    <Compile Include="Business\Business_Logistica.cs" />
+    <Compile Include="Business\Business_Pedidos.cs" />
+    <Compile Include="Business\Business_Produtos.cs" />
+    <Compile Include="Business\Business_Vendas.cs" />
+    <Compile Include="Database\Database_Agenda.cs" />
+    <Compile Include="Database\Database_Compras.cs" />
+    <Compile Include="Database\Database_CRM.cs" />
+    <Compile Include="Database\Database_Fornecedores.cs" />
+    <Compile Include="Database\Database_Funcionarios.cs" />
+    <Compile Include="Database\Database_Holerite.cs" />
+    <Compile Include="Database\Database_Inicialização.cs" />
+    <Compile Include="Database\Database_Logistica.cs" />
+    <Compile Include="Database\Database_Pedidos.cs" />
+    <Compile Include="Database\Database_Produtos.cs" />
+    <Compile Include="Database\Database_Vendas.cs" />
+    <Compile Include="Database\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_cliente.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_cliente_aula.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_compra.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_conta.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_folha_pagamento.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_fornecedor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_funcionario.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_login.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_plano.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_produto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_tipo_conta.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_venda_plano.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_venda_produto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Telas\Agenda\FrmAlterarAgenda.cs">
@@ -78,28 +161,28 @@
     <Compile Include="Telas\Agenda\FrmInserirAgenda.Designer.cs">
       <DependentUpon>FrmInserirAgenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Colaboradores\FrmAdicionarColaborador.cs">
+    <Compile Include="Telas\Funcionarios\FrmAdicionarColaborador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Colaboradores\FrmAdicionarColaborador.Designer.cs">
+    <Compile Include="Telas\Funcionarios\FrmAdicionarColaborador.Designer.cs">
       <DependentUpon>FrmAdicionarColaborador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Colaboradores\FrmAlterarColaborador.cs">
+    <Compile Include="Telas\Funcionarios\FrmAlterarColaborador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Colaboradores\FrmAlterarColaborador.Designer.cs">
+    <Compile Include="Telas\Funcionarios\FrmAlterarColaborador.Designer.cs">
       <DependentUpon>FrmAlterarColaborador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Colaboradores\FrmConsultarColaboradores.cs">
+    <Compile Include="Telas\Funcionarios\FrmConsultarColaboradores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Colaboradores\FrmConsultarColaboradores.Designer.cs">
+    <Compile Include="Telas\Funcionarios\FrmConsultarColaboradores.Designer.cs">
       <DependentUpon>FrmConsultarColaboradores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Colaboradores\FrmJornadaDeTrabalho.cs">
+    <Compile Include="Telas\Funcionarios\FrmJornadaDeTrabalho.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Colaboradores\FrmJornadaDeTrabalho.Designer.cs">
+    <Compile Include="Telas\Funcionarios\FrmJornadaDeTrabalho.Designer.cs">
       <DependentUpon>FrmJornadaDeTrabalho.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Compras\FrmAdicionarCompra.cs">
@@ -304,10 +387,10 @@
     <EmbeddedResource Include="Telas\Agenda\FrmInserirAgenda.resx">
       <DependentUpon>FrmInserirAgenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Colaboradores\FrmConsultarColaboradores.resx">
+    <EmbeddedResource Include="Telas\Funcionarios\FrmConsultarColaboradores.resx">
       <DependentUpon>FrmConsultarColaboradores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Colaboradores\FrmJornadaDeTrabalho.resx">
+    <EmbeddedResource Include="Telas\Funcionarios\FrmJornadaDeTrabalho.resx">
       <DependentUpon>FrmJornadaDeTrabalho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Compras\FrmAdicionarCompra.resx">
@@ -352,6 +435,14 @@
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EntityDeploy Include="Database\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Database\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -366,11 +457,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Business\" />
-    <Folder Include="DataBase\" />
+    <Content Include="Database\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Database\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
