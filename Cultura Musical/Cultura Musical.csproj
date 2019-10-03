@@ -257,6 +257,12 @@
     <Compile Include="Telas\Fornecedores\FrmDeletarFornecedor.Designer.cs">
       <DependentUpon>FrmDeletarFornecedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Holerite\frmFolhaDePagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Holerite\frmFolhaDePagamento.Designer.cs">
+      <DependentUpon>frmFolhaDePagamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Holerite\GerarFolha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -402,6 +408,9 @@
     <EmbeddedResource Include="Telas\Fornecedores\FrmAdicionarFornecedor.resx">
       <DependentUpon>FrmAdicionarFornecedor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Holerite\frmFolhaDePagamento.resx">
+      <DependentUpon>frmFolhaDePagamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Holerite\GerarFolha.resx">
       <DependentUpon>GerarFolha.cs</DependentUpon>
     </EmbeddedResource>
@@ -416,6 +425,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Logistica\Fluxo de Caixa\FrmConsultarEntradasESaidas.resx">
       <DependentUpon>FrmConsultarEntradasESaidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Logistica\FrmConsultarFatura.resx">
+      <DependentUpon>FrmConsultarFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Logistica\FrmConsultarSaldo.resx">
+      <DependentUpon>FrmConsultarSaldo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Pedidos\FrmAdicionarProduto.resx">
       <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
