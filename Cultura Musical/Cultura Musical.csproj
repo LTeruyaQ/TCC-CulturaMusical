@@ -387,6 +387,9 @@
     <EmbeddedResource Include="Telas\Agenda\FrmInserirAgenda.resx">
       <DependentUpon>FrmInserirAgenda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Funcionarios\FrmAdicionarColaborador.resx">
+      <DependentUpon>FrmAdicionarColaborador.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\FrmConsultarColaboradores.resx">
       <DependentUpon>FrmConsultarColaboradores.cs</DependentUpon>
     </EmbeddedResource>
