@@ -350,11 +350,11 @@
             this.groupBox14.Controls.Add(this.groupBox16);
             this.groupBox14.Controls.Add(this.label53);
             this.groupBox14.Controls.Add(this.label54);
-            this.groupBox14.Location = new System.Drawing.Point(340, 351);
+            this.groupBox14.Location = new System.Drawing.Point(300, 351);
             this.groupBox14.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox14.Size = new System.Drawing.Size(309, 45);
+            this.groupBox14.Size = new System.Drawing.Size(316, 45);
             this.groupBox14.TabIndex = 60;
             this.groupBox14.TabStop = false;
             // 
@@ -425,7 +425,7 @@
             // label53
             // 
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(86, 23);
+            this.label53.Location = new System.Drawing.Point(83, 23);
             this.label53.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(136, 13);
@@ -447,32 +447,32 @@
             // 
             this.groupBox11.Controls.Add(this.label42);
             this.groupBox11.Controls.Add(this.label43);
-            this.groupBox11.Location = new System.Drawing.Point(493, 302);
+            this.groupBox11.Location = new System.Drawing.Point(397, 303);
             this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox11.Size = new System.Drawing.Size(156, 45);
+            this.groupBox11.Size = new System.Drawing.Size(94, 45);
             this.groupBox11.TabIndex = 59;
             this.groupBox11.TabStop = false;
             // 
             // label42
             // 
-            this.label42.Location = new System.Drawing.Point(4, 17);
+            this.label42.Location = new System.Drawing.Point(4, 19);
             this.label42.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(136, 13);
+            this.label42.Size = new System.Drawing.Size(84, 23);
             this.label42.TabIndex = 27;
             this.label42.Text = "-";
             this.label42.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label43
             // 
-            this.label43.Location = new System.Drawing.Point(4, 6);
+            this.label43.Location = new System.Drawing.Point(0, 6);
             this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(148, 22);
+            this.label43.Size = new System.Drawing.Size(94, 22);
             this.label43.TabIndex = 26;
-            this.label43.Text = "TOTAL DE DESCONTOS";
+            this.label43.Text = "TOTAL ";
             this.label43.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox10
@@ -481,11 +481,11 @@
             this.groupBox10.Controls.Add(this.groupBox12);
             this.groupBox10.Controls.Add(this.label41);
             this.groupBox10.Controls.Add(this.label45);
-            this.groupBox10.Location = new System.Drawing.Point(333, 303);
+            this.groupBox10.Location = new System.Drawing.Point(300, 303);
             this.groupBox10.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox10.Size = new System.Drawing.Size(156, 45);
+            this.groupBox10.Size = new System.Drawing.Size(93, 44);
             this.groupBox10.TabIndex = 58;
             this.groupBox10.TabStop = false;
             // 
@@ -555,22 +555,22 @@
             // 
             // label41
             // 
-            this.label41.Location = new System.Drawing.Point(7, 18);
+            this.label41.Location = new System.Drawing.Point(7, 19);
             this.label41.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(136, 13);
+            this.label41.Size = new System.Drawing.Size(82, 23);
             this.label41.TabIndex = 27;
             this.label41.Text = "-";
             this.label41.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label45
             // 
-            this.label45.Location = new System.Drawing.Point(4, 6);
+            this.label45.Location = new System.Drawing.Point(0, 6);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(148, 22);
+            this.label45.Size = new System.Drawing.Size(89, 12);
             this.label45.TabIndex = 26;
-            this.label45.Text = "TOTAL DE VENCIMENTOS";
+            this.label45.Text = "TOTAL";
             this.label45.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox9
@@ -585,13 +585,14 @@
             this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox9.Size = new System.Drawing.Size(297, 46);
+            this.groupBox9.Size = new System.Drawing.Size(264, 94);
             this.groupBox9.TabIndex = 57;
             this.groupBox9.TabStop = false;
+            this.groupBox9.Enter += new System.EventHandler(this.groupBox9_Enter);
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(263, 12);
+            this.textBox12.Location = new System.Drawing.Point(141, 52);
             this.textBox12.Margin = new System.Windows.Forms.Padding(2);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(27, 20);
@@ -602,7 +603,7 @@
             // label40
             // 
             this.label40.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(232, 15);
+            this.label40.Location = new System.Drawing.Point(105, 55);
             this.label40.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(27, 15);
@@ -611,23 +612,24 @@
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(171, 13);
+            this.textBox11.Location = new System.Drawing.Point(178, 12);
             this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(59, 20);
             this.textBox11.TabIndex = 27;
             this.textBox11.Text = "58338-7";
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox11.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
             // label39
             // 
             this.label39.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(115, 14);
+            this.label39.Location = new System.Drawing.Point(120, 15);
             this.label39.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(52, 15);
+            this.label39.Size = new System.Drawing.Size(69, 15);
             this.label39.TabIndex = 26;
-            this.label39.Text = "AGENCIA:";
+            this.label39.Text = "AGÊNCIA:";
             // 
             // textBox10
             // 
@@ -841,7 +843,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(85, 14);
             this.label23.TabIndex = 26;
-            this.label23.Text = "REFERENCIA";
+            this.label23.Text = "REFERÊNCIA";
             this.label23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox5
@@ -902,7 +904,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(72, 17);
             this.label13.TabIndex = 23;
-            this.label13.Text = "DESCRICAO";
+            this.label13.Text = "DESCRIÇÃO";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // groupBox4
@@ -1208,7 +1210,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 9);
+            this.label1.Location = new System.Drawing.Point(17, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(274, 33);
@@ -1221,7 +1223,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(676, 506);
+            this.ClientSize = new System.Drawing.Size(676, 515);
             this.Controls.Add(this.groupBox22);
             this.Controls.Add(this.groupBox21);
             this.Controls.Add(this.groupBox20);

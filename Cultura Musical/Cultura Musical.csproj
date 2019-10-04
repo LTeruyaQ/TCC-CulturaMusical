@@ -426,6 +426,9 @@
     <EmbeddedResource Include="Telas\Logistica\Fluxo de Caixa\FrmConsultarEntradasESaidas.resx">
       <DependentUpon>FrmConsultarEntradasESaidas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Logistica\FrmConsultarCustos.resx">
+      <DependentUpon>FrmConsultarCustos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Logistica\FrmConsultarFatura.resx">
       <DependentUpon>FrmConsultarFatura.cs</DependentUpon>
     </EmbeddedResource>

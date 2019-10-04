@@ -31,5 +31,15 @@ namespace Cultura_Musical.Telas.Folha_de_Pagamento
         {
 
         }
+
+        private void groupBox9_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
