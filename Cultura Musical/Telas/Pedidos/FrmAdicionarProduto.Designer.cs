@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(390, 313);
+            this.ClientSize = new System.Drawing.Size(485, 423);
             this.Name = "FrmAdicionarProduto";
             this.Text = "FrmAdicionarProduto";
             this.ResumeLayout(false);

@@ -841,7 +841,7 @@
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(85, 14);
             this.label23.TabIndex = 26;
-            this.label23.Text = "REFENCIA";
+            this.label23.Text = "REFERENCIA";
             this.label23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox5
@@ -903,6 +903,7 @@
             this.label13.Size = new System.Drawing.Size(72, 17);
             this.label13.TabIndex = 23;
             this.label13.Text = "DESCRICAO";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // groupBox4
             // 
@@ -1219,6 +1220,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(676, 506);
             this.Controls.Add(this.groupBox22);
             this.Controls.Add(this.groupBox21);
