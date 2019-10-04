@@ -21,5 +21,10 @@ namespace Cultura_Musical.Telas.Funcionario
         {
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
