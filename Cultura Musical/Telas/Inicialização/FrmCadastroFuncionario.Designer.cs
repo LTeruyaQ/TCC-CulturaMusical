@@ -60,7 +60,7 @@
             // 
             // dtpSaida
             // 
-            this.dtpSaida.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpSaida.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpSaida.Location = new System.Drawing.Point(186, 438);
             this.dtpSaida.Name = "dtpSaida";
             this.dtpSaida.Size = new System.Drawing.Size(100, 20);
@@ -68,7 +68,7 @@
             // 
             // dtpAlmoco
             // 
-            this.dtpAlmoco.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpAlmoco.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpAlmoco.Location = new System.Drawing.Point(186, 382);
             this.dtpAlmoco.Name = "dtpAlmoco";
             this.dtpAlmoco.Size = new System.Drawing.Size(100, 20);
@@ -76,7 +76,7 @@
             // 
             // dtpEntrada
             // 
-            this.dtpEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.dtpEntrada.Location = new System.Drawing.Point(186, 412);
             this.dtpEntrada.Name = "dtpEntrada";
             this.dtpEntrada.Size = new System.Drawing.Size(100, 20);

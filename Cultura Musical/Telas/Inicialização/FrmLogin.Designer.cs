@@ -87,7 +87,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.giphy;
-            this.pictureBox1.Location = new System.Drawing.Point(-104, -18);
+            this.pictureBox1.Location = new System.Drawing.Point(-90, -17);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(570, 342);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

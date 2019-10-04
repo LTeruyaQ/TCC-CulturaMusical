@@ -20,3 +20,6 @@ C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cult
 C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmLogin.resources
 C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura_Musical.UserControl1.resources
 C:\Users\infoc35\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.csproj.GenerateResource.Cache
+C:\Users\Curso\Source\Repos\tcc-cultura-musical\Cultura Musical\bin\Debug\Cultura Musical.exe.config
+C:\Users\Curso\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.exe
+C:\Users\Curso\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.pdb
