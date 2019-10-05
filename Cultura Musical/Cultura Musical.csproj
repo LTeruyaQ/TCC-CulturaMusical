@@ -96,7 +96,7 @@
     <Compile Include="Database\tb_cliente_aula.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\tb_compra.cs">
+    <Compile Include="Database\tb_colaborador.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\tb_conta.cs">
@@ -114,10 +114,16 @@
     <Compile Include="Database\tb_login.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Database\tb_pedido_compra.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\tb_pedido_compra_item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Database\tb_plano.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\tb_produto.cs">
+    <Compile Include="Database\tb_produto_compra.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\tb_tipo_conta.cs">
@@ -353,30 +359,6 @@
     <Compile Include="Telas\Produtos\FrmDeletarProduto.Designer.cs">
       <DependentUpon>FrmDeletarProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Vendas\FrmAdicionarVenda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Vendas\FrmAdicionarVenda.Designer.cs">
-      <DependentUpon>FrmAdicionarVenda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Vendas\FrmAlterarVenda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Vendas\FrmAlterarVenda.Designer.cs">
-      <DependentUpon>FrmAlterarVenda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Vendas\FrmConsultarVenda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Vendas\FrmConsultarVenda.Designer.cs">
-      <DependentUpon>FrmConsultarVenda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Vendas\FrmDeletarVenda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Vendas\FrmDeletarVenda.Designer.cs">
-      <DependentUpon>FrmDeletarVenda.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -450,18 +432,6 @@
     <EmbeddedResource Include="Telas\Pedidos\FrmAdicionarProduto.resx">
       <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Vendas\FrmAdicionarVenda.resx">
-      <DependentUpon>FrmAdicionarVenda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Vendas\FrmAlterarVenda.resx">
-      <DependentUpon>FrmAlterarVenda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Vendas\FrmConsultarVenda.resx">
-      <DependentUpon>FrmConsultarVenda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Vendas\FrmDeletarVenda.resx">
-      <DependentUpon>FrmDeletarVenda.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
@@ -487,22 +457,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Database\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Database\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\giphy.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

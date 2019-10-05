@@ -16,8 +16,7 @@ namespace Cultura_Musical.Database
     {
         public tb_fornecedor()
         {
-            this.tb_compra = new HashSet<tb_compra>();
-            this.tb_produto = new HashSet<tb_produto>();
+            this.tb_produto_compra = new HashSet<tb_produto_compra>();
         }
     
         public int id_fornecedor { get; set; }
@@ -27,7 +26,6 @@ namespace Cultura_Musical.Database
         public string tell_contato { get; set; }
         public string tell_contato2 { get; set; }
     
-        public virtual ICollection<tb_compra> tb_compra { get; set; }
-        public virtual ICollection<tb_produto> tb_produto { get; set; }
+        public virtual ICollection<tb_produto_compra> tb_produto_compra { get; set; }
     }
 }

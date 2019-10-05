@@ -13,10 +13,10 @@ namespace Cultura_Musical.Database
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class mydbEntities : DbContext
+    public partial class cultura_musicalEntities : DbContext
     {
-        public mydbEntities()
-            : base("name=mydbEntities")
+        public cultura_musicalEntities()
+            : base("name=cultura_musicalEntities")
         {
         }
     
@@ -27,14 +27,16 @@ namespace Cultura_Musical.Database
     
         public DbSet<tb_cliente> tb_cliente { get; set; }
         public DbSet<tb_cliente_aula> tb_cliente_aula { get; set; }
-        public DbSet<tb_compra> tb_compra { get; set; }
+        public DbSet<tb_colaborador> tb_colaborador { get; set; }
         public DbSet<tb_conta> tb_conta { get; set; }
         public DbSet<tb_folha_pagamento> tb_folha_pagamento { get; set; }
         public DbSet<tb_fornecedor> tb_fornecedor { get; set; }
         public DbSet<tb_funcionario> tb_funcionario { get; set; }
         public DbSet<tb_login> tb_login { get; set; }
+        public DbSet<tb_pedido_compra> tb_pedido_compra { get; set; }
+        public DbSet<tb_pedido_compra_item> tb_pedido_compra_item { get; set; }
         public DbSet<tb_plano> tb_plano { get; set; }
-        public DbSet<tb_produto> tb_produto { get; set; }
+        public DbSet<tb_produto_compra> tb_produto_compra { get; set; }
         public DbSet<tb_tipo_conta> tb_tipo_conta { get; set; }
         public DbSet<tb_venda_plano> tb_venda_plano { get; set; }
         public DbSet<tb_venda_produto> tb_venda_produto { get; set; }

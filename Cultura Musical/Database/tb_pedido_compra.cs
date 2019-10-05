@@ -12,14 +12,16 @@ namespace Cultura_Musical.Database
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_conta
+    public partial class tb_pedido_compra
     {
-        public int id_conta { get; set; }
-        public decimal vl_pagar { get; set; }
-        public int id_tipo_conta { get; set; }
-        public System.DateTime dt_conta { get; set; }
-        public System.DateTime dt_pagamento { get; set; }
+        public tb_pedido_compra()
+        {
+            this.tb_pedido_compra_item = new HashSet<tb_pedido_compra_item>();
+        }
     
-        public virtual tb_tipo_conta tb_tipo_conta { get; set; }
+        public int id_pedido_compra { get; set; }
+        public System.DateTime dt_pedido { get; set; }
+    
+        public virtual ICollection<tb_pedido_compra_item> tb_pedido_compra_item { get; set; }
     }
 }

@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="mydbModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="cultura_musicalModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tb_cliente">
           <Key>
             <PropertyRef Name="id_cliente" />
@@ -22,6 +22,7 @@
           <Property Name="bairro" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="periodo" Type="varchar" MaxLength="5" Nullable="false" />
           <Property Name="nm_responsavel" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="nivel" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_cliente_aula">
           <Key>
@@ -35,15 +36,23 @@
           <Property Name="id_funcionario" Type="int" Nullable="false" />
           <Property Name="id_cliente" Type="int" Nullable="false" />
         </EntityType>
-        <EntityType Name="tb_compra">
+        <EntityType Name="tb_colaborador">
           <Key>
-            <PropertyRef Name="id_compra" />
+            <PropertyRef Name="id_colaborador" />
           </Key>
-          <Property Name="id_compra" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="preco" Type="decimal" Precision="10" Scale="0" Nullable="false" />
-          <Property Name="quantidade" Type="int" Nullable="false" />
-          <Property Name="id_fornecedor" Type="int" Nullable="false" />
-          <Property Name="dt_compra" Type="date" Nullable="false" />
+          <Property Name="id_colaborador" Type="int" Nullable="false" />
+          <Property Name="nm_colaborador" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="nascimento" Type="date" Nullable="false" />
+          <Property Name="contratacao" Type="date" Nullable="false" />
+          <Property Name="demicao" Type="date" Nullable="false" />
+          <Property Name="endereco" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="complemento" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="bairro" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="cep" Type="varchar" MaxLength="9" Nullable="false" />
+          <Property Name="estado" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="cidade" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="rg" Type="varchar" MaxLength="12" Nullable="false" />
+          <Property Name="cpf" Type="varchar" MaxLength="11" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_conta">
           <Key>
@@ -52,6 +61,8 @@
           <Property Name="id_conta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="vl_pagar" Type="decimal" Precision="10" Scale="0" Nullable="false" />
           <Property Name="id_tipo_conta" Type="int" Nullable="false" />
+          <Property Name="dt_conta" Type="date" Nullable="false" />
+          <Property Name="dt_pagamento" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_folha_pagamento">
           <Key>
@@ -112,6 +123,21 @@
           <Property Name="sen_usuario" Type="varchar" MaxLength="25" Nullable="false" />
           <Property Name="login" Type="date" Nullable="false" />
         </EntityType>
+        <EntityType Name="tb_pedido_compra">
+          <Key>
+            <PropertyRef Name="id_pedido_compra" />
+          </Key>
+          <Property Name="id_pedido_compra" Type="int" Nullable="false" />
+          <Property Name="dt_pedido" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tb_pedido_compra_item">
+          <Key>
+            <PropertyRef Name="id_pedido_compra_item" />
+          </Key>
+          <Property Name="id_pedido_compra_item" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_pedido_compra" Type="int" Nullable="false" />
+          <Property Name="id_produto" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="tb_plano">
           <Key>
             <PropertyRef Name="id_plano" />
@@ -121,7 +147,7 @@
           <Property Name="duracao" Type="varchar" MaxLength="10" Nullable="false" />
           <Property Name="preco" Type="decimal" Precision="10" Scale="0" Nullable="false" />
         </EntityType>
-        <EntityType Name="tb_produto">
+        <EntityType Name="tb_produto_compra">
           <Key>
             <PropertyRef Name="id_produto" />
           </Key>
@@ -130,6 +156,7 @@
           <Property Name="preco" Type="decimal" Precision="10" Scale="0" Nullable="false" />
           <Property Name="quantidade" Type="int" Nullable="false" />
           <Property Name="id_fornecedor" Type="int" Nullable="false" />
+          <Property Name="dt_pedido_compra" Type="date" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_tipo_conta">
           <Key>
@@ -150,28 +177,16 @@
         </EntityType>
         <EntityType Name="tb_venda_produto">
           <Key>
-            <PropertyRef Name="id_venda_produto" />
+            <PropertyRef Name="id_produto_venda" />
           </Key>
-          <Property Name="id_venda_produto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_produto_venda" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nm_produto" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="vl_produto" Type="decimal" Precision="10" Scale="0" Nullable="false" />
           <Property Name="qtd_produto" Type="int" Nullable="false" />
           <Property Name="id_produto" Type="int" Nullable="false" />
           <Property Name="id_cliente" Type="int" Nullable="false" />
         </EntityType>
-        <Association Name="fk_tb_cliente_aula_tb_cliente1">
-          <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
-          <End Role="tb_cliente_aula" Type="Self.tb_cliente_aula" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tb_cliente">
-              <PropertyRef Name="id_cliente" />
-            </Principal>
-            <Dependent Role="tb_cliente_aula">
-              <PropertyRef Name="id_cliente" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_tb_cliente_aula_tb_funcionario1">
+        <Association Name="tb_cliente_aula_ibfk_1">
           <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
           <End Role="tb_cliente_aula" Type="Self.tb_cliente_aula" Multiplicity="*" />
           <ReferentialConstraint>
@@ -183,19 +198,19 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_compra_tb_fornecedor1">
-          <End Role="tb_fornecedor" Type="Self.tb_fornecedor" Multiplicity="1" />
-          <End Role="tb_compra" Type="Self.tb_compra" Multiplicity="*" />
+        <Association Name="tb_cliente_aula_ibfk_2">
+          <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
+          <End Role="tb_cliente_aula" Type="Self.tb_cliente_aula" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="tb_fornecedor">
-              <PropertyRef Name="id_fornecedor" />
+            <Principal Role="tb_cliente">
+              <PropertyRef Name="id_cliente" />
             </Principal>
-            <Dependent Role="tb_compra">
-              <PropertyRef Name="id_fornecedor" />
+            <Dependent Role="tb_cliente_aula">
+              <PropertyRef Name="id_cliente" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_conta_tb_tipo_conta1">
+        <Association Name="tb_conta_ibfk_1">
           <End Role="tb_tipo_conta" Type="Self.tb_tipo_conta" Multiplicity="1" />
           <End Role="tb_conta" Type="Self.tb_conta" Multiplicity="*" />
           <ReferentialConstraint>
@@ -207,7 +222,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_folha_pagamento_tb_funcionario1">
+        <Association Name="tb_folha_pagamento_ibfk_1">
           <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
           <End Role="tb_folha_pagamento" Type="Self.tb_folha_pagamento" Multiplicity="*" />
           <ReferentialConstraint>
@@ -219,7 +234,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_funcionario_tb_login1">
+        <Association Name="tb_funcionario_ibfk_1">
           <End Role="tb_login" Type="Self.tb_login" Multiplicity="1" />
           <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="*" />
           <ReferentialConstraint>
@@ -231,31 +246,43 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_produto_tb_fornecedor1">
+        <Association Name="tb_pedido_compra_item_ibfk_1">
+          <End Role="tb_pedido_compra" Type="Self.tb_pedido_compra" Multiplicity="1" />
+          <End Role="tb_pedido_compra_item" Type="Self.tb_pedido_compra_item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_pedido_compra">
+              <PropertyRef Name="id_pedido_compra" />
+            </Principal>
+            <Dependent Role="tb_pedido_compra_item">
+              <PropertyRef Name="id_pedido_compra" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tb_pedido_compra_item_ibfk_2">
+          <End Role="tb_produto_compra" Type="Self.tb_produto_compra" Multiplicity="1" />
+          <End Role="tb_pedido_compra_item" Type="Self.tb_pedido_compra_item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_produto_compra">
+              <PropertyRef Name="id_produto" />
+            </Principal>
+            <Dependent Role="tb_pedido_compra_item">
+              <PropertyRef Name="id_produto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tb_produto_compra_ibfk_1">
           <End Role="tb_fornecedor" Type="Self.tb_fornecedor" Multiplicity="1" />
-          <End Role="tb_produto" Type="Self.tb_produto" Multiplicity="*" />
+          <End Role="tb_produto_compra" Type="Self.tb_produto_compra" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_fornecedor">
               <PropertyRef Name="id_fornecedor" />
             </Principal>
-            <Dependent Role="tb_produto">
+            <Dependent Role="tb_produto_compra">
               <PropertyRef Name="id_fornecedor" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_venda_plano_tb_cliente1">
-          <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
-          <End Role="tb_venda_plano" Type="Self.tb_venda_plano" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tb_cliente">
-              <PropertyRef Name="id_cliente" />
-            </Principal>
-            <Dependent Role="tb_venda_plano">
-              <PropertyRef Name="id_cliente" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_tb_venda_plano_tb_plano1">
+        <Association Name="tb_venda_plano_ibfk_1">
           <End Role="tb_plano" Type="Self.tb_plano" Multiplicity="1" />
           <End Role="tb_venda_plano" Type="Self.tb_venda_plano" Multiplicity="*" />
           <ReferentialConstraint>
@@ -267,7 +294,31 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_venda_produto_tb_cliente1">
+        <Association Name="tb_venda_plano_ibfk_2">
+          <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
+          <End Role="tb_venda_plano" Type="Self.tb_venda_plano" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_cliente">
+              <PropertyRef Name="id_cliente" />
+            </Principal>
+            <Dependent Role="tb_venda_plano">
+              <PropertyRef Name="id_cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tb_venda_produto_ibfk_1">
+          <End Role="tb_produto_compra" Type="Self.tb_produto_compra" Multiplicity="1" />
+          <End Role="tb_venda_produto" Type="Self.tb_venda_produto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_produto_compra">
+              <PropertyRef Name="id_produto" />
+            </Principal>
+            <Dependent Role="tb_venda_produto">
+              <PropertyRef Name="id_produto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tb_venda_produto_ibfk_2">
           <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
           <End Role="tb_venda_produto" Type="Self.tb_venda_produto" Multiplicity="*" />
           <ReferentialConstraint>
@@ -279,74 +330,68 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_venda_produto_tb_produto1">
-          <End Role="tb_produto" Type="Self.tb_produto" Multiplicity="1" />
-          <End Role="tb_venda_produto" Type="Self.tb_venda_produto" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tb_produto">
-              <PropertyRef Name="id_produto" />
-            </Principal>
-            <Dependent Role="tb_venda_produto">
-              <PropertyRef Name="id_produto" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <EntityContainer Name="mydbModelStoreContainer">
-          <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_cliente_aula" EntityType="Self.tb_cliente_aula" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_compra" EntityType="Self.tb_compra" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_conta" EntityType="Self.tb_conta" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_fornecedor" EntityType="Self.tb_fornecedor" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_login" EntityType="Self.tb_login" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_plano" EntityType="Self.tb_plano" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_produto" EntityType="Self.tb_produto" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_tipo_conta" EntityType="Self.tb_tipo_conta" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_venda_plano" EntityType="Self.tb_venda_plano" Schema="mydb" store:Type="Tables" />
-          <EntitySet Name="tb_venda_produto" EntityType="Self.tb_venda_produto" Schema="mydb" store:Type="Tables" />
-          <AssociationSet Name="fk_tb_cliente_aula_tb_cliente1" Association="Self.fk_tb_cliente_aula_tb_cliente1">
-            <End Role="tb_cliente" EntitySet="tb_cliente" />
-            <End Role="tb_cliente_aula" EntitySet="tb_cliente_aula" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_cliente_aula_tb_funcionario1" Association="Self.fk_tb_cliente_aula_tb_funcionario1">
+        <EntityContainer Name="cultura_musicalModelStoreContainer">
+          <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_cliente_aula" EntityType="Self.tb_cliente_aula" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_colaborador" EntityType="Self.tb_colaborador" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_conta" EntityType="Self.tb_conta" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_fornecedor" EntityType="Self.tb_fornecedor" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_login" EntityType="Self.tb_login" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_pedido_compra" EntityType="Self.tb_pedido_compra" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_pedido_compra_item" EntityType="Self.tb_pedido_compra_item" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_plano" EntityType="Self.tb_plano" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_produto_compra" EntityType="Self.tb_produto_compra" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_tipo_conta" EntityType="Self.tb_tipo_conta" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_venda_plano" EntityType="Self.tb_venda_plano" Schema="cultura_musical" store:Type="Tables" />
+          <EntitySet Name="tb_venda_produto" EntityType="Self.tb_venda_produto" Schema="cultura_musical" store:Type="Tables" />
+          <AssociationSet Name="tb_cliente_aula_ibfk_1" Association="Self.tb_cliente_aula_ibfk_1">
             <End Role="tb_funcionario" EntitySet="tb_funcionario" />
             <End Role="tb_cliente_aula" EntitySet="tb_cliente_aula" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_compra_tb_fornecedor1" Association="Self.fk_tb_compra_tb_fornecedor1">
-            <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
-            <End Role="tb_compra" EntitySet="tb_compra" />
+          <AssociationSet Name="tb_cliente_aula_ibfk_2" Association="Self.tb_cliente_aula_ibfk_2">
+            <End Role="tb_cliente" EntitySet="tb_cliente" />
+            <End Role="tb_cliente_aula" EntitySet="tb_cliente_aula" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_conta_tb_tipo_conta1" Association="Self.fk_tb_conta_tb_tipo_conta1">
+          <AssociationSet Name="tb_conta_ibfk_1" Association="Self.tb_conta_ibfk_1">
             <End Role="tb_tipo_conta" EntitySet="tb_tipo_conta" />
             <End Role="tb_conta" EntitySet="tb_conta" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_folha_pagamento_tb_funcionario1" Association="Self.fk_tb_folha_pagamento_tb_funcionario1">
+          <AssociationSet Name="tb_folha_pagamento_ibfk_1" Association="Self.tb_folha_pagamento_ibfk_1">
             <End Role="tb_funcionario" EntitySet="tb_funcionario" />
             <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_funcionario_tb_login1" Association="Self.fk_tb_funcionario_tb_login1">
+          <AssociationSet Name="tb_funcionario_ibfk_1" Association="Self.tb_funcionario_ibfk_1">
             <End Role="tb_login" EntitySet="tb_login" />
             <End Role="tb_funcionario" EntitySet="tb_funcionario" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_produto_tb_fornecedor1" Association="Self.fk_tb_produto_tb_fornecedor1">
+          <AssociationSet Name="tb_pedido_compra_item_ibfk_1" Association="Self.tb_pedido_compra_item_ibfk_1">
+            <End Role="tb_pedido_compra" EntitySet="tb_pedido_compra" />
+            <End Role="tb_pedido_compra_item" EntitySet="tb_pedido_compra_item" />
+          </AssociationSet>
+          <AssociationSet Name="tb_pedido_compra_item_ibfk_2" Association="Self.tb_pedido_compra_item_ibfk_2">
+            <End Role="tb_produto_compra" EntitySet="tb_produto_compra" />
+            <End Role="tb_pedido_compra_item" EntitySet="tb_pedido_compra_item" />
+          </AssociationSet>
+          <AssociationSet Name="tb_produto_compra_ibfk_1" Association="Self.tb_produto_compra_ibfk_1">
             <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
-            <End Role="tb_produto" EntitySet="tb_produto" />
+            <End Role="tb_produto_compra" EntitySet="tb_produto_compra" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_venda_plano_tb_cliente1" Association="Self.fk_tb_venda_plano_tb_cliente1">
-            <End Role="tb_cliente" EntitySet="tb_cliente" />
-            <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="Self.fk_tb_venda_plano_tb_plano1">
+          <AssociationSet Name="tb_venda_plano_ibfk_1" Association="Self.tb_venda_plano_ibfk_1">
             <End Role="tb_plano" EntitySet="tb_plano" />
             <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_venda_produto_tb_cliente1" Association="Self.fk_tb_venda_produto_tb_cliente1">
+          <AssociationSet Name="tb_venda_plano_ibfk_2" Association="Self.tb_venda_plano_ibfk_2">
             <End Role="tb_cliente" EntitySet="tb_cliente" />
+            <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
+          </AssociationSet>
+          <AssociationSet Name="tb_venda_produto_ibfk_1" Association="Self.tb_venda_produto_ibfk_1">
+            <End Role="tb_produto_compra" EntitySet="tb_produto_compra" />
             <End Role="tb_venda_produto" EntitySet="tb_venda_produto" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_venda_produto_tb_produto1" Association="Self.fk_tb_venda_produto_tb_produto1">
-            <End Role="tb_produto" EntitySet="tb_produto" />
+          <AssociationSet Name="tb_venda_produto_ibfk_2" Association="Self.tb_venda_produto_ibfk_2">
+            <End Role="tb_cliente" EntitySet="tb_cliente" />
             <End Role="tb_venda_produto" EntitySet="tb_venda_produto" />
           </AssociationSet>
         </EntityContainer>
@@ -354,7 +399,7 @@
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="mydbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="cultura_musicalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="tb_cliente">
           <Key>
             <PropertyRef Name="id_cliente" />
@@ -372,9 +417,10 @@
           <Property Name="bairro" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="periodo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nm_responsavel" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="tb_cliente_aula" Relationship="Self.fk_tb_cliente_aula_tb_cliente1" FromRole="tb_cliente" ToRole="tb_cliente_aula" />
-          <NavigationProperty Name="tb_venda_plano" Relationship="Self.fk_tb_venda_plano_tb_cliente1" FromRole="tb_cliente" ToRole="tb_venda_plano" />
-          <NavigationProperty Name="tb_venda_produto" Relationship="Self.fk_tb_venda_produto_tb_cliente1" FromRole="tb_cliente" ToRole="tb_venda_produto" />
+          <Property Name="nivel" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tb_cliente_aula" Relationship="Self.tb_cliente_aula_ibfk_2" FromRole="tb_cliente" ToRole="tb_cliente_aula" />
+          <NavigationProperty Name="tb_venda_plano" Relationship="Self.tb_venda_plano_ibfk_2" FromRole="tb_cliente" ToRole="tb_venda_plano" />
+          <NavigationProperty Name="tb_venda_produto" Relationship="Self.tb_venda_produto_ibfk_2" FromRole="tb_cliente" ToRole="tb_venda_produto" />
         </EntityType>
         <EntityType Name="tb_cliente_aula">
           <Key>
@@ -387,19 +433,26 @@
           <Property Name="nr_sala" Type="Int32" Nullable="false" />
           <Property Name="id_funcionario" Type="Int32" Nullable="false" />
           <Property Name="id_cliente" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_cliente" Relationship="Self.fk_tb_cliente_aula_tb_cliente1" FromRole="tb_cliente_aula" ToRole="tb_cliente" />
-          <NavigationProperty Name="tb_funcionario" Relationship="Self.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_cliente_aula" ToRole="tb_funcionario" />
+          <NavigationProperty Name="tb_cliente" Relationship="Self.tb_cliente_aula_ibfk_2" FromRole="tb_cliente_aula" ToRole="tb_cliente" />
+          <NavigationProperty Name="tb_funcionario" Relationship="Self.tb_cliente_aula_ibfk_1" FromRole="tb_cliente_aula" ToRole="tb_funcionario" />
         </EntityType>
-        <EntityType Name="tb_compra">
+        <EntityType Name="tb_colaborador">
           <Key>
-            <PropertyRef Name="id_compra" />
+            <PropertyRef Name="id_colaborador" />
           </Key>
-          <Property Name="id_compra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="preco" Type="Decimal" Nullable="false" />
-          <Property Name="quantidade" Type="Int32" Nullable="false" />
-          <Property Name="id_fornecedor" Type="Int32" Nullable="false" />
-          <Property Name="dt_compra" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="tb_fornecedor" Relationship="Self.fk_tb_compra_tb_fornecedor1" FromRole="tb_compra" ToRole="tb_fornecedor" />
+          <Property Name="id_colaborador" Type="Int32" Nullable="false" />
+          <Property Name="nm_colaborador" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nascimento" Type="DateTime" Nullable="false" />
+          <Property Name="contratacao" Type="DateTime" Nullable="false" />
+          <Property Name="demicao" Type="DateTime" Nullable="false" />
+          <Property Name="endereco" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="complemento" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="bairro" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cep" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="estado" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cidade" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="rg" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cpf" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_conta">
           <Key>
@@ -408,7 +461,9 @@
           <Property Name="id_conta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="vl_pagar" Type="Decimal" Nullable="false" />
           <Property Name="id_tipo_conta" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_tipo_conta" Relationship="Self.fk_tb_conta_tb_tipo_conta1" FromRole="tb_conta" ToRole="tb_tipo_conta" />
+          <Property Name="dt_conta" Type="DateTime" Nullable="false" />
+          <Property Name="dt_pagamento" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="tb_tipo_conta" Relationship="Self.tb_conta_ibfk_1" FromRole="tb_conta" ToRole="tb_tipo_conta" />
         </EntityType>
         <EntityType Name="tb_folha_pagamento">
           <Key>
@@ -423,7 +478,7 @@
           <Property Name="ps" Type="Decimal" Nullable="false" />
           <Property Name="po" Type="Decimal" Nullable="false" />
           <Property Name="id_funcionario" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_funcionario" Relationship="Self.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_folha_pagamento" ToRole="tb_funcionario" />
+          <NavigationProperty Name="tb_funcionario" Relationship="Self.tb_folha_pagamento_ibfk_1" FromRole="tb_folha_pagamento" ToRole="tb_funcionario" />
         </EntityType>
         <EntityType Name="tb_fornecedor">
           <Key>
@@ -435,8 +490,7 @@
           <Property Name="cnpj" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="tell_contato" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="tell_contato2" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="tb_compra" Relationship="Self.fk_tb_compra_tb_fornecedor1" FromRole="tb_fornecedor" ToRole="tb_compra" />
-          <NavigationProperty Name="tb_produto" Relationship="Self.fk_tb_produto_tb_fornecedor1" FromRole="tb_fornecedor" ToRole="tb_produto" />
+          <NavigationProperty Name="tb_produto_compra" Relationship="Self.tb_produto_compra_ibfk_1" FromRole="tb_fornecedor" ToRole="tb_produto_compra" />
         </EntityType>
         <EntityType Name="tb_funcionario">
           <Key>
@@ -462,9 +516,9 @@
           <Property Name="rua" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="estado" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="bairro" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="tb_cliente_aula" Relationship="Self.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_cliente_aula" />
-          <NavigationProperty Name="tb_folha_pagamento" Relationship="Self.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_folha_pagamento" />
-          <NavigationProperty Name="tb_login" Relationship="Self.fk_tb_funcionario_tb_login1" FromRole="tb_funcionario" ToRole="tb_login" />
+          <NavigationProperty Name="tb_cliente_aula" Relationship="Self.tb_cliente_aula_ibfk_1" FromRole="tb_funcionario" ToRole="tb_cliente_aula" />
+          <NavigationProperty Name="tb_folha_pagamento" Relationship="Self.tb_folha_pagamento_ibfk_1" FromRole="tb_funcionario" ToRole="tb_folha_pagamento" />
+          <NavigationProperty Name="tb_login" Relationship="Self.tb_funcionario_ibfk_1" FromRole="tb_funcionario" ToRole="tb_login" />
         </EntityType>
         <EntityType Name="tb_login">
           <Key>
@@ -474,7 +528,25 @@
           <Property Name="nm_usuario" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="sen_usuario" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="login" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="tb_funcionario" Relationship="Self.fk_tb_funcionario_tb_login1" FromRole="tb_login" ToRole="tb_funcionario" />
+          <NavigationProperty Name="tb_funcionario" Relationship="Self.tb_funcionario_ibfk_1" FromRole="tb_login" ToRole="tb_funcionario" />
+        </EntityType>
+        <EntityType Name="tb_pedido_compra">
+          <Key>
+            <PropertyRef Name="id_pedido_compra" />
+          </Key>
+          <Property Name="id_pedido_compra" Type="Int32" Nullable="false" />
+          <Property Name="dt_pedido" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="tb_pedido_compra_item" Relationship="Self.tb_pedido_compra_item_ibfk_1" FromRole="tb_pedido_compra" ToRole="tb_pedido_compra_item" />
+        </EntityType>
+        <EntityType Name="tb_pedido_compra_item">
+          <Key>
+            <PropertyRef Name="id_pedido_compra_item" />
+          </Key>
+          <Property Name="id_pedido_compra_item" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_pedido_compra" Type="Int32" Nullable="false" />
+          <Property Name="id_produto" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tb_pedido_compra" Relationship="Self.tb_pedido_compra_item_ibfk_1" FromRole="tb_pedido_compra_item" ToRole="tb_pedido_compra" />
+          <NavigationProperty Name="tb_produto_compra" Relationship="Self.tb_pedido_compra_item_ibfk_2" FromRole="tb_pedido_compra_item" ToRole="tb_produto_compra" />
         </EntityType>
         <EntityType Name="tb_plano">
           <Key>
@@ -484,9 +556,9 @@
           <Property Name="nm_plano" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="duracao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="preco" Type="Decimal" Nullable="false" />
-          <NavigationProperty Name="tb_venda_plano" Relationship="Self.fk_tb_venda_plano_tb_plano1" FromRole="tb_plano" ToRole="tb_venda_plano" />
+          <NavigationProperty Name="tb_venda_plano" Relationship="Self.tb_venda_plano_ibfk_1" FromRole="tb_plano" ToRole="tb_venda_plano" />
         </EntityType>
-        <EntityType Name="tb_produto">
+        <EntityType Name="tb_produto_compra">
           <Key>
             <PropertyRef Name="id_produto" />
           </Key>
@@ -495,8 +567,10 @@
           <Property Name="preco" Type="Decimal" Nullable="false" />
           <Property Name="quantidade" Type="Int32" Nullable="false" />
           <Property Name="id_fornecedor" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_fornecedor" Relationship="Self.fk_tb_produto_tb_fornecedor1" FromRole="tb_produto" ToRole="tb_fornecedor" />
-          <NavigationProperty Name="tb_venda_produto" Relationship="Self.fk_tb_venda_produto_tb_produto1" FromRole="tb_produto" ToRole="tb_venda_produto" />
+          <Property Name="dt_pedido_compra" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="tb_fornecedor" Relationship="Self.tb_produto_compra_ibfk_1" FromRole="tb_produto_compra" ToRole="tb_fornecedor" />
+          <NavigationProperty Name="tb_pedido_compra_item" Relationship="Self.tb_pedido_compra_item_ibfk_2" FromRole="tb_produto_compra" ToRole="tb_pedido_compra_item" />
+          <NavigationProperty Name="tb_venda_produto" Relationship="Self.tb_venda_produto_ibfk_1" FromRole="tb_produto_compra" ToRole="tb_venda_produto" />
         </EntityType>
         <EntityType Name="tb_tipo_conta">
           <Key>
@@ -504,7 +578,7 @@
           </Key>
           <Property Name="id_tipo_conta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="conta" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <NavigationProperty Name="tb_conta" Relationship="Self.fk_tb_conta_tb_tipo_conta1" FromRole="tb_tipo_conta" ToRole="tb_conta" />
+          <NavigationProperty Name="tb_conta" Relationship="Self.tb_conta_ibfk_1" FromRole="tb_tipo_conta" ToRole="tb_conta" />
         </EntityType>
         <EntityType Name="tb_venda_plano">
           <Key>
@@ -515,23 +589,23 @@
           <Property Name="id_cliente" Type="Int32" Nullable="false" />
           <Property Name="inicio" Type="DateTime" Nullable="false" />
           <Property Name="fim" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="tb_cliente" Relationship="Self.fk_tb_venda_plano_tb_cliente1" FromRole="tb_venda_plano" ToRole="tb_cliente" />
-          <NavigationProperty Name="tb_plano" Relationship="Self.fk_tb_venda_plano_tb_plano1" FromRole="tb_venda_plano" ToRole="tb_plano" />
+          <NavigationProperty Name="tb_cliente" Relationship="Self.tb_venda_plano_ibfk_2" FromRole="tb_venda_plano" ToRole="tb_cliente" />
+          <NavigationProperty Name="tb_plano" Relationship="Self.tb_venda_plano_ibfk_1" FromRole="tb_venda_plano" ToRole="tb_plano" />
         </EntityType>
         <EntityType Name="tb_venda_produto">
           <Key>
-            <PropertyRef Name="id_venda_produto" />
+            <PropertyRef Name="id_produto_venda" />
           </Key>
-          <Property Name="id_venda_produto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_produto_venda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nm_produto" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="vl_produto" Type="Decimal" Nullable="false" />
           <Property Name="qtd_produto" Type="Int32" Nullable="false" />
           <Property Name="id_produto" Type="Int32" Nullable="false" />
           <Property Name="id_cliente" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_cliente" Relationship="Self.fk_tb_venda_produto_tb_cliente1" FromRole="tb_venda_produto" ToRole="tb_cliente" />
-          <NavigationProperty Name="tb_produto" Relationship="Self.fk_tb_venda_produto_tb_produto1" FromRole="tb_venda_produto" ToRole="tb_produto" />
+          <NavigationProperty Name="tb_cliente" Relationship="Self.tb_venda_produto_ibfk_2" FromRole="tb_venda_produto" ToRole="tb_cliente" />
+          <NavigationProperty Name="tb_produto_compra" Relationship="Self.tb_venda_produto_ibfk_1" FromRole="tb_venda_produto" ToRole="tb_produto_compra" />
         </EntityType>
-        <Association Name="fk_tb_cliente_aula_tb_cliente1">
+        <Association Name="tb_cliente_aula_ibfk_2">
           <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
           <End Role="tb_cliente_aula" Type="Self.tb_cliente_aula" Multiplicity="*" />
           <ReferentialConstraint>
@@ -543,7 +617,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_venda_plano_tb_cliente1">
+        <Association Name="tb_venda_plano_ibfk_2">
           <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
           <End Role="tb_venda_plano" Type="Self.tb_venda_plano" Multiplicity="*" />
           <ReferentialConstraint>
@@ -555,7 +629,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_venda_produto_tb_cliente1">
+        <Association Name="tb_venda_produto_ibfk_2">
           <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
           <End Role="tb_venda_produto" Type="Self.tb_venda_produto" Multiplicity="*" />
           <ReferentialConstraint>
@@ -567,7 +641,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_cliente_aula_tb_funcionario1">
+        <Association Name="tb_cliente_aula_ibfk_1">
           <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
           <End Role="tb_cliente_aula" Type="Self.tb_cliente_aula" Multiplicity="*" />
           <ReferentialConstraint>
@@ -579,19 +653,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_compra_tb_fornecedor1">
-          <End Role="tb_fornecedor" Type="Self.tb_fornecedor" Multiplicity="1" />
-          <End Role="tb_compra" Type="Self.tb_compra" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tb_fornecedor">
-              <PropertyRef Name="id_fornecedor" />
-            </Principal>
-            <Dependent Role="tb_compra">
-              <PropertyRef Name="id_fornecedor" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="fk_tb_conta_tb_tipo_conta1">
+        <Association Name="tb_conta_ibfk_1">
           <End Role="tb_tipo_conta" Type="Self.tb_tipo_conta" Multiplicity="1" />
           <End Role="tb_conta" Type="Self.tb_conta" Multiplicity="*" />
           <ReferentialConstraint>
@@ -603,7 +665,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_folha_pagamento_tb_funcionario1">
+        <Association Name="tb_folha_pagamento_ibfk_1">
           <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
           <End Role="tb_folha_pagamento" Type="Self.tb_folha_pagamento" Multiplicity="*" />
           <ReferentialConstraint>
@@ -615,19 +677,19 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_produto_tb_fornecedor1">
+        <Association Name="tb_produto_compra_ibfk_1">
           <End Role="tb_fornecedor" Type="Self.tb_fornecedor" Multiplicity="1" />
-          <End Role="tb_produto" Type="Self.tb_produto" Multiplicity="*" />
+          <End Role="tb_produto_compra" Type="Self.tb_produto_compra" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_fornecedor">
               <PropertyRef Name="id_fornecedor" />
             </Principal>
-            <Dependent Role="tb_produto">
+            <Dependent Role="tb_produto_compra">
               <PropertyRef Name="id_fornecedor" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_funcionario_tb_login1">
+        <Association Name="tb_funcionario_ibfk_1">
           <End Role="tb_login" Type="Self.tb_login" Multiplicity="1" />
           <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="*" />
           <ReferentialConstraint>
@@ -639,7 +701,31 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_venda_plano_tb_plano1">
+        <Association Name="tb_pedido_compra_item_ibfk_1">
+          <End Role="tb_pedido_compra" Type="Self.tb_pedido_compra" Multiplicity="1" />
+          <End Role="tb_pedido_compra_item" Type="Self.tb_pedido_compra_item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_pedido_compra">
+              <PropertyRef Name="id_pedido_compra" />
+            </Principal>
+            <Dependent Role="tb_pedido_compra_item">
+              <PropertyRef Name="id_pedido_compra" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tb_pedido_compra_item_ibfk_2">
+          <End Role="tb_produto_compra" Type="Self.tb_produto_compra" Multiplicity="1" />
+          <End Role="tb_pedido_compra_item" Type="Self.tb_pedido_compra_item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_produto_compra">
+              <PropertyRef Name="id_produto" />
+            </Principal>
+            <Dependent Role="tb_pedido_compra_item">
+              <PropertyRef Name="id_produto" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="tb_venda_plano_ibfk_1">
           <End Role="tb_plano" Type="Self.tb_plano" Multiplicity="1" />
           <End Role="tb_venda_plano" Type="Self.tb_venda_plano" Multiplicity="*" />
           <ReferentialConstraint>
@@ -651,11 +737,11 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_venda_produto_tb_produto1">
-          <End Role="tb_produto" Type="Self.tb_produto" Multiplicity="1" />
+        <Association Name="tb_venda_produto_ibfk_1">
+          <End Role="tb_produto_compra" Type="Self.tb_produto_compra" Multiplicity="1" />
           <End Role="tb_venda_produto" Type="Self.tb_venda_produto" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="tb_produto">
+            <Principal Role="tb_produto_compra">
               <PropertyRef Name="id_produto" />
             </Principal>
             <Dependent Role="tb_venda_produto">
@@ -663,62 +749,68 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="mydbEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="cultura_musicalEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
           <EntitySet Name="tb_cliente_aula" EntityType="Self.tb_cliente_aula" />
-          <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
+          <EntitySet Name="tb_colaborador" EntityType="Self.tb_colaborador" />
           <EntitySet Name="tb_conta" EntityType="Self.tb_conta" />
           <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" />
           <EntitySet Name="tb_fornecedor" EntityType="Self.tb_fornecedor" />
           <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" />
           <EntitySet Name="tb_login" EntityType="Self.tb_login" />
+          <EntitySet Name="tb_pedido_compra" EntityType="Self.tb_pedido_compra" />
+          <EntitySet Name="tb_pedido_compra_item" EntityType="Self.tb_pedido_compra_item" />
           <EntitySet Name="tb_plano" EntityType="Self.tb_plano" />
-          <EntitySet Name="tb_produto" EntityType="Self.tb_produto" />
+          <EntitySet Name="tb_produto_compra" EntityType="Self.tb_produto_compra" />
           <EntitySet Name="tb_tipo_conta" EntityType="Self.tb_tipo_conta" />
           <EntitySet Name="tb_venda_plano" EntityType="Self.tb_venda_plano" />
           <EntitySet Name="tb_venda_produto" EntityType="Self.tb_venda_produto" />
-          <AssociationSet Name="fk_tb_cliente_aula_tb_cliente1" Association="Self.fk_tb_cliente_aula_tb_cliente1">
+          <AssociationSet Name="tb_cliente_aula_ibfk_2" Association="Self.tb_cliente_aula_ibfk_2">
             <End Role="tb_cliente" EntitySet="tb_cliente" />
             <End Role="tb_cliente_aula" EntitySet="tb_cliente_aula" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_venda_plano_tb_cliente1" Association="Self.fk_tb_venda_plano_tb_cliente1">
+          <AssociationSet Name="tb_venda_plano_ibfk_2" Association="Self.tb_venda_plano_ibfk_2">
             <End Role="tb_cliente" EntitySet="tb_cliente" />
             <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_venda_produto_tb_cliente1" Association="Self.fk_tb_venda_produto_tb_cliente1">
+          <AssociationSet Name="tb_venda_produto_ibfk_2" Association="Self.tb_venda_produto_ibfk_2">
             <End Role="tb_cliente" EntitySet="tb_cliente" />
             <End Role="tb_venda_produto" EntitySet="tb_venda_produto" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_cliente_aula_tb_funcionario1" Association="Self.fk_tb_cliente_aula_tb_funcionario1">
+          <AssociationSet Name="tb_cliente_aula_ibfk_1" Association="Self.tb_cliente_aula_ibfk_1">
             <End Role="tb_funcionario" EntitySet="tb_funcionario" />
             <End Role="tb_cliente_aula" EntitySet="tb_cliente_aula" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_compra_tb_fornecedor1" Association="Self.fk_tb_compra_tb_fornecedor1">
-            <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
-            <End Role="tb_compra" EntitySet="tb_compra" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_conta_tb_tipo_conta1" Association="Self.fk_tb_conta_tb_tipo_conta1">
+          <AssociationSet Name="tb_conta_ibfk_1" Association="Self.tb_conta_ibfk_1">
             <End Role="tb_tipo_conta" EntitySet="tb_tipo_conta" />
             <End Role="tb_conta" EntitySet="tb_conta" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_folha_pagamento_tb_funcionario1" Association="Self.fk_tb_folha_pagamento_tb_funcionario1">
+          <AssociationSet Name="tb_folha_pagamento_ibfk_1" Association="Self.tb_folha_pagamento_ibfk_1">
             <End Role="tb_funcionario" EntitySet="tb_funcionario" />
             <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_produto_tb_fornecedor1" Association="Self.fk_tb_produto_tb_fornecedor1">
+          <AssociationSet Name="tb_produto_compra_ibfk_1" Association="Self.tb_produto_compra_ibfk_1">
             <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
-            <End Role="tb_produto" EntitySet="tb_produto" />
+            <End Role="tb_produto_compra" EntitySet="tb_produto_compra" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_funcionario_tb_login1" Association="Self.fk_tb_funcionario_tb_login1">
+          <AssociationSet Name="tb_funcionario_ibfk_1" Association="Self.tb_funcionario_ibfk_1">
             <End Role="tb_login" EntitySet="tb_login" />
             <End Role="tb_funcionario" EntitySet="tb_funcionario" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="Self.fk_tb_venda_plano_tb_plano1">
+          <AssociationSet Name="tb_pedido_compra_item_ibfk_1" Association="Self.tb_pedido_compra_item_ibfk_1">
+            <End Role="tb_pedido_compra" EntitySet="tb_pedido_compra" />
+            <End Role="tb_pedido_compra_item" EntitySet="tb_pedido_compra_item" />
+          </AssociationSet>
+          <AssociationSet Name="tb_pedido_compra_item_ibfk_2" Association="Self.tb_pedido_compra_item_ibfk_2">
+            <End Role="tb_produto_compra" EntitySet="tb_produto_compra" />
+            <End Role="tb_pedido_compra_item" EntitySet="tb_pedido_compra_item" />
+          </AssociationSet>
+          <AssociationSet Name="tb_venda_plano_ibfk_1" Association="Self.tb_venda_plano_ibfk_1">
             <End Role="tb_plano" EntitySet="tb_plano" />
             <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
           </AssociationSet>
-          <AssociationSet Name="fk_tb_venda_produto_tb_produto1" Association="Self.fk_tb_venda_produto_tb_produto1">
-            <End Role="tb_produto" EntitySet="tb_produto" />
+          <AssociationSet Name="tb_venda_produto_ibfk_1" Association="Self.tb_venda_produto_ibfk_1">
+            <End Role="tb_produto_compra" EntitySet="tb_produto_compra" />
             <End Role="tb_venda_produto" EntitySet="tb_venda_produto" />
           </AssociationSet>
         </EntityContainer>
@@ -727,9 +819,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="mydbModelStoreContainer" CdmEntityContainer="mydbEntities">
+        <EntityContainerMapping StorageEntityContainer="cultura_musicalModelStoreContainer" CdmEntityContainer="cultura_musicalEntities">
           <EntitySetMapping Name="tb_cliente">
-            <EntityTypeMapping TypeName="mydbModel.tb_cliente">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_cliente">
               <MappingFragment StoreEntitySet="tb_cliente">
                 <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
                 <ScalarProperty Name="nm_cliente" ColumnName="nm_cliente" />
@@ -744,11 +836,12 @@
                 <ScalarProperty Name="bairro" ColumnName="bairro" />
                 <ScalarProperty Name="periodo" ColumnName="periodo" />
                 <ScalarProperty Name="nm_responsavel" ColumnName="nm_responsavel" />
+                <ScalarProperty Name="nivel" ColumnName="nivel" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_cliente_aula">
-            <EntityTypeMapping TypeName="mydbModel.tb_cliente_aula">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_cliente_aula">
               <MappingFragment StoreEntitySet="tb_cliente_aula">
                 <ScalarProperty Name="id_aula" ColumnName="id_aula" />
                 <ScalarProperty Name="dt_aula" ColumnName="dt_aula" />
@@ -760,28 +853,38 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="tb_compra">
-            <EntityTypeMapping TypeName="mydbModel.tb_compra">
-              <MappingFragment StoreEntitySet="tb_compra">
-                <ScalarProperty Name="id_compra" ColumnName="id_compra" />
-                <ScalarProperty Name="preco" ColumnName="preco" />
-                <ScalarProperty Name="quantidade" ColumnName="quantidade" />
-                <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
-                <ScalarProperty Name="dt_compra" ColumnName="dt_compra" />
+          <EntitySetMapping Name="tb_colaborador">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_colaborador">
+              <MappingFragment StoreEntitySet="tb_colaborador">
+                <ScalarProperty Name="id_colaborador" ColumnName="id_colaborador" />
+                <ScalarProperty Name="nm_colaborador" ColumnName="nm_colaborador" />
+                <ScalarProperty Name="nascimento" ColumnName="nascimento" />
+                <ScalarProperty Name="contratacao" ColumnName="contratacao" />
+                <ScalarProperty Name="demicao" ColumnName="demicao" />
+                <ScalarProperty Name="endereco" ColumnName="endereco" />
+                <ScalarProperty Name="complemento" ColumnName="complemento" />
+                <ScalarProperty Name="bairro" ColumnName="bairro" />
+                <ScalarProperty Name="cep" ColumnName="cep" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="cidade" ColumnName="cidade" />
+                <ScalarProperty Name="rg" ColumnName="rg" />
+                <ScalarProperty Name="cpf" ColumnName="cpf" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_conta">
-            <EntityTypeMapping TypeName="mydbModel.tb_conta">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_conta">
               <MappingFragment StoreEntitySet="tb_conta">
                 <ScalarProperty Name="id_conta" ColumnName="id_conta" />
                 <ScalarProperty Name="vl_pagar" ColumnName="vl_pagar" />
                 <ScalarProperty Name="id_tipo_conta" ColumnName="id_tipo_conta" />
+                <ScalarProperty Name="dt_conta" ColumnName="dt_conta" />
+                <ScalarProperty Name="dt_pagamento" ColumnName="dt_pagamento" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_folha_pagamento">
-            <EntityTypeMapping TypeName="mydbModel.tb_folha_pagamento">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_folha_pagamento">
               <MappingFragment StoreEntitySet="tb_folha_pagamento">
                 <ScalarProperty Name="id_folha" ColumnName="id_folha" />
                 <ScalarProperty Name="vt" ColumnName="vt" />
@@ -796,7 +899,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_fornecedor">
-            <EntityTypeMapping TypeName="mydbModel.tb_fornecedor">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_fornecedor">
               <MappingFragment StoreEntitySet="tb_fornecedor">
                 <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
                 <ScalarProperty Name="nm_fornecedor" ColumnName="nm_fornecedor" />
@@ -808,7 +911,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_funcionario">
-            <EntityTypeMapping TypeName="mydbModel.tb_funcionario">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_funcionario">
               <MappingFragment StoreEntitySet="tb_funcionario">
                 <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
                 <ScalarProperty Name="nm_funcionario" ColumnName="nm_funcionario" />
@@ -834,7 +937,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_login">
-            <EntityTypeMapping TypeName="mydbModel.tb_login">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_login">
               <MappingFragment StoreEntitySet="tb_login">
                 <ScalarProperty Name="id_login" ColumnName="id_login" />
                 <ScalarProperty Name="nm_usuario" ColumnName="nm_usuario" />
@@ -843,8 +946,25 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="tb_pedido_compra">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_pedido_compra">
+              <MappingFragment StoreEntitySet="tb_pedido_compra">
+                <ScalarProperty Name="id_pedido_compra" ColumnName="id_pedido_compra" />
+                <ScalarProperty Name="dt_pedido" ColumnName="dt_pedido" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_pedido_compra_item">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_pedido_compra_item">
+              <MappingFragment StoreEntitySet="tb_pedido_compra_item">
+                <ScalarProperty Name="id_pedido_compra_item" ColumnName="id_pedido_compra_item" />
+                <ScalarProperty Name="id_pedido_compra" ColumnName="id_pedido_compra" />
+                <ScalarProperty Name="id_produto" ColumnName="id_produto" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="tb_plano">
-            <EntityTypeMapping TypeName="mydbModel.tb_plano">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_plano">
               <MappingFragment StoreEntitySet="tb_plano">
                 <ScalarProperty Name="id_plano" ColumnName="id_plano" />
                 <ScalarProperty Name="nm_plano" ColumnName="nm_plano" />
@@ -853,19 +973,20 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="tb_produto">
-            <EntityTypeMapping TypeName="mydbModel.tb_produto">
-              <MappingFragment StoreEntitySet="tb_produto">
+          <EntitySetMapping Name="tb_produto_compra">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_produto_compra">
+              <MappingFragment StoreEntitySet="tb_produto_compra">
                 <ScalarProperty Name="id_produto" ColumnName="id_produto" />
                 <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
                 <ScalarProperty Name="preco" ColumnName="preco" />
                 <ScalarProperty Name="quantidade" ColumnName="quantidade" />
                 <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
+                <ScalarProperty Name="dt_pedido_compra" ColumnName="dt_pedido_compra" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_tipo_conta">
-            <EntityTypeMapping TypeName="mydbModel.tb_tipo_conta">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_tipo_conta">
               <MappingFragment StoreEntitySet="tb_tipo_conta">
                 <ScalarProperty Name="id_tipo_conta" ColumnName="id_tipo_conta" />
                 <ScalarProperty Name="conta" ColumnName="conta" />
@@ -873,7 +994,7 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_venda_plano">
-            <EntityTypeMapping TypeName="mydbModel.tb_venda_plano">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_venda_plano">
               <MappingFragment StoreEntitySet="tb_venda_plano">
                 <ScalarProperty Name="id_venda_plano" ColumnName="id_venda_plano" />
                 <ScalarProperty Name="id_plano" ColumnName="id_plano" />
@@ -884,9 +1005,9 @@
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_venda_produto">
-            <EntityTypeMapping TypeName="mydbModel.tb_venda_produto">
+            <EntityTypeMapping TypeName="cultura_musicalModel.tb_venda_produto">
               <MappingFragment StoreEntitySet="tb_venda_produto">
-                <ScalarProperty Name="id_venda_produto" ColumnName="id_venda_produto" />
+                <ScalarProperty Name="id_produto_venda" ColumnName="id_produto_venda" />
                 <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
                 <ScalarProperty Name="vl_produto" ColumnName="vl_produto" />
                 <ScalarProperty Name="qtd_produto" ColumnName="qtd_produto" />

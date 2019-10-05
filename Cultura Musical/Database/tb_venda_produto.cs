@@ -14,7 +14,7 @@ namespace Cultura_Musical.Database
     
     public partial class tb_venda_produto
     {
-        public int id_venda_produto { get; set; }
+        public int id_produto_venda { get; set; }
         public string nm_produto { get; set; }
         public decimal vl_produto { get; set; }
         public int qtd_produto { get; set; }
@@ -22,6 +22,6 @@ namespace Cultura_Musical.Database
         public int id_cliente { get; set; }
     
         public virtual tb_cliente tb_cliente { get; set; }
-        public virtual tb_produto tb_produto { get; set; }
+        public virtual tb_produto_compra tb_produto_compra { get; set; }
     }
 }

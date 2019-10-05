@@ -12,14 +12,23 @@ namespace Cultura_Musical.Database
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_compra
+    public partial class tb_produto_compra
     {
-        public int id_compra { get; set; }
+        public tb_produto_compra()
+        {
+            this.tb_pedido_compra_item = new HashSet<tb_pedido_compra_item>();
+            this.tb_venda_produto = new HashSet<tb_venda_produto>();
+        }
+    
+        public int id_produto { get; set; }
+        public string nm_produto { get; set; }
         public decimal preco { get; set; }
         public int quantidade { get; set; }
         public int id_fornecedor { get; set; }
-        public System.DateTime dt_compra { get; set; }
+        public System.DateTime dt_pedido_compra { get; set; }
     
         public virtual tb_fornecedor tb_fornecedor { get; set; }
+        public virtual ICollection<tb_pedido_compra_item> tb_pedido_compra_item { get; set; }
+        public virtual ICollection<tb_venda_produto> tb_venda_produto { get; set; }
     }
 }

@@ -34,6 +34,7 @@ namespace Cultura_Musical.Database
         public string bairro { get; set; }
         public string periodo { get; set; }
         public string nm_responsavel { get; set; }
+        public string nivel { get; set; }
     
         public virtual ICollection<tb_cliente_aula> tb_cliente_aula { get; set; }
         public virtual ICollection<tb_venda_plano> tb_venda_plano { get; set; }
