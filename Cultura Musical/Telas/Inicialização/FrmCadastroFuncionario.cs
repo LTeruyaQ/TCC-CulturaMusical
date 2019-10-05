@@ -21,5 +21,10 @@ namespace Cultura_Musical.Telas
         {
 
         }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

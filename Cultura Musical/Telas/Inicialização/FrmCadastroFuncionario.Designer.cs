@@ -55,9 +55,9 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -272,6 +272,7 @@
             this.btnCadastrar.TabIndex = 35;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // label14
             // 
@@ -295,15 +296,13 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tipo";
             // 
-            // radioButton2
+            // txtCPF
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(21, 52);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(45, 17);
-            this.radioButton2.TabIndex = 65;
-            this.radioButton2.Text = "CPF";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.txtCPF.Location = new System.Drawing.Point(86, 39);
+            this.txtCPF.Mask = "000000000/00";
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Size = new System.Drawing.Size(100, 20);
+            this.txtCPF.TabIndex = 64;
             // 
             // radioButton1
             // 
@@ -315,19 +314,21 @@
             this.radioButton1.Text = "CNPJ";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
-            // txtCPF
+            // radioButton2
             // 
-            this.txtCPF.Location = new System.Drawing.Point(86, 39);
-            this.txtCPF.Mask = "000000000/00";
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(100, 20);
-            this.txtCPF.TabIndex = 64;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(21, 52);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(45, 17);
+            this.radioButton2.TabIndex = 65;
+            this.radioButton2.Text = "CPF";
+            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 366);
+            this.ClientSize = new System.Drawing.Size(562, 367);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.dtpSaida);
