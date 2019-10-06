@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnConfirmar_Login = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtconfirmar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -106,16 +106,17 @@
             this.btnConfirmar_Login.TabIndex = 10;
             this.btnConfirmar_Login.Text = "Confirmar";
             this.btnConfirmar_Login.UseVisualStyleBackColor = false;
+            this.btnConfirmar_Login.Click += new System.EventHandler(this.btnConfirmar_Login_Click);
             // 
-            // textBox1
+            // txtconfirmar
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.textBox1.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Info;
-            this.textBox1.Location = new System.Drawing.Point(184, 212);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(141, 26);
-            this.textBox1.TabIndex = 12;
+            this.txtconfirmar.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.txtconfirmar.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtconfirmar.ForeColor = System.Drawing.SystemColors.Info;
+            this.txtconfirmar.Location = new System.Drawing.Point(184, 212);
+            this.txtconfirmar.Name = "txtconfirmar";
+            this.txtconfirmar.Size = new System.Drawing.Size(141, 26);
+            this.txtconfirmar.TabIndex = 12;
             // 
             // label4
             // 
@@ -135,7 +136,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Cultura_Musical.Properties.Resources.giphy;
             this.ClientSize = new System.Drawing.Size(448, 313);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtconfirmar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnConfirmar_Login);
             this.Controls.Add(this.label3);
@@ -160,7 +161,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnConfirmar_Login;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtconfirmar;
         private System.Windows.Forms.Label label4;
     }
 }

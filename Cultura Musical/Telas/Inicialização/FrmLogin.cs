@@ -16,5 +16,12 @@ namespace Cultura_Musical.Telas
         {
             InitializeComponent();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ///aqui invocaria a tela de permição///
+            
+        
+        }
     }
 }

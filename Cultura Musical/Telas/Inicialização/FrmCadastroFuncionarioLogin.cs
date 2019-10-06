@@ -16,5 +16,16 @@ namespace Cultura_Musical.Telas.Inicialização
         {
             InitializeComponent();
         }
+
+        private void btnConfirmar_Login_Click(object sender, EventArgs e)
+        {
+            Database.tb_login cadastro = new Database.tb_login();
+            cadastro.nm_usuario = txtUsuario.Text;
+            cadastro.sen_usuario = txtSenha.Text;
+            string conf = txtconfirmar.Text;
+            Business.Business_Inicialização bus = new Business.Business_Inicialização();
+            bus.Cadastro(cadastro, conf);
+
+        }
     }
 }
