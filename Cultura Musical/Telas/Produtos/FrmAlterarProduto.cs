@@ -16,5 +16,15 @@ namespace Cultura_Musical.Telas.Produtos
         {
             InitializeComponent();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmAlterarProduto_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

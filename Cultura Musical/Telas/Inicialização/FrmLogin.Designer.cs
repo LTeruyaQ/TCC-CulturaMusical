@@ -90,7 +90,7 @@
             this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.giphy;
             this.pictureBox1.Location = new System.Drawing.Point(-90, -17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(542, 342);
+            this.pictureBox1.Size = new System.Drawing.Size(555, 342);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -117,13 +117,14 @@
             this.btnConfirmar_Login.TabIndex = 6;
             this.btnConfirmar_Login.Text = "Confirmar";
             this.btnConfirmar_Login.UseVisualStyleBackColor = false;
+            this.btnConfirmar_Login.Click += new System.EventHandler(this.btnConfirmar_Login_Click);
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.linkLabel2.Location = new System.Drawing.Point(219, 209);
+            this.linkLabel2.LinkColor = System.Drawing.SystemColors.ButtonFace;
+            this.linkLabel2.Location = new System.Drawing.Point(187, 221);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(88, 13);
             this.linkLabel2.TabIndex = 8;

@@ -266,9 +266,9 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(425, 265);
+            this.btnCadastrar.Location = new System.Drawing.Point(315, 278);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(75, 74);
+            this.btnCadastrar.Size = new System.Drawing.Size(185, 61);
             this.btnCadastrar.TabIndex = 35;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -278,7 +278,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(106, 18);
+            this.label14.Location = new System.Drawing.Point(153, 18);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(250, 24);
             this.label14.TabIndex = 62;

@@ -658,7 +658,7 @@
             this.groupBox8.Controls.Add(this.label35);
             this.groupBox8.Controls.Add(this.label36);
             this.groupBox8.Controls.Add(this.label37);
-            this.groupBox8.Location = new System.Drawing.Point(396, 177);
+            this.groupBox8.Location = new System.Drawing.Point(417, 177);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
@@ -723,7 +723,7 @@
             this.groupBox7.Controls.Add(this.label30);
             this.groupBox7.Controls.Add(this.label31);
             this.groupBox7.Controls.Add(this.label32);
-            this.groupBox7.Location = new System.Drawing.Point(300, 177);
+            this.groupBox7.Location = new System.Drawing.Point(321, 177);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
@@ -788,7 +788,7 @@
             this.groupBox6.Controls.Add(this.label25);
             this.groupBox6.Controls.Add(this.label24);
             this.groupBox6.Controls.Add(this.label23);
-            this.groupBox6.Location = new System.Drawing.Point(203, 177);
+            this.groupBox6.Location = new System.Drawing.Point(224, 177);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
@@ -857,7 +857,7 @@
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox5.Size = new System.Drawing.Size(120, 122);
+            this.groupBox5.Size = new System.Drawing.Size(141, 122);
             this.groupBox5.TabIndex = 53;
             this.groupBox5.TabStop = false;
             // 
@@ -884,9 +884,9 @@
             this.label20.Location = new System.Drawing.Point(4, 57);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(112, 14);
+            this.label20.Size = new System.Drawing.Size(117, 14);
             this.label20.TabIndex = 25;
-            this.label20.Text = "FALTAS";
+            this.label20.Text = "VALE-ALIMENTAÇÃO";
             // 
             // label19
             // 

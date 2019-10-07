@@ -23,5 +23,10 @@ namespace Cultura_Musical.Telas
             
         
         }
+
+        private void btnConfirmar_Login_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -432,6 +432,21 @@
     <EmbeddedResource Include="Telas\Pedidos\FrmAdicionarProduto.resx">
       <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Pedidos\FrmConsultarProdutos.resx">
+      <DependentUpon>FrmConsultarProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Produtos\FrmAdicionarProduto.resx">
+      <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Produtos\FrmAlterarProduto.resx">
+      <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Produtos\FrmConsultarProduto.resx">
+      <DependentUpon>FrmConsultarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Produtos\FrmDeletarProduto.resx">
+      <DependentUpon>FrmDeletarProduto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
