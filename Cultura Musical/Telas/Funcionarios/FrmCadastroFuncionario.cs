@@ -36,7 +36,9 @@ namespace Cultura_Musical.Telas
             funcionario.hr_almoco = TimeSpan.Parse(Convert.ToString(dtpAlmoco.Value));
             funcionario.hr_entrada = TimeSpan.Parse(Convert.ToString(dtpEntrada.Value));
             funcionario.hr_saida = TimeSpan.Parse(Convert.ToString(dtpSaida.Value));
+
             string genero = cboGenero.Text;
+
             if (genero == "masculino")
             {
                 funcionario.genero = true;

@@ -117,15 +117,17 @@
             this.btnConfirmar_Login.TabIndex = 6;
             this.btnConfirmar_Login.Text = "Confirmar";
             this.btnConfirmar_Login.UseVisualStyleBackColor = false;
+            this.btnConfirmar_Login.Click += new System.EventHandler(this.btnConfirmar_Login_Click);
             // 
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.linkLabel2.Location = new System.Drawing.Point(219, 209);
+            this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.linkLabel2.Location = new System.Drawing.Point(175, 209);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(88, 13);
+            this.linkLabel2.Size = new System.Drawing.Size(115, 15);
             this.linkLabel2.TabIndex = 8;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Novo funcionário";

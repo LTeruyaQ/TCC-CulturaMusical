@@ -26,3 +26,35 @@ C:\Users\Curso\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultur
 C:\Users\Curso\Source\Repos\tcc-cultura-musical2\Cultura Musical\bin\Debug\Cultura Musical.exe.config
 C:\Users\Curso\Source\Repos\tcc-cultura-musical2\Cultura Musical\obj\Debug\Cultura Musical.exe
 C:\Users\Curso\Source\Repos\tcc-cultura-musical2\Cultura Musical\obj\Debug\Cultura Musical.pdb
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\bin\Debug\Cultura Musical.exe.config
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\bin\Debug\Cultura Musical.exe
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\bin\Debug\Cultura Musical.pdb
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\bin\Debug\EntityFramework.dll
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\bin\Debug\EntityFramework.xml
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura Musical.csprojAssemblyReference.cache
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Properties.Resources.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Agenda.FrmConsultarAgenda.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmAgenda.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionario.FrmAdicionarFuncionario.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmCadastro.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionario.FrmConsultarFuncionarios.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionario.FrmJornadaDeTrabalho.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Compras.FrmAdicionarCompra.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.CRM.FrmAdicionarCliente.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Fornecedores.FrmAdicionarFornecedor.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Holerite.frmFolhaDePagamento.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Folha_de_Pagamento.Inserir.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Inicialização.FrmCadastroFuncionarioLogin.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmHomePage.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmLogin.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Logistica.Fluxo_de_Caixa.FrmConsultarEntradasESaidas.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Logistica.FrmConsultarCustos.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Logistica.FrmConsultar.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Logistica.FrmConsultarSaldo.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Pedidos.FrmAdicionarProduto.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura_Musical.UserControl1.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura Musical.csproj.GenerateResource.cache
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura Musical.csproj.CoreCompileInputs.cache
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura Musical.csproj.CopyComplete
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura Musical.exe
+C:\Users\lucas\Source\Repos\tcc-cultura-musical7\Cultura Musical\obj\Debug\Cultura Musical.pdb
