@@ -20,8 +20,11 @@ namespace Cultura_Musical.Telas
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             ///aqui invocaria a tela de permição///
-            
-        
+        }
+
+        private void btnConfirmar_Login_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btnConfirmar_Login_Click(object sender, EventArgs e)

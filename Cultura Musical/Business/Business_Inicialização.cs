@@ -28,7 +28,6 @@ namespace Cultura_Musical.Business
             }
             Database.Database_Inicialização db = new Database.Database_Inicialização();
             db.Cadastro(cadastro);
-           
         }
     }
 }
