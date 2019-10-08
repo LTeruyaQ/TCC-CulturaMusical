@@ -167,12 +167,6 @@
     <Compile Include="Telas\Agenda\FrmInserirAgenda.Designer.cs">
       <DependentUpon>FrmInserirAgenda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Funcionarios\FrmAdicionarColaborador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Funcionarios\FrmAdicionarColaborador.Designer.cs">
-      <DependentUpon>FrmAdicionarColaborador.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Funcionarios\FrmAlterarColaborador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,30 +190,6 @@
     </Compile>
     <Compile Include="Telas\Funcionarios\FrmJornadaDeTrabalho.Designer.cs">
       <DependentUpon>FrmJornadaDeTrabalho.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Compras\FrmAdicionarCompra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Compras\FrmAdicionarCompra.Designer.cs">
-      <DependentUpon>FrmAdicionarCompra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Compras\FrmAlterarCompra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Compras\FrmAlterarCompra.Designer.cs">
-      <DependentUpon>FrmAlterarCompra.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Compras\FrmApagarCompras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Compras\FrmApagarCompras.Designer.cs">
-      <DependentUpon>FrmApagarCompras.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Compras\FrmConsultarCompras.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Compras\FrmConsultarCompras.Designer.cs">
-      <DependentUpon>FrmConsultarCompras.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\CRM\FrmAdicionarCliente.cs">
       <SubType>Form</SubType>
@@ -381,9 +351,6 @@
     <EmbeddedResource Include="Telas\Agenda\FrmInserirAgenda.resx">
       <DependentUpon>FrmInserirAgenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Funcionarios\FrmAdicionarColaborador.resx">
-      <DependentUpon>FrmAdicionarColaborador.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\FrmCadastroFuncionario.resx">
       <DependentUpon>FrmCadastroFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -392,9 +359,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\FrmJornadaDeTrabalho.resx">
       <DependentUpon>FrmJornadaDeTrabalho.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Compras\FrmAdicionarCompra.resx">
-      <DependentUpon>FrmAdicionarCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\CRM\FrmAdicionarCliente.resx">
       <DependentUpon>FrmAdicionarCliente.cs</DependentUpon>

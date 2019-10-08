@@ -16,5 +16,10 @@ namespace Cultura_Musical.Telas.Funcionario
         {
             InitializeComponent();
         }
+
+        private void txtNomeFuncionário_TextChanged(object sender, EventArgs e)
+        {
+            dgvConsultaFuncionario.DataSource = 0;
+        }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cultura_Musical.Telas
 {
-    public partial class FrmCadastro : Form
+    public partial class dtpNascimento : Form
     {
-        public FrmCadastro()
+        public dtpNascimento()
         {
             InitializeComponent();
         }
@@ -47,7 +47,6 @@ namespace Cultura_Musical.Telas
             {
                 funcionario.genero = false;
             }
-
         }
     }
 }

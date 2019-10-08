@@ -1,6 +1,6 @@
 ﻿namespace Cultura_Musical.Telas
 {
-    partial class FrmCadastro
+    partial class dtpNascimento
     {
         /// <summary>
         /// Required designer variable.
@@ -58,6 +58,14 @@
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.txtRua = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,7 +115,7 @@
             // dtpContratacao
             // 
             this.dtpContratacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpContratacao.Location = new System.Drawing.Point(123, 211);
+            this.dtpContratacao.Location = new System.Drawing.Point(124, 239);
             this.dtpContratacao.Name = "dtpContratacao";
             this.dtpContratacao.Size = new System.Drawing.Size(100, 20);
             this.dtpContratacao.TabIndex = 56;
@@ -137,7 +145,7 @@
             // 
             // txtSalario
             // 
-            this.txtSalario.Location = new System.Drawing.Point(410, 62);
+            this.txtSalario.Location = new System.Drawing.Point(409, 62);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(100, 20);
             this.txtSalario.TabIndex = 51;
@@ -163,9 +171,9 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(304, 211);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(96, 13);
+            this.label12.Size = new System.Drawing.Size(99, 13);
             this.label12.TabIndex = 48;
-            this.label12.Text = "Horário de Entrada";
+            this.label12.Text = "Horário de Entrada:";
             // 
             // label11
             // 
@@ -206,7 +214,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(361, 62);
+            this.label7.Location = new System.Drawing.Point(361, 65);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 13);
             this.label7.TabIndex = 43;
@@ -233,7 +241,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 211);
+            this.label3.Location = new System.Drawing.Point(8, 239);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 13);
             this.label3.TabIndex = 39;
@@ -266,7 +274,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(315, 278);
+            this.btnCadastrar.Location = new System.Drawing.Point(324, 370);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(185, 61);
             this.btnCadastrar.TabIndex = 35;
@@ -278,7 +286,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(153, 18);
+            this.label14.Location = new System.Drawing.Point(213, 9);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(250, 24);
             this.label14.TabIndex = 62;
@@ -289,7 +297,7 @@
             this.groupBox1.Controls.Add(this.txtCPF);
             this.groupBox1.Controls.Add(this.radioButton1);
             this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(24, 239);
+            this.groupBox1.Location = new System.Drawing.Point(24, 270);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 100);
             this.groupBox1.TabIndex = 63;
@@ -298,7 +306,7 @@
             // 
             // txtCPF
             // 
-            this.txtCPF.Location = new System.Drawing.Point(86, 39);
+            this.txtCPF.Location = new System.Drawing.Point(94, 41);
             this.txtCPF.Mask = "000000000/00";
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(100, 20);
@@ -324,11 +332,84 @@
             this.radioButton2.Text = "CPF";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
-            // FrmCadastro
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(372, 270);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(30, 13);
+            this.label6.TabIndex = 64;
+            this.label6.Text = "Rua:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(361, 296);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(43, 13);
+            this.label15.TabIndex = 65;
+            this.label15.Text = "Estado:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(367, 331);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(37, 13);
+            this.label16.TabIndex = 66;
+            this.label16.Text = "Bairro:";
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.Location = new System.Drawing.Point(410, 324);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(100, 20);
+            this.txtBairro.TabIndex = 67;
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(410, 293);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(100, 20);
+            this.txtEstado.TabIndex = 68;
+            // 
+            // txtRua
+            // 
+            this.txtRua.Location = new System.Drawing.Point(410, 263);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(100, 20);
+            this.txtRua.TabIndex = 69;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(8, 211);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(107, 13);
+            this.label17.TabIndex = 70;
+            this.label17.Text = "Data de Nascimento:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(124, 205);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
+            this.dateTimePicker1.TabIndex = 71;
+            // 
+            // dtpNascimento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(562, 367);
+            this.ClientSize = new System.Drawing.Size(699, 490);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.txtRua);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtBairro);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.dtpSaida);
@@ -356,7 +437,7 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCadastrar);
-            this.Name = "FrmCadastro";
+            this.Name = "dtpNascimento";
             this.Text = "Cadastro de Funcionário";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -397,5 +478,13 @@
         private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtBairro;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtRua;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
