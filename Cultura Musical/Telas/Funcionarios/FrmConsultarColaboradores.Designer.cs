@@ -88,6 +88,7 @@
             this.Controls.Add(this.txtNomeFuncionário);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvConsultaFuncionario);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarFuncionarios";
             this.Text = "FrmConsultarFuncionarios";
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaFuncionario)).EndInit();
