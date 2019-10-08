@@ -10,7 +10,7 @@ namespace Cultura_Musical.Database
     {
         public void Cadastro(tb_login cadastro)
         {
-            cultura_musicalEntities db = new cultura_musicalEntities();
+            Database.cultura_musicalEntities db = new Database.cultura_musicalEntities();
             db.tb_login.Add(cadastro);
             db.SaveChanges();
         }

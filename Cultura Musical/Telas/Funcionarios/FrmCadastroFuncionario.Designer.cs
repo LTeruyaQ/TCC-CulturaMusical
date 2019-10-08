@@ -66,6 +66,12 @@
             this.txtRua = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtVA = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtVT = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtVR = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -274,9 +280,9 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(324, 370);
+            this.btnCadastrar.Location = new System.Drawing.Point(410, 370);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(185, 61);
+            this.btnCadastrar.Size = new System.Drawing.Size(99, 93);
             this.btnCadastrar.TabIndex = 35;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
@@ -286,7 +292,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(213, 9);
+            this.label14.Location = new System.Drawing.Point(154, 9);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(250, 24);
             this.label14.TabIndex = 62;
@@ -397,11 +403,65 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
             this.dateTimePicker1.TabIndex = 71;
             // 
+            // txtVA
+            // 
+            this.txtVA.Location = new System.Drawing.Point(124, 391);
+            this.txtVA.Name = "txtVA";
+            this.txtVA.Size = new System.Drawing.Size(100, 20);
+            this.txtVA.TabIndex = 73;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(76, 394);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(24, 13);
+            this.label18.TabIndex = 72;
+            this.label18.Text = "VA:";
+            // 
+            // txtVT
+            // 
+            this.txtVT.Location = new System.Drawing.Point(124, 443);
+            this.txtVT.Name = "txtVT";
+            this.txtVT.Size = new System.Drawing.Size(100, 20);
+            this.txtVT.TabIndex = 75;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(75, 446);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(24, 13);
+            this.label19.TabIndex = 74;
+            this.label19.Text = "VT:";
+            // 
+            // txtVR
+            // 
+            this.txtVR.Location = new System.Drawing.Point(124, 417);
+            this.txtVR.Name = "txtVR";
+            this.txtVR.Size = new System.Drawing.Size(100, 20);
+            this.txtVR.TabIndex = 77;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(76, 420);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(25, 13);
+            this.label20.TabIndex = 76;
+            this.label20.Text = "VR:";
+            // 
             // dtpNascimento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(699, 490);
+            this.ClientSize = new System.Drawing.Size(539, 503);
+            this.Controls.Add(this.txtVR);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.txtVT);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.txtVA);
+            this.Controls.Add(this.label18);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.txtRua);
@@ -486,5 +546,11 @@
         private System.Windows.Forms.TextBox txtRua;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtVA;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.TextBox txtVT;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtVR;
+        private System.Windows.Forms.Label label20;
     }
 }

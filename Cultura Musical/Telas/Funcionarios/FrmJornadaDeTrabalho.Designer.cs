@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbo = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.rdnHFlexivel = new System.Windows.Forms.RadioButton();
+            this.rdnHNoturna = new System.Windows.Forms.RadioButton();
+            this.txtDescricao = new System.Windows.Forms.TextBox();
+            this.txtIDFuncionario = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -46,17 +46,17 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
+            this.dtpTotHorasNotunras = new System.Windows.Forms.DateTimePicker();
+            this.dtpTotHorasDiurnas = new System.Windows.Forms.DateTimePicker();
+            this.dtpDuracaoJornada = new System.Windows.Forms.DateTimePicker();
+            this.dtpSaidaJornada = new System.Windows.Forms.DateTimePicker();
+            this.dtpEntradaJornada = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cbo);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.textBox3);
@@ -67,15 +67,15 @@
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             // 
-            // comboBox1
+            // cbo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbo.FormattingEnabled = true;
+            this.cbo.Items.AddRange(new object[] {
             "Intervalo em Horário Fixo"});
-            this.comboBox1.Location = new System.Drawing.Point(226, 33);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 24;
+            this.cbo.Location = new System.Drawing.Point(226, 33);
+            this.cbo.Name = "cbo";
+            this.cbo.Size = new System.Drawing.Size(121, 21);
+            this.cbo.TabIndex = 24;
             // 
             // label10
             // 
@@ -111,44 +111,44 @@
             this.label5.TabIndex = 21;
             this.label5.Text = "Intervalo/ Tipo de Intervalo:";
             // 
-            // radioButton2
+            // rdnHFlexivel
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Checked = true;
-            this.radioButton2.Location = new System.Drawing.Point(361, 91);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(99, 17);
-            this.radioButton2.TabIndex = 36;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Horário Flexível";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdnHFlexivel.AutoSize = true;
+            this.rdnHFlexivel.Checked = true;
+            this.rdnHFlexivel.Location = new System.Drawing.Point(361, 91);
+            this.rdnHFlexivel.Name = "rdnHFlexivel";
+            this.rdnHFlexivel.Size = new System.Drawing.Size(99, 17);
+            this.rdnHFlexivel.TabIndex = 36;
+            this.rdnHFlexivel.TabStop = true;
+            this.rdnHFlexivel.Text = "Horário Flexível";
+            this.rdnHFlexivel.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdnHNoturna
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(360, 114);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(100, 17);
-            this.radioButton1.TabIndex = 35;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Horário Noturno";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdnHNoturna.AutoSize = true;
+            this.rdnHNoturna.Checked = true;
+            this.rdnHNoturna.Location = new System.Drawing.Point(360, 114);
+            this.rdnHNoturna.Name = "rdnHNoturna";
+            this.rdnHNoturna.Size = new System.Drawing.Size(100, 17);
+            this.rdnHNoturna.TabIndex = 35;
+            this.rdnHNoturna.TabStop = true;
+            this.rdnHNoturna.Text = "Horário Noturno";
+            this.rdnHNoturna.UseVisualStyleBackColor = true;
             // 
-            // textBox9
+            // txtDescricao
             // 
-            this.textBox9.Location = new System.Drawing.Point(215, 151);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(310, 99);
-            this.textBox9.TabIndex = 34;
+            this.txtDescricao.Location = new System.Drawing.Point(215, 151);
+            this.txtDescricao.Multiline = true;
+            this.txtDescricao.Name = "txtDescricao";
+            this.txtDescricao.Size = new System.Drawing.Size(310, 99);
+            this.txtDescricao.TabIndex = 34;
             // 
-            // textBox1
+            // txtIDFuncionario
             // 
-            this.textBox1.Location = new System.Drawing.Point(215, 109);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(23, 20);
-            this.textBox1.TabIndex = 28;
+            this.txtIDFuncionario.Location = new System.Drawing.Point(215, 116);
+            this.txtIDFuncionario.Name = "txtIDFuncionario";
+            this.txtIDFuncionario.Size = new System.Drawing.Size(23, 20);
+            this.txtIDFuncionario.TabIndex = 28;
             // 
             // label9
             // 
@@ -224,62 +224,62 @@
             this.label11.TabIndex = 38;
             this.label11.Text = "Jornada de Trabalho";
             // 
-            // dateTimePicker1
+            // dtpTotHorasNotunras
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(215, 339);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(69, 20);
-            this.dateTimePicker1.TabIndex = 45;
+            this.dtpTotHorasNotunras.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpTotHorasNotunras.Location = new System.Drawing.Point(215, 339);
+            this.dtpTotHorasNotunras.Name = "dtpTotHorasNotunras";
+            this.dtpTotHorasNotunras.Size = new System.Drawing.Size(69, 20);
+            this.dtpTotHorasNotunras.TabIndex = 45;
             // 
-            // dateTimePicker2
+            // dtpTotHorasDiurnas
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker2.Location = new System.Drawing.Point(215, 374);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(69, 20);
-            this.dateTimePicker2.TabIndex = 46;
+            this.dtpTotHorasDiurnas.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpTotHorasDiurnas.Location = new System.Drawing.Point(215, 374);
+            this.dtpTotHorasDiurnas.Name = "dtpTotHorasDiurnas";
+            this.dtpTotHorasDiurnas.Size = new System.Drawing.Size(69, 20);
+            this.dtpTotHorasDiurnas.TabIndex = 46;
             // 
-            // dateTimePicker3
+            // dtpDuracaoJornada
             // 
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker3.Location = new System.Drawing.Point(215, 415);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(69, 20);
-            this.dateTimePicker3.TabIndex = 47;
+            this.dtpDuracaoJornada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpDuracaoJornada.Location = new System.Drawing.Point(215, 415);
+            this.dtpDuracaoJornada.Name = "dtpDuracaoJornada";
+            this.dtpDuracaoJornada.Size = new System.Drawing.Size(69, 20);
+            this.dtpDuracaoJornada.TabIndex = 47;
             // 
-            // dateTimePicker4
+            // dtpSaidaJornada
             // 
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker4.Location = new System.Drawing.Point(215, 305);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(69, 20);
-            this.dateTimePicker4.TabIndex = 48;
+            this.dtpSaidaJornada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpSaidaJornada.Location = new System.Drawing.Point(215, 305);
+            this.dtpSaidaJornada.Name = "dtpSaidaJornada";
+            this.dtpSaidaJornada.Size = new System.Drawing.Size(69, 20);
+            this.dtpSaidaJornada.TabIndex = 48;
             // 
-            // dateTimePicker5
+            // dtpEntradaJornada
             // 
-            this.dateTimePicker5.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker5.Location = new System.Drawing.Point(215, 269);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(69, 20);
-            this.dateTimePicker5.TabIndex = 49;
+            this.dtpEntradaJornada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpEntradaJornada.Location = new System.Drawing.Point(215, 269);
+            this.dtpEntradaJornada.Name = "dtpEntradaJornada";
+            this.dtpEntradaJornada.Size = new System.Drawing.Size(69, 20);
+            this.dtpEntradaJornada.TabIndex = 49;
             // 
             // FrmJornadaDeTrabalho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(552, 576);
-            this.Controls.Add(this.dateTimePicker5);
-            this.Controls.Add(this.dateTimePicker4);
-            this.Controls.Add(this.dateTimePicker3);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpEntradaJornada);
+            this.Controls.Add(this.dtpSaidaJornada);
+            this.Controls.Add(this.dtpDuracaoJornada);
+            this.Controls.Add(this.dtpTotHorasDiurnas);
+            this.Controls.Add(this.dtpTotHorasNotunras);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.rdnHFlexivel);
+            this.Controls.Add(this.rdnHNoturna);
+            this.Controls.Add(this.txtDescricao);
+            this.Controls.Add(this.txtIDFuncionario);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -300,15 +300,15 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbo;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.RadioButton rdnHFlexivel;
+        private System.Windows.Forms.RadioButton rdnHNoturna;
+        private System.Windows.Forms.TextBox txtDescricao;
+        private System.Windows.Forms.TextBox txtIDFuncionario;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
@@ -317,10 +317,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
+        private System.Windows.Forms.DateTimePicker dtpTotHorasNotunras;
+        private System.Windows.Forms.DateTimePicker dtpTotHorasDiurnas;
+        private System.Windows.Forms.DateTimePicker dtpDuracaoJornada;
+        private System.Windows.Forms.DateTimePicker dtpSaidaJornada;
+        private System.Windows.Forms.DateTimePicker dtpEntradaJornada;
     }
 }
