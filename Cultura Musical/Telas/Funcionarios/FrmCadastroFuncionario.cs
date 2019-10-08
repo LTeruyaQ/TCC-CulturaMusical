@@ -37,6 +37,9 @@ namespace Cultura_Musical.Telas
             funcionario.hr_entrada = TimeSpan.Parse(Convert.ToString(dtpEntrada.Value));
             funcionario.hr_saida = TimeSpan.Parse(Convert.ToString(dtpSaida.Value));
 
+            Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
+            colaborador.CadastroFuncionario(funcionario);
+
             string genero = cboGenero.Text;
 
             if (genero == "masculino")

@@ -13,5 +13,11 @@ namespace Cultura_Musical.Business
             Database.Database_Funcionarios db = new Database.Database_Funcionarios();
             db.Consultar(funcionario);
         }
+
+        public void CadastroFuncionario(Database.tb_funcionario funcionario)
+        {
+            Database.Database_Funcionarios db = new Database.Database_Funcionarios();
+            db.AdicionarFuncionario(funcionario);
+        }
     }
 }
