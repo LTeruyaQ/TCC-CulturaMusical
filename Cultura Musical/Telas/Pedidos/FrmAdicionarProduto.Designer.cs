@@ -167,6 +167,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAdicionarProduto";
             this.Text = "FrmAdicionarProduto";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();

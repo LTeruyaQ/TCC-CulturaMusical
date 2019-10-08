@@ -497,6 +497,7 @@
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCadastrar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "dtpNascimento";
             this.Text = "Cadastro de Funcionário";
             this.groupBox1.ResumeLayout(false);

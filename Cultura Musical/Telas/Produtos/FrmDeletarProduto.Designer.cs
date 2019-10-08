@@ -32,9 +32,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,15 +78,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Visible = false;
             // 
-            // label3
+            // button2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(128, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 16);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Tem certeza?";
+            this.button2.Location = new System.Drawing.Point(225, 63);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(87, 23);
+            this.button2.TabIndex = 33;
+            this.button2.Text = "Não";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -97,14 +96,15 @@
             this.button1.Text = "Sim";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // label3
             // 
-            this.button2.Location = new System.Drawing.Point(225, 63);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 23);
-            this.button2.TabIndex = 33;
-            this.button2.Text = "Não";
-            this.button2.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(128, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 16);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "Tem certeza?";
             // 
             // FrmDeletarProduto
             // 
@@ -115,6 +115,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDeletarProduto";
             this.Text = "FrmDeletarProduto";
             this.groupBox1.ResumeLayout(false);

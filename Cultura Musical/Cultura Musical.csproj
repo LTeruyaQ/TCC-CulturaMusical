@@ -343,11 +343,41 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Telas\Agenda\FrmAlterarAgenda.resx">
+      <DependentUpon>FrmAlterarAgenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Agenda\FrmConsultarAgenda.resx">
       <DependentUpon>FrmConsultarAgenda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Agenda\FrmConsultarDisponibilidade.resx">
+      <DependentUpon>FrmConsultarDisponibilidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Agenda\FrmDeletarAgenda.resx">
+      <DependentUpon>FrmDeletarAgenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Agenda\FrmInserirAgenda.resx">
       <DependentUpon>FrmInserirAgenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CRM\FrmAlterarClientes.resx">
+      <DependentUpon>FrmAlterarClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CRM\FrmAnalisarCliente.resx">
+      <DependentUpon>FrmAnalisarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CRM\FrmConsultarCliente.resx">
+      <DependentUpon>FrmConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\CRM\FrmDeletarCliente.resx">
+      <DependentUpon>FrmDeletarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Fornecedores\FrmConsultarFornecedores.resx">
+      <DependentUpon>FrmConsultarFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Fornecedores\FrmDeletarFornecedor.resx">
+      <DependentUpon>FrmDeletarFornecedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Funcionarios\FrmAlterarColaborador.resx">
+      <DependentUpon>FrmAlterarColaborador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\FrmCadastroFuncionario.resx">
       <DependentUpon>FrmCadastroFuncionario.cs</DependentUpon>

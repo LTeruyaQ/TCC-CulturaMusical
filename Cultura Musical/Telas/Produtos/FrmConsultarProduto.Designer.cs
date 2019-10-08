@@ -58,6 +58,7 @@
             this.ClientSize = new System.Drawing.Size(575, 440);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarProduto";
             this.Text = "FrmConsultarProduto";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
