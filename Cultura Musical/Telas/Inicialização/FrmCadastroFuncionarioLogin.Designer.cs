@@ -44,7 +44,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(141, 26);
+            this.label3.Location = new System.Drawing.Point(156, 23);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(184, 38);
             this.label3.TabIndex = 9;
@@ -55,7 +55,7 @@
             this.txtSenha.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtSenha.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtSenha.Location = new System.Drawing.Point(184, 157);
+            this.txtSenha.Location = new System.Drawing.Point(180, 163);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(141, 26);
             this.txtSenha.TabIndex = 8;
@@ -65,9 +65,9 @@
             this.txtUsuario.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtUsuario.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtUsuario.Location = new System.Drawing.Point(182, 101);
+            this.txtUsuario.Location = new System.Drawing.Point(180, 102);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(143, 26);
+            this.txtUsuario.Size = new System.Drawing.Size(141, 26);
             this.txtUsuario.TabIndex = 7;
             // 
             // label2
@@ -100,7 +100,7 @@
             this.btnConfirmar_Login.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar_Login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnConfirmar_Login.Image = global::Cultura_Musical.Properties.Resources.giphy;
-            this.btnConfirmar_Login.Location = new System.Drawing.Point(198, 269);
+            this.btnConfirmar_Login.Location = new System.Drawing.Point(200, 264);
             this.btnConfirmar_Login.Name = "btnConfirmar_Login";
             this.btnConfirmar_Login.Size = new System.Drawing.Size(104, 32);
             this.btnConfirmar_Login.TabIndex = 10;
@@ -113,7 +113,7 @@
             this.txtconfirmar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtconfirmar.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtconfirmar.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtconfirmar.Location = new System.Drawing.Point(184, 212);
+            this.txtconfirmar.Location = new System.Drawing.Point(180, 212);
             this.txtconfirmar.Name = "txtconfirmar";
             this.txtconfirmar.Size = new System.Drawing.Size(141, 26);
             this.txtconfirmar.TabIndex = 12;
@@ -135,7 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Cultura_Musical.Properties.Resources.giphy;
-            this.ClientSize = new System.Drawing.Size(448, 313);
+            this.ClientSize = new System.Drawing.Size(485, 308);
             this.Controls.Add(this.txtconfirmar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnConfirmar_Login);

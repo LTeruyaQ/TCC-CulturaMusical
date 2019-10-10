@@ -167,7 +167,7 @@
             // 
             this.groupBox22.Controls.Add(this.label65);
             this.groupBox22.Controls.Add(this.label66);
-            this.groupBox22.Location = new System.Drawing.Point(221, 488);
+            this.groupBox22.Location = new System.Drawing.Point(241, 491);
             this.groupBox22.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox22.Name = "groupBox22";
             this.groupBox22.Padding = new System.Windows.Forms.Padding(2);
@@ -199,7 +199,7 @@
             // 
             this.groupBox21.Controls.Add(this.label63);
             this.groupBox21.Controls.Add(this.label64);
-            this.groupBox21.Location = new System.Drawing.Point(51, 488);
+            this.groupBox21.Location = new System.Drawing.Point(71, 491);
             this.groupBox21.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Padding = new System.Windows.Forms.Padding(2);
@@ -231,7 +231,7 @@
             // 
             this.groupBox20.Controls.Add(this.label61);
             this.groupBox20.Controls.Add(this.label62);
-            this.groupBox20.Location = new System.Drawing.Point(539, 438);
+            this.groupBox20.Location = new System.Drawing.Point(559, 441);
             this.groupBox20.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.Padding = new System.Windows.Forms.Padding(2);
@@ -263,7 +263,7 @@
             // 
             this.groupBox19.Controls.Add(this.label59);
             this.groupBox19.Controls.Add(this.label60);
-            this.groupBox19.Location = new System.Drawing.Point(378, 439);
+            this.groupBox19.Location = new System.Drawing.Point(398, 442);
             this.groupBox19.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.Padding = new System.Windows.Forms.Padding(2);
@@ -295,7 +295,7 @@
             // 
             this.groupBox18.Controls.Add(this.label57);
             this.groupBox18.Controls.Add(this.label58);
-            this.groupBox18.Location = new System.Drawing.Point(214, 439);
+            this.groupBox18.Location = new System.Drawing.Point(234, 442);
             this.groupBox18.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Padding = new System.Windows.Forms.Padding(2);
@@ -327,7 +327,7 @@
             // 
             this.groupBox17.Controls.Add(this.label55);
             this.groupBox17.Controls.Add(this.label56);
-            this.groupBox17.Location = new System.Drawing.Point(51, 439);
+            this.groupBox17.Location = new System.Drawing.Point(71, 442);
             this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Padding = new System.Windows.Forms.Padding(2);
@@ -361,7 +361,7 @@
             this.groupBox14.Controls.Add(this.groupBox16);
             this.groupBox14.Controls.Add(this.label53);
             this.groupBox14.Controls.Add(this.label54);
-            this.groupBox14.Location = new System.Drawing.Point(327, 384);
+            this.groupBox14.Location = new System.Drawing.Point(347, 387);
             this.groupBox14.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Padding = new System.Windows.Forms.Padding(2);
@@ -458,7 +458,7 @@
             // 
             this.groupBox11.Controls.Add(this.label42);
             this.groupBox11.Controls.Add(this.label43);
-            this.groupBox11.Location = new System.Drawing.Point(424, 336);
+            this.groupBox11.Location = new System.Drawing.Point(444, 339);
             this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Padding = new System.Windows.Forms.Padding(2);
@@ -492,7 +492,7 @@
             this.groupBox10.Controls.Add(this.groupBox12);
             this.groupBox10.Controls.Add(this.label41);
             this.groupBox10.Controls.Add(this.label45);
-            this.groupBox10.Location = new System.Drawing.Point(327, 336);
+            this.groupBox10.Location = new System.Drawing.Point(347, 339);
             this.groupBox10.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Padding = new System.Windows.Forms.Padding(2);
@@ -592,7 +592,7 @@
             this.groupBox9.Controls.Add(this.label39);
             this.groupBox9.Controls.Add(this.textBox10);
             this.groupBox9.Controls.Add(this.label38);
-            this.groupBox9.Location = new System.Drawing.Point(59, 335);
+            this.groupBox9.Location = new System.Drawing.Point(79, 338);
             this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
@@ -667,7 +667,7 @@
             this.groupBox8.Controls.Add(this.label35);
             this.groupBox8.Controls.Add(this.label36);
             this.groupBox8.Controls.Add(this.label37);
-            this.groupBox8.Location = new System.Drawing.Point(423, 210);
+            this.groupBox8.Location = new System.Drawing.Point(443, 213);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
@@ -732,7 +732,7 @@
             this.groupBox7.Controls.Add(this.label30);
             this.groupBox7.Controls.Add(this.label31);
             this.groupBox7.Controls.Add(this.label32);
-            this.groupBox7.Location = new System.Drawing.Point(327, 210);
+            this.groupBox7.Location = new System.Drawing.Point(347, 213);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
@@ -797,7 +797,7 @@
             this.groupBox6.Controls.Add(this.label25);
             this.groupBox6.Controls.Add(this.label24);
             this.groupBox6.Controls.Add(this.label23);
-            this.groupBox6.Location = new System.Drawing.Point(230, 210);
+            this.groupBox6.Location = new System.Drawing.Point(250, 213);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
@@ -862,7 +862,7 @@
             this.groupBox5.Controls.Add(this.label20);
             this.groupBox5.Controls.Add(this.label19);
             this.groupBox5.Controls.Add(this.label13);
-            this.groupBox5.Location = new System.Drawing.Point(106, 210);
+            this.groupBox5.Location = new System.Drawing.Point(126, 213);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
@@ -991,7 +991,7 @@
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(59, 151);
+            this.groupBox3.Location = new System.Drawing.Point(79, 154);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
@@ -1136,7 +1136,7 @@
             this.groupBox2.AutoSize = true;
             this.groupBox2.Controls.Add(this.dateTimePicker1);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(397, 74);
+            this.groupBox2.Location = new System.Drawing.Point(417, 77);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
@@ -1170,7 +1170,7 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(64, 74);
+            this.groupBox1.Location = new System.Drawing.Point(84, 77);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);

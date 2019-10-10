@@ -33,6 +33,7 @@
             this.txtNomeFuncionário = new System.Windows.Forms.TextBox();
             this.txtCargo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaFuncionario)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,7 +48,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 66);
+            this.label1.Location = new System.Drawing.Point(71, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(111, 13);
             this.label1.TabIndex = 1;
@@ -55,7 +56,7 @@
             // 
             // txtNomeFuncionário
             // 
-            this.txtNomeFuncionário.Location = new System.Drawing.Point(144, 63);
+            this.txtNomeFuncionário.Location = new System.Drawing.Point(188, 63);
             this.txtNomeFuncionário.Name = "txtNomeFuncionário";
             this.txtNomeFuncionário.Size = new System.Drawing.Size(100, 20);
             this.txtNomeFuncionário.TabIndex = 2;
@@ -63,7 +64,7 @@
             // 
             // txtCargo
             // 
-            this.txtCargo.Location = new System.Drawing.Point(304, 66);
+            this.txtCargo.Location = new System.Drawing.Point(348, 66);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(100, 20);
             this.txtCargo.TabIndex = 4;
@@ -72,17 +73,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(260, 66);
+            this.label2.Location = new System.Drawing.Point(304, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Cargo:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Stencil", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(42, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(515, 44);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Consultar Colaborador";
             // 
             // FrmConsultarFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(569, 464);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNomeFuncionário);
@@ -104,5 +116,6 @@
         private System.Windows.Forms.TextBox txtNomeFuncionário;
         private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

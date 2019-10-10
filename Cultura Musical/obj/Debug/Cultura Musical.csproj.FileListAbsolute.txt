@@ -119,3 +119,6 @@ C:\Users\lucas\Source\Repos\tcc-cultura-musical10\Cultura Musical\obj\Debug\Cult
 C:\Users\lucas\Source\Repos\tcc-cultura-musical10\Cultura Musical\obj\Debug\Cultura Musical.csproj.CoreCompileInputs.cache
 C:\Users\lucas\Source\Repos\tcc-cultura-musical10\Cultura Musical\obj\Debug\Cultura Musical.exe
 C:\Users\lucas\Source\Repos\tcc-cultura-musical10\Cultura Musical\obj\Debug\Cultura Musical.pdb
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\Cultura Musical.exe.config
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura Musical.exe
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura Musical.pdb
