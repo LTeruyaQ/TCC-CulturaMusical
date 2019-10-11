@@ -40,10 +40,11 @@
             // dgvConsultaFuncionario
             // 
             this.dgvConsultaFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultaFuncionario.Location = new System.Drawing.Point(50, 105);
+            this.dgvConsultaFuncionario.Location = new System.Drawing.Point(50, 92);
             this.dgvConsultaFuncionario.Name = "dgvConsultaFuncionario";
             this.dgvConsultaFuncionario.Size = new System.Drawing.Size(489, 347);
             this.dgvConsultaFuncionario.TabIndex = 0;
+            this.dgvConsultaFuncionario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultaFuncionario_CellContentClick);
             // 
             // label1
             // 
@@ -88,6 +89,7 @@
             this.label3.Size = new System.Drawing.Size(515, 44);
             this.label3.TabIndex = 15;
             this.label3.Text = "Consultar Colaborador";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // FrmConsultarFuncionarios
             // 
@@ -103,6 +105,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarFuncionarios";
             this.Text = "FrmConsultarFuncionarios";
+            this.Load += new System.EventHandler(this.FrmConsultarFuncionarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaFuncionario)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

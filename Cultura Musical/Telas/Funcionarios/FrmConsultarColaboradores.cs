@@ -38,5 +38,20 @@ namespace Cultura_Musical.Telas.Funcionario
 
             dgvConsultaFuncionario.DataSource = funcionario;
         }
+
+        private void FrmConsultarFuncionarios_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvConsultaFuncionario_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
