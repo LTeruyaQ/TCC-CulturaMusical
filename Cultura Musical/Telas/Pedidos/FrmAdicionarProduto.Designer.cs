@@ -32,16 +32,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.txtProduto = new System.Windows.Forms.TextBox();
+            this.nudQtd = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.nudPreco = new System.Windows.Forms.NumericUpDown();
+            this.dtpCompra = new System.Windows.Forms.DateTimePicker();
+            this.cboFornecedor = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPreco)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -84,19 +84,19 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Data da compra:";
             // 
-            // textBox1
+            // txtProduto
             // 
-            this.textBox1.Location = new System.Drawing.Point(205, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 5;
+            this.txtProduto.Location = new System.Drawing.Point(205, 114);
+            this.txtProduto.Name = "txtProduto";
+            this.txtProduto.Size = new System.Drawing.Size(100, 20);
+            this.txtProduto.TabIndex = 5;
             // 
-            // numericUpDown1
+            // nudQtd
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(535, 114);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDown1.TabIndex = 6;
+            this.nudQtd.Location = new System.Drawing.Point(535, 114);
+            this.nudQtd.Name = "nudQtd";
+            this.nudQtd.Size = new System.Drawing.Size(100, 20);
+            this.nudQtd.TabIndex = 6;
             // 
             // label6
             // 
@@ -108,28 +108,28 @@
             this.label6.TabIndex = 8;
             this.label6.Text = "Preço:";
             // 
-            // numericUpDown2
+            // nudPreco
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(535, 177);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDown2.TabIndex = 9;
+            this.nudPreco.Location = new System.Drawing.Point(535, 177);
+            this.nudPreco.Name = "nudPreco";
+            this.nudPreco.Size = new System.Drawing.Size(100, 20);
+            this.nudPreco.TabIndex = 9;
             // 
-            // dateTimePicker1
+            // dtpCompra
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(382, 244);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker1.TabIndex = 11;
+            this.dtpCompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpCompra.Location = new System.Drawing.Point(382, 244);
+            this.dtpCompra.Name = "dtpCompra";
+            this.dtpCompra.Size = new System.Drawing.Size(100, 20);
+            this.dtpCompra.TabIndex = 11;
             // 
-            // comboBox1
+            // cboFornecedor
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(205, 178);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 12;
+            this.cboFornecedor.FormattingEnabled = true;
+            this.cboFornecedor.Location = new System.Drawing.Point(205, 181);
+            this.cboFornecedor.Name = "cboFornecedor";
+            this.cboFornecedor.Size = new System.Drawing.Size(100, 21);
+            this.cboFornecedor.TabIndex = 12;
             // 
             // button1
             // 
@@ -139,6 +139,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "Salvar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -157,12 +158,12 @@
             this.ClientSize = new System.Drawing.Size(685, 347);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.numericUpDown2);
+            this.Controls.Add(this.cboFornecedor);
+            this.Controls.Add(this.dtpCompra);
+            this.Controls.Add(this.nudPreco);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nudQtd);
+            this.Controls.Add(this.txtProduto);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -170,8 +171,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAdicionarProduto";
             this.Text = "FrmAdicionarProduto";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPreco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,12 +183,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.TextBox txtProduto;
+        private System.Windows.Forms.NumericUpDown nudQtd;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.NumericUpDown nudPreco;
+        private System.Windows.Forms.DateTimePicker dtpCompra;
+        private System.Windows.Forms.ComboBox cboFornecedor;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
     }

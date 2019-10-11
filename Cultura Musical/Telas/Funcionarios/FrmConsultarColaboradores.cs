@@ -19,7 +19,7 @@ namespace Cultura_Musical.Telas.Funcionario
 
         private void txtNomeFuncionário_TextChanged(object sender, EventArgs e)
         {
-            Database.tb_funcionario funcionario = new Database.tb_funcionario();
+            Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
             funcionario.nm_funcionario = txtNomeFuncionário.Text;
 
             Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
@@ -30,7 +30,7 @@ namespace Cultura_Musical.Telas.Funcionario
 
         private void txtCargo_TextChanged(object sender, EventArgs e)
         {
-            Database.tb_funcionario funcionario = new Database.tb_funcionario();
+            Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
             funcionario.cargo = txtCargo.Text;
 
             Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();

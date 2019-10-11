@@ -267,6 +267,12 @@
     <Compile Include="Telas\Inicialização\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Inicialização\frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Inicialização\frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Logistica\Fluxo de Caixa\FrmConsultarEntradasESaidas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -409,6 +415,9 @@
     <EmbeddedResource Include="Telas\Inicialização\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Inicialização\frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Logistica\Fluxo de Caixa\FrmConsultarEntradasESaidas.resx">
       <DependentUpon>FrmConsultarEntradasESaidas.cs</DependentUpon>
     </EmbeddedResource>
@@ -480,6 +489,12 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\basico.jpg" />
+    <None Include="Resources\sax.gif" />
+    <None Include="Resources\Violão_thumb[6].gif" />
+    <None Include="Resources\bateria.gif" />
+    <None Include="Resources\guitarra.gif" />
+    <None Include="Resources\instrumentos.gif" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

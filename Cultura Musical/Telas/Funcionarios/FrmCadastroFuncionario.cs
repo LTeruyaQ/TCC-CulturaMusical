@@ -24,7 +24,7 @@ namespace Cultura_Musical.Telas
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            Database.tb_funcionario funcionario = new Database.tb_funcionario();
+            Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
             funcionario.nm_funcionario = txtNome.Text;
             funcionario.vl_salario = Convert.ToDecimal(txtSalario.Text);
             funcionario.telefone = txtTelefone.Text;

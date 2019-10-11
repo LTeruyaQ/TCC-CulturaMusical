@@ -40,7 +40,7 @@
             // dgvConsultaFuncionario
             // 
             this.dgvConsultaFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsultaFuncionario.Location = new System.Drawing.Point(28, 105);
+            this.dgvConsultaFuncionario.Location = new System.Drawing.Point(50, 105);
             this.dgvConsultaFuncionario.Name = "dgvConsultaFuncionario";
             this.dgvConsultaFuncionario.Size = new System.Drawing.Size(489, 347);
             this.dgvConsultaFuncionario.TabIndex = 0;

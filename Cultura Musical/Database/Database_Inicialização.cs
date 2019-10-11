@@ -8,9 +8,9 @@ namespace Cultura_Musical.Database
 {
     class Database_Inicialização
     {
-        public void Cadastro(tb_login cadastro)
+        public void Cadastro(Database.Entity.tb_login cadastro)
         {
-            Database.cultura_musicalEntities db = new Database.cultura_musicalEntities();
+            Database.Entity.cultura_musicalEntities db = new Database.Entity.cultura_musicalEntities();
             db.tb_login.Add(cadastro);
             db.SaveChanges();
         }
