@@ -12,14 +12,21 @@ namespace Cultura_Musical.Database.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_login
+    public partial class tb_beneficio
     {
-        public int id_login { get; set; }
-        public string nm_usuario { get; set; }
-        public string sen_usuario { get; set; }
-        public System.DateTime dt_login { get; set; }
+        public tb_beneficio()
+        {
+            this.tb_folha_pagamento = new HashSet<tb_folha_pagamento>();
+        }
+    
+        public int id_beneficio { get; set; }
+        public decimal vt { get; set; }
+        public decimal va { get; set; }
+        public decimal vr { get; set; }
+        public decimal convenio { get; set; }
         public int id_funcionario { get; set; }
     
         public virtual tb_funcionario tb_funcionario { get; set; }
+        public virtual ICollection<tb_folha_pagamento> tb_folha_pagamento { get; set; }
     }
 }

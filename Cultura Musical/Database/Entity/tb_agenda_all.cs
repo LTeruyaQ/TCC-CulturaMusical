@@ -12,14 +12,15 @@ namespace Cultura_Musical.Database.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_login
+    public partial class tb_agenda_all
     {
-        public int id_login { get; set; }
-        public string nm_usuario { get; set; }
-        public string sen_usuario { get; set; }
-        public System.DateTime dt_login { get; set; }
-        public int id_funcionario { get; set; }
+        public int id_agenda_all { get; set; }
+        public Nullable<System.DateTime> dt_dia { get; set; }
+        public Nullable<System.DateTime> dt_semana { get; set; }
+        public Nullable<System.DateTime> dt_mes { get; set; }
+        public Nullable<System.DateTime> dt_ano { get; set; }
+        public int id_compromisso { get; set; }
     
-        public virtual tb_funcionario tb_funcionario { get; set; }
+        public virtual tb_compromisso tb_compromisso { get; set; }
     }
 }

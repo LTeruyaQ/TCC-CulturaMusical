@@ -12,14 +12,13 @@ namespace Cultura_Musical.Database.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_login
+    public partial class tb_compra_item
     {
-        public int id_login { get; set; }
-        public string nm_usuario { get; set; }
-        public string sen_usuario { get; set; }
-        public System.DateTime dt_login { get; set; }
-        public int id_funcionario { get; set; }
+        public int id_compra_item { get; set; }
+        public int tb_compra_id_compra { get; set; }
+        public int tb_produto_compra_id_produto_compra { get; set; }
     
-        public virtual tb_funcionario tb_funcionario { get; set; }
+        public virtual tb_compra tb_compra { get; set; }
+        public virtual tb_produto_compra tb_produto_compra { get; set; }
     }
 }

@@ -12,19 +12,22 @@ namespace Cultura_Musical.Database.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_produto_compra
+    public partial class tb_compra
     {
-        public tb_produto_compra()
+        public tb_compra()
         {
             this.tb_compra_item = new HashSet<tb_compra_item>();
             this.tb_estoque = new HashSet<tb_estoque>();
         }
     
-        public int id_produto_compra { get; set; }
-        public string nm_produto { get; set; }
-        public int vl_preco { get; set; }
+        public int id_compra { get; set; }
+        public System.DateTime dt_compra { get; set; }
+        public int qtd_produto { get; set; }
+        public decimal vl_compra { get; set; }
+        public int tb_fornecedor_id_fornecedor { get; set; }
     
         public virtual ICollection<tb_compra_item> tb_compra_item { get; set; }
+        public virtual tb_fornecedor tb_fornecedor { get; set; }
         public virtual ICollection<tb_estoque> tb_estoque { get; set; }
     }
 }
