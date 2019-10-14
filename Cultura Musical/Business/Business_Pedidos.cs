@@ -8,10 +8,19 @@ namespace Cultura_Musical.Business
 {
     class Business_Pedidos
     {
-        public void AdicionarPedido(Database.Entity.tb_produto_compra pedido,Database.Entity.tb_fornecedor forn)
+        public void AdicionarPedido(Database.Entity.tb_produto_compra pedido,Database.Entity.tb_fornecedor forn, Database.Entity.tb_compra compra)
         {
             Database.Database_Pedidos top = new Database.Database_Pedidos();
-            top.AdicionarPedido(pedido,forn);
+            top.AdicionarPedido(pedido,forn,compra);
+        }
+
+        public List<Database.Entity.tb_produto_compra> ListarPedido(string produto)
+        {
+            Database.Database_Pedidos pedido = new Database.Database_Pedidos();
+            List<Database.Entity.tb_produto_compra> con = pedido.ListarPedido(produto);
+
+            return con;
+
         }
     }
 }

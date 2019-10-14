@@ -15,10 +15,26 @@ namespace Cultura_Musical.Telas.Pedidos
         public FrmConsultarProdutos()
         {
             InitializeComponent();
+
+            string produto = txtProduto.Text;
+
+            Business.Business_Pedidos pedido = new Business.Business_Pedidos();
+            List<Database.Entity.tb_produto_compra> con = pedido.ListarPedido(produto);
+
+            dataGridView1.DataSource = con;
+
         }
 
+        
         private void FrmConsultarProdutos_Load(object sender, EventArgs e)
         {
+
+        }
+
+        public void txtProduto_TextChanged(object sender, EventArgs e)
+        {
+           
+
 
         }
     }

@@ -22,14 +22,16 @@ namespace Cultura_Musical.Telas.Pedidos
            
             Database.Entity.tb_produto_compra pedido  = new Database.Entity.tb_produto_compra();
             pedido.nm_produto = txtProduto.Text;
-            pedido.quantidade = Convert.ToInt32(nudQtd.Value);
-            pedido.preco = Convert.ToInt32(nudPreco.Value);
+            pedido.qtd_produto = Convert.ToInt32(nudQtd.Value);
+            pedido.vl_preco = Convert.ToInt32(nudPreco.Value);
+            Database.Entity.tb_compra compra = new Database.Entity.tb_compra();
+            compra.dt_compra = dtpCompra.Value; 
             Database.Entity.tb_fornecedor forn = new Database.Entity.tb_fornecedor();
-            pedido.tb_fornecedor.nm_fornecedor = cboFornecedor.Text;
+            forn.nm_fornecedor = cboFornecedor.Text;
             
 
             Business.Business_Pedidos top = new Business.Business_Pedidos();
-            top.AdicionarPedido(pedido,forn);
+            top.AdicionarPedido(pedido,forn,compra);
 
             MessageBox.Show("Salvo com sucesso");
         }

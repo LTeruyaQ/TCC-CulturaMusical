@@ -31,7 +31,7 @@ namespace Cultura_Musical.Telas.Funcionario
         private void txtCargo_TextChanged(object sender, EventArgs e)
         {
             Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
-            funcionario.cargo = txtCargo.Text;
+            funcionario.ds_cargo = txtCargo.Text;
 
             Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
             colaborador.Consultar(funcionario);

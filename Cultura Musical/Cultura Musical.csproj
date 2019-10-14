@@ -88,9 +88,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\tb_agenda_all.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Database\Entity\tb_beneficio.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -100,16 +97,10 @@
     <Compile Include="Database\Entity\tb_cliente_aula.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\tb_colaborador.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Database\Entity\tb_compra.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_compra_item.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_compromisso.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_conta.cs">
@@ -142,9 +133,6 @@
     <Compile Include="Database\Entity\tb_plano.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\tb_produto.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Database\Entity\tb_produto_compra.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -154,13 +142,7 @@
     <Compile Include="Database\Entity\tb_tipo_conta.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\tb_venda.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Database\Entity\tb_venda_plano.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_venda_produto.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -516,6 +498,7 @@
     <None Include="Resources\guitarra.gif" />
     <None Include="Resources\instrumentos.gif" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Database\Entity\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

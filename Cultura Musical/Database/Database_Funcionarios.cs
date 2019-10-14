@@ -10,14 +10,14 @@ namespace Cultura_Musical.Database
     {
         public void AdicionarFuncionario(Database.Entity.tb_funcionario funcionario)
         {
-            Database.Entity.mydbEntities1 db = new Database.Entity.mydbEntities1();
+            Database.Entity.mydbEntities2 db = new Database.Entity.mydbEntities2();
             db.tb_funcionario.Add(funcionario);
             db.SaveChanges();
         }
 
         public List<Database.Entity.tb_funcionario> Consultar (Database.Entity.tb_funcionario funcionario)
         {
-            Database.Entity.mydbEntities1 db = new Database.Entity.mydbEntities1();
+            Database.Entity.mydbEntities2 db = new Database.Entity.mydbEntities2();
 
             List<Database.Entity.tb_funcionario> lista = db.tb_funcionario.Where
                                                   (t => t.nm_funcionario == 
