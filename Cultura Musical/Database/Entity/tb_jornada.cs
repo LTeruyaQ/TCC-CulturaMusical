@@ -12,12 +12,13 @@ namespace Cultura_Musical.Database.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_login
+    public partial class tb_jornada
     {
-        public int id_login { get; set; }
-        public string nm_usuario { get; set; }
-        public string sen_usuario { get; set; }
-        public System.DateTime dt_login { get; set; }
+        public int id_jornada { get; set; }
+        public int qtd_falta { get; set; }
+        public decimal hr_extra { get; set; }
+        public System.TimeSpan hr_entrada { get; set; }
+        public System.TimeSpan hr_saida { get; set; }
         public int id_funcionario { get; set; }
     
         public virtual tb_funcionario tb_funcionario { get; set; }
