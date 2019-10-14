@@ -17,6 +17,9 @@ namespace Cultura_Musical.Telas.Pedidos
             InitializeComponent();
         }
 
- 
+        private void FrmConsultarProdutos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

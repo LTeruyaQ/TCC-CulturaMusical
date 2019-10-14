@@ -51,7 +51,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(488, 328);
             this.dataGridView1.TabIndex = 1;
-           
             // 
             // FrmConsultarProdutos
             // 
@@ -63,6 +62,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarProdutos";
             this.Text = "FrmConsultarProdutos";
+            this.Load += new System.EventHandler(this.FrmConsultarProdutos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

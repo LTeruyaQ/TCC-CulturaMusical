@@ -8,6 +8,12 @@ namespace Cultura_Musical.Business
 {
     class Business_Produtos
     {
+        public List<Database.Entity.tb_produto_compra> ListarProduto()
+        {
+            Database.Database_Produtos pro = new Database.Database_Produtos();
+            List<Database.Entity.tb_produto_compra> con = pro.ListarProduto();
 
+            return con;
+        }
     }
 }

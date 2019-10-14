@@ -16,5 +16,15 @@ namespace Cultura_Musical.Database
 
         
         }
+
+        public List<Database.Entity.tb_produto_compra> ListarProduto()
+        {
+            Database.Entity.cultura_musicalEntities db = new Entity.cultura_musicalEntities();
+
+            List<Database.Entity.tb_produto_compra> produto = db.tb_produto_compra.OrderBy(t => t.nm_produto).ToList();
+
+            return produto;
+        }
+
     }
 }

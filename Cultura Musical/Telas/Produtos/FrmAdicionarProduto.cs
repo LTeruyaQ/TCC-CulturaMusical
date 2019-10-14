@@ -16,5 +16,10 @@ namespace Cultura_Musical.Telas.Produtos
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
