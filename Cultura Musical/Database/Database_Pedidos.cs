@@ -10,6 +10,7 @@ namespace Cultura_Musical.Database
     {
         
 
+
         public void AdicionarPedido(Database.Entity.tb_produto_compra pedido,Database.Entity.tb_fornecedor forn, Database.Entity.tb_compra compra)
         {
             Database.Entity.mydbEntities2 db = new Database.Entity.mydbEntities2();
