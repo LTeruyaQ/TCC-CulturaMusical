@@ -53,7 +53,6 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastrar = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -72,6 +71,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.txtVR = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -288,16 +288,6 @@
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(154, 9);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(250, 24);
-            this.label14.TabIndex = 62;
-            this.label14.Text = "Cadastro de Funcionários";
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtCPF);
@@ -451,11 +441,22 @@
             this.label20.TabIndex = 76;
             this.label20.Text = "VR:";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Stencil", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(165, 9);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(212, 44);
+            this.label14.TabIndex = 78;
+            this.label14.Text = "CADASTRO";
+            // 
             // dtpNascimento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 503);
+            this.ClientSize = new System.Drawing.Size(545, 507);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.txtVR);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.txtVT);
@@ -471,7 +472,6 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label14);
             this.Controls.Add(this.dtpSaida);
             this.Controls.Add(this.dtpAlmoco);
             this.Controls.Add(this.dtpEntrada);
@@ -534,7 +534,6 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnCadastrar;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.RadioButton radioButton1;
@@ -553,5 +552,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtVR;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label14;
     }
 }

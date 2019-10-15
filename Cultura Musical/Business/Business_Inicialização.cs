@@ -8,7 +8,7 @@ namespace Cultura_Musical.Business
 {
     class Business_Inicialização
     {
-        public void Cadastro(Database.tb_login cadastro, string conf)
+        public void Cadastro(Database.Entity.tb_login cadastro, string conf)
         {
             if (conf != cadastro.sen_usuario)
             {

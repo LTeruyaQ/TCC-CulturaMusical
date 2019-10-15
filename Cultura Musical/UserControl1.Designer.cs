@@ -34,7 +34,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Location = new System.Drawing.Point(12, 16);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 23);
             this.button1.TabIndex = 0;
@@ -43,7 +43,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(0, 29);
+            this.button2.Location = new System.Drawing.Point(12, 83);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 23);
             this.button2.TabIndex = 1;
@@ -57,7 +57,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "UserControl1";
-            this.Size = new System.Drawing.Size(116, 358);
+            this.Size = new System.Drawing.Size(161, 386);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
 
