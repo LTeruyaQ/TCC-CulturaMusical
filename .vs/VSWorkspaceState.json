@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Cultura Musical",
+    "\\Cultura Musical\\bin",
+    "\\Cultura Musical\\obj",
+    "\\Cultura Musical\\Properties",
+    "\\Cultura Musical\\Telas",
+    "\\Cultura Musical\\Telas\\Agenda"
   ],
+  "SelectedNode": "\\Cultura Musical\\Telas\\Agenda\\FrmAlterarAgenda.cs",
   "PreviewInSolutionExplorer": false
 }
