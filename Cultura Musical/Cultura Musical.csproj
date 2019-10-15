@@ -66,8 +66,8 @@
     <Compile Include="Business\Business_Inicialização.cs" />
     <Compile Include="Business\Business_Logistica.cs" />
     <Compile Include="Business\Business_Pedidos.cs" />
+    <Compile Include="Business\Business_Planos.cs" />
     <Compile Include="Business\Business_Produtos.cs" />
-    <Compile Include="Business\Business_Vendas.cs" />
     <Compile Include="Database\Database_Agenda.cs" />
     <Compile Include="Database\Database_CRM.cs" />
     <Compile Include="Database\Database_Fornecedores.cs" />
@@ -76,6 +76,7 @@
     <Compile Include="Database\Database_Inicialização.cs" />
     <Compile Include="Database\Database_Logistica.cs" />
     <Compile Include="Database\Database_Pedidos.cs" />
+    <Compile Include="Database\Database_Planos.cs" />
     <Compile Include="Database\Database_Produtos.cs" />
     <Compile Include="Database\Database_Vendas.cs" />
     <Compile Include="Database\Entity\Model1.Context.cs">
@@ -326,6 +327,12 @@
     <Compile Include="Telas\Pedidos\FrmConsultarProdutos.Designer.cs">
       <DependentUpon>FrmConsultarProdutos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Planos\FrmVendaPlano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Planos\FrmVendaPlano.Designer.cs">
+      <DependentUpon>FrmVendaPlano.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Produtos\FrmAdicionarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -452,6 +459,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Pedidos\FrmConsultarProdutos.resx">
       <DependentUpon>FrmConsultarProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Planos\FrmVendaPlano.resx">
+      <DependentUpon>FrmVendaPlano.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Produtos\FrmAdicionarProduto.resx">
       <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
