@@ -513,7 +513,9 @@
     <None Include="Resources\guitarra.gif" />
     <None Include="Resources\instrumentos.gif" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Database\Modelos\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Database\Entity\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
