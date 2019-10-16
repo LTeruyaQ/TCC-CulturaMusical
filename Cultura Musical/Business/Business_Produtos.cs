@@ -15,5 +15,13 @@ namespace Cultura_Musical.Business
 
             return con;
         }
+
+        public void AlterarProduto(Database.Entity.tb_produto_compra altproduto)
+        {
+            Database.Database_Produtos pro = new Database.Database_Produtos();
+            pro.AlterarProduto(altproduto);
+        }
+
     }
 }
+

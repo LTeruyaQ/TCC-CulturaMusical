@@ -17,9 +17,11 @@ namespace Cultura_Musical.Telas.Pedidos
             InitializeComponent();
 
             string produto = txtProduto.Text;
+            DateTime data = dtpCompra.Value;
+            
 
             Business.Business_Pedidos pedido = new Business.Business_Pedidos();
-            List<Database.Entity.tb_produto_compra> con = pedido.ListarPedido(produto);
+            List<Database.Entity.tb_produto_compra> con = pedido.ListarPedido(produto,data);
 
             dataGridView1.DataSource = con;
 

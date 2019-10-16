@@ -14,10 +14,10 @@ namespace Cultura_Musical.Business
             top.AdicionarPedido(pedido,forn,compra);
         }
 
-        public List<Database.Entity.tb_produto_compra> ListarPedido(string produto)
+        public List<Database.Entity.tb_produto_compra> ListarPedido(string produto, DateTime data)
         {
             Database.Database_Pedidos pedido = new Database.Database_Pedidos();
-            List<Database.Entity.tb_produto_compra> con = pedido.ListarPedido(produto);
+            List<Database.Entity.tb_produto_compra> con = pedido.ListarPedido(produto,data);
 
             return con;
 

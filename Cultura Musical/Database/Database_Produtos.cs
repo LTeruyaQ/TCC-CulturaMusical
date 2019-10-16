@@ -16,7 +16,7 @@ namespace Cultura_Musical.Database
             DB.SaveChanges();
         }
 
-        public List<Entity.tb_produto_compra> ListarTodos()
+        public List<Entity.tb_produto_compra> ListarProduto()
         {
             List<Entity.tb_produto_compra> produtos = DB.tb_produto_compra.ToList();
             return produtos;
@@ -51,6 +51,19 @@ namespace Cultura_Musical.Database
             DB.SaveChanges();
         }
 
+        public void AlterarProduto(Database.Entity.tb_produto_compra altproduto)
+        {
+            Database.Entity.mydbEntities2 db = new Entity.mydbEntities2();
+
+            Database.Entity.tb_produto_compra alterar = db.tb_produto_compra.First(t => t.nm_produto == altproduto.nm_produto);
+            alterar.qtd_produto = altproduto.qtd_produto;
+            alterar.nm_produto = altproduto.nm_produto;
+
+            
+
+
+
+        }
 
  
 

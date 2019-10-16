@@ -20,10 +20,16 @@ namespace Cultura_Musical.Database
             db.SaveChanges();
         }
 
-        public List<Database.Entity.tb_produto_compra> ListarPedido(string produto)
+        public List<Database.Entity.tb_produto_compra> ListarPedido(string produto, DateTime data)
         {
             Database.Entity.mydbEntities2 db = new Entity.mydbEntities2();
-            List<Database.Entity.tb_produto_compra> pedido = db.tb_produto_compra.Where(t => t.nm_produto == produto).ToList();
+            List<Database.Entity.tb_produto_compra> pedido = db.tb_produto_compra.Where(t => t.nm_produto == produto && t.dt_compra == data
+            ,
+            
+            
+            
+            
+            ).ToList();
 
             return pedido;
         }
