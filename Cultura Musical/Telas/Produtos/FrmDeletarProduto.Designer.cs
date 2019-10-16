@@ -31,11 +31,12 @@
             this.cboProduto = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbCertezas = new System.Windows.Forms.GroupBox();
             this.btnNão = new System.Windows.Forms.Button();
             this.btnSim = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.btn = new System.Windows.Forms.Button();
+            this.gbCertezas.SuspendLayout();
             this.SuspendLayout();
             // 
             // cboProduto
@@ -67,17 +68,17 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "DELETAR PRODUTO";
             // 
-            // groupBox1
+            // gbCertezas
             // 
-            this.groupBox1.Controls.Add(this.btnNão);
-            this.groupBox1.Controls.Add(this.btnSim);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(57, 199);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(391, 110);
-            this.groupBox1.TabIndex = 34;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Visible = false;
+            this.gbCertezas.Controls.Add(this.btnNão);
+            this.gbCertezas.Controls.Add(this.btnSim);
+            this.gbCertezas.Controls.Add(this.label3);
+            this.gbCertezas.Location = new System.Drawing.Point(57, 199);
+            this.gbCertezas.Name = "gbCertezas";
+            this.gbCertezas.Size = new System.Drawing.Size(391, 110);
+            this.gbCertezas.TabIndex = 34;
+            this.gbCertezas.TabStop = false;
+            this.gbCertezas.Visible = false;
             // 
             // btnNão
             // 
@@ -87,6 +88,7 @@
             this.btnNão.TabIndex = 33;
             this.btnNão.Text = "Não";
             this.btnNão.UseVisualStyleBackColor = true;
+            this.btnNão.Click += new System.EventHandler(this.btnNão_Click);
             // 
             // btnSim
             // 
@@ -96,6 +98,7 @@
             this.btnSim.TabIndex = 32;
             this.btnSim.Text = "Sim";
             this.btnSim.UseVisualStyleBackColor = true;
+            this.btnSim.Click += new System.EventHandler(this.btnSim_Click);
             // 
             // label3
             // 
@@ -107,20 +110,30 @@
             this.label3.TabIndex = 31;
             this.label3.Text = "Tem certeza?";
             // 
+            // btn
+            // 
+            this.btn.Location = new System.Drawing.Point(219, 165);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(75, 23);
+            this.btn.TabIndex = 35;
+            this.btn.Text = "button1";
+            this.btn.UseVisualStyleBackColor = true;
+            // 
             // FrmDeletarProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 342);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btn);
+            this.Controls.Add(this.gbCertezas);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboProduto);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDeletarProduto";
             this.Text = "FrmDeletarProduto";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbCertezas.ResumeLayout(false);
+            this.gbCertezas.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,9 +143,10 @@
         private System.Windows.Forms.ComboBox cboProduto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbCertezas;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnNão;
         private System.Windows.Forms.Button btnSim;
+        private System.Windows.Forms.Button btn;
     }
 }
