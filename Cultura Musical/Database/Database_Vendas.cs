@@ -8,6 +8,39 @@ namespace Cultura_Musical.Database
 {
     class Database_Vendas
     {
+        Entity.mydbEntities2 DB = new Entity.mydbEntities2();
 
+
+        public void CadastrarNovoTipoDePlano(Entity.tb_venda_plano venda)
+        {
+            DB.tb_venda_plano.Add(venda);
+            DB.SaveChanges();
+        }
+
+        public List<Entity.tb_venda_plano> ListarTodos()
+        {
+            List<Entity.tb_venda_plano> vendas = DB.tb_venda_plano.ToList();
+            return vendas;
+        }
+
+        public void Alterar(Entity.tb_venda_plano vendas)
+        {
+            Entity.tb_venda_plano NovaVenda = DB.tb_venda_plano.FirstOrDefault(t => t.id_venda_plano == vendas.id_venda_plano);
+
+            NovaVenda.inicio = vendas.inicio;
+            NovaVenda.fim = vendas.fim;
+            NovaVenda.id_cliente = vendas.id_cliente;
+            NovaVenda.id_plano = vendas.id_plano;
+          
+            DB.SaveChanges();
+        }
+
+        public void Excluir(int id)
+        {
+            Entity.tb_venda_plano vendas = DB.tb_venda_plano.FirstOrDefault(t => t.id_venda_plano == id);
+
+            DB.tb_venda_plano.Remove(vendas);
+            DB.SaveChanges();
+        }
     }
 }
