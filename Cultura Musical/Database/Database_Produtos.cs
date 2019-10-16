@@ -33,26 +33,20 @@ namespace Cultura_Musical.Database
         {
             Entity.tb_produto_compra NovoProdutos = DB.tb_produto_compra.FirstOrDefault(t => t.id_produto_compra == produtos.id_produto_compra);
 
-
             NovoProdutos.nm_produto = produtos.nm_produto;
             NovoProdutos.qtd_produto = produtos.qtd_produto;
             NovoProdutos.vl_preco = produtos.vl_preco;
             NovoProdutos.id_fornecedor = produtos.id_fornecedor;
            
-
             DB.SaveChanges();
         }
 
-        public void Excluir(int id)
+        public void Remover(string produto)
         {
-            Entity.tb_fornecedor fornecedor = DB.tb_fornecedor.FirstOrDefault(t => t.id_fornecedor == id);
+            Entity.tb_produto_compra produtos = DB.tb_produto_compra.FirstOrDefault(t => t.nm_produto == produto);
 
-            DB.tb_fornecedor.Remove(fornecedor);
+            DB.tb_produto_compra.Remove(produtos);
             DB.SaveChanges();
         }
-
-
- 
-
     }
 }

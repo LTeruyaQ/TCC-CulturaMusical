@@ -29,5 +29,10 @@ namespace Cultura_Musical.Telas.Planos
 
             return lista;
         }
+
+        private void btnConfirmarPlano_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
