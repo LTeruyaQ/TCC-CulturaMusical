@@ -15,7 +15,7 @@ namespace Cultura_Musical.Business
         public List<Database.Entity.tb_produto_compra> ListarProduto()
         {
             
-            List<Database.Entity.tb_produto_compra> con = db.ListarTodos();
+            List<Database.Entity.tb_produto_compra> con = db.ListarProduto();
 
             return con;
         }
