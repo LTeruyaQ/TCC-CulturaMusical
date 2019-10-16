@@ -23,22 +23,34 @@ namespace Cultura_Musical.Database
             return funcionarios;
         }
 
-        public List<Entity.tb_produto_compra> ListarPorNome(string nome)
+        public List<Entity.tb_funcionario> ListarPorNome(string nome)
         {
-            List<Entity.tb_produto_compra> produtos = DB.tb_produto_compra.Where(T => T.nm_produto.Contains(nome))
+            List<Entity.tb_funcionario> funcionarios = DB.tb_funcionario.Where(T => T.nm_funcionario.Contains(nome))
                                                                       .ToList();
-            return produtos;
+            return funcionarios;
         }
 
-        public void Alterar(Entity.tb_produto_compra produtos)
+        public void Alterar(Entity.tb_funcionario funcionarios)
         {
-            Entity.tb_produto_compra NovoProdutos = DB.tb_produto_compra.FirstOrDefault(t => t.id_produto_compra == produtos.id_produto_compra);
+            Entity.tb_funcionario Novofuncionario = DB.tb_funcionario.FirstOrDefault(t => t.id_funcionario == funcionarios.id_funcionario);
 
 
-            NovoProdutos.nm_produto = produtos.nm_produto;
-            NovoProdutos.qtd_produto = produtos.qtd_produto;
-            NovoProdutos.vl_preco = produtos.vl_preco;
-            NovoProdutos.id_fornecedor = produtos.id_fornecedor;
+            Novofuncionario.nm_funcionario = funcionarios.nm_funcionario;
+            Novofuncionario.vl_salario = funcionarios.vl_salario;
+            Novofuncionario.ds_bairro = funcionarios.ds_bairro;
+            Novofuncionario.ds_cargo = funcionarios.ds_cargo;
+            Novofuncionario.ds_cep = funcionarios.ds_cep;
+            Novofuncionario.ds_cpf = funcionarios.ds_cpf;
+            Novofuncionario.ds_email = funcionarios.ds_email;
+            Novofuncionario.ds_estado = funcionarios.ds_estado;
+            Novofuncionario.ds_genero = funcionarios.ds_genero;
+            Novofuncionario.ds_prolabore = funcionarios.ds_prolabore;
+            Novofuncionario.ds_rg = funcionarios.ds_rg;
+            Novofuncionario.ds_rua = funcionarios.ds_rua;
+            Novofuncionario.ds_telefone = funcionarios.ds_telefone;
+            Novofuncionario.dt_contratacao = funcionarios.dt_contratacao;
+            Novofuncionario.dt_demicao = funcionarios.dt_demicao;
+            Novofuncionario.dt_nascimento = funcionarios.dt_nascimento;
 
 
             DB.SaveChanges();
@@ -46,9 +58,9 @@ namespace Cultura_Musical.Database
 
         public void Excluir(int id)
         {
-            Entity.tb_fornecedor fornecedor = DB.tb_fornecedor.FirstOrDefault(t => t.id_fornecedor == id);
+            Entity.tb_funcionario funcionario = DB.tb_funcionario.FirstOrDefault(t => t.id_funcionario == id);
 
-            DB.tb_fornecedor.Remove(fornecedor);
+            DB.tb_funcionario.Remove(funcionario);
             DB.SaveChanges();
         }
         public void AdicionarFuncionario(Database.Entity.tb_funcionario funcionario)
@@ -58,13 +70,13 @@ namespace Cultura_Musical.Database
             db.SaveChanges();
         }
 
-        public List<Database.Entity.tb_funcionario> Consultar (Database.Entity.tb_funcionario funcionario)
+       public List<Database.Entity.tb_funcionario> Consultar (Database.Entity.tb_funcionario funcionario)
         {
             Database.Entity.mydbEntities2 db = new Database.Entity.mydbEntities2();
 
             List<Database.Entity.tb_funcionario> lista = db.tb_funcionario.Where
-                                                  (t => t.nm_funcionario == 
-                                                  funcionario.nm_funcionario
+                                                 (t => t.nm_funcionario == 
+                                                 funcionario.nm_funcionario
                                                   && t.ds_cargo == funcionario.ds_cargo).ToList();
             return lista;
         }   
