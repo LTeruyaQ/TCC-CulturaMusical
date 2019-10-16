@@ -16,7 +16,6 @@ namespace Cultura_Musical.Database.Entity
     {
         public tb_produto_compra()
         {
-            this.tb_compra_item = new HashSet<tb_compra_item>();
             this.tb_estoque = new HashSet<tb_estoque>();
         }
     
@@ -24,9 +23,11 @@ namespace Cultura_Musical.Database.Entity
         public string nm_produto { get; set; }
         public int vl_preco { get; set; }
         public int qtd_produto { get; set; }
+        public bool ds_entregue { get; set; }
+        public Nullable<System.DateTime> dt_entrega { get; set; }
         public int id_fornecedor { get; set; }
+        public System.DateTime dt_compra { get; set; }
     
-        public virtual ICollection<tb_compra_item> tb_compra_item { get; set; }
         public virtual ICollection<tb_estoque> tb_estoque { get; set; }
         public virtual tb_fornecedor tb_fornecedor { get; set; }
     }

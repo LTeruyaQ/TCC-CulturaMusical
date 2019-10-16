@@ -9,14 +9,14 @@ namespace Cultura_Musical.Database
     class Database_Produtos
     {
 
-        Entity.mydbEntities2 DB = new Entity.mydbEntities2();
+        Entity.mydbEntities3 DB = new Entity.mydbEntities3();
         public void Cadastrar(Entity.tb_produto_compra produto)
         {
             DB.tb_produto_compra.Add(produto);
             DB.SaveChanges();
         }
 
-        public List<Entity.tb_produto_compra> ListarProduto()
+        public List<Entity.tb_produto_compra> ListarTodos()
         {
             List<Entity.tb_produto_compra> produtos = DB.tb_produto_compra.ToList();
             return produtos;
@@ -33,39 +33,20 @@ namespace Cultura_Musical.Database
         {
             Entity.tb_produto_compra NovoProdutos = DB.tb_produto_compra.FirstOrDefault(t => t.id_produto_compra == produtos.id_produto_compra);
 
-
             NovoProdutos.nm_produto = produtos.nm_produto;
             NovoProdutos.qtd_produto = produtos.qtd_produto;
             NovoProdutos.vl_preco = produtos.vl_preco;
             NovoProdutos.id_fornecedor = produtos.id_fornecedor;
            
-
             DB.SaveChanges();
         }
 
-        public void Excluir(int id)
+        public void Remover(string produto)
         {
-            Entity.tb_fornecedor fornecedor = DB.tb_fornecedor.FirstOrDefault(t => t.id_fornecedor == id);
+            Entity.tb_produto_compra produtos = DB.tb_produto_compra.FirstOrDefault(t => t.nm_produto == produto);
 
-            DB.tb_fornecedor.Remove(fornecedor);
+            DB.tb_produto_compra.Remove(produtos);
             DB.SaveChanges();
         }
-
-        public void AlterarProduto(Database.Entity.tb_produto_compra altproduto)
-        {
-            Database.Entity.mydbEntities2 db = new Entity.mydbEntities2();
-
-            Database.Entity.tb_produto_compra alterar = db.tb_produto_compra.First(t => t.nm_produto == altproduto.nm_produto);
-            alterar.qtd_produto = altproduto.qtd_produto;
-            alterar.nm_produto = altproduto.nm_produto;
-
-            
-
-
-
-        }
-
- 
-
     }
 }

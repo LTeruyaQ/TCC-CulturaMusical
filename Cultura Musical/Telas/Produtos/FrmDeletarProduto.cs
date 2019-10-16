@@ -16,5 +16,25 @@ namespace Cultura_Musical.Telas.Produtos
         {
             InitializeComponent();
         }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSim_Click(object sender, EventArgs e)
+        {
+            string produto = cboProduto.Text;
+
+            Business.Business_Produtos prod = new Business.Business_Produtos();
+            prod.Remover(produto);
+
+            MessageBox.Show("Excluído com sucesso!");
+        }
+
+        private void btnNão_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }
