@@ -17,22 +17,16 @@ namespace Cultura_Musical.Telas.Planos
             InitializeComponent();
 
             Database.Entity.tb_plano plano = new Database.Entity.tb_plano();
-            List<Database.Entity.tb_plano> lista = this.Planos();
+
+            Business.Business_Planos Bus = new Business.Business_Planos();
+
+
+
+            List<Database.Entity.tb_plano> lista = Bus.Plano();
             cboPlano.DisplayMember = nameof(plano.nm_plano);
             cboPlano.DataSource = lista;
         }
 
-        private List<Database.Entity.tb_plano> Planos()
-        {
-            Database.Entity.mydbEntities2 db = new Database.Entity.mydbEntities2();
-            List<Database.Entity.tb_plano> lista = db.tb_plano.Where(t=> t.nm_plano == 'ouro').ToList();
-
-            return lista;
-        }
-
-        private void btnConfirmarPlano_Click(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

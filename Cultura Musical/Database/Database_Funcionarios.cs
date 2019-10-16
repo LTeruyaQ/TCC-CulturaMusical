@@ -8,7 +8,7 @@ namespace Cultura_Musical.Database
 {
     class Database_Funcionarios
     {
-        Entity.mydbEntities2 DB = new Entity.mydbEntities2();
+        Entity.mydbEntities3 DB = new Entity.mydbEntities3();
 
 
         public void Cadastrar(Entity.tb_funcionario funcionario)
@@ -65,16 +65,15 @@ namespace Cultura_Musical.Database
         }
         public void AdicionarFuncionario(Database.Entity.tb_funcionario funcionario)
         {
-            Database.Entity.mydbEntities2 db = new Database.Entity.mydbEntities2();
-            db.tb_funcionario.Add(funcionario);
-            db.SaveChanges();
+            
+            DB.tb_funcionario.Add(funcionario);
+            DB.SaveChanges();
         }
 
        public List<Database.Entity.tb_funcionario> Consultar (Database.Entity.tb_funcionario funcionario)
         {
-            Database.Entity.mydbEntities2 db = new Database.Entity.mydbEntities2();
-
-            List<Database.Entity.tb_funcionario> lista = db.tb_funcionario.Where
+           
+            List<Database.Entity.tb_funcionario> lista = DB.tb_funcionario.Where
                                                  (t => t.nm_funcionario == 
                                                  funcionario.nm_funcionario
                                                   && t.ds_cargo == funcionario.ds_cargo).ToList();

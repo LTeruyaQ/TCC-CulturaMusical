@@ -8,10 +8,11 @@ namespace Cultura_Musical.Business
 {
     class Business_Planos
     {
+        Database.Database_Planos db = new Database.Database_Planos();
         public List<Database.Entity.tb_plano> Plano ()
         {
-            Database.Database_Planos db = new Database.Database_Planos();
-            List<Database.Entity.tb_plano> lista = db.listar();
+            
+            List<Database.Entity.tb_plano> lista = db.ListarTodos();
 
             return lista;
         }   

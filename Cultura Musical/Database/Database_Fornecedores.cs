@@ -8,7 +8,7 @@ namespace Cultura_Musical.Database
 {
     class Database_Fornecedores
     {
-        Entity.mydbEntities2 DB = new Entity.mydbEntities2();
+        Entity.mydbEntities3 DB = new Entity.mydbEntities3();
         public void cadastrar(Entity.tb_fornecedor fornecedor)
         {
             DB.tb_fornecedor.Add(fornecedor);

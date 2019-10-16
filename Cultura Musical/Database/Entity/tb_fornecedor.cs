@@ -23,6 +23,7 @@ namespace Cultura_Musical.Database.Entity
         public string nm_fornecedor { get; set; }
         public string tell_contato { get; set; }
         public string tell_contato2 { get; set; }
+        public string ds_email { get; set; }
         public string rua { get; set; }
         public string estado { get; set; }
         public string cidade { get; set; }
