@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -59,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\Business_Agenda.cs" />
+    <Compile Include="Business\Business_Cliente.cs" />
     <Compile Include="Business\Business_CRM.cs" />
     <Compile Include="Business\Business_Fornecedores.cs" />
     <Compile Include="Business\Business_Funcionarios.cs" />
@@ -69,6 +67,7 @@
     <Compile Include="Business\Business_Planos.cs" />
     <Compile Include="Business\Business_Produtos.cs" />
     <Compile Include="Database\Database_Agenda.cs" />
+    <Compile Include="Database\Database_Cliente.cs" />
     <Compile Include="Database\Database_CRM.cs" />
     <Compile Include="Database\Database_Fornecedores.cs" />
     <Compile Include="Database\Database_Funcionarios.cs" />
@@ -79,77 +78,71 @@
     <Compile Include="Database\Database_Planos.cs" />
     <Compile Include="Database\Database_Produtos.cs" />
     <Compile Include="Database\Database_Vendas.cs" />
-    <Compile Include="Database\Entity\Model1.Context.cs">
+    <Compile Include="Database\Entity\Entity Database.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
+      <DependentUpon>Entity Database.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\Model1.cs">
+    <Compile Include="Database\Entity\Entity Database.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\Model1.Designer.cs">
+    <Compile Include="Database\Entity\Entity Database.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>Entity Database.edmx</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_beneficio.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_cliente.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_cliente_aula.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_compra.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_compra_item.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_conta.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_estoque.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_financeiro.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_folha_pagamento.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_fornecedor.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_funcionario.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_holerite.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_jornada.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_login.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_plano.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_produto_compra.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_sala.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_tipo_conta.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_venda_plano.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -478,12 +471,12 @@
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Database\Entity\Model1.edmx">
+    <EntityDeploy Include="Database\Entity\Entity Database.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>Entity Database.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Database\Entity\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <None Include="Database\Entity\Entity Database.edmx.diagram">
+      <DependentUpon>Entity Database.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -517,15 +510,15 @@
     <Folder Include="Database\Modelos\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database\Entity\Model1.Context.tt">
+    <Content Include="Database\Entity\Entity Database.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Entity Database.edmx</DependentUpon>
+      <LastGenOutput>Entity Database.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Database\Entity\Model1.tt">
+    <Content Include="Database\Entity\Entity Database.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
+      <DependentUpon>Entity Database.edmx</DependentUpon>
+      <LastGenOutput>Entity Database.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

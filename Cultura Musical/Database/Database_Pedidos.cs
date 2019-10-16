@@ -8,22 +8,22 @@ namespace Cultura_Musical.Database
 {
     class Database_Pedidos
     {
-        
 
+        Entity.mydbEntities3 DB = new Entity.mydbEntities3();
 
-        public void AdicionarPedido(Database.Entity.tb_produto_compra pedido,Database.Entity.tb_fornecedor forn, Database.Entity.tb_compra compra)
+        public void AdicionarPedido(Database.Entity.tb_produto_compra pedido,Database.Entity.tb_fornecedor forn, Database.Entity.tb_produto_compra compra)
         {
-            Database.Entity.mydbEntities2 db = new Database.Entity.mydbEntities2();
-            db.tb_produto_compra.Add(pedido);
-            db.tb_fornecedor.Add(forn);
-            db.tb_compra.Add(compra);
-            db.SaveChanges();
+            
+            DB.tb_produto_compra.Add(pedido);
+            DB.tb_fornecedor.Add(forn);
+            DB.tb_produto_compra.Add(compra);
+            DB.SaveChanges();
         }
 
         public List<Database.Entity.tb_produto_compra> ListarPedido(string produto)
         {
-            Database.Entity.mydbEntities2 db = new Entity.mydbEntities2();
-            List<Database.Entity.tb_produto_compra> pedido = db.tb_produto_compra.Where(t => t.nm_produto == produto).ToList();
+            
+            List<Database.Entity.tb_produto_compra> pedido = DB.tb_produto_compra.Where(t => t.nm_produto == produto).ToList();
 
             return pedido;
         }

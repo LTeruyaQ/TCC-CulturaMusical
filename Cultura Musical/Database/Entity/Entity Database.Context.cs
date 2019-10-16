@@ -13,10 +13,10 @@ namespace Cultura_Musical.Database.Entity
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class mydbEntities2 : DbContext
+    public partial class mydbEntities3 : DbContext
     {
-        public mydbEntities2()
-            : base("name=mydbEntities2")
+        public mydbEntities3()
+            : base("name=mydbEntities3")
         {
         }
     
@@ -28,8 +28,6 @@ namespace Cultura_Musical.Database.Entity
         public DbSet<tb_beneficio> tb_beneficio { get; set; }
         public DbSet<tb_cliente> tb_cliente { get; set; }
         public DbSet<tb_cliente_aula> tb_cliente_aula { get; set; }
-        public DbSet<tb_compra> tb_compra { get; set; }
-        public DbSet<tb_compra_item> tb_compra_item { get; set; }
         public DbSet<tb_conta> tb_conta { get; set; }
         public DbSet<tb_estoque> tb_estoque { get; set; }
         public DbSet<tb_financeiro> tb_financeiro { get; set; }

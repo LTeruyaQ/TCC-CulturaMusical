@@ -9,7 +9,7 @@ namespace Cultura_Musical.Database
     class Database_Produtos
     {
 
-        Entity.mydbEntities2 DB = new Entity.mydbEntities2();
+        Entity.mydbEntities3 DB = new Entity.mydbEntities3();
         public void Cadastrar(Entity.tb_produto_compra produto)
         {
             DB.tb_produto_compra.Add(produto);
