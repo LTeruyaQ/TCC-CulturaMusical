@@ -87,6 +87,7 @@
             this.btnConfirmarPlano.TabIndex = 7;
             this.btnConfirmarPlano.Text = "Confirmar Plano";
             this.btnConfirmarPlano.UseVisualStyleBackColor = true;
+            this.btnConfirmarPlano.Click += new System.EventHandler(this.btnConfirmarPlano_Click);
             // 
             // cboPlano
             // 
