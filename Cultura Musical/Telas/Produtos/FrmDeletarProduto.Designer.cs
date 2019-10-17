@@ -35,7 +35,7 @@
             this.btnNão = new System.Windows.Forms.Button();
             this.btnSim = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.btn = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.gbCertezas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +73,7 @@
             this.gbCertezas.Controls.Add(this.btnNão);
             this.gbCertezas.Controls.Add(this.btnSim);
             this.gbCertezas.Controls.Add(this.label3);
-            this.gbCertezas.Location = new System.Drawing.Point(57, 199);
+            this.gbCertezas.Location = new System.Drawing.Point(74, 205);
             this.gbCertezas.Name = "gbCertezas";
             this.gbCertezas.Size = new System.Drawing.Size(391, 110);
             this.gbCertezas.TabIndex = 34;
@@ -110,27 +110,29 @@
             this.label3.TabIndex = 31;
             this.label3.Text = "Tem certeza?";
             // 
-            // btn
+            // btnExcluir
             // 
-            this.btn.Location = new System.Drawing.Point(219, 165);
-            this.btn.Name = "btn";
-            this.btn.Size = new System.Drawing.Size(75, 23);
-            this.btn.TabIndex = 35;
-            this.btn.Text = "button1";
-            this.btn.UseVisualStyleBackColor = true;
+            this.btnExcluir.Location = new System.Drawing.Point(233, 160);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.TabIndex = 35;
+            this.btnExcluir.Text = "Excluir";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // FrmDeletarProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(506, 342);
-            this.Controls.Add(this.btn);
+            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.gbCertezas);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cboProduto);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmDeletarProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmDeletarProduto";
             this.gbCertezas.ResumeLayout(false);
             this.gbCertezas.PerformLayout();
@@ -147,6 +149,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnNão;
         private System.Windows.Forms.Button btnSim;
-        private System.Windows.Forms.Button btn;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }

@@ -43,11 +43,11 @@ namespace Cultura_Musical.Database
             DB.SaveChanges();
         }
 
-        public void Excluir(int id)
+        public void Excluir(string produto)
         {
-            Entity.tb_fornecedor fornecedor = DB.tb_fornecedor.FirstOrDefault(t => t.id_fornecedor == id);
+            Entity.tb_produto_compra pro = DB.tb_produto_compra.FirstOrDefault(t => t.nm_produto == produto);
 
-            DB.tb_fornecedor.Remove(fornecedor);
+            DB.tb_produto_compra.Remove(pro);
             DB.SaveChanges();
         }
 

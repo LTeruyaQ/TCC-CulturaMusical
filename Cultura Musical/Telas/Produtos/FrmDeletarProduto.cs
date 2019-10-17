@@ -24,10 +24,10 @@ namespace Cultura_Musical.Telas.Produtos
 
         private void btnSim_Click(object sender, EventArgs e)
         {
-            string produto = comboBox2.Text;
+            string produto = cboProduto.Text;
 
             Business.Business_Produtos prod = new Business.Business_Produtos();
-            //prod.(produto);
+            prod.Remover(produto);
 
             MessageBox.Show("Excluído com sucesso!");
         }
@@ -35,6 +35,11 @@ namespace Cultura_Musical.Telas.Produtos
         private void btnNão_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            gbCertezas.Visible = true;
         }
     }
 }

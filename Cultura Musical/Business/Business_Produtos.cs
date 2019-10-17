@@ -26,6 +26,12 @@ namespace Cultura_Musical.Business
             pro.AlterarProduto(altproduto);
         }
 
+        public void Remover(string produto)
+        {
+            Database.Database_Produtos pro = new Database.Database_Produtos();
+            pro.Excluir(produto);
+
+        }
     }
 }
 

@@ -9,9 +9,10 @@ namespace Cultura_Musical.Database
     class Database_Fornecedores
     {
         Entity.mydbEntities3 DB = new Entity.mydbEntities3();
-        public void cadastrar(Entity.tb_fornecedor fornecedor)
+        public void cadastrar( Entity.tb_produto_compra prod,Entity.tb_fornecedor forn)
         {
-            DB.tb_fornecedor.Add(fornecedor);
+            DB.tb_fornecedor.Add(forn);
+            DB.tb_produto_compra.Add(prod);
             DB.SaveChanges();
         }
 
@@ -38,17 +39,23 @@ namespace Cultura_Musical.Database
             NovoFornecedor.tb_produto_compra = fornecedor.tb_produto_compra;
             NovoFornecedor.tell_contato = fornecedor.tell_contato;
             NovoFornecedor.tell_contato2 = fornecedor.tell_contato2;
+            NovoFornecedor.bairro = fornecedor.bairro;
+            NovoFornecedor.cep = fornecedor.cep;
+            NovoFornecedor.cidade = fornecedor.cidade;
+            NovoFornecedor.ds_email = fornecedor.ds_email;
 
             DB.SaveChanges();
         }
 
-        public void excluir(int id)
+        public void excluir(string nome)
         {
-            Entity.tb_fornecedor fornecedor = DB.tb_fornecedor.FirstOrDefault(t => t.id_fornecedor == id);
+            Entity.tb_fornecedor fornecedor = DB.tb_fornecedor.FirstOrDefault(t => t.nm_fornecedor == nome);
 
             DB.tb_fornecedor.Remove(fornecedor);
             DB.SaveChanges();
         }
+
+       
 
     }
 }

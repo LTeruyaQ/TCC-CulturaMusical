@@ -20,7 +20,6 @@ namespace Cultura_Musical.Business
             List<Database.Entity.tb_produto_compra> con = pedido.ListarPedido(produto,data);
 
             return con;
-
         }
     }
 }
