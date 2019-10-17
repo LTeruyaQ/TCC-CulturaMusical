@@ -170,6 +170,7 @@
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAdicionarProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAdicionarProduto";
             ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPreco)).EndInit();

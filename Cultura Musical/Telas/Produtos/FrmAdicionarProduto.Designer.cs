@@ -105,6 +105,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAdicionarProduto";
             this.Text = "FrmAdicionarProduto";
+            this.Load += new System.EventHandler(this.FrmAdicionarProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

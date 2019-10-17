@@ -298,3 +298,4 @@ C:\Users\lucas\Source\Repos\tcc-cultura-musical18\Cultura Musical\bin\Debug\Cult
 C:\Users\lucas\Source\Repos\tcc-cultura-musical18\Cultura Musical\bin\Debug\EntityFramework.dll
 C:\Users\lucas\Source\Repos\tcc-cultura-musical18\Cultura Musical\bin\Debug\EntityFramework.xml
 C:\Users\lucas\Source\Repos\tcc-cultura-musical18\Cultura Musical\obj\Debug\Cultura Musical.csproj.CopyComplete
+C:\Users\infoc24\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Fornecedores.frmAlterarFornecedores.resources
