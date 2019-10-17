@@ -20,7 +20,6 @@ namespace Cultura_Musical.Database.Entity
         public int id_compra { get; set; }
         public int id_produto_compra { get; set; }
     
-        public virtual tb_compra tb_compra { get; set; }
         public virtual tb_produto_compra tb_produto_compra { get; set; }
     }
 }

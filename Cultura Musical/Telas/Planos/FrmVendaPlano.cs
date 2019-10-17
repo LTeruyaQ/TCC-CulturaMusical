@@ -21,13 +21,20 @@ namespace Cultura_Musical.Telas.Planos
             cboPlano.DisplayMember = nameof(plano.nm_plano);
             cboPlano.DataSource = lista;
         }
+         Database.Entity.mydbEntities3 DB = new Database.Entity.mydbEntities3();
+
 
         private List<Database.Entity.tb_plano> Planos()
         {
-            Database.Entity.mydbEntities2 db = new Database.Entity.mydbEntities2();
-            List<Database.Entity.tb_plano> lista = db.tb_plano.Where(t=> t.nm_plano == 'ouro').ToList();
+          
+            List<Database.Entity.tb_plano> lista = DB.tb_plano.Where(t=> t.nm_plano == "ouro").ToList();
 
             return lista;
+        }
+
+        private void btnConfirmarPlano_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

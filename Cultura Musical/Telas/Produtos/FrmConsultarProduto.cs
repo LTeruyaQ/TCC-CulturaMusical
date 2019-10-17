@@ -31,7 +31,7 @@ namespace Cultura_Musical.Telas.Produtos
 
         private void FrmConsultarProduto_Load(object sender, EventArgs e)
         {
-
+         
         }
     }
 }

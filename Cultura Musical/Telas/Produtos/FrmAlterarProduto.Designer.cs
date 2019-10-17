@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nudQtd = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboProduto = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cboProdutoAlt = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,13 +49,14 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "Salvar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // numericUpDown1
+            // nudQtd
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(483, 28);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDown1.TabIndex = 19;
+            this.nudQtd.Location = new System.Drawing.Point(483, 28);
+            this.nudQtd.Name = "nudQtd";
+            this.nudQtd.Size = new System.Drawing.Size(100, 20);
+            this.nudQtd.TabIndex = 19;
             // 
             // label3
             // 
@@ -87,13 +88,14 @@
             this.label1.TabIndex = 25;
             this.label1.Text = "Alterar Produto";
             // 
-            // comboBox2
+            // cboProduto
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(304, 119);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 26;
+            this.cboProduto.FormattingEnabled = true;
+            this.cboProduto.Location = new System.Drawing.Point(304, 119);
+            this.cboProduto.Name = "cboProduto";
+            this.cboProduto.Size = new System.Drawing.Size(121, 21);
+            this.cboProduto.TabIndex = 26;
+            this.cboProduto.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -105,20 +107,20 @@
             this.label7.TabIndex = 27;
             this.label7.Text = "Produto:";
             // 
-            // comboBox3
+            // cboProdutoAlt
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(117, 31);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 28;
+            this.cboProdutoAlt.FormattingEnabled = true;
+            this.cboProdutoAlt.Location = new System.Drawing.Point(117, 31);
+            this.cboProdutoAlt.Name = "cboProdutoAlt";
+            this.cboProdutoAlt.Size = new System.Drawing.Size(121, 21);
+            this.cboProdutoAlt.TabIndex = 28;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.cboProdutoAlt);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.nudQtd);
             this.groupBox1.Location = new System.Drawing.Point(44, 158);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(608, 91);
@@ -133,7 +135,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 332);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cboProduto);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -141,7 +143,7 @@
             this.Name = "FrmAlterarProduto";
             this.Text = "FrmAlterarProduto";
             this.Load += new System.EventHandler(this.FrmAlterarProduto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -152,13 +154,13 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nudQtd;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cboProduto;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cboProdutoAlt;
         private System.Windows.Forms.GroupBox groupBox1;
     }
 }

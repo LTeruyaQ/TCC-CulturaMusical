@@ -24,7 +24,7 @@ namespace Cultura_Musical.Telas.Pedidos
             pedido.nm_produto = txtProduto.Text;
             pedido.qtd_produto = Convert.ToInt32(nudQtd.Value);
             pedido.vl_preco = Convert.ToInt32(nudPreco.Value);
-            Database.Entity.tb_compra compra = new Database.Entity.tb_compra();
+            Database.Entity.tb_produto_compra compra = new Database.Entity.tb_produto_compra();
             compra.dt_compra = dtpCompra.Value; 
             Database.Entity.tb_fornecedor forn = new Database.Entity.tb_fornecedor();
             forn.nm_fornecedor = cboFornecedor.Text;

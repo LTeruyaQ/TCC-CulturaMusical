@@ -9,14 +9,14 @@ namespace Cultura_Musical.Database
     class Database_Produtos
     {
 
-        Entity.mydbEntities2 DB = new Entity.mydbEntities2();
+        Entity.mydbEntities3 DB = new Entity.mydbEntities3();
         public void Cadastrar(Entity.tb_produto_compra produto)
         {
             DB.tb_produto_compra.Add(produto);
             DB.SaveChanges();
         }
 
-        public List<Entity.tb_produto_compra> ListarTodos()
+        public List<Entity.tb_produto_compra> ListarProduto()
         {
             List<Entity.tb_produto_compra> produtos = DB.tb_produto_compra.ToList();
             return produtos;
@@ -51,6 +51,19 @@ namespace Cultura_Musical.Database
             DB.SaveChanges();
         }
 
+        public void AlterarProduto(Database.Entity.tb_produto_compra altproduto)
+        {
+          
+
+            Database.Entity.tb_produto_compra alterar = DB.tb_produto_compra.First(t => t.nm_produto == altproduto.nm_produto);
+            alterar.qtd_produto = altproduto.qtd_produto;
+            alterar.nm_produto = altproduto.nm_produto;
+
+            
+
+
+
+        }
 
  
 
