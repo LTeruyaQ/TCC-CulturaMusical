@@ -231,7 +231,7 @@
           </Key>
           <Property Name="id_plano" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="nm_plano" Type="varchar" MaxLength="10" Nullable="false" />
-          <Property Name="duracao" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="duracao_mensal" Type="int" Nullable="false" />
           <Property Name="preco" Type="decimal" Precision="10" Scale="0" Nullable="false" />
           <Property Name="ds_descricao" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="qtd_aula_semana" Type="int" Nullable="false" />
@@ -704,18 +704,6 @@
           <Property Name="id_funcionario" Type="Int32" Nullable="false" />
           <NavigationProperty Name="tb_funcionario" Relationship="mydbModel1.fk_tb_holerite_tb_funcionario" FromRole="tb_holerite" ToRole="tb_funcionario" />
         </EntityType>
-        <EntityType Name="tb_plano">
-          <Key>
-            <PropertyRef Name="id_plano" />
-          </Key>
-          <Property Name="id_plano" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_plano" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="duracao" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="preco" Type="Decimal" Nullable="false" />
-          <Property Name="ds_descricao" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="qtd_aula_semana" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_venda_plano" Relationship="Self.fk_tb_venda_plano_tb_plano1" FromRole="tb_plano" ToRole="tb_venda_plano" />
-        </EntityType>
         <EntityType Name="tb_sala">
           <Key>
             <PropertyRef Name="id_sala" />
@@ -743,9 +731,9 @@
           <Property Name="id_cliente" Type="Int32" Nullable="false" />
           <Property Name="inicio" Type="DateTime" Nullable="false" />
           <Property Name="fim" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="tb_plano" Relationship="Self.fk_tb_venda_plano_tb_plano1" FromRole="tb_venda_plano" ToRole="tb_plano" />
           <NavigationProperty Name="tb_aula" Relationship="mydbModel1.fk_tb_cliente_aula_tb_venda_plano1" FromRole="tb_venda_plano" ToRole="tb_aula" />
           <NavigationProperty Name="tb_cliente" Relationship="mydbModel1.fk_tb_venda_plano_tb_cliente1" FromRole="tb_venda_plano" ToRole="tb_cliente" />
+          <NavigationProperty Name="tb_plano" Relationship="mydbModel1.fk_tb_venda_plano_tb_plano1" FromRole="tb_venda_plano" ToRole="tb_plano" />
         </EntityType>
         <Association Name="fk_tb_folha_pagamento_tb_beneficio1">
           <End Role="tb_beneficio" Type="Self.tb_beneficio" Multiplicity="1" />
@@ -771,25 +759,12 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_tb_venda_plano_tb_plano1">
-          <End Role="tb_plano" Type="Self.tb_plano" Multiplicity="1" />
-          <End Role="tb_venda_plano" Type="Self.tb_venda_plano" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tb_plano">
-              <PropertyRef Name="id_plano" />
-            </Principal>
-            <Dependent Role="tb_venda_plano">
-              <PropertyRef Name="id_plano" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="mydbEntities3" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
           <EntitySet Name="tb_conta" EntityType="Self.tb_conta" />
           <EntitySet Name="tb_financeiro" EntityType="Self.tb_financeiro" />
           <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" />
           <EntitySet Name="tb_holerite" EntityType="Self.tb_holerite" />
-          <EntitySet Name="tb_plano" EntityType="Self.tb_plano" />
           <EntitySet Name="tb_sala" EntityType="Self.tb_sala" />
           <EntitySet Name="tb_tipo_conta" EntityType="Self.tb_tipo_conta" />
           <EntitySet Name="tb_venda_plano" EntityType="Self.tb_venda_plano" />
@@ -800,10 +775,6 @@
           <AssociationSet Name="fk_tb_conta_tb_tipo_conta1" Association="Self.fk_tb_conta_tb_tipo_conta1">
             <End Role="tb_tipo_conta" EntitySet="tb_tipo_conta" />
             <End Role="tb_conta" EntitySet="tb_conta" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="Self.fk_tb_venda_plano_tb_plano1">
-            <End Role="tb_plano" EntitySet="tb_plano" />
-            <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
           </AssociationSet>
           <EntitySet Name="tb_agenda_all" EntityType="mydbModel1.tb_agenda_all" />
           <EntitySet Name="tb_aula" EntityType="mydbModel1.tb_aula" />
@@ -890,6 +861,11 @@
           </AssociationSet>
           <AssociationSet Name="fk_tb_venda_plano_tb_cliente1" Association="mydbModel1.fk_tb_venda_plano_tb_cliente1">
             <End Role="tb_cliente" EntitySet="tb_cliente" />
+            <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
+          </AssociationSet>
+          <EntitySet Name="tb_plano" EntityType="mydbModel1.tb_plano" />
+          <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="mydbModel1.fk_tb_venda_plano_tb_plano1">
+            <End Role="tb_plano" EntitySet="tb_plano" />
             <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
           </AssociationSet>
         </EntityContainer>
@@ -1329,6 +1305,30 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="tb_plano">
+          <Key>
+            <PropertyRef Name="id_plano" />
+          </Key>
+          <Property Name="id_plano" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nm_plano" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="duracao_mensal" Type="Int32" Nullable="false" />
+          <Property Name="preco" Type="Decimal" Nullable="false" />
+          <Property Name="ds_descricao" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="qtd_aula_semana" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tb_venda_plano" Relationship="mydbModel1.fk_tb_venda_plano_tb_plano1" FromRole="tb_plano" ToRole="tb_venda_plano" />
+        </EntityType>
+        <Association Name="fk_tb_venda_plano_tb_plano1">
+          <End Type="mydbModel1.tb_plano" Role="tb_plano" Multiplicity="1" />
+          <End Type="mydbModel1.tb_venda_plano" Role="tb_venda_plano" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_plano">
+              <PropertyRef Name="id_plano" />
+            </Principal>
+            <Dependent Role="tb_venda_plano">
+              <PropertyRef Name="id_plano" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1387,18 +1387,6 @@
                 <ScalarProperty Name="salario_liquido" ColumnName="salario_liquido" />
                 <ScalarProperty Name="falta_mes" ColumnName="falta_mes" />
                 <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="tb_plano">
-            <EntityTypeMapping TypeName="mydbModel1.tb_plano">
-              <MappingFragment StoreEntitySet="tb_plano">
-                <ScalarProperty Name="id_plano" ColumnName="id_plano" />
-                <ScalarProperty Name="nm_plano" ColumnName="nm_plano" />
-                <ScalarProperty Name="duracao" ColumnName="duracao" />
-                <ScalarProperty Name="preco" ColumnName="preco" />
-                <ScalarProperty Name="ds_descricao" ColumnName="ds_descricao" />
-                <ScalarProperty Name="qtd_aula_semana" ColumnName="qtd_aula_semana" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1633,6 +1621,18 @@
                 <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
                 <ScalarProperty Name="nm_cliente" ColumnName="nm_cliente" />
                 <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_plano">
+            <EntityTypeMapping TypeName="mydbModel1.tb_plano">
+              <MappingFragment StoreEntitySet="tb_plano">
+                <ScalarProperty Name="qtd_aula_semana" ColumnName="qtd_aula_semana" />
+                <ScalarProperty Name="ds_descricao" ColumnName="ds_descricao" />
+                <ScalarProperty Name="preco" ColumnName="preco" />
+                <ScalarProperty Name="duracao_mensal" ColumnName="duracao_mensal" />
+                <ScalarProperty Name="nm_plano" ColumnName="nm_plano" />
+                <ScalarProperty Name="id_plano" ColumnName="id_plano" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

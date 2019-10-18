@@ -30,7 +30,7 @@ public partial class tb_plano
 
     public string nm_plano { get; set; }
 
-    public string duracao { get; set; }
+    public int duracao_mensal { get; set; }
 
     public decimal preco { get; set; }
 

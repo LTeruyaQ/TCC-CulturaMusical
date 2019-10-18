@@ -38,11 +38,11 @@ public partial class tb_venda_plano
 
 
 
-    public virtual tb_plano tb_plano { get; set; }
-
     public virtual ICollection<tb_aula> tb_aula { get; set; }
 
     public virtual tb_cliente tb_cliente { get; set; }
+
+    public virtual tb_plano tb_plano { get; set; }
 
 }
 
