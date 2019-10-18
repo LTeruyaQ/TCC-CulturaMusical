@@ -9,9 +9,9 @@ namespace Cultura_Musical.Business
     class Business_Agenda
     {
         Database.Database_Agenda DB = new Database.Database_Agenda();
-        public void validacao (Database.Entity.tb_cliente_aula aula)
+        public void validacao (Database.Entity.tb_aula aula)
         {
-            DB.
+          //  DB.
         }
     }
 }
