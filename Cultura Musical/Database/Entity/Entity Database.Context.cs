@@ -42,8 +42,6 @@ public partial class mydbEntities3 : DbContext
 
     public DbSet<tb_holerite> tb_holerite { get; set; }
 
-    public DbSet<tb_plano> tb_plano { get; set; }
-
     public DbSet<tb_sala> tb_sala { get; set; }
 
     public DbSet<tb_tipo_conta> tb_tipo_conta { get; set; }
@@ -79,6 +77,8 @@ public partial class mydbEntities3 : DbContext
     public DbSet<tb_venda> tb_venda { get; set; }
 
     public DbSet<tb_cliente> tb_cliente { get; set; }
+
+    public DbSet<tb_plano> tb_plano { get; set; }
 
 }
 
