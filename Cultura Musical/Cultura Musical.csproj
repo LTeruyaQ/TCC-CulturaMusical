@@ -550,6 +550,8 @@
       <DependentUpon>Entity Database.edmx</DependentUpon>
       <LastGenOutput>Entity Database.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\giphy1.gif" />
+    <None Include="Resources\musica.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

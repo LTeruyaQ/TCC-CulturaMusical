@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="musica" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\musica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="sax" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sax.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -126,6 +129,9 @@
   </data>
   <data name="bateria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bateria.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="basico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\basico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="instrumentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\instrumentos.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,7 +142,7 @@
   <data name="guitarra" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\guitarra.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="basico" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\basico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="giphy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtCPF = new System.Windows.Forms.MaskedTextBox();
             this.txtRG = new System.Windows.Forms.MaskedTextBox();
             this.txt = new System.Windows.Forms.MaskedTextBox();
             this.txtCelular = new System.Windows.Forms.MaskedTextBox();
@@ -37,9 +36,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.dtpRegistro = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtSite = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -60,14 +56,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // txtCPF
-            // 
-            this.txtCPF.Location = new System.Drawing.Point(69, 495);
-            this.txtCPF.Mask = "00000000000";
-            this.txtCPF.Name = "txtCPF";
-            this.txtCPF.Size = new System.Drawing.Size(74, 20);
-            this.txtCPF.TabIndex = 65;
             // 
             // txtRG
             // 
@@ -134,31 +122,6 @@
             this.label14.Size = new System.Drawing.Size(90, 13);
             this.label14.TabIndex = 57;
             this.label14.Text = "Data de Registro:";
-            // 
-            // txtSite
-            // 
-            this.txtSite.Location = new System.Drawing.Point(277, 495);
-            this.txtSite.Name = "txtSite";
-            this.txtSite.Size = new System.Drawing.Size(74, 20);
-            this.txtSite.TabIndex = 56;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(274, 470);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(28, 13);
-            this.label13.TabIndex = 55;
-            this.label13.Text = "Site:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(66, 470);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 13);
-            this.label12.TabIndex = 54;
-            this.label12.Text = "CPF/CNPJ:";
             // 
             // txtEmail
             // 
@@ -323,9 +286,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(505, 536);
+            this.ClientSize = new System.Drawing.Size(513, 536);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.txtCPF);
             this.Controls.Add(this.txtRG);
             this.Controls.Add(this.txt);
             this.Controls.Add(this.txtCelular);
@@ -334,9 +296,6 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.dtpRegistro);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.txtSite);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label12);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label11);
@@ -364,8 +323,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.MaskedTextBox txtCPF;
         private System.Windows.Forms.MaskedTextBox txtRG;
         private System.Windows.Forms.MaskedTextBox txt;
         private System.Windows.Forms.MaskedTextBox txtCelular;
@@ -374,9 +331,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker dtpRegistro;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtSite;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label11;
