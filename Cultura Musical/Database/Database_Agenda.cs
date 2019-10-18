@@ -24,11 +24,16 @@ namespace Cultura_Musical.Database
             return agenda;
         }
 
-       public List<Entity.tb_cliente_aula> ListarPorHorario(DateTime data)
+       public List<Entity.tb_cliente_aula> ListarPorData(DateTime data)
         {
            List<Entity.tb_cliente_aula> agenda = DB.tb_cliente_aula.Where(T => T.dt_aula == data)
                                                                      .ToList();
             return agenda;
+        }
+
+        public Entity.tb_cliente_aula consultar (Entity.tb_cliente_aula aula)
+        {
+
         }
 
         public void alterar(Entity.tb_cliente_aula agenda)
