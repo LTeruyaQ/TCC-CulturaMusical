@@ -31,9 +31,34 @@ namespace Cultura_Musical.Database
             return agenda;
         }
 
-        public Entity.tb_aula consultar (Entity.tb_aula aula)
+        public Entity.tb_aula validaFuncionario (Entity.tb_aula aula)
         {
 
+            Entity.tb_aula confirmacao = DB.tb_aula.FirstOrDefault(t => t.dt_aula == aula.dt_aula
+            && t.hr_aula == aula.hr_aula
+            && t.id_funcionario == aula.id_funcionario);
+
+            return confirmacao;
+        }
+
+        public Entity.tb_aula validaCliente(Entity.tb_aula aula)
+        {
+
+            Entity.tb_aula confirmacao = DB.tb_aula.FirstOrDefault(t => t.dt_aula == aula.dt_aula
+            && t.hr_aula == aula.hr_aula
+            && t.id_cliente == aula.id_cliente);
+
+            return confirmacao;
+        }
+
+        public Entity.tb_aula validaSala(Entity.tb_aula aula)
+        {
+
+            Entity.tb_aula confirmacao = DB.tb_aula.FirstOrDefault(t => t.dt_aula == aula.dt_aula
+            && t.hr_aula == aula.hr_aula
+            && t.id_sala == aula.id_sala);
+
+            return confirmacao;
         }
 
         public void alterar(Entity.tb_aula agenda)

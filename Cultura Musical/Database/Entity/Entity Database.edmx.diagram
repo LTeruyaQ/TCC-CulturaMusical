@@ -10,13 +10,11 @@
         <EntityTypeShape EntityType="mydbModel1.tb_financeiro" Width="1.5" PointX="0.75" PointY="3.125" IsExpanded="true" />
         <EntityTypeShape EntityType="mydbModel1.tb_folha_pagamento" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
         <EntityTypeShape EntityType="mydbModel1.tb_holerite" Width="1.5" PointX="0.625" PointY="14.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="mydbModel1.tb_plano" Width="1.5" PointX="1.5" PointY="25.375" IsExpanded="true" />
         <EntityTypeShape EntityType="mydbModel1.tb_sala" Width="1.5" PointX="3.75" PointY="22.625" IsExpanded="true" />
         <EntityTypeShape EntityType="mydbModel1.tb_tipo_conta" Width="1.5" PointX="7.75" PointY="8.625" IsExpanded="true" />
         <EntityTypeShape EntityType="mydbModel1.tb_venda_plano" Width="1.5" PointX="3.75" PointY="25.375" IsExpanded="true" />
         <AssociationConnector Association="mydbModel1.fk_tb_folha_pagamento_tb_beneficio1" ManuallyRouted="false" />
         <AssociationConnector Association="mydbModel1.fk_tb_conta_tb_tipo_conta1" ManuallyRouted="false" />
-        <AssociationConnector Association="mydbModel1.fk_tb_venda_plano_tb_plano1" ManuallyRouted="false" />
         <EntityTypeShape EntityType="mydbModel1.tb_agenda_all" Width="1.5" PointX="10.875" PointY="1" />
         <EntityTypeShape EntityType="mydbModel1.tb_aula" Width="1.5" PointX="8.25" PointY="12.625" />
         <EntityTypeShape EntityType="mydbModel1.tb_colaborador" Width="1.5" PointX="13.625" PointY="0.75" />
@@ -50,6 +48,8 @@
         <EntityTypeShape EntityType="mydbModel1.tb_cliente" Width="1.5" PointX="5.25" PointY="12" />
         <AssociationConnector Association="mydbModel1.fk_tb_cliente_aula_tb_cliente1" />
         <AssociationConnector Association="mydbModel1.fk_tb_venda_plano_tb_cliente1" />
+        <EntityTypeShape EntityType="mydbModel1.tb_plano" Width="1.5" PointX="1.5" PointY="25.5" />
+        <AssociationConnector Association="mydbModel1.fk_tb_venda_plano_tb_plano1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
