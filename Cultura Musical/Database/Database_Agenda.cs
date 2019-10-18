@@ -35,7 +35,7 @@ namespace Cultura_Musical.Database
         {
 
             Entity.tb_aula confirmacao = DB.tb_aula.FirstOrDefault(t => t.dt_aula == aula.dt_aula
-            && t.hr_aula == aula.hr_aula
+                                                                     && t.hr_aula == aula.hr_aula
             && t.id_funcionario == aula.id_funcionario);
 
             return confirmacao;
@@ -45,8 +45,8 @@ namespace Cultura_Musical.Database
         {
 
             Entity.tb_aula confirmacao = DB.tb_aula.FirstOrDefault(t => t.dt_aula == aula.dt_aula
-            && t.hr_aula == aula.hr_aula
-            && t.id_cliente == aula.id_cliente);
+                                                                     && t.hr_aula == aula.hr_aula
+                                                                     && t.id_cliente == aula.id_cliente);
 
             return confirmacao;
         }
@@ -55,8 +55,18 @@ namespace Cultura_Musical.Database
         {
 
             Entity.tb_aula confirmacao = DB.tb_aula.FirstOrDefault(t => t.dt_aula == aula.dt_aula
-            && t.hr_aula == aula.hr_aula
-            && t.id_sala == aula.id_sala);
+                                                                     && t.hr_aula == aula.hr_aula
+                                                                     && t.id_sala == aula.id_sala);
+                
+            return confirmacao;
+        }
+
+        public Entity.tb_aula validarContrato(Entity.tb_aula aula)
+        {
+            
+            Entity.tb_aula confirmacao = DB.tb_aula.FirstOrDefault(t => t.dt_aula == aula.dt_aula
+                                                                     && t.hr_aula == aula.hr_aula
+                                                                     && t.);
 
             return confirmacao;
         }
