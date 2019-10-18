@@ -93,13 +93,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Entity Database.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Database\Entity\tb_agenda_all.cs">
+      <DependentUpon>Entity Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_aula.cs">
+      <DependentUpon>Entity Database.tt</DependentUpon>
+    </Compile>
     <Compile Include="Database\Entity\tb_beneficio.cs">
       <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_cliente.cs">
       <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\tb_cliente_aula.cs">
+    <Compile Include="Database\Entity\tb_colaborador.cs">
+      <DependentUpon>Entity Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_compra.cs">
+      <DependentUpon>Entity Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_compra_item.cs">
+      <DependentUpon>Entity Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_compromisso.cs">
       <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_conta.cs">
@@ -126,19 +141,25 @@
     <Compile Include="Database\Entity\tb_jornada.cs">
       <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
+    <Compile Include="Database\Entity\tb_jornada_trabalho.cs">
+      <DependentUpon>Entity Database.tt</DependentUpon>
+    </Compile>
     <Compile Include="Database\Entity\tb_login.cs">
       <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_plano.cs">
       <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\tb_produto_compra.cs">
+    <Compile Include="Database\Entity\tb_produto.cs">
       <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_sala.cs">
       <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_tipo_conta.cs">
+      <DependentUpon>Entity Database.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_venda.cs">
       <DependentUpon>Entity Database.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_venda_plano.cs">
