@@ -16,11 +16,12 @@ namespace Cultura_Musical.Telas.Produtos
         {
             InitializeComponent();
 
-            Business.Business_Produtos pro = new Business.Business_Produtos();
-            List<Database.Entity.tb_produto_compra> produto = pro.ListarProduto();
+            string produto = txtProduto.Text;
 
-            dgvListar.DataSource = produto;
-    
+            Business.Business_Produtos pedido = new Business.Business_Produtos();
+            List<Database.Entity.tb_produto> con = pedido.ListarPorProduto(produto);
+
+            dgvListar.DataSource = con;
 
         }
 
@@ -31,7 +32,13 @@ namespace Cultura_Musical.Telas.Produtos
 
         private void FrmConsultarProduto_Load(object sender, EventArgs e)
         {
-         
+           
+
+        }
+
+        private void txtProduto_TextChanged(object sender, EventArgs e)
+        {
+           
         }
     }
 }

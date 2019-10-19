@@ -31,13 +31,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nudQtd = new System.Windows.Forms.NumericUpDown();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtProduto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.nudPreco = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPreco)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,12 +70,12 @@
             this.label3.TabIndex = 29;
             this.label3.Text = "Quantidade:";
             // 
-            // numericUpDown1
+            // nudQtd
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(559, 139);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDown1.TabIndex = 30;
+            this.nudQtd.Location = new System.Drawing.Point(559, 139);
+            this.nudQtd.Name = "nudQtd";
+            this.nudQtd.Size = new System.Drawing.Size(100, 20);
+            this.nudQtd.TabIndex = 30;
             // 
             // button1
             // 
@@ -87,12 +87,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // txtProduto
             // 
-            this.textBox1.Location = new System.Drawing.Point(198, 140);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 34;
+            this.txtProduto.Location = new System.Drawing.Point(198, 140);
+            this.txtProduto.Name = "txtProduto";
+            this.txtProduto.Size = new System.Drawing.Size(100, 20);
+            this.txtProduto.TabIndex = 34;
             // 
             // label2
             // 
@@ -104,12 +104,12 @@
             this.label2.TabIndex = 35;
             this.label2.Text = "Preço:";
             // 
-            // numericUpDown2
+            // nudPreco
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(412, 206);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(100, 20);
-            this.numericUpDown2.TabIndex = 36;
+            this.nudPreco.Location = new System.Drawing.Point(412, 206);
+            this.nudPreco.Name = "nudPreco";
+            this.nudPreco.Size = new System.Drawing.Size(100, 20);
+            this.nudPreco.TabIndex = 36;
             // 
             // FrmAdicionarProduto
             // 
@@ -117,19 +117,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(726, 335);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nudPreco);
+            this.Controls.Add(this.txtProduto);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.nudQtd);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAdicionarProduto";
             this.Text = "FrmAdicionarProduto";
             this.Load += new System.EventHandler(this.FrmAdicionarProduto_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPreco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,10 +140,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nudQtd;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtProduto;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown nudPreco;
     }
 }

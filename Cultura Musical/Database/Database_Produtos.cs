@@ -10,28 +10,28 @@ namespace Cultura_Musical.Database
     {
 
         Entity.mydbEntities3 DB = new Entity.mydbEntities3();
-        public void Cadastrar(Entity.tb_produto_compra produto)
+        public void Cadastrar(Database.Entity.tb_produto produto)
         {
-            DB.tb_produto_compra.Add(produto);
+            DB.tb_produto.Add(produto);
             DB.SaveChanges();
         }
 
-        public List<Entity.tb_produto_compra> ListarProduto()
+        public List<Entity.tb_produto> ListarPorProduto(string produto)
         {
-            List<Entity.tb_produto_compra> produtos = DB.tb_produto_compra.ToList();
+            List<Entity.tb_produto> produtos = DB.tb_produto.Where(T => T.nm_produto.Contains(produto)).OrderBy(t=> t.nm_produto).ToList();
             return produtos;
         }
 
-        public List<Entity.tb_produto_compra> ListarPorNome(string nome)
+        public List<Entity.tb_produto> ListarPorNome(string nome)
         {
-            List<Entity.tb_produto_compra> produtos = DB.tb_produto_compra.Where(T => T.nm_produto.Contains(nome))
+            List<Entity.tb_produto> produtos = DB.tb_produto.Where(T => T.nm_produto.Contains(nome))
                                                                       .ToList();
             return produtos;
         }
 
-        public void Alterar(Entity.tb_produto_compra produtos)
+        public void Alterar(Entity.tb_produto produtos)
         {
-            Entity.tb_produto_compra NovoProdutos = DB.tb_produto_compra.FirstOrDefault(t => t.id_produto_compra == produtos.id_produto_compra);
+            Entity.tb_produto NovoProdutos = DB.tb_produto.FirstOrDefault(t => t.id_produto == produtos.id_produto);
 
 
             NovoProdutos.nm_produto = produtos.nm_produto;
@@ -45,17 +45,17 @@ namespace Cultura_Musical.Database
 
         public void Excluir(string produto)
         {
-            Entity.tb_produto_compra pro = DB.tb_produto_compra.FirstOrDefault(t => t.nm_produto == produto);
+            Entity.tb_produto pro = DB.tb_produto.FirstOrDefault(t => t.nm_produto == produto);
 
-            DB.tb_produto_compra.Remove(pro);
+            DB.tb_produto.Remove(pro);
             DB.SaveChanges();
         }
 
-        public void AlterarProduto(Database.Entity.tb_produto_compra altproduto)
+        public void AlterarProduto(Database.Entity.tb_produto altproduto)
         {
           
 
-            Database.Entity.tb_produto_compra alterar = DB.tb_produto_compra.First(t => t.nm_produto == altproduto.nm_produto);
+            Database.Entity.tb_produto alterar = DB.tb_produto.First(t => t.nm_produto == altproduto.nm_produto);
             alterar.qtd_produto = altproduto.qtd_produto;
             alterar.nm_produto = altproduto.nm_produto;
 

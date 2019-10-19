@@ -21,11 +21,11 @@ namespace Cultura_Musical.Telas.Produtos
         Database.Database_Produtos DB = new Database.Database_Produtos();
         private void button1_Click(object sender, EventArgs e)
         {
-            Database.Entity.tb_produto_compra altproduto = new Database.Entity.tb_produto_compra();
+            Database.Entity.tb_produto altproduto = new Database.Entity.tb_produto();
 
-            altproduto.nm_produto = textBox1.Text;
-
-            altproduto.qtd_produto = Convert.ToInt32(numericUpDown1.Value);
+            altproduto.nm_produto = txtProduto.Text;
+            altproduto.vl_preco = Convert.ToInt32(nudPreco.Value);
+            altproduto.qtd_produto = Convert.ToInt32(nudQtd.Value);
 
             Business.Business_Produtos produtos = new Business.Business_Produtos();
             produtos.CadastrarProduto(altproduto);

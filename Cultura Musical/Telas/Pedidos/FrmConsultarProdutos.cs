@@ -21,7 +21,7 @@ namespace Cultura_Musical.Telas.Pedidos
             
 
             Business.Business_Pedidos pedido = new Business.Business_Pedidos();
-            List<Database.Entity.tb_produto_compra> con = pedido.ListarPedido(produto,data);
+            List<Database.Entity.tb_produto> con = pedido.ListarPedido(produto,data);
 
             dataGridView1.DataSource = con;
 
@@ -37,6 +37,11 @@ namespace Cultura_Musical.Telas.Pedidos
         {
            
 
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
     }

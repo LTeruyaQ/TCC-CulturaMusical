@@ -11,23 +11,21 @@ namespace Cultura_Musical.Business
 
         Database.Database_Produtos db = new Database.Database_Produtos();
 
-
-
-        public void CadastrarProduto(Database.Entity.tb_produto_compra altproduto)
+        public void CadastrarProduto(Database.Entity.tb_produto altproduto)
         {
             Database.Database_Produtos pro = new Database.Database_Produtos();
             pro.Cadastrar(altproduto);
         }
 
-        public List<Database.Entity.tb_produto_compra> ListarProduto()
+        public List<Database.Entity.tb_produto> ListarPorProduto(string produto)
         {
             
-            List<Database.Entity.tb_produto_compra> con = db.ListarProduto();
+            List<Database.Entity.tb_produto> con = db.ListarPorProduto(produto);
 
             return con;
         }
 
-        public void AlterarProduto(Database.Entity.tb_produto_compra altproduto)
+        public void AlterarProduto(Database.Entity.tb_produto altproduto)
         {
             Database.Database_Produtos pro = new Database.Database_Produtos();
             pro.AlterarProduto(altproduto);

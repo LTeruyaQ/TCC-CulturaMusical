@@ -66,7 +66,7 @@ namespace Cultura_Musical.Database
             
             Entity.tb_aula confirmacao = DB.tb_aula.FirstOrDefault(t => t.dt_aula == aula.dt_aula
                                                                      && t.hr_aula == aula.hr_aula
-                                                                     && t.);
+                                                                     );
 
             return confirmacao;
         }

@@ -20,12 +20,11 @@ namespace Cultura_Musical.Telas.Pedidos
         private void button1_Click(object sender, EventArgs e)
         {
            
-            Database.Entity.tb_produto_compra pedido  = new Database.Entity.tb_produto_compra();
+            Database.Entity.tb_produto pedido  = new Database.Entity.tb_produto();
             pedido.nm_produto = txtProduto.Text;
             pedido.qtd_produto = Convert.ToInt32(nudQtd.Value);
             pedido.vl_preco = Convert.ToInt32(nudPreco.Value);
-            Database.Entity.tb_produto_compra compra = new Database.Entity.tb_produto_compra();
-            compra.dt_compra = dtpCompra.Value; 
+            pedido. = dtpCompra.Value; 
             Database.Entity.tb_fornecedor forn = new Database.Entity.tb_fornecedor();
             forn.nm_fornecedor = cboFornecedor.Text;
             
