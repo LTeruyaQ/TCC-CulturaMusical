@@ -26,7 +26,7 @@ namespace Cultura_Musical.Telas.Produtos
         {
             string produto = cboProduto.Text;
 
-            Business.Business_Produtos prod = new Business.Business_Produtos();
+            Business.Business_Estoque prod = new Business.Business_Estoque();
             prod.Remover(produto);
 
             MessageBox.Show("Excluído com sucesso!");

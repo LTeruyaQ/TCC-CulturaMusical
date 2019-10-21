@@ -18,7 +18,7 @@ namespace Cultura_Musical.Telas.Produtos
 
             string produto = txtProduto.Text;
 
-            Business.Business_Produtos pedido = new Business.Business_Produtos();
+            Business.Business_Estoque pedido = new Business.Business_Estoque();
             List<Database.Entity.tb_produto> con = pedido.ListarPorProduto(produto);
 
             dgvListar.DataSource = con;

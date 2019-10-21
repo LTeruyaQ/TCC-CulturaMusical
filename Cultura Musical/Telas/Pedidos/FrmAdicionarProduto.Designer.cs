@@ -40,6 +40,8 @@
             this.cboFornecedor = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPreco)).BeginInit();
             this.SuspendLayout();
@@ -78,7 +80,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(225, 244);
+            this.label5.Location = new System.Drawing.Point(49, 240);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 16);
             this.label5.TabIndex = 4;
@@ -118,7 +120,7 @@
             // dtpCompra
             // 
             this.dtpCompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpCompra.Location = new System.Drawing.Point(382, 244);
+            this.dtpCompra.Location = new System.Drawing.Point(206, 235);
             this.dtpCompra.Name = "dtpCompra";
             this.dtpCompra.Size = new System.Drawing.Size(99, 20);
             this.dtpCompra.TabIndex = 11;
@@ -151,11 +153,31 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Adicionar Pedido";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(535, 235);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(99, 20);
+            this.dateTimePicker1.TabIndex = 16;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(379, 239);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(140, 16);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Data da entrega:";
+            // 
             // FrmAdicionarProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(737, 351);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cboFornecedor);
@@ -192,5 +214,7 @@
         private System.Windows.Forms.ComboBox cboFornecedor;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label7;
     }
 }

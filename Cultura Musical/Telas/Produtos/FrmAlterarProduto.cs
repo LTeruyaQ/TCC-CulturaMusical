@@ -40,7 +40,7 @@ namespace Cultura_Musical.Telas.Produtos
             altproduto.nm_produto = txtProdutoAlt.Text;
             altproduto.qtd_produto = Convert.ToInt32(nudQtd.Value);
 
-            Business.Business_Produtos produtos = new Business.Business_Produtos();
+            Business.Business_Estoque produtos = new Business.Business_Estoque();
             produtos.AlterarProduto(altproduto);
 
             MessageBox.Show("Produto alterado com sucesso");
