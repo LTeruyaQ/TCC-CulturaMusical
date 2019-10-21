@@ -45,7 +45,7 @@ namespace Cultura_Musical.Database
             NovoCliente.ds_rg = cliente.ds_rg;
             NovoCliente.ds_observacao = cliente.ds_observacao;
 
-                DB.SaveChanges();
+            DB.SaveChanges();
         }
 
         public void excluir(int id)

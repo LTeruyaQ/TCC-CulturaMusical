@@ -10,47 +10,42 @@ namespace Cultura_Musical.Database
     {
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
-
-        public void Cadastrar(Entity.tb_holerite pagamento)
+        public void Cadastrar(Entity.tb_folha_pagamento pagamento)
         {
-            DB.tb_holerite.Add(pagamento);
+            DB.tb_folha_pagamento.Add(pagamento);
             DB.SaveChanges();
         }
 
-        public List<Entity.tb_holerite> ListarTodos()
+        public List<Entity.tb_folha_pagamento> ListarTodos()
         {
-            List<Entity.tb_holerite> pagamento = DB.tb_holerite.ToList();
+            List<Entity.tb_folha_pagamento> pagamento = DB.tb_folha_pagamento.ToList();
             return pagamento;
         }
 
-        public List<Entity.tb_holerite> ListarPorquantidade(decimal pagamento)
+        public List<Entity.tb_folha_pagamento> ListarPorquantidade(decimal pagamento)
         {
-            List<Entity.tb_holerite> holerites = DB.tb_holerite.Where(T => T.salario_bruto == pagamento)
+            List<Entity.tb_folha_pagamento> holerites = DB.tb_folha_pagamento.Where(T => T.vl_salario_bruto == pagamento)
                                                                       .ToList();
             return holerites;
         }
 
-        public void Alterar(Entity.tb_holerite pagamento)
+        public void Alterar(Entity.tb_folha_pagamento pagamento)
         {
-            Entity.tb_holerite Novoholerite = DB.tb_holerite.FirstOrDefault(t => t.id_holerite == pagamento.id_holerite);
-
+            Entity.tb_folha_pagamento Novoholerite = DB.tb_folha_pagamento.FirstOrDefault(t => t.id_folha == pagamento.id_folha);
 
             Novoholerite.id_funcionario = pagamento.id_funcionario;
-            Novoholerite.falta_mes = pagamento.falta_mes;
-            Novoholerite.salario_bruto = pagamento.salario_bruto;
-            Novoholerite.salario_liquido = pagamento.salario_liquido;
+            Novoholerite.vl_salario_bruto = pagamento.vl_salario_bruto;
+            Novoholerite.vl_salario_liquido = pagamento.vl_salario_liquido;
             Novoholerite.tb_funcionario = pagamento.tb_funcionario;
            
-
-
             DB.SaveChanges();
         }
 
         public void Excluir(int id)
         {
-            Entity.tb_holerite pagamento = DB.tb_holerite.FirstOrDefault(t => t.id_holerite == id);
+            Entity.tb_folha_pagamento pagamento = DB.tb_folha_pagamento.FirstOrDefault(t => t.id_folha == id);
 
-            DB.tb_holerite.Remove(pagamento);
+            DB.tb_folha_pagamento.Remove(pagamento);
             DB.SaveChanges();
         }
     }
