@@ -12,18 +12,7 @@ namespace Cultura_Musical.Business
 
         public void CadastrarProduto(Database.Entity.tb_produto addprod)
         {
-            if (addprod.nm_produto == string.Empty)
-            {
-                throw new ArgumentException("O campo Produto não foi preenchdo");
-            }
-            else if (addprod.qtd_produto == 0)
-            {
-                throw new ArgumentException("Determine a quantidade do produto selecionado");
-            }
-            else if (addprod.vl_preco == 0)
-            {
-                throw new ArgumentException("Determiinne um preço para o produto selecionado");
-            }
+            this.validacao(addprod);
 
             Database.Database_Produtos pro = new Database.Database_Produtos();
             pro.Cadastrar(addprod);
@@ -38,32 +27,37 @@ namespace Cultura_Musical.Business
 
         public void AlterarProduto(Database.Entity.tb_produto altproduto)
         {
-            if (altproduto.nm_produto == string.Empty)
-            {
-                throw new ArgumentException("O campo Produto não foi preenchdo");
-            }
-            else if (altproduto.qtd_produto == 0)
-            {
-                throw new ArgumentException("Determine a quantidade do produto selecionado");
-            }
-            else if (altproduto.vl_preco == 0)
-            {
-                throw new ArgumentException("Determine um preço para o produto selecionado");
-            }
 
+            this.validacao(altproduto);
             Database.Database_Produtos pro = new Database.Database_Produtos();
-            pro.AlterarProduto(altproduto);
+            pro.Alterar(altproduto);
         }
 
-        public void Remover(string produto)
+        public void Remover(int id)
         {
-            if (produto == string.Empty)
+            if (id == 0)
             {
                 throw new ArgumentException("Selecione o produto");
             }
             
             Database.Database_Produtos pro = new Database.Database_Produtos();
-            pro.Excluir(produto);
+            pro.Excluir(id);
+        }
+
+        public void validacao (Database.Entity.tb_produto produto)
+        {
+            if (produto.nm_produto == string.Empty)
+            {
+                throw new ArgumentException("O campo Produto não foi preenchdo");
+            }
+            else if (produto.qtd_produto == 0)
+            {
+                throw new ArgumentException("Determine a quantidade do produto selecionado");
+            }
+            else if (produto.vl_preco == 0)
+            {
+                throw new ArgumentException("Determine um preço para o produto selecionado");
+            }
         }
     }
 }

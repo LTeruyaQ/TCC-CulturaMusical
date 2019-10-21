@@ -38,35 +38,17 @@ namespace Cultura_Musical.Database
             NovoProdutos.nm_produto = produtos.nm_produto;
             NovoProdutos.qtd_produto = produtos.qtd_produto;
             NovoProdutos.vl_preco = produtos.vl_preco;
-            NovoProdutos.id_fornecedor = produtos.id_fornecedor;
+            
            
-
             DB.SaveChanges();
         }
 
-        public void Excluir(string produto)
+        public void Excluir(int id)
         {
-            Entity.tb_produto pro = DB.tb_produto.FirstOrDefault(t => t.nm_produto == produto);
+            Entity.tb_produto pro = DB.tb_produto.FirstOrDefault(t => t.id_produto == id);
 
             DB.tb_produto.Remove(pro);
             DB.SaveChanges();
         }
-
-        public void AlterarProduto(Database.Entity.tb_produto altproduto)
-        {
-          
-
-            Database.Entity.tb_produto alterar = DB.tb_produto.First(t => t.nm_produto == altproduto.nm_produto);
-            alterar.qtd_produto = altproduto.qtd_produto;
-            alterar.nm_produto = altproduto.nm_produto;
-
-            
-
-
-
-        }
-
- 
-
     }
 }

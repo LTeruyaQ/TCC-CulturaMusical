@@ -21,5 +21,7 @@ namespace Cultura_Musical.Business
 
             return con;
         }
+
+        public void alterar (Database.Entity.co)
     }
 }
