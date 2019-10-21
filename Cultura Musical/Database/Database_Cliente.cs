@@ -34,7 +34,7 @@ namespace Cultura_Musical.Database
             Entity.tb_cliente NovoCliente = DB.tb_cliente.FirstOrDefault(t => t.id_cliente == cliente.id_cliente);
 
             NovoCliente.nm_cliente = cliente.nm_cliente;
-            NovoCliente.dt_nascimento = cliente.dt_nascimento;
+            NovoCliente.ds_idade = cliente.ds_idade;
             NovoCliente.ds_telefone = cliente.ds_telefone;
             NovoCliente.ds_cep = cliente.ds_cep;
             NovoCliente.ds_bairro = cliente.ds_bairro;
@@ -45,7 +45,7 @@ namespace Cultura_Musical.Database
             NovoCliente.ds_rg = cliente.ds_rg;
             NovoCliente.ds_observacao = cliente.ds_observacao;
 
-                DB.SaveChanges();
+            DB.SaveChanges();
         }
 
         public void excluir(int id)
