@@ -8,7 +8,6 @@ namespace Cultura_Musical.Database
 {
     class Database_Estoque
     {
-
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
         public void Cadastrar(Database.Entity.tb_produto addprod)
@@ -34,12 +33,10 @@ namespace Cultura_Musical.Database
         {
             Entity.tb_produto NovoProdutos = DB.tb_produto.FirstOrDefault(t => t.id_produto == produtos.id_produto);
 
-
             NovoProdutos.nm_produto = produtos.nm_produto;
             NovoProdutos.qtd_produto = produtos.qtd_produto;
             NovoProdutos.vl_preco = produtos.vl_preco;
             
-           
             DB.SaveChanges();
         }
 
