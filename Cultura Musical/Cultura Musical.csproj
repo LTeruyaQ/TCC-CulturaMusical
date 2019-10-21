@@ -60,6 +60,7 @@
     <Compile Include="Business\Business_CRM.cs" />
     <Compile Include="Business\Business_Fornecedores.cs" />
     <Compile Include="Business\Business_Funcionarios.cs" />
+    <Compile Include="Business\Business_Folha_Pagamento.cs" />
     <Compile Include="Business\Business_Holerite.cs" />
     <Compile Include="Business\Business_Inicialização.cs" />
     <Compile Include="Business\Business_Logistica.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Database\Database_CRM.cs" />
     <Compile Include="Database\Database_Fornecedores.cs" />
     <Compile Include="Database\Database_Funcionarios.cs" />
+    <Compile Include="Database\Database_Folha_Pagamento.cs" />
     <Compile Include="Database\Database_Holerite.cs" />
     <Compile Include="Database\Database_Inicialização.cs" />
     <Compile Include="Database\Database_Logistica.cs" />
@@ -273,17 +275,29 @@
     <Compile Include="Telas\Fornecedores\FrmDeletarFornecedor.Designer.cs">
       <DependentUpon>FrmDeletarFornecedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Holerite\frmFolhaDePagamento.cs">
+    <Compile Include="Telas\Folha_Pagamento\frmFolhaDePagamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Holerite\frmFolhaDePagamento.Designer.cs">
+    <Compile Include="Telas\Folha_Pagamento\frmFolhaDePagamento.Designer.cs">
       <DependentUpon>frmFolhaDePagamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Holerite\GerarFolha.cs">
+    <Compile Include="Telas\Folha_Pagamento\GerarFolha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Holerite\GerarFolha.Designer.cs">
+    <Compile Include="Telas\Folha_Pagamento\GerarFolha.Designer.cs">
       <DependentUpon>GerarFolha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Holerite\FrmAddHolerite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Holerite\FrmAddHolerite.Designer.cs">
+      <DependentUpon>FrmAddHolerite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Holerite\FrmConsultarHolerite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Holerite\FrmConsultarHolerite.Designer.cs">
+      <DependentUpon>FrmConsultarHolerite.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Inicialização\FrmCadastroFuncionarioLogin.cs">
       <SubType>Form</SubType>
@@ -351,28 +365,28 @@
     <Compile Include="Telas\Planos\FrmVendaPlano.Designer.cs">
       <DependentUpon>FrmVendaPlano.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmAdicionarProduto.cs">
+    <Compile Include="Telas\Estoque\FrmAdicionarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmAdicionarProduto.Designer.cs">
+    <Compile Include="Telas\Estoque\FrmAdicionarProduto.Designer.cs">
       <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmAlterarProduto.cs">
+    <Compile Include="Telas\Estoque\FrmAlterarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmAlterarProduto.Designer.cs">
+    <Compile Include="Telas\Estoque\FrmAlterarProduto.Designer.cs">
       <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmConsultarProduto.cs">
+    <Compile Include="Telas\Estoque\FrmConsultarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmConsultarProduto.Designer.cs">
+    <Compile Include="Telas\Estoque\FrmConsultarProduto.Designer.cs">
       <DependentUpon>FrmConsultarProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmDeletarProduto.cs">
+    <Compile Include="Telas\Estoque\FrmDeletarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmDeletarProduto.Designer.cs">
+    <Compile Include="Telas\Estoque\FrmDeletarProduto.Designer.cs">
       <DependentUpon>FrmDeletarProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl1.cs">
@@ -445,10 +459,10 @@
     <EmbeddedResource Include="Telas\Fornecedores\FrmAdicionarFornecedor.resx">
       <DependentUpon>FrmAdicionarFornecedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Holerite\frmFolhaDePagamento.resx">
+    <EmbeddedResource Include="Telas\Folha_Pagamento\frmFolhaDePagamento.resx">
       <DependentUpon>frmFolhaDePagamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Holerite\GerarFolha.resx">
+    <EmbeddedResource Include="Telas\Folha_Pagamento\GerarFolha.resx">
       <DependentUpon>GerarFolha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicialização\FrmCadastroFuncionarioLogin.resx">
@@ -484,16 +498,16 @@
     <EmbeddedResource Include="Telas\Planos\FrmVendaPlano.resx">
       <DependentUpon>FrmVendaPlano.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Produtos\FrmAdicionarProduto.resx">
+    <EmbeddedResource Include="Telas\Estoque\FrmAdicionarProduto.resx">
       <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Produtos\FrmAlterarProduto.resx">
+    <EmbeddedResource Include="Telas\Estoque\FrmAlterarProduto.resx">
       <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Produtos\FrmConsultarProduto.resx">
+    <EmbeddedResource Include="Telas\Estoque\FrmConsultarProduto.resx">
       <DependentUpon>FrmConsultarProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Produtos\FrmDeletarProduto.resx">
+    <EmbeddedResource Include="Telas\Estoque\FrmDeletarProduto.resx">
       <DependentUpon>FrmDeletarProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
@@ -534,9 +548,7 @@
     <None Include="Resources\guitarra.gif" />
     <None Include="Resources\instrumentos.gif" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Database\Modelos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\giphy1.gif" />
     <None Include="Resources\musica.jpg" />
