@@ -42,7 +42,7 @@
             // cboProduto
             // 
             this.cboProduto.FormattingEnabled = true;
-            this.cboProduto.Location = new System.Drawing.Point(209, 123);
+            this.cboProduto.Location = new System.Drawing.Point(233, 116);
             this.cboProduto.Name = "cboProduto";
             this.cboProduto.Size = new System.Drawing.Size(121, 21);
             this.cboProduto.TabIndex = 31;
@@ -52,7 +52,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(116, 128);
+            this.label2.Location = new System.Drawing.Point(140, 121);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 16);
             this.label2.TabIndex = 30;
@@ -62,7 +62,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Stencil", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(78, 27);
+            this.label1.Location = new System.Drawing.Point(85, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(370, 44);
             this.label1.TabIndex = 33;
@@ -124,7 +124,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 342);
+            this.ClientSize = new System.Drawing.Size(524, 342);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.gbCertezas);
             this.Controls.Add(this.label1);

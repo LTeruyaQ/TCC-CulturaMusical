@@ -445,7 +445,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Stencil", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(165, 9);
+            this.label14.Location = new System.Drawing.Point(175, 9);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(212, 44);
             this.label14.TabIndex = 78;

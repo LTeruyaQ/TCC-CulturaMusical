@@ -27,7 +27,7 @@ namespace Cultura_Musical.Telas.Fornecedores
             Database.Entity.tb_fornecedor forn = new Database.Entity.tb_fornecedor();
 
             forn.nm_fornecedor = txtRSocial.Text;
-            forn.inscricao_estadual = txtInscricao.Text;
+            forn.inscicao_estadual = txtInscricao.Text;
             forn.tell_contato = txtTel1.Text;
             forn.tell_contato2 = txtTel2.Text;
             forn.ds_email = txtEmail.Text;

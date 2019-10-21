@@ -120,7 +120,7 @@
             this.dtpCompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpCompra.Location = new System.Drawing.Point(382, 244);
             this.dtpCompra.Name = "dtpCompra";
-            this.dtpCompra.Size = new System.Drawing.Size(100, 20);
+            this.dtpCompra.Size = new System.Drawing.Size(99, 20);
             this.dtpCompra.TabIndex = 11;
             // 
             // cboFornecedor

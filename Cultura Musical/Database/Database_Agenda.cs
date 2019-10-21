@@ -9,7 +9,7 @@ namespace Cultura_Musical.Database
     class Database_Agenda
     {
 
-        Entity.mydbEntities3 DB = new Entity.mydbEntities3();
+        Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
 
         public void cadastrar(Entity.tb_aula agenda)

@@ -8,7 +8,8 @@ namespace Cultura_Musical.Database
 {
     class Database_Cliente
     {
-        Entity.mydbEntities3 DB = new Entity.mydbEntities3();
+        Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
+
         public void cadastrar(Entity.tb_cliente cliente)
         {
             DB.tb_cliente.Add(cliente);

@@ -43,9 +43,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.giphy1;
-            this.pictureBox1.Location = new System.Drawing.Point(163, 85);
+            this.pictureBox1.Location = new System.Drawing.Point(245, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(181, 133);
+            this.pictureBox1.Size = new System.Drawing.Size(185, 168);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -54,11 +54,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.BackgroundImage = global::Cultura_Musical.Properties.Resources.musica;
+            this.BackColor = System.Drawing.Color.Honeydew;
+            this.BackgroundImage = global::Cultura_Musical.Properties.Resources.logo_Cultura_Musical_PNG;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(474, 334);
+            this.ClientSize = new System.Drawing.Size(430, 275);
             this.Controls.Add(this.pictureBox1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSplash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

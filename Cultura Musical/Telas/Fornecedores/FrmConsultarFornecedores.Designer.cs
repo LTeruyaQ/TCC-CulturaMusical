@@ -38,7 +38,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(75, 112);
+            this.label1.Location = new System.Drawing.Point(81, 99);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 13);
             this.label1.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // txtNFornecedor
             // 
-            this.txtNFornecedor.Location = new System.Drawing.Point(210, 112);
+            this.txtNFornecedor.Location = new System.Drawing.Point(216, 99);
             this.txtNFornecedor.Name = "txtNFornecedor";
             this.txtNFornecedor.Size = new System.Drawing.Size(100, 20);
             this.txtNFornecedor.TabIndex = 1;
@@ -56,9 +56,9 @@
             // dgvNMFornecedor
             // 
             this.dgvNMFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNMFornecedor.Location = new System.Drawing.Point(70, 159);
+            this.dgvNMFornecedor.Location = new System.Drawing.Point(45, 152);
             this.dgvNMFornecedor.Name = "dgvNMFornecedor";
-            this.dgvNMFornecedor.Size = new System.Drawing.Size(240, 150);
+            this.dgvNMFornecedor.Size = new System.Drawing.Size(329, 211);
             this.dgvNMFornecedor.TabIndex = 2;
             // 
             // label2
@@ -75,7 +75,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 364);
+            this.ClientSize = new System.Drawing.Size(411, 391);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvNMFornecedor);
             this.Controls.Add(this.txtNFornecedor);

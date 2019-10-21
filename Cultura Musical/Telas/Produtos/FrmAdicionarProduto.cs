@@ -21,14 +21,14 @@ namespace Cultura_Musical.Telas.Produtos
         Database.Database_Produtos DB = new Database.Database_Produtos();
         private void button1_Click(object sender, EventArgs e)
         {
-            Database.Entity.tb_produto altproduto = new Database.Entity.tb_produto();
+            Database.Entity.tb_produto addprod = new Database.Entity.tb_produto();
 
-            altproduto.nm_produto = txtProduto.Text;
-            altproduto.vl_preco = Convert.ToInt32(nudPreco.Value);
-            altproduto.qtd_produto = Convert.ToInt32(nudQtd.Value);
+            addprod.nm_produto = txtProduto.Text;
+            addprod.vl_preco = Convert.ToInt32(nudPreco.Value);
+            addprod.qtd_produto = Convert.ToInt32(nudQtd.Value);
 
             Business.Business_Produtos produtos = new Business.Business_Produtos();
-            produtos.CadastrarProduto(altproduto);
+            produtos.CadastrarProduto(addprod);
 
             MessageBox.Show("Produto cadastrado com sucesso");
         }

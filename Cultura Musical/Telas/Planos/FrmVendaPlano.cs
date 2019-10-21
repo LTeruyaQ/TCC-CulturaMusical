@@ -21,7 +21,7 @@ namespace Cultura_Musical.Telas.Planos
             cboPlano.DisplayMember = nameof(plano.nm_plano);
             cboPlano.DataSource = lista;
         }
-         Database.Entity.mydbEntities3 DB = new Database.Entity.mydbEntities3();
+         Database.Entity.culturamusicalEntities DB = new Database.Entity.culturamusicalEntities();
 
 
         private List<Database.Entity.tb_plano> Planos()
