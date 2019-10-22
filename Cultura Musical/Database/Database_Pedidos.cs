@@ -11,37 +11,32 @@ namespace Cultura_Musical.Database
 
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
-        public void AdicionarPedido(Database.Entity.tb_produto produto,Database.Entity.tb_compra_item pedido, Database.Entity.tb_compra compra)
+        public void AdicionarPedido(Entity.tb_compra compra)
         {
-          
-            DB.tb_produto.Add(produto);
-            DB.tb_compra_item.Add(pedido);
             DB.tb_compra.Add(compra);
             DB.SaveChanges();
         }
 
-        public List<Database.Entity.tb_compra_item> ListarPedidoPorProduto(int id)
+        public List<Database.Entity.tb_compra> ListarTodos ()
         {
-          
-            List<Database.Entity.tb_compra_item> pedido = DB.tb_compra_item.Where(t => t.id_compra == id )
-                                                                                 .ToList();
-
+            List<Database.Entity.tb_compra> pedido = DB.tb_compra.ToList();
             return pedido;
         }
 
-        public List<Database.Entity.tb_compra_item> ListarTodos ()
+        public void alterar (Database.Entity.tb_compra pedido)
         {
-            List<Database.Entity.tb_compra_item> pedido = DB.tb_compra_item.ToList();
-            return pedido;
+            Database.Entity.tb_compra NovoPedido = DB.tb_compra.FirstOrDefault(t => t.id_compra == pedido.id_compra);
+
+            NovoPedido.dt_entrega = pedido.dt_entrega;
+            DB.SaveChanges();
         }
 
-        public void alterar (Database.Entity.tb_compra_item pedido)
+        public void deletar (int id)
         {
-            Database.Entity.tb_compra_item NovoPedido = DB.tb_compra_item.FirstOrDefault(t => t.id_compra == pedido.id_compra 
-                                                                                           && t.id_produto == pedido.id_produto);
+            Entity.tb_compra compra = DB.tb_compra.FirstOrDefault(t => t.id_compra == id);
 
-            NovoPedido.id_produto = pedido.id_produto;
-            NovoPedido.id_compra = pedido.id_compra;
+            DB.tb_compra.Remove(compra);
+            DB.SaveChanges();
         }
     }
 }
