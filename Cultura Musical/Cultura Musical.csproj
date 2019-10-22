@@ -564,6 +564,12 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Home.PNG" />
+    <None Include="Resources\book-vector.png" />
+    <None Include="Resources\book1.PNG" />
+    <None Include="Resources\book.PNG" />
+    <None Include="Resources\aGENDA.jpg" />
+    <None Include="Resources\logo Titers.PNG" />
     <None Include="Resources\logo Cultura Musical PNG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
