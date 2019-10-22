@@ -465,6 +465,9 @@
     <EmbeddedResource Include="Telas\Folha_Pagamento\GerarFolha.resx">
       <DependentUpon>GerarFolha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Holerite\FrmAddHolerite.resx">
+      <DependentUpon>FrmAddHolerite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicialização\FrmCadastroFuncionarioLogin.resx">
       <DependentUpon>FrmCadastroFuncionarioLogin.cs</DependentUpon>
     </EmbeddedResource>
