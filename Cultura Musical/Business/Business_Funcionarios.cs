@@ -10,6 +10,27 @@ namespace Cultura_Musical.Business
     {
         public void Consultar(Database.Entity.tb_funcionario funcionario)
         {
+            if(funcionario.nm_funcionario == string.Empty)
+            {
+                throw new ArgumentException("O campo do Nome do Funcionario está vazio");
+            }
+
+            else if (funcionario.ds_email.Contains("@") == false || funcionario.ds_email == string.Empty)
+            {
+                throw new ArgumentException("O campo de Email está incorreto ou vazio");
+            }
+
+            else if(funcionario.ds_telefone == string.Empty || funcionario.ds_telefone.Length > 12)
+            {
+                throw new ArgumentException("O campo de Telefone está incorreto ou vazio");
+            }
+
+            else if(funcionario.ds_rg == string.Empty || funcionario.ds_rg.Length > 8)
+            {
+
+            }
+
+
             Database.Database_Funcionarios db = new Database.Database_Funcionarios();
             db.Consultar(funcionario);
         }
