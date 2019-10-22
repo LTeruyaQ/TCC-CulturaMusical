@@ -60,90 +60,110 @@
     <Compile Include="Business\Business_CRM.cs" />
     <Compile Include="Business\Business_Fornecedores.cs" />
     <Compile Include="Business\Business_Funcionarios.cs" />
+    <Compile Include="Business\Business_Folha_Pagamento.cs" />
     <Compile Include="Business\Business_Holerite.cs" />
     <Compile Include="Business\Business_Inicialização.cs" />
     <Compile Include="Business\Business_Logistica.cs" />
     <Compile Include="Business\Business_Pedidos.cs" />
     <Compile Include="Business\Business_Planos.cs" />
-    <Compile Include="Business\Business_Produtos.cs" />
-    <Compile Include="Business\Business_Vendas.cs" />
+    <Compile Include="Business\Business_Estoque.cs" />
+    <Compile Include="Business\Business_Venda.cs" />
     <Compile Include="Database\Database_Agenda.cs" />
     <Compile Include="Database\Database_Cliente.cs" />
     <Compile Include="Database\Database_CRM.cs" />
     <Compile Include="Database\Database_Fornecedores.cs" />
     <Compile Include="Database\Database_Funcionarios.cs" />
+    <Compile Include="Database\Database_Folha_Pagamento.cs" />
     <Compile Include="Database\Database_Holerite.cs" />
     <Compile Include="Database\Database_Inicialização.cs" />
     <Compile Include="Database\Database_Logistica.cs" />
     <Compile Include="Database\Database_Pedidos.cs" />
     <Compile Include="Database\Database_Planos.cs" />
-    <Compile Include="Database\Database_Produtos.cs" />
+    <Compile Include="Database\Database_Estoque.cs" />
     <Compile Include="Database\Database_Vendas.cs" />
-    <Compile Include="Database\Entity\Entity Database.Context.cs">
+    <Compile Include="Database\Entity\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Entity Database.Context.tt</DependentUpon>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\Entity Database.cs">
+    <Compile Include="Database\Entity\Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\Entity Database.Designer.cs">
+    <Compile Include="Database\Entity\Model1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Entity Database.edmx</DependentUpon>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_agenda_estudio.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_aula.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_beneficio.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_cliente.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\tb_cliente_aula.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+    <Compile Include="Database\Entity\tb_colaborador.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_compra.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_compra_item.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_compromisso.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_conta.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_estoque.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_financeiro.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_folha_pagamento.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_fornecedor.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_funcionario.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_holerite.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_jornada.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_jornada_trabalho.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_login.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_plano.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\tb_produto_compra.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+    <Compile Include="Database\Entity\tb_produto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_sala.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_tipo_conta.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_venda.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_venda_plano.cs">
-      <DependentUpon>Entity Database.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -176,6 +196,12 @@
     </Compile>
     <Compile Include="Telas\Agenda\FrmInserirAgenda.Designer.cs">
       <DependentUpon>FrmInserirAgenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Fornecedores\frmAlterarFornecedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Fornecedores\frmAlterarFornecedores.Designer.cs">
+      <DependentUpon>frmAlterarFornecedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Funcionarios\FrmAlterarColaborador.cs">
       <SubType>Form</SubType>
@@ -249,17 +275,29 @@
     <Compile Include="Telas\Fornecedores\FrmDeletarFornecedor.Designer.cs">
       <DependentUpon>FrmDeletarFornecedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Holerite\frmFolhaDePagamento.cs">
+    <Compile Include="Telas\Folha_Pagamento\frmFolhaDePagamento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Holerite\frmFolhaDePagamento.Designer.cs">
+    <Compile Include="Telas\Folha_Pagamento\frmFolhaDePagamento.Designer.cs">
       <DependentUpon>frmFolhaDePagamento.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Holerite\GerarFolha.cs">
+    <Compile Include="Telas\Folha_Pagamento\GerarFolha.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Holerite\GerarFolha.Designer.cs">
+    <Compile Include="Telas\Folha_Pagamento\GerarFolha.Designer.cs">
       <DependentUpon>GerarFolha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Holerite\FrmAddHolerite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Holerite\FrmAddHolerite.Designer.cs">
+      <DependentUpon>FrmAddHolerite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Holerite\FrmConsultarHolerite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Holerite\FrmConsultarHolerite.Designer.cs">
+      <DependentUpon>FrmConsultarHolerite.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Inicialização\FrmCadastroFuncionarioLogin.cs">
       <SubType>Form</SubType>
@@ -327,28 +365,28 @@
     <Compile Include="Telas\Planos\FrmVendaPlano.Designer.cs">
       <DependentUpon>FrmVendaPlano.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmAdicionarProduto.cs">
+    <Compile Include="Telas\Estoque\FrmAdicionarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmAdicionarProduto.Designer.cs">
+    <Compile Include="Telas\Estoque\FrmAdicionarProduto.Designer.cs">
       <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmAlterarProduto.cs">
+    <Compile Include="Telas\Estoque\FrmAlterarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmAlterarProduto.Designer.cs">
+    <Compile Include="Telas\Estoque\FrmAlterarProduto.Designer.cs">
       <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmConsultarProduto.cs">
+    <Compile Include="Telas\Estoque\FrmConsultarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmConsultarProduto.Designer.cs">
+    <Compile Include="Telas\Estoque\FrmConsultarProduto.Designer.cs">
       <DependentUpon>FrmConsultarProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmDeletarProduto.cs">
+    <Compile Include="Telas\Estoque\FrmDeletarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmDeletarProduto.Designer.cs">
+    <Compile Include="Telas\Estoque\FrmDeletarProduto.Designer.cs">
       <DependentUpon>FrmDeletarProduto.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControl1.cs">
@@ -394,6 +432,9 @@
     <EmbeddedResource Include="Telas\CRM\FrmDeletarCliente.resx">
       <DependentUpon>FrmDeletarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Fornecedores\frmAlterarFornecedores.resx">
+      <DependentUpon>frmAlterarFornecedores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Fornecedores\FrmConsultarFornecedores.resx">
       <DependentUpon>FrmConsultarFornecedores.cs</DependentUpon>
     </EmbeddedResource>
@@ -418,10 +459,10 @@
     <EmbeddedResource Include="Telas\Fornecedores\FrmAdicionarFornecedor.resx">
       <DependentUpon>FrmAdicionarFornecedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Holerite\frmFolhaDePagamento.resx">
+    <EmbeddedResource Include="Telas\Folha_Pagamento\frmFolhaDePagamento.resx">
       <DependentUpon>frmFolhaDePagamento.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Holerite\GerarFolha.resx">
+    <EmbeddedResource Include="Telas\Folha_Pagamento\GerarFolha.resx">
       <DependentUpon>GerarFolha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicialização\FrmCadastroFuncionarioLogin.resx">
@@ -457,27 +498,27 @@
     <EmbeddedResource Include="Telas\Planos\FrmVendaPlano.resx">
       <DependentUpon>FrmVendaPlano.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Produtos\FrmAdicionarProduto.resx">
+    <EmbeddedResource Include="Telas\Estoque\FrmAdicionarProduto.resx">
       <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Produtos\FrmAlterarProduto.resx">
+    <EmbeddedResource Include="Telas\Estoque\FrmAlterarProduto.resx">
       <DependentUpon>FrmAlterarProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Produtos\FrmConsultarProduto.resx">
+    <EmbeddedResource Include="Telas\Estoque\FrmConsultarProduto.resx">
       <DependentUpon>FrmConsultarProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Produtos\FrmDeletarProduto.resx">
+    <EmbeddedResource Include="Telas\Estoque\FrmDeletarProduto.resx">
       <DependentUpon>FrmDeletarProduto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Database\Entity\Entity Database.edmx">
+    <EntityDeploy Include="Database\Entity\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Entity Database.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Database\Entity\Entity Database.edmx.diagram">
-      <DependentUpon>Entity Database.edmx</DependentUpon>
+    <None Include="Database\Entity\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -507,20 +548,23 @@
     <None Include="Resources\guitarra.gif" />
     <None Include="Resources\instrumentos.gif" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Database\Modelos\" />
+    <None Include="Resources\giphy1.gif" />
+    <None Include="Resources\musica.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database\Entity\Entity Database.Context.tt">
+    <Content Include="Database\Entity\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Entity Database.edmx</DependentUpon>
-      <LastGenOutput>Entity Database.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Database\Entity\Entity Database.tt">
+    <Content Include="Database\Entity\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Entity Database.edmx</DependentUpon>
-      <LastGenOutput>Entity Database.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\logo Cultura Musical PNG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

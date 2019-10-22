@@ -16,5 +16,13 @@ namespace Cultura_Musical.Telas.Fornecedores
         {
             InitializeComponent();
         }
+
+        private void btnDeletar_Click(object sender, EventArgs e)
+        {
+            string nome = txtNFornecedor.Text;
+
+            Business.Business_Fornecedores forn = new Business.Business_Fornecedores();
+            forn.Remover(nome);
+        }
     }
 }

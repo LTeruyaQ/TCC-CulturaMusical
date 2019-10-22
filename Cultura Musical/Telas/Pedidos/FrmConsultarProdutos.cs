@@ -19,15 +19,12 @@ namespace Cultura_Musical.Telas.Pedidos
             string produto = txtProduto.Text;
             DateTime data = dtpCompra.Value;
             
-
             Business.Business_Pedidos pedido = new Business.Business_Pedidos();
-            List<Database.Entity.tb_produto_compra> con = pedido.ListarPedido(produto,data);
+            List<Database.Entity.tb_produto> con = pedido.ListarPedido(produto);
 
             dataGridView1.DataSource = con;
-
         }
 
-        
         private void FrmConsultarProdutos_Load(object sender, EventArgs e)
         {
 
@@ -36,7 +33,10 @@ namespace Cultura_Musical.Telas.Pedidos
         public void txtProduto_TextChanged(object sender, EventArgs e)
         {
            
+        }
 
+        private void label2_Click(object sender, EventArgs e)
+        {
 
         }
     }

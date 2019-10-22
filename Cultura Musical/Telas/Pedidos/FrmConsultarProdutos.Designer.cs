@@ -49,7 +49,7 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(112, 165);
             this.dataGridView1.Name = "dataGridView1";
@@ -73,6 +73,7 @@
             this.label2.Size = new System.Drawing.Size(78, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "Produto:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // dtpCompra
             // 
@@ -105,6 +106,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarProdutos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmConsultarProdutos";
             this.Load += new System.EventHandler(this.FrmConsultarProdutos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

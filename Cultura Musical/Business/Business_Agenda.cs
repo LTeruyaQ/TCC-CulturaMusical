@@ -9,76 +9,64 @@ namespace Cultura_Musical.Business
     class Business_Agenda
     {
         Database.Database_Agenda DB = new Database.Database_Agenda();
-        public void cadastroAula (Database.Entity.tb_cliente_aula agenda)
+
+        public void cadastrar (Database.Entity.tb_aula aula)
         {
-            this.cadastroAula(agenda);
-            DB.cadastrar(agenda);
+            this.validacao(aula);
+            DB.cadastrar(aula);
         }
 
-        public void AlteracaoAula (Database.Entity.tb_cliente_aula agenda)
+        public void alterar (Database.Entity.tb_aula aula)
         {
-            this.validação(agenda);
-            DB.alterar(agenda);
+            this.validacao(aula);
+            DB.alterar(aula);
         }
 
-        public void DescartarAula(Database.Entity.tb_cliente_aula agenda)
+        public List<Database.Entity.tb_aula> consultarpordata(DateTime data)
         {
-            DB.excluir(agenda.id_aula);
+            return DB.ListarPorData(data);
         }
 
-        public List<Database.Entity.tb_cliente_aula> ConsultaGeral ()
+        public List<Database.Entity.tb_aula> consultartodos ()
         {
-           List<Database.Entity.tb_cliente_aula> aulas = DB.ListarTodos();
-            return aulas;
-        }
-        
-        public List<Database.Entity.tb_cliente_aula> ConsultarPorData (DateTime date)
-        {
-            List<Database.Entity.tb_cliente_aula> aulas = DB.ListarPordata(date);
-            return aulas;
+            return DB.ListarTodos();
         }
 
-        public List<Database.Entity.tb_cliente_aula> ConsultarPorAluno(Database.Entity.tb_cliente_aula agenda)
+        public void axcluir (int id)
         {
-            List<Database.Entity.tb_cliente_aula> aulas = DB.ListarPorAluno(agenda);
-            return aulas;
+            
+            DB.excluir(id);
         }
 
-        public List<Database.Entity.tb_cliente_aula> ConsultarPorProfessor(Database.Entity.tb_cliente_aula agenda)
+        public void validacao (Database.Entity.tb_aula aula)
         {
-            List<Database.Entity.tb_cliente_aula> aulas = DB.ListarPorProfessor(agenda);
-            return aulas;
-        }
 
-        public void validação (Database.Entity.tb_cliente_aula agenda)
-        {
-            Database.Database_Agenda DBAulas = new Database.Database_Agenda();
+            Database.Entity.tb_aula validar_funcionario = DB.validaFuncionario(aula);
+            Database.Entity.tb_aula validar_cliente = DB.validaCliente(aula);
+            Database.Entity.tb_aula validar_sala = DB.validaSala(aula);
+            Database.Entity.tb_aula validar_contrato = DB.validarContrato(aula);
 
-            Database.Entity.tb_cliente_aula compromisso = DB.varificar(agenda);
 
-            if (agenda.dt_aula == compromisso.dt_aula
-                && agenda.hr_aula == compromisso.hr_aula
-                && agenda.id_sala == compromisso.id_sala)
-                throw new ArgumentException("Este horario e sala já esta ocupado");
-
-            if (agenda.id_funcionario == compromisso.id_funcionario)
-                throw new ArgumentException("Este funcionario já sendo requisitado em outra atividade");
-
-            if (agenda.id_cliente == 0)
-                throw new ArgumentException("É necessario declarar o aluno em questão");
-
-            if (agenda.id_funcionario == 0)
-                throw new ArgumentException("É necessario declarar o Funcionario encarregado");
-
-            if (agenda.id_sala == 0)
-                throw new ArgumentException("É necessario declarar o local que sera usado para a aula");
-
-            if (agenda.hr_aula == null)
-                throw new ArgumentException("É necessario declarar o horario da aula");
-
-            if (agenda.dt_aula == null)
+            if (aula.dt_aula == null)
                 throw new ArgumentException("É necessario declarar a data da aula");
 
+            if (aula.hr_aula == null)
+                throw new ArgumentException("É necessario declarar o horario da aula");
+
+            if (aula.tp_aula == string.Empty)
+                throw new ArgumentException("É necessario declarar o tipo da aula");
+
+            if (aula.id_cliente == validar_cliente.id_cliente)
+                throw new ArgumentException("Este aluno ja tem compromisso neste horario");
+
+            if (aula.id_funcionario == validar_funcionario.id_funcionario)
+                throw new ArgumentException("Este professor já tem compromisso neste horario");
+
+            if (aula.id_sala == validar_sala.id_sala)
+                throw new ArgumentException("Esta sala já esta em uso neste horario");
+
+            if (aula.id_venda_plano == validar_contrato.id_venda_plano)
+                throw new ArgumentException("O plano em deste aluno não possibilita esta ação");
         }
     }
 }

@@ -8,8 +8,7 @@ namespace Cultura_Musical.Database
 {
     class Database_Vendas
     {
-        Entity.mydbEntities3 DB = new Entity.mydbEntities3();
-
+        Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
         public void CadastrarNovoTipoDePlano(Entity.tb_venda_plano venda)
         {
@@ -27,8 +26,8 @@ namespace Cultura_Musical.Database
         {
             Entity.tb_venda_plano NovaVenda = DB.tb_venda_plano.FirstOrDefault(t => t.id_venda_plano == vendas.id_venda_plano);
 
-            NovaVenda.inicio = vendas.inicio;
-            NovaVenda.fim = vendas.fim;
+            NovaVenda.dt_inicio = vendas.dt_inicio;
+            NovaVenda.dt_fim = vendas.dt_fim;
             NovaVenda.id_cliente = vendas.id_cliente;
             NovaVenda.id_plano = vendas.id_plano;
           

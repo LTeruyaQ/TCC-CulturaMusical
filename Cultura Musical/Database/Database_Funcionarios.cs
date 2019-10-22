@@ -8,7 +8,7 @@ namespace Cultura_Musical.Database
 {
     class Database_Funcionarios
     {
-        Entity.mydbEntities3 DB = new Entity.mydbEntities3();
+        Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
 
         public void Cadastrar(Entity.tb_funcionario funcionario)

@@ -8,7 +8,7 @@ namespace Cultura_Musical.Database
 {
     class Database_Planos
     {
-        Entity.mydbEntities3 DB = new Entity.mydbEntities3();
+        Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
 
         public void CadastrarNovoTipoDePlano(Entity.tb_plano plano)
@@ -36,9 +36,9 @@ namespace Cultura_Musical.Database
 
 
             NovoPlano.ds_descricao = plano.ds_descricao;
-            NovoPlano.duracao = plano.duracao;
+            NovoPlano.ds_duracao = plano.ds_duracao;
             NovoPlano.nm_plano = plano.nm_plano;
-            NovoPlano.preco = plano.preco;
+            NovoPlano.vl_preco = plano.vl_preco;
             NovoPlano.qtd_aula_semana = plano.qtd_aula_semana;
 
             DB.SaveChanges();
