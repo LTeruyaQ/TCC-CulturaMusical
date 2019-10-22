@@ -46,5 +46,20 @@ namespace Cultura_Musical.Telas.Folha_de_Pagamento
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            string func = txtFuncionario.Text;
+
+            Database.Entity.tb_funcionario fon = new Database.Entity.tb_funcionario();
+
+
+            fon.vl_salario = Convert.ToDecimal(lblSalario.Text);
+
+            Business.Business_Folha_Pagamento folha = new Business.Business_Folha_Pagamento();
+            folha.ExtrairSalario(func, fon);
+
+        }
     }
 }

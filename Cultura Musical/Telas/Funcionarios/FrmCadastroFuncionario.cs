@@ -26,19 +26,30 @@ namespace Cultura_Musical.Telas
         {
             Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
             funcionario.nm_funcionario = txtNome.Text;
-            funcionario.vl_salario = Convert.ToDecimal(txtSalario.Text);
+            funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
             funcionario.ds_telefone = txtTelefone.Text;
             funcionario.ds_cargo = txtCargo.Text;
             funcionario.ds_cpf = txtCEP.Text;
             funcionario.dt_contratacao = dtpContratacao.Value;
             funcionario.ds_email = txtemail.Text;
             funcionario.ds_rg = txtRG.Text;
-            Database.Entity.tb_jornada jor = new Database.Entity.tb_jornada();           
+
+            Database.Entity.tb_jornada jor = new Database.Entity.tb_jornada();
             jor.hr_entrada = TimeSpan.Parse(Convert.ToString(dtpEntrada.Value));
             jor.hr_saida = TimeSpan.Parse(Convert.ToString(dtpSaida.Value));
 
-            Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
-            colaborador.CadastroFuncionario(funcionario);
+            if (rdnCNPJ.Checked == true)
+            {
+                mstMascara.Mask = "000.000.000 / 0000 - 00";
+                rdnCPF.Checked = false;
+            }
+            
+            else if(rdnCPF.Checked == true)
+            {
+                mstMascara.Mask = "000.000.000-00";
+                rdnCNPJ.Checked = false;
+            }
+
 
             string genero = cboGenero.Text;
 
@@ -50,6 +61,12 @@ namespace Cultura_Musical.Telas
             {
                 funcionario.ds_genero = false;
             }
+
+
+            Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
+            colaborador.CadastroFuncionario(funcionario,jor);
+
+            MessageBox.Show("Funcionário cadastrado com sucesso");
         }
     }
 }
