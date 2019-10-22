@@ -11,13 +11,9 @@ namespace Cultura_Musical.Database
 
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
-        public void AdicionarPedido(Database.Entity.tb_produto produto,Database.Entity.tb_compra_item pedido, Database.Entity.tb_compra compra)
-        {
-          
-            DB.tb_produto.Add(produto);
-            DB.tb_compra_item.Add(pedido);
-            DB.tb_compra.Add(compra);
-            DB.SaveChanges();
+        public void AdicionarPedido()
+        { 
+            DB.tb_compra.Add
         }
 
         public List<Database.Entity.tb_compra_item> ListarPedidoPorProduto(int id)
