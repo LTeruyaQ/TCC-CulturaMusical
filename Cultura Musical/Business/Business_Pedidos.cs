@@ -8,20 +8,34 @@ namespace Cultura_Musical.Business
 {
     class Business_Pedidos
     {
-        public void AdicionarPedido(Database.Entity.tb_produto pedido, Database.Entity.tb_fornecedor forn, Database.Entity.tb_compra compra)
+        Database.Database_Pedidos DB = new Database.Database_Pedidos();
+
+        public void cadastrar (Database.Entity.tb_compra compra)
         {
-            Database.Database_Pedidos top = new Database.Database_Pedidos();
-            top.AdicionarPedido(pedido,forn,compra);
+            this.validar(compra);
+            DB.AdicionarPedido(compra);
         }
 
-        public List<Database.Entity.tb_produto> ListarPedido(string produto)
+        public List<Database.Entity.tb_compra> listarTodos ()
         {
-            Database.Database_Pedidos pedido = new Database.Database_Pedidos();
-            List<Database.Entity.tb_produto> con = pedido.ListarPedido(produto);
-
-            return con;
+            List<Database.Entity.tb_compra> pedido = DB.ListarTodos();
+            return pedido;
         }
 
-        public void alterar (Database.Entity.co)
+        public void alterar (Database.Entity.tb_compra compra)
+        {
+            this.validar(compra);
+            DB.alterar(compra);
+        }
+
+        public void deletar (int id)
+        {
+            DB.deletar(id);
+        }
+       public void validar (Database.Entity.tb_compra compra)
+        {
+            if (compra.dt_entrega == null)
+                throw new ArgumentException("É necessario declarar a data de entraga");
+        }
     }
 }

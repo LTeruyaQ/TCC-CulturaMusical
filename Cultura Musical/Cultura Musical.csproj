@@ -67,6 +67,7 @@
     <Compile Include="Business\Business_Pedidos.cs" />
     <Compile Include="Business\Business_Planos.cs" />
     <Compile Include="Business\Business_Estoque.cs" />
+    <Compile Include="Business\Business_Produtos.cs" />
     <Compile Include="Business\Business_Venda.cs" />
     <Compile Include="Database\Database_Agenda.cs" />
     <Compile Include="Database\Database_Cliente.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Database\Database_Pedidos.cs" />
     <Compile Include="Database\Database_Planos.cs" />
     <Compile Include="Database\Database_Estoque.cs" />
+    <Compile Include="Database\Database_produtos.cs" />
     <Compile Include="Database\Database_Vendas.cs" />
     <Compile Include="Database\Entity\Model1.Context.cs">
       <AutoGen>True</AutoGen>
