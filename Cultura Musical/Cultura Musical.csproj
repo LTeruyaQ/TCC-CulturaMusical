@@ -66,6 +66,7 @@
     <Compile Include="Business\Business_Pedidos.cs" />
     <Compile Include="Business\Business_Planos.cs" />
     <Compile Include="Business\Business_Produtos.cs" />
+    <Compile Include="Business\Business_Vendas.cs" />
     <Compile Include="Database\Database_Agenda.cs" />
     <Compile Include="Database\Database_Cliente.cs" />
     <Compile Include="Database\Database_CRM.cs" />
