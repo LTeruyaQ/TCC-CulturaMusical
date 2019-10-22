@@ -8,7 +8,7 @@ namespace Cultura_Musical.Business
 {
     class Business_Funcionarios
     {
-        public void Consultar(Database.Entity.tb_funcionario funcionario)
+        public void CadastroFuncionario(Database.Entity.tb_funcionario funcionario, Database.Entity.tb_jornada jor)
         {
             if (funcionario.nm_funcionario == string.Empty)
             {
@@ -35,11 +35,193 @@ namespace Cultura_Musical.Business
                 throw new ArgumentException("O campo de Data de Nascimento está incorreto");
             }
 
-            else if (funcionario.dt_contratacao == DateTime.)
+            else if (funcionario.vl_salario == 0)
             {
-                throw new ArgumentException("O campo de Data de Nascimento está incorreto");
+                throw new ArgumentException("O campo de Salário está incorreto");
             }
 
+            else if (funcionario.ds_cep == string.Empty)
+            {
+                throw new ArgumentException("O campo de Salário está vazio");
+            }
+
+            else if (funcionario.ds_cargo == string.Empty)
+            {
+                throw new ArgumentException("O campo de Cargo está vazio");
+            }
+
+            else if(jor.hr_entrada == jor.hr_saida || jor.hr_entrada == jor.hr_saida)
+            {
+                throw new ArgumentException("Os campos de horários estão iguais");
+            }
+
+            else if(funcionario.ds_rua == string.Empty)
+            {
+                throw new ArgumentException("Os campos de horários estão iguais");
+            }
+
+            else if(funcionario.ds_estado == string.Empty)
+            {
+                throw new ArgumentException("O campo de Estado está vazio");
+            }
+
+            else if (funcionario.ds_bairro == string.Empty)
+            {
+                throw new ArgumentException("O campo Bairro está vazio");
+            }
+
+            Database.Database_Funcionarios func = new Database.Database_Funcionarios();
+            func.Cadastrar(funcionario, jor);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+        
 
             Database.Database_Funcionarios db = new Database.Database_Funcionarios();
             db.Consultar(funcionario);
