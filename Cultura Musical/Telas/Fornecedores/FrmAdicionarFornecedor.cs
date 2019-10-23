@@ -74,5 +74,10 @@ namespace Cultura_Musical.Telas.Fornecedores
         {
 
         }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
