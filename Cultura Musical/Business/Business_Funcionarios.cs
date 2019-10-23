@@ -9,13 +9,19 @@ namespace Cultura_Musical.Business
     class Business_Funcionarios
     {
 
-        Database.Database_Funcionarios func = new Database.Database_Funcionarios();
+        Database.Database_Funcionarios DB = new Database.Database_Funcionarios();
 
 
         public void CadastroFuncionario(Database.Entity.tb_funcionario funcionario)
         { 
-            func.Cadastrar(funcionario);
+            DB.Cadastrar(funcionario);
             
+        }
+
+        public List<Database.Entity.tb_funcionario> listarPorNome (Database.Entity.tb_funcionario funcionario)
+        {
+            List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorNome(funcionario.nm_funcionario);
+            return colaborador;
         }
         
         public void validar (Database.Entity.tb_funcionario funcionario)

@@ -17,6 +17,8 @@ namespace Cultura_Musical.Telas.Pedidos
             InitializeComponent();
         }
 
+        Business.Business_Pedidos top = new Business.Business_Pedidos();
+
         private void button1_Click(object sender, EventArgs e)
         {
            
@@ -34,8 +36,8 @@ namespace Cultura_Musical.Telas.Pedidos
 
             cboFornecedor.DataSource = forn;
 
-            Business.Business_Pedidos top = new Business.Business_Pedidos();
-            top.AdicionarPedido(pedido,forn,compra);
+            
+            top.cadastrar(pedido,forn,compra);
 
             MessageBox.Show("Salvo com sucesso");
         }
