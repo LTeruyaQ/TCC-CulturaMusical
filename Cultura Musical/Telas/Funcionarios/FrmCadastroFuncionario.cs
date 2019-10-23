@@ -34,9 +34,6 @@ namespace Cultura_Musical.Telas
             funcionario.ds_email = txtemail.Text;
             funcionario.ds_rg = txtRG.Text;
 
-            Database.Entity.tb_jornada jor = new Database.Entity.tb_jornada();
-            jor.hr_entrada = TimeSpan.Parse(Convert.ToString(dtpEntrada.Value));
-            jor.hr_saida = TimeSpan.Parse(Convert.ToString(dtpSaida.Value));
 
             if (rdnCNPJ.Checked == true)
             {
@@ -51,20 +48,20 @@ namespace Cultura_Musical.Telas
             }
 
 
-            string genero = cboGenero.Text;
+            //string genero = cboGenero.Text;
 
-            if (genero == "masculino")
-            {
-                funcionario.ds_genero = true;
-            }
-            else
-            {
-                funcionario.ds_genero = false;
-            }
+            //if (genero == "masculino")
+            //{
+            //    funcionario.ds_genero = 'm';
+            //}
+            //else
+            //{
+            //    funcionario.ds_genero = 'f';
+            //}
 
 
             Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
-            colaborador.CadastroFuncionario(funcionario,jor);
+            colaborador.CadastroFuncionario(funcionario);
 
             MessageBox.Show("Funcionário cadastrado com sucesso");
         }

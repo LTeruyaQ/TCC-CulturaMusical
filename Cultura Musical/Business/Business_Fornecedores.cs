@@ -8,7 +8,7 @@ namespace Cultura_Musical.Business
 {
     class Business_Fornecedores
     {
-        public void AddForn(Database.Entity.tb_fornecedor forn, Database.Entity.tb_produto prod)
+        public void AddForn(Database.Entity.tb_fornecedor forn)
         {
             if(forn.ds_email.Contains("@") == false || forn.ds_email == string.Empty)
             {
@@ -71,7 +71,7 @@ namespace Cultura_Musical.Business
             }
 
             Database.Database_Fornecedores top = new Database.Database_Fornecedores();
-            top.cadastrar(prod, forn); 
+            top.cadastrar( forn); 
         }
 
         public List<Database.Entity.tb_fornecedor> ListarForn()

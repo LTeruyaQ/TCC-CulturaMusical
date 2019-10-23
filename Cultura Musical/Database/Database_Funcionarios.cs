@@ -14,7 +14,6 @@ namespace Cultura_Musical.Database
         public void Cadastrar(Entity.tb_funcionario funcionario)
         {
             DB.tb_funcionario.Add(funcionario);
-           
             DB.SaveChanges();
         }
 
