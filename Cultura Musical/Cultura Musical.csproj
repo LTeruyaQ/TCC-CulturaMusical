@@ -67,6 +67,7 @@
     <Compile Include="Business\Business_Pedidos.cs" />
     <Compile Include="Business\Business_Planos.cs" />
     <Compile Include="Business\Business_Estoque.cs" />
+    <Compile Include="Business\Business_Produtos.cs" />
     <Compile Include="Business\Business_Venda.cs" />
     <Compile Include="Database\Database_Agenda.cs" />
     <Compile Include="Database\Database_Cliente.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Database\Database_Pedidos.cs" />
     <Compile Include="Database\Database_Planos.cs" />
     <Compile Include="Database\Database_Estoque.cs" />
+    <Compile Include="Database\Database_produtos.cs" />
     <Compile Include="Database\Database_Vendas.cs" />
     <Compile Include="Database\Entity\Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -141,9 +143,6 @@
     <Compile Include="Database\Entity\tb_jornada.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\tb_jornada_trabalho.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Database\Entity\tb_login.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -151,6 +150,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_produto.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_prolabore.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_sala.cs">
@@ -465,6 +467,9 @@
     <EmbeddedResource Include="Telas\Folha_Pagamento\GerarFolha.resx">
       <DependentUpon>GerarFolha.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Holerite\FrmAddHolerite.resx">
+      <DependentUpon>FrmAddHolerite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicialização\FrmCadastroFuncionarioLogin.resx">
       <DependentUpon>FrmCadastroFuncionarioLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -564,6 +569,12 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Home.PNG" />
+    <None Include="Resources\book-vector.png" />
+    <None Include="Resources\book1.PNG" />
+    <None Include="Resources\book.PNG" />
+    <None Include="Resources\aGENDA.jpg" />
+    <None Include="Resources\logo Titers.PNG" />
     <None Include="Resources\logo Cultura Musical PNG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
