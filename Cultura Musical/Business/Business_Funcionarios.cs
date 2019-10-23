@@ -8,7 +8,7 @@ namespace Cultura_Musical.Business
 {
     class Business_Funcionarios
     {
-        public void CadastroFuncionario(Database.Entity.tb_funcionario funcionario, Database.Entity.tb_jornada jor)
+        public void CadastroFuncionario(Database.Entity.tb_funcionario funcionario)
         {
             if (funcionario.nm_funcionario == string.Empty)
             {
@@ -50,11 +50,7 @@ namespace Cultura_Musical.Business
                 throw new ArgumentException("O campo de Cargo está vazio");
             }
 
-            else if(jor.hr_entrada == jor.hr_saida || jor.hr_entrada == jor.hr_saida)
-            {
-                throw new ArgumentException("Os campos de horários estão iguais");
-            }
-
+       
             else if(funcionario.ds_rua == string.Empty)
             {
                 throw new ArgumentException("Os campos de horários estão iguais");
@@ -71,161 +67,10 @@ namespace Cultura_Musical.Business
             }
 
             Database.Database_Funcionarios func = new Database.Database_Funcionarios();
-            func.Cadastrar(funcionario, jor);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            func.Cadastrar(funcionario);
 
         }
-        
-
-            Database.Database_Funcionarios db = new Database.Database_Funcionarios();
-            db.Consultar(funcionario);
-        }
+               
 
         public void CadastroFuncionario(Database.Entity.tb_funcionario funcionario)
         {

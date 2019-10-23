@@ -11,10 +11,9 @@ namespace Cultura_Musical.Database
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
 
-        public void Cadastrar(Entity.tb_funcionario funcionario,Database.Entity.tb_jornada jor)
+        public void Cadastrar(Entity.tb_funcionario funcionario)
         {
             DB.tb_funcionario.Add(funcionario);
-            DB.tb_jornada.Add(jor);
             DB.SaveChanges();
         }
 
@@ -45,7 +44,6 @@ namespace Cultura_Musical.Database
             Novofuncionario.ds_email = funcionarios.ds_email;
             Novofuncionario.ds_estado = funcionarios.ds_estado;
             Novofuncionario.ds_genero = funcionarios.ds_genero;
-            Novofuncionario.ds_prolabore = funcionarios.ds_prolabore;
             Novofuncionario.ds_rg = funcionarios.ds_rg;
             Novofuncionario.ds_rua = funcionarios.ds_rua;
             Novofuncionario.ds_telefone = funcionarios.ds_telefone;
