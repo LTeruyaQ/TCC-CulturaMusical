@@ -8,6 +8,9 @@ namespace Cultura_Musical.Database
 {
     class Database_Estoque
     {
-        
+        public void cadastrar (Entity.tb_estoque estoque)
+        {
+
+        }
     }
 }

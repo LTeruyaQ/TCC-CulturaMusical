@@ -11,10 +11,10 @@ namespace Cultura_Musical.Database
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
 
-        public void ExtrairSalario(string func,Database.Entity.tb_funcionario fon)
+        public Entity.tb_funcionario ExtrairSalario(Database.Entity.tb_funcionario fon)
         {
-            Entity.tb_funcionario holerites = DB.tb_funcionario.Where(T => T.nm_funcionario == func);
-           
+            Entity.tb_funcionario holerites = DB.tb_funcionario.FirstOrDefault(t => t.nm_funcionario == fon.nm_funcionario);
+            return holerites;
 
         }
         public void Cadastrar(Entity.tb_folha_pagamento pagamento)

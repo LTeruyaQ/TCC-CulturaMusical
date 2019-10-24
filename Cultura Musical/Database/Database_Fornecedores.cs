@@ -34,10 +34,9 @@ namespace Cultura_Musical.Database
         {
             Entity.tb_fornecedor NovoFornecedor = DB.tb_fornecedor.FirstOrDefault(t => t.id_fornecedor == fornecedor.id_fornecedor);
 
-            NovoFornecedor.inscricao_estadual = fornecedor.inscricao_estadual;
+            NovoFornecedor.inscicao_estadual = fornecedor.inscicao_estadual;
             NovoFornecedor.nm_fornecedor = fornecedor.nm_fornecedor;
             NovoFornecedor.rua = fornecedor.rua;
-            NovoFornecedor.tb_produto_compra = fornecedor.tb_produto_compra;
             NovoFornecedor.tell_contato = fornecedor.tell_contato;
             NovoFornecedor.tell_contato2 = fornecedor.tell_contato2;
             NovoFornecedor.bairro = fornecedor.bairro;

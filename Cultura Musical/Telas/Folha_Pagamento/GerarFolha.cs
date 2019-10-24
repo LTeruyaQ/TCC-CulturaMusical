@@ -58,7 +58,9 @@ namespace Cultura_Musical.Telas.Folha_de_Pagamento
             fon.vl_salario = Convert.ToDecimal(lblSalario.Text);
 
             Business.Business_Folha_Pagamento folha = new Business.Business_Folha_Pagamento();
-            folha.ExtrairSalario(func, fon);
+            Database.Entity.tb_funcionario holerites = folha.ExtrairSalario( fon);
+
+            lblSalario.Text = Convert.ToString(holerites.vl_salario);
 
         }
     }

@@ -8,7 +8,23 @@ namespace Cultura_Musical.Business
 {
     class Business_Funcionarios
     {
-        public void CadastroFuncionario(Database.Entity.tb_funcionario funcionario, Database.Entity.tb_jornada jor)
+
+        Database.Database_Funcionarios DB = new Database.Database_Funcionarios();
+
+
+        public void CadastroFuncionario(Database.Entity.tb_funcionario funcionario)
+        { 
+            DB.Cadastrar(funcionario);
+            
+        }
+
+        public List<Database.Entity.tb_funcionario> listarPorNome (Database.Entity.tb_funcionario funcionario)
+        {
+            List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorNome(funcionario.nm_funcionario);
+            return colaborador;
+        }
+        
+        public void validar (Database.Entity.tb_funcionario funcionario)
         {
             if (funcionario.nm_funcionario == string.Empty)
             {
@@ -50,17 +66,13 @@ namespace Cultura_Musical.Business
                 throw new ArgumentException("O campo de Cargo está vazio");
             }
 
-            else if(jor.hr_entrada == jor.hr_saida || jor.hr_entrada == jor.hr_saida)
+
+            else if (funcionario.ds_rua == string.Empty)
             {
                 throw new ArgumentException("Os campos de horários estão iguais");
             }
 
-            else if(funcionario.ds_rua == string.Empty)
-            {
-                throw new ArgumentException("Os campos de horários estão iguais");
-            }
-
-            else if(funcionario.ds_estado == string.Empty)
+            else if (funcionario.ds_estado == string.Empty)
             {
                 throw new ArgumentException("O campo de Estado está vazio");
             }
@@ -70,167 +82,10 @@ namespace Cultura_Musical.Business
                 throw new ArgumentException("O campo Bairro está vazio");
             }
 
-            Database.Database_Funcionarios func = new Database.Database_Funcionarios();
-            func.Cadastrar(funcionario, jor);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         }
-        
 
-            Database.Database_Funcionarios db = new Database.Database_Funcionarios();
-            db.Consultar(funcionario);
-        }
 
-        public void CadastroFuncionario(Database.Entity.tb_funcionario funcionario)
-        {
-            Database.Database_Funcionarios db = new Database.Database_Funcionarios();
-            db.AdicionarFuncionario(funcionario);
-        }
+
     }
 }
