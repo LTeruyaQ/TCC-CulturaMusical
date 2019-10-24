@@ -277,12 +277,6 @@
     <Compile Include="Telas\Fornecedores\FrmDeletarFornecedor.Designer.cs">
       <DependentUpon>FrmDeletarFornecedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Folha_Pagamento\frmFolhaDePagamento.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Folha_Pagamento\frmFolhaDePagamento.Designer.cs">
-      <DependentUpon>frmFolhaDePagamento.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Folha_Pagamento\GerarFolha.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -460,9 +454,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Fornecedores\FrmAdicionarFornecedor.resx">
       <DependentUpon>FrmAdicionarFornecedor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Folha_Pagamento\frmFolhaDePagamento.resx">
-      <DependentUpon>frmFolhaDePagamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Folha_Pagamento\GerarFolha.resx">
       <DependentUpon>GerarFolha.cs</DependentUpon>
