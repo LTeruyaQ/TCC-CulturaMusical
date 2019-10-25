@@ -7,23 +7,25 @@
     <EntitySet Name="tb_cliente" EntityType="culturamusicalModel.tb_cliente" />
     <EntitySet Name="tb_colaborador" EntityType="culturamusicalModel.tb_colaborador" />
     <EntitySet Name="tb_compra" EntityType="culturamusicalModel.tb_compra" />
-    <EntitySet Name="tb_compra_item" EntityType="culturamusicalModel.tb_compra_item" />
-    <EntitySet Name="tb_compromisso" EntityType="culturamusicalModel.tb_compromisso" />
     <EntitySet Name="tb_conta" EntityType="culturamusicalModel.tb_conta" />
+    <EntitySet Name="tb_dia_semana" EntityType="culturamusicalModel.tb_dia_semana" />
+    <EntitySet Name="tb_escala" EntityType="culturamusicalModel.tb_escala" />
+    <EntitySet Name="tb_escala_funcionario" EntityType="culturamusicalModel.tb_escala_funcionario" />
     <EntitySet Name="tb_estoque" EntityType="culturamusicalModel.tb_estoque" />
     <EntitySet Name="tb_financeiro" EntityType="culturamusicalModel.tb_financeiro" />
     <EntitySet Name="tb_folha_pagamento" EntityType="culturamusicalModel.tb_folha_pagamento" />
     <EntitySet Name="tb_fornecedor" EntityType="culturamusicalModel.tb_fornecedor" />
     <EntitySet Name="tb_funcionario" EntityType="culturamusicalModel.tb_funcionario" />
-    <EntitySet Name="tb_jornada" EntityType="culturamusicalModel.tb_jornada" />
+    <EntitySet Name="tb_holerite" EntityType="culturamusicalModel.tb_holerite" />
+    <EntitySet Name="tb_horario" EntityType="culturamusicalModel.tb_horario" />
     <EntitySet Name="tb_login" EntityType="culturamusicalModel.tb_login" />
     <EntitySet Name="tb_plano" EntityType="culturamusicalModel.tb_plano" />
     <EntitySet Name="tb_produto" EntityType="culturamusicalModel.tb_produto" />
     <EntitySet Name="tb_prolabore" EntityType="culturamusicalModel.tb_prolabore" />
     <EntitySet Name="tb_sala" EntityType="culturamusicalModel.tb_sala" />
     <EntitySet Name="tb_tipo_conta" EntityType="culturamusicalModel.tb_tipo_conta" />
-    <EntitySet Name="tb_venda" EntityType="culturamusicalModel.tb_venda" />
     <EntitySet Name="tb_venda_plano" EntityType="culturamusicalModel.tb_venda_plano" />
+    <EntitySet Name="fluxo_de_caixa" EntityType="culturamusicalModel.fluxo_de_caixa" />
     <AssociationSet Name="fk_tb_agenda_estudio_tb_cliente1" Association="culturamusicalModel.fk_tb_agenda_estudio_tb_cliente1">
       <End Role="tb_cliente" EntitySet="tb_cliente" />
       <End Role="tb_agenda_estudio" EntitySet="tb_agenda_estudio" />
@@ -52,21 +54,29 @@
       <End Role="tb_cliente" EntitySet="tb_cliente" />
       <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
     </AssociationSet>
-    <AssociationSet Name="fk_tb_compra_item_tb_compra1" Association="culturamusicalModel.fk_tb_compra_item_tb_compra1">
-      <End Role="tb_compra" EntitySet="tb_compra" />
-      <End Role="tb_compra_item" EntitySet="tb_compra_item" />
-    </AssociationSet>
     <AssociationSet Name="fk_tb_compra_tb_fornecedor1" Association="culturamusicalModel.fk_tb_compra_tb_fornecedor1">
       <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
       <End Role="tb_compra" EntitySet="tb_compra" />
     </AssociationSet>
-    <AssociationSet Name="fk_tb_compra_item_tb_produto1" Association="culturamusicalModel.fk_tb_compra_item_tb_produto1">
+    <AssociationSet Name="fk_tb_produto_tb_compra1" Association="culturamusicalModel.fk_tb_produto_tb_compra1">
+      <End Role="tb_compra" EntitySet="tb_compra" />
       <End Role="tb_produto" EntitySet="tb_produto" />
-      <End Role="tb_compra_item" EntitySet="tb_compra_item" />
     </AssociationSet>
     <AssociationSet Name="fk_tb_conta_tb_tipo_conta1" Association="culturamusicalModel.fk_tb_conta_tb_tipo_conta1">
       <End Role="tb_tipo_conta" EntitySet="tb_tipo_conta" />
       <End Role="tb_conta" EntitySet="tb_conta" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_escala_tb_dia_semana1" Association="culturamusicalModel.fk_tb_escala_tb_dia_semana1">
+      <End Role="tb_dia_semana" EntitySet="tb_dia_semana" />
+      <End Role="tb_escala" EntitySet="tb_escala" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_escala_tb_horario1" Association="culturamusicalModel.fk_tb_escala_tb_horario1">
+      <End Role="tb_horario" EntitySet="tb_horario" />
+      <End Role="tb_escala" EntitySet="tb_escala" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_escala_funcionario_tb_funcionario1" Association="culturamusicalModel.fk_tb_escala_funcionario_tb_funcionario1">
+      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+      <End Role="tb_escala_funcionario" EntitySet="tb_escala_funcionario" />
     </AssociationSet>
     <AssociationSet Name="fk_tb_estoque_tb_produto1" Association="culturamusicalModel.fk_tb_estoque_tb_produto1">
       <End Role="tb_produto" EntitySet="tb_produto" />
@@ -76,13 +86,13 @@
       <End Role="tb_financeiro" EntitySet="tb_financeiro" />
       <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
     </AssociationSet>
+    <AssociationSet Name="fk_tb_funcionario_tb_financeiro1" Association="culturamusicalModel.fk_tb_funcionario_tb_financeiro1">
+      <End Role="tb_financeiro" EntitySet="tb_financeiro" />
+      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+    </AssociationSet>
     <AssociationSet Name="fk_tb_folha_pagamento_tb_funcionario1" Association="culturamusicalModel.fk_tb_folha_pagamento_tb_funcionario1">
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
       <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
-    </AssociationSet>
-    <AssociationSet Name="fk_tb_jornada_tb_funcionario1" Association="culturamusicalModel.fk_tb_jornada_tb_funcionario1">
-      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-      <End Role="tb_jornada" EntitySet="tb_jornada" />
     </AssociationSet>
     <AssociationSet Name="fk_tb_login_tb_funcionario1" Association="culturamusicalModel.fk_tb_login_tb_funcionario1">
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
@@ -95,10 +105,6 @@
     <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="culturamusicalModel.fk_tb_venda_plano_tb_plano1">
       <End Role="tb_plano" EntitySet="tb_plano" />
       <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
-    </AssociationSet>
-    <AssociationSet Name="fk_tb_venda_tb_produto1" Association="culturamusicalModel.fk_tb_venda_tb_produto1">
-      <End Role="tb_produto" EntitySet="tb_produto" />
-      <End Role="tb_venda" EntitySet="tb_venda" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="tb_agenda_estudio">
@@ -159,6 +165,7 @@
     <Property Name="ds_periodo" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
     <Property Name="nm_responsavel" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="ds_nivel" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="nmr_cliente" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tb_agenda_estudio" Relationship="culturamusicalModel.fk_tb_agenda_estudio_tb_cliente1" FromRole="tb_cliente" ToRole="tb_agenda_estudio" />
     <NavigationProperty Name="tb_aula" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_cliente1" FromRole="tb_cliente" ToRole="tb_aula" />
     <NavigationProperty Name="tb_venda_plano" Relationship="culturamusicalModel.fk_tb_venda_plano_tb_cliente1" FromRole="tb_cliente" ToRole="tb_venda_plano" />
@@ -191,29 +198,8 @@
     <Property Name="dt_compra" Type="DateTime" Nullable="false" />
     <Property Name="vl_pagar" Type="Decimal" Nullable="false" />
     <Property Name="id_fornecedor" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="tb_compra_item" Relationship="culturamusicalModel.fk_tb_compra_item_tb_compra1" FromRole="tb_compra" ToRole="tb_compra_item" />
     <NavigationProperty Name="tb_fornecedor" Relationship="culturamusicalModel.fk_tb_compra_tb_fornecedor1" FromRole="tb_compra" ToRole="tb_fornecedor" />
-  </EntityType>
-  <EntityType Name="tb_compra_item">
-    <Key>
-      <PropertyRef Name="id_compra_item" />
-    </Key>
-    <Property Name="id_compra_item" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="id_compra" Type="Int32" Nullable="false" />
-    <Property Name="id_produto" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="tb_compra" Relationship="culturamusicalModel.fk_tb_compra_item_tb_compra1" FromRole="tb_compra_item" ToRole="tb_compra" />
-    <NavigationProperty Name="tb_produto" Relationship="culturamusicalModel.fk_tb_compra_item_tb_produto1" FromRole="tb_compra_item" ToRole="tb_produto" />
-  </EntityType>
-  <EntityType Name="tb_compromisso">
-    <Key>
-      <PropertyRef Name="id_compromisso" />
-    </Key>
-    <Property Name="id_compromisso" Type="Int32" Nullable="false" />
-    <Property Name="dt_dia" Type="DateTime" Nullable="false" />
-    <Property Name="hr_inicio" Type="Time" Nullable="false" />
-    <Property Name="hr_final" Type="Time" Nullable="false" />
-    <Property Name="id_cliente" Type="Int32" Nullable="false" />
-    <Property Name="sala" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_produto" Relationship="culturamusicalModel.fk_tb_produto_tb_compra1" FromRole="tb_compra" ToRole="tb_produto" />
   </EntityType>
   <EntityType Name="tb_conta">
     <Key>
@@ -225,6 +211,42 @@
     <Property Name="dt_conta" Type="DateTime" Nullable="false" />
     <Property Name="dt_pagamento" Type="DateTime" Nullable="false" />
     <NavigationProperty Name="tb_tipo_conta" Relationship="culturamusicalModel.fk_tb_conta_tb_tipo_conta1" FromRole="tb_conta" ToRole="tb_tipo_conta" />
+  </EntityType>
+  <EntityType Name="tb_dia_semana">
+    <Key>
+      <PropertyRef Name="id_dia_semana" />
+    </Key>
+    <Property Name="id_dia_semana" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="d_segunda" Type="Boolean" Nullable="false" />
+    <Property Name="d_terca" Type="Boolean" Nullable="false" />
+    <Property Name="d_quarta" Type="Boolean" Nullable="false" />
+    <Property Name="d_quinta" Type="Boolean" Nullable="false" />
+    <Property Name="d_sexta" Type="Boolean" Nullable="false" />
+    <Property Name="d_sabado" Type="Boolean" Nullable="false" />
+    <Property Name="d_domingo" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="tb_escala" Relationship="culturamusicalModel.fk_tb_escala_tb_dia_semana1" FromRole="tb_dia_semana" ToRole="tb_escala" />
+  </EntityType>
+  <EntityType Name="tb_escala">
+    <Key>
+      <PropertyRef Name="id_escala" />
+    </Key>
+    <Property Name="id_escala" Type="Int32" Nullable="false" />
+    <Property Name="id_dia_semana" Type="Int32" Nullable="false" />
+    <Property Name="id_horario" Type="Int32" Nullable="false" />
+    <Property Name="cod_escala" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_dia_semana" Relationship="culturamusicalModel.fk_tb_escala_tb_dia_semana1" FromRole="tb_escala" ToRole="tb_dia_semana" />
+    <NavigationProperty Name="tb_horario" Relationship="culturamusicalModel.fk_tb_escala_tb_horario1" FromRole="tb_escala" ToRole="tb_horario" />
+  </EntityType>
+  <EntityType Name="tb_escala_funcionario">
+    <Key>
+      <PropertyRef Name="id_escala_funcionario" />
+    </Key>
+    <Property Name="id_escala_funcionario" Type="Int32" Nullable="false" />
+    <Property Name="dt_inicio" Type="DateTime" Nullable="false" />
+    <Property Name="dt_final" Type="DateTime" Nullable="false" />
+    <Property Name="id_funcionario" Type="Int32" Nullable="false" />
+    <Property Name="cod_escala" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.fk_tb_escala_funcionario_tb_funcionario1" FromRole="tb_escala_funcionario" ToRole="tb_funcionario" />
   </EntityType>
   <EntityType Name="tb_estoque">
     <Key>
@@ -244,6 +266,7 @@
     <Property Name="ds_inss" Type="Decimal" Nullable="false" />
     <Property Name="ds_irrf" Type="Decimal" Nullable="false" />
     <NavigationProperty Name="tb_folha_pagamento" Relationship="culturamusicalModel.fk_tb_folha_pagamento_tb_financeiro1" FromRole="tb_financeiro" ToRole="tb_folha_pagamento" />
+    <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.fk_tb_funcionario_tb_financeiro1" FromRole="tb_financeiro" ToRole="tb_funcionario" />
   </EntityType>
   <EntityType Name="tb_folha_pagamento">
     <Key>
@@ -255,6 +278,7 @@
     <Property Name="id_funcionario" Type="Int32" Nullable="false" />
     <Property Name="id_financeiro" Type="Int32" Nullable="false" />
     <Property Name="dt_folha" Type="DateTime" Nullable="false" />
+    <Property Name="hr_extra" Type="Time" Nullable="false" />
     <NavigationProperty Name="tb_financeiro" Relationship="culturamusicalModel.fk_tb_folha_pagamento_tb_financeiro1" FromRole="tb_folha_pagamento" ToRole="tb_financeiro" />
     <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_folha_pagamento" ToRole="tb_funcionario" />
   </EntityType>
@@ -274,6 +298,7 @@
     <Property Name="ds_cnpj" Type="String" Nullable="false" MaxLength="14" FixedLength="false" Unicode="false" />
     <Property Name="ds_email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="inscicao_estadual" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="nmr_fornecedor" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tb_compra" Relationship="culturamusicalModel.fk_tb_compra_tb_fornecedor1" FromRole="tb_fornecedor" ToRole="tb_compra" />
   </EntityType>
   <EntityType Name="tb_funcionario">
@@ -298,20 +323,33 @@
     <Property Name="ds_bairro" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="vl_13_salario" Type="Decimal" />
     <Property Name="id_beneficio" Type="Int32" Nullable="false" />
+    <Property Name="id_financeiro" Type="Int32" Nullable="false" />
+    <Property Name="ds_cidade" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="nmr_funcionario" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tb_aula" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_aula" />
     <NavigationProperty Name="tb_beneficio" Relationship="culturamusicalModel.fk_tb_funcionario_tb_beneficio1" FromRole="tb_funcionario" ToRole="tb_beneficio" />
+    <NavigationProperty Name="tb_escala_funcionario" Relationship="culturamusicalModel.fk_tb_escala_funcionario_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_escala_funcionario" />
+    <NavigationProperty Name="tb_financeiro" Relationship="culturamusicalModel.fk_tb_funcionario_tb_financeiro1" FromRole="tb_funcionario" ToRole="tb_financeiro" />
     <NavigationProperty Name="tb_folha_pagamento" Relationship="culturamusicalModel.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_folha_pagamento" />
-    <NavigationProperty Name="tb_jornada" Relationship="culturamusicalModel.fk_tb_jornada_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_jornada" />
     <NavigationProperty Name="tb_login" Relationship="culturamusicalModel.fk_tb_login_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_login" />
   </EntityType>
-  <EntityType Name="tb_jornada">
+  <EntityType Name="tb_holerite">
     <Key>
-      <PropertyRef Name="id_jornada" />
+      <PropertyRef Name="id_holerite" />
     </Key>
-    <Property Name="id_jornada" Type="Int32" Nullable="false" />
-    <Property Name="id_funcionario" Type="Int32" Nullable="false" />
-    <Property Name="tot_faltas" Type="Int32" />
-    <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.fk_tb_jornada_tb_funcionario1" FromRole="tb_jornada" ToRole="tb_funcionario" />
+    <Property Name="id_holerite" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="vl_salario_liquido" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tb_horario">
+    <Key>
+      <PropertyRef Name="id_horario" />
+    </Key>
+    <Property Name="id_horario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="hr_entrada" Type="Time" Nullable="false" />
+    <Property Name="hr_almoco" Type="Time" Nullable="false" />
+    <Property Name="hr_retorno" Type="Time" Nullable="false" />
+    <Property Name="hr_saida" Type="Time" Nullable="false" />
+    <NavigationProperty Name="tb_escala" Relationship="culturamusicalModel.fk_tb_escala_tb_horario1" FromRole="tb_horario" ToRole="tb_escala" />
   </EntityType>
   <EntityType Name="tb_login">
     <Key>
@@ -346,9 +384,9 @@
     <Property Name="nm_produto" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
     <Property Name="vl_preco" Type="Decimal" Nullable="false" />
     <Property Name="qtd_produto" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="tb_compra_item" Relationship="culturamusicalModel.fk_tb_compra_item_tb_produto1" FromRole="tb_produto" ToRole="tb_compra_item" />
+    <Property Name="id_compra" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_compra" Relationship="culturamusicalModel.fk_tb_produto_tb_compra1" FromRole="tb_produto" ToRole="tb_compra" />
     <NavigationProperty Name="tb_estoque" Relationship="culturamusicalModel.fk_tb_estoque_tb_produto1" FromRole="tb_produto" ToRole="tb_estoque" />
-    <NavigationProperty Name="tb_venda" Relationship="culturamusicalModel.fk_tb_venda_tb_produto1" FromRole="tb_produto" ToRole="tb_venda" />
   </EntityType>
   <EntityType Name="tb_prolabore">
     <Key>
@@ -388,18 +426,6 @@
     <Property Name="tp_conta" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="tb_conta" Relationship="culturamusicalModel.fk_tb_conta_tb_tipo_conta1" FromRole="tb_tipo_conta" ToRole="tb_conta" />
   </EntityType>
-  <EntityType Name="tb_venda">
-    <Key>
-      <PropertyRef Name="id_venda" />
-    </Key>
-    <Property Name="id_venda" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="dt_venda" Type="DateTime" Nullable="false" />
-    <Property Name="qtd_produto" Type="Int32" Nullable="false" />
-    <Property Name="vl_pago" Type="Decimal" Nullable="false" />
-    <Property Name="id_cliente" Type="Int32" Nullable="false" />
-    <Property Name="id_produto" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="tb_produto" Relationship="culturamusicalModel.fk_tb_venda_tb_produto1" FromRole="tb_venda" ToRole="tb_produto" />
-  </EntityType>
   <EntityType Name="tb_venda_plano">
     <Key>
       <PropertyRef Name="id_venda_plano" />
@@ -412,6 +438,15 @@
     <NavigationProperty Name="tb_aula" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_venda_plano1" FromRole="tb_venda_plano" ToRole="tb_aula" />
     <NavigationProperty Name="tb_cliente" Relationship="culturamusicalModel.fk_tb_venda_plano_tb_cliente1" FromRole="tb_venda_plano" ToRole="tb_cliente" />
     <NavigationProperty Name="tb_plano" Relationship="culturamusicalModel.fk_tb_venda_plano_tb_plano1" FromRole="tb_venda_plano" ToRole="tb_plano" />
+  </EntityType>
+  <EntityType Name="fluxo_de_caixa">
+    <Key>
+      <PropertyRef Name="data_pagamento" />
+      <PropertyRef Name="tipo_operação" />
+    </Key>
+    <Property Name="data_pagamento" Type="DateTime" Nullable="false" />
+    <Property Name="valor_pago" Type="Decimal" />
+    <Property Name="tipo_operação" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
   </EntityType>
   <Association Name="fk_tb_agenda_estudio_tb_cliente1">
     <End Type="culturamusicalModel.tb_cliente" Role="tb_cliente" Multiplicity="1" />
@@ -497,18 +532,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="fk_tb_compra_item_tb_compra1">
-    <End Type="culturamusicalModel.tb_compra" Role="tb_compra" Multiplicity="1" />
-    <End Type="culturamusicalModel.tb_compra_item" Role="tb_compra_item" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_compra">
-        <PropertyRef Name="id_compra" />
-      </Principal>
-      <Dependent Role="tb_compra_item">
-        <PropertyRef Name="id_compra" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="fk_tb_compra_tb_fornecedor1">
     <End Type="culturamusicalModel.tb_fornecedor" Role="tb_fornecedor" Multiplicity="1" />
     <End Type="culturamusicalModel.tb_compra" Role="tb_compra" Multiplicity="*" />
@@ -521,15 +544,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="fk_tb_compra_item_tb_produto1">
-    <End Type="culturamusicalModel.tb_produto" Role="tb_produto" Multiplicity="1" />
-    <End Type="culturamusicalModel.tb_compra_item" Role="tb_compra_item" Multiplicity="*" />
+  <Association Name="fk_tb_produto_tb_compra1">
+    <End Type="culturamusicalModel.tb_compra" Role="tb_compra" Multiplicity="1" />
+    <End Type="culturamusicalModel.tb_produto" Role="tb_produto" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="tb_produto">
-        <PropertyRef Name="id_produto" />
+      <Principal Role="tb_compra">
+        <PropertyRef Name="id_compra" />
       </Principal>
-      <Dependent Role="tb_compra_item">
-        <PropertyRef Name="id_produto" />
+      <Dependent Role="tb_produto">
+        <PropertyRef Name="id_compra" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -542,6 +565,42 @@
       </Principal>
       <Dependent Role="tb_conta">
         <PropertyRef Name="id_tipo_conta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_escala_tb_dia_semana1">
+    <End Type="culturamusicalModel.tb_dia_semana" Role="tb_dia_semana" Multiplicity="1" />
+    <End Type="culturamusicalModel.tb_escala" Role="tb_escala" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_dia_semana">
+        <PropertyRef Name="id_dia_semana" />
+      </Principal>
+      <Dependent Role="tb_escala">
+        <PropertyRef Name="id_dia_semana" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_escala_tb_horario1">
+    <End Type="culturamusicalModel.tb_horario" Role="tb_horario" Multiplicity="1" />
+    <End Type="culturamusicalModel.tb_escala" Role="tb_escala" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_horario">
+        <PropertyRef Name="id_horario" />
+      </Principal>
+      <Dependent Role="tb_escala">
+        <PropertyRef Name="id_horario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_escala_funcionario_tb_funcionario1">
+    <End Type="culturamusicalModel.tb_funcionario" Role="tb_funcionario" Multiplicity="1" />
+    <End Type="culturamusicalModel.tb_escala_funcionario" Role="tb_escala_funcionario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_funcionario">
+        <PropertyRef Name="id_funcionario" />
+      </Principal>
+      <Dependent Role="tb_escala_funcionario">
+        <PropertyRef Name="id_funcionario" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -569,6 +628,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="fk_tb_funcionario_tb_financeiro1">
+    <End Type="culturamusicalModel.tb_financeiro" Role="tb_financeiro" Multiplicity="1" />
+    <End Type="culturamusicalModel.tb_funcionario" Role="tb_funcionario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_financeiro">
+        <PropertyRef Name="id_financeiro" />
+      </Principal>
+      <Dependent Role="tb_funcionario">
+        <PropertyRef Name="id_financeiro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="fk_tb_folha_pagamento_tb_funcionario1">
     <End Type="culturamusicalModel.tb_funcionario" Role="tb_funcionario" Multiplicity="1" />
     <End Type="culturamusicalModel.tb_folha_pagamento" Role="tb_folha_pagamento" Multiplicity="*" />
@@ -577,18 +648,6 @@
         <PropertyRef Name="id_funcionario" />
       </Principal>
       <Dependent Role="tb_folha_pagamento">
-        <PropertyRef Name="id_funcionario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_tb_jornada_tb_funcionario1">
-    <End Type="culturamusicalModel.tb_funcionario" Role="tb_funcionario" Multiplicity="1" />
-    <End Type="culturamusicalModel.tb_jornada" Role="tb_jornada" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_funcionario">
-        <PropertyRef Name="id_funcionario" />
-      </Principal>
-      <Dependent Role="tb_jornada">
         <PropertyRef Name="id_funcionario" />
       </Dependent>
     </ReferentialConstraint>
@@ -626,18 +685,6 @@
       </Principal>
       <Dependent Role="tb_venda_plano">
         <PropertyRef Name="id_plano" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_tb_venda_tb_produto1">
-    <End Type="culturamusicalModel.tb_produto" Role="tb_produto" Multiplicity="1" />
-    <End Type="culturamusicalModel.tb_venda" Role="tb_venda" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_produto">
-        <PropertyRef Name="id_produto" />
-      </Principal>
-      <Dependent Role="tb_venda">
-        <PropertyRef Name="id_produto" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
