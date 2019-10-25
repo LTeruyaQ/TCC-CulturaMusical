@@ -643,3 +643,6 @@ C:\Users\infoc24\Source\Repos\tcc-cultura-musical7\Cultura Musical\bin\Debug\Cul
 C:\Users\infoc24\Source\Repos\tcc-cultura-musical7\Cultura Musical\bin\Debug\Cultura Musical.pdb
 C:\Users\infoc24\Source\Repos\tcc-cultura-musical7\Cultura Musical\bin\Debug\EntityFramework.dll
 C:\Users\infoc24\Source\Repos\tcc-cultura-musical7\Cultura Musical\bin\Debug\EntityFramework.xml
+C:\Users\infoc24\Source\Repos\tcc-cultura-musical8\Cultura Musical\bin\Debug\Cultura Musical.exe.config
+C:\Users\infoc24\Source\Repos\tcc-cultura-musical8\Cultura Musical\obj\Debug\Cultura Musical.exe
+C:\Users\infoc24\Source\Repos\tcc-cultura-musical8\Cultura Musical\obj\Debug\Cultura Musical.pdb

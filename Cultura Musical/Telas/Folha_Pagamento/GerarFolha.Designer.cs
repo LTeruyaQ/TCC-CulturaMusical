@@ -82,6 +82,7 @@
             this.lblReferenciaSalario = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lblINSS = new System.Windows.Forms.Label();
             this.lblGratificação = new System.Windows.Forms.Label();
             this.lblVT = new System.Windows.Forms.Label();
             this.lblVA = new System.Windows.Forms.Label();
@@ -109,12 +110,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblINSS = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.lblINSSDesconto = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblVTDesconto = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.lblVADesconto = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -730,6 +730,15 @@
             this.groupBox5.TabIndex = 53;
             this.groupBox5.TabStop = false;
             // 
+            // lblINSS
+            // 
+            this.lblINSS.Location = new System.Drawing.Point(4, 130);
+            this.lblINSS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblINSS.Name = "lblINSS";
+            this.lblINSS.Size = new System.Drawing.Size(112, 14);
+            this.lblINSS.TabIndex = 28;
+            this.lblINSS.Text = " INSS";
+            // 
             // lblGratificação
             // 
             this.lblGratificação.Location = new System.Drawing.Point(4, 57);
@@ -1002,21 +1011,12 @@
             this.label1.Text = "Escola de Música Cultura Musical LTDA";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblINSS
-            // 
-            this.lblINSS.Location = new System.Drawing.Point(4, 130);
-            this.lblINSS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblINSS.Name = "lblINSS";
-            this.lblINSS.Size = new System.Drawing.Size(112, 14);
-            this.lblINSS.TabIndex = 28;
-            this.lblINSS.Text = " INSS";
-            // 
             // groupBox8
             // 
             this.groupBox8.Controls.Add(this.lblINSSDesconto);
-            this.groupBox8.Controls.Add(this.label6);
+            this.groupBox8.Controls.Add(this.lblVTDesconto);
             this.groupBox8.Controls.Add(this.label10);
-            this.groupBox8.Controls.Add(this.label11);
+            this.groupBox8.Controls.Add(this.lblVADesconto);
             this.groupBox8.Controls.Add(this.label12);
             this.groupBox8.Controls.Add(this.label19);
             this.groupBox8.Controls.Add(this.label20);
@@ -1038,15 +1038,15 @@
             this.lblINSSDesconto.Text = "0,00";
             this.lblINSSDesconto.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // label6
+            // lblVTDesconto
             // 
-            this.label6.Location = new System.Drawing.Point(4, 105);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 14);
-            this.label6.TabIndex = 36;
-            this.label6.Text = "0,00";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblVTDesconto.Location = new System.Drawing.Point(4, 105);
+            this.lblVTDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblVTDesconto.Name = "lblVTDesconto";
+            this.lblVTDesconto.Size = new System.Drawing.Size(85, 14);
+            this.lblVTDesconto.TabIndex = 36;
+            this.lblVTDesconto.Text = "0,00";
+            this.lblVTDesconto.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label10
             // 
@@ -1058,15 +1058,15 @@
             this.label10.Text = ".";
             this.label10.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // label11
+            // lblVADesconto
             // 
-            this.label11.Location = new System.Drawing.Point(4, 81);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(85, 14);
-            this.label11.TabIndex = 34;
-            this.label11.Text = "0,00";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblVADesconto.Location = new System.Drawing.Point(4, 81);
+            this.lblVADesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblVADesconto.Name = "lblVADesconto";
+            this.lblVADesconto.Size = new System.Drawing.Size(85, 14);
+            this.lblVADesconto.TabIndex = 34;
+            this.lblVADesconto.Text = "0,00";
+            this.lblVADesconto.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label12
             // 
@@ -1240,9 +1240,9 @@
         private System.Windows.Forms.Label lblINSS;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label lblINSSDesconto;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblVTDesconto;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblVADesconto;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;

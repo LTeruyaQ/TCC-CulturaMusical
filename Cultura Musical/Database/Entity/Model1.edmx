@@ -197,6 +197,8 @@
           <Property Name="ds_rua" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="ds_estado" Type="varchar" MaxLength="3" Nullable="false" />
           <Property Name="ds_bairro" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="ds_numero" Type="int" Nullable="false" />
+          <Property Name="ds_complemento" Type="varchar" MaxLength="80" />
           <Property Name="vl_13_salario" Type="decimal" Precision="10" Scale="0" />
           <Property Name="id_beneficio" Type="int" Nullable="false" />
           <Property Name="id_financeiro" Type="int" Nullable="false" />
@@ -986,6 +988,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="ds_rua" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="ds_estado" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
           <Property Name="ds_bairro" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ds_numero" Type="Int32" Nullable="false" />
+          <Property Name="ds_complemento" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
           <Property Name="vl_13_salario" Type="Decimal" />
           <Property Name="id_beneficio" Type="Int32" Nullable="false" />
           <Property Name="id_financeiro" Type="Int32" Nullable="false" />
@@ -1553,6 +1557,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
                 <ScalarProperty Name="id_financeiro" ColumnName="id_financeiro" />
                 <ScalarProperty Name="id_beneficio" ColumnName="id_beneficio" />
                 <ScalarProperty Name="vl_13_salario" ColumnName="vl_13_salario" />
+                <ScalarProperty Name="ds_complemento" ColumnName="ds_complemento" />
+                <ScalarProperty Name="ds_numero" ColumnName="ds_numero" />
                 <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
                 <ScalarProperty Name="ds_estado" ColumnName="ds_estado" />
                 <ScalarProperty Name="ds_rua" ColumnName="ds_rua" />
