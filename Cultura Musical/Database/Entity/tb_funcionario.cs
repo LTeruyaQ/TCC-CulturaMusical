@@ -38,6 +38,8 @@ namespace Cultura_Musical.Database.Entity
         public string ds_rua { get; set; }
         public string ds_estado { get; set; }
         public string ds_bairro { get; set; }
+        public int ds_numero { get; set; }
+        public string ds_complemento { get; set; }
         public Nullable<decimal> vl_13_salario { get; set; }
         public int id_beneficio { get; set; }
         public int id_financeiro { get; set; }
