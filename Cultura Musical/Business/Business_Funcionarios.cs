@@ -13,7 +13,8 @@ namespace Cultura_Musical.Business
 
 
         public void CadastroFuncionario(Database.Entity.tb_funcionario funcionario)
-        { 
+        {
+            this.validar(funcionario);
             DB.Cadastrar(funcionario);
             
         }
@@ -28,6 +29,11 @@ namespace Cultura_Musical.Business
         {
             List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorNome(cargo);
             return colaborador;
+        }
+
+        public void alterar (Database.Entity.tb_funcionario funcionario)
+        {
+
         }
 
         public void validar (Database.Entity.tb_funcionario funcionario)

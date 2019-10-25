@@ -18,7 +18,7 @@ namespace Cultura_Musical.Business
 
         public void AlterarProduto(Database.Entity.tb_produto altproduto)
         {
-            DB.AlterarProduto(altproduto);
+            //DB.AlterarProduto(altproduto);
         }
 
         public List<Database.Entity.tb_produto> ListarTudo()
