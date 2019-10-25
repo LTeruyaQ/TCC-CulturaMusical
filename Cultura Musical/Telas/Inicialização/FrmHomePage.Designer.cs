@@ -80,7 +80,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Cultura_Musical.Properties.Resources.Home;
-            this.pictureBox2.Location = new System.Drawing.Point(40, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(51, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(84, 69);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
