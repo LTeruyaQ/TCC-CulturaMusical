@@ -11,9 +11,10 @@ namespace Cultura_Musical.Database
 
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
-        public void AdicionarPedido(Entity.tb_compra compra)
+        public void AdicionarPedido(Entity.tb_compra compra, Entity.tb_produto pedido)
         {
             DB.tb_compra.Add(compra);
+            DB.tb_produto.Add(pedido);
             DB.SaveChanges();
         }
 

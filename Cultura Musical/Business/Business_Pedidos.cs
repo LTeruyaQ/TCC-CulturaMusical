@@ -10,10 +10,10 @@ namespace Cultura_Musical.Business
     {
         Database.Database_Pedidos DB = new Database.Database_Pedidos();
 
-        public void cadastrar (Database.Entity.tb_compra compra)
+        public void cadastrar (Database.Entity.tb_compra compra, Database.Entity.tb_produto pedido)
         {
             this.validar(compra);
-            DB.AdicionarPedido(compra);
+            DB.AdicionarPedido(compra, pedido);
         }
 
         public List<Database.Entity.tb_compra> listarTodos ()
