@@ -17,59 +17,56 @@ namespace Cultura_Musical.Telas
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
-            funcionario.nm_funcionario = txtNome.Text;
-            funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
-            funcionario.ds_telefone = txtTelefone.Text;
-            funcionario.ds_cargo = txtCargo.Text;
-            funcionario.ds_cpf = txtMascara.Text;
-            funcionario.ds_cep = txtCEP.Text;
-            funcionario.dt_contratacao = dtpContratacao.Value;
-            funcionario.ds_email = txtEmail.Text;
-            funcionario.ds_rg = txtRG.Text;
-            funcionario.ds_bairro = txtBairro.Text;
-            funcionario.ds_estado = txtEstado.Text;
-            funcionario.ds_rua = txtRua.Text;
-
-            if (rdnCNPJ.Checked == true)
+            try
             {
-                txtMascara.Mask = "000.000.000 / 0000 - 00";
-                rdnCPF.Checked = false;
+                Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
+                funcionario.nm_funcionario = txtNome.Text;
+                funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
+                funcionario.ds_telefone = txtTelefone.Text;
+                funcionario.ds_cargo = txtCargo.Text;
+                funcionario.ds_cpf = txtMascara.Text;
+                funcionario.ds_cep = txtCEP.Text;
+                funcionario.dt_contratacao = dtpContratacao.Value;
+                funcionario.ds_email = txtEmail.Text;
+                funcionario.ds_rg = txtRG.Text;
+                funcionario.ds_bairro = txtBairro.Text;
+                funcionario.ds_estado = txtEstado.Text;
+                funcionario.ds_rua = txtRua.Text;
+
+                if (rdnCNPJ.Checked == true)
+                {
+                    txtMascara.Mask = "000.000.000 / 0000 - 00";
+                    rdnCPF.Checked = false;
+                }
+
+                else if (rdnCPF.Checked == true)
+                {
+                    txtMascara.Mask = "000.000.000-00";
+                    rdnCNPJ.Checked = false;
+                }
+
+                //string genero = cboGenero.Text;
+
+                //if (genero == "masculino")
+                //{
+                //    funcionario.ds_genero = 'm';
+                //}
+                //else
+                //{
+                //    funcionario.ds_genero = 'f';
+                //}
+
+                Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
+                colaborador.CadastroFuncionario(funcionario);
+
+                MessageBox.Show("Funcionário cadastrado com sucesso.");
             }
-            
-            else if(rdnCPF.Checked == true)
+            catch (Exception)
             {
-                txtMascara.Mask = "000.000.000-00";
-                rdnCNPJ.Checked = false;
+                throw new ArgumentException("Verifique os erros de Cadastro.");
             }
-
-            //string genero = cboGenero.Text;
-
-            //if (genero == "masculino")
-            //{
-            //    funcionario.ds_genero = 'm';
-            //}
-            //else
-            //{
-            //    funcionario.ds_genero = 'f';
-            //}
-
-            Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
-            colaborador.CadastroFuncionario(funcionario);
-
-            MessageBox.Show("Funcionário cadastrado com sucesso");
-        }
-
-        private void txtCEP_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-           
         }
 
         private void txtCEP_Leave(object sender, EventArgs e)
