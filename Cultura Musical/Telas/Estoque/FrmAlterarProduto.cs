@@ -37,6 +37,7 @@ namespace Cultura_Musical.Telas.Produtos
             Database.Entity.tb_produto altproduto = new Database.Entity.tb_produto();
 
             altproduto.nm_produto = cboProduto.Text;
+
             altproduto.nm_produto = txtProdutoAlt.Text;
             altproduto.qtd_produto = Convert.ToInt32(nudQtd.Value);
 

@@ -38,7 +38,7 @@ namespace Cultura_Musical.Telas.Pedidos
             cboFornecedor.DataSource = forn;
 
             
-            top.cadastrar(pedido,forn,compra);
+            top.cadastrar(compra,pedido);
 
             MessageBox.Show("Salvo com sucesso");
         }

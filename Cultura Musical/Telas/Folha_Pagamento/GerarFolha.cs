@@ -37,5 +37,10 @@ namespace Cultura_Musical.Telas.Folha_de_Pagamento
         {
 
         }
+
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

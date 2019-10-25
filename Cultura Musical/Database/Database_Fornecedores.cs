@@ -10,10 +10,9 @@ namespace Cultura_Musical.Database
     {
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
-        public void cadastrar( Entity.tb_produto prod,Entity.tb_fornecedor forn)
+        public void cadastrar(Entity.tb_fornecedor forn)
         {
             DB.tb_fornecedor.Add(forn);
-            DB.tb_produto.Add(prod);
             DB.SaveChanges();
         }
 
