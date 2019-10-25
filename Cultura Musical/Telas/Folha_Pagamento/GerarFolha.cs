@@ -28,8 +28,10 @@ namespace Cultura_Musical.Telas.Folha_de_Pagamento
             Database.Entity.tb_funcionario holerites = folha.ConsultarPorFuncionario( fon);
 
             lblSalarioProvento.Text = Convert.ToString(holerites.vl_salario);
-            lblVAProvento.Text = Convert.ToString(fon.tb_beneficio.ds_va);
-            lblVTProvento.Text = Convert.ToString(fon.tb_beneficio.ds_vt);
+            lblVAProvento.Text = Convert.ToString(holerites.tb_beneficio.ds_va);
+            lblVTProvento.Text = Convert.ToString(holerites.tb_beneficio.ds_vt);
+            lblINSSDesconto.Text = Convert.ToString(holerites.tb_financeiro.ds_inss);
+
             
         }
 
