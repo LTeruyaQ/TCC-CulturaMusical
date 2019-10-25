@@ -175,6 +175,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Agenda\FrmAlterarAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -400,6 +405,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Agenda\FrmAlterarAgenda.resx">
       <DependentUpon>FrmAlterarAgenda.cs</DependentUpon>
@@ -559,6 +565,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\lixeira.png" />
     <None Include="Resources\lapis.png" />
     <None Include="Resources\Home.PNG" />
     <None Include="Resources\book-vector.png" />

@@ -124,6 +124,9 @@
   <data name="logo Cultura Musical PNG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo Cultura Musical PNG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="giphy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="giphy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\giphy1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,9 +148,6 @@
   <data name="bateria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bateria.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="instrumentos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\instrumentos.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="musica" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\musica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,13 +160,16 @@
   <data name="aGENDA" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aGENDA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lapis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lapis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logo Titers" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo Titers.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="book-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\book-vector.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lapis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lapis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="lixeira" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lixeira.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
