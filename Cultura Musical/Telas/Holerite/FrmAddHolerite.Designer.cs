@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
@@ -127,7 +124,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.groupBox22.SuspendLayout();
+            this.groupBox23 = new System.Windows.Forms.GroupBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.groupBox24 = new System.Windows.Forms.GroupBox();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
             this.groupBox21.SuspendLayout();
             this.groupBox20.SuspendLayout();
             this.groupBox19.SuspendLayout();
@@ -149,45 +159,15 @@
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox23.SuspendLayout();
+            this.groupBox24.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox22
-            // 
-            this.groupBox22.Controls.Add(this.label65);
-            this.groupBox22.Controls.Add(this.label66);
-            this.groupBox22.Location = new System.Drawing.Point(213, 509);
-            this.groupBox22.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox22.Size = new System.Drawing.Size(166, 45);
-            this.groupBox22.TabIndex = 84;
-            this.groupBox22.TabStop = false;
-            // 
-            // label65
-            // 
-            this.label65.Location = new System.Drawing.Point(4, 17);
-            this.label65.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(136, 13);
-            this.label65.TabIndex = 27;
-            this.label65.Text = "-";
-            this.label65.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label66
-            // 
-            this.label66.Location = new System.Drawing.Point(11, 15);
-            this.label66.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(148, 22);
-            this.label66.TabIndex = 26;
-            this.label66.Text = "FAIXA IRRF";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox21
             // 
             this.groupBox21.Controls.Add(this.label63);
             this.groupBox21.Controls.Add(this.label64);
-            this.groupBox21.Location = new System.Drawing.Point(53, 509);
+            this.groupBox21.Location = new System.Drawing.Point(13, 412);
             this.groupBox21.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Padding = new System.Windows.Forms.Padding(2);
@@ -219,7 +199,7 @@
             // 
             this.groupBox20.Controls.Add(this.label61);
             this.groupBox20.Controls.Add(this.label62);
-            this.groupBox20.Location = new System.Drawing.Point(541, 459);
+            this.groupBox20.Location = new System.Drawing.Point(634, 411);
             this.groupBox20.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.Padding = new System.Windows.Forms.Padding(2);
@@ -251,7 +231,7 @@
             // 
             this.groupBox19.Controls.Add(this.label59);
             this.groupBox19.Controls.Add(this.label60);
-            this.groupBox19.Location = new System.Drawing.Point(380, 460);
+            this.groupBox19.Location = new System.Drawing.Point(478, 411);
             this.groupBox19.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.Padding = new System.Windows.Forms.Padding(2);
@@ -283,7 +263,7 @@
             // 
             this.groupBox18.Controls.Add(this.label57);
             this.groupBox18.Controls.Add(this.label58);
-            this.groupBox18.Location = new System.Drawing.Point(216, 460);
+            this.groupBox18.Location = new System.Drawing.Point(322, 412);
             this.groupBox18.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Padding = new System.Windows.Forms.Padding(2);
@@ -315,7 +295,7 @@
             // 
             this.groupBox17.Controls.Add(this.label55);
             this.groupBox17.Controls.Add(this.label56);
-            this.groupBox17.Location = new System.Drawing.Point(53, 460);
+            this.groupBox17.Location = new System.Drawing.Point(166, 412);
             this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Padding = new System.Windows.Forms.Padding(2);
@@ -349,11 +329,11 @@
             this.groupBox14.Controls.Add(this.groupBox16);
             this.groupBox14.Controls.Add(this.label53);
             this.groupBox14.Controls.Add(this.label54);
-            this.groupBox14.Location = new System.Drawing.Point(329, 405);
+            this.groupBox14.Location = new System.Drawing.Point(394, 507);
             this.groupBox14.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox14.Size = new System.Drawing.Size(316, 45);
+            this.groupBox14.Size = new System.Drawing.Size(316, 44);
             this.groupBox14.TabIndex = 78;
             this.groupBox14.TabStop = false;
             // 
@@ -446,7 +426,7 @@
             // 
             this.groupBox11.Controls.Add(this.label42);
             this.groupBox11.Controls.Add(this.label43);
-            this.groupBox11.Location = new System.Drawing.Point(447, 357);
+            this.groupBox11.Location = new System.Drawing.Point(628, 351);
             this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Padding = new System.Windows.Forms.Padding(2);
@@ -480,7 +460,7 @@
             this.groupBox10.Controls.Add(this.groupBox12);
             this.groupBox10.Controls.Add(this.label41);
             this.groupBox10.Controls.Add(this.label45);
-            this.groupBox10.Location = new System.Drawing.Point(354, 357);
+            this.groupBox10.Location = new System.Drawing.Point(271, 354);
             this.groupBox10.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Padding = new System.Windows.Forms.Padding(2);
@@ -580,7 +560,7 @@
             this.groupBox9.Controls.Add(this.label39);
             this.groupBox9.Controls.Add(this.textBox10);
             this.groupBox9.Controls.Add(this.label38);
-            this.groupBox9.Location = new System.Drawing.Point(61, 356);
+            this.groupBox9.Location = new System.Drawing.Point(29, 495);
             this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
@@ -656,7 +636,7 @@
             this.groupBox8.Controls.Add(this.label33);
             this.groupBox8.Controls.Add(this.label36);
             this.groupBox8.Controls.Add(this.label37);
-            this.groupBox8.Location = new System.Drawing.Point(447, 193);
+            this.groupBox8.Location = new System.Drawing.Point(621, 189);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
@@ -733,7 +713,7 @@
             this.groupBox7.Controls.Add(this.label30);
             this.groupBox7.Controls.Add(this.lblSalario);
             this.groupBox7.Controls.Add(this.label32);
-            this.groupBox7.Location = new System.Drawing.Point(351, 193);
+            this.groupBox7.Location = new System.Drawing.Point(271, 190);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
@@ -818,7 +798,7 @@
             this.groupBox6.Controls.Add(this.label25);
             this.groupBox6.Controls.Add(this.label24);
             this.groupBox6.Controls.Add(this.label23);
-            this.groupBox6.Location = new System.Drawing.Point(254, 193);
+            this.groupBox6.Location = new System.Drawing.Point(739, 92);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
@@ -884,7 +864,7 @@
             this.groupBox5.Controls.Add(this.label20);
             this.groupBox5.Controls.Add(this.label19);
             this.groupBox5.Controls.Add(this.label13);
-            this.groupBox5.Location = new System.Drawing.Point(109, 193);
+            this.groupBox5.Location = new System.Drawing.Point(126, 189);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
@@ -954,7 +934,7 @@
             this.groupBox4.Controls.Add(this.label16);
             this.groupBox4.Controls.Add(this.label15);
             this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Location = new System.Drawing.Point(62, 193);
+            this.groupBox4.Location = new System.Drawing.Point(79, 189);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
@@ -1025,7 +1005,7 @@
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(62, 134);
+            this.groupBox3.Location = new System.Drawing.Point(79, 130);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
@@ -1106,7 +1086,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(62, 57);
+            this.groupBox1.Location = new System.Drawing.Point(79, 53);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -1196,7 +1176,7 @@
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(197, 9);
+            this.label10.Location = new System.Drawing.Point(214, 5);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(437, 33);
@@ -1204,13 +1184,154 @@
             this.label10.Text = "Escola de Música Cultura Musical LTDA";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // groupBox23
+            // 
+            this.groupBox23.Controls.Add(this.label11);
+            this.groupBox23.Controls.Add(this.label31);
+            this.groupBox23.Controls.Add(this.label70);
+            this.groupBox23.Controls.Add(this.label71);
+            this.groupBox23.Controls.Add(this.label72);
+            this.groupBox23.Controls.Add(this.label73);
+            this.groupBox23.Location = new System.Drawing.Point(476, 190);
+            this.groupBox23.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox23.Name = "groupBox23";
+            this.groupBox23.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox23.Size = new System.Drawing.Size(141, 159);
+            this.groupBox23.TabIndex = 73;
+            this.groupBox23.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(4, 57);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(117, 14);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "GRATIFICAÇÕES";
+            // 
+            // label31
+            // 
+            this.label31.Location = new System.Drawing.Point(4, 130);
+            this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(112, 14);
+            this.label31.TabIndex = 27;
+            this.label31.Text = " INSS";
+            // 
+            // label70
+            // 
+            this.label70.Location = new System.Drawing.Point(4, 105);
+            this.label70.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(112, 14);
+            this.label70.TabIndex = 26;
+            this.label70.Text = "VALE-TRANSPORTE";
+            // 
+            // label71
+            // 
+            this.label71.Location = new System.Drawing.Point(4, 81);
+            this.label71.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(117, 14);
+            this.label71.TabIndex = 25;
+            this.label71.Text = "VALE-ALIMENTAÇÃO";
+            // 
+            // label72
+            // 
+            this.label72.Location = new System.Drawing.Point(4, 29);
+            this.label72.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(112, 14);
+            this.label72.TabIndex = 24;
+            this.label72.Text = "SALARIO DO MES";
+            // 
+            // label73
+            // 
+            this.label73.Location = new System.Drawing.Point(19, 6);
+            this.label73.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(72, 17);
+            this.label73.TabIndex = 23;
+            this.label73.Text = "DESCRIÇÃO";
+            // 
+            // groupBox24
+            // 
+            this.groupBox24.Controls.Add(this.label74);
+            this.groupBox24.Controls.Add(this.label75);
+            this.groupBox24.Controls.Add(this.label76);
+            this.groupBox24.Controls.Add(this.label77);
+            this.groupBox24.Controls.Add(this.label78);
+            this.groupBox24.Controls.Add(this.label79);
+            this.groupBox24.Location = new System.Drawing.Point(433, 190);
+            this.groupBox24.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox24.Name = "groupBox24";
+            this.groupBox24.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox24.Size = new System.Drawing.Size(38, 159);
+            this.groupBox24.TabIndex = 72;
+            this.groupBox24.TabStop = false;
+            // 
+            // label74
+            // 
+            this.label74.Location = new System.Drawing.Point(7, 130);
+            this.label74.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(27, 14);
+            this.label74.TabIndex = 28;
+            this.label74.Text = "05";
+            // 
+            // label75
+            // 
+            this.label75.Location = new System.Drawing.Point(2, 6);
+            this.label75.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(32, 14);
+            this.label75.TabIndex = 23;
+            this.label75.Text = "COD";
+            // 
+            // label76
+            // 
+            this.label76.Location = new System.Drawing.Point(7, 107);
+            this.label76.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(27, 14);
+            this.label76.TabIndex = 27;
+            this.label76.Text = "04";
+            // 
+            // label77
+            // 
+            this.label77.Location = new System.Drawing.Point(7, 81);
+            this.label77.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(27, 14);
+            this.label77.TabIndex = 26;
+            this.label77.Text = "03";
+            // 
+            // label78
+            // 
+            this.label78.Location = new System.Drawing.Point(7, 57);
+            this.label78.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(27, 14);
+            this.label78.TabIndex = 25;
+            this.label78.Text = "02";
+            // 
+            // label79
+            // 
+            this.label79.Location = new System.Drawing.Point(7, 29);
+            this.label79.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(27, 14);
+            this.label79.TabIndex = 24;
+            this.label79.Text = "01";
+            // 
             // FrmAddHolerite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 612);
+            this.Controls.Add(this.groupBox23);
+            this.Controls.Add(this.groupBox24);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.groupBox22);
             this.Controls.Add(this.groupBox21);
             this.Controls.Add(this.groupBox20);
             this.Controls.Add(this.groupBox19);
@@ -1230,7 +1351,6 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmAddHolerite";
             this.Text = "FrmAddHolerite";
-            this.groupBox22.ResumeLayout(false);
             this.groupBox21.ResumeLayout(false);
             this.groupBox20.ResumeLayout(false);
             this.groupBox19.ResumeLayout(false);
@@ -1255,16 +1375,14 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox23.ResumeLayout(false);
+            this.groupBox24.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox22;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
@@ -1361,5 +1479,19 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox groupBox23;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.GroupBox groupBox24;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
     }
 }
