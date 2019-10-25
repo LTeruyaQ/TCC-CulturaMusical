@@ -29,24 +29,26 @@ namespace Cultura_Musical.Telas
             funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
             funcionario.ds_telefone = txtTelefone.Text;
             funcionario.ds_cargo = txtCargo.Text;
-            funcionario.ds_cpf = txtCEP.Text;
+            funcionario.ds_cpf = txtMascara.Text;
+            funcionario.ds_cep = txtCEP.Text;
             funcionario.dt_contratacao = dtpContratacao.Value;
-            funcionario.ds_email = txtemail.Text;
+            funcionario.ds_email = txtEmail.Text;
             funcionario.ds_rg = txtRG.Text;
-
+            funcionario.ds_bairro = txtBairro.Text;
+            funcionario.ds_estado = txtEstado.Text;
+            funcionario.ds_rua = txtRua.Text;
 
             if (rdnCNPJ.Checked == true)
             {
-                mstMascara.Mask = "000.000.000 / 0000 - 00";
+                txtMascara.Mask = "000.000.000 / 0000 - 00";
                 rdnCPF.Checked = false;
             }
             
             else if(rdnCPF.Checked == true)
             {
-                mstMascara.Mask = "000.000.000-00";
+                txtMascara.Mask = "000.000.000-00";
                 rdnCNPJ.Checked = false;
             }
-
 
             //string genero = cboGenero.Text;
 
@@ -59,11 +61,25 @@ namespace Cultura_Musical.Telas
             //    funcionario.ds_genero = 'f';
             //}
 
-
             Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
             colaborador.CadastroFuncionario(funcionario);
 
             MessageBox.Show("Funcionário cadastrado com sucesso");
+        }
+
+        private void txtCEP_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+           
+        }
+
+        private void txtCEP_Leave(object sender, EventArgs e)
+        {
+            API_s.Correio__API api = new API_s.Correio__API();
+            dynamic resp = api.Buscar(txtCEP.Text);
+
+            txtRua.Text = resp.logradouro;
+            txtEstado.Text = resp.localidade;
+            txtBairro.Text = resp.bairro;
         }
     }
 }
