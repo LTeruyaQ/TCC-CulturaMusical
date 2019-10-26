@@ -10,15 +10,27 @@ namespace Cultura_Musical.Business
     {
         Database.Database_Pedidos DB = new Database.Database_Pedidos();
 
-        public void cadastrar (Database.Entity.tb_compra compra)
+        public void cadastrar (Database.Entity.tb_compra compra, Database.Entity.tb_produto pedido)
         {
             this.validar(compra);
-            DB.AdicionarPedido(compra);
+            DB.AdicionarPedido(compra, pedido);
         }
 
-        public List<Database.Entity.tb_compra> listarTodos ()
+        public List<Database.Entity.tb_produto> ListarTudo(Database.Entity.tb_produto pedido)
         {
-            List<Database.Entity.tb_compra> pedido = DB.ListarTodos();
+            List<Database.Entity.tb_produto> pedidoo = DB.ListarTodos();
+            return pedidoo;
+        }
+
+        public List<Database.Entity.tb_produto> ListarProduto(string produto)
+        {
+            List<Database.Entity.tb_produto> pedido = DB.ListarProduto(produto);
+            return pedido;
+        }
+
+        public List<Database.Entity.tb_compra> ListarData(DateTime data)
+        {
+            List<Database.Entity.tb_compra> pedido = DB.ListarData(data);
             return pedido;
         }
 
@@ -28,9 +40,9 @@ namespace Cultura_Musical.Business
             DB.alterar(compra);
         }
 
-        public void deletar (int id)
+        public void Remover(string produto)
         {
-            DB.deletar(id);
+            DB.Remover(produto);
         }
        public void validar (Database.Entity.tb_compra compra)
         {

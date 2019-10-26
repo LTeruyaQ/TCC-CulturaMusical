@@ -13,17 +13,29 @@ namespace Cultura_Musical.Business
 
 
         public void CadastroFuncionario(Database.Entity.tb_funcionario funcionario)
-        { 
+        {
+            this.validar(funcionario);
             DB.Cadastrar(funcionario);
             
         }
 
-        public List<Database.Entity.tb_funcionario> listarPorNome (Database.Entity.tb_funcionario funcionario)
+        public List<Database.Entity.tb_funcionario> ListarPorNome (string nome)
         {
-            List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorNome(funcionario.nm_funcionario);
+            List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorNome(nome);
             return colaborador;
         }
-        
+
+        public List<Database.Entity.tb_funcionario> ListarPorCargo(string cargo)
+        {
+            List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorNome(cargo);
+            return colaborador;
+        }
+
+        public void alterar (Database.Entity.tb_funcionario funcionario)
+        {
+
+        }
+
         public void validar (Database.Entity.tb_funcionario funcionario)
         {
             if (funcionario.nm_funcionario == string.Empty)

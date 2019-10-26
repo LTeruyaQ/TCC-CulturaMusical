@@ -16,10 +16,10 @@ namespace Cultura_Musical.Telas.Produtos
         {
             InitializeComponent();
 
-            string produto = txtProduto.Text;
+        
 
             Business.Business_Estoque pedido = new Business.Business_Estoque();
-            List<Database.Entity.tb_produto> con = pedido.ListarPorProduto(produto);
+            List<Database.Entity.tb_produto> con = pedido.ListarTudo();
 
             dgvListar.DataSource = con;
 
@@ -38,7 +38,13 @@ namespace Cultura_Musical.Telas.Produtos
 
         private void txtProduto_TextChanged(object sender, EventArgs e)
         {
-           
+            string produto = txtProduto.Text;
+
+            Business.Business_Estoque top = new Business.Business_Estoque();
+            List<Database.Entity.tb_produto> con = top.ListarProduto(produto);
+
+            dgvListar.DataSource = con;
+
         }
     }
 }

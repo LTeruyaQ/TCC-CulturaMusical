@@ -22,24 +22,22 @@ namespace Cultura_Musical.Telas.Funcionario
 
         private void txtNomeFuncionário_TextChanged(object sender, EventArgs e)
         {
-            Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
-            funcionario.nm_funcionario = txtNomeFuncionário.Text;
+            string nome = txtNomeFuncionário.Text;
 
-           
-            List<Database.Entity.tb_funcionario> func = colaborador.listarPorNome(funcionario);
+            Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
+            List<Database.Entity.tb_funcionario> func = colaborador.ListarPorNome(nome);
 
             dgvConsultaFuncionario.DataSource = func;
         }
 
         private void txtCargo_TextChanged(object sender, EventArgs e)
         {
-            Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
-            funcionario.ds_cargo = txtCargo.Text;
+            string cargo = txtCargo.Text;
 
             Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
-            colaborador.Consultar(funcionario);
+            List<Database.Entity.tb_funcionario> func = colaborador.ListarPorCargo(cargo);
 
-            dgvConsultaFuncionario.DataSource = funcionario;
+            dgvConsultaFuncionario.DataSource = func;
         }
 
         private void FrmConsultarFuncionarios_Load(object sender, EventArgs e)

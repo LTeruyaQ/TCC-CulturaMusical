@@ -40,11 +40,6 @@ namespace Cultura_Musical.Business
                 throw new ArgumentException("O campo de Telefone(2) está incorreto");
             }
 
-            else if(prod.nm_produto == string.Empty)
-            {
-                throw new ArgumentException("O campo de Fornecimento está vazio");
-            }
-
             else if(forn.rua == string.Empty)
             {
                 throw new ArgumentException("O campo 'Rua' está vazio");
@@ -71,7 +66,7 @@ namespace Cultura_Musical.Business
             }
 
             Database.Database_Fornecedores top = new Database.Database_Fornecedores();
-            top.cadastrar( forn); 
+            top.cadastrar(forn); 
         }
 
         public List<Database.Entity.tb_fornecedor> ListarForn()

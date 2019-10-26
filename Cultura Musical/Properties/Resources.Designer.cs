@@ -143,6 +143,16 @@ namespace Cultura_Musical.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap giphy2 {
+            get {
+                object obj = ResourceManager.GetObject("giphy2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap guitarra {
             get {
                 object obj = ResourceManager.GetObject("guitarra", resourceCulture);
@@ -163,9 +173,19 @@ namespace Cultura_Musical.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap instrumentos {
+        internal static System.Drawing.Bitmap lapis {
             get {
-                object obj = ResourceManager.GetObject("instrumentos", resourceCulture);
+                object obj = ResourceManager.GetObject("lapis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lixeira {
+            get {
+                object obj = ResourceManager.GetObject("lixeira", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

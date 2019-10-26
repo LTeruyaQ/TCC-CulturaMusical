@@ -34,14 +34,22 @@
             this.txtCargo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvConsultaFuncionario)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvConsultaFuncionario
             // 
+            this.dgvConsultaFuncionario.AllowUserToAddRows = false;
+            this.dgvConsultaFuncionario.AllowUserToDeleteRows = false;
             this.dgvConsultaFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsultaFuncionario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
             this.dgvConsultaFuncionario.Location = new System.Drawing.Point(50, 92);
             this.dgvConsultaFuncionario.Name = "dgvConsultaFuncionario";
+            this.dgvConsultaFuncionario.ReadOnly = true;
             this.dgvConsultaFuncionario.Size = new System.Drawing.Size(489, 347);
             this.dgvConsultaFuncionario.TabIndex = 0;
             this.dgvConsultaFuncionario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultaFuncionario_CellContentClick);
@@ -91,6 +99,28 @@
             this.label3.Text = "Consultar Colaborador";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "alterar";
+            this.Column1.Image = global::Cultura_Musical.Properties.Resources.lapis;
+            this.Column1.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column1.Width = 20;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "excluir";
+            this.Column2.Image = global::Cultura_Musical.Properties.Resources.lixeira;
+            this.Column2.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column2.Width = 20;
+            // 
             // FrmConsultarFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -120,5 +150,7 @@
         private System.Windows.Forms.TextBox txtCargo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewImageColumn Column1;
+        private System.Windows.Forms.DataGridViewImageColumn Column2;
     }
 }

@@ -10,9 +10,9 @@ namespace Cultura_Musical.Business
     {
         Database.Database_Folha_Pagamento folha = new Database.Database_Folha_Pagamento();
 
-        public Database.Entity.tb_funcionario ExtrairSalario(Database.Entity.tb_funcionario fon)
+        public Database.Entity.tb_funcionario ConsultarPorFuncionario(Database.Entity.tb_funcionario fon)
         {
-           Database.Entity.tb_funcionario holerites = folha.ExtrairSalario(fon);
+           Database.Entity.tb_funcionario holerites = folha.ConsultarPorFuncionario(fon);
            return holerites;
         }
     }

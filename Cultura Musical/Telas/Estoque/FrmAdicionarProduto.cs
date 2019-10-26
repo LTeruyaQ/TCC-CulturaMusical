@@ -19,6 +19,7 @@ namespace Cultura_Musical.Telas.Produtos
 
 
         Database.Database_Estoque DB = new Database.Database_Estoque();
+
         private void button1_Click(object sender, EventArgs e)
         {
             Database.Entity.tb_produto addprod = new Database.Entity.tb_produto();

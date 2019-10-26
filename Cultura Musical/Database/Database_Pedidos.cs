@@ -11,17 +11,32 @@ namespace Cultura_Musical.Database
 
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
-        public void AdicionarPedido(Entity.tb_compra compra)
+        public void AdicionarPedido(Entity.tb_compra compra, Entity.tb_produto pedido)
         {
             DB.tb_compra.Add(compra);
+            DB.tb_produto.Add(pedido);
             DB.SaveChanges();
         }
 
-        public List<Database.Entity.tb_compra> ListarTodos ()
+        public List<Database.Entity.tb_produto> ListarTodos()
         {
-            List<Database.Entity.tb_compra> pedido = DB.tb_compra.ToList();
+            List<Database.Entity.tb_produto> pedido = DB.tb_produto.ToList();
             return pedido;
         }
+
+
+        public List<Database.Entity.tb_produto> ListarProduto(string produto)
+        {
+            List<Database.Entity.tb_produto> pedido = DB.tb_produto.Where(t=> t.nm_produto == produto).ToList();
+            return pedido;
+        }
+
+        public List<Database.Entity.tb_compra> ListarData(DateTime data)
+        {
+            List<Database.Entity.tb_compra> pedido = DB.tb_compra.Where(t => t.dt_compra == data).ToList();
+            return pedido;
+        }
+
 
         public void alterar (Database.Entity.tb_compra pedido)
         {
@@ -31,11 +46,11 @@ namespace Cultura_Musical.Database
             DB.SaveChanges();
         }
 
-        public void deletar (int id)
+        public void Remover(string produto)
         {
-            Entity.tb_compra compra = DB.tb_compra.FirstOrDefault(t => t.id_compra == id);
+            Entity.tb_produto compra = DB.tb_produto.FirstOrDefault(t => t.nm_produto == produto);
 
-            DB.tb_compra.Remove(compra);
+            DB.tb_produto.Remove(compra);
             DB.SaveChanges();
         }
     }

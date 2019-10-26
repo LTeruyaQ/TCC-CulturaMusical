@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvListar = new System.Windows.Forms.DataGridView();
             this.txtProduto = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dtpCompra = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -47,14 +47,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Listar Pedidos";
             // 
-            // dataGridView1
+            // dgvListar
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.Silver;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(112, 165);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(488, 328);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvListar.BackgroundColor = System.Drawing.Color.Silver;
+            this.dgvListar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListar.Location = new System.Drawing.Point(112, 165);
+            this.dgvListar.Name = "dgvListar";
+            this.dgvListar.Size = new System.Drawing.Size(488, 328);
+            this.dgvListar.TabIndex = 1;
             // 
             // txtProduto
             // 
@@ -82,6 +82,7 @@
             this.dtpCompra.Name = "dtpCompra";
             this.dtpCompra.Size = new System.Drawing.Size(100, 20);
             this.dtpCompra.TabIndex = 13;
+            this.dtpCompra.ValueChanged += new System.EventHandler(this.dtpCompra_ValueChanged);
             // 
             // label5
             // 
@@ -102,14 +103,14 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtProduto);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvListar);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmConsultarProdutos";
             this.Load += new System.EventHandler(this.FrmConsultarProdutos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,7 +119,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvListar;
         private System.Windows.Forms.TextBox txtProduto;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtpCompra;
