@@ -16,5 +16,10 @@ namespace Cultura_Musical.Telas.Logistica.Fluxo_de_Caixa
         {
             InitializeComponent();
         }
+
+        private void dgvFluxo_de_Caixa_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

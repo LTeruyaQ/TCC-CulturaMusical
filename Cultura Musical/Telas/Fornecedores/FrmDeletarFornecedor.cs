@@ -19,10 +19,19 @@ namespace Cultura_Musical.Telas.Fornecedores
 
         private void btnDeletar_Click(object sender, EventArgs e)
         {
-            string nome = txtNFornecedor.Text;
+            try
+            {
+                string nome = txtNFornecedor.Text;
 
-            Business.Business_Fornecedores forn = new Business.Business_Fornecedores();
-            forn.Remover(nome);
+                Business.Business_Fornecedores forn = new Business.Business_Fornecedores();
+                forn.Remover(nome);
+
+                MessageBox.Show("Fornecedor excluído comm sucesso.");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Verifique se os caractéres foram digitados corretamente.");
+            }
         }
     }
 }

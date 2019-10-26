@@ -17,81 +17,42 @@ namespace Cultura_Musical.Telas.Fornecedores
             InitializeComponent();
         }
 
-        private void FrmAdicionarFornecedor_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnCadastrar_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void button9_Click(object sender, EventArgs e)
         {
-            Database.Entity.tb_fornecedor forn = new Database.Entity.tb_fornecedor();
+            try
+            {
+                Database.Entity.tb_fornecedor forn = new Database.Entity.tb_fornecedor();
 
-            forn.nm_fornecedor = txtRSocial.Text;
-            forn.inscicao_estadual = txtInscricao.Text;
-            forn.tell_contato = mskTel1.Text;
-            forn.tell_contato2 = mskTel2.Text;
-            forn.ds_email = txtEmail.Text;
-            forn.cep = txtCEP.Text;
-            forn.rua = txtRua.Text;
-            forn.bairro = txtBairro.Text;
-            forn.cidade = txtCidade.Text;
-            forn.estado = txtEstado.Text;
-            forn.ds_cnpj = txtCNPJ.Text;
-          
+                forn.nm_fornecedor = txtRSocial.Text;
+                forn.inscicao_estadual = txtInscricao.Text;
+                forn.tell_contato = mskTel1.Text;
+                forn.tell_contato2 = mskTel2.Text;
+                forn.ds_email = txtEmail.Text;
+                forn.cep = txtCEP.Text;
+                forn.rua = txtRua.Text;
+                forn.bairro = txtBairro.Text;
+                forn.cidade = txtCidade.Text;
+                forn.estado = txtEstado.Text;
+                forn.ds_cnpj = txtCNPJ.Text;
 
-            Business.Business_Fornecedores forne = new Business.Business_Fornecedores();
-            forne.AddForn(forn);
+                Business.Business_Fornecedores forne = new Business.Business_Fornecedores();
+                forne.AddForn(forn);
+
+                MessageBox.Show("Fornecedor adicionado com sucesso.");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Verifique se os campos foram preenchidos corretamente");
+            }
         }
 
         private void button9_MouseEnter(object sender, EventArgs e)
         {
-          
             btnInserir.BackColor = Color.LightGray;
         }
 
         private void btnInserir_MouseLeave(object sender, EventArgs e)
         {
-
             btnInserir.BackColor = Color.SkyBlue;
         }
     }

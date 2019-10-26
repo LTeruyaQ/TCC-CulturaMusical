@@ -19,7 +19,14 @@ namespace Cultura_Musical.Telas
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+            try
+            {
 
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("");
+            }
         }
     }
 }

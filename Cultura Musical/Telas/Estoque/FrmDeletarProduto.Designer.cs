@@ -46,7 +46,6 @@
             this.cboProduto.Name = "cboProduto";
             this.cboProduto.Size = new System.Drawing.Size(121, 21);
             this.cboProduto.TabIndex = 31;
-            this.cboProduto.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label2
             // 

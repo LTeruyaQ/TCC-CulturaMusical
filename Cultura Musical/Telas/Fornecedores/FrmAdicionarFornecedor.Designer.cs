@@ -297,7 +297,7 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Nome:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+    
             // 
             // txtEmail
             // 
@@ -315,7 +315,7 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Telefone(1):";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+           
             // 
             // label6
             // 
@@ -382,7 +382,7 @@
             this.label11.TabIndex = 14;
             this.label11.Text = "Bairro:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label11.Click += new System.EventHandler(this.label11_Click);
+
             // 
             // txtBairro
             // 
@@ -458,7 +458,7 @@
             this.groupBox3.Size = new System.Drawing.Size(321, 155);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            
             // 
             // label7
             // 
@@ -578,7 +578,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAdicionarFornecedor";
-            this.Load += new System.EventHandler(this.FrmAdicionarFornecedor_Load);
+           
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

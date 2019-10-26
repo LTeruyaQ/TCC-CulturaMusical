@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvFatura = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFatura)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvFatura
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 85);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(413, 318);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvFatura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFatura.Location = new System.Drawing.Point(45, 85);
+            this.dgvFatura.Name = "dgvFatura";
+            this.dgvFatura.Size = new System.Drawing.Size(413, 318);
+            this.dgvFatura.TabIndex = 1;
+            this.dgvFatura.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFatura_CellContentClick);
             // 
             // label1
             // 
@@ -57,11 +58,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(497, 424);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvFatura);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultar";
             this.Text = "FrmConsultar";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFatura)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvFatura;
         private System.Windows.Forms.Label label1;
     }
 }

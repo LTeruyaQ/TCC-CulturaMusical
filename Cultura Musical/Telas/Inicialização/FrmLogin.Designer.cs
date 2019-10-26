@@ -117,7 +117,7 @@
             this.btnConfirmar_Login.TabIndex = 6;
             this.btnConfirmar_Login.Text = "Confirmar";
             this.btnConfirmar_Login.UseVisualStyleBackColor = false;
-          
+            this.btnConfirmar_Login.Click += new System.EventHandler(this.btnConfirmar_Login_Click_1);
             // 
             // linkLabel2
             // 

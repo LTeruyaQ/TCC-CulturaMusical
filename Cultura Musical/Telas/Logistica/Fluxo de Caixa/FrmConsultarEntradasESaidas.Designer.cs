@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvFluxo_de_Caixa = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFluxo_de_Caixa)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvFluxo_de_Caixa
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(476, 383);
-            this.dataGridView1.TabIndex = 1;
+            this.dgvFluxo_de_Caixa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFluxo_de_Caixa.Location = new System.Drawing.Point(0, 78);
+            this.dgvFluxo_de_Caixa.Name = "dgvFluxo_de_Caixa";
+            this.dgvFluxo_de_Caixa.Size = new System.Drawing.Size(476, 383);
+            this.dgvFluxo_de_Caixa.TabIndex = 1;
+            this.dgvFluxo_de_Caixa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFluxo_de_Caixa_CellContentClick);
             // 
             // label1
             // 
@@ -57,11 +58,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 461);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvFluxo_de_Caixa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarEntradasESaidas";
             this.Text = "FrmConsultarEntradasESaidas";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFluxo_de_Caixa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvFluxo_de_Caixa;
         private System.Windows.Forms.Label label1;
     }
 }

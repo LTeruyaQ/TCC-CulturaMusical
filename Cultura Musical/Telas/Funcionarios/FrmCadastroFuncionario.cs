@@ -65,7 +65,7 @@ namespace Cultura_Musical.Telas
             }
             catch (Exception)
             {
-                throw new ArgumentException("Verifique os erros de Cadastro.");
+                MessageBox.Show("Houveram alguns conflitos ao tentar cadastrar o funcionário, por favor tente novamente");
             }
         }
 

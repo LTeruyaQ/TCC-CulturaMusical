@@ -16,5 +16,10 @@ namespace Cultura_Musical.Telas.Logistica
         {
             InitializeComponent();
         }
+
+        private void dgvConsultar_Saldo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

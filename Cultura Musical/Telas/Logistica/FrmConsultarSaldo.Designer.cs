@@ -28,18 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvConsultar_Saldo = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultar_Saldo)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvConsultar_Saldo
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 90);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(475, 344);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvConsultar_Saldo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvConsultar_Saldo.Location = new System.Drawing.Point(0, 90);
+            this.dgvConsultar_Saldo.Name = "dgvConsultar_Saldo";
+            this.dgvConsultar_Saldo.Size = new System.Drawing.Size(475, 344);
+            this.dgvConsultar_Saldo.TabIndex = 0;
+            this.dgvConsultar_Saldo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvConsultar_Saldo_CellContentClick);
             // 
             // label1
             // 
@@ -57,11 +58,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(475, 435);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvConsultar_Saldo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarSaldo";
             this.Text = "FrmConsultarSaldo";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvConsultar_Saldo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -69,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvConsultar_Saldo;
         private System.Windows.Forms.Label label1;
     }
 }

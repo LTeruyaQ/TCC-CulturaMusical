@@ -95,7 +95,7 @@
             this.cboProduto.Name = "cboProduto";
             this.cboProduto.Size = new System.Drawing.Size(121, 21);
             this.cboProduto.TabIndex = 26;
-            this.cboProduto.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+         
             // 
             // label7
             // 
@@ -121,7 +121,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Alterar para";
             this.groupBox1.Visible = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            
             // 
             // txtProdutoAlt
             // 
@@ -129,7 +129,6 @@
             this.txtProdutoAlt.Name = "txtProdutoAlt";
             this.txtProdutoAlt.Size = new System.Drawing.Size(114, 24);
             this.txtProdutoAlt.TabIndex = 28;
-            this.txtProdutoAlt.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // FrmAlterarProduto
             // 
@@ -144,7 +143,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAlterarProduto";
             this.Text = "FrmAlterarProduto";
-            this.Load += new System.EventHandler(this.FrmAlterarProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

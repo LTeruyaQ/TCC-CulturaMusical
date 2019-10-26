@@ -17,42 +17,44 @@ namespace Cultura_Musical.Telas.Funcionario
             InitializeComponent();
         }
 
-       
         Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
+
+        //por que a Business tá instanciada solta aqui? ->Gouget 
 
         private void txtNomeFuncionário_TextChanged(object sender, EventArgs e)
         {
-            string nome = txtNomeFuncionário.Text;
+            try
+            {
+                string nome = txtNomeFuncionário.Text;
 
-            Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
-            List<Database.Entity.tb_funcionario> func = colaborador.ListarPorNome(nome);
+                Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
+                List<Database.Entity.tb_funcionario> func = colaborador.ListarPorNome(nome);
 
-            dgvConsultaFuncionario.DataSource = func;
+                dgvConsultaFuncionario.DataSource = func;
+
+                //não precisa dar MessageBox na tela de consultar, eu acho. ->Gouget
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Nome não encontrado");
+            }
         }
 
         private void txtCargo_TextChanged(object sender, EventArgs e)
         {
-            string cargo = txtCargo.Text;
+            try
+            {
+                string cargo = txtCargo.Text;
 
-            Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
-            List<Database.Entity.tb_funcionario> func = colaborador.ListarPorCargo(cargo);
+                Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
+                List<Database.Entity.tb_funcionario> func = colaborador.ListarPorCargo(cargo);
 
-            dgvConsultaFuncionario.DataSource = func;
-        }
-
-        private void FrmConsultarFuncionarios_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgvConsultaFuncionario_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+                dgvConsultaFuncionario.DataSource = func;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Este cargo não foi  encontrado");
+            } 
         }
     }
 }

@@ -448,7 +448,7 @@
             this.label23.TabIndex = 36;
             this.label23.Text = "REFERÊNCIA";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label23.Click += new System.EventHandler(this.label23_Click);
+        
             // 
             // groupBox4
             // 
@@ -466,7 +466,7 @@
             this.groupBox4.Size = new System.Drawing.Size(587, 80);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
+     
             // 
             // textBox5
             // 
@@ -537,7 +537,7 @@
             this.btnProcurar.TabIndex = 18;
             this.btnProcurar.Text = "Procurar";
             this.btnProcurar.UseVisualStyleBackColor = false;
-            this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
+            
             // 
             // groupBox5
             // 
@@ -624,7 +624,7 @@
             this.groupBox6.Size = new System.Drawing.Size(133, 151);
             this.groupBox6.TabIndex = 17;
             this.groupBox6.TabStop = false;
-            this.groupBox6.Enter += new System.EventHandler(this.groupBox6_Enter);
+           
             // 
             // label68
             // 
@@ -698,7 +698,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAddHolerite";
             this.Text = "FrmAddHolerite";
-            this.Load += new System.EventHandler(this.FrmAddHolerite_Load);
+            
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);

@@ -17,28 +17,25 @@ namespace Cultura_Musical.Telas.Folha_de_Pagamento
             InitializeComponent();
         }
 
-        
-
         private void btn_Procurar(object sender, EventArgs e)
         {
-            Database.Entity.tb_funcionario fon = new Database.Entity.tb_funcionario();
-            
-            
-            Business.Business_Folha_Pagamento folha = new Business.Business_Folha_Pagamento();
-            Database.Entity.tb_funcionario holerites = folha.ConsultarPorFuncionario( fon);
+            try
+            {
+                Database.Entity.tb_funcionario fon = new Database.Entity.tb_funcionario();
 
-            lblSalarioProvento.Text = Convert.ToString(holerites.vl_salario);
-            lblVADesconto.Text = Convert.ToString(holerites.tb_beneficio.ds_va);
-            lblVTDesconto.Text = Convert.ToString(holerites.tb_beneficio.ds_vt);
-            lblINSSDesconto.Text = Convert.ToString(holerites.tb_financeiro.ds_inss);
-            lblTotalDesconto.Text = Convert.ToString(holerites.tb_financeiro.ds_inss);
+                Business.Business_Folha_Pagamento folha = new Business.Business_Folha_Pagamento();
+                Database.Entity.tb_funcionario holerites = folha.ConsultarPorFuncionario(fon);
 
-            
-        }
-
-        private void Inserir_Load(object sender, EventArgs e)
-        {
-
+                lblSalarioProvento.Text = Convert.ToString(holerites.vl_salario);
+                lblVADesconto.Text = Convert.ToString(holerites.tb_beneficio.ds_va);
+                lblVTDesconto.Text = Convert.ToString(holerites.tb_beneficio.ds_vt);
+                lblINSSDesconto.Text = Convert.ToString(holerites.tb_financeiro.ds_inss);
+                lblTotalDesconto.Text = Convert.ToString(holerites.tb_financeiro.ds_inss);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Houve algum erro na filtragem de dados.");
+            }
         }
 
         private void btnProcurar_Click(object sender, EventArgs e)

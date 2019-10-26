@@ -127,7 +127,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAdicionarProduto";
             this.Text = "FrmAdicionarProduto";
-            this.Load += new System.EventHandler(this.FrmAdicionarProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nudQtd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudPreco)).EndInit();
             this.ResumeLayout(false);

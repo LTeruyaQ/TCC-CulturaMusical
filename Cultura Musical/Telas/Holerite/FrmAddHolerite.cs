@@ -16,30 +16,5 @@ namespace Cultura_Musical.Telas.Holerite
         {
             InitializeComponent();
         }
-
-        private void FrmAddHolerite_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox4_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnProcurar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox6_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

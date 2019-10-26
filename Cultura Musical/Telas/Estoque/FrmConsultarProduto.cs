@@ -16,8 +16,6 @@ namespace Cultura_Musical.Telas.Produtos
         {
             InitializeComponent();
 
-        
-
             Business.Business_Estoque pedido = new Business.Business_Estoque();
             List<Database.Entity.tb_produto> con = pedido.ListarTudo();
 
@@ -25,26 +23,21 @@ namespace Cultura_Musical.Telas.Produtos
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmConsultarProduto_Load(object sender, EventArgs e)
-        {
-           
-
-        }
-
         private void txtProduto_TextChanged(object sender, EventArgs e)
         {
-            string produto = txtProduto.Text;
+            try
+            {
+                string produto = txtProduto.Text;
 
-            Business.Business_Estoque top = new Business.Business_Estoque();
-            List<Database.Entity.tb_produto> con = top.ListarProduto(produto);
+                Business.Business_Estoque top = new Business.Business_Estoque();
+                List<Database.Entity.tb_produto> con = top.ListarProduto(produto);
 
-            dgvListar.DataSource = con;
-
+                dgvListar.DataSource = con;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Não foi possível fazer a busca do produto, verique se o item digitado foi escrito corretamente");
+            }
         }
     }
 }

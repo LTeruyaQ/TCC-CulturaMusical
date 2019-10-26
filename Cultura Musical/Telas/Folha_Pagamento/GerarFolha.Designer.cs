@@ -1125,7 +1125,6 @@
             this.Name = "Inserir";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inserir";
-            this.Load += new System.EventHandler(this.Inserir_Load);
             this.groupBox22.ResumeLayout(false);
             this.groupBox21.ResumeLayout(false);
             this.groupBox20.ResumeLayout(false);

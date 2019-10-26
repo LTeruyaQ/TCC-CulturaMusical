@@ -44,7 +44,6 @@
             this.label1.Size = new System.Drawing.Size(359, 44);
             this.label1.TabIndex = 27;
             this.label1.Text = "Listar Produtos";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dgvListar
             // 
@@ -87,11 +86,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmConsultarProduto";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FrmConsultarProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

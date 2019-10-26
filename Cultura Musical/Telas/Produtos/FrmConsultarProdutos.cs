@@ -23,37 +23,41 @@ namespace Cultura_Musical.Telas.Pedidos
            
             List<Database.Entity.tb_produto> con = pedidoo.ListarTudo(pedido);
 
-            dgvListar.DataSource = con;
-        }
-
-        private void FrmConsultarProdutos_Load(object sender, EventArgs e)
-        {
-           
+            dgvListar_Pedidos.DataSource = con;
         }
 
         public void txtProduto_TextChanged(object sender, EventArgs e)
         {
-            string produto = txtProduto.Text;
+            try
+            {
+                string produto = txtProduto.Text;
 
-            Business.Business_Pedidos pedido = new Business.Business_Pedidos();
-            List<Database.Entity.tb_produto> con = pedido.ListarProduto(produto);
+                Business.Business_Pedidos pedido = new Business.Business_Pedidos();
+                List<Database.Entity.tb_produto> con = pedido.ListarProduto(produto);
 
-            dgvListar.DataSource = con;
+                dgvListar_Pedidos.DataSource = con;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Verifique se nome do pedido foi digitado corretamente.");
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-            DateTime data = dtpCompra.Value;
+            try
+            {
+                DateTime data = dtpCompra.Value;
 
-            Business.Business_Pedidos pedido = new Business.Business_Pedidos();
-            List<Database.Entity.tb_compra> con = pedido.ListarData(data);
+                Business.Business_Pedidos pedido = new Business.Business_Pedidos();
+                List<Database.Entity.tb_compra> con = pedido.ListarData(data);
 
-            dgvListar.DataSource = con;
-        }
-
-        private void dtpCompra_ValueChanged(object sender, EventArgs e)
-        {
-
+                dgvListar_Pedidos.DataSource = con;
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Não há pedidos cadastrados na data selecionada.");
+            }  
         }
     }
 }

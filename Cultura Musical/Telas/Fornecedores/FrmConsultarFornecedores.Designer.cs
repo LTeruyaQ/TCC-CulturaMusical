@@ -43,7 +43,7 @@
             this.label1.Size = new System.Drawing.Size(110, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome do Fornecedor:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            
             // 
             // txtNFornecedor
             // 
@@ -69,7 +69,7 @@
             this.label2.Size = new System.Drawing.Size(108, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Consultar Fornecedor";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+           
             // 
             // FrmConsultarFornecedores
             // 
@@ -83,7 +83,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarFornecedores";
             this.Text = "lab";
-            this.Load += new System.EventHandler(this.FrmConsultarFornecedores_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.dgvNMFornecedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

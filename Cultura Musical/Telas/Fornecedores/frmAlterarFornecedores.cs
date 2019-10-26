@@ -17,28 +17,32 @@ namespace Cultura_Musical.Telas.Fornecedores
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAlterar_Click(object sender, EventArgs e)
         {
-            Database.Entity.tb_fornecedor forn = new Database.Entity.tb_fornecedor();
+            try
+            {
+                Database.Entity.tb_fornecedor forn = new Database.Entity.tb_fornecedor();
 
-            forn.nm_fornecedor = txtRSocial.Text;
-            forn.inscicao_estadual = txtInscricao.Text;
-            forn.tell_contato = txtTel1.Text;
-            forn.tell_contato2 = txtTel2.Text;
-            forn.ds_email = txtEmail.Text;
-            forn.cep = txtCEP.Text;
-            forn.rua = txtRua.Text;
-            forn.bairro = txtBairro.Text;
-            forn.cidade = txtCidade.Text;
-            forn.estado = txtEstado.Text;
+                forn.nm_fornecedor = txtRSocial.Text;
+                forn.inscicao_estadual = txtInscricao.Text;
+                forn.tell_contato = txtTel1.Text;
+                forn.tell_contato2 = txtTel2.Text;
+                forn.ds_email = txtEmail.Text;
+                forn.cep = txtCEP.Text;
+                forn.rua = txtRua.Text;
+                forn.bairro = txtBairro.Text;
+                forn.cidade = txtCidade.Text;
+                forn.estado = txtEstado.Text;
 
-            Business.Business_Fornecedores ok = new Business.Business_Fornecedores();
-            ok.Alterar(forn);
+                Business.Business_Fornecedores ok = new Business.Business_Fornecedores();
+                ok.Alterar(forn);
+
+                MessageBox.Show("Fornecedor alterado com sucesso.");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Certifique-se de qe os dados foram alterados corretamente");
+            } 
         }
     }
 }
