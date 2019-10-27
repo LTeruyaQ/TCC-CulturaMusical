@@ -89,6 +89,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudVa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudVt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudVr)).BeginInit();
@@ -105,6 +106,7 @@
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // cboGenero
@@ -190,7 +192,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(167, 275);
+            this.btnCadastrar.Location = new System.Drawing.Point(181, 313);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(156, 63);
             this.btnCadastrar.TabIndex = 35;
@@ -249,7 +251,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(33, 53);
+            this.label18.Location = new System.Drawing.Point(16, 51);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(24, 13);
             this.label18.TabIndex = 72;
@@ -258,7 +260,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(32, 159);
+            this.label19.Location = new System.Drawing.Point(15, 157);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(24, 13);
             this.label19.TabIndex = 74;
@@ -267,7 +269,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(33, 109);
+            this.label20.Location = new System.Drawing.Point(16, 107);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(25, 13);
             this.label20.TabIndex = 76;
@@ -275,21 +277,21 @@
             // 
             // nudVa
             // 
-            this.nudVa.Location = new System.Drawing.Point(66, 51);
+            this.nudVa.Location = new System.Drawing.Point(49, 49);
             this.nudVa.Name = "nudVa";
             this.nudVa.Size = new System.Drawing.Size(120, 20);
             this.nudVa.TabIndex = 79;
             // 
             // nudVt
             // 
-            this.nudVt.Location = new System.Drawing.Point(66, 157);
+            this.nudVt.Location = new System.Drawing.Point(49, 155);
             this.nudVt.Name = "nudVt";
             this.nudVt.Size = new System.Drawing.Size(120, 20);
             this.nudVt.TabIndex = 80;
             // 
             // nudVr
             // 
-            this.nudVr.Location = new System.Drawing.Point(66, 107);
+            this.nudVr.Location = new System.Drawing.Point(49, 105);
             this.nudVr.Name = "nudVr";
             this.nudVr.Size = new System.Drawing.Size(120, 20);
             this.nudVr.TabIndex = 81;
@@ -576,13 +578,8 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.nudVa);
-            this.tabPage5.Controls.Add(this.nudVr);
+            this.tabPage5.Controls.Add(this.groupBox7);
             this.tabPage5.Controls.Add(this.btnCadastrar);
-            this.tabPage5.Controls.Add(this.label18);
-            this.tabPage5.Controls.Add(this.nudVt);
-            this.tabPage5.Controls.Add(this.label19);
-            this.tabPage5.Controls.Add(this.label20);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -691,6 +688,20 @@
             this.groupBox6.TabIndex = 89;
             this.groupBox6.TabStop = false;
             // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label18);
+            this.groupBox7.Controls.Add(this.nudVa);
+            this.groupBox7.Controls.Add(this.label20);
+            this.groupBox7.Controls.Add(this.nudVr);
+            this.groupBox7.Controls.Add(this.label19);
+            this.groupBox7.Controls.Add(this.nudVt);
+            this.groupBox7.Location = new System.Drawing.Point(39, 49);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(427, 241);
+            this.groupBox7.TabIndex = 82;
+            this.groupBox7.TabStop = false;
+            // 
             // dtpNascimento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -714,7 +725,6 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -725,6 +735,8 @@
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -792,5 +804,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox7;
     }
 }
