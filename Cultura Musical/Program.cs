@@ -16,7 +16,7 @@ namespace Cultura_Musical
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Telas.Funcionario.FrmConsultarFuncionarios());
+            Application.Run(new Telas.Funcionarios.InserirFuncionarios());
         }
     }
 }
