@@ -81,5 +81,10 @@ namespace Cultura_Musical.Telas
             txtEstado.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
         }
+
+        private void DtpNascimento_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
