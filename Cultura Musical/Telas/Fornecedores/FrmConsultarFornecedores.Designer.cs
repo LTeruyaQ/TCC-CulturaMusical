@@ -32,6 +32,8 @@
             this.txtNFornecedor = new System.Windows.Forms.TextBox();
             this.dgvNMFornecedor = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
+            this.alterar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.remover = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNMFornecedor)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +45,6 @@
             this.label1.Size = new System.Drawing.Size(110, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nome do Fornecedor:";
-            
             // 
             // txtNFornecedor
             // 
@@ -56,6 +57,9 @@
             // dgvNMFornecedor
             // 
             this.dgvNMFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNMFornecedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.alterar,
+            this.remover});
             this.dgvNMFornecedor.Location = new System.Drawing.Point(45, 152);
             this.dgvNMFornecedor.Name = "dgvNMFornecedor";
             this.dgvNMFornecedor.Size = new System.Drawing.Size(329, 211);
@@ -69,7 +73,25 @@
             this.label2.Size = new System.Drawing.Size(108, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Consultar Fornecedor";
-           
+            // 
+            // alterar
+            // 
+            this.alterar.HeaderText = "Column1";
+            this.alterar.Image = global::Cultura_Musical.Properties.Resources.lapis;
+            this.alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.alterar.Name = "alterar";
+            this.alterar.ReadOnly = true;
+            this.alterar.Width = 20;
+            // 
+            // remover
+            // 
+            this.remover.HeaderText = "Column1";
+            this.remover.Image = global::Cultura_Musical.Properties.Resources.lixeira;
+            this.remover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.remover.Name = "remover";
+            this.remover.ReadOnly = true;
+            this.remover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.remover.Width = 20;
             // 
             // FrmConsultarFornecedores
             // 
@@ -83,7 +105,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarFornecedores";
             this.Text = "lab";
-            
             ((System.ComponentModel.ISupportInitialize)(this.dgvNMFornecedor)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -96,5 +117,7 @@
         private System.Windows.Forms.TextBox txtNFornecedor;
         private System.Windows.Forms.DataGridView dgvNMFornecedor;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewImageColumn alterar;
+        private System.Windows.Forms.DataGridViewImageColumn remover;
     }
 }
