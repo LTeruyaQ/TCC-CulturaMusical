@@ -586,7 +586,7 @@
             this.lblINSSProvento.Name = "lblINSSProvento";
             this.lblINSSProvento.Size = new System.Drawing.Size(85, 14);
             this.lblINSSProvento.TabIndex = 37;
-            this.lblINSSProvento.Text = "0,00";
+            this.lblINSSProvento.Text = "-";
             this.lblINSSProvento.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblVTProvento
@@ -596,7 +596,7 @@
             this.lblVTProvento.Name = "lblVTProvento";
             this.lblVTProvento.Size = new System.Drawing.Size(85, 14);
             this.lblVTProvento.TabIndex = 36;
-            this.lblVTProvento.Text = "0,00";
+            this.lblVTProvento.Text = "-";
             this.lblVTProvento.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label28
@@ -616,7 +616,7 @@
             this.lblVAProvento.Name = "lblVAProvento";
             this.lblVAProvento.Size = new System.Drawing.Size(85, 14);
             this.lblVAProvento.TabIndex = 34;
-            this.lblVAProvento.Text = "0,00";
+            this.lblVAProvento.Text = "-";
             this.lblVAProvento.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblGratificaçãoProvento
@@ -1075,7 +1075,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(85, 14);
             this.label12.TabIndex = 33;
-            this.label12.Text = "0,00";
+            this.label12.Text = "-";
             this.label12.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label19
@@ -1085,7 +1085,7 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(85, 14);
             this.label19.TabIndex = 32;
-            this.label19.Text = "2.000,00";
+            this.label19.Text = "-";
             this.label19.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label20

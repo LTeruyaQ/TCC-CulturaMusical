@@ -696,3 +696,57 @@ C:\Users\lucas\Source\Repos\tcc-cultura-musical34\Cultura Musical\obj\Debug\Cult
 C:\Users\lucas\Source\Repos\tcc-cultura-musical34\Cultura Musical\obj\Debug\Cultura Musical.csproj.CopyComplete
 C:\Users\lucas\Source\Repos\tcc-cultura-musical34\Cultura Musical\obj\Debug\Cultura Musical.exe
 C:\Users\lucas\Source\Repos\tcc-cultura-musical34\Cultura Musical\obj\Debug\Cultura Musical.pdb
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\Cultura Musical.exe.config
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\Cultura Musical.exe
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\Cultura Musical.pdb
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\EntityFramework.dll
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\MySql.Data.dll
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\EntityFramework.xml
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura Musical.csprojAssemblyReference.cache
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Properties.Resources.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Agenda.FrmAlterarAgenda.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Agenda.FrmConsultarAgenda.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Agenda.FrmConsultarDisponibilidade.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Agenda.FrmDeletarAgenda.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmAgenda.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.CRM.FrmAlterarClientes.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.CRM.FrmAnalisarCliente.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.CRM.FrmConsultarCliente.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.CRM.FrmDeletarCliente.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Fornecedores.frmAlterarFornecedores.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Fornecedores.FrmConsultarFornecedores.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Fornecedores.FrmDeletarFornecedor.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionario.FrmAlterarFuncionarios.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.dtpNascimento.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionario.FrmConsultarFuncionarios.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionario.FrmJornadaDeTrabalho.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.CRM.FrmAdicionarCliente.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Fornecedores.FrmAdicionarFornecedor.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Folha_de_Pagamento.Inserir.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Holerite.FrmAddHolerite.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Inicialização.FrmCadastroFuncionarioLogin.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmHomePage.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmLogin.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Inicialização.frmSplash.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Logistica.Fluxo_de_Caixa.FrmConsultarEntradasESaidas.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Logistica.FrmConsultarCustos.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Logistica.FrmConsultar.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Logistica.FrmConsultarSaldo.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Pedidos.FrmAdicionarProduto.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Pedidos.FrmConsultarProdutos.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Planos.cbo.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Produtos.FrmAdicionarProduto.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Produtos.FrmAlterarProduto.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Produtos.FrmConsultarProduto.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Produtos.FrmDeletarProduto.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.UserControl1.resources
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura Musical.csproj.GenerateResource.cache
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura Musical.csproj.CoreCompileInputs.cache
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura Musical.csproj.CopyComplete
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura Musical.exe
+C:\Users\Adriana\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura Musical.pdb

@@ -30,7 +30,8 @@ namespace Cultura_Musical.Telas.Folha_de_Pagamento
                 lblVADesconto.Text = Convert.ToString(holerites.tb_beneficio.ds_va);
                 lblVTDesconto.Text = Convert.ToString(holerites.tb_beneficio.ds_vt);
                 lblINSSDesconto.Text = Convert.ToString(holerites.tb_financeiro.ds_inss);
-                lblTotalDesconto.Text = Convert.ToString(holerites.tb_financeiro.ds_inss);
+                lblTotalDesconto.Text = Convert.ToString(holerites.tb_financeiro.ds_inss + holerites.tb_beneficio.ds_va + holerites.tb_beneficio.ds_vr + holerites.tb_beneficio.ds_vt);
+                
             }
             catch (Exception)
             {
