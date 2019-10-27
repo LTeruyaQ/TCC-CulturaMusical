@@ -17,6 +17,7 @@ namespace Cultura_Musical.Telas
             InitializeComponent();
         }
 
+        Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             try
@@ -34,6 +35,9 @@ namespace Cultura_Musical.Telas
                 funcionario.ds_bairro = txtBairro.Text;
                 funcionario.ds_estado = txtEstado.Text;
                 funcionario.ds_rua = txtRua.Text;
+                funcionario.tb_beneficio.ds_va = nudVa.Value;
+                funcionario.tb_beneficio.ds_vr = nudVr.Value;
+                funcionario.tb_beneficio.ds_vt = nudVt.Value;
 
                 if (rdnCNPJ.Checked == true)
                 {
@@ -47,18 +51,17 @@ namespace Cultura_Musical.Telas
                     rdnCNPJ.Checked = false;
                 }
 
-                //string genero = cboGenero.Text;
+                string genero = cboGenero.Text;
 
-                //if (genero == "masculino")
-                //{
-                //    funcionario.ds_genero = 'm';
-                //}
-                //else
-                //{
-                //    funcionario.ds_genero = 'f';
-                //}
+                if (genero == "masculino")
+                {
+                    funcionario.ds_genero = "M";
+                }
+                else
+                {
+                    funcionario.ds_genero = "F";
+                }
 
-                Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
                 colaborador.CadastroFuncionario(funcionario);
 
                 MessageBox.Show("Funcionário cadastrado com sucesso.");
