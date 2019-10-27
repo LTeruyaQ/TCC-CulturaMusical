@@ -107,7 +107,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.mskCep = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -118,6 +117,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.lblbairro = new System.Windows.Forms.Label();
+            this.lblrua = new System.Windows.Forms.Label();
+            this.lblestado = new System.Windows.Forms.Label();
             this.groupBox22.SuspendLayout();
             this.groupBox21.SuspendLayout();
             this.groupBox20.SuspendLayout();
@@ -919,10 +921,12 @@
             // groupBox1
             // 
             this.groupBox1.AutoSize = true;
+            this.groupBox1.Controls.Add(this.lblestado);
+            this.groupBox1.Controls.Add(this.lblrua);
+            this.groupBox1.Controls.Add(this.lblbairro);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.mskCep);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(32, 41);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -969,6 +973,7 @@
             this.mskCep.Name = "mskCep";
             this.mskCep.Size = new System.Drawing.Size(84, 22);
             this.mskCep.TabIndex = 5;
+            this.mskCep.Leave += new System.EventHandler(this.txtCEP_Leave);
             // 
             // label4
             // 
@@ -979,17 +984,6 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "CNPJ: 38.341.431/0001-94";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(210, 15);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 42);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "-";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label2
             // 
@@ -1097,6 +1091,39 @@
             this.label20.TabIndex = 26;
             this.label20.Text = "DESCONTO";
             this.label20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblbairro
+            // 
+            this.lblbairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblbairro.Location = new System.Drawing.Point(201, 31);
+            this.lblbairro.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblbairro.Name = "lblbairro";
+            this.lblbairro.Size = new System.Drawing.Size(168, 26);
+            this.lblbairro.TabIndex = 7;
+            this.lblbairro.Text = "-";
+            this.lblbairro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblrua
+            // 
+            this.lblrua.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrua.Location = new System.Drawing.Point(201, 5);
+            this.lblrua.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblrua.Name = "lblrua";
+            this.lblrua.Size = new System.Drawing.Size(168, 26);
+            this.lblrua.TabIndex = 8;
+            this.lblrua.Text = "-";
+            this.lblrua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lblestado
+            // 
+            this.lblestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblestado.Location = new System.Drawing.Point(201, 57);
+            this.lblestado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblestado.Name = "lblestado";
+            this.lblestado.Size = new System.Drawing.Size(168, 26);
+            this.lblestado.TabIndex = 9;
+            this.lblestado.Text = "-";
+            this.lblestado.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Inserir
             // 
@@ -1224,7 +1251,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblGratificação;
@@ -1245,5 +1271,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label lblestado;
+        private System.Windows.Forms.Label lblrua;
+        private System.Windows.Forms.Label lblbairro;
     }
 }
