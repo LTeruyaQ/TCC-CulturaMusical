@@ -807,3 +807,4 @@ C:\Users\lucas\Source\Repos\tcc-cultura-musical38\Cultura Musical\obj\Debug\Cult
 C:\Users\lucas\Source\Repos\tcc-cultura-musical38\Cultura Musical\obj\Debug\Cultura Musical.exe
 C:\Users\lucas\Source\Repos\tcc-cultura-musical38\Cultura Musical\obj\Debug\Cultura Musical.pdb
 C:\Users\lucas\Source\Repos\tcc-cultura-musical38\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionarios.frmCadastroFuncionarioD.resources
+C:\Users\lucas\Source\Repos\tcc-cultura-musical38\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionarios.frmConsultarFuncionarioD.resources

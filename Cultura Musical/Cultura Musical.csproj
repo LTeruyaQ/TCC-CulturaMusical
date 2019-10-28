@@ -252,6 +252,12 @@
     <Compile Include="Telas\Funcionarios\FrmConsultarColaboradores.Designer.cs">
       <DependentUpon>FrmConsultarColaboradores.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Funcionarios\frmConsultarFuncionarioD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Funcionarios\frmConsultarFuncionarioD.Designer.cs">
+      <DependentUpon>frmConsultarFuncionarioD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Funcionarios\FrmJornadaDeTrabalho.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -478,6 +484,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\FrmConsultarColaboradores.resx">
       <DependentUpon>FrmConsultarColaboradores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Funcionarios\frmConsultarFuncionarioD.resx">
+      <DependentUpon>frmConsultarFuncionarioD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\FrmJornadaDeTrabalho.resx">
       <DependentUpon>FrmJornadaDeTrabalho.cs</DependentUpon>

@@ -49,8 +49,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.mskTel2 = new System.Windows.Forms.MaskedTextBox();
+            this.mskTel1 = new System.Windows.Forms.MaskedTextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtCEP = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
@@ -60,17 +65,12 @@
             this.txtRua = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtInscricao = new System.Windows.Forms.MaskedTextBox();
+            this.txtCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtRSocial = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.btnInserir = new System.Windows.Forms.Button();
-            this.txtCNPJ = new System.Windows.Forms.MaskedTextBox();
-            this.txtInscricao = new System.Windows.Forms.MaskedTextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.mskTel1 = new System.Windows.Forms.MaskedTextBox();
-            this.mskTel2 = new System.Windows.Forms.MaskedTextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtCEP = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -297,7 +297,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Nome:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-    
             // 
             // txtEmail
             // 
@@ -315,7 +314,6 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Telefone(1):";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-           
             // 
             // label6
             // 
@@ -343,6 +341,32 @@
             this.groupBox1.Size = new System.Drawing.Size(321, 155);
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
+            // 
+            // mskTel2
+            // 
+            this.mskTel2.Location = new System.Drawing.Point(89, 102);
+            this.mskTel2.Mask = "(__)____-____";
+            this.mskTel2.Name = "mskTel2";
+            this.mskTel2.Size = new System.Drawing.Size(181, 20);
+            this.mskTel2.TabIndex = 15;
+            // 
+            // mskTel1
+            // 
+            this.mskTel1.Location = new System.Drawing.Point(89, 62);
+            this.mskTel1.Mask = "(__)____-____";
+            this.mskTel1.Name = "mskTel1";
+            this.mskTel1.Size = new System.Drawing.Size(181, 20);
+            this.mskTel1.TabIndex = 14;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(3, 101);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(161, 18);
+            this.label15.TabIndex = 12;
+            this.label15.Text = "Telefone(2):";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label13
             // 
@@ -373,6 +397,23 @@
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(31, 31);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(54, 18);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "CEP:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtCEP
+            // 
+            this.txtCEP.Location = new System.Drawing.Point(81, 31);
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(181, 20);
+            this.txtCEP.TabIndex = 17;
+            // 
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -382,7 +423,6 @@
             this.label11.TabIndex = 14;
             this.label11.Text = "Bairro:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
             // 
             // txtBairro
             // 
@@ -458,7 +498,23 @@
             this.groupBox3.Size = new System.Drawing.Size(321, 155);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
-            
+            // 
+            // txtInscricao
+            // 
+            this.txtInscricao.Location = new System.Drawing.Point(135, 89);
+            this.txtInscricao.Mask = "________-__";
+            this.txtInscricao.Name = "txtInscricao";
+            this.txtInscricao.Size = new System.Drawing.Size(177, 20);
+            this.txtInscricao.TabIndex = 69;
+            // 
+            // txtCNPJ
+            // 
+            this.txtCNPJ.Location = new System.Drawing.Point(132, 19);
+            this.txtCNPJ.Mask = "000000000/0000-00";
+            this.txtCNPJ.Name = "txtCNPJ";
+            this.txtCNPJ.Size = new System.Drawing.Size(180, 20);
+            this.txtCNPJ.TabIndex = 68;
+            this.txtCNPJ.Visible = false;
             // 
             // label7
             // 
@@ -504,66 +560,6 @@
             this.btnInserir.MouseEnter += new System.EventHandler(this.button9_MouseEnter);
             this.btnInserir.MouseLeave += new System.EventHandler(this.btnInserir_MouseLeave);
             // 
-            // txtCNPJ
-            // 
-            this.txtCNPJ.Location = new System.Drawing.Point(132, 19);
-            this.txtCNPJ.Mask = "000000000/0000-00";
-            this.txtCNPJ.Name = "txtCNPJ";
-            this.txtCNPJ.Size = new System.Drawing.Size(180, 20);
-            this.txtCNPJ.TabIndex = 68;
-            this.txtCNPJ.Visible = false;
-            // 
-            // txtInscricao
-            // 
-            this.txtInscricao.Location = new System.Drawing.Point(135, 89);
-            this.txtInscricao.Mask = "________-__";
-            this.txtInscricao.Name = "txtInscricao";
-            this.txtInscricao.Size = new System.Drawing.Size(177, 20);
-            this.txtInscricao.TabIndex = 69;
-            // 
-            // label15
-            // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(3, 101);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(161, 18);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "Telefone(2):";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // mskTel1
-            // 
-            this.mskTel1.Location = new System.Drawing.Point(89, 62);
-            this.mskTel1.Mask = "(__)____-____";
-            this.mskTel1.Name = "mskTel1";
-            this.mskTel1.Size = new System.Drawing.Size(181, 20);
-            this.mskTel1.TabIndex = 14;
-            // 
-            // mskTel2
-            // 
-            this.mskTel2.Location = new System.Drawing.Point(89, 102);
-            this.mskTel2.Mask = "(__)____-____";
-            this.mskTel2.Name = "mskTel2";
-            this.mskTel2.Size = new System.Drawing.Size(181, 20);
-            this.mskTel2.TabIndex = 15;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(31, 31);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(54, 18);
-            this.label12.TabIndex = 18;
-            this.label12.Text = "CEP:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtCEP
-            // 
-            this.txtCEP.Location = new System.Drawing.Point(90, 31);
-            this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(181, 20);
-            this.txtCEP.TabIndex = 17;
-            // 
             // FrmAdicionarFornecedor
             // 
             this.BackColor = System.Drawing.Color.SkyBlue;
@@ -578,7 +574,6 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAdicionarFornecedor";
-           
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

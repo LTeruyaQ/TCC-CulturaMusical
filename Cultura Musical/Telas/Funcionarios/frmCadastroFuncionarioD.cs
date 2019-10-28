@@ -36,9 +36,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_bairro = txtBairro.Text;
                 funcionario.ds_estado = txtEstado.Text;
                 funcionario.ds_rua = txtRua.Text;
-                funcionario.tb_beneficio.ds_va = nudVa.Value;
-                funcionario.tb_beneficio.ds_vr = nudVr.Value;
-                funcionario.tb_beneficio.ds_vt = nudVt.Value;
+               
 
                 if (rdnCNPJ.Checked == true)
                 {
