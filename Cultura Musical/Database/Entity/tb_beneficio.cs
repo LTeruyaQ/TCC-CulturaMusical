@@ -24,6 +24,7 @@ namespace Cultura_Musical.Database.Entity
         public decimal ds_va { get; set; }
         public decimal ds_vr { get; set; }
         public decimal ds_convenio { get; set; }
+        public decimal ds_gratificacao { get; set; }
     
         public virtual ICollection<tb_funcionario> tb_funcionario { get; set; }
     }

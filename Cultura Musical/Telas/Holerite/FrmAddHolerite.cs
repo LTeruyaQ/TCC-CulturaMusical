@@ -16,5 +16,10 @@ namespace Cultura_Musical.Telas.Holerite
         {
             InitializeComponent();
         }
+
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

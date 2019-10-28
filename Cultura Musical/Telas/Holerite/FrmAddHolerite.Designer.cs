@@ -59,13 +59,13 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnProcurar = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.txtFuncionario = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnProcurar = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label69 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -448,7 +448,6 @@
             this.label23.TabIndex = 36;
             this.label23.Text = "REFERÊNCIA";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-        
             // 
             // groupBox4
             // 
@@ -466,7 +465,21 @@
             this.groupBox4.Size = new System.Drawing.Size(587, 80);
             this.groupBox4.TabIndex = 17;
             this.groupBox4.TabStop = false;
-     
+            // 
+            // btnProcurar
+            // 
+            this.btnProcurar.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnProcurar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnProcurar.FlatAppearance.BorderSize = 20;
+            this.btnProcurar.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProcurar.ForeColor = System.Drawing.Color.Black;
+            this.btnProcurar.Location = new System.Drawing.Point(386, 19);
+            this.btnProcurar.Name = "btnProcurar";
+            this.btnProcurar.Size = new System.Drawing.Size(139, 40);
+            this.btnProcurar.TabIndex = 18;
+            this.btnProcurar.Text = "Procurar";
+            this.btnProcurar.UseVisualStyleBackColor = false;
+            this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
             // 
             // textBox5
             // 
@@ -523,21 +536,6 @@
             this.label6.Size = new System.Drawing.Size(54, 13);
             this.label6.TabIndex = 23;
             this.label6.Text = "CODIGO";
-            // 
-            // btnProcurar
-            // 
-            this.btnProcurar.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnProcurar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnProcurar.FlatAppearance.BorderSize = 20;
-            this.btnProcurar.Font = new System.Drawing.Font("Century Gothic", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProcurar.ForeColor = System.Drawing.Color.Black;
-            this.btnProcurar.Location = new System.Drawing.Point(386, 19);
-            this.btnProcurar.Name = "btnProcurar";
-            this.btnProcurar.Size = new System.Drawing.Size(139, 40);
-            this.btnProcurar.TabIndex = 18;
-            this.btnProcurar.Text = "Procurar";
-            this.btnProcurar.UseVisualStyleBackColor = false;
-            
             // 
             // groupBox5
             // 
@@ -624,7 +622,6 @@
             this.groupBox6.Size = new System.Drawing.Size(133, 151);
             this.groupBox6.TabIndex = 17;
             this.groupBox6.TabStop = false;
-           
             // 
             // label68
             // 
@@ -698,7 +695,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmAddHolerite";
             this.Text = "FrmAddHolerite";
-            
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel3.ResumeLayout(false);

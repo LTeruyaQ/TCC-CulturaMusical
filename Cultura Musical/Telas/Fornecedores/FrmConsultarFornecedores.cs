@@ -32,9 +32,15 @@ namespace Cultura_Musical.Telas.Fornecedores
                 List<Database.Entity.tb_fornecedor> ok = forne.ListarNome(nome);
 
             }
+
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Fornecedor não encontrado");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
     }

@@ -28,9 +28,15 @@ namespace Cultura_Musical.Telas.Fornecedores
 
                 MessageBox.Show("Fornecedor excluído comm sucesso.");
             }
+
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Verifique se os caractéres foram digitados corretamente.");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
     }

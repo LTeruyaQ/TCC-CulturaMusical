@@ -43,12 +43,14 @@ namespace Cultura_Musical.Database.Entity
         public Nullable<decimal> vl_13_salario { get; set; }
         public int id_beneficio { get; set; }
         public int id_financeiro { get; set; }
+        public int id_escala_funcionario { get; set; }
         public string ds_cidade { get; set; }
         public int nmr_funcionario { get; set; }
     
         public virtual ICollection<tb_aula> tb_aula { get; set; }
         public virtual tb_beneficio tb_beneficio { get; set; }
         public virtual ICollection<tb_escala_funcionario> tb_escala_funcionario { get; set; }
+        public virtual tb_escala_funcionario tb_escala_funcionario1 { get; set; }
         public virtual tb_financeiro tb_financeiro { get; set; }
         public virtual ICollection<tb_folha_pagamento> tb_folha_pagamento { get; set; }
         public virtual ICollection<tb_login> tb_login { get; set; }

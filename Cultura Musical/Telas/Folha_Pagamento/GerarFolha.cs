@@ -37,9 +37,15 @@ namespace Cultura_Musical.Telas.Folha_de_Pagamento
                 lblTotalProvento.Text = Convert.ToString(totalprovento);
                 lblValorLiquido.Text = Convert.ToString(totaldesconto + totalprovento);
             }
+
+            catch(ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Houve algum erro na filtragem de dados.");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
 

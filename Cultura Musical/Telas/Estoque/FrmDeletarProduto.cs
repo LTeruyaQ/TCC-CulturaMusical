@@ -28,9 +28,15 @@ namespace Cultura_Musical.Telas.Produtos
 
                 MessageBox.Show("Excluído com sucesso!");
             }
+
+            catch(ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
             catch (Exception)
             {
-                MessageBox.Show("Não foi possível excluir o item, por favor verifique o erro");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
 

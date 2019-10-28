@@ -34,9 +34,14 @@ namespace Cultura_Musical.Telas.Funcionario
 
                 //não precisa dar MessageBox na tela de consultar, eu acho. ->Gouget
             }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Nome não encontrado");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
 
@@ -51,9 +56,15 @@ namespace Cultura_Musical.Telas.Funcionario
 
                 dgvConsultaFuncionario.DataSource = func;
             }
+
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Este cargo não foi  encontrado");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             } 
         }
     }

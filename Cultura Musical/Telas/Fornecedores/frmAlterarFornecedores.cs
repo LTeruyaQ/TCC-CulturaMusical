@@ -39,9 +39,15 @@ namespace Cultura_Musical.Telas.Fornecedores
 
                 MessageBox.Show("Fornecedor alterado com sucesso.");
             }
+
+            catch (ArgumentException  ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Certifique-se de qe os dados foram alterados corretamente");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             } 
         }
     }

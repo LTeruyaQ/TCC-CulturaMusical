@@ -30,6 +30,7 @@
     <EntitySetMapping Name="tb_beneficio">
       <EntityTypeMapping TypeName="culturamusicalModel.tb_beneficio">
         <MappingFragment StoreEntitySet="tb_beneficio">
+          <ScalarProperty Name="ds_gratificacao" ColumnName="ds_gratificacao" />
           <ScalarProperty Name="ds_convenio" ColumnName="ds_convenio" />
           <ScalarProperty Name="ds_vr" ColumnName="ds_vr" />
           <ScalarProperty Name="ds_va" ColumnName="ds_va" />
@@ -192,9 +193,12 @@
         <MappingFragment StoreEntitySet="tb_funcionario">
           <ScalarProperty Name="nmr_funcionario" ColumnName="nmr_funcionario" />
           <ScalarProperty Name="ds_cidade" ColumnName="ds_cidade" />
+          <ScalarProperty Name="id_escala_funcionario" ColumnName="id_escala_funcionario" />
           <ScalarProperty Name="id_financeiro" ColumnName="id_financeiro" />
           <ScalarProperty Name="id_beneficio" ColumnName="id_beneficio" />
           <ScalarProperty Name="vl_13_salario" ColumnName="vl_13_salario" />
+          <ScalarProperty Name="ds_complemento" ColumnName="ds_complemento" />
+          <ScalarProperty Name="ds_numero" ColumnName="ds_numero" />
           <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
           <ScalarProperty Name="ds_estado" ColumnName="ds_estado" />
           <ScalarProperty Name="ds_rua" ColumnName="ds_rua" />

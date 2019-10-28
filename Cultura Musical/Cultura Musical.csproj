@@ -240,6 +240,12 @@
     <Compile Include="Telas\Funcionarios\FrmCadastroFuncionario.Designer.cs">
       <DependentUpon>FrmCadastroFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Funcionarios\frmCadastroFuncionarioD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Funcionarios\frmCadastroFuncionarioD.Designer.cs">
+      <DependentUpon>frmCadastroFuncionarioD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Funcionarios\FrmConsultarColaboradores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -466,6 +472,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\FrmCadastroFuncionario.resx">
       <DependentUpon>FrmCadastroFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Funcionarios\frmCadastroFuncionarioD.resx">
+      <DependentUpon>frmCadastroFuncionarioD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\FrmConsultarColaboradores.resx">
       <DependentUpon>FrmConsultarColaboradores.cs</DependentUpon>

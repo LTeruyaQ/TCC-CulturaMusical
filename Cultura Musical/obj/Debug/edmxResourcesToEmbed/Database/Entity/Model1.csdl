@@ -78,6 +78,10 @@
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
       <End Role="tb_escala_funcionario" EntitySet="tb_escala_funcionario" />
     </AssociationSet>
+    <AssociationSet Name="fk_tb_funcionario_tb_escala_funcionario1" Association="culturamusicalModel.fk_tb_funcionario_tb_escala_funcionario1">
+      <End Role="tb_escala_funcionario" EntitySet="tb_escala_funcionario" />
+      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+    </AssociationSet>
     <AssociationSet Name="fk_tb_estoque_tb_produto1" Association="culturamusicalModel.fk_tb_estoque_tb_produto1">
       <End Role="tb_produto" EntitySet="tb_produto" />
       <End Role="tb_estoque" EntitySet="tb_estoque" />
@@ -145,6 +149,7 @@
     <Property Name="ds_va" Type="Decimal" Nullable="false" />
     <Property Name="ds_vr" Type="Decimal" Nullable="false" />
     <Property Name="ds_convenio" Type="Decimal" Nullable="false" />
+    <Property Name="ds_gratificacao" Type="Decimal" Nullable="false" />
     <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.fk_tb_funcionario_tb_beneficio1" FromRole="tb_beneficio" ToRole="tb_funcionario" />
   </EntityType>
   <EntityType Name="tb_cliente">
@@ -247,6 +252,7 @@
     <Property Name="id_funcionario" Type="Int32" Nullable="false" />
     <Property Name="cod_escala" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.fk_tb_escala_funcionario_tb_funcionario1" FromRole="tb_escala_funcionario" ToRole="tb_funcionario" />
+    <NavigationProperty Name="tb_funcionario1" Relationship="culturamusicalModel.fk_tb_funcionario_tb_escala_funcionario1" FromRole="tb_escala_funcionario" ToRole="tb_funcionario" />
   </EntityType>
   <EntityType Name="tb_estoque">
     <Key>
@@ -321,14 +327,18 @@
     <Property Name="ds_rua" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="ds_estado" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
     <Property Name="ds_bairro" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ds_numero" Type="Int32" Nullable="false" />
+    <Property Name="ds_complemento" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="vl_13_salario" Type="Decimal" />
     <Property Name="id_beneficio" Type="Int32" Nullable="false" />
     <Property Name="id_financeiro" Type="Int32" Nullable="false" />
+    <Property Name="id_escala_funcionario" Type="Int32" Nullable="false" />
     <Property Name="ds_cidade" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
     <Property Name="nmr_funcionario" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tb_aula" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_aula" />
     <NavigationProperty Name="tb_beneficio" Relationship="culturamusicalModel.fk_tb_funcionario_tb_beneficio1" FromRole="tb_funcionario" ToRole="tb_beneficio" />
     <NavigationProperty Name="tb_escala_funcionario" Relationship="culturamusicalModel.fk_tb_escala_funcionario_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_escala_funcionario" />
+    <NavigationProperty Name="tb_escala_funcionario1" Relationship="culturamusicalModel.fk_tb_funcionario_tb_escala_funcionario1" FromRole="tb_funcionario" ToRole="tb_escala_funcionario" />
     <NavigationProperty Name="tb_financeiro" Relationship="culturamusicalModel.fk_tb_funcionario_tb_financeiro1" FromRole="tb_funcionario" ToRole="tb_financeiro" />
     <NavigationProperty Name="tb_folha_pagamento" Relationship="culturamusicalModel.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_folha_pagamento" />
     <NavigationProperty Name="tb_login" Relationship="culturamusicalModel.fk_tb_login_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_login" />
@@ -601,6 +611,18 @@
       </Principal>
       <Dependent Role="tb_escala_funcionario">
         <PropertyRef Name="id_funcionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_funcionario_tb_escala_funcionario1">
+    <End Type="culturamusicalModel.tb_escala_funcionario" Role="tb_escala_funcionario" Multiplicity="1" />
+    <End Type="culturamusicalModel.tb_funcionario" Role="tb_funcionario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_escala_funcionario">
+        <PropertyRef Name="id_escala_funcionario" />
+      </Principal>
+      <Dependent Role="tb_funcionario">
+        <PropertyRef Name="id_escala_funcionario" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

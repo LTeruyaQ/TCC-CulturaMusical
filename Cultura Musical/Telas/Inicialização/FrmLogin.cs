@@ -28,9 +28,15 @@ namespace Cultura_Musical.Telas
             {
 
             }
+
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
     }

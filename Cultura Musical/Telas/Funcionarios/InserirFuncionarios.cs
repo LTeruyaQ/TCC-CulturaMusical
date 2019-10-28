@@ -39,7 +39,6 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.tb_beneficio.ds_vr = nudVr.Value;
                 funcionario.tb_beneficio.ds_vt = nudVt.Value;
                 
-
                 if (rdnCNPJ.Checked == true)
                 {
                     txtMascara.Mask = "000.000.000 / 0000 - 00";
@@ -67,9 +66,15 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 MessageBox.Show("Funcionário cadastrado com sucesso.");
             }
-            catch (Exception ex)
+
+            catch (ArgumentException ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
 
@@ -81,6 +86,11 @@ namespace Cultura_Musical.Telas.Funcionarios
             txtRua.Text = resp.logradouro;
             txtEstado.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
+        }
+
+        private void btnCadastrar_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

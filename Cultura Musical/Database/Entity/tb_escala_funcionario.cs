@@ -14,6 +14,11 @@ namespace Cultura_Musical.Database.Entity
     
     public partial class tb_escala_funcionario
     {
+        public tb_escala_funcionario()
+        {
+            this.tb_funcionario1 = new HashSet<tb_funcionario>();
+        }
+    
         public int id_escala_funcionario { get; set; }
         public System.DateTime dt_inicio { get; set; }
         public System.DateTime dt_final { get; set; }
@@ -21,5 +26,6 @@ namespace Cultura_Musical.Database.Entity
         public int cod_escala { get; set; }
     
         public virtual tb_funcionario tb_funcionario { get; set; }
+        public virtual ICollection<tb_funcionario> tb_funcionario1 { get; set; }
     }
 }

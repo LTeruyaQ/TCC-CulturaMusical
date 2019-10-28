@@ -33,9 +33,15 @@ namespace Cultura_Musical.Telas.Produtos
 
                 MessageBox.Show("Produto alterado com sucesso");
             }
+
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Ocorreu um erro");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             } 
         }
     }

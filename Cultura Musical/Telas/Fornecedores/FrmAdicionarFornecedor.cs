@@ -40,9 +40,15 @@ namespace Cultura_Musical.Telas.Fornecedores
 
                 MessageBox.Show("Fornecedor adicionado com sucesso.");
             }
+
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Verifique se os campos foram preenchidos corretamente");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
 

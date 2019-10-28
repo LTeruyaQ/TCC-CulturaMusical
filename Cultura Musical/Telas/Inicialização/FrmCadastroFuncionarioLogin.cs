@@ -30,9 +30,15 @@ namespace Cultura_Musical.Telas.Inicialização
 
                 MessageBox.Show("Funcionário cadastrado com sucesso!");
             }
+
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Não deve haver espaços entre um caracter e outro.");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
     }

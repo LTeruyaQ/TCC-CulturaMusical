@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="culturamusicalModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="culturamusicalModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="tb_agenda_estudio">
     <Key>
       <PropertyRef Name="id_agenda_estudio" />
@@ -33,6 +33,7 @@
     <Property Name="ds_va" Type="decimal" Precision="10" Scale="0" Nullable="false" />
     <Property Name="ds_vr" Type="decimal" Precision="10" Scale="0" Nullable="false" />
     <Property Name="ds_convenio" Type="decimal" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="ds_gratificacao" Type="decimal" Precision="10" Scale="0" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_cliente">
     <Key>
@@ -192,9 +193,12 @@
     <Property Name="ds_rua" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ds_estado" Type="varchar" MaxLength="3" Nullable="false" />
     <Property Name="ds_bairro" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ds_numero" Type="int" Nullable="false" />
+    <Property Name="ds_complemento" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="vl_13_salario" Type="decimal" Precision="10" Scale="0" />
     <Property Name="id_beneficio" Type="int" Nullable="false" />
     <Property Name="id_financeiro" Type="int" Nullable="false" />
+    <Property Name="id_escala_funcionario" Type="int" Nullable="false" />
     <Property Name="ds_cidade" Type="varchar" MaxLength="45" Nullable="false" />
     <Property Name="nmr_funcionario" Type="int" Nullable="false" />
   </EntityType>
@@ -471,6 +475,18 @@ warning 6002: The table/view 'def.culturamusical.fluxo_de_caixa' does not have a
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="fk_tb_funcionario_tb_escala_funcionario1">
+    <End Role="tb_escala_funcionario" Type="Self.tb_escala_funcionario" Multiplicity="1" />
+    <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_escala_funcionario">
+        <PropertyRef Name="id_escala_funcionario" />
+      </Principal>
+      <Dependent Role="tb_funcionario">
+        <PropertyRef Name="id_escala_funcionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="fk_tb_funcionario_tb_financeiro1">
     <End Role="tb_financeiro" Type="Self.tb_financeiro" Multiplicity="1" />
     <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="*" />
@@ -629,6 +645,10 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
     </AssociationSet>
     <AssociationSet Name="fk_tb_funcionario_tb_beneficio1" Association="Self.fk_tb_funcionario_tb_beneficio1">
       <End Role="tb_beneficio" EntitySet="tb_beneficio" />
+      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_funcionario_tb_escala_funcionario1" Association="Self.fk_tb_funcionario_tb_escala_funcionario1">
+      <End Role="tb_escala_funcionario" EntitySet="tb_escala_funcionario" />
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
     </AssociationSet>
     <AssociationSet Name="fk_tb_funcionario_tb_financeiro1" Association="Self.fk_tb_funcionario_tb_financeiro1">

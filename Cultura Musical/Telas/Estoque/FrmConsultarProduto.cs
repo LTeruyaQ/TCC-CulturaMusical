@@ -34,9 +34,15 @@ namespace Cultura_Musical.Telas.Produtos
 
                 dgvListar.DataSource = con;
             }
+
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        
             catch (Exception)
             {
-                MessageBox.Show("Não foi possível fazer a busca do produto, verique se o item digitado foi escrito corretamente");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
     }
