@@ -4,32 +4,32 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6d9d613fa8084daf92d40a0eae028a86" Name="Diagram1" ZoomLevel="13">
-        <EntityTypeShape EntityType="culturamusicalModel.tb_agenda_estudio" Width="1.5" PointX="8.25" PointY="20.125" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_aula" Width="1.5" PointX="8.25" PointY="9.375" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_beneficio" Width="1.5" PointX="0.75" PointY="5.875" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_cliente" Width="1.5" PointX="6" PointY="0.75" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_colaborador" Width="1.5" PointX="0.75" PointY="15.875" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_compra" Width="1.5" PointX="11" PointY="3.875" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_conta" Width="1.5" PointX="15" PointY="12.125" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_dia_semana" Width="1.5" PointX="10.75" PointY="11.75" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_escala" Width="1.5" PointX="13" PointY="8.125" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_escala_funcionario" Width="1.5" PointX="5.25" PointY="6.5" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_estoque" Width="1.5" PointX="15.5" PointY="4.125" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_financeiro" Width="1.5" PointX="0.75" PointY="9.875" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_folha_pagamento" Width="1.5" PointX="5.25" PointY="9.625" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_fornecedor" Width="1.5" PointX="8.75" PointY="3.125" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_funcionario" Width="1.5" PointX="3" PointY="7.5" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_holerite" Width="1.5" PointX="0.75" PointY="2.875" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_horario" Width="1.5" PointX="10.75" PointY="8.125" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_login" Width="1.5" PointX="5.25" PointY="15.375" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_plano" Width="1.5" PointX="3.75" PointY="22.75" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_produto" Width="1.5" PointX="13.25" PointY="3.875" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_prolabore" Width="1.5" PointX="7.5" PointY="14.75" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_sala" Width="1.5" PointX="6" PointY="20" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_tipo_conta" Width="1.5" PointX="12.75" PointY="12.375" />
-        <EntityTypeShape EntityType="culturamusicalModel.tb_venda_plano" Width="1.5" PointX="6" PointY="22.75" />
-        <EntityTypeShape EntityType="culturamusicalModel.fluxo_de_caixa" Width="1.5" PointX="2.75" PointY="2.875" />
+      <Diagram DiagramId="6d9d613fa8084daf92d40a0eae028a86" Name="Diagram1" ZoomLevel="82">
+        <EntityTypeShape EntityType="culturamusicalModel.tb_agenda_estudio" Width="1.5" PointX="8.25" PointY="11.5" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_aula" Width="1.5" PointX="8.25" PointY="7.125" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_beneficio" Width="1.5" PointX="0.75" PointY="7.625" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_cliente" Width="1.5" PointX="6" PointY="1.5" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_colaborador" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_compra" Width="1.5" PointX="11" PointY="1.625" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_conta" Width="1.5" PointX="15" PointY="9.875" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_dia_semana" Width="1.5" PointX="10.75" PointY="6" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_escala" Width="1.5" PointX="13" PointY="6.25" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_escala_funcionario" Width="1.5" PointX="5.25" PointY="12.875" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_estoque" Width="1.5" PointX="15.5" PointY="2" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_financeiro" Width="1.5" PointX="3" PointY="2.75" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_folha_pagamento" Width="1.5" PointX="5.25" PointY="7.375" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_fornecedor" Width="1.5" PointX="8.75" PointY="1" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_funcionario" Width="1.5" PointX="3" PointY="5.625" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_holerite" Width="1.5" PointX="10.75" PointY="13.75" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_horario" Width="1.5" PointX="10.75" PointY="10.25" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_login" Width="1.5" PointX="5.25" PointY="16.5" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_plano" Width="1.5" PointX="3.75" PointY="20.875" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_produto" Width="1.5" PointX="13.25" PointY="1.625" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_prolabore" Width="1.5" PointX="7.5" PointY="15.875" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_sala" Width="1.5" PointX="6" PointY="24" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_tipo_conta" Width="1.5" PointX="12.75" PointY="10.25" />
+        <EntityTypeShape EntityType="culturamusicalModel.tb_venda_plano" Width="1.5" PointX="6" PointY="20.75" />
+        <EntityTypeShape EntityType="culturamusicalModel.fluxo_de_caixa" Width="1.5" PointX="12.75" PointY="13.75" />
         <AssociationConnector Association="culturamusicalModel.fk_tb_agenda_estudio_tb_cliente1" />
         <AssociationConnector Association="culturamusicalModel.fk_tb_cliente_aula_tb_cliente1" />
         <AssociationConnector Association="culturamusicalModel.fk_tb_cliente_aula_tb_funcionario1" />
@@ -43,10 +43,8 @@
         <AssociationConnector Association="culturamusicalModel.fk_tb_escala_tb_dia_semana1" />
         <AssociationConnector Association="culturamusicalModel.fk_tb_escala_tb_horario1" />
         <AssociationConnector Association="culturamusicalModel.fk_tb_escala_funcionario_tb_funcionario1" />
-        <AssociationConnector Association="culturamusicalModel.fk_tb_funcionario_tb_escala_funcionario1" />
         <AssociationConnector Association="culturamusicalModel.fk_tb_estoque_tb_produto1" />
         <AssociationConnector Association="culturamusicalModel.fk_tb_folha_pagamento_tb_financeiro1" />
-        <AssociationConnector Association="culturamusicalModel.fk_tb_funcionario_tb_financeiro1" />
         <AssociationConnector Association="culturamusicalModel.fk_tb_folha_pagamento_tb_funcionario1" />
         <AssociationConnector Association="culturamusicalModel.fk_tb_login_tb_funcionario1" />
         <AssociationConnector Association="culturamusicalModel.fk_tb_prolabore_tb_login1" />

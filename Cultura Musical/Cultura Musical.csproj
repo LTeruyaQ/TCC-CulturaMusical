@@ -70,10 +70,12 @@
     <Compile Include="Business\Business_Agenda.cs" />
     <Compile Include="Business\Business_Cliente.cs" />
     <Compile Include="Business\Business_CRM.cs" />
+    <Compile Include="Business\Business_DiasDaSemana.cs" />
     <Compile Include="Business\Business_Fornecedores.cs" />
     <Compile Include="Business\Business_Funcionarios.cs" />
     <Compile Include="Business\Business_Folha_Pagamento.cs" />
     <Compile Include="Business\Business_Holerite.cs" />
+    <Compile Include="Business\Business_Horarios.cs" />
     <Compile Include="Business\Business_Inicialização.cs" />
     <Compile Include="Business\Business_Logistica.cs" />
     <Compile Include="Business\Business_Pedidos.cs" />
@@ -84,10 +86,12 @@
     <Compile Include="Database\Database_Agenda.cs" />
     <Compile Include="Database\Database_Cliente.cs" />
     <Compile Include="Database\Database_CRM.cs" />
+    <Compile Include="Database\Database_DiasDaSemana.cs" />
     <Compile Include="Database\Database_Fornecedores.cs" />
     <Compile Include="Database\Database_Funcionarios.cs" />
     <Compile Include="Database\Database_Folha_Pagamento.cs" />
     <Compile Include="Database\Database_Holerite.cs" />
+    <Compile Include="Database\Database_Horarios.cs" />
     <Compile Include="Database\Database_Inicialização.cs" />
     <Compile Include="Database\Database_Logistica.cs" />
     <Compile Include="Database\Database_Pedidos.cs" />

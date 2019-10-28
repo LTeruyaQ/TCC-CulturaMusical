@@ -64,7 +64,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpSaida = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpRetorno = new System.Windows.Forms.DateTimePicker();
             this.dtpEntrada = new System.Windows.Forms.DateTimePicker();
             this.dtpAlmoco = new System.Windows.Forms.DateTimePicker();
             this.label13 = new System.Windows.Forms.Label();
@@ -89,6 +89,16 @@
             this.rdnCNPJ = new System.Windows.Forms.RadioButton();
             this.rdnCPF = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.chkSegunda = new System.Windows.Forms.CheckBox();
+            this.chkTerça = new System.Windows.Forms.CheckBox();
+            this.chkQuarta = new System.Windows.Forms.CheckBox();
+            this.chkQuinta = new System.Windows.Forms.CheckBox();
+            this.chkSexta = new System.Windows.Forms.CheckBox();
+            this.chkSabado = new System.Windows.Forms.CheckBox();
+            this.chkDomingo = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tabPage5.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudVa)).BeginInit();
@@ -106,6 +116,7 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage5
@@ -330,6 +341,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.groupBox8);
             this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -348,7 +360,7 @@
             this.groupBox4.Controls.Add(this.nudSalario);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Location = new System.Drawing.Point(23, 119);
+            this.groupBox4.Location = new System.Drawing.Point(23, 24);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(462, 153);
             this.groupBox4.TabIndex = 98;
@@ -409,22 +421,22 @@
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.dtpSaida);
-            this.groupBox3.Controls.Add(this.dateTimePicker1);
+            this.groupBox3.Controls.Add(this.dtpRetorno);
             this.groupBox3.Controls.Add(this.dtpEntrada);
             this.groupBox3.Controls.Add(this.dtpAlmoco);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Location = new System.Drawing.Point(23, 296);
+            this.groupBox3.Location = new System.Drawing.Point(23, 297);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(462, 96);
+            this.groupBox3.Size = new System.Drawing.Size(462, 95);
             this.groupBox3.TabIndex = 97;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Escala";
+            this.groupBox3.Text = "Horarios";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(11, 26);
+            this.label12.Location = new System.Drawing.Point(6, 38);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(99, 13);
             this.label12.TabIndex = 90;
@@ -433,7 +445,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(243, 54);
+            this.label1.Location = new System.Drawing.Point(238, 66);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 95;
@@ -442,23 +454,23 @@
             // dtpSaida
             // 
             this.dtpSaida.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpSaida.Location = new System.Drawing.Point(116, 52);
+            this.dtpSaida.Location = new System.Drawing.Point(111, 64);
             this.dtpSaida.Name = "dtpSaida";
             this.dtpSaida.Size = new System.Drawing.Size(100, 20);
             this.dtpSaida.TabIndex = 94;
             // 
-            // dateTimePicker1
+            // dtpRetorno
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(352, 52);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker1.TabIndex = 96;
+            this.dtpRetorno.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dtpRetorno.Location = new System.Drawing.Point(347, 64);
+            this.dtpRetorno.Name = "dtpRetorno";
+            this.dtpRetorno.Size = new System.Drawing.Size(100, 20);
+            this.dtpRetorno.TabIndex = 96;
             // 
             // dtpEntrada
             // 
             this.dtpEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpEntrada.Location = new System.Drawing.Point(116, 26);
+            this.dtpEntrada.Location = new System.Drawing.Point(111, 38);
             this.dtpEntrada.Name = "dtpEntrada";
             this.dtpEntrada.Size = new System.Drawing.Size(100, 20);
             this.dtpEntrada.TabIndex = 92;
@@ -466,7 +478,7 @@
             // dtpAlmoco
             // 
             this.dtpAlmoco.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpAlmoco.Location = new System.Drawing.Point(352, 26);
+            this.dtpAlmoco.Location = new System.Drawing.Point(347, 38);
             this.dtpAlmoco.Name = "dtpAlmoco";
             this.dtpAlmoco.Size = new System.Drawing.Size(101, 20);
             this.dtpAlmoco.TabIndex = 93;
@@ -474,7 +486,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(19, 54);
+            this.label13.Location = new System.Drawing.Point(14, 66);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(91, 13);
             this.label13.TabIndex = 91;
@@ -483,7 +495,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(249, 26);
+            this.label11.Location = new System.Drawing.Point(244, 38);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(97, 13);
             this.label11.TabIndex = 89;
@@ -687,6 +699,102 @@
             this.tabControl1.Size = new System.Drawing.Size(521, 440);
             this.tabControl1.TabIndex = 89;
             // 
+            // chkSegunda
+            // 
+            this.chkSegunda.AutoSize = true;
+            this.chkSegunda.Location = new System.Drawing.Point(6, 55);
+            this.chkSegunda.Name = "chkSegunda";
+            this.chkSegunda.Size = new System.Drawing.Size(69, 17);
+            this.chkSegunda.TabIndex = 97;
+            this.chkSegunda.Text = "Segunda";
+            this.chkSegunda.UseVisualStyleBackColor = true;
+            // 
+            // chkTerça
+            // 
+            this.chkTerça.AutoSize = true;
+            this.chkTerça.Location = new System.Drawing.Point(81, 55);
+            this.chkTerça.Name = "chkTerça";
+            this.chkTerça.Size = new System.Drawing.Size(54, 17);
+            this.chkTerça.TabIndex = 98;
+            this.chkTerça.Text = "Terça";
+            this.chkTerça.UseVisualStyleBackColor = true;
+            // 
+            // chkQuarta
+            // 
+            this.chkQuarta.AutoSize = true;
+            this.chkQuarta.Location = new System.Drawing.Point(141, 55);
+            this.chkQuarta.Name = "chkQuarta";
+            this.chkQuarta.Size = new System.Drawing.Size(58, 17);
+            this.chkQuarta.TabIndex = 99;
+            this.chkQuarta.Text = "Quarta";
+            this.chkQuarta.UseVisualStyleBackColor = true;
+            // 
+            // chkQuinta
+            // 
+            this.chkQuinta.AutoSize = true;
+            this.chkQuinta.Location = new System.Drawing.Point(205, 55);
+            this.chkQuinta.Name = "chkQuinta";
+            this.chkQuinta.Size = new System.Drawing.Size(57, 17);
+            this.chkQuinta.TabIndex = 100;
+            this.chkQuinta.Text = "Quinta";
+            this.chkQuinta.UseVisualStyleBackColor = true;
+            // 
+            // chkSexta
+            // 
+            this.chkSexta.AutoSize = true;
+            this.chkSexta.Location = new System.Drawing.Point(268, 55);
+            this.chkSexta.Name = "chkSexta";
+            this.chkSexta.Size = new System.Drawing.Size(53, 17);
+            this.chkSexta.TabIndex = 101;
+            this.chkSexta.Text = "Sexta";
+            this.chkSexta.UseVisualStyleBackColor = true;
+            // 
+            // chkSabado
+            // 
+            this.chkSabado.AutoSize = true;
+            this.chkSabado.Location = new System.Drawing.Point(323, 55);
+            this.chkSabado.Name = "chkSabado";
+            this.chkSabado.Size = new System.Drawing.Size(63, 17);
+            this.chkSabado.TabIndex = 102;
+            this.chkSabado.Text = "Sabado";
+            this.chkSabado.UseVisualStyleBackColor = true;
+            // 
+            // chkDomingo
+            // 
+            this.chkDomingo.AutoSize = true;
+            this.chkDomingo.Location = new System.Drawing.Point(385, 55);
+            this.chkDomingo.Name = "chkDomingo";
+            this.chkDomingo.Size = new System.Drawing.Size(68, 17);
+            this.chkDomingo.TabIndex = 103;
+            this.chkDomingo.Text = "Domingo";
+            this.chkDomingo.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(305, 13);
+            this.label2.TabIndex = 83;
+            this.label2.Text = "Selecione os dias quais o colaborador ira prestar seus serviços:";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.chkDomingo);
+            this.groupBox8.Controls.Add(this.label2);
+            this.groupBox8.Controls.Add(this.chkSegunda);
+            this.groupBox8.Controls.Add(this.chkSabado);
+            this.groupBox8.Controls.Add(this.chkTerça);
+            this.groupBox8.Controls.Add(this.chkQuarta);
+            this.groupBox8.Controls.Add(this.chkSexta);
+            this.groupBox8.Controls.Add(this.chkQuinta);
+            this.groupBox8.Location = new System.Drawing.Point(23, 191);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(462, 100);
+            this.groupBox8.TabIndex = 99;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Escala";
+            // 
             // InserirFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -720,6 +828,8 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -762,7 +872,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dtpSaida;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpRetorno;
         private System.Windows.Forms.DateTimePicker dtpEntrada;
         private System.Windows.Forms.DateTimePicker dtpAlmoco;
         private System.Windows.Forms.Label label13;
@@ -787,5 +897,15 @@
         private System.Windows.Forms.RadioButton rdnCNPJ;
         private System.Windows.Forms.RadioButton rdnCPF;
         private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.CheckBox chkDomingo;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox chkSegunda;
+        private System.Windows.Forms.CheckBox chkSabado;
+        private System.Windows.Forms.CheckBox chkTerça;
+        private System.Windows.Forms.CheckBox chkQuarta;
+        private System.Windows.Forms.CheckBox chkSexta;
+        private System.Windows.Forms.CheckBox chkQuinta;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

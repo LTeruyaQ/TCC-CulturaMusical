@@ -18,11 +18,34 @@ namespace Cultura_Musical.Telas.Funcionarios
         }
 
         Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
+        Business.Business_Horarios cronograma = new Business.Business_Horarios();
+        Business.Business_DiasDaSemana Grade = new Business.Business_DiasDaSemana();
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             try
             {
+
                 Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
+                Database.Entity.tb_horario horario = new Database.Entity.tb_horario();
+                Database.Entity.tb_dia_semana escala = new Database.Entity.tb_dia_semana();
+
+                horario.hr_entrada = dtpEntrada.Value.TimeOfDay;
+                horario.hr_saida = dtpSaida.Value.TimeOfDay;
+                horario.hr_almoco = dtpAlmoco.Value.TimeOfDay;
+                horario.hr_retorno = dtpRetorno.Value.TimeOfDay;
+
+                cronograma.AdicionarEscala(horario);
+
+                escala.d_segunda = chkSegunda.Checked;
+                escala.d_terca = chkTerça.Checked;
+                escala.d_quarta = chkQuarta.Checked;
+                escala.d_quinta = chkQuinta.Checked;
+                escala.d_sexta = chkSexta.Checked;
+                escala.d_sabado = chkSabado.Checked;
+                escala.d_domingo = chkDomingo.Checked;
+
+                Grade.adicionarEscala(escala);
+
                 funcionario.nm_funcionario = txtNome.Text;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
                 funcionario.ds_telefone = txtTelefone.Text;
