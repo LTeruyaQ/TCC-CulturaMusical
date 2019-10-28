@@ -37,9 +37,15 @@ namespace Cultura_Musical.Telas.Pedidos
 
                 dgvListar_Pedidos.DataSource = con;
             }
+
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Verifique se nome do pedido foi digitado corretamente.");
+                MessageBox.Show("Oorreu um erro. Tente mais tarde.");
             }
         }
 
@@ -54,10 +60,26 @@ namespace Cultura_Musical.Telas.Pedidos
 
                 dgvListar_Pedidos.DataSource = con;
             }
+
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Não há pedidos cadastrados na data selecionada.");
+                MessageBox.Show("Oorreu um erro. Tente mais tarde.");
             }  
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtpCompra_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

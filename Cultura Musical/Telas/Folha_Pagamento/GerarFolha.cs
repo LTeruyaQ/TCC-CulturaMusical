@@ -49,17 +49,14 @@ namespace Cultura_Musical.Telas.Folha_de_Pagamento
             }
         }
 
-        private void txtCEP_Leave(object sender, EventArgs e)
-        {
-            API_s.Correio__API api = new API_s.Correio__API();
-            dynamic resp = api.Buscar(mskCep.Text);
-
-            lblrua.Text = resp.logradouro;
-            lblestado.Text = resp.localidade;
-            lblbairro.Text = resp.bairro;
-        }
+     
 
         private void btnProcurar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Inserir_Load(object sender, EventArgs e)
         {
 
         }

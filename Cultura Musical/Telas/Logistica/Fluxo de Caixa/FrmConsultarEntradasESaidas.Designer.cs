@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(475, 461);
+            this.ClientSize = new System.Drawing.Size(476, 464);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvFluxo_de_Caixa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

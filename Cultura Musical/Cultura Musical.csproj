@@ -222,6 +222,12 @@
     <Compile Include="Telas\Agenda\FrmInserirAgenda.Designer.cs">
       <DependentUpon>FrmInserirAgenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Folha_Pagamento\frmGerarFolhaD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Folha_Pagamento\frmGerarFolhaD.Designer.cs">
+      <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Fornecedores\frmAlterarFornecedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -366,6 +372,12 @@
     <Compile Include="Telas\Logistica\Fluxo de Caixa\FrmConsultarEntradasESaidas.Designer.cs">
       <DependentUpon>FrmConsultarEntradasESaidas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Logistica\Fluxo de Caixa\frmFluxoD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Logistica\Fluxo de Caixa\frmFluxoD.Designer.cs">
+      <DependentUpon>frmFluxoD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Logistica\FrmConsultarCustos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -384,11 +396,23 @@
     <Compile Include="Telas\Logistica\FrmConsultarSaldo.Designer.cs">
       <DependentUpon>FrmConsultarSaldo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Produtos\frmAdicionarPedidoD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Produtos\frmAdicionarPedidoD.Designer.cs">
+      <DependentUpon>frmAdicionarPedidoD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Produtos\FrmAdicionarProduto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\Produtos\FrmAdicionarProduto.Designer.cs">
       <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Telas\Produtos\frmConsultarPedidoD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Produtos\frmConsultarPedidoD.Designer.cs">
+      <DependentUpon>frmConsultarPedidoD.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Produtos\FrmConsultarProdutos.cs">
       <SubType>Form</SubType>
@@ -464,6 +488,9 @@
     <EmbeddedResource Include="Telas\CRM\FrmDeletarCliente.resx">
       <DependentUpon>FrmDeletarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Folha_Pagamento\frmGerarFolhaD.resx">
+      <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Fornecedores\frmAlterarFornecedores.resx">
       <DependentUpon>frmAlterarFornecedores.cs</DependentUpon>
     </EmbeddedResource>
@@ -521,6 +548,9 @@
     <EmbeddedResource Include="Telas\Logistica\Fluxo de Caixa\FrmConsultarEntradasESaidas.resx">
       <DependentUpon>FrmConsultarEntradasESaidas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Logistica\Fluxo de Caixa\frmFluxoD.resx">
+      <DependentUpon>frmFluxoD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Logistica\FrmConsultarCustos.resx">
       <DependentUpon>FrmConsultarCustos.cs</DependentUpon>
     </EmbeddedResource>
@@ -530,8 +560,14 @@
     <EmbeddedResource Include="Telas\Logistica\FrmConsultarSaldo.resx">
       <DependentUpon>FrmConsultarSaldo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Produtos\frmAdicionarPedidoD.resx">
+      <DependentUpon>frmAdicionarPedidoD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Produtos\FrmAdicionarProduto.resx">
       <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Produtos\frmConsultarPedidoD.resx">
+      <DependentUpon>frmConsultarPedidoD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Produtos\FrmConsultarProdutos.resx">
       <DependentUpon>FrmConsultarProdutos.cs</DependentUpon>
