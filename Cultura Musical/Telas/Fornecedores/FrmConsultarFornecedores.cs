@@ -43,5 +43,15 @@ namespace Cultura_Musical.Telas.Fornecedores
                 MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmConsultarFornecedores_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
