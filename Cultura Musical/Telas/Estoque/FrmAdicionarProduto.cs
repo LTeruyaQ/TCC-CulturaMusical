@@ -45,5 +45,10 @@ namespace Cultura_Musical.Telas.Produtos
                 MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -82,7 +82,7 @@
             this.dtpCompra.Name = "dtpCompra";
             this.dtpCompra.Size = new System.Drawing.Size(100, 20);
             this.dtpCompra.TabIndex = 13;
-            
+            this.dtpCompra.ValueChanged += new System.EventHandler(this.dtpCompra_ValueChanged);
             // 
             // label5
             // 
@@ -93,6 +93,7 @@
             this.label5.Size = new System.Drawing.Size(132, 16);
             this.label5.TabIndex = 12;
             this.label5.Text = "Data da compra:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // FrmConsultarProdutos
             // 
@@ -109,7 +110,6 @@
             this.Name = "FrmConsultarProdutos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmConsultarProdutos";
-          
             ((System.ComponentModel.ISupportInitialize)(this.dgvListar_Pedidos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

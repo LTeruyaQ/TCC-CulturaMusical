@@ -36,9 +36,9 @@
             // dgvFluxo_de_Caixa
             // 
             this.dgvFluxo_de_Caixa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFluxo_de_Caixa.Location = new System.Drawing.Point(131, 116);
+            this.dgvFluxo_de_Caixa.Location = new System.Drawing.Point(0, 78);
             this.dgvFluxo_de_Caixa.Name = "dgvFluxo_de_Caixa";
-            this.dgvFluxo_de_Caixa.Size = new System.Drawing.Size(512, 309);
+            this.dgvFluxo_de_Caixa.Size = new System.Drawing.Size(476, 383);
             this.dgvFluxo_de_Caixa.TabIndex = 1;
             this.dgvFluxo_de_Caixa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFluxo_de_Caixa_CellContentClick);
             // 
@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 562);
+            this.ClientSize = new System.Drawing.Size(476, 464);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvFluxo_de_Caixa);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

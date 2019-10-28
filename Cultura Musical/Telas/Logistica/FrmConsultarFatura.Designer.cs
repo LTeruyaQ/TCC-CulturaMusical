@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 424);
+            this.ClientSize = new System.Drawing.Size(511, 424);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvFatura);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
