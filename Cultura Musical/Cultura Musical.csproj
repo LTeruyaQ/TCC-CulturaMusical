@@ -227,10 +227,6 @@
     <Compile Include="Telas\Folha_Pagamento\frmGerarFolhaD.Designer.cs">
       <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Fornecedores\frmAlterarFornecedores.cs" />
-    <Compile Include="Telas\Fornecedores\frmAlterarFornecedores.Designer.cs">
-      <DependentUpon>frmAlterarFornecedores.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Funcionarios\FrmAlterarColaborador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -308,10 +304,6 @@
     </Compile>
     <Compile Include="Telas\Fornecedores\FrmConsultarFornecedores.Designer.cs">
       <DependentUpon>FrmConsultarFornecedores.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Fornecedores\FrmDeletarFornecedor.cs" />
-    <Compile Include="Telas\Fornecedores\FrmDeletarFornecedor.Designer.cs">
-      <DependentUpon>FrmDeletarFornecedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Folha_Pagamento\GerarFolha.cs">
       <SubType>Form</SubType>
@@ -485,14 +477,8 @@
     <EmbeddedResource Include="Telas\Folha_Pagamento\frmGerarFolhaD.resx">
       <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Fornecedores\frmAlterarFornecedores.resx">
-      <DependentUpon>frmAlterarFornecedores.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Fornecedores\FrmConsultarFornecedores.resx">
       <DependentUpon>FrmConsultarFornecedores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Fornecedores\FrmDeletarFornecedor.resx">
-      <DependentUpon>FrmDeletarFornecedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\FrmAlterarColaborador.resx">
       <DependentUpon>FrmAlterarColaborador.cs</DependentUpon>

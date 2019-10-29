@@ -24,11 +24,11 @@ namespace Cultura_Musical.Telas.Fornecedores
                 Database.Entity.tb_fornecedor forn = new Database.Entity.tb_fornecedor();
 
                 forn.nm_fornecedor = txtRSocial.Text;
-                forn.inscicao_estadual = txtInscricao.Text;
+                forn.inscicao_estadual = Convert.ToString(txtInscricao.Text);
                 forn.tell_contato = mskTel1.Text;
                 forn.tell_contato2 = mskTel2.Text;
                 forn.ds_email = txtEmail.Text;
-                forn.cep = txtCEP.Text;
+                forn.cep = mskCEP.Text;
                 forn.rua = txtRua.Text;
                 forn.bairro = txtBairro.Text;
                 forn.cidade = txtCidade.Text;

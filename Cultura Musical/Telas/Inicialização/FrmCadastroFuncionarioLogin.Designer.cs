@@ -99,7 +99,6 @@
             this.btnConfirmar_Login.BackColor = System.Drawing.Color.Transparent;
             this.btnConfirmar_Login.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar_Login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnConfirmar_Login.Image = global::Cultura_Musical.Properties.Resources.giphy;
             this.btnConfirmar_Login.Location = new System.Drawing.Point(200, 264);
             this.btnConfirmar_Login.Name = "btnConfirmar_Login";
             this.btnConfirmar_Login.Size = new System.Drawing.Size(104, 32);
@@ -134,7 +133,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Cultura_Musical.Properties.Resources.giphy;
             this.ClientSize = new System.Drawing.Size(485, 308);
             this.Controls.Add(this.txtconfirmar);
             this.Controls.Add(this.label4);
