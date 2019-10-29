@@ -12,19 +12,16 @@ namespace Cultura_Musical.Database.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_horario
+    public partial class tb_ponto
     {
-        public tb_horario()
-        {
-            this.tb_escala = new HashSet<tb_escala>();
-        }
+        public int id_ponto { get; set; }
+        public int id_funcionario { get; set; }
+        public Nullable<System.DateTime> dt_entrada { get; set; }
+        public Nullable<System.TimeSpan> hr_entrada { get; set; }
+        public Nullable<System.TimeSpan> hr_saida_intervalo { get; set; }
+        public Nullable<System.TimeSpan> hr_volta_intervalo { get; set; }
+        public Nullable<System.DateTime> dt_saida { get; set; }
     
-        public int id_horario { get; set; }
-        public System.TimeSpan hr_entrada { get; set; }
-        public System.TimeSpan hr_almoco { get; set; }
-        public System.TimeSpan hr_retorno { get; set; }
-        public System.TimeSpan hr_saida { get; set; }
-    
-        public virtual ICollection<tb_escala> tb_escala { get; set; }
+        public virtual tb_funcionario tb_funcionario { get; set; }
     }
 }

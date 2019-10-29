@@ -404,7 +404,7 @@
             this.groupBox8.Controls.Add(this.label19);
             this.groupBox8.Controls.Add(this.label20);
             this.groupBox8.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(528, 234);
+            this.groupBox8.Location = new System.Drawing.Point(531, 234);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
@@ -520,7 +520,7 @@
             this.groupBox21.Controls.Add(this.lblCalcIRRF);
             this.groupBox21.Controls.Add(this.label64);
             this.groupBox21.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox21.Location = new System.Drawing.Point(202, 502);
+            this.groupBox21.Location = new System.Drawing.Point(202, 505);
             this.groupBox21.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Padding = new System.Windows.Forms.Padding(2);
@@ -652,7 +652,7 @@
             this.groupBox17.Controls.Add(this.lblSalarioBase);
             this.groupBox17.Controls.Add(this.label56);
             this.groupBox17.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox17.Location = new System.Drawing.Point(202, 453);
+            this.groupBox17.Location = new System.Drawing.Point(202, 456);
             this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Padding = new System.Windows.Forms.Padding(2);
@@ -1008,7 +1008,7 @@
             this.groupBox6.Controls.Add(this.lblReferenciaSalario);
             this.groupBox6.Controls.Add(this.label23);
             this.groupBox6.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(172, 235);
+            this.groupBox6.Location = new System.Drawing.Point(337, 235);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
@@ -1075,7 +1075,7 @@
             this.groupBox5.Controls.Add(this.lblSalario);
             this.groupBox5.Controls.Add(this.label13);
             this.groupBox5.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(280, 235);
+            this.groupBox5.Location = new System.Drawing.Point(192, 235);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);

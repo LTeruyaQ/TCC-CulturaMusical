@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="culturamusicalModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+<Schema Namespace="culturamusicalModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="tb_agenda_estudio">
     <Key>
       <PropertyRef Name="id_agenda_estudio" />
@@ -94,38 +94,6 @@
     <Property Name="dt_conta" Type="date" Nullable="false" />
     <Property Name="dt_pagamento" Type="date" Nullable="false" />
   </EntityType>
-  <EntityType Name="tb_dia_semana">
-    <Key>
-      <PropertyRef Name="id_dia_semana" />
-    </Key>
-    <Property Name="id_dia_semana" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="d_segunda" Type="bool" Nullable="false" />
-    <Property Name="d_terca" Type="bool" Nullable="false" />
-    <Property Name="d_quarta" Type="bool" Nullable="false" />
-    <Property Name="d_quinta" Type="bool" Nullable="false" />
-    <Property Name="d_sexta" Type="bool" Nullable="false" />
-    <Property Name="d_sabado" Type="bool" Nullable="false" />
-    <Property Name="d_domingo" Type="bool" Nullable="false" />
-  </EntityType>
-  <EntityType Name="tb_escala">
-    <Key>
-      <PropertyRef Name="id_escala" />
-    </Key>
-    <Property Name="id_escala" Type="int" Nullable="false" />
-    <Property Name="id_dia_semana" Type="int" Nullable="false" />
-    <Property Name="id_horario" Type="int" Nullable="false" />
-    <Property Name="cod_escala" Type="int" Nullable="false" />
-  </EntityType>
-  <EntityType Name="tb_escala_funcionario">
-    <Key>
-      <PropertyRef Name="id_escala_funcionario" />
-    </Key>
-    <Property Name="id_escala_funcionario" Type="int" Nullable="false" />
-    <Property Name="dt_inicio" Type="date" Nullable="false" />
-    <Property Name="dt_final" Type="date" Nullable="false" />
-    <Property Name="id_funcionario" Type="int" Nullable="false" />
-    <Property Name="cod_escala" Type="int" Nullable="false" />
-  </EntityType>
   <EntityType Name="tb_estoque">
     <Key>
       <PropertyRef Name="id_estoque" />
@@ -197,8 +165,6 @@
     <Property Name="ds_complemento" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="vl_13_salario" Type="decimal" Precision="10" Scale="0" />
     <Property Name="id_beneficio" Type="int" Nullable="false" />
-    <Property Name="id_financeiro" Type="int" Nullable="false" />
-    <Property Name="id_escala_funcionario" Type="int" Nullable="false" />
     <Property Name="ds_cidade" Type="varchar" MaxLength="45" Nullable="false" />
     <Property Name="nmr_funcionario" Type="int" Nullable="false" />
   </EntityType>
@@ -209,15 +175,16 @@
     <Property Name="id_holerite" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="vl_salario_liquido" Type="varchar" MaxLength="45" Nullable="false" />
   </EntityType>
-  <EntityType Name="tb_horario">
+  <EntityType Name="tb_jornada">
     <Key>
-      <PropertyRef Name="id_horario" />
+      <PropertyRef Name="id_jornada" />
     </Key>
-    <Property Name="id_horario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="hr_entrada" Type="time" Precision="0" Nullable="false" />
-    <Property Name="hr_almoco" Type="time" Precision="0" Nullable="false" />
-    <Property Name="hr_retorno" Type="time" Precision="0" Nullable="false" />
-    <Property Name="hr_saida" Type="time" Precision="0" Nullable="false" />
+    <Property Name="id_jornada" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_funcionario" Type="int" Nullable="false" />
+    <Property Name="hr_entrada" Type="time" Precision="0" />
+    <Property Name="hr_intervalo" Type="time" Precision="0" />
+    <Property Name="hr_volta_intervalo" Type="time" Precision="0" />
+    <Property Name="hr_saida" Type="time" Precision="0" />
   </EntityType>
   <EntityType Name="tb_login">
     <Key>
@@ -240,6 +207,18 @@
     <Property Name="vl_preco" Type="decimal" Precision="10" Scale="0" Nullable="false" />
     <Property Name="ds_descricao" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="qtd_aula_semana" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tb_ponto">
+    <Key>
+      <PropertyRef Name="id_ponto" />
+    </Key>
+    <Property Name="id_ponto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="id_funcionario" Type="int" Nullable="false" />
+    <Property Name="dt_entrada" Type="date" />
+    <Property Name="hr_entrada" Type="time" Precision="0" />
+    <Property Name="hr_saida_intervalo" Type="time" Precision="0" />
+    <Property Name="hr_volta_intervalo" Type="time" Precision="0" />
+    <Property Name="dt_saida" Type="datetime" Precision="0" />
   </EntityType>
   <EntityType Name="tb_produto">
     <Key>
@@ -391,42 +370,6 @@ warning 6002: The table/view 'def.culturamusical.fluxo_de_caixa' does not have a
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="fk_tb_escala_funcionario_tb_funcionario1">
-    <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
-    <End Role="tb_escala_funcionario" Type="Self.tb_escala_funcionario" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_funcionario">
-        <PropertyRef Name="id_funcionario" />
-      </Principal>
-      <Dependent Role="tb_escala_funcionario">
-        <PropertyRef Name="id_funcionario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_tb_escala_tb_dia_semana1">
-    <End Role="tb_dia_semana" Type="Self.tb_dia_semana" Multiplicity="1" />
-    <End Role="tb_escala" Type="Self.tb_escala" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_dia_semana">
-        <PropertyRef Name="id_dia_semana" />
-      </Principal>
-      <Dependent Role="tb_escala">
-        <PropertyRef Name="id_dia_semana" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_tb_escala_tb_horario1">
-    <End Role="tb_horario" Type="Self.tb_horario" Multiplicity="1" />
-    <End Role="tb_escala" Type="Self.tb_escala" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_horario">
-        <PropertyRef Name="id_horario" />
-      </Principal>
-      <Dependent Role="tb_escala">
-        <PropertyRef Name="id_horario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="fk_tb_estoque_tb_produto1">
     <End Role="tb_produto" Type="Self.tb_produto" Multiplicity="1" />
     <End Role="tb_estoque" Type="Self.tb_estoque" Multiplicity="*" />
@@ -472,30 +415,6 @@ warning 6002: The table/view 'def.culturamusical.fluxo_de_caixa' does not have a
       </Principal>
       <Dependent Role="tb_funcionario">
         <PropertyRef Name="id_beneficio" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_tb_funcionario_tb_escala_funcionario1">
-    <End Role="tb_escala_funcionario" Type="Self.tb_escala_funcionario" Multiplicity="1" />
-    <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_escala_funcionario">
-        <PropertyRef Name="id_escala_funcionario" />
-      </Principal>
-      <Dependent Role="tb_funcionario">
-        <PropertyRef Name="id_escala_funcionario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_tb_funcionario_tb_financeiro1">
-    <End Role="tb_financeiro" Type="Self.tb_financeiro" Multiplicity="1" />
-    <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_financeiro">
-        <PropertyRef Name="id_financeiro" />
-      </Principal>
-      <Dependent Role="tb_funcionario">
-        <PropertyRef Name="id_financeiro" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -559,6 +478,30 @@ warning 6002: The table/view 'def.culturamusical.fluxo_de_caixa' does not have a
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="tb_jornada_ibfk_1">
+    <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
+    <End Role="tb_jornada" Type="Self.tb_jornada" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_funcionario">
+        <PropertyRef Name="id_funcionario" />
+      </Principal>
+      <Dependent Role="tb_jornada">
+        <PropertyRef Name="id_funcionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_ponto_ibfk_1">
+    <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
+    <End Role="tb_ponto" Type="Self.tb_ponto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_funcionario">
+        <PropertyRef Name="id_funcionario" />
+      </Principal>
+      <Dependent Role="tb_ponto">
+        <PropertyRef Name="id_funcionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="culturamusicalModelStoreContainer">
     <EntitySet Name="tb_agenda_estudio" EntityType="Self.tb_agenda_estudio" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_aula" EntityType="Self.tb_aula" Schema="culturamusical" store:Type="Tables" />
@@ -567,18 +510,16 @@ warning 6002: The table/view 'def.culturamusical.fluxo_de_caixa' does not have a
     <EntitySet Name="tb_colaborador" EntityType="Self.tb_colaborador" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_compra" EntityType="Self.tb_compra" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_conta" EntityType="Self.tb_conta" Schema="culturamusical" store:Type="Tables" />
-    <EntitySet Name="tb_dia_semana" EntityType="Self.tb_dia_semana" Schema="culturamusical" store:Type="Tables" />
-    <EntitySet Name="tb_escala" EntityType="Self.tb_escala" Schema="culturamusical" store:Type="Tables" />
-    <EntitySet Name="tb_escala_funcionario" EntityType="Self.tb_escala_funcionario" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_estoque" EntityType="Self.tb_estoque" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_financeiro" EntityType="Self.tb_financeiro" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_fornecedor" EntityType="Self.tb_fornecedor" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_holerite" EntityType="Self.tb_holerite" Schema="culturamusical" store:Type="Tables" />
-    <EntitySet Name="tb_horario" EntityType="Self.tb_horario" Schema="culturamusical" store:Type="Tables" />
+    <EntitySet Name="tb_jornada" EntityType="Self.tb_jornada" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_login" EntityType="Self.tb_login" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_plano" EntityType="Self.tb_plano" Schema="culturamusical" store:Type="Tables" />
+    <EntitySet Name="tb_ponto" EntityType="Self.tb_ponto" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_produto" EntityType="Self.tb_produto" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_prolabore" EntityType="Self.tb_prolabore" Schema="culturamusical" store:Type="Tables" />
     <EntitySet Name="tb_sala" EntityType="Self.tb_sala" Schema="culturamusical" store:Type="Tables" />
@@ -619,18 +560,6 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
       <End Role="tb_tipo_conta" EntitySet="tb_tipo_conta" />
       <End Role="tb_conta" EntitySet="tb_conta" />
     </AssociationSet>
-    <AssociationSet Name="fk_tb_escala_funcionario_tb_funcionario1" Association="Self.fk_tb_escala_funcionario_tb_funcionario1">
-      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-      <End Role="tb_escala_funcionario" EntitySet="tb_escala_funcionario" />
-    </AssociationSet>
-    <AssociationSet Name="fk_tb_escala_tb_dia_semana1" Association="Self.fk_tb_escala_tb_dia_semana1">
-      <End Role="tb_dia_semana" EntitySet="tb_dia_semana" />
-      <End Role="tb_escala" EntitySet="tb_escala" />
-    </AssociationSet>
-    <AssociationSet Name="fk_tb_escala_tb_horario1" Association="Self.fk_tb_escala_tb_horario1">
-      <End Role="tb_horario" EntitySet="tb_horario" />
-      <End Role="tb_escala" EntitySet="tb_escala" />
-    </AssociationSet>
     <AssociationSet Name="fk_tb_estoque_tb_produto1" Association="Self.fk_tb_estoque_tb_produto1">
       <End Role="tb_produto" EntitySet="tb_produto" />
       <End Role="tb_estoque" EntitySet="tb_estoque" />
@@ -645,14 +574,6 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
     </AssociationSet>
     <AssociationSet Name="fk_tb_funcionario_tb_beneficio1" Association="Self.fk_tb_funcionario_tb_beneficio1">
       <End Role="tb_beneficio" EntitySet="tb_beneficio" />
-      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-    </AssociationSet>
-    <AssociationSet Name="fk_tb_funcionario_tb_escala_funcionario1" Association="Self.fk_tb_funcionario_tb_escala_funcionario1">
-      <End Role="tb_escala_funcionario" EntitySet="tb_escala_funcionario" />
-      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-    </AssociationSet>
-    <AssociationSet Name="fk_tb_funcionario_tb_financeiro1" Association="Self.fk_tb_funcionario_tb_financeiro1">
-      <End Role="tb_financeiro" EntitySet="tb_financeiro" />
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
     </AssociationSet>
     <AssociationSet Name="fk_tb_login_tb_funcionario1" Association="Self.fk_tb_login_tb_funcionario1">
@@ -674,6 +595,14 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
     <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="Self.fk_tb_venda_plano_tb_plano1">
       <End Role="tb_plano" EntitySet="tb_plano" />
       <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
+    </AssociationSet>
+    <AssociationSet Name="tb_jornada_ibfk_1" Association="Self.tb_jornada_ibfk_1">
+      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+      <End Role="tb_jornada" EntitySet="tb_jornada" />
+    </AssociationSet>
+    <AssociationSet Name="tb_ponto_ibfk_1" Association="Self.tb_ponto_ibfk_1">
+      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+      <End Role="tb_ponto" EntitySet="tb_ponto" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

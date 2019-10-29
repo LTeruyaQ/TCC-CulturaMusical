@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Cultura_Musical.Database
 {
-    class Database_Horarios
+    class Database_Jornada
     {
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
-
-        public void AdicionarEscala (Entity.tb_horario horario)
+        public void InserirJornada (Entity.tb_jornada Jornada)
         {
-            DB.tb_horario.Add(horario);
+            DB.tb_jornada.Add(Jornada);
             DB.SaveChanges();
         }
     }

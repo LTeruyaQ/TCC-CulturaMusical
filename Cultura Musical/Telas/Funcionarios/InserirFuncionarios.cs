@@ -17,34 +17,19 @@ namespace Cultura_Musical.Telas.Funcionarios
             InitializeComponent();
         }
 
-        Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
-        Business.Business_Horarios cronograma = new Business.Business_Horarios();
-        Business.Business_DiasDaSemana Grade = new Business.Business_DiasDaSemana();
+        Business.Business_Funcionarios colaboradorBus = new Business.Business_Funcionarios();
+        Business.Business_Jornada JornadaBus = new Business.Business_Jornada();
+       
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             try
             {
 
                 Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
-                Database.Entity.tb_horario horario = new Database.Entity.tb_horario();
-                Database.Entity.tb_dia_semana escala = new Database.Entity.tb_dia_semana();
+                Database.Entity.tb_jornada Jornada = new Database.Entity.tb_jornada();
 
-                horario.hr_entrada = dtpEntrada.Value.TimeOfDay;
-                horario.hr_saida = dtpSaida.Value.TimeOfDay;
-                horario.hr_almoco = dtpAlmoco.Value.TimeOfDay;
-                horario.hr_retorno = dtpRetorno.Value.TimeOfDay;
 
-                cronograma.AdicionarEscala(horario);
-
-                escala.d_segunda = chkSegunda.Checked;
-                escala.d_terca = chkTerça.Checked;
-                escala.d_quarta = chkQuarta.Checked;
-                escala.d_quinta = chkQuinta.Checked;
-                escala.d_sexta = chkSexta.Checked;
-                escala.d_sabado = chkSabado.Checked;
-                escala.d_domingo = chkDomingo.Checked;
-
-                Grade.adicionarEscala(escala);
+              
 
                 funcionario.nm_funcionario = txtNome.Text;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
@@ -53,6 +38,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_cpf = txtMascara.Text;
                 funcionario.ds_cep = txtCEP.Text;
                 funcionario.dt_contratacao = dtpContratacao.Value;
+                funcionario.dt_demicao = null;
                 funcionario.ds_email = txtEmail.Text;
                 funcionario.ds_rg = txtRG.Text;
                 funcionario.ds_bairro = txtBairro.Text;
@@ -61,6 +47,8 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.tb_beneficio.ds_va = nudVa.Value;
                 funcionario.tb_beneficio.ds_vr = nudVr.Value;
                 funcionario.tb_beneficio.ds_vt = nudVt.Value;
+                
+
                 
                 if (rdnCNPJ.Checked == true)
                 {
@@ -85,8 +73,21 @@ namespace Cultura_Musical.Telas.Funcionarios
                     funcionario.ds_genero = "F";
                 }
 
-                colaborador.CadastroFuncionario(funcionario);
+                colaboradorBus.CadastroFuncionario(funcionario);
+                Database.Entity.tb_funcionario Func = colaboradorBus.BuscarFuncionario(funcionario);
+                
 
+
+
+                Jornada.hr_entrada = dtpEntrada.Value.TimeOfDay;
+                Jornada.hr_intervalo = dtpAlmoco.Value.TimeOfDay;
+                Jornada.hr_volta_intervalo = dtpRetorno.Value.TimeOfDay;
+                Jornada.hr_saida = dtpSaida.Value.TimeOfDay;
+                Jornada.id_funcionario = Func.id_funcionario;
+
+                JornadaBus.InserirJornada(Jornada);
+                
+              
                 MessageBox.Show("Funcionário cadastrado com sucesso.");
             }
 

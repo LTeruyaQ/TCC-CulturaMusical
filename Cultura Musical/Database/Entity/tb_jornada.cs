@@ -12,14 +12,15 @@ namespace Cultura_Musical.Database.Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class tb_escala
+    public partial class tb_jornada
     {
-        public int id_escala { get; set; }
-        public int id_dia_semana { get; set; }
-        public int id_horario { get; set; }
-        public int cod_escala { get; set; }
+        public int id_jornada { get; set; }
+        public int id_funcionario { get; set; }
+        public Nullable<System.TimeSpan> hr_entrada { get; set; }
+        public Nullable<System.TimeSpan> hr_intervalo { get; set; }
+        public Nullable<System.TimeSpan> hr_volta_intervalo { get; set; }
+        public Nullable<System.TimeSpan> hr_saida { get; set; }
     
-        public virtual tb_dia_semana tb_dia_semana { get; set; }
-        public virtual tb_horario tb_horario { get; set; }
+        public virtual tb_funcionario tb_funcionario { get; set; }
     }
 }

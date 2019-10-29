@@ -388,6 +388,7 @@
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(100, 22);
             this.txtCEP.TabIndex = 57;
+            this.txtCEP.Leave += new System.EventHandler(this.txtCEP_Leave);
             // 
             // groupBox5
             // 

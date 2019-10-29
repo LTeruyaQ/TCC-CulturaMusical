@@ -85,5 +85,11 @@ namespace Cultura_Musical.Database
                                                   && t.ds_cargo == funcionario.ds_cargo).ToList();
             return lista;
         }   
+
+        public Database.Entity.tb_funcionario ProcurarFuncionario (Database.Entity.tb_funcionario Funcionario)
+        {
+            Database.Entity.tb_funcionario Procura = DB.tb_funcionario.FirstOrDefault(t => t.nm_funcionario == Funcionario.nm_funcionario && t.ds_cpf == Funcionario.ds_cpf);
+            return Procura;
+        }
     }
 }
