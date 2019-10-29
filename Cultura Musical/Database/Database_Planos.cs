@@ -51,5 +51,11 @@ namespace Cultura_Musical.Database
             DB.tb_plano.Remove(plano);
             DB.SaveChanges();
         }
+
+        public void VendaPlano(Database.Entity.tb_venda_plano plano)
+        {
+            DB.tb_venda_plano.Add(plano);
+            DB.SaveChanges();
+        }
     }
 }

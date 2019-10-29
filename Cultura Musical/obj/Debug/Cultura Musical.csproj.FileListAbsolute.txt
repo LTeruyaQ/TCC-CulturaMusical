@@ -855,3 +855,6 @@ C:\Users\infoc24\Source\Repos\tcc-cultura-musical9\Cultura Musical\obj\Debug\Cul
 C:\Users\infoc24\Source\Repos\tcc-cultura-musical9\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Produtos.FrmDeletarProduto.resources
 C:\Users\infoc24\Source\Repos\tcc-cultura-musical9\Cultura Musical\obj\Debug\Cultura_Musical.UserControl1.resources
 C:\Users\infoc24\Source\Repos\tcc-cultura-musical9\Cultura Musical\obj\Debug\Cultura Musical.csproj.GenerateResource.Cache
+C:\Users\Curso\Source\Repos\tcc-cultura-musical3\Cultura Musical\bin\Debug\Cultura Musical.exe.config
+C:\Users\Curso\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura Musical.exe
+C:\Users\Curso\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura Musical.pdb
