@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API%27s\Correio__API.cs" />
+    <Compile Include="API%27s\IBM_Voice.cs" />
     <Compile Include="Business\Business_Agenda.cs" />
     <Compile Include="Business\Business_Cliente.cs" />
     <Compile Include="Business\Business_CRM.cs" />
@@ -184,11 +185,6 @@
     <Compile Include="Database\Model\ModelosExtendidos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Agenda\FrmAlterarAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -444,7 +440,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Agenda\FrmAlterarAgenda.resx">
       <DependentUpon>FrmAlterarAgenda.cs</DependentUpon>
@@ -511,6 +506,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Holerite\FrmAddHolerite.resx">
       <DependentUpon>FrmAddHolerite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Holerite\FrmConsultarHolerite.resx">
+      <DependentUpon>FrmConsultarHolerite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicialização\FrmCadastroFuncionarioLogin.resx">
       <DependentUpon>FrmCadastroFuncionarioLogin.cs</DependentUpon>
@@ -621,6 +619,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\agenda.png" />
+    <None Include="Resources\user.png" />
     <None Include="Resources\lixeira.png" />
     <None Include="Resources\lapis.png" />
     <None Include="Resources\Home.PNG" />

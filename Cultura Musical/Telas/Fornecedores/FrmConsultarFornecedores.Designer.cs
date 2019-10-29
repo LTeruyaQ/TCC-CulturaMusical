@@ -90,7 +90,7 @@
             // alterar
             // 
             this.alterar.HeaderText = "Column1";
-            this.alterar.Image = global::Cultura_Musical.Properties.Resources.lapis;
+           
             this.alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.alterar.Name = "alterar";
             this.alterar.ReadOnly = true;
@@ -99,7 +99,7 @@
             // remover
             // 
             this.remover.HeaderText = "Column1";
-            this.remover.Image = global::Cultura_Musical.Properties.Resources.lixeira;
+            
             this.remover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.remover.Name = "remover";
             this.remover.ReadOnly = true;
@@ -159,7 +159,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.logo_Cultura_Musical_PNG;
+           
             this.pictureBox1.Location = new System.Drawing.Point(17, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(94, 72);
@@ -207,7 +207,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Cultura_Musical.Properties.Resources.Home;
+            
             this.pictureBox2.Location = new System.Drawing.Point(40, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(84, 69);
