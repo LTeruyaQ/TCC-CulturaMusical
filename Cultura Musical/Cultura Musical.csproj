@@ -191,11 +191,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Agenda\FrmAlterarAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,9 +227,7 @@
     <Compile Include="Telas\Folha_Pagamento\frmGerarFolhaD.Designer.cs">
       <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Fornecedores\frmAlterarFornecedores.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Telas\Fornecedores\frmAlterarFornecedores.cs" />
     <Compile Include="Telas\Fornecedores\frmAlterarFornecedores.Designer.cs">
       <DependentUpon>frmAlterarFornecedores.cs</DependentUpon>
     </Compile>
@@ -316,9 +309,7 @@
     <Compile Include="Telas\Fornecedores\FrmConsultarFornecedores.Designer.cs">
       <DependentUpon>FrmConsultarFornecedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Fornecedores\FrmDeletarFornecedor.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Telas\Fornecedores\FrmDeletarFornecedor.cs" />
     <Compile Include="Telas\Fornecedores\FrmDeletarFornecedor.Designer.cs">
       <DependentUpon>FrmDeletarFornecedor.cs</DependentUpon>
     </Compile>
@@ -463,7 +454,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Agenda\FrmAlterarAgenda.resx">
       <DependentUpon>FrmAlterarAgenda.cs</DependentUpon>
@@ -536,6 +526,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Holerite\FrmAddHolerite.resx">
       <DependentUpon>FrmAddHolerite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Holerite\FrmConsultarHolerite.resx">
+      <DependentUpon>FrmConsultarHolerite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicialização\FrmCadastroFuncionarioLogin.resx">
       <DependentUpon>FrmCadastroFuncionarioLogin.cs</DependentUpon>
@@ -644,6 +637,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\agenda.png" />
+    <None Include="Resources\user.png" />
     <None Include="Resources\lixeira.png" />
     <None Include="Resources\lapis.png" />
     <None Include="Resources\Home.PNG" />
