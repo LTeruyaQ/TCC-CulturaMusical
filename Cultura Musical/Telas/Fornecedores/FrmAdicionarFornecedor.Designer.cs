@@ -59,8 +59,6 @@
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.txtRua = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -385,8 +383,6 @@
             this.groupBox2.Controls.Add(this.txtBairro);
             this.groupBox2.Controls.Add(this.txtCidade);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.txtEstado);
-            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.txtRua);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Location = new System.Drawing.Point(500, 158);
@@ -408,7 +404,7 @@
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(22, 176);
+            this.label11.Location = new System.Drawing.Point(22, 184);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(54, 18);
             this.label11.TabIndex = 14;
@@ -417,14 +413,14 @@
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(81, 176);
+            this.txtBairro.Location = new System.Drawing.Point(81, 184);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(181, 20);
             this.txtBairro.TabIndex = 13;
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(81, 139);
+            this.txtCidade.Location = new System.Drawing.Point(81, 147);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(181, 20);
             this.txtCidade.TabIndex = 11;
@@ -432,29 +428,12 @@
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 139);
+            this.label8.Location = new System.Drawing.Point(17, 147);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(59, 18);
             this.label8.TabIndex = 10;
             this.label8.Text = "Cidade:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(81, 101);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(181, 20);
-            this.txtEstado.TabIndex = 9;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(18, 101);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(58, 18);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Estado:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtRua
             // 
@@ -616,8 +595,6 @@
         private System.Windows.Forms.TextBox txtBairro;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtRua;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox3;

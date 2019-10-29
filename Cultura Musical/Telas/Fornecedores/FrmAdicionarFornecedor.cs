@@ -24,7 +24,7 @@ namespace Cultura_Musical.Telas.Fornecedores
                 Database.Entity.tb_fornecedor forn = new Database.Entity.tb_fornecedor();
 
                 forn.nm_fornecedor = txtRSocial.Text;
-                forn.inscicao_estadual = Convert.ToString(txtInscricao.Text);
+                forn.inscicao_estadual = txtInscricao.Text;
                 forn.tell_contato = mskTel1.Text;
                 forn.tell_contato2 = mskTel2.Text;
                 forn.ds_email = txtEmail.Text;
@@ -32,7 +32,6 @@ namespace Cultura_Musical.Telas.Fornecedores
                 forn.rua = txtRua.Text;
                 forn.bairro = txtBairro.Text;
                 forn.cidade = txtCidade.Text;
-                forn.estado = txtEstado.Text;
                 forn.ds_cnpj = txtCNPJ.Text;
 
                 Business.Business_Fornecedores forne = new Business.Business_Fornecedores();
@@ -40,7 +39,7 @@ namespace Cultura_Musical.Telas.Fornecedores
 
                 MessageBox.Show("Fornecedor adicionado com sucesso.");
             }
-
+              
             catch (ArgumentException ex)
             {
                 MessageBox.Show(ex.Message);
