@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API%27s\Correio__API.cs" />
+    <Compile Include="API%27s\IBM_Voice.cs" />
     <Compile Include="Business\Business_Agenda.cs" />
     <Compile Include="Business\Business_Cliente.cs" />
     <Compile Include="Business\Business_CRM.cs" />
