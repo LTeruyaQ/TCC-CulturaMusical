@@ -14,9 +14,24 @@ namespace Cultura_Musical.Business
             DB.InserirJornada(Jornada);
         }
 
-        public void AlterarJornada (Database.Entity.tb_jornada jornada)
+        public void Alterar (Database.Entity.tb_jornada jornada)
         {
-            DB.
+            DB.Alterar(jornada);
+        }
+
+        public void Deletar (int id)
+        {
+            DB.Deletar(id);
+        }
+
+        public List<Database.Entity.tb_jornada> ListaTodos ()
+        {
+            return DB.ListarTodos();
+        }
+
+        public Database.Entity.tb_jornada ProcurarJornada (Database.Entity.tb_jornada jornada)
+        {
+            return DB.Procurar(jornada);
         }
     }
 }

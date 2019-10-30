@@ -38,7 +38,7 @@ namespace Cultura_Musical.Business
             DB.excluir(id);
         }
 
-        public void validacao (Database.Entity.tb_aula aula)
+        private void validacao (Database.Entity.tb_aula aula)
         {
 
             Database.Entity.tb_aula validar_funcionario = DB.validaFuncionario(aula);

@@ -44,7 +44,7 @@ namespace Cultura_Musical.Business
         {
             DB.Remover(produto);
         }
-       public void validar (Database.Entity.tb_compra compra)
+        private void validar (Database.Entity.tb_compra compra)
         {
             if (compra.dt_entrega == null)
                 throw new ArgumentException("É necessario declarar a data de entraga");

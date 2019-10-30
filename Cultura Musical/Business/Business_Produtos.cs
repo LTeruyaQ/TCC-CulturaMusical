@@ -44,7 +44,7 @@ namespace Cultura_Musical.Business
             pro.Excluir(id);
         }
 
-        public void validacao(Database.Entity.tb_produto produto)
+        private void validacao(Database.Entity.tb_produto produto)
         {
             if (produto.nm_produto == string.Empty)
             {

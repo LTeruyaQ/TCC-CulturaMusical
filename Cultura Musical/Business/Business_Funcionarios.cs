@@ -43,7 +43,7 @@ namespace Cultura_Musical.Business
             return Procura;
         }
 
-        public void validar (Database.Entity.tb_funcionario funcionario)
+        private void validar (Database.Entity.tb_funcionario funcionario)
         {
             if (funcionario.nm_funcionario == string.Empty)
             {
