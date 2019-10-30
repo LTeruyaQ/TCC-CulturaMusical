@@ -30,6 +30,14 @@ namespace Cultura_Musical.Database
             return plano;
         }
 
+        public Database.Entity.tb_plano ProcurarPlano(Database.Entity.tb_plano plano)
+        {
+            Database.Entity.tb_plano Procura = DB.tb_plano.FirstOrDefault(t => t.nm_plano == plano.nm_plano
+                                                                           && t.ds_descricao == plano.ds_descricao);
+
+            return Procura;
+        }
+
         public void Alterar(Entity.tb_plano plano)
         {
             Entity.tb_plano NovoPlano = DB.tb_plano.FirstOrDefault(t => t.id_plano == plano.id_plano);

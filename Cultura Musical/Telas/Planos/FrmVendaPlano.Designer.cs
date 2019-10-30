@@ -46,6 +46,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dtpfinal = new System.Windows.Forms.DateTimePicker();
             this.lblduração = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblaulas = new System.Windows.Forms.Label();
@@ -55,14 +57,12 @@
             this.cboplanos = new System.Windows.Forms.ComboBox();
             this.lblplano = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtnome = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtRG = new System.Windows.Forms.MaskedTextBox();
             this.label25 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtnome = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
-            this.dtpfinal = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -310,6 +310,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Plano";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 187);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(62, 13);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Final Plano:";
+            this.label7.Visible = false;
+            // 
+            // dtpfinal
+            // 
+            this.dtpfinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpfinal.Location = new System.Drawing.Point(82, 181);
+            this.dtpfinal.Name = "dtpfinal";
+            this.dtpfinal.Size = new System.Drawing.Size(100, 20);
+            this.dtpfinal.TabIndex = 24;
+            // 
             // lblduração
             // 
             this.lblduração.AutoSize = true;
@@ -377,6 +395,7 @@
             this.cboplanos.Name = "cboplanos";
             this.cboplanos.Size = new System.Drawing.Size(97, 21);
             this.cboplanos.TabIndex = 17;
+            this.cboplanos.SelectedIndexChanged += new System.EventHandler(this.cboplanos_SelectedIndexChanged);
             // 
             // lblplano
             // 
@@ -400,29 +419,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cliente";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 25;
-            // 
-            // txtnome
-            // 
-            this.txtnome.Location = new System.Drawing.Point(73, 45);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(100, 20);
-            this.txtnome.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 48);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(42, 13);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Cliente:";
-            // 
             // txtRG
             // 
             this.txtRG.Location = new System.Drawing.Point(73, 96);
@@ -440,6 +436,29 @@
             this.label25.TabIndex = 87;
             this.label25.Text = "R.G:";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(42, 13);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Cliente:";
+            // 
+            // txtnome
+            // 
+            this.txtnome.Location = new System.Drawing.Point(73, 45);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.Size = new System.Drawing.Size(100, 20);
+            this.txtnome.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 25;
+            // 
             // button9
             // 
             this.button9.Location = new System.Drawing.Point(352, 405);
@@ -449,24 +468,6 @@
             this.button9.Text = "OK";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // dtpfinal
-            // 
-            this.dtpfinal.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpfinal.Location = new System.Drawing.Point(82, 181);
-            this.dtpfinal.Name = "dtpfinal";
-            this.dtpfinal.Size = new System.Drawing.Size(100, 20);
-            this.dtpfinal.TabIndex = 24;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(9, 187);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 13);
-            this.label7.TabIndex = 25;
-            this.label7.Text = "Final Plano:";
-            this.label7.Visible = false;
             // 
             // cbo
             // 

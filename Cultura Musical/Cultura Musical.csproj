@@ -233,29 +233,11 @@
     <Compile Include="Telas\Folha_Pagamento\frmGerarFolhaD.Designer.cs">
       <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Funcionarios\FrmAlterarColaborador.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Funcionarios\FrmAlterarColaborador.Designer.cs">
-      <DependentUpon>FrmAlterarColaborador.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Funcionarios\FrmCadastroFuncionario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Funcionarios\FrmCadastroFuncionario.Designer.cs">
-      <DependentUpon>FrmCadastroFuncionario.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Funcionarios\frmCadastroFuncionarioD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\Funcionarios\frmCadastroFuncionarioD.Designer.cs">
       <DependentUpon>frmCadastroFuncionarioD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Funcionarios\FrmConsultarColaboradores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Funcionarios\FrmConsultarColaboradores.Designer.cs">
-      <DependentUpon>FrmConsultarColaboradores.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Funcionarios\frmConsultarFuncionarioD.cs">
       <SubType>Form</SubType>
@@ -486,17 +468,8 @@
     <EmbeddedResource Include="Telas\Fornecedores\FrmConsultarFornecedores.resx">
       <DependentUpon>FrmConsultarFornecedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Funcionarios\FrmAlterarColaborador.resx">
-      <DependentUpon>FrmAlterarColaborador.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Funcionarios\FrmCadastroFuncionario.resx">
-      <DependentUpon>FrmCadastroFuncionario.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\frmCadastroFuncionarioD.resx">
       <DependentUpon>frmCadastroFuncionarioD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Funcionarios\FrmConsultarColaboradores.resx">
-      <DependentUpon>FrmConsultarColaboradores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\frmConsultarFuncionarioD.resx">
       <DependentUpon>frmConsultarFuncionarioD.cs</DependentUpon>
