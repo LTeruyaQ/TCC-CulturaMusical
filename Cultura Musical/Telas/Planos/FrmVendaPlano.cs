@@ -76,8 +76,8 @@ namespace Cultura_Musical.Telas.Planos
         private void txtnome_TextChanged(object sender, EventArgs e)
         {
             string nm_cliente = txtnome.Text;
-            Database.Database_Cliente db = new Database.Database_Cliente();
-            List<Database.Entity.tb_cliente> cliente = db.ListarPorNome(nm_cliente);
+            Business.Business_Cliente bus = new Business.Business_Cliente();
+            List<Database.Entity.tb_cliente> cliente = bus.listapornome(nm_cliente);
             dgvlista.DataSource = cliente;
         }
     }
