@@ -62,5 +62,13 @@ namespace Cultura_Musical.Database
 
             return id;
         }
+
+        public List< Database.Entity.tb_cliente> Consultarpornome(string nome)
+        {
+            List< Database.Entity.tb_cliente> cliente = DB.tb_cliente.Where(t => t.nm_cliente == nome).ToList() ;
+
+            return cliente;
+
+        }
     }
 }

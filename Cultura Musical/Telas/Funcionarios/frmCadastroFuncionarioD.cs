@@ -87,7 +87,10 @@ namespace Cultura_Musical.Telas.Funcionarios
             txtBairro.Text = resp.bairro;
         }
 
-        
+        private void txtCEP_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }
 
