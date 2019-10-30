@@ -53,6 +53,15 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txtBairro = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.chkDomingo = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.chkSegunda = new System.Windows.Forms.CheckBox();
+            this.chkSabado = new System.Windows.Forms.CheckBox();
+            this.chkTerça = new System.Windows.Forms.CheckBox();
+            this.chkQuarta = new System.Windows.Forms.CheckBox();
+            this.chkSexta = new System.Windows.Forms.CheckBox();
+            this.chkQuinta = new System.Windows.Forms.CheckBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
             this.dtpContratacao = new System.Windows.Forms.DateTimePicker();
@@ -90,15 +99,6 @@
             this.rdnCPF = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.chkSegunda = new System.Windows.Forms.CheckBox();
-            this.chkTerça = new System.Windows.Forms.CheckBox();
-            this.chkQuarta = new System.Windows.Forms.CheckBox();
-            this.chkQuinta = new System.Windows.Forms.CheckBox();
-            this.chkSexta = new System.Windows.Forms.CheckBox();
-            this.chkSabado = new System.Windows.Forms.CheckBox();
-            this.chkDomingo = new System.Windows.Forms.CheckBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.tabPage5.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudVa)).BeginInit();
@@ -109,6 +109,7 @@
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).BeginInit();
             this.tabPage1.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSalario)).BeginInit();
             this.groupBox3.SuspendLayout();
@@ -116,7 +117,6 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage5
@@ -156,6 +156,11 @@
             // nudVa
             // 
             this.nudVa.Location = new System.Drawing.Point(49, 49);
+            this.nudVa.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
             this.nudVa.Name = "nudVa";
             this.nudVa.Size = new System.Drawing.Size(120, 20);
             this.nudVa.TabIndex = 79;
@@ -172,6 +177,11 @@
             // nudVr
             // 
             this.nudVr.Location = new System.Drawing.Point(49, 105);
+            this.nudVr.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.nudVr.Name = "nudVr";
             this.nudVr.Size = new System.Drawing.Size(120, 20);
             this.nudVr.TabIndex = 81;
@@ -188,6 +198,11 @@
             // nudVt
             // 
             this.nudVt.Location = new System.Drawing.Point(49, 155);
+            this.nudVt.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.nudVt.Name = "nudVt";
             this.nudVt.Size = new System.Drawing.Size(120, 20);
             this.nudVt.TabIndex = 80;
@@ -200,7 +215,7 @@
             this.btnCadastrar.TabIndex = 35;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click_1);
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // tabPage4
             // 
@@ -240,6 +255,7 @@
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(100, 20);
             this.txtCEP.TabIndex = 57;
+            this.txtCEP.Leave += new System.EventHandler(this.txtCEP_Leave);
             // 
             // groupBox5
             // 
@@ -352,6 +368,102 @@
             this.tabPage1.Text = "Contratação";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.chkDomingo);
+            this.groupBox8.Controls.Add(this.label2);
+            this.groupBox8.Controls.Add(this.chkSegunda);
+            this.groupBox8.Controls.Add(this.chkSabado);
+            this.groupBox8.Controls.Add(this.chkTerça);
+            this.groupBox8.Controls.Add(this.chkQuarta);
+            this.groupBox8.Controls.Add(this.chkSexta);
+            this.groupBox8.Controls.Add(this.chkQuinta);
+            this.groupBox8.Location = new System.Drawing.Point(23, 191);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(462, 100);
+            this.groupBox8.TabIndex = 99;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Escala";
+            // 
+            // chkDomingo
+            // 
+            this.chkDomingo.AutoSize = true;
+            this.chkDomingo.Location = new System.Drawing.Point(385, 55);
+            this.chkDomingo.Name = "chkDomingo";
+            this.chkDomingo.Size = new System.Drawing.Size(68, 17);
+            this.chkDomingo.TabIndex = 103;
+            this.chkDomingo.Text = "Domingo";
+            this.chkDomingo.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 16);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(305, 13);
+            this.label2.TabIndex = 83;
+            this.label2.Text = "Selecione os dias quais o colaborador ira prestar seus serviços:";
+            // 
+            // chkSegunda
+            // 
+            this.chkSegunda.AutoSize = true;
+            this.chkSegunda.Location = new System.Drawing.Point(6, 55);
+            this.chkSegunda.Name = "chkSegunda";
+            this.chkSegunda.Size = new System.Drawing.Size(69, 17);
+            this.chkSegunda.TabIndex = 97;
+            this.chkSegunda.Text = "Segunda";
+            this.chkSegunda.UseVisualStyleBackColor = true;
+            // 
+            // chkSabado
+            // 
+            this.chkSabado.AutoSize = true;
+            this.chkSabado.Location = new System.Drawing.Point(323, 55);
+            this.chkSabado.Name = "chkSabado";
+            this.chkSabado.Size = new System.Drawing.Size(63, 17);
+            this.chkSabado.TabIndex = 102;
+            this.chkSabado.Text = "Sabado";
+            this.chkSabado.UseVisualStyleBackColor = true;
+            // 
+            // chkTerça
+            // 
+            this.chkTerça.AutoSize = true;
+            this.chkTerça.Location = new System.Drawing.Point(81, 55);
+            this.chkTerça.Name = "chkTerça";
+            this.chkTerça.Size = new System.Drawing.Size(54, 17);
+            this.chkTerça.TabIndex = 98;
+            this.chkTerça.Text = "Terça";
+            this.chkTerça.UseVisualStyleBackColor = true;
+            // 
+            // chkQuarta
+            // 
+            this.chkQuarta.AutoSize = true;
+            this.chkQuarta.Location = new System.Drawing.Point(141, 55);
+            this.chkQuarta.Name = "chkQuarta";
+            this.chkQuarta.Size = new System.Drawing.Size(58, 17);
+            this.chkQuarta.TabIndex = 99;
+            this.chkQuarta.Text = "Quarta";
+            this.chkQuarta.UseVisualStyleBackColor = true;
+            // 
+            // chkSexta
+            // 
+            this.chkSexta.AutoSize = true;
+            this.chkSexta.Location = new System.Drawing.Point(268, 55);
+            this.chkSexta.Name = "chkSexta";
+            this.chkSexta.Size = new System.Drawing.Size(53, 17);
+            this.chkSexta.TabIndex = 101;
+            this.chkSexta.Text = "Sexta";
+            this.chkSexta.UseVisualStyleBackColor = true;
+            // 
+            // chkQuinta
+            // 
+            this.chkQuinta.AutoSize = true;
+            this.chkQuinta.Location = new System.Drawing.Point(205, 55);
+            this.chkQuinta.Name = "chkQuinta";
+            this.chkQuinta.Size = new System.Drawing.Size(57, 17);
+            this.chkQuinta.TabIndex = 100;
+            this.chkQuinta.Text = "Quinta";
+            this.chkQuinta.UseVisualStyleBackColor = true;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.label3);
@@ -365,7 +477,7 @@
             this.groupBox4.Size = new System.Drawing.Size(462, 153);
             this.groupBox4.TabIndex = 98;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "groupBox4";
+            this.groupBox4.Text = "Contrato";
             // 
             // label3
             // 
@@ -394,6 +506,11 @@
             // nudSalario
             // 
             this.nudSalario.Location = new System.Drawing.Point(65, 25);
+            this.nudSalario.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.nudSalario.Name = "nudSalario";
             this.nudSalario.Size = new System.Drawing.Size(101, 20);
             this.nudSalario.TabIndex = 82;
@@ -474,6 +591,7 @@
             this.dtpEntrada.Name = "dtpEntrada";
             this.dtpEntrada.Size = new System.Drawing.Size(100, 20);
             this.dtpEntrada.TabIndex = 92;
+            this.dtpEntrada.Value = new System.DateTime(2019, 10, 30, 2, 25, 55, 0);
             // 
             // dtpAlmoco
             // 
@@ -699,102 +817,6 @@
             this.tabControl1.Size = new System.Drawing.Size(521, 440);
             this.tabControl1.TabIndex = 89;
             // 
-            // chkSegunda
-            // 
-            this.chkSegunda.AutoSize = true;
-            this.chkSegunda.Location = new System.Drawing.Point(6, 55);
-            this.chkSegunda.Name = "chkSegunda";
-            this.chkSegunda.Size = new System.Drawing.Size(69, 17);
-            this.chkSegunda.TabIndex = 97;
-            this.chkSegunda.Text = "Segunda";
-            this.chkSegunda.UseVisualStyleBackColor = true;
-            // 
-            // chkTerça
-            // 
-            this.chkTerça.AutoSize = true;
-            this.chkTerça.Location = new System.Drawing.Point(81, 55);
-            this.chkTerça.Name = "chkTerça";
-            this.chkTerça.Size = new System.Drawing.Size(54, 17);
-            this.chkTerça.TabIndex = 98;
-            this.chkTerça.Text = "Terça";
-            this.chkTerça.UseVisualStyleBackColor = true;
-            // 
-            // chkQuarta
-            // 
-            this.chkQuarta.AutoSize = true;
-            this.chkQuarta.Location = new System.Drawing.Point(141, 55);
-            this.chkQuarta.Name = "chkQuarta";
-            this.chkQuarta.Size = new System.Drawing.Size(58, 17);
-            this.chkQuarta.TabIndex = 99;
-            this.chkQuarta.Text = "Quarta";
-            this.chkQuarta.UseVisualStyleBackColor = true;
-            // 
-            // chkQuinta
-            // 
-            this.chkQuinta.AutoSize = true;
-            this.chkQuinta.Location = new System.Drawing.Point(205, 55);
-            this.chkQuinta.Name = "chkQuinta";
-            this.chkQuinta.Size = new System.Drawing.Size(57, 17);
-            this.chkQuinta.TabIndex = 100;
-            this.chkQuinta.Text = "Quinta";
-            this.chkQuinta.UseVisualStyleBackColor = true;
-            // 
-            // chkSexta
-            // 
-            this.chkSexta.AutoSize = true;
-            this.chkSexta.Location = new System.Drawing.Point(268, 55);
-            this.chkSexta.Name = "chkSexta";
-            this.chkSexta.Size = new System.Drawing.Size(53, 17);
-            this.chkSexta.TabIndex = 101;
-            this.chkSexta.Text = "Sexta";
-            this.chkSexta.UseVisualStyleBackColor = true;
-            // 
-            // chkSabado
-            // 
-            this.chkSabado.AutoSize = true;
-            this.chkSabado.Location = new System.Drawing.Point(323, 55);
-            this.chkSabado.Name = "chkSabado";
-            this.chkSabado.Size = new System.Drawing.Size(63, 17);
-            this.chkSabado.TabIndex = 102;
-            this.chkSabado.Text = "Sabado";
-            this.chkSabado.UseVisualStyleBackColor = true;
-            // 
-            // chkDomingo
-            // 
-            this.chkDomingo.AutoSize = true;
-            this.chkDomingo.Location = new System.Drawing.Point(385, 55);
-            this.chkDomingo.Name = "chkDomingo";
-            this.chkDomingo.Size = new System.Drawing.Size(68, 17);
-            this.chkDomingo.TabIndex = 103;
-            this.chkDomingo.Text = "Domingo";
-            this.chkDomingo.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(305, 13);
-            this.label2.TabIndex = 83;
-            this.label2.Text = "Selecione os dias quais o colaborador ira prestar seus serviços:";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.chkDomingo);
-            this.groupBox8.Controls.Add(this.label2);
-            this.groupBox8.Controls.Add(this.chkSegunda);
-            this.groupBox8.Controls.Add(this.chkSabado);
-            this.groupBox8.Controls.Add(this.chkTerça);
-            this.groupBox8.Controls.Add(this.chkQuarta);
-            this.groupBox8.Controls.Add(this.chkSexta);
-            this.groupBox8.Controls.Add(this.chkQuinta);
-            this.groupBox8.Location = new System.Drawing.Point(23, 191);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(462, 100);
-            this.groupBox8.TabIndex = 99;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Escala";
-            // 
             // InserirFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -817,6 +839,8 @@
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).EndInit();
             this.tabPage1.ResumeLayout(false);
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSalario)).EndInit();
@@ -828,8 +852,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
 
         }

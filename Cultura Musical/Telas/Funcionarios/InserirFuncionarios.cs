@@ -96,10 +96,10 @@ namespace Cultura_Musical.Telas.Funcionarios
                 MessageBox.Show(ex.Message);
             }
 
-            catch (Exception)
-            {
-                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
-            }
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
+            //}
         }
 
         private void txtCEP_Leave(object sender, EventArgs e)
@@ -110,11 +110,6 @@ namespace Cultura_Musical.Telas.Funcionarios
             txtRua.Text = resp.logradouro;
             txtEstado.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
-        }
-
-        private void btnCadastrar_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }
