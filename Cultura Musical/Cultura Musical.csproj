@@ -95,6 +95,7 @@
     <Compile Include="Business\Business_Estoque.cs" />
     <Compile Include="Business\Business_Produtos.cs" />
     <Compile Include="Business\Business_Venda.cs" />
+    <Compile Include="Cultura_Musical\Interfaces\Interface_Crud.cs" />
     <Compile Include="Database\Database_Agenda.cs" />
     <Compile Include="Database\Database_Cliente.cs" />
     <Compile Include="Database\Database_CRM.cs" />
@@ -195,6 +196,7 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Model\ModelosExtendidos.cs" />
+    <Compile Include="Interfaces\Interface_Crud.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Telas\Agenda\FrmAlterarAgenda.cs">
@@ -574,24 +576,24 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\giphy.gif" />
+    <None Include="Resources\Imagens\giphy.gif" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\basico.jpg" />
-    <None Include="Resources\sax.gif" />
-    <None Include="Resources\Violão_thumb[6].gif" />
-    <None Include="Resources\bateria.gif" />
-    <None Include="Resources\guitarra.gif" />
+    <None Include="Resources\Imagens\basico.jpg" />
+    <None Include="Resources\Imagens\sax.gif" />
+    <None Include="Resources\Imagens\Violão_thumb[6].gif" />
+    <None Include="Resources\Imagens\bateria.gif" />
+    <None Include="Resources\Imagens\guitarra.gif" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Telas\Pedidos\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\giphy1.gif" />
-    <None Include="Resources\musica.jpg" />
+    <None Include="Resources\Imagens\giphy1.gif" />
+    <None Include="Resources\Imagens\musica.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database\Entity\Model1.Context.tt">
@@ -604,17 +606,17 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\agenda.png" />
-    <None Include="Resources\user.png" />
-    <None Include="Resources\lixeira.png" />
-    <None Include="Resources\lapis.png" />
-    <None Include="Resources\Home.PNG" />
-    <None Include="Resources\book-vector.png" />
-    <None Include="Resources\book1.PNG" />
-    <None Include="Resources\book.PNG" />
-    <None Include="Resources\aGENDA.jpg" />
-    <None Include="Resources\logo Titers.PNG" />
-    <None Include="Resources\logo Cultura Musical PNG.png" />
+    <None Include="Resources\Imagens\agenda.png" />
+    <None Include="Resources\Imagens\user.png" />
+    <None Include="Resources\Imagens\lixeira.png" />
+    <None Include="Resources\Imagens\lapis.png" />
+    <None Include="Resources\Imagens\Home.PNG" />
+    <None Include="Resources\Imagens\book-vector.png" />
+    <None Include="Resources\Imagens\book1.PNG" />
+    <None Include="Resources\Imagens\book.PNG" />
+    <None Include="Resources\Imagens\aGENDA.jpg" />
+    <None Include="Resources\Imagens\logo Titers.PNG" />
+    <None Include="Resources\Imagens\logo Cultura Musical PNG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Cultura_Musical.Database
 {
-    class Database_Agenda
+    class Database_Agenda : Interfaces.Interface_Crud<Entity.tb_agenda_estudio>
     {
+        // EU n sei fazer implementação
+
 
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
