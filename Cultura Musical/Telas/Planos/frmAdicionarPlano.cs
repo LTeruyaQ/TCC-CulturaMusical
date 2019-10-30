@@ -16,24 +16,16 @@ namespace Cultura_Musical.Telas.Planos
         public frmAdicionarPlano()
         {
             InitializeComponent();
-            
-            
-        }
+            Database.Database_Planos planos = new Database.Database_Planos();
+            List<Database.Entity.tb_plano> lista = planos.ListarTodos();
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            string nome = txtnome.Text;
-            Business.Business_Planos planos = new Business.Business_Planos();
-            bool ver = planos.verificar(nome);
-
-            if (ver == true)
-            {
-                MessageBox.Show("Esse plano ja existe");
-
-            }
+            cbonome.DisplayMember = nameof(plano.nm_plano);
+            cbonome.DataSource = lista;
 
 
         }
+
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -43,10 +35,31 @@ namespace Cultura_Musical.Telas.Planos
             plano.ds_descricao = txtdesc.Text;
             plano.ds_duracao = Convert.ToInt32(txtduração.Text);
 
-            Business.Business_Planos planos = new Business.Business_Planos();
-            planos.CadastrarPlano(plano);
+            
+            Business.Business_Planos bus = new Business.Business_Planos();
+            bus.CadastrarPlano(plano);
 
             MessageBox.Show("Plano cadastrado com sucesso");
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cbonome_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbonome.ValueMember = nameof(plano.vl_preco);
+            nudalterar.Value= Convert.ToDecimal(cbonome.SelectedValue);
+
+            cbonome.ValueMember = nameof(plano.qtd_aula_semana);
+            nud_qtd_alterar.Value = Convert.ToDecimal(cbonome.SelectedValue);
+
+            cbonome.ValueMember = nameof(plano.ds_duracao);
+            txtduraçãoalterar.Text = Convert.ToString(cbonome.SelectedValue);
+
+            cbonome.ValueMember = nameof(plano.ds_descricao);
+            txtdescalterar.Text = Convert.ToString(cbonome.SelectedValue);
         }
     }
 }

@@ -64,17 +64,7 @@ namespace Cultura_Musical.Business
                 throw new ArgumentException("É necessario atribuir um valor valido ao plano");
         }
 
-        public bool verificar(string nome)
-        {
-            Database.Entity.tb_plano plano = db.verificar(nome);
-
-            bool ver = true;
-            if (plano == null)
-            {
-                ver = false;
-            }
-            return ver;
-        }
+       
 
 
 
