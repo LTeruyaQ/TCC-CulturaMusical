@@ -87,10 +87,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.giphy;
             this.pictureBox1.Location = new System.Drawing.Point(-90, -17);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(555, 342);
+            this.pictureBox1.Size = new System.Drawing.Size(555, 390);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -110,7 +109,6 @@
             this.btnConfirmar_Login.BackColor = System.Drawing.Color.Transparent;
             this.btnConfirmar_Login.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar_Login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnConfirmar_Login.Image = global::Cultura_Musical.Properties.Resources.giphy;
             this.btnConfirmar_Login.Location = new System.Drawing.Point(180, 247);
             this.btnConfirmar_Login.Name = "btnConfirmar_Login";
             this.btnConfirmar_Login.Size = new System.Drawing.Size(104, 32);
@@ -137,8 +135,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Red;
-            this.BackgroundImage = global::Cultura_Musical.Properties.Resources.giphy;
-            this.ClientSize = new System.Drawing.Size(464, 320);
+            this.ClientSize = new System.Drawing.Size(464, 369);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.btnConfirmar_Login);
             this.Controls.Add(this.label3);

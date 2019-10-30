@@ -33,7 +33,14 @@ namespace Cultura_Musical.Business
 
         public void alterar (Database.Entity.tb_funcionario funcionario)
         {
+            this.validar(funcionario);
+            DB.ProcurarFuncionario(funcionario);
+        }
 
+        public Database.Entity.tb_funcionario BuscarFuncionario (Database.Entity.tb_funcionario Funcionario)
+        {
+            Database.Entity.tb_funcionario Procura = DB.ProcurarFuncionario(Funcionario);
+            return Procura;
         }
 
         public void validar (Database.Entity.tb_funcionario funcionario)

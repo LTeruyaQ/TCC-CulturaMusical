@@ -102,41 +102,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tb_dia_semana">
-      <EntityTypeMapping TypeName="culturamusicalModel.tb_dia_semana">
-        <MappingFragment StoreEntitySet="tb_dia_semana">
-          <ScalarProperty Name="d_domingo" ColumnName="d_domingo" />
-          <ScalarProperty Name="d_sabado" ColumnName="d_sabado" />
-          <ScalarProperty Name="d_sexta" ColumnName="d_sexta" />
-          <ScalarProperty Name="d_quinta" ColumnName="d_quinta" />
-          <ScalarProperty Name="d_quarta" ColumnName="d_quarta" />
-          <ScalarProperty Name="d_terca" ColumnName="d_terca" />
-          <ScalarProperty Name="d_segunda" ColumnName="d_segunda" />
-          <ScalarProperty Name="id_dia_semana" ColumnName="id_dia_semana" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tb_escala">
-      <EntityTypeMapping TypeName="culturamusicalModel.tb_escala">
-        <MappingFragment StoreEntitySet="tb_escala">
-          <ScalarProperty Name="cod_escala" ColumnName="cod_escala" />
-          <ScalarProperty Name="id_horario" ColumnName="id_horario" />
-          <ScalarProperty Name="id_dia_semana" ColumnName="id_dia_semana" />
-          <ScalarProperty Name="id_escala" ColumnName="id_escala" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tb_escala_funcionario">
-      <EntityTypeMapping TypeName="culturamusicalModel.tb_escala_funcionario">
-        <MappingFragment StoreEntitySet="tb_escala_funcionario">
-          <ScalarProperty Name="cod_escala" ColumnName="cod_escala" />
-          <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
-          <ScalarProperty Name="dt_final" ColumnName="dt_final" />
-          <ScalarProperty Name="dt_inicio" ColumnName="dt_inicio" />
-          <ScalarProperty Name="id_escala_funcionario" ColumnName="id_escala_funcionario" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="tb_estoque">
       <EntityTypeMapping TypeName="culturamusicalModel.tb_estoque">
         <MappingFragment StoreEntitySet="tb_estoque">
@@ -193,8 +158,6 @@
         <MappingFragment StoreEntitySet="tb_funcionario">
           <ScalarProperty Name="nmr_funcionario" ColumnName="nmr_funcionario" />
           <ScalarProperty Name="ds_cidade" ColumnName="ds_cidade" />
-          <ScalarProperty Name="id_escala_funcionario" ColumnName="id_escala_funcionario" />
-          <ScalarProperty Name="id_financeiro" ColumnName="id_financeiro" />
           <ScalarProperty Name="id_beneficio" ColumnName="id_beneficio" />
           <ScalarProperty Name="vl_13_salario" ColumnName="vl_13_salario" />
           <ScalarProperty Name="ds_complemento" ColumnName="ds_complemento" />
@@ -226,14 +189,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tb_horario">
-      <EntityTypeMapping TypeName="culturamusicalModel.tb_horario">
-        <MappingFragment StoreEntitySet="tb_horario">
+    <EntitySetMapping Name="tb_jornada">
+      <EntityTypeMapping TypeName="culturamusicalModel.tb_jornada">
+        <MappingFragment StoreEntitySet="tb_jornada">
           <ScalarProperty Name="hr_saida" ColumnName="hr_saida" />
-          <ScalarProperty Name="hr_retorno" ColumnName="hr_retorno" />
-          <ScalarProperty Name="hr_almoco" ColumnName="hr_almoco" />
+          <ScalarProperty Name="hr_volta_intervalo" ColumnName="hr_volta_intervalo" />
+          <ScalarProperty Name="hr_intervalo" ColumnName="hr_intervalo" />
           <ScalarProperty Name="hr_entrada" ColumnName="hr_entrada" />
-          <ScalarProperty Name="id_horario" ColumnName="id_horario" />
+          <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
+          <ScalarProperty Name="id_jornada" ColumnName="id_jornada" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -258,6 +222,19 @@
           <ScalarProperty Name="ds_duracao" ColumnName="ds_duracao" />
           <ScalarProperty Name="nm_plano" ColumnName="nm_plano" />
           <ScalarProperty Name="id_plano" ColumnName="id_plano" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_ponto">
+      <EntityTypeMapping TypeName="culturamusicalModel.tb_ponto">
+        <MappingFragment StoreEntitySet="tb_ponto">
+          <ScalarProperty Name="dt_saida" ColumnName="dt_saida" />
+          <ScalarProperty Name="hr_volta_intervalo" ColumnName="hr_volta_intervalo" />
+          <ScalarProperty Name="hr_saida_intervalo" ColumnName="hr_saida_intervalo" />
+          <ScalarProperty Name="hr_entrada" ColumnName="hr_entrada" />
+          <ScalarProperty Name="dt_entrada" ColumnName="dt_entrada" />
+          <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
+          <ScalarProperty Name="id_ponto" ColumnName="id_ponto" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

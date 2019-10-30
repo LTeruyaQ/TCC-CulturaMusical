@@ -55,5 +55,12 @@ namespace Cultura_Musical.Database
             DB.tb_cliente.Remove(cliente);
             DB.SaveChanges();
         }
+        public int buscarid(string cliente)
+        {
+            Entity.tb_cliente clientemod = DB.tb_cliente.FirstOrDefault(t => t.nm_cliente == cliente);
+            int id = clientemod.id_cliente;
+
+            return id;
+        }
     }
 }

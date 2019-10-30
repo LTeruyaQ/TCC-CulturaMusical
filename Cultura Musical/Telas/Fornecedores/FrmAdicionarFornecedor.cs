@@ -28,11 +28,10 @@ namespace Cultura_Musical.Telas.Fornecedores
                 forn.tell_contato = mskTel1.Text;
                 forn.tell_contato2 = mskTel2.Text;
                 forn.ds_email = txtEmail.Text;
-                forn.cep = txtCEP.Text;
+                forn.cep = mskCEP.Text;
                 forn.rua = txtRua.Text;
                 forn.bairro = txtBairro.Text;
                 forn.cidade = txtCidade.Text;
-                forn.estado = txtEstado.Text;
                 forn.ds_cnpj = txtCNPJ.Text;
 
                 Business.Business_Fornecedores forne = new Business.Business_Fornecedores();
@@ -40,7 +39,7 @@ namespace Cultura_Musical.Telas.Fornecedores
 
                 MessageBox.Show("Fornecedor adicionado com sucesso.");
             }
-
+              
             catch (ArgumentException ex)
             {
                 MessageBox.Show(ex.Message);

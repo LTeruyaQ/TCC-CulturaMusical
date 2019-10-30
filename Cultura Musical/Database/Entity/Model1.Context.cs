@@ -32,18 +32,16 @@ namespace Cultura_Musical.Database.Entity
         public DbSet<tb_colaborador> tb_colaborador { get; set; }
         public DbSet<tb_compra> tb_compra { get; set; }
         public DbSet<tb_conta> tb_conta { get; set; }
-        public DbSet<tb_dia_semana> tb_dia_semana { get; set; }
-        public DbSet<tb_escala> tb_escala { get; set; }
-        public DbSet<tb_escala_funcionario> tb_escala_funcionario { get; set; }
         public DbSet<tb_estoque> tb_estoque { get; set; }
         public DbSet<tb_financeiro> tb_financeiro { get; set; }
         public DbSet<tb_folha_pagamento> tb_folha_pagamento { get; set; }
         public DbSet<tb_fornecedor> tb_fornecedor { get; set; }
         public DbSet<tb_funcionario> tb_funcionario { get; set; }
         public DbSet<tb_holerite> tb_holerite { get; set; }
-        public DbSet<tb_horario> tb_horario { get; set; }
+        public DbSet<tb_jornada> tb_jornada { get; set; }
         public DbSet<tb_login> tb_login { get; set; }
         public DbSet<tb_plano> tb_plano { get; set; }
+        public DbSet<tb_ponto> tb_ponto { get; set; }
         public DbSet<tb_produto> tb_produto { get; set; }
         public DbSet<tb_prolabore> tb_prolabore { get; set; }
         public DbSet<tb_sala> tb_sala { get; set; }

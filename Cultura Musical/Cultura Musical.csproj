@@ -67,16 +67,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API%27s\Correio__API.cs" />
+    <Compile Include="API%27s\IBM_Voice.cs" />
     <Compile Include="Business\Business_Agenda.cs" />
     <Compile Include="Business\Business_Cliente.cs" />
     <Compile Include="Business\Business_CRM.cs" />
-    <Compile Include="Business\Business_DiasDaSemana.cs" />
     <Compile Include="Business\Business_Fornecedores.cs" />
     <Compile Include="Business\Business_Funcionarios.cs" />
     <Compile Include="Business\Business_Folha_Pagamento.cs" />
     <Compile Include="Business\Business_Holerite.cs" />
-    <Compile Include="Business\Business_Horarios.cs" />
     <Compile Include="Business\Business_Inicialização.cs" />
+    <Compile Include="Business\Business_Jornada.cs" />
     <Compile Include="Business\Business_Logistica.cs" />
     <Compile Include="Business\Business_Pedidos.cs" />
     <Compile Include="Business\Business_Planos.cs" />
@@ -86,13 +86,12 @@
     <Compile Include="Database\Database_Agenda.cs" />
     <Compile Include="Database\Database_Cliente.cs" />
     <Compile Include="Database\Database_CRM.cs" />
-    <Compile Include="Database\Database_DiasDaSemana.cs" />
     <Compile Include="Database\Database_Fornecedores.cs" />
     <Compile Include="Database\Database_Funcionarios.cs" />
     <Compile Include="Database\Database_Folha_Pagamento.cs" />
     <Compile Include="Database\Database_Holerite.cs" />
-    <Compile Include="Database\Database_Horarios.cs" />
     <Compile Include="Database\Database_Inicialização.cs" />
+    <Compile Include="Database\Database_Jornada.cs" />
     <Compile Include="Database\Database_Logistica.cs" />
     <Compile Include="Database\Database_Pedidos.cs" />
     <Compile Include="Database\Database_Planos.cs" />
@@ -138,15 +137,6 @@
     <Compile Include="Database\Entity\tb_conta.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\tb_dia_semana.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_escala.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_escala_funcionario.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Database\Entity\tb_estoque.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -165,13 +155,16 @@
     <Compile Include="Database\Entity\tb_holerite.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\tb_horario.cs">
+    <Compile Include="Database\Entity\tb_jornada.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_login.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_plano.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_ponto.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_produto.cs">
@@ -189,14 +182,9 @@
     <Compile Include="Database\Entity\tb_venda_plano.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Model\Modelos extendidos.cs" />
+    <Compile Include="Database\Model\ModelosExtendidos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Agenda\FrmAlterarAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,12 +220,6 @@
     </Compile>
     <Compile Include="Telas\Folha_Pagamento\frmGerarFolhaD.Designer.cs">
       <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Fornecedores\frmAlterarFornecedores.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Fornecedores\frmAlterarFornecedores.Designer.cs">
-      <DependentUpon>frmAlterarFornecedores.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Funcionarios\FrmAlterarColaborador.cs">
       <SubType>Form</SubType>
@@ -316,12 +298,6 @@
     </Compile>
     <Compile Include="Telas\Fornecedores\FrmConsultarFornecedores.Designer.cs">
       <DependentUpon>FrmConsultarFornecedores.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Fornecedores\FrmDeletarFornecedor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Fornecedores\FrmDeletarFornecedor.Designer.cs">
-      <DependentUpon>FrmDeletarFornecedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Folha_Pagamento\GerarFolha.cs">
       <SubType>Form</SubType>
@@ -464,7 +440,6 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Agenda\FrmAlterarAgenda.resx">
       <DependentUpon>FrmAlterarAgenda.cs</DependentUpon>
@@ -496,14 +471,8 @@
     <EmbeddedResource Include="Telas\Folha_Pagamento\frmGerarFolhaD.resx">
       <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Fornecedores\frmAlterarFornecedores.resx">
-      <DependentUpon>frmAlterarFornecedores.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Fornecedores\FrmConsultarFornecedores.resx">
       <DependentUpon>FrmConsultarFornecedores.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Fornecedores\FrmDeletarFornecedor.resx">
-      <DependentUpon>FrmDeletarFornecedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\FrmAlterarColaborador.resx">
       <DependentUpon>FrmAlterarColaborador.cs</DependentUpon>
@@ -537,6 +506,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Holerite\FrmAddHolerite.resx">
       <DependentUpon>FrmAddHolerite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Holerite\FrmConsultarHolerite.resx">
+      <DependentUpon>FrmConsultarHolerite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicialização\FrmCadastroFuncionarioLogin.resx">
       <DependentUpon>FrmCadastroFuncionarioLogin.cs</DependentUpon>
@@ -629,7 +601,9 @@
     <None Include="Resources\bateria.gif" />
     <None Include="Resources\guitarra.gif" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Telas\Pedidos\" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\giphy1.gif" />
     <None Include="Resources\musica.jpg" />
@@ -645,6 +619,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\agenda.png" />
+    <None Include="Resources\user.png" />
     <None Include="Resources\lixeira.png" />
     <None Include="Resources\lapis.png" />
     <None Include="Resources\Home.PNG" />

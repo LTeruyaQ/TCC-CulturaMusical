@@ -17,9 +17,10 @@ namespace Cultura_Musical.Database.Entity
         public tb_funcionario()
         {
             this.tb_aula = new HashSet<tb_aula>();
-            this.tb_escala_funcionario = new HashSet<tb_escala_funcionario>();
             this.tb_folha_pagamento = new HashSet<tb_folha_pagamento>();
             this.tb_login = new HashSet<tb_login>();
+            this.tb_jornada = new HashSet<tb_jornada>();
+            this.tb_ponto = new HashSet<tb_ponto>();
         }
     
         public int id_funcionario { get; set; }
@@ -47,8 +48,9 @@ namespace Cultura_Musical.Database.Entity
     
         public virtual ICollection<tb_aula> tb_aula { get; set; }
         public virtual tb_beneficio tb_beneficio { get; set; }
-        public virtual ICollection<tb_escala_funcionario> tb_escala_funcionario { get; set; }
         public virtual ICollection<tb_folha_pagamento> tb_folha_pagamento { get; set; }
         public virtual ICollection<tb_login> tb_login { get; set; }
+        public virtual ICollection<tb_jornada> tb_jornada { get; set; }
+        public virtual ICollection<tb_ponto> tb_ponto { get; set; }
     }
 }

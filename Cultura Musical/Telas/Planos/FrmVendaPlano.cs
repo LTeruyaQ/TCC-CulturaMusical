@@ -12,28 +12,49 @@ namespace Cultura_Musical.Telas.Planos
 {
     public partial class cbo : Form
     {
+        Database.Entity.tb_plano plano = new Database.Entity.tb_plano();
+
+        Database.Database_Planos db = new Database.Database_Planos();
+
         public cbo()
         {
             InitializeComponent();
+           
 
-            Database.Entity.tb_plano plano = new Database.Entity.tb_plano();
-            List<Database.Entity.tb_plano> lista = this.Planos();
-            
+
+            List<Database.Entity.tb_plano> lista = db.ListarTodos();
+            cboplanos.DisplayMember = nameof(plano.nm_plano);
+            cboplanos.DataSource = lista;
+
         }
-         Database.Entity.culturamusicalEntities DB = new Database.Entity.culturamusicalEntities();
+      
 
-
-        private List<Database.Entity.tb_plano> Planos()
+        private void cboplanos_SelectedIndexChanged(object sender, EventArgs e)
         {
-          
-            List<Database.Entity.tb_plano> lista = DB.tb_plano.Where(t=> t.nm_plano == "ouro").ToList();
+             cboplanos.ValueMember = nameof(plano.vl_preco);
+            lblvalor0.Text = Convert.ToString(cboplanos.SelectedValue);
 
-            return lista;
+            cboplanos.ValueMember = nameof(plano.qtd_aula_semana);
+            lblaulas.Text = Convert.ToString(cboplanos.SelectedValue);
+
+            cboplanos.ValueMember = nameof(plano.ds_duracao);
+            lblduração.Text = Convert.ToString(cboplanos.SelectedValue);
+
         }
 
-        private void btnConfirmarPlano_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e)
         {
+            string nm_cliente = txtnome.Text;
+            Database.Database_Cliente cliente = new Database.Database_Cliente();
+            int id = cliente.buscarid(nm_cliente);
+            cboplanos.ValueMember = nameof(plano.id_plano);
+            Database.Entity.tb_venda_plano venda = new Database.Entity.tb_venda_plano();
+            venda.id_plano = Convert.ToInt32(cboplanos.SelectedValue);
+            venda.id_cliente = id;
+            venda.dt_inicio = DateTime.Now.Date;
+            venda.dt_fim = dtpfinal.Value;
 
+            db.VendaPlano(venda);
         }
     }
 }
