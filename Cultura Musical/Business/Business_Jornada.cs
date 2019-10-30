@@ -13,5 +13,10 @@ namespace Cultura_Musical.Business
         {
             DB.InserirJornada(Jornada);
         }
+
+        public void AlterarJornada (Database.Entity.tb_jornada jornada)
+        {
+            DB.
+        }
     }
 }

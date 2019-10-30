@@ -39,7 +39,8 @@ namespace Cultura_Musical.Database
 
         public void Alterar(Entity.tb_funcionario funcionarios)
         {
-            Entity.tb_funcionario Novofuncionario = DB.tb_funcionario.FirstOrDefault(t => t.id_funcionario == funcionarios.id_funcionario);
+            Entity.tb_funcionario Novofuncionario = DB.tb_funcionario.FirstOrDefault(t => t.nm_funcionario == funcionarios.nm_funcionario 
+                                                                                       && t.ds_cpf == funcionarios.ds_cpf);
 
 
             Novofuncionario.nm_funcionario = funcionarios.nm_funcionario;

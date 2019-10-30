@@ -14,5 +14,18 @@ namespace Cultura_Musical.Database
             DB.tb_jornada.Add(Jornada);
             DB.SaveChanges();
         }
+
+        public void Alterar (Database.Entity.tb_jornada jornada)
+        {
+            Database.Entity.tb_jornada NovaJornada = DB.tb_jornada.FirstOrDefault(t => t.id_funcionario == jornada.id_funcionario);
+
+            NovaJornada.hr_entrada = jornada.hr_entrada;
+            NovaJornada.hr_intervalo = jornada.hr_intervalo;
+            NovaJornada.hr_saida = jornada.hr_saida;
+            NovaJornada.hr_volta_intervalo = jornada.hr_volta_intervalo;
+
+            DB.SaveChanges();
+
+        }
     }
 }

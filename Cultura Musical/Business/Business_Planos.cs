@@ -12,7 +12,14 @@ namespace Cultura_Musical.Business
 
         public void CadastrarPlano(Database.Entity.tb_plano plano)
         {
+            this.validacao(plano);
 
+            Database.Entity.tb_plano procura = this.ProcurarPlano(plano);
+
+            if (plano.nm_plano == procura.nm_plano)
+                throw new ArgumentException("Este nome já esta em uso por outro plano");
+
+            db.CadastrarNovoTipoDePlano(plano);
         }
         public List<Database.Entity.tb_plano> Plano ()
         {
@@ -22,14 +29,24 @@ namespace Cultura_Musical.Business
             return lista;
         }   
 
+        public void Altera (Database.Entity.tb_plano plano)
+        {
+            this.validacao(plano);
+            db.Alterar(plano);
+        }
+
         public Database.Entity.tb_plano ProcurarPlano (Database.Entity.tb_plano plano)
         {
             return db.ProcurarPlano(plano);
         }
 
-        public void validacao (Database.Entity.tb_plano plano)
+        public void Deletar (Database.Entity.tb_plano plano)
         {
-            thi
+            db.Excluir(plano.id_plano);
+        }
+
+        private void validacao (Database.Entity.tb_plano plano)
+        {
 
             if (plano.ds_descricao == string.Empty)
                 throw new ArgumentException("É necessario dar uma ao descrição");
