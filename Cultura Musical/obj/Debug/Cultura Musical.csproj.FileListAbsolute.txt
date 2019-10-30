@@ -991,3 +991,6 @@ C:\Users\infoc11\Source\Repos\tcc-cultura-musical4\Cultura Musical\bin\Debug\NVo
 C:\Users\infoc11\Source\Repos\tcc-cultura-musical4\Cultura Musical\bin\Debug\Stannieman.AudioPlayer.pdb
 C:\Users\infoc11\Source\Repos\tcc-cultura-musical4\Cultura Musical\bin\Debug\Stannieman.AudioPlayer.xml
 C:\Users\infoc11\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Properties.Resources.resources
+C:\Users\Curso\Source\Repos\tcc-cultura-musical4\Cultura Musical\bin\Debug\Cultura Musical.exe.config
+C:\Users\Curso\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura Musical.exe
+C:\Users\Curso\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura Musical.pdb
