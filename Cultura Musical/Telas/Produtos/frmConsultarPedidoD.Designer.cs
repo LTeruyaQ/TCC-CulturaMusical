@@ -129,7 +129,7 @@
             this.label6.BackColor = System.Drawing.Color.Black;
             this.label6.Font = new System.Drawing.Font("Stencil", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(246, 0);
+            this.label6.Location = new System.Drawing.Point(217, 8);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(511, 64);
             this.label6.TabIndex = 19;
