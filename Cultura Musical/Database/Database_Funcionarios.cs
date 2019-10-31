@@ -10,7 +10,6 @@ namespace Cultura_Musical.Database
     {
         Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
 
-
         public void Cadastrar(Entity.tb_funcionario funcionario)
         {
             DB.tb_funcionario.Add(funcionario);
@@ -26,14 +25,14 @@ namespace Cultura_Musical.Database
         public List<Entity.tb_funcionario> ListarPorNome(string nome)
         {
             List<Entity.tb_funcionario> funcionarios = DB.tb_funcionario.Where(T => T.nm_funcionario.Contains(nome))
-                                                                      .ToList();
+                                                                        .ToList();
             return funcionarios;
         }
 
         public List<Entity.tb_funcionario> ListarPorCargo(string cargo)
         {
             List<Entity.tb_funcionario> funcionarios = DB.tb_funcionario.Where(T => T.ds_cargo.Contains(cargo))
-                                                                      .ToList();
+                                                                        .ToList();
             return funcionarios;
         }
 
@@ -41,8 +40,6 @@ namespace Cultura_Musical.Database
         {
             Entity.tb_funcionario Novofuncionario = DB.tb_funcionario.FirstOrDefault(t => t.nm_funcionario == funcionarios.nm_funcionario 
                                                                                        && t.ds_cpf == funcionarios.ds_cpf);
-
-
             Novofuncionario.nm_funcionario = funcionarios.nm_funcionario;
             Novofuncionario.vl_salario = funcionarios.vl_salario;
             Novofuncionario.ds_bairro = funcionarios.ds_bairro;
@@ -59,7 +56,6 @@ namespace Cultura_Musical.Database
             Novofuncionario.dt_demicao = funcionarios.dt_demicao;
             Novofuncionario.dt_nascimento = funcionarios.dt_nascimento;
 
-
             DB.SaveChanges();
         }
 
@@ -70,22 +66,21 @@ namespace Cultura_Musical.Database
             DB.tb_funcionario.Remove(funcionario);
             DB.SaveChanges();
         }
+
         public void AdicionarFuncionario(Database.Entity.tb_funcionario funcionario)
         {
-            
             DB.tb_funcionario.Add(funcionario);
             DB.SaveChanges();
         }
 
        public List<Database.Entity.tb_funcionario> Consultar (Database.Entity.tb_funcionario funcionario)
-        {
-           
+       {
             List<Database.Entity.tb_funcionario> lista = DB.tb_funcionario.Where
                                                  (t => t.nm_funcionario == 
                                                  funcionario.nm_funcionario
-                                                  && t.ds_cargo == funcionario.ds_cargo).ToList();
+                                                 && t.ds_cargo == funcionario.ds_cargo).ToList();
             return lista;
-        }   
+       }   
 
         public Database.Entity.tb_funcionario ProcurarFuncionario (Database.Entity.tb_funcionario Funcionario)
         {

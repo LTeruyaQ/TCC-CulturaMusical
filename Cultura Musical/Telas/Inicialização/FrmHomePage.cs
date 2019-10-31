@@ -56,5 +56,18 @@ namespace Cultura_Musical.Telas
         {
 
         }
+
+        private void btnFalar_Click(object sender, EventArgs e)
+        {
+            ibmApi.IniciarOuvir();
+        }
+
+        private void btnParar_Click(object sender, EventArgs e)
+        {
+
+            string texto = ibmApi.PararOuvir();
+            lblFalar.Text = texto;
+            CarregarTela();
+        }
     }
 }

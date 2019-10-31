@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHomePage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -44,6 +45,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnParar = new System.Windows.Forms.Button();
+            this.btnFalar = new System.Windows.Forms.Button();
+            this.lblFalar = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel3.SuspendLayout();
@@ -259,6 +264,45 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(482, 85);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 13);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Serviço de Voz";
+            // 
+            // btnParar
+            // 
+            this.btnParar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnParar.BackgroundImage")));
+            this.btnParar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnParar.Location = new System.Drawing.Point(538, 152);
+            this.btnParar.Name = "btnParar";
+            this.btnParar.Size = new System.Drawing.Size(34, 34);
+            this.btnParar.TabIndex = 221;
+            this.btnParar.UseVisualStyleBackColor = true;
+            this.btnParar.Click += new System.EventHandler(this.btnParar_Click);
+            // 
+            // btnFalar
+            // 
+            this.btnFalar.BackColor = System.Drawing.Color.Transparent;
+            this.btnFalar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFalar.BackgroundImage")));
+            this.btnFalar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFalar.Location = new System.Drawing.Point(465, 152);
+            this.btnFalar.Name = "btnFalar";
+            this.btnFalar.Size = new System.Drawing.Size(34, 34);
+            this.btnFalar.TabIndex = 220;
+            this.btnFalar.UseVisualStyleBackColor = false;
+            this.btnFalar.Click += new System.EventHandler(this.btnFalar_Click);
+            // 
+            // lblFalar
+            // 
+            this.lblFalar.Location = new System.Drawing.Point(427, 115);
+            this.lblFalar.Name = "lblFalar";
+            this.lblFalar.Size = new System.Drawing.Size(165, 20);
+            this.lblFalar.TabIndex = 222;
+            // 
             // FrmHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,6 +310,10 @@
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(838, 554);
+            this.Controls.Add(this.lblFalar);
+            this.Controls.Add(this.btnParar);
+            this.Controls.Add(this.btnFalar);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -281,6 +329,7 @@
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -302,5 +351,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnParar;
+        private System.Windows.Forms.Button btnFalar;
+        private System.Windows.Forms.TextBox lblFalar;
     }
 }
