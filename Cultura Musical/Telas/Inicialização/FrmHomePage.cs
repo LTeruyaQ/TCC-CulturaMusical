@@ -17,6 +17,8 @@ namespace Cultura_Musical.Telas
             InitializeComponent();
         }
 
+        API_s.IBM_Voice ibm = new API_s.IBM_Voice();
+
         private void tabPage2_Click(object sender, EventArgs e)
         {
 
@@ -59,15 +61,15 @@ namespace Cultura_Musical.Telas
 
         private void btnFalar_Click(object sender, EventArgs e)
         {
-            ibmApi.IniciarOuvir();
+            ibm.IniciarOuvir();
         }
 
         private void btnParar_Click(object sender, EventArgs e)
         {
 
-            string texto = ibmApi.PararOuvir();
-            lblFalar.Text = texto;
-            CarregarTela();
+            //string texto = ibm.PararOuvir();
+            //lblFalar.Text = texto;
+            
         }
     }
 }

@@ -55,7 +55,7 @@ namespace Cultura_Musical.Business
                 throw new ArgumentException("O campo de Email está incorreto ou vazio");
             }
 
-            else if (funcionario.ds_telefone == string.Empty || funcionario.ds_telefone.Length > 12)
+            else if (funcionario.ds_telefone == string.Empty || funcionario.ds_telefone.Length > 10)
             {
                 throw new ArgumentException("O campo de Telefone está incorreto ou vazio");
             }
