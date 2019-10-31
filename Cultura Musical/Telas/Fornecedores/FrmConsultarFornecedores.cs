@@ -30,7 +30,6 @@ namespace Cultura_Musical.Telas.Fornecedores
 
                 Business.Business_Fornecedores forne = new Business.Business_Fornecedores();
                 List<Database.Entity.tb_fornecedor> ok = forne.ListarNome(nome);
-
             }
 
             catch (ArgumentException ex)
@@ -42,16 +41,6 @@ namespace Cultura_Musical.Telas.Fornecedores
             {
                 MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FrmConsultarFornecedores_Load(object sender, EventArgs e)
-        {
-
-        }
+        }      
     }
 }

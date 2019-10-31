@@ -91,10 +91,7 @@
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.cboGenero = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtmascaraCPF = new System.Windows.Forms.MaskedTextBox();
-            this.txtMascara = new System.Windows.Forms.MaskedTextBox();
-            this.rdnCNPJ = new System.Windows.Forms.RadioButton();
             this.rdnCPF = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -115,7 +112,6 @@
             this.groupBox3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -614,7 +610,6 @@
             // 
             this.tabPage2.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -624,7 +619,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.txtmascaraCPF);
             this.groupBox2.Controls.Add(this.label28);
+            this.groupBox2.Controls.Add(this.rdnCPF);
             this.groupBox2.Controls.Add(this.txtNome);
             this.groupBox2.Controls.Add(this.dateTimePicker2);
             this.groupBox2.Controls.Add(this.label26);
@@ -638,7 +635,7 @@
             this.groupBox2.Controls.Add(this.label27);
             this.groupBox2.Location = new System.Drawing.Point(30, 70);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(462, 179);
+            this.groupBox2.Size = new System.Drawing.Size(462, 213);
             this.groupBox2.TabIndex = 90;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados pessoais";
@@ -747,49 +744,18 @@
             this.label27.TabIndex = 81;
             this.label27.Text = "Telefone:";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.txtmascaraCPF);
-            this.groupBox1.Controls.Add(this.txtMascara);
-            this.groupBox1.Controls.Add(this.rdnCNPJ);
-            this.groupBox1.Controls.Add(this.rdnCPF);
-            this.groupBox1.Location = new System.Drawing.Point(30, 289);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(462, 100);
-            this.groupBox1.TabIndex = 89;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tipo";
-            // 
             // txtmascaraCPF
             // 
-            this.txtmascaraCPF.Location = new System.Drawing.Point(80, 56);
+            this.txtmascaraCPF.Location = new System.Drawing.Point(72, 167);
             this.txtmascaraCPF.Mask = "000000000/0000-00";
             this.txtmascaraCPF.Name = "txtmascaraCPF";
             this.txtmascaraCPF.Size = new System.Drawing.Size(109, 20);
             this.txtmascaraCPF.TabIndex = 68;
             // 
-            // txtMascara
-            // 
-            this.txtMascara.Location = new System.Drawing.Point(79, 16);
-            this.txtMascara.Mask = "000000000/0000-00";
-            this.txtMascara.Name = "txtMascara";
-            this.txtMascara.Size = new System.Drawing.Size(109, 20);
-            this.txtMascara.TabIndex = 67;
-            // 
-            // rdnCNPJ
-            // 
-            this.rdnCNPJ.AutoSize = true;
-            this.rdnCNPJ.Location = new System.Drawing.Point(21, 19);
-            this.rdnCNPJ.Name = "rdnCNPJ";
-            this.rdnCNPJ.Size = new System.Drawing.Size(52, 17);
-            this.rdnCNPJ.TabIndex = 66;
-            this.rdnCNPJ.Text = "CNPJ";
-            this.rdnCNPJ.UseVisualStyleBackColor = true;
-            // 
             // rdnCPF
             // 
             this.rdnCPF.AutoSize = true;
-            this.rdnCPF.Location = new System.Drawing.Point(22, 59);
+            this.rdnCPF.Location = new System.Drawing.Point(14, 170);
             this.rdnCPF.Name = "rdnCPF";
             this.rdnCPF.Size = new System.Drawing.Size(45, 17);
             this.rdnCPF.TabIndex = 65;
@@ -821,6 +787,7 @@
             this.btnCadastrar.TabIndex = 90;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
             // 
             // InserirFuncionarios
             // 
@@ -855,8 +822,6 @@
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -918,10 +883,7 @@
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.ComboBox cboGenero;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.MaskedTextBox txtmascaraCPF;
-        private System.Windows.Forms.MaskedTextBox txtMascara;
-        private System.Windows.Forms.RadioButton rdnCNPJ;
         private System.Windows.Forms.RadioButton rdnCPF;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.GroupBox groupBox8;

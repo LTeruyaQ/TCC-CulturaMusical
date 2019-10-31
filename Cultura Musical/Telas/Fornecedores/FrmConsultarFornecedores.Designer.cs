@@ -31,8 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNFornecedor = new System.Windows.Forms.TextBox();
             this.dgvNMFornecedor = new System.Windows.Forms.DataGridView();
-            this.alterar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.remover = new System.Windows.Forms.DataGridViewImageColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,6 +48,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.alterar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.remover = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNMFornecedor)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,29 +82,10 @@
             this.dgvNMFornecedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.alterar,
             this.remover});
-            this.dgvNMFornecedor.Location = new System.Drawing.Point(198, 205);
+            this.dgvNMFornecedor.Location = new System.Drawing.Point(187, 189);
             this.dgvNMFornecedor.Name = "dgvNMFornecedor";
             this.dgvNMFornecedor.Size = new System.Drawing.Size(602, 342);
             this.dgvNMFornecedor.TabIndex = 2;
-            // 
-            // alterar
-            // 
-            this.alterar.HeaderText = "Column1";
-           
-            this.alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.alterar.Name = "alterar";
-            this.alterar.ReadOnly = true;
-            this.alterar.Width = 20;
-            // 
-            // remover
-            // 
-            this.remover.HeaderText = "Column1";
-            
-            this.remover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.remover.Name = "remover";
-            this.remover.ReadOnly = true;
-            this.remover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.remover.Width = 20;
             // 
             // label6
             // 
@@ -117,7 +98,6 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Consultar Fornecedor";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panel3
             // 
@@ -159,7 +139,6 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-           
             this.pictureBox1.Location = new System.Drawing.Point(17, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(94, 72);
@@ -207,7 +186,6 @@
             // 
             // pictureBox2
             // 
-            
             this.pictureBox2.Location = new System.Drawing.Point(40, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(84, 69);
@@ -327,6 +305,25 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // alterar
+            // 
+            this.alterar.HeaderText = "Column1";
+            this.alterar.Image = global::Cultura_Musical.Properties.Resources.lapis;
+            this.alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.alterar.Name = "alterar";
+            this.alterar.ReadOnly = true;
+            this.alterar.Width = 20;
+            // 
+            // remover
+            // 
+            this.remover.HeaderText = "Column1";
+            this.remover.Image = global::Cultura_Musical.Properties.Resources.download;
+            this.remover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.remover.Name = "remover";
+            this.remover.ReadOnly = true;
+            this.remover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.remover.Width = 20;
+            // 
             // FrmConsultarFornecedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,7 +340,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmConsultarFornecedores";
             this.Text = "lab";
-            this.Load += new System.EventHandler(this.FrmConsultarFornecedores_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvNMFornecedor)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -359,8 +355,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNFornecedor;
         private System.Windows.Forms.DataGridView dgvNMFornecedor;
-        private System.Windows.Forms.DataGridViewImageColumn alterar;
-        private System.Windows.Forms.DataGridViewImageColumn remover;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
@@ -378,5 +372,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewImageColumn alterar;
+        private System.Windows.Forms.DataGridViewImageColumn remover;
     }
 }

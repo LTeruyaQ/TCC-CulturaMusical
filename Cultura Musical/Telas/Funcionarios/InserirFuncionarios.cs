@@ -25,12 +25,9 @@ namespace Cultura_Musical.Telas.Funcionarios
         {
             try
             {
-
                 Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
                 Database.Entity.tb_jornada Jornada = new Database.Entity.tb_jornada();
                 Database.Entity.tb_beneficio Beneficio = new Database.Entity.tb_beneficio();
-
-
 
                 Beneficio.ds_va = nudVa.Value;
                 Beneficio.ds_vr = nudVr.Value;
@@ -38,15 +35,11 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 BeneficioBus.InserirBeneficio(Beneficio);
 
-
-
-
-
                 funcionario.nm_funcionario = txtNome.Text;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
                 funcionario.ds_telefone = txtTelefone.Text;
                 funcionario.ds_cargo = txtCargo.Text;
-                funcionario.ds_cpf = txtMascara.Text;
+                
                 funcionario.ds_cep = txtCEP.Text;
                 funcionario.dt_contratacao = dtpContratacao.Value;
                 funcionario.dt_demicao = null;
@@ -57,20 +50,9 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_rua = txtRua.Text;
                 funcionario.id_beneficio = Beneficio.id_beneficio;
                 
-                
+               
 
-                
-                if (rdnCNPJ.Checked == true)
-                {
-                    txtMascara.Mask = "000.000.000 / 0000 - 00";
-                    rdnCPF.Checked = false;
-                }
-
-                else if (rdnCPF.Checked == true)
-                {
-                    txtMascara.Mask = "000.000.000-00";
-                    rdnCNPJ.Checked = false;
-                }
+              
 
                 string genero = cboGenero.Text;
 
@@ -86,9 +68,6 @@ namespace Cultura_Musical.Telas.Funcionarios
                 colaboradorBus.CadastroFuncionario(funcionario);
                 Database.Entity.tb_funcionario Func = colaboradorBus.BuscarFuncionario(funcionario);
                 
-
-
-
                 Jornada.hr_entrada = dtpEntrada.Value.TimeOfDay;
                 Jornada.hr_intervalo = dtpAlmoco.Value.TimeOfDay;
                 Jornada.hr_volta_intervalo = dtpRetorno.Value.TimeOfDay;
@@ -97,7 +76,6 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 JornadaBus.InserirJornada(Jornada);
                 
-              
                 MessageBox.Show("Funcionário cadastrado com sucesso.");
             }
 
