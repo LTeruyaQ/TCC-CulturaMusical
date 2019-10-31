@@ -65,5 +65,6 @@ namespace Cultura_Musical.Database
             DB.tb_venda_plano.Add(plano);
             DB.SaveChanges();
         }
+       
     }
 }

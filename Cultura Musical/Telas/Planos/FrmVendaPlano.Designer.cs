@@ -57,12 +57,11 @@
             this.cboplanos = new System.Windows.Forms.ComboBox();
             this.lblplano = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtRG = new System.Windows.Forms.MaskedTextBox();
-            this.label25 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txtnome = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
+            this.dgvlista = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -70,6 +69,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvlista)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -318,7 +318,6 @@
             this.label7.Size = new System.Drawing.Size(62, 13);
             this.label7.TabIndex = 25;
             this.label7.Text = "Final Plano:";
-            this.label7.Visible = false;
             // 
             // dtpfinal
             // 
@@ -336,7 +335,6 @@
             this.lblduração.Size = new System.Drawing.Size(13, 13);
             this.lblduração.TabIndex = 23;
             this.lblduração.Text = "0";
-            this.lblduração.Visible = false;
             // 
             // label5
             // 
@@ -346,7 +344,6 @@
             this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 22;
             this.label5.Text = "Duração:";
-            this.label5.Visible = false;
             // 
             // lblaulas
             // 
@@ -356,7 +353,6 @@
             this.lblaulas.Size = new System.Drawing.Size(13, 13);
             this.lblaulas.TabIndex = 21;
             this.lblaulas.Text = "0";
-            this.lblaulas.Visible = false;
             // 
             // label3
             // 
@@ -366,7 +362,6 @@
             this.label3.Size = new System.Drawing.Size(94, 13);
             this.label3.TabIndex = 20;
             this.label3.Text = "Aulas por semana:";
-            this.label3.Visible = false;
             // 
             // lblvalor0
             // 
@@ -376,7 +371,6 @@
             this.lblvalor0.Size = new System.Drawing.Size(13, 13);
             this.lblvalor0.TabIndex = 19;
             this.lblvalor0.Text = "0";
-            this.lblvalor0.Visible = false;
             // 
             // lblvalor
             // 
@@ -386,7 +380,6 @@
             this.lblvalor.Size = new System.Drawing.Size(34, 13);
             this.lblvalor.TabIndex = 18;
             this.lblvalor.Text = "Valor:";
-            this.lblvalor.Visible = false;
             // 
             // cboplanos
             // 
@@ -408,38 +401,20 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtRG);
-            this.groupBox2.Controls.Add(this.label25);
+            this.groupBox2.Controls.Add(this.dgvlista);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtnome);
             this.groupBox2.Location = new System.Drawing.Point(403, 161);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 209);
+            this.groupBox2.Size = new System.Drawing.Size(371, 226);
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Cliente";
-            // 
-            // txtRG
-            // 
-            this.txtRG.Location = new System.Drawing.Point(73, 96);
-            this.txtRG.Mask = "00.000.000-0";
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(100, 20);
-            this.txtRG.TabIndex = 88;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(6, 96);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(29, 13);
-            this.label25.TabIndex = 87;
-            this.label25.Text = "R.G:";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 48);
+            this.label4.Location = new System.Drawing.Point(18, 16);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(42, 13);
             this.label4.TabIndex = 24;
@@ -447,10 +422,12 @@
             // 
             // txtnome
             // 
-            this.txtnome.Location = new System.Drawing.Point(73, 45);
+            this.txtnome.Location = new System.Drawing.Point(76, 16);
             this.txtnome.Name = "txtnome";
             this.txtnome.Size = new System.Drawing.Size(100, 20);
             this.txtnome.TabIndex = 0;
+            this.txtnome.TextChanged += new System.EventHandler(this.txtnome_TextChanged);
+            this.txtnome.Leave += new System.EventHandler(this.txtnome_Leave);
             // 
             // textBox1
             // 
@@ -468,6 +445,14 @@
             this.button9.Text = "OK";
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // dgvlista
+            // 
+            this.dgvlista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvlista.Location = new System.Drawing.Point(9, 70);
+            this.dgvlista.Name = "dgvlista";
+            this.dgvlista.Size = new System.Drawing.Size(356, 150);
+            this.dgvlista.TabIndex = 26;
             // 
             // cbo
             // 
@@ -494,6 +479,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvlista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -531,10 +517,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtnome;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.MaskedTextBox txtRG;
-        private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtpfinal;
+        private System.Windows.Forms.DataGridView dgvlista;
     }
 }

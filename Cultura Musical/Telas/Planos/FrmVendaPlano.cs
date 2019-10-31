@@ -26,12 +26,14 @@ namespace Cultura_Musical.Telas.Planos
             cboplanos.DisplayMember = nameof(plano.nm_plano);
             cboplanos.DataSource = lista;
 
+           
+
         }
       
 
         private void cboplanos_SelectedIndexChanged(object sender, EventArgs e)
         {
-             cboplanos.ValueMember = nameof(plano.vl_preco);
+            cboplanos.ValueMember = nameof(plano.vl_preco);
             lblvalor0.Text = Convert.ToString(cboplanos.SelectedValue);
 
             cboplanos.ValueMember = nameof(plano.qtd_aula_semana);
@@ -55,6 +57,28 @@ namespace Cultura_Musical.Telas.Planos
             venda.dt_fim = dtpfinal.Value;
 
             db.VendaPlano(venda);
+
+            MessageBox.Show("Venda feita com sucesso.");
+        }
+
+        private void txtnome_Leave(object sender, EventArgs e)
+        {
+            
+            
+            
+    }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtnome_TextChanged(object sender, EventArgs e)
+        {
+            string nm_cliente = txtnome.Text;
+            Business.Business_Cliente bus = new Business.Business_Cliente();
+            List<Database.Entity.tb_cliente> cliente = bus.listapornome(nm_cliente);
+            dgvlista.DataSource = cliente;
         }
     }
 }

@@ -93,5 +93,7 @@ namespace Cultura_Musical.Database
             DB.tb_aula.Remove(agenda);
             DB.SaveChanges();
         }
+
+       
     }
 }
