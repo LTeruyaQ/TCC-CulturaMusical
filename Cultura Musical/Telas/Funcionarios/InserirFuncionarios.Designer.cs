@@ -36,7 +36,6 @@
             this.nudVr = new System.Windows.Forms.NumericUpDown();
             this.label19 = new System.Windows.Forms.Label();
             this.nudVt = new System.Windows.Forms.NumericUpDown();
-            this.btnCadastrar = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -99,6 +98,7 @@
             this.rdnCPF = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.btnCadastrar = new System.Windows.Forms.Button();
             this.tabPage5.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudVa)).BeginInit();
@@ -121,6 +121,7 @@
             // 
             // tabPage5
             // 
+            this.tabPage5.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage5.Controls.Add(this.groupBox7);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
@@ -128,7 +129,6 @@
             this.tabPage5.Size = new System.Drawing.Size(513, 414);
             this.tabPage5.TabIndex = 5;
             this.tabPage5.Text = "Benefícios";
-            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
@@ -207,18 +207,9 @@
             this.nudVt.Size = new System.Drawing.Size(120, 20);
             this.nudVt.TabIndex = 80;
             // 
-            // btnCadastrar
-            // 
-            this.btnCadastrar.Location = new System.Drawing.Point(354, 444);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(156, 63);
-            this.btnCadastrar.TabIndex = 35;
-            this.btnCadastrar.Text = "Cadastrar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
-            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
-            // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage4.Controls.Add(this.groupBox6);
             this.tabPage4.Controls.Add(this.groupBox5);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
@@ -227,7 +218,6 @@
             this.tabPage4.Size = new System.Drawing.Size(513, 414);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Informações Residenciais";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
@@ -357,6 +347,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage1.Controls.Add(this.groupBox8);
             this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.groupBox3);
@@ -366,7 +357,6 @@
             this.tabPage1.Size = new System.Drawing.Size(513, 414);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Contratação";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
@@ -466,6 +456,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.SkyBlue;
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.Controls.Add(this.dtpContratacao);
             this.groupBox4.Controls.Add(this.txtCargo);
@@ -621,6 +612,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -629,7 +621,6 @@
             this.tabPage2.Size = new System.Drawing.Size(513, 414);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Dados Pessoais";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -817,13 +808,28 @@
             this.tabControl1.Size = new System.Drawing.Size(521, 440);
             this.tabControl1.TabIndex = 89;
             // 
+            // btnCadastrar
+            // 
+            this.btnCadastrar.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnCadastrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnCadastrar.FlatAppearance.BorderSize = 20;
+            this.btnCadastrar.Font = new System.Drawing.Font("Century Gothic", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
+            this.btnCadastrar.Location = new System.Drawing.Point(299, 444);
+            this.btnCadastrar.Name = "btnCadastrar";
+            this.btnCadastrar.Size = new System.Drawing.Size(223, 62);
+            this.btnCadastrar.TabIndex = 90;
+            this.btnCadastrar.Text = "Cadastrar";
+            this.btnCadastrar.UseVisualStyleBackColor = false;
+            // 
             // InserirFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 525);
-            this.Controls.Add(this.tabControl1);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(833, 518);
             this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.tabControl1);
             this.Name = "InserirFuncionarios";
             this.Text = "InserirFuncionarios";
             this.tabPage5.ResumeLayout(false);
@@ -866,7 +872,6 @@
         private System.Windows.Forms.NumericUpDown nudVr;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.NumericUpDown nudVt;
-        private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label8;
@@ -929,5 +934,6 @@
         private System.Windows.Forms.CheckBox chkSexta;
         private System.Windows.Forms.CheckBox chkQuinta;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button btnCadastrar;
     }
 }

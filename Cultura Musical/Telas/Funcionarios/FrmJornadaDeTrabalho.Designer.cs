@@ -45,13 +45,34 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.dtpTotHorasNotunras = new System.Windows.Forms.DateTimePicker();
             this.dtpTotHorasDiurnas = new System.Windows.Forms.DateTimePicker();
             this.dtpDuracaoJornada = new System.Windows.Forms.DateTimePicker();
             this.dtpSaidaJornada = new System.Windows.Forms.DateTimePicker();
             this.dtpEntradaJornada = new System.Windows.Forms.DateTimePicker();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -61,9 +82,9 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(60, 431);
+            this.groupBox1.Location = new System.Drawing.Point(324, 442);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(426, 133);
+            this.groupBox1.Size = new System.Drawing.Size(443, 133);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             // 
@@ -72,7 +93,7 @@
             this.cbo.FormattingEnabled = true;
             this.cbo.Items.AddRange(new object[] {
             "Intervalo em Horário Fixo"});
-            this.cbo.Location = new System.Drawing.Point(226, 33);
+            this.cbo.Location = new System.Drawing.Point(263, 32);
             this.cbo.Name = "cbo";
             this.cbo.Size = new System.Drawing.Size(121, 21);
             this.cbo.TabIndex = 24;
@@ -80,34 +101,37 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(16, 93);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 13);
+            this.label10.Size = new System.Drawing.Size(118, 15);
             this.label10.TabIndex = 23;
             this.label10.Text = "Término do Intervalo:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(16, 69);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 13);
+            this.label6.Size = new System.Drawing.Size(105, 15);
             this.label6.TabIndex = 22;
             this.label6.Text = "Início do Intervalo:";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(161, 35);
+            this.textBox3.Location = new System.Drawing.Point(179, 33);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(23, 20);
+            this.textBox3.Size = new System.Drawing.Size(49, 20);
             this.textBox3.TabIndex = 21;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(16, 35);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(139, 13);
+            this.label5.Size = new System.Drawing.Size(152, 15);
             this.label5.TabIndex = 21;
             this.label5.Text = "Intervalo/ Tipo de Intervalo:";
             // 
@@ -115,9 +139,10 @@
             // 
             this.rdnHFlexivel.AutoSize = true;
             this.rdnHFlexivel.Checked = true;
-            this.rdnHFlexivel.Location = new System.Drawing.Point(361, 91);
+            this.rdnHFlexivel.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdnHFlexivel.Location = new System.Drawing.Point(642, 102);
             this.rdnHFlexivel.Name = "rdnHFlexivel";
-            this.rdnHFlexivel.Size = new System.Drawing.Size(99, 17);
+            this.rdnHFlexivel.Size = new System.Drawing.Size(109, 19);
             this.rdnHFlexivel.TabIndex = 36;
             this.rdnHFlexivel.TabStop = true;
             this.rdnHFlexivel.Text = "Horário Flexível";
@@ -127,9 +152,10 @@
             // 
             this.rdnHNoturna.AutoSize = true;
             this.rdnHNoturna.Checked = true;
-            this.rdnHNoturna.Location = new System.Drawing.Point(360, 114);
+            this.rdnHNoturna.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdnHNoturna.Location = new System.Drawing.Point(641, 125);
             this.rdnHNoturna.Name = "rdnHNoturna";
-            this.rdnHNoturna.Size = new System.Drawing.Size(100, 17);
+            this.rdnHNoturna.Size = new System.Drawing.Size(112, 19);
             this.rdnHNoturna.TabIndex = 35;
             this.rdnHNoturna.TabStop = true;
             this.rdnHNoturna.Text = "Horário Noturno";
@@ -137,7 +163,7 @@
             // 
             // txtDescricao
             // 
-            this.txtDescricao.Location = new System.Drawing.Point(215, 151);
+            this.txtDescricao.Location = new System.Drawing.Point(503, 168);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.Size = new System.Drawing.Size(310, 99);
@@ -145,44 +171,50 @@
             // 
             // txtIDFuncionario
             // 
-            this.txtIDFuncionario.Location = new System.Drawing.Point(215, 116);
+            this.txtIDFuncionario.Location = new System.Drawing.Point(503, 125);
             this.txtIDFuncionario.Name = "txtIDFuncionario";
-            this.txtIDFuncionario.Size = new System.Drawing.Size(23, 20);
+            this.txtIDFuncionario.Size = new System.Drawing.Size(48, 20);
             this.txtIDFuncionario.TabIndex = 28;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(57, 275);
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(338, 286);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 13);
+            this.label9.Size = new System.Drawing.Size(98, 15);
             this.label9.TabIndex = 27;
             this.label9.Text = "Entrada Jornada:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(57, 311);
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(338, 321);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 13);
+            this.label8.Size = new System.Drawing.Size(87, 15);
             this.label8.TabIndex = 26;
             this.label8.Text = "Saída Jornada:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(57, 345);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(338, 356);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(126, 13);
+            this.label7.Size = new System.Drawing.Size(138, 15);
             this.label7.TabIndex = 25;
             this.label7.Text = "Total de Horas Noturnas:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(57, 415);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(338, 426);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 13);
+            this.label4.Size = new System.Drawing.Size(159, 15);
             this.label4.TabIndex = 24;
             this.label4.Text = "Duração da Jornada (horas)";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -190,44 +222,39 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 380);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(338, 391);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 13);
+            this.label3.Size = new System.Drawing.Size(130, 15);
             this.label3.TabIndex = 23;
             this.label3.Text = "Total de Horas Diurnas:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 154);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(339, 170);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.Size = new System.Drawing.Size(65, 15);
             this.label2.TabIndex = 22;
             this.label2.Text = "Descrição:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 116);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(338, 127);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 13);
+            this.label1.Size = new System.Drawing.Size(131, 15);
             this.label1.TabIndex = 21;
             this.label1.Text = "Código do funcionário:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(142, 28);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(230, 25);
-            this.label11.TabIndex = 38;
-            this.label11.Text = "Jornada de Trabalho";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dtpTotHorasNotunras
             // 
             this.dtpTotHorasNotunras.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpTotHorasNotunras.Location = new System.Drawing.Point(215, 339);
+            this.dtpTotHorasNotunras.Location = new System.Drawing.Point(503, 351);
             this.dtpTotHorasNotunras.Name = "dtpTotHorasNotunras";
             this.dtpTotHorasNotunras.Size = new System.Drawing.Size(69, 20);
             this.dtpTotHorasNotunras.TabIndex = 45;
@@ -235,7 +262,7 @@
             // dtpTotHorasDiurnas
             // 
             this.dtpTotHorasDiurnas.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpTotHorasDiurnas.Location = new System.Drawing.Point(215, 374);
+            this.dtpTotHorasDiurnas.Location = new System.Drawing.Point(503, 386);
             this.dtpTotHorasDiurnas.Name = "dtpTotHorasDiurnas";
             this.dtpTotHorasDiurnas.Size = new System.Drawing.Size(69, 20);
             this.dtpTotHorasDiurnas.TabIndex = 46;
@@ -243,7 +270,7 @@
             // dtpDuracaoJornada
             // 
             this.dtpDuracaoJornada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpDuracaoJornada.Location = new System.Drawing.Point(215, 415);
+            this.dtpDuracaoJornada.Location = new System.Drawing.Point(503, 426);
             this.dtpDuracaoJornada.Name = "dtpDuracaoJornada";
             this.dtpDuracaoJornada.Size = new System.Drawing.Size(69, 20);
             this.dtpDuracaoJornada.TabIndex = 47;
@@ -251,7 +278,7 @@
             // dtpSaidaJornada
             // 
             this.dtpSaidaJornada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpSaidaJornada.Location = new System.Drawing.Point(215, 305);
+            this.dtpSaidaJornada.Location = new System.Drawing.Point(503, 316);
             this.dtpSaidaJornada.Name = "dtpSaidaJornada";
             this.dtpSaidaJornada.Size = new System.Drawing.Size(69, 20);
             this.dtpSaidaJornada.TabIndex = 48;
@@ -259,22 +286,242 @@
             // dtpEntradaJornada
             // 
             this.dtpEntradaJornada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpEntradaJornada.Location = new System.Drawing.Point(215, 269);
+            this.dtpEntradaJornada.Location = new System.Drawing.Point(503, 281);
             this.dtpEntradaJornada.Name = "dtpEntradaJornada";
             this.dtpEntradaJornada.Size = new System.Drawing.Size(69, 20);
             this.dtpEntradaJornada.TabIndex = 49;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Location = new System.Drawing.Point(188, -2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(129, 135);
+            this.panel3.TabIndex = 94;
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.Color.Black;
+            this.label12.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(17, 107);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(94, 23);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Musical";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.Black;
+            this.label13.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(17, 85);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(94, 22);
+            this.label13.TabIndex = 4;
+            this.label13.Text = "Cultura";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Location = new System.Drawing.Point(17, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(94, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(167, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(685, 66);
+            this.panel2.TabIndex = 96;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.Black;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(168, -3);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(444, 69);
+            this.label14.TabIndex = 19;
+            this.label14.Text = "Jornada de trabalho";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(167, 617);
+            this.panel1.TabIndex = 95;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Yellow;
+            this.panel4.Location = new System.Drawing.Point(3, 240);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(19, 45);
+            this.panel4.TabIndex = 3;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(40, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(84, 69);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabStop = false;
+            // 
+            // button8
+            // 
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(25, 444);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(142, 45);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "Vendas";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(25, 393);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(142, 45);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Produtos";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(25, 342);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(142, 45);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Logistica";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(25, 291);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(142, 45);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Holerite";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(25, 189);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(142, 45);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "CRM";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(25, 240);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(142, 45);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Fornecedores";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(25, 138);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 45);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Colaboradores";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(25, 87);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 45);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Agenda";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // FrmJornadaDeTrabalho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 576);
+            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.ClientSize = new System.Drawing.Size(852, 617);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.dtpEntradaJornada);
             this.Controls.Add(this.dtpSaidaJornada);
             this.Controls.Add(this.dtpDuracaoJornada);
             this.Controls.Add(this.dtpTotHorasDiurnas);
             this.Controls.Add(this.dtpTotHorasNotunras);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.rdnHFlexivel);
             this.Controls.Add(this.rdnHNoturna);
@@ -293,6 +540,11 @@
             this.Load += new System.EventHandler(this.FrmJornadaDeTrabalho_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,11 +569,27 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.DateTimePicker dtpTotHorasNotunras;
         private System.Windows.Forms.DateTimePicker dtpTotHorasDiurnas;
         private System.Windows.Forms.DateTimePicker dtpDuracaoJornada;
         private System.Windows.Forms.DateTimePicker dtpSaidaJornada;
         private System.Windows.Forms.DateTimePicker dtpEntradaJornada;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }

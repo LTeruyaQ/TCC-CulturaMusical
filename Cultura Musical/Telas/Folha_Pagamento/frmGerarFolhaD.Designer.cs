@@ -56,8 +56,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.lblFaixaIRRF = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
             this.groupBox21 = new System.Windows.Forms.GroupBox();
             this.lblCalcIRRF = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
@@ -65,8 +63,6 @@
             this.lblFGTSdoMes = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.lblFGTS = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.lblControlINSS = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
@@ -83,8 +79,6 @@
             this.lblValorLiquido = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.lblTotalDesconto = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.label47 = new System.Windows.Forms.Label();
@@ -92,7 +86,6 @@
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.label44 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.lblTotalProvento = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.lblINSSProvento = new System.Windows.Forms.Label();
@@ -125,6 +118,14 @@
             this.txtFuncionario = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -241,7 +242,7 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(167, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(761, 66);
+            this.panel2.Size = new System.Drawing.Size(653, 66);
             this.panel2.TabIndex = 18;
             // 
             // panel1
@@ -402,7 +403,7 @@
             this.groupBox8.Controls.Add(this.label19);
             this.groupBox8.Controls.Add(this.label20);
             this.groupBox8.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(531, 234);
+            this.groupBox8.Location = new System.Drawing.Point(511, 234);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
@@ -412,7 +413,8 @@
             // 
             // lblINSSDesconto
             // 
-            this.lblINSSDesconto.Location = new System.Drawing.Point(4, 130);
+            this.lblINSSDesconto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSSDesconto.Location = new System.Drawing.Point(4, 129);
             this.lblINSSDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSSDesconto.Name = "lblINSSDesconto";
             this.lblINSSDesconto.Size = new System.Drawing.Size(85, 14);
@@ -422,7 +424,8 @@
             // 
             // lblVTDesconto
             // 
-            this.lblVTDesconto.Location = new System.Drawing.Point(4, 105);
+            this.lblVTDesconto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVTDesconto.Location = new System.Drawing.Point(4, 104);
             this.lblVTDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVTDesconto.Name = "lblVTDesconto";
             this.lblVTDesconto.Size = new System.Drawing.Size(85, 14);
@@ -442,7 +445,8 @@
             // 
             // lblVADesconto
             // 
-            this.lblVADesconto.Location = new System.Drawing.Point(4, 81);
+            this.lblVADesconto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVADesconto.Location = new System.Drawing.Point(4, 79);
             this.lblVADesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVADesconto.Name = "lblVADesconto";
             this.lblVADesconto.Size = new System.Drawing.Size(85, 14);
@@ -452,7 +456,8 @@
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(4, 57);
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(4, 54);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(85, 14);
@@ -462,6 +467,7 @@
             // 
             // label19
             // 
+            this.label19.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(4, 29);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
@@ -472,7 +478,8 @@
             // 
             // label20
             // 
-            this.label20.Location = new System.Drawing.Point(4, 6);
+            this.label20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(4, 10);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(85, 14);
@@ -482,10 +489,10 @@
             // 
             // groupBox22
             // 
-            this.groupBox22.Controls.Add(this.lblFaixaIRRF);
-            this.groupBox22.Controls.Add(this.label66);
+            this.groupBox22.Controls.Add(this.label16);
+            this.groupBox22.Controls.Add(this.label17);
             this.groupBox22.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox22.Location = new System.Drawing.Point(371, 505);
+            this.groupBox22.Location = new System.Drawing.Point(341, 502);
             this.groupBox22.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox22.Name = "groupBox22";
             this.groupBox22.Padding = new System.Windows.Forms.Padding(2);
@@ -493,32 +500,12 @@
             this.groupBox22.TabIndex = 82;
             this.groupBox22.TabStop = false;
             // 
-            // lblFaixaIRRF
-            // 
-            this.lblFaixaIRRF.Location = new System.Drawing.Point(4, 17);
-            this.lblFaixaIRRF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblFaixaIRRF.Name = "lblFaixaIRRF";
-            this.lblFaixaIRRF.Size = new System.Drawing.Size(136, 13);
-            this.lblFaixaIRRF.TabIndex = 27;
-            this.lblFaixaIRRF.Text = "-";
-            this.lblFaixaIRRF.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label66
-            // 
-            this.label66.Location = new System.Drawing.Point(4, 6);
-            this.label66.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(148, 22);
-            this.label66.TabIndex = 26;
-            this.label66.Text = "FAIXA IRRF";
-            this.label66.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // groupBox21
             // 
             this.groupBox21.Controls.Add(this.lblCalcIRRF);
             this.groupBox21.Controls.Add(this.label64);
             this.groupBox21.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox21.Location = new System.Drawing.Point(202, 505);
+            this.groupBox21.Location = new System.Drawing.Point(172, 502);
             this.groupBox21.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Padding = new System.Windows.Forms.Padding(2);
@@ -528,7 +515,8 @@
             // 
             // lblCalcIRRF
             // 
-            this.lblCalcIRRF.Location = new System.Drawing.Point(4, 17);
+            this.lblCalcIRRF.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCalcIRRF.Location = new System.Drawing.Point(4, 28);
             this.lblCalcIRRF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCalcIRRF.Name = "lblCalcIRRF";
             this.lblCalcIRRF.Size = new System.Drawing.Size(136, 13);
@@ -538,10 +526,11 @@
             // 
             // label64
             // 
-            this.label64.Location = new System.Drawing.Point(4, 6);
+            this.label64.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(23, 15);
             this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(148, 22);
+            this.label64.Size = new System.Drawing.Size(110, 13);
             this.label64.TabIndex = 26;
             this.label64.Text = "BASE CALC IRRF";
             this.label64.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -551,7 +540,7 @@
             this.groupBox20.Controls.Add(this.lblFGTSdoMes);
             this.groupBox20.Controls.Add(this.label62);
             this.groupBox20.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox20.Location = new System.Drawing.Point(538, 456);
+            this.groupBox20.Location = new System.Drawing.Point(508, 453);
             this.groupBox20.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.Padding = new System.Windows.Forms.Padding(2);
@@ -561,7 +550,8 @@
             // 
             // lblFGTSdoMes
             // 
-            this.lblFGTSdoMes.Location = new System.Drawing.Point(4, 17);
+            this.lblFGTSdoMes.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFGTSdoMes.Location = new System.Drawing.Point(9, 27);
             this.lblFGTSdoMes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFGTSdoMes.Name = "lblFGTSdoMes";
             this.lblFGTSdoMes.Size = new System.Drawing.Size(136, 13);
@@ -571,7 +561,8 @@
             // 
             // label62
             // 
-            this.label62.Location = new System.Drawing.Point(4, 6);
+            this.label62.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(4, 10);
             this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label62.Name = "label62";
             this.label62.Size = new System.Drawing.Size(148, 22);
@@ -581,10 +572,10 @@
             // 
             // groupBox19
             // 
-            this.groupBox19.Controls.Add(this.lblFGTS);
-            this.groupBox19.Controls.Add(this.label60);
+            this.groupBox19.Controls.Add(this.label18);
+            this.groupBox19.Controls.Add(this.label21);
             this.groupBox19.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox19.Location = new System.Drawing.Point(538, 505);
+            this.groupBox19.Location = new System.Drawing.Point(508, 502);
             this.groupBox19.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.Padding = new System.Windows.Forms.Padding(2);
@@ -592,32 +583,12 @@
             this.groupBox19.TabIndex = 79;
             this.groupBox19.TabStop = false;
             // 
-            // lblFGTS
-            // 
-            this.lblFGTS.Location = new System.Drawing.Point(4, 17);
-            this.lblFGTS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblFGTS.Name = "lblFGTS";
-            this.lblFGTS.Size = new System.Drawing.Size(136, 13);
-            this.lblFGTS.TabIndex = 27;
-            this.lblFGTS.Text = "-";
-            this.lblFGTS.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label60
-            // 
-            this.label60.Location = new System.Drawing.Point(4, 6);
-            this.label60.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(148, 22);
-            this.label60.TabIndex = 26;
-            this.label60.Text = " BASE CÁLC FGTS";
-            this.label60.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // groupBox18
             // 
             this.groupBox18.Controls.Add(this.lblControlINSS);
             this.groupBox18.Controls.Add(this.label58);
             this.groupBox18.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox18.Location = new System.Drawing.Point(374, 456);
+            this.groupBox18.Location = new System.Drawing.Point(344, 453);
             this.groupBox18.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Padding = new System.Windows.Forms.Padding(2);
@@ -627,17 +598,20 @@
             // 
             // lblControlINSS
             // 
-            this.lblControlINSS.Location = new System.Drawing.Point(4, 17);
+            this.lblControlINSS.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblControlINSS.Location = new System.Drawing.Point(4, 27);
             this.lblControlINSS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblControlINSS.Name = "lblControlINSS";
             this.lblControlINSS.Size = new System.Drawing.Size(136, 13);
             this.lblControlINSS.TabIndex = 27;
             this.lblControlINSS.Text = "-";
             this.lblControlINSS.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblControlINSS.Click += new System.EventHandler(this.lblControlINSS_Click);
             // 
             // label58
             // 
-            this.label58.Location = new System.Drawing.Point(4, 6);
+            this.label58.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(4, 10);
             this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(148, 22);
@@ -650,7 +624,7 @@
             this.groupBox17.Controls.Add(this.lblSalarioBase);
             this.groupBox17.Controls.Add(this.label56);
             this.groupBox17.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox17.Location = new System.Drawing.Point(202, 456);
+            this.groupBox17.Location = new System.Drawing.Point(172, 453);
             this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Padding = new System.Windows.Forms.Padding(2);
@@ -660,20 +634,22 @@
             // 
             // lblSalarioBase
             // 
-            this.lblSalarioBase.Location = new System.Drawing.Point(4, 17);
+            this.lblSalarioBase.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalarioBase.Location = new System.Drawing.Point(7, 28);
             this.lblSalarioBase.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSalarioBase.Name = "lblSalarioBase";
-            this.lblSalarioBase.Size = new System.Drawing.Size(136, 13);
+            this.lblSalarioBase.Size = new System.Drawing.Size(133, 13);
             this.lblSalarioBase.TabIndex = 27;
             this.lblSalarioBase.Text = "-";
             this.lblSalarioBase.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label56
             // 
-            this.label56.Location = new System.Drawing.Point(4, 6);
+            this.label56.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(7, 13);
             this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(148, 22);
+            this.label56.Size = new System.Drawing.Size(142, 20);
             this.label56.TabIndex = 26;
             this.label56.Text = "SALÁRIO BASE";
             this.label56.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -685,7 +661,7 @@
             this.groupBox14.Controls.Add(this.lblValorLiquido);
             this.groupBox14.Controls.Add(this.label54);
             this.groupBox14.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox14.Location = new System.Drawing.Point(626, 397);
+            this.groupBox14.Location = new System.Drawing.Point(367, 397);
             this.groupBox14.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Padding = new System.Windows.Forms.Padding(2);
@@ -759,8 +735,8 @@
             // 
             // lblValorLiquido
             // 
-            this.lblValorLiquido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorLiquido.Location = new System.Drawing.Point(52, 22);
+            this.lblValorLiquido.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorLiquido.Location = new System.Drawing.Point(48, 30);
             this.lblValorLiquido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblValorLiquido.Name = "lblValorLiquido";
             this.lblValorLiquido.Size = new System.Drawing.Size(136, 13);
@@ -770,20 +746,21 @@
             // 
             // label54
             // 
-            this.label54.Location = new System.Drawing.Point(48, 0);
+            this.label54.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(48, 12);
             this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(148, 22);
+            this.label54.Size = new System.Drawing.Size(148, 15);
             this.label54.TabIndex = 26;
             this.label54.Text = "VALOR LÍQUIDO";
             this.label54.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.lblTotalDesconto);
-            this.groupBox11.Controls.Add(this.label43);
+            this.groupBox11.Controls.Add(this.label14);
+            this.groupBox11.Controls.Add(this.label15);
             this.groupBox11.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.Location = new System.Drawing.Point(528, 397);
+            this.groupBox11.Location = new System.Drawing.Point(269, 397);
             this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Padding = new System.Windows.Forms.Padding(2);
@@ -791,34 +768,14 @@
             this.groupBox11.TabIndex = 75;
             this.groupBox11.TabStop = false;
             // 
-            // lblTotalDesconto
-            // 
-            this.lblTotalDesconto.Location = new System.Drawing.Point(4, 19);
-            this.lblTotalDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotalDesconto.Name = "lblTotalDesconto";
-            this.lblTotalDesconto.Size = new System.Drawing.Size(84, 23);
-            this.lblTotalDesconto.TabIndex = 27;
-            this.lblTotalDesconto.Text = "-";
-            this.lblTotalDesconto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label43
-            // 
-            this.label43.Location = new System.Drawing.Point(0, 6);
-            this.label43.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(94, 22);
-            this.label43.TabIndex = 26;
-            this.label43.Text = "TOTAL ";
-            this.label43.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // groupBox10
             // 
+            this.groupBox10.Controls.Add(this.label11);
             this.groupBox10.Controls.Add(this.groupBox13);
             this.groupBox10.Controls.Add(this.groupBox12);
-            this.groupBox10.Controls.Add(this.lblTotalProvento);
             this.groupBox10.Controls.Add(this.label45);
             this.groupBox10.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.Location = new System.Drawing.Point(431, 398);
+            this.groupBox10.Location = new System.Drawing.Point(172, 398);
             this.groupBox10.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Padding = new System.Windows.Forms.Padding(2);
@@ -890,22 +847,13 @@
             this.label46.Text = "TOTAL DE DESCONTOS";
             this.label46.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // lblTotalProvento
-            // 
-            this.lblTotalProvento.Location = new System.Drawing.Point(7, 19);
-            this.lblTotalProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTotalProvento.Name = "lblTotalProvento";
-            this.lblTotalProvento.Size = new System.Drawing.Size(82, 23);
-            this.lblTotalProvento.TabIndex = 27;
-            this.lblTotalProvento.Text = "-";
-            this.lblTotalProvento.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // label45
             // 
-            this.label45.Location = new System.Drawing.Point(0, 6);
+            this.label45.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(4, 11);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(89, 12);
+            this.label45.Size = new System.Drawing.Size(86, 12);
             this.label45.TabIndex = 26;
             this.label45.Text = "TOTAL";
             this.label45.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -920,7 +868,7 @@
             this.groupBox7.Controls.Add(this.lblSalarioProvento);
             this.groupBox7.Controls.Add(this.label32);
             this.groupBox7.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(431, 235);
+            this.groupBox7.Location = new System.Drawing.Point(411, 235);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
@@ -930,6 +878,7 @@
             // 
             // lblINSSProvento
             // 
+            this.lblINSSProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblINSSProvento.Location = new System.Drawing.Point(4, 130);
             this.lblINSSProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSSProvento.Name = "lblINSSProvento";
@@ -940,6 +889,7 @@
             // 
             // lblVTProvento
             // 
+            this.lblVTProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVTProvento.Location = new System.Drawing.Point(4, 105);
             this.lblVTProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVTProvento.Name = "lblVTProvento";
@@ -960,6 +910,7 @@
             // 
             // lblVAProvento
             // 
+            this.lblVAProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVAProvento.Location = new System.Drawing.Point(4, 81);
             this.lblVAProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVAProvento.Name = "lblVAProvento";
@@ -970,6 +921,7 @@
             // 
             // lblGratificaçãoProvento
             // 
+            this.lblGratificaçãoProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGratificaçãoProvento.Location = new System.Drawing.Point(4, 57);
             this.lblGratificaçãoProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGratificaçãoProvento.Name = "lblGratificaçãoProvento";
@@ -980,6 +932,7 @@
             // 
             // lblSalarioProvento
             // 
+            this.lblSalarioProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalarioProvento.Location = new System.Drawing.Point(4, 29);
             this.lblSalarioProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSalarioProvento.Name = "lblSalarioProvento";
@@ -990,7 +943,8 @@
             // 
             // label32
             // 
-            this.label32.Location = new System.Drawing.Point(4, 6);
+            this.label32.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(4, 12);
             this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(85, 14);
@@ -1000,13 +954,14 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.label5);
             this.groupBox6.Controls.Add(this.lblINSSReferencia);
             this.groupBox6.Controls.Add(this.lblVTReferencia);
             this.groupBox6.Controls.Add(this.lblVAReferencia);
             this.groupBox6.Controls.Add(this.lblReferenciaSalario);
             this.groupBox6.Controls.Add(this.label23);
             this.groupBox6.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(337, 235);
+            this.groupBox6.Location = new System.Drawing.Point(317, 235);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
@@ -1016,7 +971,8 @@
             // 
             // lblINSSReferencia
             // 
-            this.lblINSSReferencia.Location = new System.Drawing.Point(0, 128);
+            this.lblINSSReferencia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSSReferencia.Location = new System.Drawing.Point(5, 128);
             this.lblINSSReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSSReferencia.Name = "lblINSSReferencia";
             this.lblINSSReferencia.Size = new System.Drawing.Size(85, 14);
@@ -1026,7 +982,8 @@
             // 
             // lblVTReferencia
             // 
-            this.lblVTReferencia.Location = new System.Drawing.Point(0, 105);
+            this.lblVTReferencia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVTReferencia.Location = new System.Drawing.Point(5, 105);
             this.lblVTReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVTReferencia.Name = "lblVTReferencia";
             this.lblVTReferencia.Size = new System.Drawing.Size(85, 14);
@@ -1036,7 +993,8 @@
             // 
             // lblVAReferencia
             // 
-            this.lblVAReferencia.Location = new System.Drawing.Point(0, 81);
+            this.lblVAReferencia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVAReferencia.Location = new System.Drawing.Point(5, 82);
             this.lblVAReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVAReferencia.Name = "lblVAReferencia";
             this.lblVAReferencia.Size = new System.Drawing.Size(85, 14);
@@ -1046,7 +1004,8 @@
             // 
             // lblReferenciaSalario
             // 
-            this.lblReferenciaSalario.Location = new System.Drawing.Point(4, 29);
+            this.lblReferenciaSalario.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReferenciaSalario.Location = new System.Drawing.Point(5, 36);
             this.lblReferenciaSalario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReferenciaSalario.Name = "lblReferenciaSalario";
             this.lblReferenciaSalario.Size = new System.Drawing.Size(85, 14);
@@ -1056,7 +1015,8 @@
             // 
             // label23
             // 
-            this.label23.Location = new System.Drawing.Point(4, 6);
+            this.label23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(4, 9);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(85, 14);
@@ -1073,7 +1033,7 @@
             this.groupBox5.Controls.Add(this.lblSalario);
             this.groupBox5.Controls.Add(this.label13);
             this.groupBox5.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(192, 235);
+            this.groupBox5.Location = new System.Drawing.Point(172, 235);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
@@ -1083,7 +1043,8 @@
             // 
             // lblINSS
             // 
-            this.lblINSS.Location = new System.Drawing.Point(4, 130);
+            this.lblINSS.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSS.Location = new System.Drawing.Point(7, 136);
             this.lblINSS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSS.Name = "lblINSS";
             this.lblINSS.Size = new System.Drawing.Size(112, 14);
@@ -1092,7 +1053,8 @@
             // 
             // lblGratificação
             // 
-            this.lblGratificação.Location = new System.Drawing.Point(4, 57);
+            this.lblGratificação.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGratificação.Location = new System.Drawing.Point(7, 61);
             this.lblGratificação.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGratificação.Name = "lblGratificação";
             this.lblGratificação.Size = new System.Drawing.Size(117, 14);
@@ -1101,7 +1063,8 @@
             // 
             // lblVT
             // 
-            this.lblVT.Location = new System.Drawing.Point(4, 105);
+            this.lblVT.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVT.Location = new System.Drawing.Point(7, 111);
             this.lblVT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVT.Name = "lblVT";
             this.lblVT.Size = new System.Drawing.Size(112, 14);
@@ -1110,7 +1073,8 @@
             // 
             // lblVA
             // 
-            this.lblVA.Location = new System.Drawing.Point(4, 81);
+            this.lblVA.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVA.Location = new System.Drawing.Point(7, 86);
             this.lblVA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVA.Name = "lblVA";
             this.lblVA.Size = new System.Drawing.Size(117, 14);
@@ -1119,7 +1083,8 @@
             // 
             // lblSalario
             // 
-            this.lblSalario.Location = new System.Drawing.Point(4, 29);
+            this.lblSalario.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.Location = new System.Drawing.Point(7, 36);
             this.lblSalario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSalario.Name = "lblSalario";
             this.lblSalario.Size = new System.Drawing.Size(112, 14);
@@ -1128,10 +1093,11 @@
             // 
             // label13
             // 
-            this.label13.Location = new System.Drawing.Point(19, 6);
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(19, 9);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(72, 17);
+            this.label13.Size = new System.Drawing.Size(85, 17);
             this.label13.TabIndex = 23;
             this.label13.Text = "DESCRIÇÃO";
             // 
@@ -1145,37 +1111,36 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(749, 141);
+            this.groupBox1.Size = new System.Drawing.Size(637, 142);
             this.groupBox1.TabIndex = 68;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Demonstrativo de Pagamento";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dtpdata);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Location = new System.Drawing.Point(481, 0);
+            this.groupBox2.Location = new System.Drawing.Point(481, 33);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(263, 106);
+            this.groupBox2.Size = new System.Drawing.Size(149, 86);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             // 
             // dtpdata
             // 
             this.dtpdata.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpdata.Location = new System.Drawing.Point(94, 57);
+            this.dtpdata.Location = new System.Drawing.Point(13, 55);
             this.dtpdata.Name = "dtpdata";
             this.dtpdata.Size = new System.Drawing.Size(115, 25);
             this.dtpdata.TabIndex = 50;
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(55, 16);
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(5, 18);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(167, 33);
+            this.label9.Size = new System.Drawing.Size(139, 33);
             this.label9.TabIndex = 49;
             this.label9.Text = "Mês";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1225,6 +1190,7 @@
             // 
             // label8
             // 
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(186, 14);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
@@ -1234,6 +1200,7 @@
             // 
             // label7
             // 
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(24, 13);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
@@ -1241,12 +1208,100 @@
             this.label7.TabIndex = 10;
             this.label7.Text = " FUNCIONARIO";
             // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(5, 59);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 14);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "0%";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(5, 30);
+            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(84, 10);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "-";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label14
+            // 
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(5, 27);
+            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(84, 10);
+            this.label14.TabIndex = 30;
+            this.label14.Text = "-";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(4, 8);
+            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(86, 12);
+            this.label15.TabIndex = 29;
+            this.label15.Text = "TOTAL";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(11, 28);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(136, 13);
+            this.label16.TabIndex = 29;
+            this.label16.Text = "-";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(30, 15);
+            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(110, 13);
+            this.label17.TabIndex = 28;
+            this.label17.Text = "FAIXA IRRF";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(6, 29);
+            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(136, 13);
+            this.label18.TabIndex = 84;
+            this.label18.Text = "-";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label21
+            // 
+            this.label21.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(25, 15);
+            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(110, 13);
+            this.label21.TabIndex = 83;
+            this.label21.Text = " BASE CÁLC FGTS";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // frmGerarFolhaD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(928, 578);
+            this.ClientSize = new System.Drawing.Size(820, 578);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox22);
             this.Controls.Add(this.groupBox21);
@@ -1329,8 +1384,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.GroupBox groupBox22;
-        private System.Windows.Forms.Label lblFaixaIRRF;
-        private System.Windows.Forms.Label label66;
         private System.Windows.Forms.GroupBox groupBox21;
         private System.Windows.Forms.Label lblCalcIRRF;
         private System.Windows.Forms.Label label64;
@@ -1338,8 +1391,6 @@
         private System.Windows.Forms.Label lblFGTSdoMes;
         private System.Windows.Forms.Label label62;
         private System.Windows.Forms.GroupBox groupBox19;
-        private System.Windows.Forms.Label lblFGTS;
-        private System.Windows.Forms.Label label60;
         private System.Windows.Forms.GroupBox groupBox18;
         private System.Windows.Forms.Label lblControlINSS;
         private System.Windows.Forms.Label label58;
@@ -1356,8 +1407,6 @@
         private System.Windows.Forms.Label lblValorLiquido;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.Label lblTotalDesconto;
-        private System.Windows.Forms.Label label43;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Label label47;
@@ -1365,7 +1414,6 @@
         private System.Windows.Forms.GroupBox groupBox12;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label lblTotalProvento;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label lblINSSProvento;
@@ -1398,5 +1446,13 @@
         private System.Windows.Forms.TextBox txtFuncionario;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label21;
     }
 }

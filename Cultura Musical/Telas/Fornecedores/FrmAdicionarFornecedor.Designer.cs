@@ -54,6 +54,7 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.mskCEP = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.txtBairro = new System.Windows.Forms.TextBox();
@@ -68,7 +69,6 @@
             this.txtRSocial = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.btnInserir = new System.Windows.Forms.Button();
-            this.mskCEP = new System.Windows.Forms.MaskedTextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -314,7 +314,7 @@
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.Font = new System.Drawing.Font("Stencil", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(362, 1);
             this.label6.Name = "label6";
@@ -390,6 +390,14 @@
             this.groupBox2.Size = new System.Drawing.Size(321, 229);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
+            // 
+            // mskCEP
+            // 
+            this.mskCEP.Location = new System.Drawing.Point(81, 31);
+            this.mskCEP.Mask = "00000-000";
+            this.mskCEP.Name = "mskCEP";
+            this.mskCEP.Size = new System.Drawing.Size(181, 20);
+            this.mskCEP.TabIndex = 16;
             // 
             // label12
             // 
@@ -529,14 +537,6 @@
             this.btnInserir.Click += new System.EventHandler(this.button9_Click);
             this.btnInserir.MouseEnter += new System.EventHandler(this.button9_MouseEnter);
             this.btnInserir.MouseLeave += new System.EventHandler(this.btnInserir_MouseLeave);
-            // 
-            // mskCEP
-            // 
-            this.mskCEP.Location = new System.Drawing.Point(81, 31);
-            this.mskCEP.Mask = "00000-000";
-            this.mskCEP.Name = "mskCEP";
-            this.mskCEP.Size = new System.Drawing.Size(181, 20);
-            this.mskCEP.TabIndex = 16;
             // 
             // FrmAdicionarFornecedor
             // 

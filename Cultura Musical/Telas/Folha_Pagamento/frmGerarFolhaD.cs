@@ -26,5 +26,16 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
         {
 
         }
+
+        private void lblTotalDesconto_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void lblControlINSS_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
