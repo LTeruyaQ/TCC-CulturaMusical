@@ -19,7 +19,8 @@ namespace Cultura_Musical.Telas.Funcionarios
 
         Business.Business_Funcionarios colaboradorBus = new Business.Business_Funcionarios();
         Business.Business_Jornada JornadaBus = new Business.Business_Jornada();
-       
+        Business.Business_Beneficio BeneficioBus = new Business.Business_Beneficio();
+               
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             try
@@ -27,9 +28,19 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
                 Database.Entity.tb_jornada Jornada = new Database.Entity.tb_jornada();
+                Database.Entity.tb_beneficio Beneficio = new Database.Entity.tb_beneficio();
 
 
-              
+
+                Beneficio.ds_va = nudVa.Value;
+                Beneficio.ds_vr = nudVr.Value;
+                Beneficio.ds_vt = nudVt.Value;
+
+                BeneficioBus.InserirBeneficio(Beneficio);
+
+
+
+
 
                 funcionario.nm_funcionario = txtNome.Text;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
@@ -44,9 +55,8 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_bairro = txtBairro.Text;
                 funcionario.ds_estado = txtEstado.Text;
                 funcionario.ds_rua = txtRua.Text;
-                funcionario.tb_beneficio.ds_va = nudVa.Value;
-                funcionario.tb_beneficio.ds_vr = nudVr.Value;
-                funcionario.tb_beneficio.ds_vt = nudVt.Value;
+                funcionario.id_beneficio = Beneficio.id_beneficio;
+                
                 
 
                 

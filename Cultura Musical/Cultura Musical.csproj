@@ -160,9 +160,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API%27s\Correio__API.cs" />
+    <Compile Include="API%27s\IbmVoiceResult.cs" />
     <Compile Include="API%27s\IBM_Voice.cs" />
     <Compile Include="API%27s\IBM_Voice_Result.cs" />
     <Compile Include="Business\Business_Agenda.cs" />
+    <Compile Include="Business\Business_Beneficio.cs" />
     <Compile Include="Business\Business_Cliente.cs" />
     <Compile Include="Business\Business_CRM.cs" />
     <Compile Include="Business\Business_Fornecedores.cs" />
@@ -179,6 +181,7 @@
     <Compile Include="Business\Business_Venda.cs" />
     <Compile Include="Cultura_Musical\Interfaces\Interface_Crud.cs" />
     <Compile Include="Database\Database_Agenda.cs" />
+    <Compile Include="Database\Database_Beneficios.cs" />
     <Compile Include="Database\Database_Cliente.cs" />
     <Compile Include="Database\Database_CRM.cs" />
     <Compile Include="Database\Database_Fornecedores.cs" />
