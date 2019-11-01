@@ -1048,7 +1048,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.gift_card;
+            this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.man;
             this.pictureBox3.Location = new System.Drawing.Point(47, 53);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(96, 66);

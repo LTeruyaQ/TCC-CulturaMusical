@@ -17,7 +17,7 @@ namespace Cultura_Musical.Telas.Funcionarios
             InitializeComponent();
         }
 
-        Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();
+        Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();       
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
@@ -35,8 +35,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_rg = txtRG.Text;
                 funcionario.ds_bairro = txtBairro.Text;
                 funcionario.ds_estado = txtEstado.Text;
-                funcionario.ds_rua = txtRua.Text;
-               
+                funcionario.ds_rua = txtRua.Text;              
 
                 if (rdnCNPJ.Checked == true)
                 {
@@ -85,11 +84,6 @@ namespace Cultura_Musical.Telas.Funcionarios
             txtRua.Text = resp.logradouro;
             txtEstado.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
-        }
-
-        private void txtCEP_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
         }
     }
 }

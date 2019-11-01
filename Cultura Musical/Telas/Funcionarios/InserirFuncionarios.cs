@@ -49,11 +49,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_estado = txtEstado.Text;
                 funcionario.ds_rua = txtRua.Text;
                 funcionario.id_beneficio = Beneficio.id_beneficio;
-                
-               
-
-              
-
+                                         
                 string genero = cboGenero.Text;
 
                 if (genero == "masculino")
@@ -84,7 +80,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 MessageBox.Show(ex.Message);
             }
 
-            //catch (Exception)
+            ////catch (Exception)
             //{
             //    MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             //}

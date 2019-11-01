@@ -706,6 +706,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\store.png" />
     <None Include="Resources\price.png" />
     <None Include="Resources\tag.png" />
     <None Include="Resources\temporary-offer.png" />

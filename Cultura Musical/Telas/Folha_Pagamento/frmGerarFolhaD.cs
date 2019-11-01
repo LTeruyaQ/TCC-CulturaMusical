@@ -37,5 +37,10 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
         {
 
         }
+
+        private void frmGerarFolhaD_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
