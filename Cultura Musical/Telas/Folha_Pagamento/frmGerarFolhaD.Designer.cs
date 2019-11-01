@@ -84,7 +84,7 @@
             this.lblSalarioProvento = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblGratificacaoReferencia = new System.Windows.Forms.Label();
             this.lblINSSReferencia = new System.Windows.Forms.Label();
             this.lblVTReferencia = new System.Windows.Forms.Label();
             this.lblVAReferencia = new System.Windows.Forms.Label();
@@ -805,7 +805,7 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.label5);
+            this.groupBox6.Controls.Add(this.lblGratificacaoReferencia);
             this.groupBox6.Controls.Add(this.lblINSSReferencia);
             this.groupBox6.Controls.Add(this.lblVTReferencia);
             this.groupBox6.Controls.Add(this.lblVAReferencia);
@@ -820,16 +820,16 @@
             this.groupBox6.TabIndex = 71;
             this.groupBox6.TabStop = false;
             // 
-            // label5
+            // lblGratificacaoReferencia
             // 
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(5, 59);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 14);
-            this.label5.TabIndex = 36;
-            this.label5.Text = "0%";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblGratificacaoReferencia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGratificacaoReferencia.Location = new System.Drawing.Point(5, 59);
+            this.lblGratificacaoReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblGratificacaoReferencia.Name = "lblGratificacaoReferencia";
+            this.lblGratificacaoReferencia.Size = new System.Drawing.Size(85, 14);
+            this.lblGratificacaoReferencia.TabIndex = 36;
+            this.lblGratificacaoReferencia.Text = "0%";
+            this.lblGratificacaoReferencia.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // lblINSSReferencia
             // 
@@ -976,7 +976,6 @@
             this.groupBox1.Size = new System.Drawing.Size(640, 155);
             this.groupBox1.TabIndex = 68;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBox2
             // 
@@ -1030,7 +1029,6 @@
             this.btnProcurar.TabIndex = 22;
             this.btnProcurar.Text = "Procurar";
             this.btnProcurar.UseVisualStyleBackColor = true;
-            this.btnProcurar.Click += new System.EventHandler(this.btnProcurar_Click);
             // 
             // txtFuncao
             // 
@@ -1526,7 +1524,7 @@
         private System.Windows.Forms.TextBox txtFuncionario;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblGratificacaoReferencia;
         private System.Windows.Forms.Label lblTotalProvento;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label lblTotalDesconto;

@@ -17,22 +17,47 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
             InitializeComponent();
         }
 
-        Business.Business_Folha_Pagamento folha = new Business.Business_Folha_Pagamento();
-        business.business_financeiro finan
+        Business.Business_Folha_Pagamento folhaBus = new Business.Business_Folha_Pagamento();
+        Business.Business_Financeiro financeiroBus = new Business.Business_Financeiro();
 
-        private void btnprocurar_click(object sender, eventargs e)
+        private void btnprocurar_click(object sender, EventArgs e)
         {
             try
             {
-                database.entity.tb_funcionario fon = new database.entity.tb_funcionario();
+                Database.Entity.tb_funcionario fon = new Database.Entity.tb_funcionario();
+                Database.Entity.tb_financeiro Financeiro = new Database.Entity.tb_financeiro();
+                Database.Entity.tb_funcionario holerites = folhaBus.ConsultarPorFuncionario(fon);
 
 
 
-                database.entity.tb_funcionario holerites = folha.consultarporfuncionario(fon);
+                    Financeiro.ds_fgts = 8;
+
+                   
+                if (holerites.vl_salario >= 1659)
+                {
+                    Financeiro.ds_inss = 8;
+                }
+
+                if (holerites.vl_salario >= 1659 && holerites.vl_salario <= 2765)
+                {
+                    Financeiro.ds_inss = 9;
+                }
+
+                if (holerites.vl_salario >= 2765 && holerites.vl_salario <= 5531)
+                {
+                    Financeiro.ds_inss = 11;
+                }
+
+                if (holerites.vl_salario > 5531)
+                {
+                    lblINSSDesconto.Text = Convert.ToString(642,34);
+                }
+
+
                 decimal totalprovento = holerites.vl_salario;
-                decimal totaldesconto =
-                // + holerites.ds_provento
-                lblsalarioprovento.text = convert.tostring(holerites.vl_salario);
+                decimal totaldesconto = 
+
+                lblSalarioProvento.Text = Convert.ToString (holerites.vl_salario);
                 lblvadesconto.text = convert.tostring(holerites.tb_beneficio.ds_va);
                 lblvtdesconto.text = convert.tostring(holerites.tb_beneficio.ds_vt);
 
