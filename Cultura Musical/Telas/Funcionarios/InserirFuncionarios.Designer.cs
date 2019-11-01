@@ -70,7 +70,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblRetorno = new System.Windows.Forms.Label();
             this.dtpSaida = new System.Windows.Forms.DateTimePicker();
             this.dtpRetorno = new System.Windows.Forms.DateTimePicker();
             this.dtpEntrada = new System.Windows.Forms.DateTimePicker();
@@ -552,7 +552,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.lblRetorno);
             this.groupBox3.Controls.Add(this.dtpSaida);
             this.groupBox3.Controls.Add(this.dtpRetorno);
             this.groupBox3.Controls.Add(this.dtpEntrada);
@@ -575,14 +575,14 @@
             this.label12.TabIndex = 90;
             this.label12.Text = "Horário de Entrada:";
             // 
-            // label1
+            // lblRetorno
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(238, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 13);
-            this.label1.TabIndex = 95;
-            this.label1.Text = "Horário de Retoeno:";
+            this.lblRetorno.AutoSize = true;
+            this.lblRetorno.Location = new System.Drawing.Point(238, 66);
+            this.lblRetorno.Name = "lblRetorno";
+            this.lblRetorno.Size = new System.Drawing.Size(100, 13);
+            this.lblRetorno.TabIndex = 95;
+            this.lblRetorno.Text = "Horário de Retorno:";
             // 
             // dtpSaida
             // 
@@ -1148,7 +1148,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblRetorno;
         private System.Windows.Forms.DateTimePicker dtpSaida;
         private System.Windows.Forms.DateTimePicker dtpRetorno;
         private System.Windows.Forms.DateTimePicker dtpEntrada;
