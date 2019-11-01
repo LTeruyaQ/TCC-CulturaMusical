@@ -77,10 +77,7 @@
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.cboGenero = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtMascara = new System.Windows.Forms.MaskedTextBox();
-            this.rdnCNPJ = new System.Windows.Forms.RadioButton();
-            this.rdnCPF = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -107,6 +104,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.tabPage4.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -118,7 +117,6 @@
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -454,7 +452,6 @@
             // 
             this.tabPage2.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage2.Controls.Add(this.groupBox2);
-            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage2.Location = new System.Drawing.Point(4, 23);
             this.tabPage2.Name = "tabPage2";
@@ -466,23 +463,25 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.SkyBlue;
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.txtMascara);
             this.groupBox2.Controls.Add(this.pictureBox3);
             this.groupBox2.Controls.Add(this.label28);
             this.groupBox2.Controls.Add(this.txtNome);
             this.groupBox2.Controls.Add(this.dateTimePicker2);
-            this.groupBox2.Controls.Add(this.label26);
             this.groupBox2.Controls.Add(this.label24);
-            this.groupBox2.Controls.Add(this.txtEmail);
             this.groupBox2.Controls.Add(this.txtRG);
             this.groupBox2.Controls.Add(this.label10);
+            this.groupBox2.Controls.Add(this.txtEmail);
             this.groupBox2.Controls.Add(this.label25);
             this.groupBox2.Controls.Add(this.txtTelefone);
             this.groupBox2.Controls.Add(this.cboGenero);
             this.groupBox2.Controls.Add(this.label27);
-            this.groupBox2.Location = new System.Drawing.Point(11, 20);
+            this.groupBox2.Location = new System.Drawing.Point(-4, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(575, 156);
+            this.groupBox2.Size = new System.Drawing.Size(568, 286);
             this.groupBox2.TabIndex = 90;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados pessoais";
@@ -508,7 +507,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(9, 37);
+            this.label28.Location = new System.Drawing.Point(18, 41);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(39, 16);
             this.label28.TabIndex = 79;
@@ -516,15 +515,15 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(53, 34);
+            this.txtNome.Location = new System.Drawing.Point(62, 38);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(100, 22);
+            this.txtNome.Size = new System.Drawing.Size(334, 22);
             this.txtNome.TabIndex = 80;
             // 
             // dateTimePicker2
             // 
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(298, 122);
+            this.dateTimePicker2.Location = new System.Drawing.Point(285, 168);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(100, 22);
             this.dateTimePicker2.TabIndex = 88;
@@ -532,16 +531,16 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(253, 37);
+            this.label26.Location = new System.Drawing.Point(-181, 280);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(40, 16);
+            this.label26.Size = new System.Drawing.Size(38, 13);
             this.label26.TabIndex = 82;
             this.label26.Text = "E-mail:";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(182, 128);
+            this.label24.Location = new System.Drawing.Point(282, 149);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(105, 16);
             this.label24.TabIndex = 87;
@@ -549,14 +548,14 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(298, 34);
+            this.txtEmail.Location = new System.Drawing.Point(62, 78);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(100, 22);
+            this.txtEmail.Size = new System.Drawing.Size(334, 22);
             this.txtEmail.TabIndex = 84;
             // 
             // txtRG
             // 
-            this.txtRG.Location = new System.Drawing.Point(56, 122);
+            this.txtRG.Location = new System.Drawing.Point(97, 215);
             this.txtRG.Mask = "00.000.000-0";
             this.txtRG.Name = "txtRG";
             this.txtRG.Size = new System.Drawing.Size(100, 22);
@@ -565,7 +564,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 84);
+            this.label10.Location = new System.Drawing.Point(46, 168);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(47, 16);
             this.label10.TabIndex = 46;
@@ -574,7 +573,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(18, 122);
+            this.label25.Location = new System.Drawing.Point(58, 215);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(30, 16);
             this.label25.TabIndex = 83;
@@ -582,7 +581,7 @@
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(298, 82);
+            this.txtTelefone.Location = new System.Drawing.Point(98, 125);
             this.txtTelefone.Mask = "(99)0000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(100, 22);
@@ -595,7 +594,7 @@
             this.cboGenero.Items.AddRange(new object[] {
             "Masculino",
             "Feminino"});
-            this.cboGenero.Location = new System.Drawing.Point(54, 82);
+            this.cboGenero.Location = new System.Drawing.Point(97, 166);
             this.cboGenero.Name = "cboGenero";
             this.cboGenero.Size = new System.Drawing.Size(101, 24);
             this.cboGenero.TabIndex = 58;
@@ -603,53 +602,20 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(239, 82);
+            this.label27.Location = new System.Drawing.Point(39, 125);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(52, 16);
             this.label27.TabIndex = 81;
             this.label27.Text = "Telefone:";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.Color.SkyBlue;
-            this.groupBox1.Controls.Add(this.txtMascara);
-            this.groupBox1.Controls.Add(this.rdnCNPJ);
-            this.groupBox1.Controls.Add(this.rdnCPF);
-            this.groupBox1.Location = new System.Drawing.Point(11, 182);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(575, 90);
-            this.groupBox1.TabIndex = 89;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Tipo";
-            // 
             // txtMascara
             // 
-            this.txtMascara.Location = new System.Drawing.Point(95, 36);
+            this.txtMascara.Location = new System.Drawing.Point(285, 212);
             this.txtMascara.Mask = "000000000/0000-00";
             this.txtMascara.Name = "txtMascara";
             this.txtMascara.Size = new System.Drawing.Size(109, 22);
             this.txtMascara.TabIndex = 67;
             this.txtMascara.Visible = false;
-            // 
-            // rdnCNPJ
-            // 
-            this.rdnCNPJ.AutoSize = true;
-            this.rdnCNPJ.Location = new System.Drawing.Point(12, 32);
-            this.rdnCNPJ.Name = "rdnCNPJ";
-            this.rdnCNPJ.Size = new System.Drawing.Size(54, 20);
-            this.rdnCNPJ.TabIndex = 66;
-            this.rdnCNPJ.Text = "CNPJ";
-            this.rdnCNPJ.UseVisualStyleBackColor = true;
-            // 
-            // rdnCPF
-            // 
-            this.rdnCPF.AutoSize = true;
-            this.rdnCPF.Location = new System.Drawing.Point(12, 62);
-            this.rdnCPF.Name = "rdnCPF";
-            this.rdnCPF.Size = new System.Drawing.Size(48, 20);
-            this.rdnCPF.TabIndex = 65;
-            this.rdnCPF.Text = "CPF";
-            this.rdnCPF.UseVisualStyleBackColor = true;
             // 
             // tabControl1
             // 
@@ -744,6 +710,7 @@
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.label26);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
@@ -980,6 +947,24 @@
             this.panel4.Size = new System.Drawing.Size(19, 45);
             this.panel4.TabIndex = 98;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(249, 215);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(30, 16);
+            this.label17.TabIndex = 93;
+            this.label17.Text = "CPF";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(18, 81);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(36, 16);
+            this.label18.TabIndex = 94;
+            this.label18.Text = "Email:";
+            // 
             // frmCadastroFuncionarioD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1011,13 +996,12 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -1079,10 +1063,7 @@
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.ComboBox cboGenero;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.MaskedTextBox txtMascara;
-        private System.Windows.Forms.RadioButton rdnCNPJ;
-        private System.Windows.Forms.RadioButton rdnCPF;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -1111,5 +1092,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
     }
 }
