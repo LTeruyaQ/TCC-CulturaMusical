@@ -64,10 +64,10 @@
             this.lblValorLiquido = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblTotalProvento = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.TotalDesconto = new System.Windows.Forms.GroupBox();
+            this.lblTotalDesconto = new System.Windows.Forms.Label();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
@@ -143,7 +143,7 @@
             this.groupBox15.SuspendLayout();
             this.groupBox16.SuspendLayout();
             this.groupBox11.SuspendLayout();
-            this.groupBox10.SuspendLayout();
+            this.TotalDesconto.SuspendLayout();
             this.groupBox13.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -177,7 +177,7 @@
             this.groupBox8.Controls.Add(this.label19);
             this.groupBox8.Controls.Add(this.label20);
             this.groupBox8.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(559, 285);
+            this.groupBox8.Location = new System.Drawing.Point(646, 292);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
@@ -266,7 +266,7 @@
             this.groupBox22.Controls.Add(this.label16);
             this.groupBox22.Controls.Add(this.label17);
             this.groupBox22.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox22.Location = new System.Drawing.Point(389, 553);
+            this.groupBox22.Location = new System.Drawing.Point(444, 560);
             this.groupBox22.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox22.Name = "groupBox22";
             this.groupBox22.Padding = new System.Windows.Forms.Padding(2);
@@ -301,7 +301,7 @@
             this.groupBox21.Controls.Add(this.lblCalcIRRF);
             this.groupBox21.Controls.Add(this.label64);
             this.groupBox21.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox21.Location = new System.Drawing.Point(220, 553);
+            this.groupBox21.Location = new System.Drawing.Point(275, 560);
             this.groupBox21.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox21.Name = "groupBox21";
             this.groupBox21.Padding = new System.Windows.Forms.Padding(2);
@@ -336,7 +336,7 @@
             this.groupBox20.Controls.Add(this.lblFGTSdoMes);
             this.groupBox20.Controls.Add(this.label62);
             this.groupBox20.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox20.Location = new System.Drawing.Point(556, 504);
+            this.groupBox20.Location = new System.Drawing.Point(611, 511);
             this.groupBox20.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox20.Name = "groupBox20";
             this.groupBox20.Padding = new System.Windows.Forms.Padding(2);
@@ -371,7 +371,7 @@
             this.groupBox19.Controls.Add(this.label18);
             this.groupBox19.Controls.Add(this.label21);
             this.groupBox19.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox19.Location = new System.Drawing.Point(556, 553);
+            this.groupBox19.Location = new System.Drawing.Point(611, 560);
             this.groupBox19.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox19.Name = "groupBox19";
             this.groupBox19.Padding = new System.Windows.Forms.Padding(2);
@@ -406,7 +406,7 @@
             this.groupBox18.Controls.Add(this.lblControlINSS);
             this.groupBox18.Controls.Add(this.label58);
             this.groupBox18.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox18.Location = new System.Drawing.Point(392, 504);
+            this.groupBox18.Location = new System.Drawing.Point(447, 511);
             this.groupBox18.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox18.Name = "groupBox18";
             this.groupBox18.Padding = new System.Windows.Forms.Padding(2);
@@ -442,7 +442,7 @@
             this.groupBox17.Controls.Add(this.lblSalarioBase);
             this.groupBox17.Controls.Add(this.label56);
             this.groupBox17.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox17.Location = new System.Drawing.Point(220, 504);
+            this.groupBox17.Location = new System.Drawing.Point(275, 511);
             this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox17.Name = "groupBox17";
             this.groupBox17.Padding = new System.Windows.Forms.Padding(2);
@@ -479,7 +479,7 @@
             this.groupBox14.Controls.Add(this.lblValorLiquido);
             this.groupBox14.Controls.Add(this.label54);
             this.groupBox14.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox14.Location = new System.Drawing.Point(415, 448);
+            this.groupBox14.Location = new System.Drawing.Point(307, 456);
             this.groupBox14.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox14.Name = "groupBox14";
             this.groupBox14.Padding = new System.Windows.Forms.Padding(2);
@@ -575,10 +575,10 @@
             // 
             // groupBox11
             // 
-            this.groupBox11.Controls.Add(this.label14);
+            this.groupBox11.Controls.Add(this.lblTotalProvento);
             this.groupBox11.Controls.Add(this.label15);
             this.groupBox11.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox11.Location = new System.Drawing.Point(317, 448);
+            this.groupBox11.Location = new System.Drawing.Point(545, 455);
             this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.Padding = new System.Windows.Forms.Padding(2);
@@ -586,16 +586,16 @@
             this.groupBox11.TabIndex = 75;
             this.groupBox11.TabStop = false;
             // 
-            // label14
+            // lblTotalProvento
             // 
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(5, 27);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(84, 10);
-            this.label14.TabIndex = 30;
-            this.label14.Text = "-";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTotalProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalProvento.Location = new System.Drawing.Point(5, 27);
+            this.lblTotalProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalProvento.Name = "lblTotalProvento";
+            this.lblTotalProvento.Size = new System.Drawing.Size(84, 10);
+            this.lblTotalProvento.TabIndex = 30;
+            this.lblTotalProvento.Text = "-";
+            this.lblTotalProvento.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label15
             // 
@@ -608,31 +608,31 @@
             this.label15.Text = "TOTAL";
             this.label15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // groupBox10
+            // TotalDesconto
             // 
-            this.groupBox10.Controls.Add(this.label11);
-            this.groupBox10.Controls.Add(this.groupBox13);
-            this.groupBox10.Controls.Add(this.groupBox12);
-            this.groupBox10.Controls.Add(this.label45);
-            this.groupBox10.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox10.Location = new System.Drawing.Point(220, 449);
-            this.groupBox10.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox10.Size = new System.Drawing.Size(93, 44);
-            this.groupBox10.TabIndex = 74;
-            this.groupBox10.TabStop = false;
+            this.TotalDesconto.Controls.Add(this.lblTotalDesconto);
+            this.TotalDesconto.Controls.Add(this.groupBox13);
+            this.TotalDesconto.Controls.Add(this.groupBox12);
+            this.TotalDesconto.Controls.Add(this.label45);
+            this.TotalDesconto.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalDesconto.Location = new System.Drawing.Point(646, 456);
+            this.TotalDesconto.Margin = new System.Windows.Forms.Padding(2);
+            this.TotalDesconto.Name = "TotalDesconto";
+            this.TotalDesconto.Padding = new System.Windows.Forms.Padding(2);
+            this.TotalDesconto.Size = new System.Drawing.Size(93, 44);
+            this.TotalDesconto.TabIndex = 74;
+            this.TotalDesconto.TabStop = false;
             // 
-            // label11
+            // lblTotalDesconto
             // 
-            this.label11.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(5, 30);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(84, 10);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "-";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblTotalDesconto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalDesconto.Location = new System.Drawing.Point(5, 30);
+            this.lblTotalDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTotalDesconto.Name = "lblTotalDesconto";
+            this.lblTotalDesconto.Size = new System.Drawing.Size(84, 10);
+            this.lblTotalDesconto.TabIndex = 28;
+            this.lblTotalDesconto.Text = "-";
+            this.lblTotalDesconto.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox13
             // 
@@ -719,7 +719,7 @@
             this.groupBox7.Controls.Add(this.lblSalarioProvento);
             this.groupBox7.Controls.Add(this.label32);
             this.groupBox7.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(459, 286);
+            this.groupBox7.Location = new System.Drawing.Point(546, 293);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
@@ -812,7 +812,7 @@
             this.groupBox6.Controls.Add(this.lblReferenciaSalario);
             this.groupBox6.Controls.Add(this.label23);
             this.groupBox6.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(365, 286);
+            this.groupBox6.Location = new System.Drawing.Point(452, 293);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
@@ -895,7 +895,7 @@
             this.groupBox5.Controls.Add(this.lblSalario);
             this.groupBox5.Controls.Add(this.label13);
             this.groupBox5.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(220, 286);
+            this.groupBox5.Location = new System.Drawing.Point(307, 293);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
@@ -969,11 +969,11 @@
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Font = new System.Drawing.Font("Stencil", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(220, 140);
+            this.groupBox1.Location = new System.Drawing.Point(220, 134);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(640, 142);
+            this.groupBox1.Size = new System.Drawing.Size(640, 155);
             this.groupBox1.TabIndex = 68;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -1405,7 +1405,7 @@
             this.Controls.Add(this.groupBox17);
             this.Controls.Add(this.groupBox14);
             this.Controls.Add(this.groupBox11);
-            this.Controls.Add(this.groupBox10);
+            this.Controls.Add(this.TotalDesconto);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
@@ -1426,7 +1426,7 @@
             this.groupBox15.ResumeLayout(false);
             this.groupBox16.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
-            this.groupBox10.ResumeLayout(false);
+            this.TotalDesconto.ResumeLayout(false);
             this.groupBox13.ResumeLayout(false);
             this.groupBox12.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
@@ -1487,7 +1487,7 @@
         private System.Windows.Forms.Label lblValorLiquido;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.GroupBox TotalDesconto;
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label48;
@@ -1527,9 +1527,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lblTotalProvento;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblTotalDesconto;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
