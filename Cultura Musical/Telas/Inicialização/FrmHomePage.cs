@@ -66,10 +66,8 @@ namespace Cultura_Musical.Telas
 
         private void btnParar_Click(object sender, EventArgs e)
         {
-
             //string texto = ibm.PararOuvir();
-            //lblFalar.Text = texto;
-            
+            //lblFalar.Text = texto;            
         }
     }
 }

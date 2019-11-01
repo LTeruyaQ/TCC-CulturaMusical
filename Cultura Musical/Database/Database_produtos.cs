@@ -25,7 +25,7 @@ namespace Cultura_Musical.Database
         public List<Entity.tb_produto> ListarPorNome(string nome)
         {
             List<Entity.tb_produto> produtos = DB.tb_produto.Where(T => T.nm_produto.Contains(nome))
-                                                                      .ToList();
+                                                                         .ToList();
             return produtos;
         }
 

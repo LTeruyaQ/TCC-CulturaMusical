@@ -27,7 +27,6 @@ namespace Cultura_Musical.Business
 
         public void AlterarProduto(Database.Entity.tb_produto altproduto)
         {
-
             this.validacao(altproduto);
             Database.Database_produtos pro = new Database.Database_produtos();
             pro.Alterar(altproduto);

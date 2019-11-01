@@ -25,9 +25,6 @@ namespace Cultura_Musical.Telas.Produtos
 
             dgvListar_Pedidos.DataSource = con;
         }
-
-   
-
         private void txtProduto_TextChanged(object sender, EventArgs e)
         {
             try

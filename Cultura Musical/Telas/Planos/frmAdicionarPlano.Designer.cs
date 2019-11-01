@@ -412,7 +412,7 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(192, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(522, 66);
+            this.panel2.Size = new System.Drawing.Size(572, 66);
             this.panel2.TabIndex = 9;
             // 
             // label12
@@ -424,7 +424,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(400, 64);
             this.label12.TabIndex = 7;
-            this.label12.Text = "Adicionar Holerite";
+            this.label12.Text = "Adicionar Plano";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -678,7 +678,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(714, 522);
+            this.ClientSize = new System.Drawing.Size(764, 522);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

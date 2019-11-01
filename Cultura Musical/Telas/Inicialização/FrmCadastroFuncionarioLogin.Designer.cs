@@ -49,6 +49,7 @@
             this.label3.Size = new System.Drawing.Size(184, 38);
             this.label3.TabIndex = 9;
             this.label3.Text = "Cadastro";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // txtSenha
             // 
@@ -59,6 +60,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(141, 26);
             this.txtSenha.TabIndex = 8;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // txtUsuario
             // 
@@ -69,6 +71,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(141, 26);
             this.txtUsuario.TabIndex = 7;
+            this.txtUsuario.TextChanged += new System.EventHandler(this.txtUsuario_TextChanged);
             // 
             // label2
             // 
@@ -81,6 +84,7 @@
             this.label2.Size = new System.Drawing.Size(54, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "Senha:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -93,6 +97,7 @@
             this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "Usuário:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnConfirmar_Login
             // 
@@ -116,6 +121,7 @@
             this.txtconfirmar.Name = "txtconfirmar";
             this.txtconfirmar.Size = new System.Drawing.Size(141, 26);
             this.txtconfirmar.TabIndex = 12;
+            this.txtconfirmar.TextChanged += new System.EventHandler(this.txtconfirmar_TextChanged);
             // 
             // label4
             // 
@@ -128,6 +134,7 @@
             this.label4.Size = new System.Drawing.Size(130, 16);
             this.label4.TabIndex = 11;
             this.label4.Text = "Confirmar senha:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // FrmCadastroFuncionarioLogin
             // 
