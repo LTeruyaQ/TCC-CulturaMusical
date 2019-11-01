@@ -20,6 +20,7 @@ namespace Cultura_Musical.Telas.Funcionarios
         private void frmConsultarFuncionarioD_Load(object sender, EventArgs e)
         {
             int n = 0;
+
             for (int i = 0; i < 5; i++)
             {
                 n = dataGridView1.Rows.Add();
@@ -49,7 +50,6 @@ namespace Cultura_Musical.Telas.Funcionarios
                 dataGridView1.Rows[n].Cells[2].Value = "-------------------";
                 dataGridView1.Rows[n].Cells[3].Value = "-------------------";
                 dataGridView1.Rows[n].Cells[4].Value = "-------------------";
-
             }
 
             dataGridView1.BorderStyle = BorderStyle.None;
@@ -66,19 +66,6 @@ namespace Cultura_Musical.Telas.Funcionarios
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
     }
 }

@@ -79,7 +79,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtmascaraCPF = new System.Windows.Forms.MaskedTextBox();
             this.label28 = new System.Windows.Forms.Label();
+            this.rdnCPF = new System.Windows.Forms.RadioButton();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label26 = new System.Windows.Forms.Label();
@@ -91,11 +93,28 @@
             this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.cboGenero = new System.Windows.Forms.ComboBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.txtmascaraCPF = new System.Windows.Forms.MaskedTextBox();
-            this.rdnCPF = new System.Windows.Forms.RadioButton();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.tabPage5.SuspendLayout();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudVa)).BeginInit();
@@ -113,6 +132,16 @@
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage5
@@ -640,6 +669,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados pessoais";
             // 
+            // txtmascaraCPF
+            // 
+            this.txtmascaraCPF.Location = new System.Drawing.Point(72, 167);
+            this.txtmascaraCPF.Mask = "000000000/0000-00";
+            this.txtmascaraCPF.Name = "txtmascaraCPF";
+            this.txtmascaraCPF.Size = new System.Drawing.Size(109, 20);
+            this.txtmascaraCPF.TabIndex = 68;
+            // 
             // label28
             // 
             this.label28.AutoSize = true;
@@ -648,6 +685,16 @@
             this.label28.Size = new System.Drawing.Size(38, 13);
             this.label28.TabIndex = 79;
             this.label28.Text = "Nome:";
+            // 
+            // rdnCPF
+            // 
+            this.rdnCPF.AutoSize = true;
+            this.rdnCPF.Location = new System.Drawing.Point(14, 170);
+            this.rdnCPF.Name = "rdnCPF";
+            this.rdnCPF.Size = new System.Drawing.Size(45, 17);
+            this.rdnCPF.TabIndex = 65;
+            this.rdnCPF.Text = "CPF";
+            this.rdnCPF.UseVisualStyleBackColor = true;
             // 
             // txtNome
             // 
@@ -744,31 +791,13 @@
             this.label27.TabIndex = 81;
             this.label27.Text = "Telefone:";
             // 
-            // txtmascaraCPF
-            // 
-            this.txtmascaraCPF.Location = new System.Drawing.Point(72, 167);
-            this.txtmascaraCPF.Mask = "000000000/0000-00";
-            this.txtmascaraCPF.Name = "txtmascaraCPF";
-            this.txtmascaraCPF.Size = new System.Drawing.Size(109, 20);
-            this.txtmascaraCPF.TabIndex = 68;
-            // 
-            // rdnCPF
-            // 
-            this.rdnCPF.AutoSize = true;
-            this.rdnCPF.Location = new System.Drawing.Point(14, 170);
-            this.rdnCPF.Name = "rdnCPF";
-            this.rdnCPF.Size = new System.Drawing.Size(45, 17);
-            this.rdnCPF.TabIndex = 65;
-            this.rdnCPF.Text = "CPF";
-            this.rdnCPF.UseVisualStyleBackColor = true;
-            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Location = new System.Drawing.Point(1, -2);
+            this.tabControl1.Location = new System.Drawing.Point(271, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(521, 440);
@@ -781,20 +810,267 @@
             this.btnCadastrar.FlatAppearance.BorderSize = 20;
             this.btnCadastrar.Font = new System.Drawing.Font("Century Gothic", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
-            this.btnCadastrar.Location = new System.Drawing.Point(299, 444);
+            this.btnCadastrar.Location = new System.Drawing.Point(569, 454);
             this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(223, 62);
+            this.btnCadastrar.Size = new System.Drawing.Size(223, 51);
             this.btnCadastrar.TabIndex = 90;
             this.btnCadastrar.Text = "Cadastrar";
             this.btnCadastrar.UseVisualStyleBackColor = false;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox10);
+            this.panel1.Controls.Add(this.pictureBox9);
+            this.panel1.Controls.Add(this.pictureBox8);
+            this.panel1.Controls.Add(this.pictureBox7);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Controls.Add(this.pictureBox5);
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(192, 511);
+            this.panel1.TabIndex = 91;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Cultura_Musical.Properties.Resources.temporary_offer;
+            this.pictureBox10.Location = new System.Drawing.Point(16, 375);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(33, 10);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 96;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Cultura_Musical.Properties.Resources.man;
+            this.pictureBox9.Location = new System.Drawing.Point(17, 175);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(32, 10);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 97;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Cultura_Musical.Properties.Resources.bow;
+            this.pictureBox8.Location = new System.Drawing.Point(19, 222);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(33, 10);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 92;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Cultura_Musical.Properties.Resources.calendar;
+            this.pictureBox7.Location = new System.Drawing.Point(19, 133);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(32, 12);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 93;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Cultura_Musical.Properties.Resources.gift_card;
+            this.pictureBox2.Location = new System.Drawing.Point(17, 277);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 10);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 91;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Cultura_Musical.Properties.Resources.barcode;
+            this.pictureBox6.Location = new System.Drawing.Point(17, 328);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(31, 10);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 94;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Cultura_Musical.Properties.Resources.price;
+            this.pictureBox5.Location = new System.Drawing.Point(17, 480);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(26, 10);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 95;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Cultura_Musical.Properties.Resources.tag;
+            this.pictureBox4.Location = new System.Drawing.Point(17, 426);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(26, 10);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 90;
+            this.pictureBox4.TabStop = false;
+            // 
+            // button8
+            // 
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(80, 470);
+            this.button8.Name = "button8";
+            this.button8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button8.Size = new System.Drawing.Size(86, 32);
+            this.button8.TabIndex = 89;
+            this.button8.Text = "Vendas";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(16, 419);
+            this.button7.Name = "button7";
+            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button7.Size = new System.Drawing.Size(150, 32);
+            this.button7.TabIndex = 88;
+            this.button7.Text = "Produtos";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(16, 367);
+            this.button6.Name = "button6";
+            this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button6.Size = new System.Drawing.Size(153, 32);
+            this.button6.TabIndex = 87;
+            this.button6.Text = "Logistica";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(80, 317);
+            this.button5.Name = "button5";
+            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button5.Size = new System.Drawing.Size(89, 32);
+            this.button5.TabIndex = 86;
+            this.button5.Text = "Holerite";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Location = new System.Drawing.Point(16, 215);
+            this.button4.Name = "button4";
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button4.Size = new System.Drawing.Size(150, 32);
+            this.button4.TabIndex = 85;
+            this.button4.Text = "CRM";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(64, 266);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button3.Size = new System.Drawing.Size(120, 32);
+            this.button3.TabIndex = 84;
+            this.button3.Text = "Fornecedores";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(16, 164);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button2.Size = new System.Drawing.Size(156, 32);
+            this.button2.TabIndex = 83;
+            this.button2.Text = "Colaboradores";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(16, 125);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button1.Size = new System.Drawing.Size(153, 32);
+            this.button1.TabIndex = 82;
+            this.button1.Text = "Agenda";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.gift_card;
+            this.pictureBox3.Location = new System.Drawing.Point(47, 53);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(96, 66);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 81;
+            this.pictureBox3.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Yellow;
+            this.panel4.Location = new System.Drawing.Point(3, 30);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(19, 45);
+            this.panel4.TabIndex = 3;
             // 
             // InserirFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(833, 518);
+            this.ClientSize = new System.Drawing.Size(814, 511);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.tabControl1);
             this.Name = "InserirFuncionarios";
@@ -823,6 +1099,16 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -897,5 +1183,24 @@
         private System.Windows.Forms.CheckBox chkQuinta;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

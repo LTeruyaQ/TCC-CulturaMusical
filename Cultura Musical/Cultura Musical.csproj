@@ -706,6 +706,14 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\price.png" />
+    <None Include="Resources\tag.png" />
+    <None Include="Resources\temporary-offer.png" />
+    <None Include="Resources\barcode.png" />
+    <None Include="Resources\bow.png" />
+    <None Include="Resources\man.png" />
+    <None Include="Resources\calendar.png" />
+    <None Include="Resources\gift-card.png" />
     <None Include="Resources\download.png" />
     <None Include="Resources\lapis.png" />
     <None Include="Resources\Imagens\agenda.png" />

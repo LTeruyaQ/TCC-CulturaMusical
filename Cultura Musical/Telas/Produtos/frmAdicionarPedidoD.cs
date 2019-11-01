@@ -57,9 +57,15 @@ namespace Cultura_Musical.Telas.Produtos
 
                 MessageBox.Show("Produto adicionado com sucesso");
             }
+
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
             catch (Exception)
             {
-                MessageBox.Show("Verifique se tods os campos foram preenchidos.");
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde");
             }
         }
     }
