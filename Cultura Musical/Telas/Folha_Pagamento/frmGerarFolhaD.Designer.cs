@@ -424,7 +424,7 @@
             this.lblControlINSS.TabIndex = 27;
             this.lblControlINSS.Text = "-";
             this.lblControlINSS.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblControlINSS.Click += new System.EventHandler(this.lblControlINSS_Click);
+          
             // 
             // label58
             // 
@@ -1412,7 +1412,7 @@
             this.Name = "frmGerarFolhaD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGerarFolhaD";
-            this.Load += new System.EventHandler(this.frmGerarFolhaD_Load);
+   
             this.groupBox8.ResumeLayout(false);
             this.groupBox22.ResumeLayout(false);
             this.groupBox21.ResumeLayout(false);

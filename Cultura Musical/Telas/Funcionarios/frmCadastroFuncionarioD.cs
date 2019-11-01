@@ -17,16 +17,22 @@ namespace Cultura_Musical.Telas.Funcionarios
             InitializeComponent();
         }
 
+
+        Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();       
+
         Business.Business_Funcionarios colaboradorBus = new Business.Business_Funcionarios();
         Business.Business_Jornada JornadaBus = new Business.Business_Jornada();
         Business.Business_Beneficio BeneficioBus = new Business.Business_Beneficio();
+
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             try
             {
                 Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
+
                 Database.Entity.tb_jornada Jornada = new Database.Entity.tb_jornada();
+
 
                 funcionario.nm_funcionario = txtNome.Text;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
@@ -41,7 +47,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_estado = txtEstado.Text;
                 funcionario.ds_rua = txtRua.Text;              
 
-             
+
                 string genero = cboGenero.Text;
 
                 if (genero == "masculino")
@@ -53,6 +59,8 @@ namespace Cultura_Musical.Telas.Funcionarios
                     funcionario.ds_genero = "F";
                 }
 
+                colaborador.CadastroFuncionario(funcionario);
+
                 colaboradorBus.CadastroFuncionario(funcionario);
                 Database.Entity.tb_funcionario Func = colaboradorBus.BuscarFuncionario(funcionario);
 
@@ -63,6 +71,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 Jornada.id_funcionario = Func.id_funcionario;
 
                 JornadaBus.InserirJornada(Jornada);
+
 
                 MessageBox.Show("Funcionário cadastrado com sucesso.");
             }

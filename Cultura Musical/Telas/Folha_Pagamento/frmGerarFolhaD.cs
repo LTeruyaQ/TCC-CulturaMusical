@@ -33,35 +33,77 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
                     Financeiro.ds_fgts = 8;
 
                    
-                if (holerites.vl_salario >= 1659)
+                if (holerites.vl_salario <= Convert.ToDecimal(1781.81))
                 {
                     Financeiro.ds_inss = 8;
                 }
 
-                if (holerites.vl_salario >= 1659 && holerites.vl_salario <= 2765)
+                if (holerites.vl_salario >= Convert.ToDecimal(1781.82) && holerites.vl_salario <= Convert.ToDecimal(2919.72))
                 {
                     Financeiro.ds_inss = 9;
                 }
 
-                if (holerites.vl_salario >= 2765 && holerites.vl_salario <= 5531)
+                if (holerites.vl_salario >= Convert.ToDecimal(2919.73) && holerites.vl_salario <= Convert.ToDecimal (5839.45))
                 {
                     Financeiro.ds_inss = 11;
                 }
 
-                if (holerites.vl_salario > 5531)
+                if (holerites.vl_salario >= Convert.ToDecimal (5839.46))
                 {
-                    lblINSSDesconto.Text = Convert.ToString(642,34);
+                    Financeiro.ds_inss = 15;
                 }
+
+                if (holerites.vl_salario < Convert.ToDecimal(1903.99)) 
+                {
+                    Financeiro.ds_irrf = 0;
+                }
+
+                if (holerites.vl_salario >= Convert.ToDecimal(1903.99) && holerites.vl_salario <= Convert.ToDecimal (2826.65)) 
+                {
+                    Financeiro.ds_irrf = Convert.ToDecimal( 7.5);
+                }
+
+                if (holerites.vl_salario >= Convert.ToDecimal(2826.66) && holerites.vl_salario <= Convert.ToDecimal(3751.05))
+                {
+                    Financeiro.ds_irrf = 15;
+                }
+
+                if (holerites.vl_salario >= Convert.ToDecimal (3751.06) && holerites.vl_salario <= Convert.ToDecimal (4664.67))
+                {
+                    Financeiro.ds_irrf = Convert.ToDecimal( 22.5);
+                }
+
+                if (holerites.vl_salario >= Convert.ToDecimal(4664.68)) 
+                {
+                    Financeiro.ds_irrf = Convert.ToDecimal(27.5);
+                }
+
+                
+
+                financeiroBus.inserir(Financeiro);
+
+                decimal INSS = Financeiro.ds_inss;
+                decimal IRRF = Financeiro.ds_irrf;
+
+                INSS = this.ConvercaoINSS(INSS);
+                IRRF = this.ConvercaoIRRF(IRRF);
+                
+                
 
 
                 decimal totalprovento = holerites.vl_salario;
-                decimal totaldesconto = 
+                decimal totaldesconto = (holerites.vl_salario = 0.08m) 
+                                      + (holerites.vl_salario * INSS) 
+                                      + (holerites.vl_salario * IRRF) 
+                                      + (holerites.vl_salario * 0.06m) 
+                                      + (holerites.vl_salario * 0.08m);
 
                 lblSalarioProvento.Text = Convert.ToString (holerites.vl_salario);
-                lblvadesconto.text = convert.tostring(holerites.tb_beneficio.ds_va);
-                lblvtdesconto.text = convert.tostring(holerites.tb_beneficio.ds_vt);
+                lblTotalDesconto.Text = Convert.ToString(totaldesconto);
+                lblTotalProvento.Text = Convert.ToString(totalprovento);
+                lblVADesconto.Text = Convert.ToString(holerites.vl_salario * 0.06m);
+                lblVTDesconto.Text = Convert.ToString(holerites.vl_salario * 0.08m);
 
-                lbltotalprovento.text = convert.tostring(totalprovento);
             }
 
             catch (ArgumentException ex)
@@ -75,20 +117,57 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
             }
         }
 
-        private void lblTotalDesconto_Click(object sender, EventArgs e)
+
+        private decimal ConvercaoINSS (decimal INSS )
         {
+            if (INSS == 8)
+            {
+                INSS = 0.08m;
+            }
 
+            if (INSS == 9)
+            {
+                INSS = 0.09m;
+            }
 
+            if (INSS == 11)
+            {
+                INSS = 0.11m;
+            }
+
+            if (INSS == 15)
+            {
+                INSS = 0.15m;
+            }
+
+            return INSS;
         }
 
-        private void lblControlINSS_Click(object sender, EventArgs e)
+
+        private decimal ConvercaoIRRF(decimal IRRF)
         {
+            if (IRRF == 7.5m)
+            {
+                IRRF = 0.075m;
+            }
 
+            if (IRRF == 15m)
+            {
+                IRRF = 0.15m;
+            }
+
+            if (IRRF == 22.5m)
+            {
+                IRRF = 0.225m;
+            }
+
+            if (IRRF == 27.5m)
+            {
+                IRRF = 0.275m;
+            }
+
+            return IRRF;
         }
-
-        private void frmGerarFolhaD_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
