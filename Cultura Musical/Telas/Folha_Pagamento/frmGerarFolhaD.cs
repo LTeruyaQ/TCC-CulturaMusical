@@ -26,6 +26,11 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
             {
                 Database.Entity.tb_funcionario fon = new Database.Entity.tb_funcionario();
                 Database.Entity.tb_financeiro Financeiro = new Database.Entity.tb_financeiro();
+
+
+
+                fon.nm_funcionario = txtFuncionario.Text;
+                fon.ds_cargo = txtFuncao.Text;
                 Database.Entity.tb_funcionario holerites = folhaBus.ConsultarPorFuncionario(fon);
 
 
@@ -82,6 +87,10 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
 
                 financeiroBus.inserir(Financeiro);
 
+
+
+
+
                 decimal INSS = Financeiro.ds_inss;
                 decimal IRRF = Financeiro.ds_irrf;
 
@@ -98,7 +107,8 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
                                       + (holerites.vl_salario * 0.06m) 
                                       + (holerites.vl_salario * 0.08m);
 
-                lblSalarioProvento.Text = Convert.ToString (holerites.vl_salario);
+                lblSalarioProvento.Text = Convert.ToString (holerites.vl_salario + holerites.tb_beneficio.ds_gratificacao);
+                lblGratificaçãoProvento.Text = Convert.ToString(holerites.tb_beneficio.ds_gratificacao);
                 lblTotalDesconto.Text = Convert.ToString(totaldesconto);
                 lblTotalProvento.Text = Convert.ToString(totalprovento);
                 lblVADesconto.Text = Convert.ToString(holerites.vl_salario * 0.06m);
