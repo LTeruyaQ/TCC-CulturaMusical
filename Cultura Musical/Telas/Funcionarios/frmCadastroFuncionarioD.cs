@@ -29,7 +29,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 Database.Entity.tb_jornada Jornada = new Database.Entity.tb_jornada();
                 Database.Entity.tb_beneficio Beneficios = new Database.Entity.tb_beneficio();
 
-                Beneficios.ds_gratificacao = 
+                Beneficios.ds_gratificacao = 0;
 
                 funcionario.nm_funcionario = txtNome.Text;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
