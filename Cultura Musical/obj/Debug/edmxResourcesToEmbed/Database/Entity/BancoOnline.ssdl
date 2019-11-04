@@ -31,7 +31,6 @@
     <Property Name="id_beneficio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ds_vt" Type="decimal" Precision="10" Scale="0" Nullable="false" />
     <Property Name="ds_va" Type="decimal" Precision="10" Scale="0" Nullable="false" />
-    <Property Name="ds_vr" Type="decimal" Precision="10" Scale="0" Nullable="false" />
     <Property Name="ds_convenio" Type="decimal" Precision="10" Scale="0" Nullable="false" />
     <Property Name="ds_gratificacao" Type="decimal" Precision="10" Scale="0" Nullable="false" />
   </EntityType>
@@ -40,18 +39,18 @@
       <PropertyRef Name="id_cliente" />
     </Key>
     <Property Name="id_cliente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nm_cliente" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="nm_cliente" Type="varchar" MaxLength="200" Nullable="false" />
     <Property Name="dt_nascimento" Type="date" Nullable="false" />
-    <Property Name="ds_telefone" Type="varchar" MaxLength="11" Nullable="false" />
-    <Property Name="ds_email" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ds_telefone" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="ds_email" Type="varchar" MaxLength="150" Nullable="false" />
     <Property Name="ds_rg" Type="varchar" MaxLength="12" Nullable="false" />
     <Property Name="ds_cpf" Type="varchar" MaxLength="11" Nullable="false" />
     <Property Name="ds_cep" Type="varchar" MaxLength="9" Nullable="false" />
-    <Property Name="ds_observacao" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ds_observacao" Type="varchar" MaxLength="200" Nullable="false" />
     <Property Name="ds_estado" Type="varchar" MaxLength="3" Nullable="false" />
     <Property Name="ds_bairro" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ds_periodo" Type="varchar" MaxLength="5" Nullable="false" />
-    <Property Name="nm_responsavel" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="nm_responsavel" Type="varchar" MaxLength="200" Nullable="false" />
     <Property Name="ds_nivel" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="nmr_cliente" Type="int" Nullable="false" />
   </EntityType>
@@ -99,7 +98,7 @@
       <PropertyRef Name="id_estado" />
     </Key>
     <Property Name="id_estado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="ds_estado" Type="varchar" MaxLength="4" />
+    <Property Name="nm_estado" Type="varchar" MaxLength="4" />
   </EntityType>
   <EntityType Name="tb_estoque">
     <Key>
@@ -158,7 +157,7 @@
     <Property Name="dt_contratacao" Type="date" Nullable="false" />
     <Property Name="dt_demicao" Type="date" />
     <Property Name="vl_salario" Type="decimal" Precision="10" Scale="0" Nullable="false" />
-    <Property Name="ds_telefone" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="ds_telefone" Type="varchar" MaxLength="14" Nullable="false" />
     <Property Name="ds_email" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ds_genero" Type="varchar" MaxLength="1" Nullable="false" />
     <Property Name="ds_rg" Type="varchar" MaxLength="12" Nullable="false" />
@@ -168,11 +167,9 @@
     <Property Name="ds_rua" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ds_estado" Type="varchar" MaxLength="3" Nullable="false" />
     <Property Name="ds_bairro" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="ds_numero" Type="int" Nullable="false" />
     <Property Name="ds_complemento" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="id_beneficio" Type="int" Nullable="false" />
     <Property Name="ds_cidade" Type="varchar" MaxLength="45" Nullable="false" />
-    <Property Name="nmr_funcionario" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_holerite">
     <Key>
@@ -197,8 +194,8 @@
       <PropertyRef Name="id_login" />
     </Key>
     <Property Name="id_login" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nm_usuario" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="sen_usuario" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="nm_usuario" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="sen_usuario" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="dt_login" Type="date" Nullable="false" />
     <Property Name="nv_login" Type="int" Nullable="false" />
     <Property Name="id_funcionario" Type="int" Nullable="false" />
@@ -211,7 +208,7 @@
     <Property Name="nm_plano" Type="varchar" MaxLength="10" Nullable="false" />
     <Property Name="ds_duracao" Type="int" Nullable="false" />
     <Property Name="vl_preco" Type="decimal" Precision="10" Scale="0" Nullable="false" />
-    <Property Name="ds_descricao" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ds_descricao" Type="varchar" MaxLength="150" Nullable="false" />
     <Property Name="qtd_aula_semana" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_ponto">
@@ -224,7 +221,7 @@
     <Property Name="hr_entrada" Type="time" Precision="0" />
     <Property Name="hr_saida_intervalo" Type="time" Precision="0" />
     <Property Name="hr_volta_intervalo" Type="time" Precision="0" />
-    <Property Name="hr_saida" Type="time" Precision="0" />
+    <Property Name="dt_saida" Type="datetime" Precision="0" />
   </EntityType>
   <EntityType Name="tb_produto">
     <Key>
@@ -241,7 +238,7 @@
       <PropertyRef Name="id_prolabore" />
     </Key>
     <Property Name="id_prolabore" Type="int" Nullable="false" />
-    <Property Name="nm_prolabore" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="nm_prolabore" Type="varchar" MaxLength="150" Nullable="false" />
     <Property Name="dt_nascimento" Type="date" Nullable="false" />
     <Property Name="ds_rg" Type="varchar" MaxLength="11" Nullable="false" />
     <Property Name="ds_cpf" Type="varchar" MaxLength="12" Nullable="false" />

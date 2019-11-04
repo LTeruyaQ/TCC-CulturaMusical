@@ -30,8 +30,13 @@ namespace Cultura_Musical.Telas.Funcionarios
                 Database.Entity.tb_beneficio Beneficios = new Database.Entity.tb_beneficio();
 
                 Beneficios.ds_gratificacao = 0;
+                Beneficios.ds_va = 6;
+                Beneficios.ds_vt = 8;
+                Beneficios.ds_convenio = 0;
+                BeneficioBus.InserirBeneficio(Beneficios);
 
                 funcionario.nm_funcionario = txtNome.Text;
+                funcionario.dt_nascimento = dtpNascimento.Value;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
                 funcionario.ds_telefone = txtTelefone.Text;
                 funcionario.ds_cargo = txtCargo.Text;
@@ -41,9 +46,12 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_email = txtEmail.Text;
                 funcionario.ds_rg = txtRG.Text;
                 funcionario.ds_bairro = txtBairro.Text;
+                funcionario.ds_cidade = txtCidade.Text;
                 funcionario.ds_estado = txtEstado.Text;
-                funcionario.ds_rua = txtRua.Text;              
-
+                funcionario.ds_rua = txtRua.Text;
+                funcionario.nm_funcionario = Convert.ToString(nudNumero.Value);
+                funcionario.ds_complemento = txtCidade.Text;
+                funcionario.id_beneficio = Beneficios.id_beneficio;
              
                 string genero = cboGenero.Text;
 

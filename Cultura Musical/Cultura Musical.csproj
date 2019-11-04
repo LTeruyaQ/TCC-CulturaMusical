@@ -213,7 +213,7 @@
       <DependentUpon>BancoOnline.edmx</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\fluxo_de_caixa.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -231,73 +231,73 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_agenda_estudio.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_aula.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_beneficio.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_cliente.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_colaborador.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_compra.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_conta.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_estado.cs">
       <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_estoque.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_financeiro.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_folha_pagamento.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_fornecedor.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_funcionario.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_holerite.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_jornada.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_login.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_plano.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_ponto.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_produto.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_prolabore.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_sala.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_tipo_conta.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_venda_plano.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database_Financeiro.cs" />
     <Compile Include="Database\Model\ModelosExtendidos.cs" />

@@ -15,6 +15,6 @@ namespace Cultura_Musical.Database.Entity
     public partial class tb_estado
     {
         public int id_estado { get; set; }
-        public string ds_estado { get; set; }
+        public string nm_estado { get; set; }
     }
 }

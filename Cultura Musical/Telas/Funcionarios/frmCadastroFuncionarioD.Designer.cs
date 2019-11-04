@@ -33,6 +33,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtComplemento = new System.Windows.Forms.TextBox();
@@ -68,7 +69,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label28 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dtpNascimento = new System.Windows.Forms.DateTimePicker();
             this.label26 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -104,6 +105,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
             this.tabPage4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).BeginInit();
@@ -176,6 +178,8 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.SkyBlue;
+            this.groupBox5.Controls.Add(this.label14);
+            this.groupBox5.Controls.Add(this.txtCidade);
             this.groupBox5.Controls.Add(this.label15);
             this.groupBox5.Controls.Add(this.txtEstado);
             this.groupBox5.Controls.Add(this.txtComplemento);
@@ -192,10 +196,17 @@
             this.groupBox5.TabIndex = 88;
             this.groupBox5.TabStop = false;
             // 
+            // txtCidade
+            // 
+            this.txtCidade.Location = new System.Drawing.Point(81, 118);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(223, 22);
+            this.txtCidade.TabIndex = 88;
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(20, 127);
+            this.label15.Location = new System.Drawing.Point(20, 121);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(53, 14);
             this.label15.TabIndex = 65;
@@ -203,14 +214,14 @@
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(81, 124);
+            this.txtEstado.Location = new System.Drawing.Point(81, 159);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(223, 22);
             this.txtEstado.TabIndex = 68;
             // 
             // txtComplemento
             // 
-            this.txtComplemento.Location = new System.Drawing.Point(23, 211);
+            this.txtComplemento.Location = new System.Drawing.Point(23, 221);
             this.txtComplemento.Name = "txtComplemento";
             this.txtComplemento.Size = new System.Drawing.Size(281, 22);
             this.txtComplemento.TabIndex = 87;
@@ -234,7 +245,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(20, 194);
+            this.label22.Location = new System.Drawing.Point(20, 204);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(95, 14);
             this.label22.TabIndex = 86;
@@ -243,7 +254,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(38, 41);
+            this.label5.Location = new System.Drawing.Point(38, 35);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 14);
             this.label5.TabIndex = 64;
@@ -251,7 +262,7 @@
             // 
             // txtRua
             // 
-            this.txtRua.Location = new System.Drawing.Point(81, 34);
+            this.txtRua.Location = new System.Drawing.Point(81, 28);
             this.txtRua.Name = "txtRua";
             this.txtRua.Size = new System.Drawing.Size(223, 22);
             this.txtRua.TabIndex = 69;
@@ -259,7 +270,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(23, 85);
+            this.label16.Location = new System.Drawing.Point(23, 79);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(55, 14);
             this.label16.TabIndex = 66;
@@ -267,7 +278,7 @@
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(81, 82);
+            this.txtBairro.Location = new System.Drawing.Point(81, 76);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(223, 22);
             this.txtBairro.TabIndex = 67;
@@ -455,7 +466,7 @@
             this.groupBox2.Controls.Add(this.pictureBox3);
             this.groupBox2.Controls.Add(this.label28);
             this.groupBox2.Controls.Add(this.txtNome);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
+            this.groupBox2.Controls.Add(this.dtpNascimento);
             this.groupBox2.Controls.Add(this.label26);
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.txtEmail);
@@ -525,13 +536,13 @@
             this.txtNome.Size = new System.Drawing.Size(330, 22);
             this.txtNome.TabIndex = 80;
             // 
-            // dateTimePicker2
+            // dtpNascimento
             // 
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker2.Location = new System.Drawing.Point(450, 241);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(100, 22);
-            this.dateTimePicker2.TabIndex = 88;
+            this.dtpNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNascimento.Location = new System.Drawing.Point(450, 241);
+            this.dtpNascimento.Name = "dtpNascimento";
+            this.dtpNascimento.Size = new System.Drawing.Size(100, 22);
+            this.dtpNascimento.TabIndex = 88;
             // 
             // label26
             // 
@@ -942,6 +953,15 @@
             this.panel4.Size = new System.Drawing.Size(19, 45);
             this.panel4.TabIndex = 98;
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(19, 162);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 14);
+            this.label14.TabIndex = 89;
+            this.label14.Text = "Estado:";
+            // 
             // frmCadastroFuncionarioD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1027,7 +1047,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dtpNascimento;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.TextBox txtEmail;
@@ -1067,5 +1087,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.Label label14;
     }
 }

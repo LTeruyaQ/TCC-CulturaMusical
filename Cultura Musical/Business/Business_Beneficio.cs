@@ -13,5 +13,7 @@ namespace Cultura_Musical.Business
         {
             DB.InserirBeneficio(Beneficio);
         }
+
+       
     }
 }
