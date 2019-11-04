@@ -9,7 +9,7 @@ namespace Cultura_Musical.Database
     class Database_Pedidos
     {
 
-        Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
+        Entity.db_a4f9ad_stormprEntities DB = new Entity.db_a4f9ad_stormprEntities();
 
         public void AdicionarPedido(Entity.tb_compra compra, Entity.tb_produto pedido)
         {

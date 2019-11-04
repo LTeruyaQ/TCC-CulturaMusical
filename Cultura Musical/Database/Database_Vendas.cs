@@ -8,7 +8,7 @@ namespace Cultura_Musical.Database
 {
     class Database_Vendas
     {
-        Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
+        Entity.db_a4f9ad_stormprEntities DB = new Entity.db_a4f9ad_stormprEntities();
 
         public void CadastrarNovoTipoDePlano(Entity.tb_venda_plano venda)
         {

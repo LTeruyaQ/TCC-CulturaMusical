@@ -11,8 +11,8 @@ namespace Cultura_Musical.Database
         // EU n sei fazer implementação
 
 
-        Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
-
+       
+        Entity.db_a4f9ad_stormprEntities DB = new Entity.db_a4f9ad_stormprEntities();
 
         public void cadastrar(Entity.tb_aula agenda)
         {

@@ -27,6 +27,9 @@ namespace Cultura_Musical.Telas.Funcionarios
             {
                 Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
                 Database.Entity.tb_jornada Jornada = new Database.Entity.tb_jornada();
+                Database.Entity.tb_beneficio Beneficios = new Database.Entity.tb_beneficio();
+
+                Beneficios.ds_gratificacao = 
 
                 funcionario.nm_funcionario = txtNome.Text;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
@@ -72,10 +75,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 MessageBox.Show(ex.Message);
             }
 
-            catch (Exception)
-            {
-                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
-            }
+           
         }
 
         private void txtCEP_Leave(object sender, EventArgs e)

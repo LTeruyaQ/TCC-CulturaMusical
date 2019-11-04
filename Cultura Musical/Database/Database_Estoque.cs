@@ -8,7 +8,7 @@ namespace Cultura_Musical.Database
 {
     class Database_Estoque
     {
-        Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
+        Entity.db_a4f9ad_stormprEntities DB = new Entity.db_a4f9ad_stormprEntities();
 
 
         public void CadastrarProduto(Database.Entity.tb_produto produto)

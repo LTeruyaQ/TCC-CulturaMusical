@@ -197,6 +197,21 @@
     <Compile Include="Database\Database_Estoque.cs" />
     <Compile Include="Database\Database_produtos.cs" />
     <Compile Include="Database\Database_Vendas.cs" />
+    <Compile Include="Database\Entity\BancoOnline.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoOnline.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\BancoOnline.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\BancoOnline.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoOnline.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Database\Entity\fluxo_de_caixa.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -235,6 +250,9 @@
     </Compile>
     <Compile Include="Database\Entity\tb_conta.cs">
       <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_estado.cs">
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_estoque.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -660,6 +678,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="Database\Entity\BancoOnline.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BancoOnline.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Database\Entity\BancoOnline.edmx.diagram">
+      <DependentUpon>BancoOnline.edmx</DependentUpon>
+    </None>
     <None Include="Database\Entity\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
@@ -698,6 +723,16 @@
     <None Include="Resources\Imagens\musica.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Database\Entity\BancoOnline.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BancoOnline.edmx</DependentUpon>
+      <LastGenOutput>BancoOnline.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\Entity\BancoOnline.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BancoOnline.edmx</DependentUpon>
+      <LastGenOutput>BancoOnline.cs</LastGenOutput>
+    </Content>
     <Content Include="Database\Entity\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

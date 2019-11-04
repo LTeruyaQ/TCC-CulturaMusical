@@ -8,6 +8,6 @@ namespace Cultura_Musical.Database
 {
     class Database_Holerite
     {
-
+        Entity.db_a4f9ad_stormprEntities DB = new Entity.db_a4f9ad_stormprEntities();
     }
 }
