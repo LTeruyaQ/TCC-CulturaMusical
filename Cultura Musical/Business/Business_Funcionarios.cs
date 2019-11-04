@@ -50,19 +50,46 @@ namespace Cultura_Musical.Business
                 throw new ArgumentException("O campo do Nome do Funcionario está vazio");
             }
 
-            else if (funcionario.ds_email.Contains("@") == false || funcionario.ds_email == string.Empty)
+            else if (funcionario.ds_email.Contains("@") == false)
             {
-                throw new ArgumentException("O campo de Email está incorreto ou vazio");
+                throw new ArgumentException("O campo de Email está incorreto");
             }
 
-            else if (funcionario.ds_telefone == string.Empty || funcionario.ds_telefone.Length > 10)
+            else if (funcionario.ds_email == string.Empty)
             {
-                throw new ArgumentException("O campo de Telefone está incorreto ou vazio");
+                throw new ArgumentException("O campo de Email está vazio");
             }
 
-            else if (funcionario.ds_rg == string.Empty || funcionario.ds_rg.Length > 8)
+            else if (funcionario.ds_telefone == string.Empty)
             {
-                throw new ArgumentException("O campo de RG está incorreto ou vazio");
+                throw new ArgumentException("O campo de Telefone está vazio");
+            }
+
+            else if (funcionario.ds_telefone.Length != 14)
+            {
+                throw new ArgumentException("O campo de Telefone está incorreto");
+            }
+
+            else if (funcionario.ds_rg == string.Empty)
+            {
+                throw new ArgumentException("O campo de RG está vazio");
+            }
+
+
+            else if (funcionario.ds_rg.Length != 12)
+            {
+                throw new ArgumentException("O campo de RG está incorreto ");
+            }
+
+            else if (funcionario.ds_cpf == string.Empty)
+            {
+                throw new ArgumentException("O campo de CPF esta vazio");
+            }
+
+
+            else if (funcionario.ds_cpf.Length != 12)
+            {
+                throw new ArgumentException("O campo de CPF esta incorreto");
             }
 
             else if (funcionario.dt_nascimento == DateTime.Today)
