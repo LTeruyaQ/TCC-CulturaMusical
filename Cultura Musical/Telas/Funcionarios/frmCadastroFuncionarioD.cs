@@ -116,7 +116,7 @@ namespace Cultura_Musical.Telas.Funcionarios
             if(file.ShowDialog() == DialogResult.OK)
             {
                 string foto = file.FileName.ToString();
-                pbFOTO.ImageLocation = foto;
+                picFoto.ImageLocation = foto;
                 caminho = foto;
             }
         }

@@ -67,7 +67,7 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.txtMascara = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.picFoto = new System.Windows.Forms.PictureBox();
             this.label28 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.dtpNascimento = new System.Windows.Forms.DateTimePicker();
@@ -115,7 +115,7 @@
             this.groupBox3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -472,7 +472,7 @@
             this.groupBox2.Controls.Add(this.linkLabel1);
             this.groupBox2.Controls.Add(this.txtMascara);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.pictureBox3);
+            this.groupBox2.Controls.Add(this.picFoto);
             this.groupBox2.Controls.Add(this.label28);
             this.groupBox2.Controls.Add(this.txtNome);
             this.groupBox2.Controls.Add(this.dtpNascimento);
@@ -519,15 +519,15 @@
             this.label4.TabIndex = 93;
             this.label4.Text = "CPF";
             // 
-            // pictureBox3
+            // picFoto
             // 
-            this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.user;
-            this.pictureBox3.Location = new System.Drawing.Point(450, 89);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 64);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 91;
-            this.pictureBox3.TabStop = false;
+            this.picFoto.Image = global::Cultura_Musical.Properties.Resources.user;
+            this.picFoto.Location = new System.Drawing.Point(450, 89);
+            this.picFoto.Name = "picFoto";
+            this.picFoto.Size = new System.Drawing.Size(100, 64);
+            this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picFoto.TabIndex = 91;
+            this.picFoto.TabStop = false;
             // 
             // label28
             // 
@@ -991,7 +991,7 @@
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1059,7 +1059,7 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.MaskedTextBox txtMascara;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox picFoto;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
