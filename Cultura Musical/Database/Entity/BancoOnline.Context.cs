@@ -56,8 +56,6 @@ public partial class db_a4f9ad_stormprEntities : DbContext
 
     public virtual DbSet<tb_fornecedor> tb_fornecedor { get; set; }
 
-    public virtual DbSet<tb_funcionario> tb_funcionario { get; set; }
-
     public virtual DbSet<tb_holerite> tb_holerite { get; set; }
 
     public virtual DbSet<tb_jornada> tb_jornada { get; set; }
@@ -79,6 +77,8 @@ public partial class db_a4f9ad_stormprEntities : DbContext
     public virtual DbSet<tb_venda_plano> tb_venda_plano { get; set; }
 
     public virtual DbSet<fluxo_de_caixa> fluxo_de_caixa { get; set; }
+
+    public virtual DbSet<tb_funcionario> tb_funcionario { get; set; }
 
 }
 

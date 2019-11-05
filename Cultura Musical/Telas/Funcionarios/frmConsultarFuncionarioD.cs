@@ -76,7 +76,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 var id = cul.id_beneficio;
 
                 Business.Business_Funcionarios fun = new Business.Business_Funcionarios();
-                fun.Alterar(id);
+                //fun.Alterar(id);
             }
             else
             {

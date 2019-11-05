@@ -1405,3 +1405,15 @@ C:\Users\lucas\Source\Repos\tcc-cultura-musical46\Cultura Musical\obj\Debug\Cult
 C:\Users\lucas\Source\Repos\tcc-cultura-musical46\Cultura Musical\obj\Debug\Cultura Musical.csproj.CoreCompileInputs.cache
 C:\Users\infoc24\Source\Repos\tcc-cultura-musical11\Cultura Musical\bin\Debug\Cultura Musical.exe
 C:\Users\infoc24\Source\Repos\tcc-cultura-musical11\Cultura Musical\bin\Debug\Cultura Musical.pdb
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura Musical.csproj.Cultura Musical.exe.config
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Folha_Pagamento.frmGerarFolhaD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionarios.frmCadastroFuncionarioD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionarios.frmConsultarFuncionarioD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionarios.InserirFuncionarios.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Holerite.FrmAddHolerite.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Holerite.FrmConsultarHolerite.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Logistica.Fluxo_de_Caixa.frmFluxoD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Planos.frmAdicionarPlano.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Produtos.frmAdicionarPedidoD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Produtos.frmConsultarPedidoD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical3\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Planos.cbo.resources

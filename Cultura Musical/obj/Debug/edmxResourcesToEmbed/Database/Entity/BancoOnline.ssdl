@@ -152,24 +152,26 @@
       <PropertyRef Name="id_funcionario" />
     </Key>
     <Property Name="id_funcionario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nm_funcionario" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="nm_funcionario" Type="varchar" MaxLength="150" Nullable="false" />
     <Property Name="dt_nascimento" Type="date" Nullable="false" />
     <Property Name="dt_contratacao" Type="date" Nullable="false" />
     <Property Name="dt_demicao" Type="date" />
     <Property Name="vl_salario" Type="decimal" Precision="10" Scale="0" Nullable="false" />
     <Property Name="ds_telefone" Type="varchar" MaxLength="14" Nullable="false" />
-    <Property Name="ds_email" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="ds_email" Type="varchar" MaxLength="60" Nullable="false" />
     <Property Name="ds_genero" Type="varchar" MaxLength="1" Nullable="false" />
     <Property Name="ds_rg" Type="varchar" MaxLength="12" Nullable="false" />
-    <Property Name="ds_cpf" Type="varchar" MaxLength="11" Nullable="false" />
+    <Property Name="ds_cpf" Type="varchar" MaxLength="12" Nullable="false" />
     <Property Name="ds_cep" Type="varchar" MaxLength="9" Nullable="false" />
     <Property Name="ds_cargo" Type="varchar" MaxLength="25" Nullable="false" />
     <Property Name="ds_rua" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ds_estado" Type="varchar" MaxLength="3" Nullable="false" />
     <Property Name="ds_bairro" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="ds_complemento" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ds_complemento" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="id_beneficio" Type="int" Nullable="false" />
-    <Property Name="ds_cidade" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="ds_cidade" Type="varchar" MaxLength="60" Nullable="false" />
+    <Property Name="ft_funcionario" Type="longblob" />
+    <Property Name="nmr_funcionario" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_holerite">
     <Key>
