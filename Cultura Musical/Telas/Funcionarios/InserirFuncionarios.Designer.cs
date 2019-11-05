@@ -689,7 +689,7 @@
             // rdnCPF
             // 
             this.rdnCPF.AutoSize = true;
-            this.rdnCPF.Location = new System.Drawing.Point(14, 170);
+            this.rdnCPF.Location = new System.Drawing.Point(21, 170);
             this.rdnCPF.Name = "rdnCPF";
             this.rdnCPF.Size = new System.Drawing.Size(45, 17);
             this.rdnCPF.TabIndex = 65;
@@ -723,7 +723,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(204, 128);
+            this.label24.Location = new System.Drawing.Point(206, 125);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(107, 13);
             this.label24.TabIndex = 87;
@@ -738,7 +738,7 @@
             // 
             // txtRG
             // 
-            this.txtRG.Location = new System.Drawing.Point(75, 122);
+            this.txtRG.Location = new System.Drawing.Point(72, 122);
             this.txtRG.Mask = "00.000.000-0";
             this.txtRG.Name = "txtRG";
             this.txtRG.Size = new System.Drawing.Size(100, 20);
@@ -747,7 +747,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(22, 84);
+            this.label10.Location = new System.Drawing.Point(21, 79);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 13);
             this.label10.TabIndex = 46;
@@ -764,7 +764,7 @@
             // 
             // txtTelefone
             // 
-            this.txtTelefone.Location = new System.Drawing.Point(320, 82);
+            this.txtTelefone.Location = new System.Drawing.Point(320, 79);
             this.txtTelefone.Mask = "(99)0000-0000";
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(100, 20);
@@ -777,7 +777,7 @@
             this.cboGenero.Items.AddRange(new object[] {
             "Masculino",
             "Feminino"});
-            this.cboGenero.Location = new System.Drawing.Point(73, 82);
+            this.cboGenero.Location = new System.Drawing.Point(72, 76);
             this.cboGenero.Name = "cboGenero";
             this.cboGenero.Size = new System.Drawing.Size(101, 21);
             this.cboGenero.TabIndex = 58;

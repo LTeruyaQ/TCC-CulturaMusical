@@ -93,10 +93,10 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dgvListar_Pedidos.Location = new System.Drawing.Point(298, 175);
+            this.dgvListar_Pedidos.Location = new System.Drawing.Point(241, 191);
             this.dgvListar_Pedidos.Name = "dgvListar_Pedidos";
             this.dgvListar_Pedidos.ReadOnly = true;
-            this.dgvListar_Pedidos.Size = new System.Drawing.Size(644, 428);
+            this.dgvListar_Pedidos.Size = new System.Drawing.Size(643, 418);
             this.dgvListar_Pedidos.TabIndex = 27;
             // 
             // Column1
@@ -141,7 +141,7 @@
             // 
             this.dtpCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpCompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpCompra.Location = new System.Drawing.Point(799, 103);
+            this.dtpCompra.Location = new System.Drawing.Point(721, 157);
             this.dtpCompra.Name = "dtpCompra";
             this.dtpCompra.Size = new System.Drawing.Size(143, 22);
             this.dtpCompra.TabIndex = 31;
@@ -150,16 +150,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(651, 105);
+            this.label5.BackColor = System.Drawing.Color.SkyBlue;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(573, 159);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 16);
+            this.label5.Size = new System.Drawing.Size(120, 16);
             this.label5.TabIndex = 30;
             this.label5.Text = "Data da compra:";
             // 
             // txtProduto
             // 
-            this.txtProduto.Location = new System.Drawing.Point(441, 101);
+            this.txtProduto.Location = new System.Drawing.Point(363, 155);
             this.txtProduto.Name = "txtProduto";
             this.txtProduto.Size = new System.Drawing.Size(142, 20);
             this.txtProduto.TabIndex = 29;
@@ -168,10 +169,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(343, 103);
+            this.label3.BackColor = System.Drawing.Color.SkyBlue;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(265, 157);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 16);
+            this.label3.Size = new System.Drawing.Size(61, 16);
             this.label3.TabIndex = 28;
             this.label3.Text = "Produto:";
             // 
@@ -231,7 +233,7 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(192, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(794, 66);
+            this.panel2.Size = new System.Drawing.Size(725, 66);
             this.panel2.TabIndex = 33;
             // 
             // label10
@@ -270,7 +272,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(192, 654);
+            this.panel1.Size = new System.Drawing.Size(192, 648);
             this.panel1.TabIndex = 32;
             // 
             // pictureBox10
@@ -497,7 +499,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(986, 654);
+            this.ClientSize = new System.Drawing.Size(917, 648);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

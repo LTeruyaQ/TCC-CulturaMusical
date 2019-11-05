@@ -53,5 +53,20 @@ namespace Cultura_Musical.Telas.Pedidos
                 MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
+
+        private void FrmAdicionarProduto_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cboFornecedor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

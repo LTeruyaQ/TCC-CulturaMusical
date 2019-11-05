@@ -116,6 +116,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.txtduração);
             this.tabPage1.Controls.Add(this.label4);
@@ -133,7 +134,6 @@
             this.tabPage1.Size = new System.Drawing.Size(470, 310);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Adicionar";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -226,6 +226,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage2.Controls.Add(this.cbonome);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.txtduraçãoalterar);
@@ -243,7 +244,6 @@
             this.tabPage2.Size = new System.Drawing.Size(470, 310);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Alterar";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // cbonome
             // 
@@ -338,23 +338,23 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(470, 310);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Consultar";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tabPage4
             // 
+            this.tabPage4.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(470, 310);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Remover";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 

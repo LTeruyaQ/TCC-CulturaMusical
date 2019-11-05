@@ -64,10 +64,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.linkLabelFoto = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.txtMascara = new System.Windows.Forms.MaskedTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pbFOTO = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label28 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.dtpNascimento = new System.Windows.Forms.DateTimePicker();
@@ -106,7 +106,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txtEndereco = new System.Windows.Forms.TextBox();
             this.tabPage4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).BeginInit();
@@ -116,7 +115,7 @@
             this.groupBox3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFOTO)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -137,7 +136,7 @@
             // 
             this.btnCadastrar.BackColor = System.Drawing.Color.SkyBlue;
             this.btnCadastrar.Font = new System.Drawing.Font("Century Gothic", 27F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(567, 510);
+            this.btnCadastrar.Location = new System.Drawing.Point(567, 505);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(217, 59);
             this.btnCadastrar.TabIndex = 83;
@@ -151,10 +150,10 @@
             this.tabPage4.Controls.Add(this.label8);
             this.tabPage4.Controls.Add(this.txtCEP);
             this.tabPage4.Controls.Add(this.groupBox5);
-            this.tabPage4.Location = new System.Drawing.Point(4, 23);
+            this.tabPage4.Location = new System.Drawing.Point(4, 26);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(567, 324);
+            this.tabPage4.Size = new System.Drawing.Size(567, 321);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Informações Residenciais";
             // 
@@ -163,7 +162,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(28, 23);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 14);
+            this.label8.Size = new System.Drawing.Size(33, 17);
             this.label8.TabIndex = 44;
             this.label8.Text = "CEP:";
             // 
@@ -202,13 +201,13 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(19, 162);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 14);
+            this.label14.Size = new System.Drawing.Size(51, 17);
             this.label14.TabIndex = 89;
             this.label14.Text = "Estado:";
             // 
             // txtCidade
             // 
-            this.txtCidade.Location = new System.Drawing.Point(81, 118);
+            this.txtCidade.Location = new System.Drawing.Point(81, 116);
             this.txtCidade.Name = "txtCidade";
             this.txtCidade.Size = new System.Drawing.Size(223, 22);
             this.txtCidade.TabIndex = 88;
@@ -216,15 +215,15 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(20, 121);
+            this.label15.Location = new System.Drawing.Point(15, 121);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 14);
+            this.label15.Size = new System.Drawing.Size(55, 17);
             this.label15.TabIndex = 65;
             this.label15.Text = "Cidade:";
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(81, 159);
+            this.txtEstado.Location = new System.Drawing.Point(81, 157);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(223, 22);
             this.txtEstado.TabIndex = 68;
@@ -241,7 +240,7 @@
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(336, 36);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(59, 14);
+            this.label21.Size = new System.Drawing.Size(58, 17);
             this.label21.TabIndex = 83;
             this.label21.Text = "Número:";
             // 
@@ -255,18 +254,18 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(20, 204);
+            this.label22.Location = new System.Drawing.Point(20, 201);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(95, 14);
+            this.label22.Size = new System.Drawing.Size(97, 17);
             this.label22.TabIndex = 86;
             this.label22.Text = "Complemento:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(38, 35);
+            this.label5.Location = new System.Drawing.Point(37, 35);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 14);
+            this.label5.Size = new System.Drawing.Size(33, 17);
             this.label5.TabIndex = 64;
             this.label5.Text = "Rua:";
             // 
@@ -280,15 +279,15 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(23, 79);
+            this.label16.Location = new System.Drawing.Point(25, 76);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(55, 14);
+            this.label16.Size = new System.Drawing.Size(45, 17);
             this.label16.TabIndex = 66;
             this.label16.Text = "Bairro:";
             // 
             // txtBairro
             // 
-            this.txtBairro.Location = new System.Drawing.Point(81, 76);
+            this.txtBairro.Location = new System.Drawing.Point(81, 71);
             this.txtBairro.Name = "txtBairro";
             this.txtBairro.Size = new System.Drawing.Size(223, 22);
             this.txtBairro.TabIndex = 67;
@@ -298,10 +297,10 @@
             this.tabPage1.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage1.Controls.Add(this.groupBox4);
             this.tabPage1.Controls.Add(this.groupBox3);
-            this.tabPage1.Location = new System.Drawing.Point(4, 23);
+            this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(567, 324);
+            this.tabPage1.Size = new System.Drawing.Size(567, 321);
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Contratação";
             // 
@@ -325,7 +324,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(333, 34);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 14);
+            this.label3.Size = new System.Drawing.Size(95, 17);
             this.label3.TabIndex = 39;
             this.label3.Text = "Data de Inicio:";
             // 
@@ -354,18 +353,18 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(30, 68);
+            this.label9.Location = new System.Drawing.Point(42, 68);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 14);
+            this.label9.Size = new System.Drawing.Size(48, 17);
             this.label9.TabIndex = 45;
             this.label9.Text = "Cargo:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(19, 34);
+            this.label7.Location = new System.Drawing.Point(31, 34);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 14);
+            this.label7.Size = new System.Drawing.Size(52, 17);
             this.label7.TabIndex = 43;
             this.label7.Text = "Salário:";
             // 
@@ -392,7 +391,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(16, 55);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(137, 14);
+            this.label12.Size = new System.Drawing.Size(122, 17);
             this.label12.TabIndex = 90;
             this.label12.Text = "Horário de Entrada:";
             // 
@@ -401,7 +400,7 @@
             this.lblRetorno.AutoSize = true;
             this.lblRetorno.Location = new System.Drawing.Point(265, 77);
             this.lblRetorno.Name = "lblRetorno";
-            this.lblRetorno.Size = new System.Drawing.Size(139, 14);
+            this.lblRetorno.Size = new System.Drawing.Size(123, 17);
             this.lblRetorno.TabIndex = 95;
             this.lblRetorno.Text = "Horário de Retorno:";
             // 
@@ -442,7 +441,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(30, 77);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(119, 14);
+            this.label13.Size = new System.Drawing.Size(110, 17);
             this.label13.TabIndex = 91;
             this.label13.Text = "Horário de Saída:";
             // 
@@ -451,7 +450,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(273, 55);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(130, 14);
+            this.label11.Size = new System.Drawing.Size(123, 17);
             this.label11.TabIndex = 89;
             this.label11.Text = "Horário de Almoço:";
             // 
@@ -460,21 +459,20 @@
             this.tabPage2.BackColor = System.Drawing.Color.SkyBlue;
             this.tabPage2.Controls.Add(this.groupBox2);
             this.tabPage2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabPage2.Location = new System.Drawing.Point(4, 23);
+            this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(567, 324);
+            this.tabPage2.Size = new System.Drawing.Size(567, 321);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Dados Pessoais";
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.SkyBlue;
-            this.groupBox2.Controls.Add(this.txtEndereco);
-            this.groupBox2.Controls.Add(this.linkLabelFoto);
+            this.groupBox2.Controls.Add(this.linkLabel1);
             this.groupBox2.Controls.Add(this.txtMascara);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.pbFOTO);
+            this.groupBox2.Controls.Add(this.pictureBox3);
             this.groupBox2.Controls.Add(this.label28);
             this.groupBox2.Controls.Add(this.txtNome);
             this.groupBox2.Controls.Add(this.dtpNascimento);
@@ -487,23 +485,22 @@
             this.groupBox2.Controls.Add(this.txtTelefone);
             this.groupBox2.Controls.Add(this.cboGenero);
             this.groupBox2.Controls.Add(this.label27);
-            this.groupBox2.Location = new System.Drawing.Point(0, -23);
+            this.groupBox2.Location = new System.Drawing.Point(-4, -23);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(571, 347);
+            this.groupBox2.Size = new System.Drawing.Size(575, 347);
             this.groupBox2.TabIndex = 90;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dados pessoais";
             // 
-            // linkLabelFoto
+            // linkLabel1
             // 
-            this.linkLabelFoto.AutoSize = true;
-            this.linkLabelFoto.Location = new System.Drawing.Point(464, 157);
-            this.linkLabelFoto.Name = "linkLabelFoto";
-            this.linkLabelFoto.Size = new System.Drawing.Size(73, 16);
-            this.linkLabelFoto.TabIndex = 94;
-            this.linkLabelFoto.TabStop = true;
-            this.linkLabelFoto.Text = "Escolher Foto";
-            this.linkLabelFoto.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(464, 157);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(73, 16);
+            this.linkLabel1.TabIndex = 94;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Escolher Foto";
             // 
             // txtMascara
             // 
@@ -516,30 +513,28 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(237, 266);
+            this.label4.Location = new System.Drawing.Point(252, 264);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 14);
+            this.label4.Size = new System.Drawing.Size(30, 16);
             this.label4.TabIndex = 93;
-            this.label4.Text = "CPF:";
+            this.label4.Text = "CPF";
             // 
-            // pbFOTO
+            // pictureBox3
             // 
-            this.pbFOTO.Image = global::Cultura_Musical.Properties.Resources.user;
-            this.pbFOTO.Location = new System.Drawing.Point(450, 89);
-            this.pbFOTO.Name = "pbFOTO";
-            this.pbFOTO.Size = new System.Drawing.Size(100, 64);
-            this.pbFOTO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbFOTO.TabIndex = 91;
-            this.pbFOTO.TabStop = false;
+            this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.user;
+            this.pictureBox3.Location = new System.Drawing.Point(450, 89);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 64);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 91;
+            this.pictureBox3.TabStop = false;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(5, 92);
+            this.label28.Location = new System.Drawing.Point(20, 92);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(43, 14);
+            this.label28.Size = new System.Drawing.Size(39, 16);
             this.label28.TabIndex = 79;
             this.label28.Text = "Nome:";
             // 
@@ -561,10 +556,9 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(4, 154);
+            this.label26.Location = new System.Drawing.Point(19, 154);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(48, 14);
+            this.label26.Size = new System.Drawing.Size(40, 16);
             this.label26.TabIndex = 82;
             this.label26.Text = "E-mail:";
             // 
@@ -595,20 +589,18 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(4, 219);
+            this.label10.Location = new System.Drawing.Point(12, 216);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(56, 14);
+            this.label10.Size = new System.Drawing.Size(47, 16);
             this.label10.TabIndex = 46;
             this.label10.Text = "Genêro:";
             // 
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(10, 258);
+            this.label25.Location = new System.Drawing.Point(25, 258);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(30, 14);
+            this.label25.Size = new System.Drawing.Size(30, 16);
             this.label25.TabIndex = 83;
             this.label25.Text = "R.G:";
             // 
@@ -635,10 +627,9 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(220, 219);
+            this.label27.Location = new System.Drawing.Point(235, 217);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(68, 14);
+            this.label27.Size = new System.Drawing.Size(52, 16);
             this.label27.TabIndex = 81;
             this.label27.Text = "Telefone:";
             // 
@@ -647,7 +638,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(209, 152);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -694,7 +685,6 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.logo_Cultura_Musical_PNG;
             this.pictureBox1.Location = new System.Drawing.Point(17, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(94, 72);
@@ -756,7 +746,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Cultura_Musical.Properties.Resources.temporary_offer;
-            this.pictureBox10.Location = new System.Drawing.Point(27, 376);
+            this.pictureBox10.Location = new System.Drawing.Point(24, 376);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(33, 24);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -766,7 +756,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Cultura_Musical.Properties.Resources.man;
-            this.pictureBox9.Location = new System.Drawing.Point(28, 176);
+            this.pictureBox9.Location = new System.Drawing.Point(25, 176);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(32, 21);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -776,7 +766,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Cultura_Musical.Properties.Resources.bow;
-            this.pictureBox8.Location = new System.Drawing.Point(30, 223);
+            this.pictureBox8.Location = new System.Drawing.Point(27, 223);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(33, 25);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -796,7 +786,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Cultura_Musical.Properties.Resources.gift_card;
-            this.pictureBox2.Location = new System.Drawing.Point(27, 278);
+            this.pictureBox2.Location = new System.Drawing.Point(24, 278);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 21);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -806,7 +796,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Cultura_Musical.Properties.Resources.barcode;
-            this.pictureBox6.Location = new System.Drawing.Point(28, 328);
+            this.pictureBox6.Location = new System.Drawing.Point(25, 328);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 22);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -816,7 +806,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Cultura_Musical.Properties.Resources.price;
-            this.pictureBox5.Location = new System.Drawing.Point(28, 481);
+            this.pictureBox5.Location = new System.Drawing.Point(25, 481);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(26, 22);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -826,7 +816,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Cultura_Musical.Properties.Resources.tag;
-            this.pictureBox4.Location = new System.Drawing.Point(28, 427);
+            this.pictureBox4.Location = new System.Drawing.Point(25, 427);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(26, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -839,7 +829,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(91, 471);
+            this.button8.Location = new System.Drawing.Point(88, 471);
             this.button8.Name = "button8";
             this.button8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button8.Size = new System.Drawing.Size(86, 32);
@@ -854,7 +844,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(27, 420);
+            this.button7.Location = new System.Drawing.Point(24, 420);
             this.button7.Name = "button7";
             this.button7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button7.Size = new System.Drawing.Size(150, 32);
@@ -869,7 +859,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(27, 368);
+            this.button6.Location = new System.Drawing.Point(24, 368);
             this.button6.Name = "button6";
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button6.Size = new System.Drawing.Size(153, 32);
@@ -884,7 +874,7 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(91, 318);
+            this.button5.Location = new System.Drawing.Point(88, 318);
             this.button5.Name = "button5";
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button5.Size = new System.Drawing.Size(89, 32);
@@ -900,7 +890,7 @@
             this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(27, 216);
+            this.button4.Location = new System.Drawing.Point(24, 216);
             this.button4.Name = "button4";
             this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button4.Size = new System.Drawing.Size(150, 32);
@@ -915,7 +905,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(75, 267);
+            this.button3.Location = new System.Drawing.Point(72, 267);
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button3.Size = new System.Drawing.Size(120, 32);
@@ -930,7 +920,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(27, 165);
+            this.button2.Location = new System.Drawing.Point(24, 165);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button2.Size = new System.Drawing.Size(156, 32);
@@ -957,13 +947,12 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Cultura_Musical.Properties.Resources.man;
-            this.pictureBox11.Location = new System.Drawing.Point(47, 33);
+            this.pictureBox11.Location = new System.Drawing.Point(46, 42);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(96, 66);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 99;
             this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // panel4
             // 
@@ -972,14 +961,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(19, 45);
             this.panel4.TabIndex = 98;
-            // 
-            // txtEndereco
-            // 
-            this.txtEndereco.Location = new System.Drawing.Point(555, 151);
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(10, 22);
-            this.txtEndereco.TabIndex = 95;
-            this.txtEndereco.Visible = false;
             // 
             // frmCadastroFuncionarioD
             // 
@@ -1010,7 +991,7 @@
             this.tabPage2.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFOTO)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -1078,7 +1059,7 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.MaskedTextBox txtMascara;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.PictureBox pbFOTO;
+        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -1105,9 +1086,8 @@
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.LinkLabel linkLabelFoto;
+        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox txtCidade;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtEndereco;
     }
 }
