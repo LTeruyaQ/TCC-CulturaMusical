@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +17,8 @@ namespace Cultura_Musical.Telas.Funcionarios
         {
             InitializeComponent();
         }
+
+        string caminho;
 
         Business.Business_Funcionarios colaboradorBus = new Business.Business_Funcionarios();
         Business.Business_Jornada JornadaBus = new Business.Business_Jornada();
@@ -35,6 +38,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 Beneficios.ds_convenio = 0;
                 BeneficioBus.InserirBeneficio(Beneficios);
 
+                
                 funcionario.nm_funcionario = txtNome.Text;
                 funcionario.dt_nascimento = dtpNascimento.Value;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
@@ -52,6 +56,13 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.nm_funcionario = Convert.ToString(nudNumero.Value);
                 funcionario.ds_complemento = txtCidade.Text;
                 funcionario.id_beneficio = Beneficios.id_beneficio;
+
+                FileStream fs = new FileStream(caminho,FileMode.Open, FileAccess.Read);
+                BinaryReader br = new BinaryReader(fs);
+
+                byte[] image = br.ReadBytes((int)fs.Length);
+
+                funcionario.ft_funcionario = image;
              
                 string genero = cboGenero.Text;
 
@@ -96,7 +107,24 @@ namespace Cultura_Musical.Telas.Funcionarios
             txtBairro.Text = resp.bairro;
         }
 
-       
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+
+            file.Filter = "JPG Files(*.jpg)| * .jpg | PNG Files (* .png) | *.png | AllFiles(*.*) | *.*";
+
+            if(file.ShowDialog() == DialogResult.OK)
+            {
+                string foto = file.FileName.ToString();
+                pbFOTO.ImageLocation = foto;
+                caminho = foto;
+            }
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
