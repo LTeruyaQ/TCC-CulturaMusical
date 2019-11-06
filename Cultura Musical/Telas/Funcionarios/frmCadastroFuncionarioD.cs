@@ -50,11 +50,11 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_email = txtEmail.Text;
                 funcionario.ds_rg = txtRG.Text;
                 funcionario.ds_bairro = txtBairro.Text;
-                funcionario.ds_cidade = txtCidade.Text;
+                funcionario.ds_cidade = txtcidade.Text;
                 funcionario.ds_estado = txtEstado.Text;
                 funcionario.ds_rua = txtRua.Text;
                 funcionario.nmr_funcionario = Convert.ToInt32(nudNumero.Value);
-                funcionario.ds_complemento = txtCidade.Text;
+                funcionario.ds_complemento =txtComplemento.Text;
                 funcionario.id_beneficio = Beneficios.id_beneficio;
 
                 FileStream fs = new FileStream(caminho,FileMode.Open, FileAccess.Read);

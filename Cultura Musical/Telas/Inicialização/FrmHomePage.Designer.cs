@@ -36,6 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblMinimizar = new System.Windows.Forms.Label();
+            this.lblFechar = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -58,8 +60,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnParar = new System.Windows.Forms.Button();
             this.btnFalar = new System.Windows.Forms.Button();
-            this.lblMinimizar = new System.Windows.Forms.Label();
-            this.lblFechar = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -151,6 +151,30 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(646, 66);
             this.panel2.TabIndex = 224;
+            // 
+            // lblMinimizar
+            // 
+            this.lblMinimizar.AutoSize = true;
+            this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMinimizar.Location = new System.Drawing.Point(601, 0);
+            this.lblMinimizar.Name = "lblMinimizar";
+            this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
+            this.lblMinimizar.TabIndex = 227;
+            this.lblMinimizar.Text = "_";
+            this.lblMinimizar.Click += new System.EventHandler(this.lblMinimizar_Click);
+            // 
+            // lblFechar
+            // 
+            this.lblFechar.AutoSize = true;
+            this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechar.ForeColor = System.Drawing.Color.Red;
+            this.lblFechar.Location = new System.Drawing.Point(621, 5);
+            this.lblFechar.Name = "lblFechar";
+            this.lblFechar.Size = new System.Drawing.Size(20, 19);
+            this.lblFechar.TabIndex = 226;
+            this.lblFechar.Text = "X";
+            this.lblFechar.Click += new System.EventHandler(this.lblFechar_Click);
             // 
             // label10
             // 
@@ -277,10 +301,10 @@
             this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVendas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendas.ForeColor = System.Drawing.Color.White;
-            this.btnVendas.Location = new System.Drawing.Point(88, 482);
+            this.btnVendas.Location = new System.Drawing.Point(24, 482);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnVendas.Size = new System.Drawing.Size(86, 32);
+            this.btnVendas.Size = new System.Drawing.Size(150, 32);
             this.btnVendas.TabIndex = 107;
             this.btnVendas.Text = "Vendas";
             this.btnVendas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -325,10 +349,10 @@
             this.btnHolerite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHolerite.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHolerite.ForeColor = System.Drawing.Color.White;
-            this.btnHolerite.Location = new System.Drawing.Point(88, 329);
+            this.btnHolerite.Location = new System.Drawing.Point(24, 329);
             this.btnHolerite.Name = "btnHolerite";
             this.btnHolerite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnHolerite.Size = new System.Drawing.Size(89, 32);
+            this.btnHolerite.Size = new System.Drawing.Size(153, 32);
             this.btnHolerite.TabIndex = 104;
             this.btnHolerite.Text = "Holerite";
             this.btnHolerite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -358,10 +382,10 @@
             this.btnFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFornecedores.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFornecedores.ForeColor = System.Drawing.Color.White;
-            this.btnFornecedores.Location = new System.Drawing.Point(72, 278);
+            this.btnFornecedores.Location = new System.Drawing.Point(24, 278);
             this.btnFornecedores.Name = "btnFornecedores";
             this.btnFornecedores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnFornecedores.Size = new System.Drawing.Size(120, 32);
+            this.btnFornecedores.Size = new System.Drawing.Size(168, 32);
             this.btnFornecedores.TabIndex = 102;
             this.btnFornecedores.Text = "Fornecedores";
             this.btnFornecedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -440,30 +464,6 @@
             this.btnFalar.TabIndex = 220;
             this.btnFalar.UseVisualStyleBackColor = false;
             this.btnFalar.Click += new System.EventHandler(this.btnFalar_Click);
-            // 
-            // lblMinimizar
-            // 
-            this.lblMinimizar.AutoSize = true;
-            this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMinimizar.Location = new System.Drawing.Point(601, 0);
-            this.lblMinimizar.Name = "lblMinimizar";
-            this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
-            this.lblMinimizar.TabIndex = 227;
-            this.lblMinimizar.Text = "_";
-            this.lblMinimizar.Click += new System.EventHandler(this.lblMinimizar_Click);
-            // 
-            // lblFechar
-            // 
-            this.lblFechar.AutoSize = true;
-            this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechar.ForeColor = System.Drawing.Color.Red;
-            this.lblFechar.Location = new System.Drawing.Point(621, 5);
-            this.lblFechar.Name = "lblFechar";
-            this.lblFechar.Size = new System.Drawing.Size(20, 19);
-            this.lblFechar.TabIndex = 226;
-            this.lblFechar.Text = "X";
-            this.lblFechar.Click += new System.EventHandler(this.lblFechar_Click);
             // 
             // FrmHomePage
             // 

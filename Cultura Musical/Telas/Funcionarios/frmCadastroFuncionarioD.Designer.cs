@@ -1007,7 +1007,7 @@
             this.Name = "frmCadastroFuncionarioD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroFuncionarioD";
-            this.Load += new System.EventHandler(this.FrmCadastroFuncionarioD_Load);
+            
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
