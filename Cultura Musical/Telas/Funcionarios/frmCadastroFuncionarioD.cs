@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,24 +18,29 @@ namespace Cultura_Musical.Telas.Funcionarios
             InitializeComponent();
         }
 
-
-        Business.Business_Funcionarios colaborador = new Business.Business_Funcionarios();       
+        string caminho;
 
         Business.Business_Funcionarios colaboradorBus = new Business.Business_Funcionarios();
         Business.Business_Jornada JornadaBus = new Business.Business_Jornada();
         Business.Business_Beneficio BeneficioBus = new Business.Business_Beneficio();
-
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             try
             {
                 Database.Entity.tb_funcionario funcionario = new Database.Entity.tb_funcionario();
-
                 Database.Entity.tb_jornada Jornada = new Database.Entity.tb_jornada();
+                Database.Entity.tb_beneficio Beneficios = new Database.Entity.tb_beneficio();
 
+                Beneficios.ds_gratificacao = 0;
+                Beneficios.ds_va = 6;
+                Beneficios.ds_vt = 8;
+                Beneficios.ds_convenio = 0;
+                BeneficioBus.InserirBeneficio(Beneficios);
 
+                
                 funcionario.nm_funcionario = txtNome.Text;
+                funcionario.dt_nascimento = dtpNascimento.Value;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
                 funcionario.ds_telefone = txtTelefone.Text;
                 funcionario.ds_cargo = txtCargo.Text;
@@ -44,10 +50,20 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_email = txtEmail.Text;
                 funcionario.ds_rg = txtRG.Text;
                 funcionario.ds_bairro = txtBairro.Text;
+                funcionario.ds_cidade = txtCidade.Text;
                 funcionario.ds_estado = txtEstado.Text;
-                funcionario.ds_rua = txtRua.Text;              
+                funcionario.ds_rua = txtRua.Text;
+                funcionario.nmr_funcionario = Convert.ToInt32(nudNumero.Value);
+                funcionario.ds_complemento = txtCidade.Text;
+                funcionario.id_beneficio = Beneficios.id_beneficio;
 
+                FileStream fs = new FileStream(caminho,FileMode.Open, FileAccess.Read);
+                BinaryReader br = new BinaryReader(fs);
 
+                byte[] image = br.ReadBytes((int)fs.Length);
+
+                funcionario.ft_funcionario = image;
+             
                 string genero = cboGenero.Text;
 
                 if (genero == "masculino")
@@ -58,8 +74,6 @@ namespace Cultura_Musical.Telas.Funcionarios
                 {
                     funcionario.ds_genero = "F";
                 }
-
-                colaborador.CadastroFuncionario(funcionario);
 
                 colaboradorBus.CadastroFuncionario(funcionario);
                 Database.Entity.tb_funcionario Func = colaboradorBus.BuscarFuncionario(funcionario);
@@ -72,7 +86,6 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 JornadaBus.InserirJornada(Jornada);
 
-
                 MessageBox.Show("Funcionário cadastrado com sucesso.");
             }
 
@@ -81,10 +94,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 MessageBox.Show(ex.Message);
             }
 
-            catch (Exception)
-            {
-                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
-            }
+           
         }
 
         private void txtCEP_Leave(object sender, EventArgs e)
@@ -95,6 +105,25 @@ namespace Cultura_Musical.Telas.Funcionarios
             txtRua.Text = resp.logradouro;
             txtEstado.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+
+            file.Filter = "JPG Files(*.jpg)| * .jpg | PNG Files (* .png) | *.png | AllFiles(*.*) | *.*";
+
+            if(file.ShowDialog() == DialogResult.OK)
+            {
+                string foto = file.FileName.ToString();
+                picFoto.ImageLocation = foto;
+                caminho = foto;
+            }
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

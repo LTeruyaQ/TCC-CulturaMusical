@@ -66,6 +66,22 @@ namespace Cultura_Musical.Telas.Funcionarios
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
-       
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.CurrentCell.ColumnIndex == Alterar.Index)
+            {
+                Database.Entity.tb_funcionario cul = dataGridView1.CurrentRow.DataBoundItem as
+                    Database.Entity.tb_funcionario;
+
+                var id = cul.id_beneficio;
+
+                Business.Business_Funcionarios fun = new Business.Business_Funcionarios();
+                //fun.Alterar(id);
+            }
+            else
+            {
+                return;
+            }
+        }
     }
 }

@@ -8,7 +8,7 @@ namespace Cultura_Musical.Database
 {
     class Database_Folha_Pagamento
     {
-        Entity.culturamusicalEntities DB = new Entity.culturamusicalEntities();
+        Entity.db_a4f9ad_stormprEntities DB = new Entity.db_a4f9ad_stormprEntities();
 
         public Entity.tb_funcionario ConsultarPorFuncionario(Database.Entity.tb_funcionario fon)
         {

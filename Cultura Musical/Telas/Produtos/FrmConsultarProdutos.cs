@@ -81,5 +81,15 @@ namespace Cultura_Musical.Telas.Pedidos
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvListar_Pedidos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
