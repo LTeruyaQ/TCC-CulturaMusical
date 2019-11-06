@@ -40,22 +40,23 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 
                 funcionario.nm_funcionario = txtNome.Text;
-                funcionario.dt_nascimento = dtpNascimento.Value;
-                funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
-                funcionario.ds_telefone = txtTelefone.Text;
+                funcionario.dt_nascimento = dtpNascimento.Value.Date;
+                funcionario.ds_rg = txtRG.Text;
+                funcionario.id_beneficio = Beneficios.id_beneficio;
                 funcionario.ds_cargo = txtCargo.Text;
+                funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
+                funcionario.ds_email = txtEmail.Text;
+                funcionario.ds_telefone = txtTelefone.Text;
                 funcionario.ds_cpf = txtMascara.Text;
                 funcionario.ds_cep = txtCEP.Text;
-                funcionario.dt_contratacao = dtpContratacao.Value;
-                funcionario.ds_email = txtEmail.Text;
-                funcionario.ds_rg = txtRG.Text;
                 funcionario.ds_bairro = txtBairro.Text;
-                funcionario.ds_cidade = txtCidade.Text;
+                funcionario.ds_cidade = txtcidade.Text;
                 funcionario.ds_estado = txtEstado.Text;
                 funcionario.ds_rua = txtRua.Text;
                 funcionario.nmr_funcionario = Convert.ToInt32(nudNumero.Value);
-                funcionario.ds_complemento = txtCidade.Text;
-                funcionario.id_beneficio = Beneficios.id_beneficio;
+                funcionario.ds_complemento = txtEstado.Text;
+                funcionario.dt_contratacao = dtpContratacao.Value;
+                funcionario.dt_demicao = null;
 
                 FileStream fs = new FileStream(caminho,FileMode.Open, FileAccess.Read);
                 BinaryReader br = new BinaryReader(fs);
@@ -103,7 +104,7 @@ namespace Cultura_Musical.Telas.Funcionarios
             dynamic resp = api.Buscar(txtCEP.Text);
 
             txtRua.Text = resp.logradouro;
-            txtEstado.Text = resp.localidade;
+            txtcidade.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
         }
 
@@ -124,6 +125,11 @@ namespace Cultura_Musical.Telas.Funcionarios
         private void pictureBox11_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void FrmCadastroFuncionarioD_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

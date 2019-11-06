@@ -34,9 +34,9 @@
             this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.txtCidade = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.txtEstado = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtcidade = new System.Windows.Forms.TextBox();
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.nudNumero = new System.Windows.Forms.NumericUpDown();
@@ -179,9 +179,9 @@
             // 
             this.groupBox5.BackColor = System.Drawing.Color.SkyBlue;
             this.groupBox5.Controls.Add(this.label14);
-            this.groupBox5.Controls.Add(this.txtCidade);
-            this.groupBox5.Controls.Add(this.label15);
             this.groupBox5.Controls.Add(this.txtEstado);
+            this.groupBox5.Controls.Add(this.label15);
+            this.groupBox5.Controls.Add(this.txtcidade);
             this.groupBox5.Controls.Add(this.txtComplemento);
             this.groupBox5.Controls.Add(this.label21);
             this.groupBox5.Controls.Add(this.nudNumero);
@@ -205,12 +205,12 @@
             this.label14.TabIndex = 89;
             this.label14.Text = "Estado:";
             // 
-            // txtCidade
+            // txtEstado
             // 
-            this.txtCidade.Location = new System.Drawing.Point(81, 116);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(223, 22);
-            this.txtCidade.TabIndex = 88;
+            this.txtEstado.Location = new System.Drawing.Point(81, 162);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(223, 22);
+            this.txtEstado.TabIndex = 88;
             // 
             // label15
             // 
@@ -221,12 +221,12 @@
             this.label15.TabIndex = 65;
             this.label15.Text = "Cidade:";
             // 
-            // txtEstado
+            // txtcidade
             // 
-            this.txtEstado.Location = new System.Drawing.Point(81, 157);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(223, 22);
-            this.txtEstado.TabIndex = 68;
+            this.txtcidade.Location = new System.Drawing.Point(81, 118);
+            this.txtcidade.Name = "txtcidade";
+            this.txtcidade.Size = new System.Drawing.Size(223, 22);
+            this.txtcidade.TabIndex = 68;
             // 
             // txtComplemento
             // 
@@ -977,6 +977,7 @@
             this.Name = "frmCadastroFuncionarioD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroFuncionarioD";
+            this.Load += new System.EventHandler(this.FrmCadastroFuncionarioD_Load);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -1017,7 +1018,7 @@
         private System.Windows.Forms.MaskedTextBox txtCEP;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.TextBox txtcidade;
         private System.Windows.Forms.TextBox txtComplemento;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.NumericUpDown nudNumero;
@@ -1087,7 +1088,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.TextBox txtCidade;
+        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.Label label14;
     }
 }
