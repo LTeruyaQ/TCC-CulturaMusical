@@ -36,6 +36,8 @@
             this.btnConfirmar_Login = new System.Windows.Forms.Button();
             this.txtconfirmar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblMinimizar = new System.Windows.Forms.Label();
+            this.lblFechar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label3
@@ -136,12 +138,38 @@
             this.label4.Text = "Confirmar senha:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // lblMinimizar
+            // 
+            this.lblMinimizar.AutoSize = true;
+            this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMinimizar.Location = new System.Drawing.Point(453, -1);
+            this.lblMinimizar.Name = "lblMinimizar";
+            this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
+            this.lblMinimizar.TabIndex = 99;
+            this.lblMinimizar.Text = "_";
+            this.lblMinimizar.Click += new System.EventHandler(this.lblMinimizar_Click_1);
+            // 
+            // lblFechar
+            // 
+            this.lblFechar.AutoSize = true;
+            this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechar.ForeColor = System.Drawing.Color.Red;
+            this.lblFechar.Location = new System.Drawing.Point(473, 4);
+            this.lblFechar.Name = "lblFechar";
+            this.lblFechar.Size = new System.Drawing.Size(20, 19);
+            this.lblFechar.TabIndex = 98;
+            this.lblFechar.Text = "X";
+            this.lblFechar.Click += new System.EventHandler(this.lblFechar_Click_1);
+            // 
             // FrmCadastroFuncionarioLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(494, 320);
+            this.Controls.Add(this.lblMinimizar);
+            this.Controls.Add(this.lblFechar);
             this.Controls.Add(this.txtconfirmar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnConfirmar_Login);
@@ -169,5 +197,7 @@
         private System.Windows.Forms.Button btnConfirmar_Login;
         private System.Windows.Forms.TextBox txtconfirmar;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblMinimizar;
+        private System.Windows.Forms.Label lblFechar;
     }
 }
