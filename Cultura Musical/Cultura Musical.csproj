@@ -172,6 +172,7 @@
     <Compile Include="Business\Business_Funcionarios.cs" />
     <Compile Include="Business\Business_Folha_Pagamento.cs" />
     <Compile Include="Business\Business_Holerite.cs" />
+    <Compile Include="Business\Business_Imprimir.cs" />
     <Compile Include="Business\Business_Inicialização.cs" />
     <Compile Include="Business\Business_Jornada.cs" />
     <Compile Include="Business\Business_Logistica.cs" />
@@ -423,12 +424,6 @@
     <Compile Include="Telas\Holerite\FrmAddHolerite.Designer.cs">
       <DependentUpon>FrmAddHolerite.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Holerite\FrmConsultarHolerite.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Holerite\FrmConsultarHolerite.Designer.cs">
-      <DependentUpon>FrmConsultarHolerite.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Inicialização\FrmCadastroFuncionarioLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -610,9 +605,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Holerite\FrmAddHolerite.resx">
       <DependentUpon>FrmAddHolerite.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Holerite\FrmConsultarHolerite.resx">
-      <DependentUpon>FrmConsultarHolerite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Inicialização\FrmCadastroFuncionarioLogin.resx">
       <DependentUpon>FrmCadastroFuncionarioLogin.cs</DependentUpon>

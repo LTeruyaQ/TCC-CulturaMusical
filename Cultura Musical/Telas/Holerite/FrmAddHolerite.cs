@@ -21,5 +21,11 @@ namespace Cultura_Musical.Telas.Holerite
         {
 
         }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+            Business.ImprimirTela p = new Business.ImprimirTela();
+            p.Imprimir(this, panel5);
+        }
     }
 }
