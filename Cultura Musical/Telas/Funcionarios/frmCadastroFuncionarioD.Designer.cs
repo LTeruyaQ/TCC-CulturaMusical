@@ -332,11 +332,13 @@
             // 
             // dtpContratacao
             // 
-            this.dtpContratacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpContratacao.CustomFormat = "yyyy-MM-dd";
+            this.dtpContratacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpContratacao.Location = new System.Drawing.Point(336, 50);
             this.dtpContratacao.Name = "dtpContratacao";
             this.dtpContratacao.Size = new System.Drawing.Size(100, 22);
             this.dtpContratacao.TabIndex = 56;
+            this.dtpContratacao.Value = new System.DateTime(2019, 11, 6, 22, 33, 49, 0);
             // 
             // txtCargo
             // 
@@ -503,6 +505,7 @@
             this.linkLabel1.TabIndex = 94;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Escolher Foto";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // txtMascara
             // 
@@ -549,7 +552,8 @@
             // 
             // dtpNascimento
             // 
-            this.dtpNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNascimento.CustomFormat = "yyyy-MM-dd";
+            this.dtpNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpNascimento.Location = new System.Drawing.Point(450, 241);
             this.dtpNascimento.Name = "dtpNascimento";
             this.dtpNascimento.Size = new System.Drawing.Size(100, 22);
@@ -1007,7 +1011,6 @@
             this.Name = "frmCadastroFuncionarioD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmCadastroFuncionarioD";
-            
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
             this.groupBox5.ResumeLayout(false);

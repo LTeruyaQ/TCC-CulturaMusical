@@ -40,22 +40,24 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 
                 funcionario.nm_funcionario = txtNome.Text;
-                funcionario.dt_nascimento = dtpNascimento.Value;
+                funcionario.dt_nascimento = dtpNascimento.Value.Date;
+                funcionario.dt_contratacao = dtpContratacao.Value.Date;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
                 funcionario.ds_telefone = txtTelefone.Text;
-                funcionario.ds_cargo = txtCargo.Text;
-                funcionario.ds_cpf = txtMascara.Text;
-                funcionario.ds_cep = txtCEP.Text;
-                funcionario.dt_contratacao = dtpContratacao.Value;
                 funcionario.ds_email = txtEmail.Text;
                 funcionario.ds_rg = txtRG.Text;
-                funcionario.ds_bairro = txtBairro.Text;
-                funcionario.ds_cidade = txtcidade.Text;
-                funcionario.ds_estado = txtEstado.Text;
+                funcionario.ds_cpf = txtMascara.Text;
+                funcionario.ds_cep = txtCEP.Text;
+                funcionario.ds_cargo = txtCargo.Text;
                 funcionario.ds_rua = txtRua.Text;
-                funcionario.nmr_funcionario = Convert.ToInt32(nudNumero.Value);
-                funcionario.ds_complemento =txtComplemento.Text;
+                funcionario.ds_estado = txtEstado.Text;
+                funcionario.ds_complemento = txtComplemento.Text;
+                funcionario.ds_bairro = txtBairro.Text;
                 funcionario.id_beneficio = Beneficios.id_beneficio;
+                funcionario.ds_cidade = txtcidade.Text;
+                funcionario.nmr_funcionario = Convert.ToInt32(nudNumero.Value);
+                
+                
 
                 FileStream fs = new FileStream(caminho,FileMode.Open, FileAccess.Read);
                 BinaryReader br = new BinaryReader(fs);
@@ -68,11 +70,11 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 if (genero == "masculino")
                 {
-                    funcionario.ds_genero = "M";
+                    funcionario.ds_genero = "m";
                 }
                 else
                 {
-                    funcionario.ds_genero = "F";
+                    funcionario.ds_genero = "f";
                 }
 
                 colaboradorBus.CadastroFuncionario(funcionario);
@@ -103,7 +105,7 @@ namespace Cultura_Musical.Telas.Funcionarios
             dynamic resp = api.Buscar(txtCEP.Text);
 
             txtRua.Text = resp.logradouro;
-            txtEstado.Text = resp.localidade;
+            txtcidade.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
         }
 
@@ -116,7 +118,8 @@ namespace Cultura_Musical.Telas.Funcionarios
             if(file.ShowDialog() == DialogResult.OK)
             {
                 string foto = file.FileName.ToString();
-                picFoto.ImageLocation = foto;
+                
+                
                 caminho = foto;
             }
         }

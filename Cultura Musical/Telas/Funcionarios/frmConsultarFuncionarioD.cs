@@ -16,7 +16,7 @@ namespace Cultura_Musical.Telas.Funcionarios
         {
             InitializeComponent();
         }
-
+        Business.Business_Funcionarios Bus = new Business.Business_Funcionarios();
         private void frmConsultarFuncionarioD_Load(object sender, EventArgs e)
         {
             int n = 0;
@@ -155,6 +155,16 @@ namespace Cultura_Musical.Telas.Funcionarios
             Planos.cbo tela = new Planos.cbo();
             tela.Show();
             this.Hide();
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            string nome = txtNome.Text;
+            string caro = txtCargo.Text;
+
+            List<Database.Entity.tb_funcionario> funcionario = Bus.ListarPorNome(nome);
+
+            dataGridView1.DataSource = funcionario;
         }
     }
 }
