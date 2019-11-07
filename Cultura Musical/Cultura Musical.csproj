@@ -735,6 +735,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\WhatsApp Image 2019-11-06 at 23.36.10.jpeg" />
+    <None Include="Resources\WhatsApp Image 2019-10-18 at 18.53.50.jpeg" />
+    <None Include="Resources\rubbishbin_102620.png" />
     <None Include="Resources\store.png" />
     <None Include="Resources\price.png" />
     <None Include="Resources\tag.png" />

@@ -808,7 +808,7 @@
             this.btnCadastrar.BackColor = System.Drawing.Color.SkyBlue;
             this.btnCadastrar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCadastrar.FlatAppearance.BorderSize = 20;
-            this.btnCadastrar.Font = new System.Drawing.Font("Century Gothic", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCadastrar.ForeColor = System.Drawing.Color.Black;
             this.btnCadastrar.Location = new System.Drawing.Point(569, 454);
             this.btnCadastrar.Name = "btnCadastrar";
@@ -848,9 +848,9 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Cultura_Musical.Properties.Resources.temporary_offer;
-            this.pictureBox10.Location = new System.Drawing.Point(16, 375);
+            this.pictureBox10.Location = new System.Drawing.Point(39, 288);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(33, 10);
+            this.pictureBox10.Size = new System.Drawing.Size(33, 32);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 96;
             this.pictureBox10.TabStop = false;
@@ -858,9 +858,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Cultura_Musical.Properties.Resources.man;
-            this.pictureBox9.Location = new System.Drawing.Point(17, 175);
+            this.pictureBox9.Location = new System.Drawing.Point(39, 136);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 10);
+            this.pictureBox9.Size = new System.Drawing.Size(33, 32);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 97;
             this.pictureBox9.TabStop = false;
@@ -868,9 +868,9 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Cultura_Musical.Properties.Resources.bow;
-            this.pictureBox8.Location = new System.Drawing.Point(19, 222);
+            this.pictureBox8.Location = new System.Drawing.Point(39, 174);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(33, 10);
+            this.pictureBox8.Size = new System.Drawing.Size(33, 32);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 92;
             this.pictureBox8.TabStop = false;
@@ -878,9 +878,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Cultura_Musical.Properties.Resources.calendar;
-            this.pictureBox7.Location = new System.Drawing.Point(19, 133);
+            this.pictureBox7.Location = new System.Drawing.Point(39, 98);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 12);
+            this.pictureBox7.Size = new System.Drawing.Size(33, 32);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 93;
             this.pictureBox7.TabStop = false;
@@ -888,9 +888,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Cultura_Musical.Properties.Resources.gift_card;
-            this.pictureBox2.Location = new System.Drawing.Point(17, 277);
+            this.pictureBox2.Location = new System.Drawing.Point(39, 212);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 10);
+            this.pictureBox2.Size = new System.Drawing.Size(33, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 91;
             this.pictureBox2.TabStop = false;
@@ -898,9 +898,9 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Cultura_Musical.Properties.Resources.barcode;
-            this.pictureBox6.Location = new System.Drawing.Point(17, 328);
+            this.pictureBox6.Location = new System.Drawing.Point(39, 250);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 10);
+            this.pictureBox6.Size = new System.Drawing.Size(33, 32);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 94;
             this.pictureBox6.TabStop = false;
@@ -908,9 +908,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Cultura_Musical.Properties.Resources.price;
-            this.pictureBox5.Location = new System.Drawing.Point(17, 480);
+            this.pictureBox5.Location = new System.Drawing.Point(39, 369);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(26, 10);
+            this.pictureBox5.Size = new System.Drawing.Size(33, 32);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 95;
             this.pictureBox5.TabStop = false;
@@ -918,9 +918,9 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Cultura_Musical.Properties.Resources.tag;
-            this.pictureBox4.Location = new System.Drawing.Point(17, 426);
+            this.pictureBox4.Location = new System.Drawing.Point(39, 331);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(26, 10);
+            this.pictureBox4.Size = new System.Drawing.Size(33, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 90;
             this.pictureBox4.TabStop = false;
@@ -929,9 +929,9 @@
             // 
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(80, 470);
+            this.button8.Location = new System.Drawing.Point(106, 369);
             this.button8.Name = "button8";
             this.button8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button8.Size = new System.Drawing.Size(86, 32);
@@ -944,9 +944,9 @@
             // 
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(16, 419);
+            this.button7.Location = new System.Drawing.Point(39, 331);
             this.button7.Name = "button7";
             this.button7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button7.Size = new System.Drawing.Size(150, 32);
@@ -959,9 +959,9 @@
             // 
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(16, 367);
+            this.button6.Location = new System.Drawing.Point(39, 288);
             this.button6.Name = "button6";
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button6.Size = new System.Drawing.Size(153, 32);
@@ -974,9 +974,9 @@
             // 
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(80, 317);
+            this.button5.Location = new System.Drawing.Point(100, 250);
             this.button5.Name = "button5";
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button5.Size = new System.Drawing.Size(89, 32);
@@ -989,10 +989,10 @@
             // 
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(16, 215);
+            this.button4.Location = new System.Drawing.Point(42, 174);
             this.button4.Name = "button4";
             this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button4.Size = new System.Drawing.Size(150, 32);
@@ -1005,12 +1005,12 @@
             // 
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(64, 266);
+            this.button3.Location = new System.Drawing.Point(78, 212);
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button3.Size = new System.Drawing.Size(120, 32);
+            this.button3.Size = new System.Drawing.Size(114, 32);
             this.button3.TabIndex = 84;
             this.button3.Text = "Fornecedores";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1020,9 +1020,9 @@
             // 
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(16, 164);
+            this.button2.Location = new System.Drawing.Point(36, 136);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button2.Size = new System.Drawing.Size(156, 32);
@@ -1035,9 +1035,9 @@
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(16, 125);
+            this.button1.Location = new System.Drawing.Point(39, 98);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button1.Size = new System.Drawing.Size(153, 32);
@@ -1049,7 +1049,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.man;
-            this.pictureBox3.Location = new System.Drawing.Point(47, 53);
+            this.pictureBox3.Location = new System.Drawing.Point(42, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(96, 66);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1059,9 +1059,9 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Yellow;
-            this.panel4.Location = new System.Drawing.Point(3, 30);
+            this.panel4.Location = new System.Drawing.Point(3, 136);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(19, 45);
+            this.panel4.Size = new System.Drawing.Size(16, 32);
             this.panel4.TabIndex = 3;
             // 
             // InserirFuncionarios
@@ -1073,6 +1073,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InserirFuncionarios";
             this.Text = "InserirFuncionarios";
             this.tabPage5.ResumeLayout(false);

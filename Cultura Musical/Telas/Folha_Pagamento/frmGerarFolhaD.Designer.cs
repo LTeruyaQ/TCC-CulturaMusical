@@ -110,17 +110,19 @@
             this.dtpdata = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnProcurar = new System.Windows.Forms.Button();
             this.txtFuncao = new System.Windows.Forms.TextBox();
             this.txtFuncionario = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -138,8 +140,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnProcurar = new System.Windows.Forms.Button();
             this.groupBox8.SuspendLayout();
             this.groupBox22.SuspendLayout();
             this.groupBox21.SuspendLayout();
@@ -186,7 +186,7 @@
             this.groupBox8.Controls.Add(this.label12);
             this.groupBox8.Controls.Add(this.label19);
             this.groupBox8.Controls.Add(this.label20);
-            this.groupBox8.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.Location = new System.Drawing.Point(467, 132);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
@@ -197,7 +197,7 @@
             // 
             // lblIRRFDesconto
             // 
-            this.lblIRRFDesconto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIRRFDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIRRFDesconto.Location = new System.Drawing.Point(4, 156);
             this.lblIRRFDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIRRFDesconto.Name = "lblIRRFDesconto";
@@ -208,7 +208,7 @@
             // 
             // lblFGTSDesconto
             // 
-            this.lblFGTSDesconto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFGTSDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFGTSDesconto.Location = new System.Drawing.Point(4, 179);
             this.lblFGTSDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFGTSDesconto.Name = "lblFGTSDesconto";
@@ -219,7 +219,7 @@
             // 
             // lblINSSDesconto
             // 
-            this.lblINSSDesconto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSSDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblINSSDesconto.Location = new System.Drawing.Point(4, 129);
             this.lblINSSDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSSDesconto.Name = "lblINSSDesconto";
@@ -230,7 +230,7 @@
             // 
             // lblVTDesconto
             // 
-            this.lblVTDesconto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVTDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVTDesconto.Location = new System.Drawing.Point(4, 104);
             this.lblVTDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVTDesconto.Name = "lblVTDesconto";
@@ -251,7 +251,7 @@
             // 
             // lblVADesconto
             // 
-            this.lblVADesconto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVADesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVADesconto.Location = new System.Drawing.Point(4, 79);
             this.lblVADesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVADesconto.Name = "lblVADesconto";
@@ -262,7 +262,7 @@
             // 
             // label12
             // 
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(4, 54);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
@@ -273,7 +273,7 @@
             // 
             // label19
             // 
-            this.label19.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(4, 29);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
@@ -284,7 +284,7 @@
             // 
             // label20
             // 
-            this.label20.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(4, 10);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
@@ -297,7 +297,7 @@
             // 
             this.groupBox22.Controls.Add(this.label16);
             this.groupBox22.Controls.Add(this.label17);
-            this.groupBox22.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox22.Location = new System.Drawing.Point(268, 450);
             this.groupBox22.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox22.Name = "groupBox22";
@@ -308,7 +308,7 @@
             // 
             // label16
             // 
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(11, 28);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
@@ -319,7 +319,7 @@
             // 
             // label17
             // 
-            this.label17.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(30, 15);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
@@ -332,7 +332,7 @@
             // 
             this.groupBox21.Controls.Add(this.lblCalcIRRF);
             this.groupBox21.Controls.Add(this.label64);
-            this.groupBox21.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox21.Location = new System.Drawing.Point(113, 450);
             this.groupBox21.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox21.Name = "groupBox21";
@@ -343,7 +343,7 @@
             // 
             // lblCalcIRRF
             // 
-            this.lblCalcIRRF.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCalcIRRF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCalcIRRF.Location = new System.Drawing.Point(4, 28);
             this.lblCalcIRRF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCalcIRRF.Name = "lblCalcIRRF";
@@ -354,7 +354,7 @@
             // 
             // label64
             // 
-            this.label64.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label64.Location = new System.Drawing.Point(23, 15);
             this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label64.Name = "label64";
@@ -367,7 +367,7 @@
             // 
             this.groupBox20.Controls.Add(this.lblFGTSdoMes);
             this.groupBox20.Controls.Add(this.label62);
-            this.groupBox20.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox20.Location = new System.Drawing.Point(432, 401);
             this.groupBox20.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox20.Name = "groupBox20";
@@ -378,7 +378,7 @@
             // 
             // lblFGTSdoMes
             // 
-            this.lblFGTSdoMes.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFGTSdoMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFGTSdoMes.Location = new System.Drawing.Point(9, 27);
             this.lblFGTSdoMes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFGTSdoMes.Name = "lblFGTSdoMes";
@@ -389,7 +389,7 @@
             // 
             // label62
             // 
-            this.label62.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label62.Location = new System.Drawing.Point(4, 10);
             this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label62.Name = "label62";
@@ -402,7 +402,7 @@
             // 
             this.groupBox19.Controls.Add(this.label18);
             this.groupBox19.Controls.Add(this.label21);
-            this.groupBox19.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox19.Location = new System.Drawing.Point(432, 450);
             this.groupBox19.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox19.Name = "groupBox19";
@@ -413,7 +413,7 @@
             // 
             // label18
             // 
-            this.label18.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(6, 29);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
@@ -424,7 +424,7 @@
             // 
             // label21
             // 
-            this.label21.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(25, 15);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
@@ -437,7 +437,7 @@
             // 
             this.groupBox18.Controls.Add(this.lblControlINSS);
             this.groupBox18.Controls.Add(this.label58);
-            this.groupBox18.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox18.Location = new System.Drawing.Point(268, 401);
             this.groupBox18.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox18.Name = "groupBox18";
@@ -448,7 +448,7 @@
             // 
             // lblControlINSS
             // 
-            this.lblControlINSS.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblControlINSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblControlINSS.Location = new System.Drawing.Point(4, 27);
             this.lblControlINSS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblControlINSS.Name = "lblControlINSS";
@@ -459,7 +459,7 @@
             // 
             // label58
             // 
-            this.label58.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label58.Location = new System.Drawing.Point(4, 10);
             this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label58.Name = "label58";
@@ -472,7 +472,7 @@
             // 
             this.groupBox17.Controls.Add(this.lblSalarioBase);
             this.groupBox17.Controls.Add(this.label56);
-            this.groupBox17.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox17.Location = new System.Drawing.Point(112, 401);
             this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox17.Name = "groupBox17";
@@ -483,7 +483,7 @@
             // 
             // lblSalarioBase
             // 
-            this.lblSalarioBase.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalarioBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalarioBase.Location = new System.Drawing.Point(7, 28);
             this.lblSalarioBase.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSalarioBase.Name = "lblSalarioBase";
@@ -494,7 +494,7 @@
             // 
             // label56
             // 
-            this.label56.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.Location = new System.Drawing.Point(4, 11);
             this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label56.Name = "label56";
@@ -509,7 +509,7 @@
             this.groupBox14.Controls.Add(this.groupBox16);
             this.groupBox14.Controls.Add(this.lblValorLiquido);
             this.groupBox14.Controls.Add(this.label54);
-            this.groupBox14.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox14.Location = new System.Drawing.Point(126, 353);
             this.groupBox14.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox14.Name = "groupBox14";
@@ -584,7 +584,7 @@
             // 
             // lblValorLiquido
             // 
-            this.lblValorLiquido.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorLiquido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValorLiquido.Location = new System.Drawing.Point(48, 30);
             this.lblValorLiquido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblValorLiquido.Name = "lblValorLiquido";
@@ -595,7 +595,7 @@
             // 
             // label54
             // 
-            this.label54.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.Location = new System.Drawing.Point(48, 12);
             this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
@@ -608,7 +608,7 @@
             // 
             this.groupBox11.Controls.Add(this.lblTotalProvento);
             this.groupBox11.Controls.Add(this.label15);
-            this.groupBox11.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox11.Location = new System.Drawing.Point(364, 352);
             this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox11.Name = "groupBox11";
@@ -619,7 +619,7 @@
             // 
             // lblTotalProvento
             // 
-            this.lblTotalProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalProvento.Location = new System.Drawing.Point(5, 27);
             this.lblTotalProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalProvento.Name = "lblTotalProvento";
@@ -630,7 +630,7 @@
             // 
             // label15
             // 
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(4, 8);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
@@ -645,7 +645,7 @@
             this.TotalDesconto.Controls.Add(this.groupBox13);
             this.TotalDesconto.Controls.Add(this.groupBox12);
             this.TotalDesconto.Controls.Add(this.label45);
-            this.TotalDesconto.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalDesconto.Location = new System.Drawing.Point(465, 353);
             this.TotalDesconto.Margin = new System.Windows.Forms.Padding(2);
             this.TotalDesconto.Name = "TotalDesconto";
@@ -656,7 +656,7 @@
             // 
             // lblTotalDesconto
             // 
-            this.lblTotalDesconto.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalDesconto.Location = new System.Drawing.Point(5, 30);
             this.lblTotalDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalDesconto.Name = "lblTotalDesconto";
@@ -731,7 +731,7 @@
             // 
             // label45
             // 
-            this.label45.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.Location = new System.Drawing.Point(4, 11);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
@@ -751,7 +751,7 @@
             this.groupBox7.Controls.Add(this.lblGratificaçãoProvento);
             this.groupBox7.Controls.Add(this.lblSalarioProvento);
             this.groupBox7.Controls.Add(this.label32);
-            this.groupBox7.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(367, 133);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
@@ -762,7 +762,7 @@
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 178);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -773,7 +773,7 @@
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 155);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -784,7 +784,7 @@
             // 
             // lblINSSProvento
             // 
-            this.lblINSSProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSSProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblINSSProvento.Location = new System.Drawing.Point(4, 130);
             this.lblINSSProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSSProvento.Name = "lblINSSProvento";
@@ -795,7 +795,7 @@
             // 
             // lblVTProvento
             // 
-            this.lblVTProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVTProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVTProvento.Location = new System.Drawing.Point(4, 105);
             this.lblVTProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVTProvento.Name = "lblVTProvento";
@@ -816,7 +816,7 @@
             // 
             // lblVAProvento
             // 
-            this.lblVAProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVAProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVAProvento.Location = new System.Drawing.Point(4, 81);
             this.lblVAProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVAProvento.Name = "lblVAProvento";
@@ -827,7 +827,7 @@
             // 
             // lblGratificaçãoProvento
             // 
-            this.lblGratificaçãoProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGratificaçãoProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGratificaçãoProvento.Location = new System.Drawing.Point(4, 57);
             this.lblGratificaçãoProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGratificaçãoProvento.Name = "lblGratificaçãoProvento";
@@ -838,7 +838,7 @@
             // 
             // lblSalarioProvento
             // 
-            this.lblSalarioProvento.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalarioProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalarioProvento.Location = new System.Drawing.Point(4, 29);
             this.lblSalarioProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSalarioProvento.Name = "lblSalarioProvento";
@@ -849,7 +849,7 @@
             // 
             // label32
             // 
-            this.label32.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(4, 12);
             this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
@@ -868,7 +868,7 @@
             this.groupBox6.Controls.Add(this.lblVAReferencia);
             this.groupBox6.Controls.Add(this.lblReferenciaSalario);
             this.groupBox6.Controls.Add(this.label23);
-            this.groupBox6.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(273, 133);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
@@ -879,7 +879,7 @@
             // 
             // lblFGTSReferencia
             // 
-            this.lblFGTSReferencia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFGTSReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFGTSReferencia.Location = new System.Drawing.Point(5, 178);
             this.lblFGTSReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFGTSReferencia.Name = "lblFGTSReferencia";
@@ -890,7 +890,7 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(5, 155);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -901,7 +901,7 @@
             // 
             // lblGratificacaoReferencia
             // 
-            this.lblGratificacaoReferencia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGratificacaoReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGratificacaoReferencia.Location = new System.Drawing.Point(5, 59);
             this.lblGratificacaoReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGratificacaoReferencia.Name = "lblGratificacaoReferencia";
@@ -912,7 +912,7 @@
             // 
             // lblINSSReferencia
             // 
-            this.lblINSSReferencia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSSReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblINSSReferencia.Location = new System.Drawing.Point(5, 128);
             this.lblINSSReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSSReferencia.Name = "lblINSSReferencia";
@@ -923,7 +923,7 @@
             // 
             // lblVTReferencia
             // 
-            this.lblVTReferencia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVTReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVTReferencia.Location = new System.Drawing.Point(5, 105);
             this.lblVTReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVTReferencia.Name = "lblVTReferencia";
@@ -934,7 +934,7 @@
             // 
             // lblVAReferencia
             // 
-            this.lblVAReferencia.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVAReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVAReferencia.Location = new System.Drawing.Point(5, 82);
             this.lblVAReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVAReferencia.Name = "lblVAReferencia";
@@ -945,7 +945,7 @@
             // 
             // lblReferenciaSalario
             // 
-            this.lblReferenciaSalario.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReferenciaSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReferenciaSalario.Location = new System.Drawing.Point(5, 36);
             this.lblReferenciaSalario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReferenciaSalario.Name = "lblReferenciaSalario";
@@ -956,7 +956,7 @@
             // 
             // label23
             // 
-            this.label23.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(4, 9);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
@@ -975,7 +975,7 @@
             this.groupBox5.Controls.Add(this.lblVA);
             this.groupBox5.Controls.Add(this.lblSalario);
             this.groupBox5.Controls.Add(this.label13);
-            this.groupBox5.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(128, 133);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
@@ -986,7 +986,7 @@
             // 
             // lblFGTS
             // 
-            this.lblFGTS.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFGTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFGTS.Location = new System.Drawing.Point(12, 178);
             this.lblFGTS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFGTS.Name = "lblFGTS";
@@ -996,7 +996,7 @@
             // 
             // lblReferenciaIRRF
             // 
-            this.lblReferenciaIRRF.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReferenciaIRRF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReferenciaIRRF.Location = new System.Drawing.Point(9, 155);
             this.lblReferenciaIRRF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReferenciaIRRF.Name = "lblReferenciaIRRF";
@@ -1006,7 +1006,7 @@
             // 
             // lblINSS
             // 
-            this.lblINSS.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblINSS.Location = new System.Drawing.Point(9, 134);
             this.lblINSS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSS.Name = "lblINSS";
@@ -1016,7 +1016,7 @@
             // 
             // lblGratificação
             // 
-            this.lblGratificação.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGratificação.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGratificação.Location = new System.Drawing.Point(7, 61);
             this.lblGratificação.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGratificação.Name = "lblGratificação";
@@ -1026,7 +1026,7 @@
             // 
             // lblVT
             // 
-            this.lblVT.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVT.Location = new System.Drawing.Point(7, 111);
             this.lblVT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVT.Name = "lblVT";
@@ -1036,7 +1036,7 @@
             // 
             // lblVA
             // 
-            this.lblVA.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVA.Location = new System.Drawing.Point(7, 86);
             this.lblVA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVA.Name = "lblVA";
@@ -1046,7 +1046,7 @@
             // 
             // lblSalario
             // 
-            this.lblSalario.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalario.Location = new System.Drawing.Point(7, 36);
             this.lblSalario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSalario.Name = "lblSalario";
@@ -1056,7 +1056,7 @@
             // 
             // label13
             // 
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(19, 9);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
@@ -1082,7 +1082,7 @@
             this.groupBox1.Controls.Add(this.groupBox11);
             this.groupBox1.Controls.Add(this.groupBox17);
             this.groupBox1.Controls.Add(this.groupBox14);
-            this.groupBox1.Font = new System.Drawing.Font("Stencil", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(220, 134);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
@@ -1106,12 +1106,12 @@
             this.dtpdata.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpdata.Location = new System.Drawing.Point(13, 55);
             this.dtpdata.Name = "dtpdata";
-            this.dtpdata.Size = new System.Drawing.Size(115, 25);
+            this.dtpdata.Size = new System.Drawing.Size(115, 24);
             this.dtpdata.TabIndex = 50;
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(5, 18);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
@@ -1135,12 +1135,26 @@
             this.groupBox3.TabIndex = 51;
             this.groupBox3.TabStop = false;
             // 
+            // btnProcurar
+            // 
+            this.btnProcurar.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnProcurar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnProcurar.FlatAppearance.BorderSize = 20;
+            this.btnProcurar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProcurar.ForeColor = System.Drawing.Color.Black;
+            this.btnProcurar.Location = new System.Drawing.Point(321, 23);
+            this.btnProcurar.Name = "btnProcurar";
+            this.btnProcurar.Size = new System.Drawing.Size(127, 45);
+            this.btnProcurar.TabIndex = 86;
+            this.btnProcurar.Text = "Procurar";
+            this.btnProcurar.UseVisualStyleBackColor = false;
+            // 
             // txtFuncao
             // 
             this.txtFuncao.Location = new System.Drawing.Point(183, 39);
             this.txtFuncao.Margin = new System.Windows.Forms.Padding(2);
             this.txtFuncao.Name = "txtFuncao";
-            this.txtFuncao.Size = new System.Drawing.Size(86, 25);
+            this.txtFuncao.Size = new System.Drawing.Size(86, 24);
             this.txtFuncao.TabIndex = 18;
             this.txtFuncao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1149,13 +1163,13 @@
             this.txtFuncionario.Location = new System.Drawing.Point(20, 39);
             this.txtFuncionario.Margin = new System.Windows.Forms.Padding(2);
             this.txtFuncionario.Name = "txtFuncionario";
-            this.txtFuncionario.Size = new System.Drawing.Size(121, 25);
+            this.txtFuncionario.Size = new System.Drawing.Size(121, 24);
             this.txtFuncionario.TabIndex = 17;
             this.txtFuncionario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(186, 14);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
@@ -1165,7 +1179,7 @@
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(24, 13);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
@@ -1176,43 +1190,42 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.label1);
+            this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(198, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(129, 135);
-            this.panel3.TabIndex = 85;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.Color.Black;
-            this.label2.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(17, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 23);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Musical";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.panel3.TabIndex = 234;
             // 
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 85);
+            this.label1.Location = new System.Drawing.Point(17, 107);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(94, 22);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Cultura";
+            this.label1.Size = new System.Drawing.Size(94, 23);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Musical";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Black;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(17, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(94, 22);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Cultura";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.WhatsApp_Image_2019_11_06_at_23_36_10;
             this.pictureBox1.Location = new System.Drawing.Point(17, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(94, 72);
@@ -1223,30 +1236,31 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(192, 0);
+            this.panel2.Location = new System.Drawing.Point(177, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(682, 66);
-            this.panel2.TabIndex = 84;
+            this.panel2.Size = new System.Drawing.Size(697, 66);
+            this.panel2.TabIndex = 233;
             // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(169, 0);
+            this.label3.Location = new System.Drawing.Point(199, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(498, 64);
+            this.label3.Size = new System.Drawing.Size(373, 60);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Gerar Folha de Pagamento";
+            this.label3.Text = "Consultar Produto";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.pictureBox8);
@@ -1263,105 +1277,111 @@
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(192, 716);
-            this.panel1.TabIndex = 83;
+            this.panel1.Size = new System.Drawing.Size(177, 716);
+            this.panel1.TabIndex = 232;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Yellow;
+            this.panel4.Location = new System.Drawing.Point(3, 251);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(16, 32);
+            this.panel4.TabIndex = 116;
             // 
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Cultura_Musical.Properties.Resources.temporary_offer;
-            this.pictureBox10.Location = new System.Drawing.Point(24, 376);
+            this.pictureBox10.Location = new System.Drawing.Point(21, 289);
             this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(33, 24);
+            this.pictureBox10.Size = new System.Drawing.Size(33, 32);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 130;
+            this.pictureBox10.TabIndex = 114;
             this.pictureBox10.TabStop = false;
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Cultura_Musical.Properties.Resources.man;
-            this.pictureBox9.Location = new System.Drawing.Point(25, 176);
+            this.pictureBox9.Location = new System.Drawing.Point(21, 137);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 21);
+            this.pictureBox9.Size = new System.Drawing.Size(33, 32);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 131;
+            this.pictureBox9.TabIndex = 115;
             this.pictureBox9.TabStop = false;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Cultura_Musical.Properties.Resources.bow;
-            this.pictureBox8.Location = new System.Drawing.Point(27, 223);
+            this.pictureBox8.Location = new System.Drawing.Point(21, 175);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(33, 25);
+            this.pictureBox8.Size = new System.Drawing.Size(33, 32);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 126;
+            this.pictureBox8.TabIndex = 110;
             this.pictureBox8.TabStop = false;
             // 
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Cultura_Musical.Properties.Resources.calendar;
-            this.pictureBox7.Location = new System.Drawing.Point(27, 134);
+            this.pictureBox7.Location = new System.Drawing.Point(21, 99);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 24);
+            this.pictureBox7.Size = new System.Drawing.Size(33, 32);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 127;
+            this.pictureBox7.TabIndex = 111;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Cultura_Musical.Properties.Resources.gift_card;
-            this.pictureBox2.Location = new System.Drawing.Point(24, 278);
+            this.pictureBox2.Location = new System.Drawing.Point(21, 213);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 21);
+            this.pictureBox2.Size = new System.Drawing.Size(33, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 125;
+            this.pictureBox2.TabIndex = 109;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Cultura_Musical.Properties.Resources.barcode;
-            this.pictureBox6.Location = new System.Drawing.Point(25, 328);
+            this.pictureBox6.Location = new System.Drawing.Point(21, 251);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 22);
+            this.pictureBox6.Size = new System.Drawing.Size(33, 32);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 128;
+            this.pictureBox6.TabIndex = 112;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Cultura_Musical.Properties.Resources.price;
-            this.pictureBox5.Location = new System.Drawing.Point(25, 481);
+            this.pictureBox5.Location = new System.Drawing.Point(21, 370);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(26, 22);
+            this.pictureBox5.Size = new System.Drawing.Size(33, 32);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 129;
+            this.pictureBox5.TabIndex = 113;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Cultura_Musical.Properties.Resources.tag;
-            this.pictureBox4.Location = new System.Drawing.Point(25, 427);
+            this.pictureBox4.Location = new System.Drawing.Point(21, 332);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(26, 25);
+            this.pictureBox4.Size = new System.Drawing.Size(33, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 124;
+            this.pictureBox4.TabIndex = 108;
             this.pictureBox4.TabStop = false;
             // 
             // button8
             // 
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(88, 471);
+            this.button8.Location = new System.Drawing.Point(88, 370);
             this.button8.Name = "button8";
             this.button8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button8.Size = new System.Drawing.Size(86, 32);
-            this.button8.TabIndex = 123;
+            this.button8.TabIndex = 107;
             this.button8.Text = "Vendas";
             this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button8.UseVisualStyleBackColor = true;
@@ -1370,13 +1390,13 @@
             // 
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(24, 420);
+            this.button7.Location = new System.Drawing.Point(21, 332);
             this.button7.Name = "button7";
             this.button7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button7.Size = new System.Drawing.Size(150, 32);
-            this.button7.TabIndex = 122;
+            this.button7.TabIndex = 106;
             this.button7.Text = "Produtos";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = true;
@@ -1385,13 +1405,13 @@
             // 
             this.button6.FlatAppearance.BorderSize = 0;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(24, 368);
+            this.button6.Location = new System.Drawing.Point(21, 289);
             this.button6.Name = "button6";
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button6.Size = new System.Drawing.Size(153, 32);
-            this.button6.TabIndex = 121;
+            this.button6.TabIndex = 105;
             this.button6.Text = "Logistica";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
@@ -1400,13 +1420,13 @@
             // 
             this.button5.FlatAppearance.BorderSize = 0;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(88, 318);
+            this.button5.Location = new System.Drawing.Point(82, 251);
             this.button5.Name = "button5";
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button5.Size = new System.Drawing.Size(89, 32);
-            this.button5.TabIndex = 120;
+            this.button5.TabIndex = 104;
             this.button5.Text = "Holerite";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.UseVisualStyleBackColor = true;
@@ -1415,14 +1435,14 @@
             // 
             this.button4.FlatAppearance.BorderSize = 0;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(24, 216);
+            this.button4.Location = new System.Drawing.Point(24, 175);
             this.button4.Name = "button4";
             this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button4.Size = new System.Drawing.Size(150, 32);
-            this.button4.TabIndex = 119;
+            this.button4.TabIndex = 103;
             this.button4.Text = "CRM";
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
@@ -1431,13 +1451,13 @@
             // 
             this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(72, 267);
+            this.button3.Location = new System.Drawing.Point(60, 213);
             this.button3.Name = "button3";
             this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button3.Size = new System.Drawing.Size(120, 32);
-            this.button3.TabIndex = 118;
+            this.button3.Size = new System.Drawing.Size(114, 32);
+            this.button3.TabIndex = 102;
             this.button3.Text = "Fornecedores";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
@@ -1446,13 +1466,13 @@
             // 
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(24, 165);
+            this.button2.Location = new System.Drawing.Point(18, 137);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button2.Size = new System.Drawing.Size(156, 32);
-            this.button2.TabIndex = 117;
+            this.button2.TabIndex = 101;
             this.button2.Text = "Colaboradores";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = true;
@@ -1461,13 +1481,13 @@
             // 
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(24, 126);
+            this.button1.Location = new System.Drawing.Point(21, 99);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button1.Size = new System.Drawing.Size(153, 32);
-            this.button1.TabIndex = 116;
+            this.button1.TabIndex = 100;
             this.button1.Text = "Agenda";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
@@ -1475,34 +1495,12 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.barcode;
-            this.pictureBox3.Location = new System.Drawing.Point(46, 42);
+            this.pictureBox3.Location = new System.Drawing.Point(43, 12);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(96, 66);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 99;
+            this.pictureBox3.TabIndex = 118;
             this.pictureBox3.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Yellow;
-            this.panel4.Location = new System.Drawing.Point(3, 42);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(19, 45);
-            this.panel4.TabIndex = 98;
-            // 
-            // btnProcurar
-            // 
-            this.btnProcurar.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnProcurar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnProcurar.FlatAppearance.BorderSize = 20;
-            this.btnProcurar.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProcurar.ForeColor = System.Drawing.Color.Black;
-            this.btnProcurar.Location = new System.Drawing.Point(321, 23);
-            this.btnProcurar.Name = "btnProcurar";
-            this.btnProcurar.Size = new System.Drawing.Size(127, 45);
-            this.btnProcurar.TabIndex = 86;
-            this.btnProcurar.Text = "Procurar";
-            this.btnProcurar.UseVisualStyleBackColor = false;
             // 
             // frmGerarFolhaD
             // 
@@ -1636,13 +1634,24 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblReferenciaIRRF;
+        private System.Windows.Forms.Label lblIRRFDesconto;
+        private System.Windows.Forms.Label lblFGTSDesconto;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblFGTSReferencia;
+        private System.Windows.Forms.Label lblFGTS;
+        private System.Windows.Forms.Button btnProcurar;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox8;
@@ -1659,16 +1668,5 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lblReferenciaIRRF;
-        private System.Windows.Forms.Label lblIRRFDesconto;
-        private System.Windows.Forms.Label lblFGTSDesconto;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblFGTSReferencia;
-        private System.Windows.Forms.Label lblFGTS;
-        private System.Windows.Forms.Button btnProcurar;
     }
 }
