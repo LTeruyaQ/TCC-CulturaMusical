@@ -110,17 +110,7 @@ namespace Cultura_Musical.Telas.Funcionarios
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFileDialog file = new OpenFileDialog();
-
-            file.Filter = "JPG Files(*.jpg)| * .jpg | PNG Files (* .png) | *.png | AllFiles(*.*) | *.*";
-
-            if(file.ShowDialog() == DialogResult.OK)
-            {
-                string foto = file.FileName.ToString();
-                
-                
-                caminho = foto;
-            }
+      
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
@@ -239,6 +229,22 @@ namespace Cultura_Musical.Telas.Funcionarios
             Telas.FrmHomePage tela = new FrmHomePage();
             tela.Show();
             this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+
+            file.Filter = "JPG Files(*.jpg)| * .jpg | PNG Files (* .png) | *.png | AllFiles(*.*) | *.*";
+
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                string foto = file.FileName.ToString();
+                picFoto.ImageLocation = foto;
+                
+
+                caminho = foto;
+            }
         }
     }
 }
