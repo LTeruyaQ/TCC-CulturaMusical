@@ -17,7 +17,7 @@ namespace Cultura_Musical.Database
             return lista;
 
         }
-        public List<Database.Entity.fluxo_de_caixa> FluxoPorMesData(DateTime data)
+        public List<Database.Entity.fluxo_de_caixa> FluxoPorData(DateTime data)
         {
             List<Database.Entity.fluxo_de_caixa> lista = DB.fluxo_de_caixa.Where(t => t.data_pagamento.Month == data.Month
                                                                                                                 && t.data_pagamento.Year == data.Year).ToList();

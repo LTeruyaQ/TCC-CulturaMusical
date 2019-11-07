@@ -324,7 +324,7 @@
             this.groupBox4.Controls.Add(this.nudSalario);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Location = new System.Drawing.Point(18, 48);
+            this.groupBox4.Location = new System.Drawing.Point(18, 27);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(533, 102);
             this.groupBox4.TabIndex = 98;
@@ -390,7 +390,7 @@
             this.groupBox3.Controls.Add(this.dtpAlmoco);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Location = new System.Drawing.Point(18, 169);
+            this.groupBox3.Location = new System.Drawing.Point(18, 148);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(533, 123);
             this.groupBox3.TabIndex = 97;
