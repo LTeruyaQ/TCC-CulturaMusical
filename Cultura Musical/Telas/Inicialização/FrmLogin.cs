@@ -39,5 +39,22 @@ namespace Cultura_Musical.Telas
                 MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
             }
         }
+
+        private void lblMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void lblFechar_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Realmente deseja fechar o sistema ?", "Cultura Musical",
+                     MessageBoxButtons.YesNo,
+                     MessageBoxIcon.Warning);
+
+            if (r == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

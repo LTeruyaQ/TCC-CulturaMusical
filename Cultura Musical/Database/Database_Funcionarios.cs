@@ -36,6 +36,13 @@ namespace Cultura_Musical.Database
             return funcionarios;
         }
 
+        public List<Entity.tb_funcionario> ListarPorNomeECargo(string nome, string cargo)
+        {
+            List<Entity.tb_funcionario> funcionarios = DB.tb_funcionario.Where(T => T.nm_funcionario.Contains(nome) ||T.ds_cargo.Contains(cargo))
+                                                                        .ToList();
+            return funcionarios;
+        }
+
         public void Alterar(Entity.tb_funcionario funcionarios)
         {
             Entity.tb_funcionario Novofuncionario = DB.tb_funcionario.FirstOrDefault(t => t.nm_funcionario == funcionarios.nm_funcionario 

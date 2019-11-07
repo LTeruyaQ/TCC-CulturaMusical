@@ -40,22 +40,24 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 
                 funcionario.nm_funcionario = txtNome.Text;
-                funcionario.dt_nascimento = dtpNascimento.Value;
+                funcionario.dt_nascimento = dtpNascimento.Value.Date;
+                funcionario.dt_contratacao = dtpContratacao.Value.Date;
                 funcionario.vl_salario = Convert.ToDecimal(nudSalario.Value);
                 funcionario.ds_telefone = txtTelefone.Text;
-                funcionario.ds_cargo = txtCargo.Text;
-                funcionario.ds_cpf = txtMascara.Text;
-                funcionario.ds_cep = txtCEP.Text;
-                funcionario.dt_contratacao = dtpContratacao.Value;
                 funcionario.ds_email = txtEmail.Text;
                 funcionario.ds_rg = txtRG.Text;
-                funcionario.ds_bairro = txtBairro.Text;
-                funcionario.ds_cidade = txtCidade.Text;
-                funcionario.ds_estado = txtEstado.Text;
+                funcionario.ds_cpf = txtMascara.Text;
+                funcionario.ds_cep = txtCEP.Text;
+                funcionario.ds_cargo = txtCargo.Text;
                 funcionario.ds_rua = txtRua.Text;
-                funcionario.nmr_funcionario = Convert.ToInt32(nudNumero.Value);
-                funcionario.ds_complemento = txtCidade.Text;
+                funcionario.ds_estado = txtEstado.Text;
+                funcionario.ds_complemento = txtComplemento.Text;
+                funcionario.ds_bairro = txtBairro.Text;
                 funcionario.id_beneficio = Beneficios.id_beneficio;
+                funcionario.ds_cidade = txtcidade.Text;
+                funcionario.nmr_funcionario = Convert.ToInt32(nudNumero.Value);
+                
+                
 
                 FileStream fs = new FileStream(caminho,FileMode.Open, FileAccess.Read);
                 BinaryReader br = new BinaryReader(fs);
@@ -68,11 +70,11 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 if (genero == "masculino")
                 {
-                    funcionario.ds_genero = "M";
+                    funcionario.ds_genero = "m";
                 }
                 else
                 {
-                    funcionario.ds_genero = "F";
+                    funcionario.ds_genero = "f";
                 }
 
                 colaboradorBus.CadastroFuncionario(funcionario);
@@ -103,7 +105,7 @@ namespace Cultura_Musical.Telas.Funcionarios
             dynamic resp = api.Buscar(txtCEP.Text);
 
             txtRua.Text = resp.logradouro;
-            txtEstado.Text = resp.localidade;
+            txtcidade.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
         }
 
@@ -116,7 +118,8 @@ namespace Cultura_Musical.Telas.Funcionarios
             if(file.ShowDialog() == DialogResult.OK)
             {
                 string foto = file.FileName.ToString();
-                picFoto.ImageLocation = foto;
+                
+                
                 caminho = foto;
             }
         }
@@ -124,6 +127,84 @@ namespace Cultura_Musical.Telas.Funcionarios
         private void pictureBox11_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void lblFechar_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Realmente deseja fechar o sistema ?", "Cultura Musical",
+                      MessageBoxButtons.YesNo,
+                      MessageBoxIcon.Warning);
+
+            if (r == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAgenda_Click(object sender, EventArgs e)
+        {
+            Agenda.FrmAlterarAgenda tela = new Agenda.FrmAlterarAgenda();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnColaboradores_Click(object sender, EventArgs e)
+        {
+            Funcionarios.frmCadastroFuncionarioD tela = new Funcionarios.frmCadastroFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnCRM_Click(object sender, EventArgs e)
+        {
+            CRM.FrmAdicionarCliente tela = new CRM.FrmAdicionarCliente();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnFornecedores_Click(object sender, EventArgs e)
+        {
+            Fornecedores.FrmAdicionarFornecedor tela = new Fornecedores.FrmAdicionarFornecedor();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnHolerite_Click(object sender, EventArgs e)
+        {
+            Holerite.FrmAddHolerite tela = new Holerite.FrmAddHolerite();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnLogistica_Click(object sender, EventArgs e)
+        {
+            Logistica.Fluxo_de_Caixa.frmFluxoD tela = new Logistica.Fluxo_de_Caixa.frmFluxoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            Produtos.frmAdicionarPedidoD tela = new Produtos.frmAdicionarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnVendas_Click(object sender, EventArgs e)
+        {
+            Planos.cbo tela = new Planos.cbo();
+            tela.Show();
+            this.Hide();
         }
     }
 }

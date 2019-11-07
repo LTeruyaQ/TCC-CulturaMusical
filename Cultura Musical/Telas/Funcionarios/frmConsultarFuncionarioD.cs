@@ -16,7 +16,7 @@ namespace Cultura_Musical.Telas.Funcionarios
         {
             InitializeComponent();
         }
-
+        Business.Business_Funcionarios Bus = new Business.Business_Funcionarios();
         private void frmConsultarFuncionarioD_Load(object sender, EventArgs e)
         {
             int n = 0;
@@ -75,13 +75,97 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 var id = cul.id_beneficio;
 
-                Business.Business_Funcionarios fun = new Business.Business_Funcionarios();
-                //fun.Alterar(id);
+                Telas.Funcionarios.frmCadastroFuncionarioD tela = new frmCadastroFuncionarioD();
+
+                
             }
             else
             {
                 return;
             }
+        }
+
+        private void lblFechar_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Realmente deseja fechar o sistema ?", "Cultura Musical",
+                      MessageBoxButtons.YesNo,
+                      MessageBoxIcon.Warning);
+
+            if (r == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void lblMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnAgenda_Click(object sender, EventArgs e)
+        {
+            Agenda.FrmAlterarAgenda tela = new Agenda.FrmAlterarAgenda();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnColaboradores_Click(object sender, EventArgs e)
+        {
+            Funcionarios.frmCadastroFuncionarioD tela = new Funcionarios.frmCadastroFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnCRM_Click(object sender, EventArgs e)
+        {
+            CRM.FrmAdicionarCliente tela = new CRM.FrmAdicionarCliente();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnFornecedores_Click(object sender, EventArgs e)
+        {
+            Fornecedores.FrmAdicionarFornecedor tela = new Fornecedores.FrmAdicionarFornecedor();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnHolerite_Click(object sender, EventArgs e)
+        {
+            Holerite.FrmAddHolerite tela = new Holerite.FrmAddHolerite();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnLogistica_Click(object sender, EventArgs e)
+        {
+            Logistica.Fluxo_de_Caixa.frmFluxoD tela = new Logistica.Fluxo_de_Caixa.frmFluxoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            Produtos.frmAdicionarPedidoD tela = new Produtos.frmAdicionarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void btnVendas_Click(object sender, EventArgs e)
+        {
+            Planos.cbo tela = new Planos.cbo();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            string nome = txtNome.Text;
+            string cargo = txtCargo.Text;
+
+            List<Database.Entity.tb_funcionario> funcionario = Bus.ListarPorCargoENome(nome, cargo);
+
+            dataGridView1.DataSource = funcionario;
         }
     }
 }
