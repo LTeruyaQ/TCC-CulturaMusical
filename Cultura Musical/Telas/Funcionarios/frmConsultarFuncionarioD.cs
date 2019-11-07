@@ -75,8 +75,9 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 var id = cul.id_beneficio;
 
-                Business.Business_Funcionarios fun = new Business.Business_Funcionarios();
-                //fun.Alterar(id);
+                Telas.Funcionarios.frmCadastroFuncionarioD tela = new frmCadastroFuncionarioD();
+
+                
             }
             else
             {
@@ -160,9 +161,9 @@ namespace Cultura_Musical.Telas.Funcionarios
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
             string nome = txtNome.Text;
-            string caro = txtCargo.Text;
+            string cargo = txtCargo.Text;
 
-            List<Database.Entity.tb_funcionario> funcionario = Bus.ListarPorNome(nome);
+            List<Database.Entity.tb_funcionario> funcionario = Bus.ListarPorCargoENome(nome, cargo);
 
             dataGridView1.DataSource = funcionario;
         }

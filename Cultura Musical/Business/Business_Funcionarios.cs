@@ -31,6 +31,12 @@ namespace Cultura_Musical.Business
             return colaborador;
         }
 
+        public List<Database.Entity.tb_funcionario> ListarPorCargoENome(string nome ,string cargo)
+        {
+            List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorNomeECargo(nome,cargo);
+            return colaborador;
+        }
+
         public void alterar (Database.Entity.tb_funcionario funcionario)
         {
             this.validar(funcionario);
