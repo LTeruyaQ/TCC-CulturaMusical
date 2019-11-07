@@ -30,6 +30,8 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Alterar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Excluir = new System.Windows.Forms.DataGridViewImageColumn();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
@@ -60,8 +62,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.Alterar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Excluir = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -103,6 +103,24 @@
             this.dataGridView1.TabIndex = 94;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // Alterar
+            // 
+            this.Alterar.HeaderText = "Column7";
+            this.Alterar.Image = global::Cultura_Musical.Properties.Resources.lapis1;
+            this.Alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Alterar.Name = "Alterar";
+            this.Alterar.ReadOnly = true;
+            this.Alterar.Width = 20;
+            // 
+            // Excluir
+            // 
+            this.Excluir.HeaderText = "Column5";
+            this.Excluir.Image = global::Cultura_Musical.Properties.Resources.lixeira;
+            this.Excluir.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Excluir.Name = "Excluir";
+            this.Excluir.ReadOnly = true;
+            this.Excluir.Width = 20;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -129,6 +147,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(160, 20);
             this.txtNome.TabIndex = 98;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // txtCargo
             // 
@@ -462,24 +481,6 @@
             this.label17.TabIndex = 246;
             this.label17.Text = "VOLTAR";
             this.label17.Click += new System.EventHandler(this.label17_Click);
-            // 
-            // Alterar
-            // 
-            this.Alterar.HeaderText = "Column7";
-            this.Alterar.Image = global::Cultura_Musical.Properties.Resources.lapis1;
-            this.Alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Alterar.Name = "Alterar";
-            this.Alterar.ReadOnly = true;
-            this.Alterar.Width = 20;
-            // 
-            // Excluir
-            // 
-            this.Excluir.HeaderText = "Column5";
-            this.Excluir.Image = global::Cultura_Musical.Properties.Resources.lixeira;
-            this.Excluir.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Excluir.Name = "Excluir";
-            this.Excluir.ReadOnly = true;
-            this.Excluir.Width = 20;
             // 
             // frmConsultarFuncionarioD
             // 

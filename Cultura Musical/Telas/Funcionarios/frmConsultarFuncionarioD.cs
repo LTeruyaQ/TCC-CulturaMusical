@@ -160,12 +160,7 @@ namespace Cultura_Musical.Telas.Funcionarios
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-            string nome = txtNome.Text;
-            string cargo = txtCargo.Text;
-
-            List<Database.Entity.tb_funcionario> funcionario = Bus.ListarPorCargoENome(nome, cargo);
-
-            dataGridView1.DataSource = funcionario;
+            
         }
 
         private void label17_Click(object sender, EventArgs e)
@@ -178,6 +173,16 @@ namespace Cultura_Musical.Telas.Funcionarios
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+            string nome = txtNome.Text;
+            string cargo = txtCargo.Text;
+
+            List<Database.Entity.tb_funcionario> funcionario = Bus.ListarPorCargoENome(nome, cargo);
+
+            dataGridView1.DataSource = funcionario;
         }
     }
 }
