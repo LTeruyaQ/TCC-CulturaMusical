@@ -100,5 +100,12 @@ namespace Cultura_Musical.Telas.Holerite
             tela.Show();
             this.Hide();
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

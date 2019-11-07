@@ -98,5 +98,12 @@ namespace Cultura_Musical.Telas.Fornecedores
             tela.Show();
             this.Hide();
         }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

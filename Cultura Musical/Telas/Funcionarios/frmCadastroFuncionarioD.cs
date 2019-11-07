@@ -53,8 +53,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_estado = txtEstado.Text;
                 funcionario.ds_complemento = txtComplemento.Text;
                 funcionario.ds_bairro = txtBairro.Text;
-                funcionario.id_beneficio = Beneficios.id_beneficio;
-                funcionario.ds_cidade = txtcidade.Text;
+                funcionario.id_beneficio = Beneficios.id_beneficio;               
                 funcionario.nmr_funcionario = Convert.ToInt32(nudNumero.Value);
                 
                 
@@ -105,7 +104,7 @@ namespace Cultura_Musical.Telas.Funcionarios
             dynamic resp = api.Buscar(txtCEP.Text);
 
             txtRua.Text = resp.logradouro;
-            txtcidade.Text = resp.localidade;
+            txtEstado.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
         }
 
@@ -203,6 +202,41 @@ namespace Cultura_Musical.Telas.Funcionarios
         private void btnVendas_Click(object sender, EventArgs e)
         {
             Planos.cbo tela = new Planos.cbo();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void cmsAgenda_Opening(object sender, CancelEventArgs e)
+        {
+            
+        }
+
+        private void inserirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Telas.FrmAgenda TELA = new FrmAgenda();
+            TELA.Show();
+            this.Hide();
+               
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void removerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
             tela.Show();
             this.Hide();
         }
