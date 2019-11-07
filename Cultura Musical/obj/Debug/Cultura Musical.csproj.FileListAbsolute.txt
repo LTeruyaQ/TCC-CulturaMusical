@@ -1696,3 +1696,6 @@ C:\Users\Adriana\Source\Repos\tcc-cultura-musical4\Cultura Musical\bin\Debug\Sys
 C:\Users\Adriana\Source\Repos\tcc-cultura-musical4\Cultura Musical\bin\Debug\JWT.xml
 C:\Users\Adriana\Source\Repos\tcc-cultura-musical4\Cultura Musical\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Adriana\Source\Repos\tcc-cultura-musical4\Cultura Musical\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\infoc24\Source\Repos\tcc-cultura-musical12\Cultura Musical\bin\Debug\Cultura Musical.exe.config
+C:\Users\infoc24\Source\Repos\tcc-cultura-musical12\Cultura Musical\obj\Debug\Cultura Musical.exe
+C:\Users\infoc24\Source\Repos\tcc-cultura-musical12\Cultura Musical\obj\Debug\Cultura Musical.pdb
