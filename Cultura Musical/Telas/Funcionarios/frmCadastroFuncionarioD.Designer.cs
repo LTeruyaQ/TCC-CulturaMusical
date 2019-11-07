@@ -512,6 +512,7 @@
             this.linkLabel1.TabIndex = 94;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Escolher Foto";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked_1);
             // 
             // txtMascara
             // 
