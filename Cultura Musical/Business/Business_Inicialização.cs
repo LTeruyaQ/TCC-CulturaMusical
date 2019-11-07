@@ -8,7 +8,15 @@ namespace Cultura_Musical.Business
 {
     class Business_Inicialização
     {
+
+        Database.Database_Inicialização db = new Database.Database_Inicialização();
         public void Cadastro(Database.Entity.tb_login cadastro, string conf)
+        {
+            this.validacao(cadastro, conf);
+            db.Cadastro(cadastro);
+        }
+
+        private void validacao (Database.Entity.tb_login cadastro, string conf)
         {
             if (conf != cadastro.sen_usuario)
             {
@@ -26,8 +34,14 @@ namespace Cultura_Musical.Business
             {
                 throw new ArgumentException("Senha não pode ser maior que 30 caracteres");
             }
-            Database.Database_Inicialização db = new Database.Database_Inicialização();
-            db.Cadastro(cadastro);
+        }
+
+        public void login (string usuario, string senha)
+        {
+            Database.Entity.tb_login confirmacao = db.procura(Login);
+
+            if (confirmacao.nm_usuario == null || confirmacao.sen_usuario == null)
+                throw new ArgumentException("Usuario ou senha incorreta");
         }
     }
 }

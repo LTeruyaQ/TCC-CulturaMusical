@@ -174,5 +174,10 @@ namespace Cultura_Musical.Telas.Funcionarios
             tela.Show();
             this.Hide();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

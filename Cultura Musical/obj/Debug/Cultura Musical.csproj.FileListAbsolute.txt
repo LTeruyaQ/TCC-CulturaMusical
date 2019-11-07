@@ -1959,3 +1959,5 @@ C:\Users\infoc24\Source\Repos\tcc-cultura-musical13\Cultura Musical\obj\Debug\Cu
 C:\Users\infoc24\Source\Repos\tcc-cultura-musical13\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Produtos.FrmDeletarProduto.resources
 C:\Users\infoc24\Source\Repos\tcc-cultura-musical13\Cultura Musical\obj\Debug\Cultura_Musical.UserControl1.resources
 C:\Users\infoc24\Source\Repos\tcc-cultura-musical13\Cultura Musical\obj\Debug\Cultura Musical.csproj.GenerateResource.Cache
+C:\Users\infoc24\Source\Repos\tcc-cultura-musical13\Cultura Musical\bin\Debug\Cultura Musical.exe
+C:\Users\infoc24\Source\Repos\tcc-cultura-musical13\Cultura Musical\bin\Debug\Cultura Musical.pdb

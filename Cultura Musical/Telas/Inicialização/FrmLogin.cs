@@ -17,6 +17,8 @@ namespace Cultura_Musical.Telas
             InitializeComponent();
         }
 
+        Business.Business_Inicialização Bus = new Business.Business_Inicialização();
+
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             ///aqui invocaria a tela de permição///
@@ -26,7 +28,10 @@ namespace Cultura_Musical.Telas
         {
             try
             {
+                string nome  = txtUsuario.Text;
+                string Senha = txtSenha.Text;
 
+                Bus.
             }
 
             catch (ArgumentException ex)
