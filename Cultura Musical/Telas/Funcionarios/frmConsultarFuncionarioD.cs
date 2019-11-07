@@ -167,5 +167,12 @@ namespace Cultura_Musical.Telas.Funcionarios
 
             dataGridView1.DataSource = funcionario;
         }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
     }
 }
