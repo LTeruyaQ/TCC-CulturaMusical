@@ -19,8 +19,8 @@ namespace Cultura_Musical.Telas.Planos
             Database.Database_Planos planos = new Database.Database_Planos();
             List<Database.Entity.tb_plano> lista = planos.ListarTodos();
 
-            cbonome.DisplayMember = nameof(plano.nm_plano);
-            cbonome.DataSource = lista;
+            //cbonome.DisplayMember = nameof(plano.nm_plano);
+            //cbonome.DataSource = lista;
 
 
         }
@@ -47,20 +47,20 @@ namespace Cultura_Musical.Telas.Planos
             
         }
 
-        private void cbonome_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            cbonome.ValueMember = nameof(plano.vl_preco);
-            nudalterar.Value= Convert.ToDecimal(cbonome.SelectedValue);
+        //private void cbonome_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    cbonome.ValueMember = nameof(plano.vl_preco);
+        //    nudalterar.Value= Convert.ToDecimal(cbonome.SelectedValue);
 
-            cbonome.ValueMember = nameof(plano.qtd_aula_semana);
-            nud_qtd_alterar.Value = Convert.ToDecimal(cbonome.SelectedValue);
+        //    cbonome.ValueMember = nameof(plano.qtd_aula_semana);
+        //    nud_qtd_alterar.Value = Convert.ToDecimal(cbonome.SelectedValue);
 
-            cbonome.ValueMember = nameof(plano.ds_duracao);
-            txtduraçãoalterar.Text = Convert.ToString(cbonome.SelectedValue);
+        //    cbonome.ValueMember = nameof(plano.ds_duracao);
+        //    txtduraçãoalterar.Text = Convert.ToString(cbonome.SelectedValue);
 
-            cbonome.ValueMember = nameof(plano.ds_descricao);
-            txtdescalterar.Text = Convert.ToString(cbonome.SelectedValue);
-        }
+        //    cbonome.ValueMember = nameof(plano.ds_descricao);
+        //    txtdescalterar.Text = Convert.ToString(cbonome.SelectedValue);
+        //}
 
         private void lblMinimizar_Click(object sender, EventArgs e)
         {
@@ -156,5 +156,7 @@ namespace Cultura_Musical.Telas.Planos
             tela.Show();
             this.Hide();
         }
+
+       
     }
 }
