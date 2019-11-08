@@ -159,5 +159,10 @@ namespace Cultura_Musical.Telas.Fornecedores
 
             
         }
+
+        private void dgvNMFornecedor_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

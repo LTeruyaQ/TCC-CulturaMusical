@@ -79,6 +79,8 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnParar = new System.Windows.Forms.Button();
             this.btnFalar = new System.Windows.Forms.Button();
+            this.lblMinimizar = new System.Windows.Forms.Label();
+            this.lblFechar = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -157,6 +159,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lblMinimizar);
+            this.panel2.Controls.Add(this.lblFechar);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -170,7 +174,7 @@
             this.label10.BackColor = System.Drawing.Color.Black;
             this.label10.Font = new System.Drawing.Font("Stencil", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(156, 0);
+            this.label10.Location = new System.Drawing.Point(156, -1);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(437, 64);
             this.label10.TabIndex = 7;
@@ -613,6 +617,28 @@
             this.btnFalar.UseVisualStyleBackColor = false;
             this.btnFalar.Click += new System.EventHandler(this.btnFalar_Click);
             // 
+            // lblMinimizar
+            // 
+            this.lblMinimizar.AutoSize = true;
+            this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMinimizar.Location = new System.Drawing.Point(599, -1);
+            this.lblMinimizar.Name = "lblMinimizar";
+            this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
+            this.lblMinimizar.TabIndex = 115;
+            this.lblMinimizar.Text = "_";
+            // 
+            // lblFechar
+            // 
+            this.lblFechar.AutoSize = true;
+            this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechar.ForeColor = System.Drawing.Color.Red;
+            this.lblFechar.Location = new System.Drawing.Point(621, 2);
+            this.lblFechar.Name = "lblFechar";
+            this.lblFechar.Size = new System.Drawing.Size(20, 19);
+            this.lblFechar.TabIndex = 114;
+            this.lblFechar.Text = "X";
+            // 
             // FrmHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -636,6 +662,7 @@
             this.Load += new System.EventHandler(this.FrmHomePage_Load);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.cmsProdutos.ResumeLayout(false);
             this.cmsAgenda.ResumeLayout(false);
@@ -706,5 +733,7 @@
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem removerToolStripMenuItem1;
+        private System.Windows.Forms.Label lblMinimizar;
+        private System.Windows.Forms.Label lblFechar;
     }
 }

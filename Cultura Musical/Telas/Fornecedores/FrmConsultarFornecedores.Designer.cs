@@ -73,6 +73,8 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.remover = new System.Windows.Forms.DataGridViewImageColumn();
             this.alterar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.lblMinimizar = new System.Windows.Forms.Label();
+            this.lblFechar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNMFornecedor)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -92,7 +94,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Stencil", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(405, 108);
+            this.label1.Location = new System.Drawing.Point(403, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 22);
             this.label1.TabIndex = 0;
@@ -101,7 +103,7 @@
             // 
             // txtNFornecedor
             // 
-            this.txtNFornecedor.Location = new System.Drawing.Point(565, 105);
+            this.txtNFornecedor.Location = new System.Drawing.Point(563, 99);
             this.txtNFornecedor.Multiline = true;
             this.txtNFornecedor.Name = "txtNFornecedor";
             this.txtNFornecedor.Size = new System.Drawing.Size(223, 25);
@@ -132,6 +134,7 @@
             this.dgvNMFornecedor.ReadOnly = true;
             this.dgvNMFornecedor.Size = new System.Drawing.Size(735, 382);
             this.dgvNMFornecedor.TabIndex = 2;
+            this.dgvNMFornecedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNMFornecedor_CellContentClick);
             // 
             // panel3
             // 
@@ -171,6 +174,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.lblMinimizar);
+            this.panel2.Controls.Add(this.lblFechar);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -564,6 +569,28 @@
             this.alterar.ReadOnly = true;
             this.alterar.Width = 20;
             // 
+            // lblMinimizar
+            // 
+            this.lblMinimizar.AutoSize = true;
+            this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMinimizar.Location = new System.Drawing.Point(723, -1);
+            this.lblMinimizar.Name = "lblMinimizar";
+            this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
+            this.lblMinimizar.TabIndex = 117;
+            this.lblMinimizar.Text = "_";
+            // 
+            // lblFechar
+            // 
+            this.lblFechar.AutoSize = true;
+            this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechar.ForeColor = System.Drawing.Color.Red;
+            this.lblFechar.Location = new System.Drawing.Point(745, 2);
+            this.lblFechar.Name = "lblFechar";
+            this.lblFechar.Size = new System.Drawing.Size(20, 19);
+            this.lblFechar.TabIndex = 116;
+            this.lblFechar.Text = "X";
+            // 
             // FrmConsultarFornecedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -585,6 +612,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvNMFornecedor)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -647,5 +675,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewImageColumn remover;
         private System.Windows.Forms.DataGridViewImageColumn alterar;
+        private System.Windows.Forms.Label lblMinimizar;
+        private System.Windows.Forms.Label lblFechar;
     }
 }

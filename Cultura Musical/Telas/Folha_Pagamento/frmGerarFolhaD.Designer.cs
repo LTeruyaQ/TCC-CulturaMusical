@@ -148,6 +148,8 @@
             this.cmsVenda = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblMinimizar = new System.Windows.Forms.Label();
+            this.lblFechar = new System.Windows.Forms.Label();
             this.groupBox8.SuspendLayout();
             this.groupBox22.SuspendLayout();
             this.groupBox21.SuspendLayout();
@@ -1235,7 +1237,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.lblMinimizar);
             this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.lblFechar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(177, 0);
@@ -1519,7 +1523,7 @@
             this.inserirToolStripMenuItem,
             this.consultarToolStripMenuItem});
             this.cmsAgenda.Name = "cmsAgenda";
-            this.cmsAgenda.Size = new System.Drawing.Size(181, 70);
+            this.cmsAgenda.Size = new System.Drawing.Size(126, 48);
             // 
             // cmsColaborador
             // 
@@ -1552,6 +1556,28 @@
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
             this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
+            // 
+            // lblMinimizar
+            // 
+            this.lblMinimizar.AutoSize = true;
+            this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMinimizar.Location = new System.Drawing.Point(652, 0);
+            this.lblMinimizar.Name = "lblMinimizar";
+            this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
+            this.lblMinimizar.TabIndex = 241;
+            this.lblMinimizar.Text = "_";
+            // 
+            // lblFechar
+            // 
+            this.lblFechar.AutoSize = true;
+            this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechar.ForeColor = System.Drawing.Color.Red;
+            this.lblFechar.Location = new System.Drawing.Point(674, 3);
+            this.lblFechar.Name = "lblFechar";
+            this.lblFechar.Size = new System.Drawing.Size(20, 19);
+            this.lblFechar.TabIndex = 240;
+            this.lblFechar.Text = "X";
             // 
             // frmGerarFolhaD
             // 
@@ -1590,6 +1616,7 @@
             this.groupBox3.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1727,5 +1754,7 @@
         private System.Windows.Forms.ContextMenuStrip cmsFornecedores;
         private System.Windows.Forms.ContextMenuStrip cmsProdutos;
         private System.Windows.Forms.ContextMenuStrip cmsVenda;
+        private System.Windows.Forms.Label lblMinimizar;
+        private System.Windows.Forms.Label lblFechar;
     }
 }
