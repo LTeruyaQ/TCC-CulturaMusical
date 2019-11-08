@@ -46,9 +46,9 @@ namespace Cultura_Musical.Database
             DB.SaveChanges();
         }
 
-        public void excluir(string nome)
+        public void excluir(int id)
         {
-            Entity.tb_fornecedor fornecedor = DB.tb_fornecedor.FirstOrDefault(t => t.nm_fornecedor == nome);
+            Entity.tb_fornecedor fornecedor = DB.tb_fornecedor.FirstOrDefault(t => t.id_fornecedor == id);
 
             DB.tb_fornecedor.Remove(fornecedor);
             DB.SaveChanges();

@@ -30,9 +30,9 @@ namespace Cultura_Musical.Business
             return ok;
         }
 
-        public void Remover(string forn)
+        public void Remover(int id)
         {
-            DB.excluir(forn);
+            DB.excluir(id);
         }
 
         public void Alterar(Database.Entity.tb_fornecedor forn)

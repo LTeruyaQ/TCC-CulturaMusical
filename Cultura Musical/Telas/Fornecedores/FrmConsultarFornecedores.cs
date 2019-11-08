@@ -162,7 +162,24 @@ namespace Cultura_Musical.Telas.Fornecedores
 
         private void dgvNMFornecedor_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (dgvNMFornecedor.CurrentCell.ColumnIndex == remover.Index)
+            {
+                Database.Entity.tb_funcionario cul = dgvNMFornecedor.CurrentRow.DataBoundItem as
+                    Database.Entity.tb_funcionario;
 
+                var id = cul.id_funcionario;
+
+                Business.Business_Fornecedores business_Fornecedores = new Business.Business_Fornecedores();
+                business_Fornecedores.Remover(id);
+
+
+
+
+            }
+            else
+            {
+                return;
+            }
         }
 
         private void inserirToolStripMenuItem2_Click(object sender, EventArgs e)

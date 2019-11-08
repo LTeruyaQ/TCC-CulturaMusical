@@ -36,16 +36,19 @@ namespace Cultura_Musical.Telas.Funcionarios
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataGridView1.CurrentCell.ColumnIndex == Alterar.Index)
+            if (dataGridView1.CurrentCell.ColumnIndex == Excluir.Index)
             {
                 Database.Entity.tb_funcionario cul = dataGridView1.CurrentRow.DataBoundItem as
                     Database.Entity.tb_funcionario;
 
-                var id = cul.id_beneficio;
+                var id = cul.id_funcionario;
 
-                Telas.Funcionarios.frmCadastroFuncionarioD tela = new frmCadastroFuncionarioD();
+                Business.Business_Funcionarios business_Fornecedores = new Business.Business_Funcionarios();
+                business_Fornecedores.Remover(id);
 
-                
+
+
+
             }
             else
             {

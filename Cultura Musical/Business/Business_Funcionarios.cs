@@ -43,6 +43,12 @@ namespace Cultura_Musical.Business
             DB.ProcurarFuncionario(funcionario);
         }
 
+        public void Remover(int id)
+        {
+            
+            DB.Excluir(id);
+        }
+
         public Database.Entity.tb_funcionario BuscarFuncionario (Database.Entity.tb_funcionario Funcionario)
         {
             Database.Entity.tb_funcionario Procura = DB.ProcurarFuncionario(Funcionario);
