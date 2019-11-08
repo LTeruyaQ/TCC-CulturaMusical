@@ -137,5 +137,83 @@ namespace Cultura_Musical.Telas.Fornecedores
             txtCidade.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
         }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmCadastroFuncionarioD tela = new Funcionarios.frmCadastroFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmConsultarFuncionarioD tela = new Funcionarios.frmConsultarFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void inserirToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmAdicionarFornecedor tela = new FrmAdicionarFornecedor();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void consultarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmConsultarFornecedores tela = new FrmConsultarFornecedores();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void inserirToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmAdicionarPedidoD tela = new Produtos.frmAdicionarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void consultarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmConsultarPedidoD tela = new Produtos.frmConsultarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void cmsVenda_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.frmAdicionarPlano tela = new Planos.frmAdicionarPlano();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.cbo tela = new Planos.cbo();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void lblFechar_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Realmente deseja fechar o sistema ?", "Cultura Musical",
+                               MessageBoxButtons.YesNo,
+                               MessageBoxIcon.Warning);
+
+            if (r == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void lblMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

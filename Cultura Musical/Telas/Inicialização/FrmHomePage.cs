@@ -149,5 +149,75 @@ namespace Cultura_Musical.Telas
         {
 
         }
+
+        private void alterarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cmsProdutos_Opening(object sender, CancelEventArgs e)
+        {
+        }
+
+        private void inserirToolStripMenuItem2_Click_1(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmAdicionarPedidoD tela = new Produtos.frmAdicionarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void inserirToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.frmAdicionarPlano tela = new Planos.frmAdicionarPlano();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void lblFechar_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Realmente deseja fechar o sistema ?", "Cultura Musical",
+                     MessageBoxButtons.YesNo,
+                     MessageBoxIcon.Warning);
+
+            if (r == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void lblMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            Telas.Folha_Pagamento.frmGerarFolhaD tela = new Folha_Pagamento.frmGerarFolhaD();
+            tela.Show();
+            this.Hide();
+
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Telas.Logistica.Fluxo_de_Caixa.frmFluxoD tela = new Logistica.Fluxo_de_Caixa.frmFluxoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

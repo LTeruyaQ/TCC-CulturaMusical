@@ -95,9 +95,7 @@ namespace Cultura_Musical.Telas.Produtos
 
         private void btnColaboradores_Click(object sender, EventArgs e)
         {
-            Funcionarios.frmCadastroFuncionarioD tela = new Funcionarios.frmCadastroFuncionarioD();
-            tela.Show();
-            this.Hide();
+           
         }
 
         private void btnCRM_Click(object sender, EventArgs e)
@@ -139,6 +137,55 @@ namespace Cultura_Musical.Telas.Produtos
         private void btnVendas_Click(object sender, EventArgs e)
         {
             Planos.cbo tela = new Planos.cbo();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmAdicionarFornecedor tela  = new Telas.Fornecedores.FrmAdicionarFornecedor() ;
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmConsultarFornecedores tela = new Fornecedores.FrmConsultarFornecedores();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.frmAdicionarPlano tela = new Planos.frmAdicionarPlano();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.cbo tela = new Planos.cbo();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmAdicionarPedidoD tela = new frmAdicionarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmConsultarFuncionarioD tela = new Funcionarios.frmConsultarFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmConsultarPedidoD tela = new frmConsultarPedidoD();
             tela.Show();
             this.Hide();
         }

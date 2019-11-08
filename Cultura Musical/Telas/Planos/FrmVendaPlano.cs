@@ -78,7 +78,7 @@ namespace Cultura_Musical.Telas.Planos
             string nm_cliente = txtnome.Text;
             Business.Business_Cliente bus = new Business.Business_Cliente();
             List<Database.Entity.tb_cliente> cliente = bus.listapornome(nm_cliente);
-            dgvlista.DataSource = cliente;
+            dgvFuncionario.DataSource = cliente;
         }
 
         private void lblFechar_Click(object sender, EventArgs e)
@@ -159,6 +159,70 @@ namespace Cultura_Musical.Telas.Planos
             Telas.FrmHomePage tela = new FrmHomePage();
             tela.Show();
             this.Hide();
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.frmAdicionarPlano tela = new frmAdicionarPlano();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.cbo tela = new cbo();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmAdicionarFornecedor tela = new Fornecedores.FrmAdicionarFornecedor();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmConsultarFornecedores tela = new Fornecedores.FrmConsultarFornecedores();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmCadastroFuncionarioD tela = new Funcionarios.frmCadastroFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmConsultarFuncionarioD tela = new Funcionarios.frmConsultarFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmAdicionarPedidoD tela = new Produtos.frmAdicionarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void cbo_Load(object sender, EventArgs e)
+        {
+            dgvlista.BorderStyle = BorderStyle.None;
+            dgvlista.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dgvlista.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvlista.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dgvlista.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dgvlista.BackgroundColor = Color.White;
+
+            dgvlista.EnableHeadersVisualStyles = false;
+            dgvlista.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvlista.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dgvlista.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
     }
 }

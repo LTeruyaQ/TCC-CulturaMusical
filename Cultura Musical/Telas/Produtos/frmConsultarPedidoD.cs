@@ -137,9 +137,7 @@ namespace Cultura_Musical.Telas.Produtos
 
         private void btnFornecedores_Click(object sender, EventArgs e)
         {
-            Fornecedores.FrmAdicionarFornecedor tela = new Fornecedores.FrmAdicionarFornecedor();
-            tela.Show();
-            this.Hide();
+         
         }
 
         private void btnHolerite_Click(object sender, EventArgs e)
@@ -168,6 +166,80 @@ namespace Cultura_Musical.Telas.Produtos
             Planos.cbo tela = new Planos.cbo();
             tela.Show();
             this.Hide();
+        }
+
+        private void inserirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmCadastroFuncionarioD tela = new Funcionarios.frmCadastroFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmConsultarFuncionarioD tela = new Funcionarios.frmConsultarFuncionarioD();
+            tela.Show();
+            this.Hide();
+
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            //Telas.Funcionarios.frmAlterarColaborador tela = new Funcionarios.frmAlterarColaborador();
+            //tela.Show();
+            //this.Hide();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Fornecedores.FrmAdicionarFornecedor tela = new Fornecedores.FrmAdicionarFornecedor();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmConsultarFornecedores tela = new Fornecedores.FrmConsultarFornecedores();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmAdicionarPedidoD tela = new frmAdicionarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmConsultarPedidoD tela = new frmConsultarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.FrmAlterarProduto tela = new FrmAlterarProduto();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.frmAdicionarPlano tela = new Planos.frmAdicionarPlano();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.cbo tela = new Planos.cbo();
         }
     }
 }
