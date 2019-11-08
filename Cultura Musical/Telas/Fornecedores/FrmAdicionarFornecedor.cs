@@ -29,10 +29,13 @@ namespace Cultura_Musical.Telas.Fornecedores
                 forn.tell_contato2 = mskTel2.Text;
                 forn.ds_email = txtEmail.Text;
                 forn.cep = mskCEP.Text;
-                forn.rua = txtRua.Text;
-                forn.bairro = txtBairro.Text;
-                forn.cidade = txtCidade.Text;
+                forn.rua = txtRua.Text.ToLower();
+                forn.bairro = txtBairro.Text.ToLower();
+                forn.cidade = txtCidade.Text.ToLower();
+                forn.estado = txtEstado.Text.ToLower();
                 forn.ds_cnpj = mstCNPJ.Text;
+                forn.nmr_fornecedor =Convert.ToInt32(nudnumero.Value);
+                
 
                 Business.Business_Fornecedores forne = new Business.Business_Fornecedores();
                 forne.AddForn(forn);
@@ -45,10 +48,10 @@ namespace Cultura_Musical.Telas.Fornecedores
                 MessageBox.Show(ex.Message);
             }
 
-            catch (Exception)
-            {
-                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
-            }
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
+            //}
         }
 
         private void button9_MouseEnter(object sender, EventArgs e)

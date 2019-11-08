@@ -13,23 +13,26 @@
     <EntitySet Name="tb_financeiro" EntityType="db_a4f9ad_stormprModel.tb_financeiro" />
     <EntitySet Name="tb_folha_pagamento" EntityType="db_a4f9ad_stormprModel.tb_folha_pagamento" />
     <EntitySet Name="tb_fornecedor" EntityType="db_a4f9ad_stormprModel.tb_fornecedor" />
+    <EntitySet Name="tb_funcionario" EntityType="db_a4f9ad_stormprModel.tb_funcionario" />
     <EntitySet Name="tb_holerite" EntityType="db_a4f9ad_stormprModel.tb_holerite" />
     <EntitySet Name="tb_jornada" EntityType="db_a4f9ad_stormprModel.tb_jornada" />
     <EntitySet Name="tb_login" EntityType="db_a4f9ad_stormprModel.tb_login" />
     <EntitySet Name="tb_plano" EntityType="db_a4f9ad_stormprModel.tb_plano" />
     <EntitySet Name="tb_ponto" EntityType="db_a4f9ad_stormprModel.tb_ponto" />
     <EntitySet Name="tb_produto" EntityType="db_a4f9ad_stormprModel.tb_produto" />
-    <EntitySet Name="tb_prolabore" EntityType="db_a4f9ad_stormprModel.tb_prolabore" />
     <EntitySet Name="tb_sala" EntityType="db_a4f9ad_stormprModel.tb_sala" />
     <EntitySet Name="tb_tipo_conta" EntityType="db_a4f9ad_stormprModel.tb_tipo_conta" />
     <EntitySet Name="tb_venda_plano" EntityType="db_a4f9ad_stormprModel.tb_venda_plano" />
-    <EntitySet Name="fluxo_de_caixa" EntityType="db_a4f9ad_stormprModel.fluxo_de_caixa" />
     <AssociationSet Name="fk_tb_agenda_estudio_tb_cliente1" Association="db_a4f9ad_stormprModel.fk_tb_agenda_estudio_tb_cliente1">
       <End Role="tb_cliente" EntitySet="tb_cliente" />
       <End Role="tb_agenda_estudio" EntitySet="tb_agenda_estudio" />
     </AssociationSet>
     <AssociationSet Name="fk_tb_cliente_aula_tb_cliente1" Association="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_cliente1">
       <End Role="tb_cliente" EntitySet="tb_cliente" />
+      <End Role="tb_aula" EntitySet="tb_aula" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_cliente_aula_tb_funcionario1" Association="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_funcionario1">
+      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
       <End Role="tb_aula" EntitySet="tb_aula" />
     </AssociationSet>
     <AssociationSet Name="fk_tb_cliente_aula_tb_sala1" Association="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_sala1">
@@ -39,6 +42,10 @@
     <AssociationSet Name="fk_tb_cliente_aula_tb_venda_plano1" Association="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_venda_plano1">
       <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
       <End Role="tb_aula" EntitySet="tb_aula" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_funcionario_tb_beneficio1" Association="db_a4f9ad_stormprModel.fk_tb_funcionario_tb_beneficio1">
+      <End Role="tb_beneficio" EntitySet="tb_beneficio" />
+      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
     </AssociationSet>
     <AssociationSet Name="fk_tb_venda_plano_tb_cliente1" Association="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_cliente1">
       <End Role="tb_cliente" EntitySet="tb_cliente" />
@@ -64,30 +71,9 @@
       <End Role="tb_financeiro" EntitySet="tb_financeiro" />
       <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
     </AssociationSet>
-    <AssociationSet Name="fk_tb_prolabore_tb_login1" Association="db_a4f9ad_stormprModel.fk_tb_prolabore_tb_login1">
-      <End Role="tb_login" EntitySet="tb_login" />
-      <End Role="tb_prolabore" EntitySet="tb_prolabore" />
-    </AssociationSet>
-    <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_plano1">
-      <End Role="tb_plano" EntitySet="tb_plano" />
-      <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
-    </AssociationSet>
-    <EntitySet Name="tb_funcionario" EntityType="db_a4f9ad_stormprModel.tb_funcionario" />
-    <AssociationSet Name="fk_tb_cliente_aula_tb_funcionario1" Association="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_funcionario1">
-      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-      <End Role="tb_aula" EntitySet="tb_aula" />
-    </AssociationSet>
-    <AssociationSet Name="fk_tb_funcionario_tb_beneficio1" Association="db_a4f9ad_stormprModel.fk_tb_funcionario_tb_beneficio1">
-      <End Role="tb_beneficio" EntitySet="tb_beneficio" />
-      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-    </AssociationSet>
     <AssociationSet Name="fk_tb_folha_pagamento_tb_funcionario1" Association="db_a4f9ad_stormprModel.fk_tb_folha_pagamento_tb_funcionario1">
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
       <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
-    </AssociationSet>
-    <AssociationSet Name="fk_tb_login_tb_funcionario1" Association="db_a4f9ad_stormprModel.fk_tb_login_tb_funcionario1">
-      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-      <End Role="tb_login" EntitySet="tb_login" />
     </AssociationSet>
     <AssociationSet Name="tb_jornada_ibfk_1" Association="db_a4f9ad_stormprModel.tb_jornada_ibfk_1">
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
@@ -96,6 +82,10 @@
     <AssociationSet Name="tb_ponto_ibfk_1" Association="db_a4f9ad_stormprModel.tb_ponto_ibfk_1">
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
       <End Role="tb_ponto" EntitySet="tb_ponto" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_plano1">
+      <End Role="tb_plano" EntitySet="tb_plano" />
+      <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="tb_agenda_estudio">
@@ -123,9 +113,9 @@
     <Property Name="id_venda_plano" Type="Int32" Nullable="false" />
     <Property Name="id_sala" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tb_cliente" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_cliente1" FromRole="tb_aula" ToRole="tb_cliente" />
+    <NavigationProperty Name="tb_funcionario" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_aula" ToRole="tb_funcionario" />
     <NavigationProperty Name="tb_sala" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_sala1" FromRole="tb_aula" ToRole="tb_sala" />
     <NavigationProperty Name="tb_venda_plano" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_venda_plano1" FromRole="tb_aula" ToRole="tb_venda_plano" />
-    <NavigationProperty Name="tb_funcionario" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_aula" ToRole="tb_funcionario" />
   </EntityType>
   <EntityType Name="tb_beneficio">
     <Key>
@@ -262,6 +252,37 @@
     <Property Name="nmr_fornecedor" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tb_compra" Relationship="db_a4f9ad_stormprModel.fk_tb_compra_tb_fornecedor1" FromRole="tb_fornecedor" ToRole="tb_compra" />
   </EntityType>
+  <EntityType Name="tb_funcionario">
+    <Key>
+      <PropertyRef Name="id_funcionario" />
+    </Key>
+    <Property Name="id_funcionario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nm_funcionario" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
+    <Property Name="dt_contratacao" Type="DateTime" Nullable="false" />
+    <Property Name="dt_demicao" Type="DateTime" />
+    <Property Name="vl_salario" Type="Decimal" Nullable="false" />
+    <Property Name="ds_telefone" Type="String" Nullable="false" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="ds_email" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="ds_genero" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ds_rg" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="ds_cpf" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="ds_cep" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="ds_cargo" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="ds_rua" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ds_estado" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="ds_bairro" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ds_complemento" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="id_beneficio" Type="Int32" Nullable="false" />
+    <Property Name="ds_cidade" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="ft_funcionario" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="nmr_funcionario" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_aula" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_aula" />
+    <NavigationProperty Name="tb_beneficio" Relationship="db_a4f9ad_stormprModel.fk_tb_funcionario_tb_beneficio1" FromRole="tb_funcionario" ToRole="tb_beneficio" />
+    <NavigationProperty Name="tb_folha_pagamento" Relationship="db_a4f9ad_stormprModel.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_folha_pagamento" />
+    <NavigationProperty Name="tb_jornada" Relationship="db_a4f9ad_stormprModel.tb_jornada_ibfk_1" FromRole="tb_funcionario" ToRole="tb_jornada" />
+    <NavigationProperty Name="tb_ponto" Relationship="db_a4f9ad_stormprModel.tb_ponto_ibfk_1" FromRole="tb_funcionario" ToRole="tb_ponto" />
+  </EntityType>
   <EntityType Name="tb_holerite">
     <Key>
       <PropertyRef Name="id_holerite" />
@@ -289,10 +310,8 @@
     <Property Name="nm_usuario" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="sen_usuario" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="dt_login" Type="DateTime" Nullable="false" />
-    <Property Name="nv_login" Type="Int32" Nullable="false" />
+    <Property Name="ds_ADM" Type="Boolean" />
     <Property Name="id_funcionario" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="tb_prolabore" Relationship="db_a4f9ad_stormprModel.fk_tb_prolabore_tb_login1" FromRole="tb_login" ToRole="tb_prolabore" />
-    <NavigationProperty Name="tb_funcionario" Relationship="db_a4f9ad_stormprModel.fk_tb_login_tb_funcionario1" FromRole="tb_login" ToRole="tb_funcionario" />
   </EntityType>
   <EntityType Name="tb_plano">
     <Key>
@@ -331,26 +350,6 @@
     <NavigationProperty Name="tb_compra" Relationship="db_a4f9ad_stormprModel.fk_tb_produto_tb_compra1" FromRole="tb_produto" ToRole="tb_compra" />
     <NavigationProperty Name="tb_estoque" Relationship="db_a4f9ad_stormprModel.fk_tb_estoque_tb_produto1" FromRole="tb_produto" ToRole="tb_estoque" />
   </EntityType>
-  <EntityType Name="tb_prolabore">
-    <Key>
-      <PropertyRef Name="id_prolabore" />
-    </Key>
-    <Property Name="id_prolabore" Type="Int32" Nullable="false" />
-    <Property Name="nm_prolabore" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
-    <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
-    <Property Name="ds_rg" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
-    <Property Name="ds_cpf" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
-    <Property Name="nmr_telefone" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="false" />
-    <Property Name="ds_email" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="ds_bairro" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
-    <Property Name="ds_rua" Type="String" Nullable="false" MaxLength="35" FixedLength="false" Unicode="false" />
-    <Property Name="ds_cidade" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="ds_estado" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
-    <Property Name="ds_cep" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
-    <Property Name="ds_genero" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
-    <Property Name="id_login" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="tb_login" Relationship="db_a4f9ad_stormprModel.fk_tb_prolabore_tb_login1" FromRole="tb_prolabore" ToRole="tb_login" />
-  </EntityType>
   <EntityType Name="tb_sala">
     <Key>
       <PropertyRef Name="id_sala" />
@@ -382,15 +381,6 @@
     <NavigationProperty Name="tb_cliente" Relationship="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_cliente1" FromRole="tb_venda_plano" ToRole="tb_cliente" />
     <NavigationProperty Name="tb_plano" Relationship="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_plano1" FromRole="tb_venda_plano" ToRole="tb_plano" />
   </EntityType>
-  <EntityType Name="fluxo_de_caixa">
-    <Key>
-      <PropertyRef Name="data_pagamento" />
-      <PropertyRef Name="tipo_operação" />
-    </Key>
-    <Property Name="data_pagamento" Type="DateTime" Nullable="false" />
-    <Property Name="valor_pago" Type="Decimal" />
-    <Property Name="tipo_operação" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
-  </EntityType>
   <Association Name="fk_tb_agenda_estudio_tb_cliente1">
     <End Type="db_a4f9ad_stormprModel.tb_cliente" Role="tb_cliente" Multiplicity="1" />
     <End Type="db_a4f9ad_stormprModel.tb_agenda_estudio" Role="tb_agenda_estudio" Multiplicity="*" />
@@ -415,6 +405,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="fk_tb_cliente_aula_tb_funcionario1">
+    <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="1" />
+    <End Type="db_a4f9ad_stormprModel.tb_aula" Role="tb_aula" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_funcionario">
+        <PropertyRef Name="id_funcionario" />
+      </Principal>
+      <Dependent Role="tb_aula">
+        <PropertyRef Name="id_funcionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="fk_tb_cliente_aula_tb_sala1">
     <End Type="db_a4f9ad_stormprModel.tb_sala" Role="tb_sala" Multiplicity="1" />
     <End Type="db_a4f9ad_stormprModel.tb_aula" Role="tb_aula" Multiplicity="*" />
@@ -436,6 +438,18 @@
       </Principal>
       <Dependent Role="tb_aula">
         <PropertyRef Name="id_venda_plano" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_funcionario_tb_beneficio1">
+    <End Type="db_a4f9ad_stormprModel.tb_beneficio" Role="tb_beneficio" Multiplicity="1" />
+    <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_beneficio">
+        <PropertyRef Name="id_beneficio" />
+      </Principal>
+      <Dependent Role="tb_funcionario">
+        <PropertyRef Name="id_beneficio" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -511,86 +525,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="fk_tb_prolabore_tb_login1">
-    <End Type="db_a4f9ad_stormprModel.tb_login" Role="tb_login" Multiplicity="1" />
-    <End Type="db_a4f9ad_stormprModel.tb_prolabore" Role="tb_prolabore" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_login">
-        <PropertyRef Name="id_login" />
-      </Principal>
-      <Dependent Role="tb_prolabore">
-        <PropertyRef Name="id_login" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_tb_venda_plano_tb_plano1">
-    <End Type="db_a4f9ad_stormprModel.tb_plano" Role="tb_plano" Multiplicity="1" />
-    <End Type="db_a4f9ad_stormprModel.tb_venda_plano" Role="tb_venda_plano" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_plano">
-        <PropertyRef Name="id_plano" />
-      </Principal>
-      <Dependent Role="tb_venda_plano">
-        <PropertyRef Name="id_plano" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <EntityType Name="tb_funcionario">
-    <Key>
-      <PropertyRef Name="id_funcionario" />
-    </Key>
-    <Property Name="id_funcionario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nm_funcionario" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
-    <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
-    <Property Name="dt_contratacao" Type="DateTime" Nullable="false" />
-    <Property Name="dt_demicao" Type="DateTime" />
-    <Property Name="vl_salario" Type="Decimal" Nullable="false" />
-    <Property Name="ds_telefone" Type="String" Nullable="false" MaxLength="14" FixedLength="false" Unicode="false" />
-    <Property Name="ds_email" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
-    <Property Name="ds_genero" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
-    <Property Name="ds_rg" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
-    <Property Name="ds_cpf" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
-    <Property Name="ds_cep" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
-    <Property Name="ds_cargo" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
-    <Property Name="ds_rua" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="ds_estado" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
-    <Property Name="ds_bairro" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="ds_complemento" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
-    <Property Name="id_beneficio" Type="Int32" Nullable="false" />
-    <Property Name="ds_cidade" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
-    <Property Name="ft_funcionario" Type="Binary" MaxLength="Max" FixedLength="false" />
-    <Property Name="nmr_funcionario" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="tb_aula" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_aula" />
-    <NavigationProperty Name="tb_beneficio" Relationship="db_a4f9ad_stormprModel.fk_tb_funcionario_tb_beneficio1" FromRole="tb_funcionario" ToRole="tb_beneficio" />
-    <NavigationProperty Name="tb_folha_pagamento" Relationship="db_a4f9ad_stormprModel.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_folha_pagamento" />
-    <NavigationProperty Name="tb_login" Relationship="db_a4f9ad_stormprModel.fk_tb_login_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_login" />
-    <NavigationProperty Name="tb_jornada" Relationship="db_a4f9ad_stormprModel.tb_jornada_ibfk_1" FromRole="tb_funcionario" ToRole="tb_jornada" />
-    <NavigationProperty Name="tb_ponto" Relationship="db_a4f9ad_stormprModel.tb_ponto_ibfk_1" FromRole="tb_funcionario" ToRole="tb_ponto" />
-  </EntityType>
-  <Association Name="fk_tb_cliente_aula_tb_funcionario1">
-    <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="1" />
-    <End Type="db_a4f9ad_stormprModel.tb_aula" Role="tb_aula" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_funcionario">
-        <PropertyRef Name="id_funcionario" />
-      </Principal>
-      <Dependent Role="tb_aula">
-        <PropertyRef Name="id_funcionario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_tb_funcionario_tb_beneficio1">
-    <End Type="db_a4f9ad_stormprModel.tb_beneficio" Role="tb_beneficio" Multiplicity="1" />
-    <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_beneficio">
-        <PropertyRef Name="id_beneficio" />
-      </Principal>
-      <Dependent Role="tb_funcionario">
-        <PropertyRef Name="id_beneficio" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="fk_tb_folha_pagamento_tb_funcionario1">
     <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="1" />
     <End Type="db_a4f9ad_stormprModel.tb_folha_pagamento" Role="tb_folha_pagamento" Multiplicity="*" />
@@ -599,18 +533,6 @@
         <PropertyRef Name="id_funcionario" />
       </Principal>
       <Dependent Role="tb_folha_pagamento">
-        <PropertyRef Name="id_funcionario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_tb_login_tb_funcionario1">
-    <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="1" />
-    <End Type="db_a4f9ad_stormprModel.tb_login" Role="tb_login" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_funcionario">
-        <PropertyRef Name="id_funcionario" />
-      </Principal>
-      <Dependent Role="tb_login">
         <PropertyRef Name="id_funcionario" />
       </Dependent>
     </ReferentialConstraint>
@@ -636,6 +558,18 @@
       </Principal>
       <Dependent Role="tb_ponto">
         <PropertyRef Name="id_funcionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_venda_plano_tb_plano1">
+    <End Type="db_a4f9ad_stormprModel.tb_plano" Role="tb_plano" Multiplicity="1" />
+    <End Type="db_a4f9ad_stormprModel.tb_venda_plano" Role="tb_venda_plano" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_plano">
+        <PropertyRef Name="id_plano" />
+      </Principal>
+      <Dependent Role="tb_venda_plano">
+        <PropertyRef Name="id_plano" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

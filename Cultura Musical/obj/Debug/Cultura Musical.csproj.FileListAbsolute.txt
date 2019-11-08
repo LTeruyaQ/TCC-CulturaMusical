@@ -2175,7 +2175,6 @@ C:\Users\Adriana\Source\Repos\tcc-cultura-musical5\Cultura Musical\bin\Debug\Sta
 C:\Users\Adriana\Source\Repos\tcc-cultura-musical5\Cultura Musical\bin\Debug\Stannieman.AudioPlayer.xml
 C:\Users\Adriana\Source\Repos\tcc-cultura-musical5\Cultura Musical\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Adriana\Source\Repos\tcc-cultura-musical5\Cultura Musical\bin\Debug\System.Net.Http.Formatting.xml
-C:\Users\Adriana\Source\Repos\tcc-cultura-musical5\Cultura Musical\obj\Debug\Cultura Musical.csprojAssemblyReference.cache
 C:\Users\Adriana\Source\Repos\tcc-cultura-musical5\Cultura Musical\obj\Debug\Cultura Musical.exe.config
 C:\Users\Adriana\Source\Repos\tcc-cultura-musical5\Cultura Musical\obj\Debug\Cultura_Musical.Properties.Resources.resources
 C:\Users\Adriana\Source\Repos\tcc-cultura-musical5\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Agenda.FrmAlterarAgenda.resources

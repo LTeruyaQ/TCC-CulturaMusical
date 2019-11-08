@@ -51,6 +51,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_cargo = txtCargo.Text;
                 funcionario.ds_rua = txtRua.Text;
                 funcionario.ds_estado = txtEstado.Text;
+                funcionario.ds_cidade = txtCidade.Text;
                 funcionario.ds_complemento = txtComplemento.Text;
                 funcionario.ds_bairro = txtBairro.Text;
                 funcionario.id_beneficio = Beneficios.id_beneficio;               
@@ -104,7 +105,7 @@ namespace Cultura_Musical.Telas.Funcionarios
             dynamic resp = api.Buscar(txtCEP.Text);
 
             txtRua.Text = resp.logradouro;
-            txtEstado.Text = resp.localidade;
+            txtCidade.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
         }
 

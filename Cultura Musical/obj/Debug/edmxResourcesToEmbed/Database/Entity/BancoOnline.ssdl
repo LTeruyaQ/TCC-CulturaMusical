@@ -199,7 +199,7 @@
     <Property Name="nm_usuario" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="sen_usuario" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="dt_login" Type="date" Nullable="false" />
-    <Property Name="nv_login" Type="int" Nullable="false" />
+    <Property Name="ds_ADM" Type="bool" />
     <Property Name="id_funcionario" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="tb_plano">
@@ -235,25 +235,6 @@
     <Property Name="qtd_produto" Type="int" Nullable="false" />
     <Property Name="id_compra" Type="int" Nullable="false" />
   </EntityType>
-  <EntityType Name="tb_prolabore">
-    <Key>
-      <PropertyRef Name="id_prolabore" />
-    </Key>
-    <Property Name="id_prolabore" Type="int" Nullable="false" />
-    <Property Name="nm_prolabore" Type="varchar" MaxLength="150" Nullable="false" />
-    <Property Name="dt_nascimento" Type="date" Nullable="false" />
-    <Property Name="ds_rg" Type="varchar" MaxLength="11" Nullable="false" />
-    <Property Name="ds_cpf" Type="varchar" MaxLength="12" Nullable="false" />
-    <Property Name="nmr_telefone" Type="varchar" MaxLength="13" Nullable="false" />
-    <Property Name="ds_email" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="ds_bairro" Type="varchar" MaxLength="40" Nullable="false" />
-    <Property Name="ds_rua" Type="varchar" MaxLength="35" Nullable="false" />
-    <Property Name="ds_cidade" Type="varchar" MaxLength="30" Nullable="false" />
-    <Property Name="ds_estado" Type="varchar" MaxLength="3" Nullable="false" />
-    <Property Name="ds_cep" Type="varchar" MaxLength="9" Nullable="false" />
-    <Property Name="ds_genero" Type="varchar" MaxLength="1" Nullable="false" />
-    <Property Name="id_login" Type="int" Nullable="false" />
-  </EntityType>
   <EntityType Name="tb_sala">
     <Key>
       <PropertyRef Name="id_sala" />
@@ -279,17 +260,6 @@
     <Property Name="id_cliente" Type="int" Nullable="false" />
     <Property Name="dt_inicio" Type="date" Nullable="false" />
     <Property Name="dt_fim" Type="date" Nullable="false" />
-  </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'def.db_a4f9ad_stormpr.fluxo_de_caixa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-  <EntityType Name="fluxo_de_caixa">
-    <Key>
-      <PropertyRef Name="data_pagamento" />
-      <PropertyRef Name="tipo_operação" />
-    </Key>
-    <Property Name="data_pagamento" Type="date" Nullable="false" />
-    <Property Name="valor_pago" Type="decimal" Precision="54" Scale="0" />
-    <Property Name="tipo_operação" Type="varchar" MaxLength="7" Nullable="false" />
   </EntityType>
   <Association Name="fk_tb_agenda_estudio_tb_cliente1">
     <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
@@ -423,18 +393,6 @@ warning 6002: The table/view 'def.db_a4f9ad_stormpr.fluxo_de_caixa' does not hav
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="fk_tb_login_tb_funcionario1">
-    <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
-    <End Role="tb_login" Type="Self.tb_login" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_funcionario">
-        <PropertyRef Name="id_funcionario" />
-      </Principal>
-      <Dependent Role="tb_login">
-        <PropertyRef Name="id_funcionario" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="fk_tb_produto_tb_compra1">
     <End Role="tb_compra" Type="Self.tb_compra" Multiplicity="1" />
     <End Role="tb_produto" Type="Self.tb_produto" Multiplicity="*" />
@@ -444,18 +402,6 @@ warning 6002: The table/view 'def.db_a4f9ad_stormpr.fluxo_de_caixa' does not hav
       </Principal>
       <Dependent Role="tb_produto">
         <PropertyRef Name="id_compra" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_tb_prolabore_tb_login1">
-    <End Role="tb_login" Type="Self.tb_login" Multiplicity="1" />
-    <End Role="tb_prolabore" Type="Self.tb_prolabore" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_login">
-        <PropertyRef Name="id_login" />
-      </Principal>
-      <Dependent Role="tb_prolabore">
-        <PropertyRef Name="id_login" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -527,17 +473,9 @@ warning 6002: The table/view 'def.db_a4f9ad_stormpr.fluxo_de_caixa' does not hav
     <EntitySet Name="tb_plano" EntityType="Self.tb_plano" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
     <EntitySet Name="tb_ponto" EntityType="Self.tb_ponto" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
     <EntitySet Name="tb_produto" EntityType="Self.tb_produto" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
-    <EntitySet Name="tb_prolabore" EntityType="Self.tb_prolabore" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
     <EntitySet Name="tb_sala" EntityType="Self.tb_sala" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
     <EntitySet Name="tb_tipo_conta" EntityType="Self.tb_tipo_conta" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
     <EntitySet Name="tb_venda_plano" EntityType="Self.tb_venda_plano" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
-    <EntitySet Name="fluxo_de_caixa" EntityType="Self.fluxo_de_caixa" store:Type="Views" store:Schema="db_a4f9ad_stormpr">
-      <DefiningQuery>SELECT
-`fluxo_de_caixa`.`data_pagamento`, 
-`fluxo_de_caixa`.`valor_pago`, 
-`fluxo_de_caixa`.`tipo_operação`
-FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
-    </EntitySet>
     <AssociationSet Name="fk_tb_agenda_estudio_tb_cliente1" Association="Self.fk_tb_agenda_estudio_tb_cliente1">
       <End Role="tb_cliente" EntitySet="tb_cliente" />
       <End Role="tb_agenda_estudio" EntitySet="tb_agenda_estudio" />
@@ -582,17 +520,9 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
       <End Role="tb_beneficio" EntitySet="tb_beneficio" />
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
     </AssociationSet>
-    <AssociationSet Name="fk_tb_login_tb_funcionario1" Association="Self.fk_tb_login_tb_funcionario1">
-      <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-      <End Role="tb_login" EntitySet="tb_login" />
-    </AssociationSet>
     <AssociationSet Name="fk_tb_produto_tb_compra1" Association="Self.fk_tb_produto_tb_compra1">
       <End Role="tb_compra" EntitySet="tb_compra" />
       <End Role="tb_produto" EntitySet="tb_produto" />
-    </AssociationSet>
-    <AssociationSet Name="fk_tb_prolabore_tb_login1" Association="Self.fk_tb_prolabore_tb_login1">
-      <End Role="tb_login" EntitySet="tb_login" />
-      <End Role="tb_prolabore" EntitySet="tb_prolabore" />
     </AssociationSet>
     <AssociationSet Name="fk_tb_venda_plano_tb_cliente1" Association="Self.fk_tb_venda_plano_tb_cliente1">
       <End Role="tb_cliente" EntitySet="tb_cliente" />
