@@ -24,8 +24,8 @@ namespace Cultura_Musical.Database.Entity
         public int id_sala { get; set; }
     
         public virtual tb_cliente tb_cliente { get; set; }
+        public virtual tb_funcionario tb_funcionario { get; set; }
         public virtual tb_sala tb_sala { get; set; }
         public virtual tb_venda_plano tb_venda_plano { get; set; }
-        public virtual tb_funcionario tb_funcionario { get; set; }
     }
 }

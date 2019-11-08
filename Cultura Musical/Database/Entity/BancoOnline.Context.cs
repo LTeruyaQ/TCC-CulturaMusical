@@ -37,17 +37,15 @@ namespace Cultura_Musical.Database.Entity
         public virtual DbSet<tb_financeiro> tb_financeiro { get; set; }
         public virtual DbSet<tb_folha_pagamento> tb_folha_pagamento { get; set; }
         public virtual DbSet<tb_fornecedor> tb_fornecedor { get; set; }
+        public virtual DbSet<tb_funcionario> tb_funcionario { get; set; }
         public virtual DbSet<tb_holerite> tb_holerite { get; set; }
         public virtual DbSet<tb_jornada> tb_jornada { get; set; }
+        public virtual DbSet<tb_login> tb_login { get; set; }
         public virtual DbSet<tb_plano> tb_plano { get; set; }
         public virtual DbSet<tb_ponto> tb_ponto { get; set; }
         public virtual DbSet<tb_produto> tb_produto { get; set; }
-        public virtual DbSet<tb_prolabore> tb_prolabore { get; set; }
         public virtual DbSet<tb_sala> tb_sala { get; set; }
         public virtual DbSet<tb_tipo_conta> tb_tipo_conta { get; set; }
         public virtual DbSet<tb_venda_plano> tb_venda_plano { get; set; }
-        public virtual DbSet<fluxo_de_caixa> fluxo_de_caixa { get; set; }
-        public virtual DbSet<tb_funcionario> tb_funcionario { get; set; }
-        public virtual DbSet<tb_login> tb_login { get; set; }
     }
 }

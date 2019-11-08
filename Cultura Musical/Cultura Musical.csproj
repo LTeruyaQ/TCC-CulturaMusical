@@ -213,9 +213,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BancoOnline.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Database\Entity\fluxo_de_caixa.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
     <Compile Include="Database\Entity\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -286,9 +283,6 @@
       <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_produto.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_prolabore.cs">
       <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_sala.cs">
