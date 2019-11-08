@@ -160,6 +160,33 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="tb_funcionario">
+      <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_funcionario">
+        <MappingFragment StoreEntitySet="tb_funcionario">
+          <ScalarProperty Name="nmr_funcionario" ColumnName="nmr_funcionario" />
+          <ScalarProperty Name="ft_funcionario" ColumnName="ft_funcionario" />
+          <ScalarProperty Name="ds_cidade" ColumnName="ds_cidade" />
+          <ScalarProperty Name="id_beneficio" ColumnName="id_beneficio" />
+          <ScalarProperty Name="ds_complemento" ColumnName="ds_complemento" />
+          <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
+          <ScalarProperty Name="ds_estado" ColumnName="ds_estado" />
+          <ScalarProperty Name="ds_rua" ColumnName="ds_rua" />
+          <ScalarProperty Name="ds_cargo" ColumnName="ds_cargo" />
+          <ScalarProperty Name="ds_cep" ColumnName="ds_cep" />
+          <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
+          <ScalarProperty Name="ds_rg" ColumnName="ds_rg" />
+          <ScalarProperty Name="ds_genero" ColumnName="ds_genero" />
+          <ScalarProperty Name="ds_email" ColumnName="ds_email" />
+          <ScalarProperty Name="ds_telefone" ColumnName="ds_telefone" />
+          <ScalarProperty Name="vl_salario" ColumnName="vl_salario" />
+          <ScalarProperty Name="dt_demicao" ColumnName="dt_demicao" />
+          <ScalarProperty Name="dt_contratacao" ColumnName="dt_contratacao" />
+          <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
+          <ScalarProperty Name="nm_funcionario" ColumnName="nm_funcionario" />
+          <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="tb_holerite">
       <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_holerite">
         <MappingFragment StoreEntitySet="tb_holerite">
@@ -184,7 +211,7 @@
       <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_login">
         <MappingFragment StoreEntitySet="tb_login">
           <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
-          <ScalarProperty Name="nv_login" ColumnName="nv_login" />
+          <ScalarProperty Name="ds_ADM" ColumnName="ds_ADM" />
           <ScalarProperty Name="dt_login" ColumnName="dt_login" />
           <ScalarProperty Name="sen_usuario" ColumnName="sen_usuario" />
           <ScalarProperty Name="nm_usuario" ColumnName="nm_usuario" />
@@ -228,26 +255,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tb_prolabore">
-      <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_prolabore">
-        <MappingFragment StoreEntitySet="tb_prolabore">
-          <ScalarProperty Name="id_login" ColumnName="id_login" />
-          <ScalarProperty Name="ds_genero" ColumnName="ds_genero" />
-          <ScalarProperty Name="ds_cep" ColumnName="ds_cep" />
-          <ScalarProperty Name="ds_estado" ColumnName="ds_estado" />
-          <ScalarProperty Name="ds_cidade" ColumnName="ds_cidade" />
-          <ScalarProperty Name="ds_rua" ColumnName="ds_rua" />
-          <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
-          <ScalarProperty Name="ds_email" ColumnName="ds_email" />
-          <ScalarProperty Name="nmr_telefone" ColumnName="nmr_telefone" />
-          <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
-          <ScalarProperty Name="ds_rg" ColumnName="ds_rg" />
-          <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
-          <ScalarProperty Name="nm_prolabore" ColumnName="nm_prolabore" />
-          <ScalarProperty Name="id_prolabore" ColumnName="id_prolabore" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="tb_sala">
       <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_sala">
         <MappingFragment StoreEntitySet="tb_sala">
@@ -274,42 +281,6 @@
           <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
           <ScalarProperty Name="id_plano" ColumnName="id_plano" />
           <ScalarProperty Name="id_venda_plano" ColumnName="id_venda_plano" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="fluxo_de_caixa">
-      <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.fluxo_de_caixa">
-        <MappingFragment StoreEntitySet="fluxo_de_caixa">
-          <ScalarProperty Name="tipo_operação" ColumnName="tipo_operação" />
-          <ScalarProperty Name="valor_pago" ColumnName="valor_pago" />
-          <ScalarProperty Name="data_pagamento" ColumnName="data_pagamento" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tb_funcionario">
-      <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_funcionario">
-        <MappingFragment StoreEntitySet="tb_funcionario">
-          <ScalarProperty Name="nmr_funcionario" ColumnName="nmr_funcionario" />
-          <ScalarProperty Name="ft_funcionario" ColumnName="ft_funcionario" />
-          <ScalarProperty Name="ds_cidade" ColumnName="ds_cidade" />
-          <ScalarProperty Name="id_beneficio" ColumnName="id_beneficio" />
-          <ScalarProperty Name="ds_complemento" ColumnName="ds_complemento" />
-          <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
-          <ScalarProperty Name="ds_estado" ColumnName="ds_estado" />
-          <ScalarProperty Name="ds_rua" ColumnName="ds_rua" />
-          <ScalarProperty Name="ds_cargo" ColumnName="ds_cargo" />
-          <ScalarProperty Name="ds_cep" ColumnName="ds_cep" />
-          <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
-          <ScalarProperty Name="ds_rg" ColumnName="ds_rg" />
-          <ScalarProperty Name="ds_genero" ColumnName="ds_genero" />
-          <ScalarProperty Name="ds_email" ColumnName="ds_email" />
-          <ScalarProperty Name="ds_telefone" ColumnName="ds_telefone" />
-          <ScalarProperty Name="vl_salario" ColumnName="vl_salario" />
-          <ScalarProperty Name="dt_demicao" ColumnName="dt_demicao" />
-          <ScalarProperty Name="dt_contratacao" ColumnName="dt_contratacao" />
-          <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
-          <ScalarProperty Name="nm_funcionario" ColumnName="nm_funcionario" />
-          <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

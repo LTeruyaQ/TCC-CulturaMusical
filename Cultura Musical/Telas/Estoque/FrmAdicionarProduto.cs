@@ -98,7 +98,7 @@ namespace Cultura_Musical.Telas.Produtos
 
         private void btnHolerite_Click(object sender, EventArgs e)
         {
-            Holerite.FrmAddHolerite tela = new Holerite.FrmAddHolerite();
+            Telas.Folha_Pagamento.frmGerarFolhaD tela = new Folha_Pagamento.frmGerarFolhaD();
             tela.Show();
             this.Hide();
         }
@@ -125,6 +125,11 @@ namespace Cultura_Musical.Telas.Produtos
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnInserir_Click(object sender, EventArgs e)
         {
 
         }

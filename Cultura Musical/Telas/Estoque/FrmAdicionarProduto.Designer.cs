@@ -160,6 +160,7 @@
             this.btnInserir.TabIndex = 41;
             this.btnInserir.Text = "Salvar";
             this.btnInserir.UseVisualStyleBackColor = false;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // panel3
             // 

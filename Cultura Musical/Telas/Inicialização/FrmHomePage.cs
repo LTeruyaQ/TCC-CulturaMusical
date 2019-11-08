@@ -74,5 +74,80 @@ namespace Cultura_Musical.Telas
         {
 
         }
+
+        private void inserirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmCadastroFuncionarioD tela = new Funcionarios.frmCadastroFuncionarioD();
+            tela.Show();
+            this.Hide();
+
+        }
+
+        private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmConsultarFuncionarioD tela = new Funcionarios.frmConsultarFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void alterarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void removerToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inserirToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmAdicionarPedidoD tela = new Produtos.frmAdicionarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void consultarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmConsultarPedidoD tela = new Produtos.frmConsultarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void inserirToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmAdicionarFornecedor tela = new Fornecedores.FrmAdicionarFornecedor();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void consultarToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmConsultarFornecedores tela = new Fornecedores.FrmConsultarFornecedores();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Telas.Folha_Pagamento.frmGerarFolhaD tela = new Folha_Pagamento.frmGerarFolhaD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

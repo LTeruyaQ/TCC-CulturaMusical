@@ -51,10 +51,10 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_cargo = txtCargo.Text;
                 funcionario.ds_rua = txtRua.Text;
                 funcionario.ds_estado = txtEstado.Text;
+                funcionario.ds_cidade = txtCidade.Text;
                 funcionario.ds_complemento = txtComplemento.Text;
                 funcionario.ds_bairro = txtBairro.Text;
-                funcionario.id_beneficio = Beneficios.id_beneficio;
-                funcionario.ds_cidade = txtcidade.Text;
+                funcionario.id_beneficio = Beneficios.id_beneficio;               
                 funcionario.nmr_funcionario = Convert.ToInt32(nudNumero.Value);
                 
                 
@@ -105,23 +105,13 @@ namespace Cultura_Musical.Telas.Funcionarios
             dynamic resp = api.Buscar(txtCEP.Text);
 
             txtRua.Text = resp.logradouro;
-            txtcidade.Text = resp.localidade;
+            txtCidade.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFileDialog file = new OpenFileDialog();
-
-            file.Filter = "JPG Files(*.jpg)| * .jpg | PNG Files (* .png) | *.png | AllFiles(*.*) | *.*";
-
-            if(file.ShowDialog() == DialogResult.OK)
-            {
-                string foto = file.FileName.ToString();
-                
-                
-                caminho = foto;
-            }
+      
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
@@ -181,7 +171,7 @@ namespace Cultura_Musical.Telas.Funcionarios
 
         private void btnHolerite_Click(object sender, EventArgs e)
         {
-            Holerite.FrmAddHolerite tela = new Holerite.FrmAddHolerite();
+            Telas.Folha_Pagamento.frmGerarFolhaD tela = new Folha_Pagamento.frmGerarFolhaD();
             tela.Show();
             this.Hide();
         }
@@ -205,6 +195,57 @@ namespace Cultura_Musical.Telas.Funcionarios
             Planos.cbo tela = new Planos.cbo();
             tela.Show();
             this.Hide();
+        }
+
+        private void cmsAgenda_Opening(object sender, CancelEventArgs e)
+        {
+            
+        }
+
+        private void inserirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Telas.FrmAgenda TELA = new FrmAgenda();
+            TELA.Show();
+            this.Hide();
+               
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void alterarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void removerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            OpenFileDialog file = new OpenFileDialog();
+
+            file.Filter = "JPG Files(*.jpg)| * .jpg | PNG Files (* .png) | *.png | AllFiles(*.*) | *.*";
+
+            if (file.ShowDialog() == DialogResult.OK)
+            {
+                string foto = file.FileName.ToString();
+                picFoto.ImageLocation = foto;
+                
+
+                caminho = foto;
+            }
         }
     }
 }

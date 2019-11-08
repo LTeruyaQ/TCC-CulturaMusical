@@ -38,6 +38,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lblMinimizar = new System.Windows.Forms.Label();
             this.lblFechar = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -58,7 +63,7 @@
             this.txtSenha.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtSenha.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtSenha.Location = new System.Drawing.Point(180, 163);
+            this.txtSenha.Location = new System.Drawing.Point(201, 156);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(141, 26);
             this.txtSenha.TabIndex = 8;
@@ -69,7 +74,7 @@
             this.txtUsuario.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtUsuario.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtUsuario.Location = new System.Drawing.Point(180, 102);
+            this.txtUsuario.Location = new System.Drawing.Point(201, 95);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(141, 26);
             this.txtUsuario.TabIndex = 7;
@@ -80,8 +85,8 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(92, 173);
+            this.label2.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label2.Location = new System.Drawing.Point(126, 161);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 16);
             this.label2.TabIndex = 6;
@@ -93,8 +98,8 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(92, 102);
+            this.label1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label1.Location = new System.Drawing.Point(113, 100);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 5;
@@ -104,9 +109,10 @@
             // btnConfirmar_Login
             // 
             this.btnConfirmar_Login.BackColor = System.Drawing.Color.Transparent;
+            this.btnConfirmar_Login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnConfirmar_Login.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfirmar_Login.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnConfirmar_Login.Location = new System.Drawing.Point(200, 264);
+            this.btnConfirmar_Login.ForeColor = System.Drawing.Color.DarkBlue;
+            this.btnConfirmar_Login.Location = new System.Drawing.Point(221, 257);
             this.btnConfirmar_Login.Name = "btnConfirmar_Login";
             this.btnConfirmar_Login.Size = new System.Drawing.Size(104, 32);
             this.btnConfirmar_Login.TabIndex = 10;
@@ -119,7 +125,7 @@
             this.txtconfirmar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtconfirmar.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtconfirmar.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtconfirmar.Location = new System.Drawing.Point(180, 212);
+            this.txtconfirmar.Location = new System.Drawing.Point(201, 205);
             this.txtconfirmar.Name = "txtconfirmar";
             this.txtconfirmar.Size = new System.Drawing.Size(141, 26);
             this.txtconfirmar.TabIndex = 12;
@@ -130,8 +136,8 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(48, 217);
+            this.label4.ForeColor = System.Drawing.Color.DarkBlue;
+            this.label4.Location = new System.Drawing.Point(65, 210);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(130, 16);
             this.label4.TabIndex = 11;
@@ -162,12 +168,61 @@
             this.lblFechar.Text = "X";
             this.lblFechar.Click += new System.EventHandler(this.lblFechar_Click_1);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(494, 66);
+            this.panel2.TabIndex = 108;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.Location = new System.Drawing.Point(929, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(18, 19);
+            this.label5.TabIndex = 113;
+            this.label5.Text = "_";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(949, 5);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(20, 19);
+            this.label6.TabIndex = 112;
+            this.label6.Text = "X";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Stencil", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(177, 8);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(184, 38);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Cadastro";
+            // 
             // FrmCadastroFuncionarioLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(494, 320);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblMinimizar);
             this.Controls.Add(this.lblFechar);
             this.Controls.Add(this.txtconfirmar);
@@ -182,6 +237,8 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCadastroFuncionarioLogin";
             this.Text = "FrmCadastroFuncionarioLogin";
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,5 +256,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblMinimizar;
         private System.Windows.Forms.Label lblFechar;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

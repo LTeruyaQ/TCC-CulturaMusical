@@ -46,7 +46,7 @@ namespace Cultura_Musical.Business
             if (forn.ds_email.Contains("@") == false || forn.ds_email == string.Empty)
                 throw new ArgumentException("O campo de email está incorreto");
 
-            else if (forn.inscicao_estadual == string.Empty || forn.inscicao_estadual.Length != 9)
+            else if (forn.inscicao_estadual == string.Empty || forn.inscicao_estadual.Length > 13)
 
                 throw new ArgumentException("O campo de Inscrição Estadual está incorreto");
 
@@ -54,11 +54,11 @@ namespace Cultura_Musical.Business
 
                 throw new ArgumentException("O nome do fornecedor está vazio");
 
-            else if (forn.tell_contato == string.Empty || forn.tell_contato.Length > 12)
+            else if (forn.tell_contato == string.Empty || forn.tell_contato.Length > 14)
 
                 throw new ArgumentException("O campo de Telefone(1) está incorreto");
 
-            else if (forn.tell_contato2 == string.Empty || forn.tell_contato2.Length > 12)
+            else if (forn.tell_contato2 == string.Empty || forn.tell_contato2.Length > 14)
 
                 throw new ArgumentException("O campo de Telefone(2) está incorreto");
 
@@ -74,7 +74,7 @@ namespace Cultura_Musical.Business
 
                 throw new ArgumentException("O campo 'Bairro' está vazio");
 
-            else if (forn.cep.Length > 8 || forn.cep == string.Empty)
+            else if (forn.cep.Length > 9 || forn.cep == string.Empty)
 
                 throw new ArgumentException("O campo 'CEP' está vazio ou incorreto");
 
