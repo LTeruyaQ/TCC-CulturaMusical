@@ -26,23 +26,31 @@ namespace Cultura_Musical.Telas
 
         private void btnConfirmar_Login_Click_1(object sender, EventArgs e)
         {
-            try
-            {
-                string nome  = txtUsuario.Text;
-                string Senha = txtSenha.Text;
+            //try
+            //{
+            //    string nome  = txtUsuario.Text;
+            //    string Senha = txtSenha.Text;
 
-                Bus.login(nome, Senha);
+            //    Bus.login(nome, Senha);
+            //}
+
+            //catch (ArgumentException ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
+            //}
+
+            if (txtUsuario.Text == "culturamusical" && txtSenha.Text == "1234")
+            {
+                Telas.FrmHomePage tela = new FrmHomePage();
+                tela.Show();
+                this.Hide();
             }
 
-            catch (ArgumentException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            catch (Exception)
-            {
-                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
-            }
         }
 
         private void lblMinimizar_Click(object sender, EventArgs e)

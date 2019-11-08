@@ -212,17 +212,17 @@ namespace Cultura_Musical.Telas.Planos
 
         private void cbo_Load(object sender, EventArgs e)
         {
-            dgvFuncionario.BorderStyle = BorderStyle.None;
-            dgvFuncionario.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            dgvFuncionario.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dgvFuncionario.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
-            dgvFuncionario.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dgvFuncionario.BackgroundColor = Color.White;
+            dgvlista.BorderStyle = BorderStyle.None;
+            dgvlista.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dgvlista.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvlista.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dgvlista.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dgvlista.BackgroundColor = Color.White;
 
-            dgvFuncionario.EnableHeadersVisualStyles = false;
-            dgvFuncionario.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dgvFuncionario.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-            dgvFuncionario.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvlista.EnableHeadersVisualStyles = false;
+            dgvlista.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvlista.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dgvlista.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
     }
 }

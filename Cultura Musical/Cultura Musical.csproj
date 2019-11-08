@@ -681,6 +681,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\calendar1.png" />
+    <None Include="Resources\barcode1.png" />
     <None Include="Resources\printer.png" />
     <None Include="Resources\exlcuir.png" />
     <None Include="Resources\WhatsApp Image 2019-11-06 at 23.36.10.jpeg" />

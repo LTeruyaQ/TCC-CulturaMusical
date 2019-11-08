@@ -216,7 +216,7 @@ namespace Cultura_Musical.Telas.Fornecedores
         {
             Telas.Produtos.frmAdicionarPedidoD tela = new Produtos.frmAdicionarPedidoD();
             tela.Show();
-            this.Hide()
+            this.Hide();
 
         }
 
