@@ -38,9 +38,12 @@ namespace Cultura_Musical.Business
 
         public void login (string usuario, string senha)
         {
+            Database.Entity.tb_login login = new Database.Entity.tb_login();
+            login.nm_usuario = usuario;
+            login.sen_usuario = senha;
             
 
-            Database.Entity.tb_login confirmacao = db.procura();
+            Database.Entity.tb_login confirmacao = db.procura(login);
 
             if (confirmacao.nm_usuario == null || confirmacao.sen_usuario == null)
                  throw new ArgumentException("Usuario ou senha incorreta");
