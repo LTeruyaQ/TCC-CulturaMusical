@@ -160,5 +160,69 @@ namespace Cultura_Musical.Telas.Planos
             tela.Show();
             this.Hide();
         }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.frmAdicionarPlano tela = new frmAdicionarPlano();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.cbo tela = new cbo();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmAdicionarFornecedor tela = new Fornecedores.FrmAdicionarFornecedor();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmConsultarFornecedores tela = new Fornecedores.FrmConsultarFornecedores();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmCadastroFuncionarioD tela = new Funcionarios.frmCadastroFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmConsultarFuncionarioD tela = new Funcionarios.frmConsultarFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmAdicionarPedidoD tela = new Produtos.frmAdicionarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void cbo_Load(object sender, EventArgs e)
+        {
+            dgvFuncionario.BorderStyle = BorderStyle.None;
+            dgvFuncionario.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dgvFuncionario.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvFuncionario.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dgvFuncionario.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dgvFuncionario.BackgroundColor = Color.White;
+
+            dgvFuncionario.EnableHeadersVisualStyles = false;
+            dgvFuncionario.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvFuncionario.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dgvFuncionario.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+        }
     }
 }

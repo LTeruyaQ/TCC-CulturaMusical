@@ -193,6 +193,9 @@
   <data name="giphy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Imagens\giphy1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exlcuir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exlcuir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="gift-card" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gift-card.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -217,7 +220,7 @@
   <data name="WhatsApp Image 2019-11-06 at 23.36.10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\WhatsApp Image 2019-11-06 at 23.36.10.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exlcuir" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exlcuir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="printer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\printer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

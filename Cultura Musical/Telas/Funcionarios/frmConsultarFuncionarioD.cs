@@ -55,14 +55,7 @@ namespace Cultura_Musical.Telas.Funcionarios
 
         private void lblFechar_Click(object sender, EventArgs e)
         {
-            DialogResult r = MessageBox.Show("Realmente deseja fechar o sistema ?", "Cultura Musical",
-                      MessageBoxButtons.YesNo,
-                      MessageBoxIcon.Warning);
 
-            if (r == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
         }
 
         private void lblMinimizar_Click(object sender, EventArgs e)
@@ -151,6 +144,84 @@ namespace Cultura_Musical.Telas.Funcionarios
             List<Database.Entity.tb_funcionario> funcionario = Bus.ListarPorCargoENome(nome, cargo);
 
             dataGridView1.DataSource = funcionario;
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmCadastroFuncionarioD tela = new frmCadastroFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmAdicionarPedidoD tela = new Produtos.frmAdicionarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmConsultarPedidoD tela = new Produtos.frmConsultarPedidoD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.frmAdicionarPlano tela = new Planos.frmAdicionarPlano();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmConsultarFuncionarioD tela = new frmConsultarFuncionarioD();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+            Telas.Planos.cbo tela = new Planos.cbo();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmAdicionarFornecedor tela = new Telas.Fornecedores.FrmAdicionarFornecedor();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmConsultarFornecedores tela = new Fornecedores.FrmConsultarFornecedores();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void lblFechar_Click_1(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Realmente deseja fechar o sistema ?", "Cultura Musical",
+                                 MessageBoxButtons.YesNo,
+                                 MessageBoxIcon.Warning);
+
+            if (r == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void lblMinimizar_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }

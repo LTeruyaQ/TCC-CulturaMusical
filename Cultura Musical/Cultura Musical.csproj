@@ -466,23 +466,11 @@
     <Compile Include="Telas\Produtos\frmAdicionarPedidoD.Designer.cs">
       <DependentUpon>frmAdicionarPedidoD.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Produtos\FrmAdicionarProduto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Produtos\FrmAdicionarProduto.Designer.cs">
-      <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Produtos\frmConsultarPedidoD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\Produtos\frmConsultarPedidoD.Designer.cs">
       <DependentUpon>frmConsultarPedidoD.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Produtos\FrmConsultarProdutos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Produtos\FrmConsultarProdutos.Designer.cs">
-      <DependentUpon>FrmConsultarProdutos.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Planos\FrmVendaPlano.cs">
       <SubType>Form</SubType>
@@ -603,14 +591,8 @@
     <EmbeddedResource Include="Telas\Produtos\frmAdicionarPedidoD.resx">
       <DependentUpon>frmAdicionarPedidoD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Produtos\FrmAdicionarProduto.resx">
-      <DependentUpon>FrmAdicionarProduto.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Produtos\frmConsultarPedidoD.resx">
       <DependentUpon>frmConsultarPedidoD.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Produtos\FrmConsultarProdutos.resx">
-      <DependentUpon>FrmConsultarProdutos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Planos\FrmVendaPlano.resx">
       <DependentUpon>FrmVendaPlano.cs</DependentUpon>
@@ -699,6 +681,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\printer.png" />
     <None Include="Resources\exlcuir.png" />
     <None Include="Resources\WhatsApp Image 2019-11-06 at 23.36.10.jpeg" />
     <None Include="Resources\WhatsApp Image 2019-10-18 at 18.53.50.jpeg" />

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAdicionarFornecedor));
             this.label3 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
@@ -38,6 +39,10 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.nudnumero = new System.Windows.Forms.NumericUpDown();
+            this.lblNumero = new System.Windows.Forms.Label();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.txtEstado = new System.Windows.Forms.TextBox();
             this.mskCEP = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -56,22 +61,12 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblMinimizar = new System.Windows.Forms.Label();
             this.lblFechar = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -81,17 +76,54 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.nudnumero = new System.Windows.Forms.NumericUpDown();
+            this.cmsAgenda = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsFornecedores = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsProdutos = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsVenda = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsColaboradores = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.csmColaborador = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.cmsAgenda.SuspendLayout();
+            this.cmsFornecedores.SuspendLayout();
+            this.cmsProdutos.SuspendLayout();
+            this.cmsVenda.SuspendLayout();
+            this.cmsColaboradores.SuspendLayout();
+            this.csmColaborador.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -101,7 +133,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -202,6 +233,40 @@
             this.groupBox2.Size = new System.Drawing.Size(321, 229);
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
+            // 
+            // nudnumero
+            // 
+            this.nudnumero.Location = new System.Drawing.Point(81, 191);
+            this.nudnumero.Name = "nudnumero";
+            this.nudnumero.Size = new System.Drawing.Size(181, 20);
+            this.nudnumero.TabIndex = 23;
+            // 
+            // lblNumero
+            // 
+            this.lblNumero.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Location = new System.Drawing.Point(9, 193);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(68, 18);
+            this.lblNumero.TabIndex = 22;
+            this.lblNumero.Text = "Número";
+            this.lblNumero.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Location = new System.Drawing.Point(9, 161);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(68, 18);
+            this.lblEstado.TabIndex = 20;
+            this.lblEstado.Text = "Estados:";
+            this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtEstado
+            // 
+            this.txtEstado.Location = new System.Drawing.Point(81, 161);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(181, 20);
+            this.txtEstado.TabIndex = 19;
             // 
             // mskCEP
             // 
@@ -385,17 +450,6 @@
             this.label2.Text = "Cultura";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Black;
-            this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.WhatsApp_Image_2019_11_06_at_23_36_10;
-            this.pictureBox1.Location = new System.Drawing.Point(20, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
@@ -419,6 +473,7 @@
             this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
             this.lblMinimizar.TabIndex = 117;
             this.lblMinimizar.Text = "_";
+            this.lblMinimizar.Click += new System.EventHandler(this.lblMinimizar_Click);
             // 
             // lblFechar
             // 
@@ -430,6 +485,7 @@
             this.lblFechar.Size = new System.Drawing.Size(20, 19);
             this.lblFechar.TabIndex = 116;
             this.lblFechar.Text = "X";
+            this.lblFechar.Click += new System.EventHandler(this.lblFechar_Click);
             // 
             // label5
             // 
@@ -470,6 +526,345 @@
             this.panel1.Size = new System.Drawing.Size(177, 554);
             this.panel1.TabIndex = 235;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Yellow;
+            this.panel4.Location = new System.Drawing.Point(3, 213);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(16, 32);
+            this.panel4.TabIndex = 116;
+            // 
+            // button8
+            // 
+            this.button8.ContextMenuStrip = this.cmsVenda;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(88, 370);
+            this.button8.Name = "button8";
+            this.button8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button8.Size = new System.Drawing.Size(86, 32);
+            this.button8.TabIndex = 107;
+            this.button8.Text = "Vendas";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.ContextMenuStrip = this.cmsProdutos;
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(21, 332);
+            this.button7.Name = "button7";
+            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button7.Size = new System.Drawing.Size(150, 32);
+            this.button7.TabIndex = 106;
+            this.button7.Text = "Produtos";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(21, 289);
+            this.button6.Name = "button6";
+            this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button6.Size = new System.Drawing.Size(153, 32);
+            this.button6.TabIndex = 105;
+            this.button6.Text = "Logistica";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(82, 251);
+            this.button5.Name = "button5";
+            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button5.Size = new System.Drawing.Size(89, 32);
+            this.button5.TabIndex = 104;
+            this.button5.Text = "Holerite";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.Location = new System.Drawing.Point(24, 175);
+            this.button4.Name = "button4";
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button4.Size = new System.Drawing.Size(150, 32);
+            this.button4.TabIndex = 103;
+            this.button4.Text = "CRM";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.ContextMenuStrip = this.cmsFornecedores;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(60, 213);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button3.Size = new System.Drawing.Size(114, 32);
+            this.button3.TabIndex = 102;
+            this.button3.Text = "Fornecedores";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.ContextMenuStrip = this.cmsColaboradores;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(18, 137);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button2.Size = new System.Drawing.Size(156, 32);
+            this.button2.TabIndex = 101;
+            this.button2.Text = "Colaboradores";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.ContextMenuStrip = this.cmsAgenda;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(21, 99);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button1.Size = new System.Drawing.Size(153, 32);
+            this.button1.TabIndex = 100;
+            this.button1.Text = "Agenda";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(333, 69);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(56, 14);
+            this.label17.TabIndex = 246;
+            this.label17.Text = "VOLTAR";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
+            // 
+            // cmsAgenda
+            // 
+            this.cmsAgenda.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsAgenda.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsAgenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem,
+            this.consultarToolStripMenuItem,
+            this.alterarToolStripMenuItem});
+            this.cmsAgenda.Name = "cmsAgenda";
+            this.cmsAgenda.Size = new System.Drawing.Size(150, 70);
+            // 
+            // inserirToolStripMenuItem
+            // 
+            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem.Text = "Inserir";
+            // 
+            // consultarToolStripMenuItem
+            // 
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem.Text = "Consultar";
+            // 
+            // alterarToolStripMenuItem
+            // 
+            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem.Text = "Alterar";
+            // 
+            // cmsFornecedores
+            // 
+            this.cmsFornecedores.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsFornecedores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsFornecedores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem2,
+            this.consultarToolStripMenuItem2,
+            this.alterarToolStripMenuItem2});
+            this.cmsFornecedores.Name = "cmsAgenda";
+            this.cmsFornecedores.Size = new System.Drawing.Size(150, 70);
+            // 
+            // inserirToolStripMenuItem2
+            // 
+            this.inserirToolStripMenuItem2.Name = "inserirToolStripMenuItem2";
+            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem2.Text = "Inserir";
+            this.inserirToolStripMenuItem2.Click += new System.EventHandler(this.inserirToolStripMenuItem2_Click);
+            // 
+            // consultarToolStripMenuItem2
+            // 
+            this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
+            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem2.Text = "Consultar";
+            this.consultarToolStripMenuItem2.Click += new System.EventHandler(this.consultarToolStripMenuItem2_Click);
+            // 
+            // alterarToolStripMenuItem2
+            // 
+            this.alterarToolStripMenuItem2.Name = "alterarToolStripMenuItem2";
+            this.alterarToolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem2.Text = "Alterar";
+            // 
+            // cmsProdutos
+            // 
+            this.cmsProdutos.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsProdutos.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsProdutos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem3,
+            this.consultarToolStripMenuItem3,
+            this.alterarToolStripMenuItem3});
+            this.cmsProdutos.Name = "cmsAgenda";
+            this.cmsProdutos.Size = new System.Drawing.Size(150, 70);
+            // 
+            // inserirToolStripMenuItem3
+            // 
+            this.inserirToolStripMenuItem3.Name = "inserirToolStripMenuItem3";
+            this.inserirToolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem3.Text = "Inserir";
+            this.inserirToolStripMenuItem3.Click += new System.EventHandler(this.inserirToolStripMenuItem3_Click);
+            // 
+            // consultarToolStripMenuItem3
+            // 
+            this.consultarToolStripMenuItem3.Name = "consultarToolStripMenuItem3";
+            this.consultarToolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem3.Text = "Consultar";
+            this.consultarToolStripMenuItem3.Click += new System.EventHandler(this.consultarToolStripMenuItem3_Click);
+            // 
+            // alterarToolStripMenuItem3
+            // 
+            this.alterarToolStripMenuItem3.Name = "alterarToolStripMenuItem3";
+            this.alterarToolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem3.Text = "Alterar";
+            // 
+            // cmsVenda
+            // 
+            this.cmsVenda.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsVenda.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsVenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
+            this.cmsVenda.Name = "cmsAgenda";
+            this.cmsVenda.Size = new System.Drawing.Size(150, 70);
+            this.cmsVenda.Opening += new System.ComponentModel.CancelEventHandler(this.cmsVenda_Opening);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem1.Text = "Inserir";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem2.Text = "Consultar";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem3.Text = "Alterar";
+            // 
+            // cmsColaboradores
+            // 
+            this.cmsColaboradores.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsColaboradores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsColaboradores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem1,
+            this.consultarToolStripMenuItem1,
+            this.alterarToolStripMenuItem1});
+            this.cmsColaboradores.Name = "cmsAgenda";
+            this.cmsColaboradores.Size = new System.Drawing.Size(150, 70);
+            // 
+            // inserirToolStripMenuItem1
+            // 
+            this.inserirToolStripMenuItem1.Name = "inserirToolStripMenuItem1";
+            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem1.Text = "Inserir";
+            // 
+            // consultarToolStripMenuItem1
+            // 
+            this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
+            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem1.Text = "Consultar";
+            // 
+            // alterarToolStripMenuItem1
+            // 
+            this.alterarToolStripMenuItem1.Name = "alterarToolStripMenuItem1";
+            this.alterarToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem1.Text = "Alterar";
+            // 
+            // csmColaborador
+            // 
+            this.csmColaborador.BackColor = System.Drawing.Color.SteelBlue;
+            this.csmColaborador.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.csmColaborador.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem6});
+            this.csmColaborador.Name = "cmsAgenda";
+            this.csmColaborador.Size = new System.Drawing.Size(150, 70);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem4.Text = "Inserir";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem5.Text = "Consultar";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem6.Text = "Alterar";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.WhatsApp_Image_2019_11_06_at_23_36_10;
+            this.pictureBox1.Location = new System.Drawing.Point(20, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(94, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.gift_card;
@@ -479,14 +874,6 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 120;
             this.pictureBox3.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Yellow;
-            this.panel4.Location = new System.Drawing.Point(3, 213);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(16, 32);
-            this.panel4.TabIndex = 116;
             // 
             // pictureBox10
             // 
@@ -568,172 +955,6 @@
             this.pictureBox4.TabIndex = 108;
             this.pictureBox4.TabStop = false;
             // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(88, 370);
-            this.button8.Name = "button8";
-            this.button8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button8.Size = new System.Drawing.Size(86, 32);
-            this.button8.TabIndex = 107;
-            this.button8.Text = "Vendas";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(21, 332);
-            this.button7.Name = "button7";
-            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button7.Size = new System.Drawing.Size(150, 32);
-            this.button7.TabIndex = 106;
-            this.button7.Text = "Produtos";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(21, 289);
-            this.button6.Name = "button6";
-            this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button6.Size = new System.Drawing.Size(153, 32);
-            this.button6.TabIndex = 105;
-            this.button6.Text = "Logistica";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(82, 251);
-            this.button5.Name = "button5";
-            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button5.Size = new System.Drawing.Size(89, 32);
-            this.button5.TabIndex = 104;
-            this.button5.Text = "Holerite";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.Location = new System.Drawing.Point(24, 175);
-            this.button4.Name = "button4";
-            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button4.Size = new System.Drawing.Size(150, 32);
-            this.button4.TabIndex = 103;
-            this.button4.Text = "CRM";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(60, 213);
-            this.button3.Name = "button3";
-            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button3.Size = new System.Drawing.Size(114, 32);
-            this.button3.TabIndex = 102;
-            this.button3.Text = "Fornecedores";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(18, 137);
-            this.button2.Name = "button2";
-            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button2.Size = new System.Drawing.Size(156, 32);
-            this.button2.TabIndex = 101;
-            this.button2.Text = "Colaboradores";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(21, 99);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button1.Size = new System.Drawing.Size(153, 32);
-            this.button1.TabIndex = 100;
-            this.button1.Text = "Agenda";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(333, 69);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(56, 14);
-            this.label17.TabIndex = 246;
-            this.label17.Text = "VOLTAR";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(9, 161);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(68, 18);
-            this.lblEstado.TabIndex = 20;
-            this.lblEstado.Text = "Estados:";
-            this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(81, 161);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(181, 20);
-            this.txtEstado.TabIndex = 19;
-            // 
-            // lblNumero
-            // 
-            this.lblNumero.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumero.Location = new System.Drawing.Point(9, 193);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(68, 18);
-            this.lblNumero.TabIndex = 22;
-            this.lblNumero.Text = "Número";
-            this.lblNumero.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // nudnumero
-            // 
-            this.nudnumero.Location = new System.Drawing.Point(81, 191);
-            this.nudnumero.Name = "nudnumero";
-            this.nudnumero.Size = new System.Drawing.Size(181, 20);
-            this.nudnumero.TabIndex = 23;
-            // 
             // FrmAdicionarFornecedor
             // 
             this.BackColor = System.Drawing.Color.SkyBlue;
@@ -755,13 +976,20 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.cmsAgenda.ResumeLayout(false);
+            this.cmsFornecedores.ResumeLayout(false);
+            this.cmsProdutos.ResumeLayout(false);
+            this.cmsVenda.ResumeLayout(false);
+            this.cmsColaboradores.ResumeLayout(false);
+            this.csmColaborador.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -771,7 +999,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -835,5 +1062,29 @@
         private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.NumericUpDown nudnumero;
         private System.Windows.Forms.Label lblNumero;
+        private System.Windows.Forms.ContextMenuStrip cmsAgenda;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsFornecedores;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem2;
+        private System.Windows.Forms.ContextMenuStrip cmsProdutos;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem3;
+        private System.Windows.Forms.ContextMenuStrip cmsVenda;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ContextMenuStrip cmsColaboradores;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem1;
+        private System.Windows.Forms.ContextMenuStrip csmColaborador;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
     }
 }

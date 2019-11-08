@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGerarFolhaD));
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.lblIRRFDesconto = new System.Windows.Forms.Label();
             this.lblFGTSDesconto = new System.Windows.Forms.Label();
@@ -120,7 +121,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblMinimizar = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblFechar = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
@@ -131,6 +134,28 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.csmColaborador = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsAgenda = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsVenda = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsProdutos = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsFornecedores = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
@@ -141,15 +166,6 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.cmsAgenda = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmsColaborador = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmsFornecedores = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmsProdutos = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.cmsVenda = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblMinimizar = new System.Windows.Forms.Label();
-            this.lblFechar = new System.Windows.Forms.Label();
             this.groupBox8.SuspendLayout();
             this.groupBox22.SuspendLayout();
             this.groupBox21.SuspendLayout();
@@ -173,6 +189,12 @@
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.csmColaborador.SuspendLayout();
+            this.cmsAgenda.SuspendLayout();
+            this.cmsVenda.SuspendLayout();
+            this.cmsProdutos.SuspendLayout();
+            this.cmsFornecedores.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -183,7 +205,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.cmsAgenda.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox8
@@ -1247,17 +1268,41 @@
             this.panel2.Size = new System.Drawing.Size(697, 66);
             this.panel2.TabIndex = 233;
             // 
+            // lblMinimizar
+            // 
+            this.lblMinimizar.AutoSize = true;
+            this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblMinimizar.Location = new System.Drawing.Point(652, 0);
+            this.lblMinimizar.Name = "lblMinimizar";
+            this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
+            this.lblMinimizar.TabIndex = 241;
+            this.lblMinimizar.Text = "_";
+            this.lblMinimizar.Click += new System.EventHandler(this.lblMinimizar_Click_1);
+            // 
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Stencil", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(199, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(373, 60);
+            this.label3.Size = new System.Drawing.Size(397, 60);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Consultar Produto";
+            this.label3.Text = "Holerite";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblFechar
+            // 
+            this.lblFechar.AutoSize = true;
+            this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechar.ForeColor = System.Drawing.Color.Red;
+            this.lblFechar.Location = new System.Drawing.Point(674, 3);
+            this.lblFechar.Name = "lblFechar";
+            this.lblFechar.Size = new System.Drawing.Size(20, 19);
+            this.lblFechar.TabIndex = 240;
+            this.lblFechar.Text = "X";
+            this.lblFechar.Click += new System.EventHandler(this.lblFechar_Click_1);
             // 
             // panel1
             // 
@@ -1402,7 +1447,6 @@
             // 
             // button1
             // 
-            this.button1.ContextMenuStrip = this.cmsAgenda;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1415,6 +1459,174 @@
             this.button1.Text = "Agenda";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // csmColaborador
+            // 
+            this.csmColaborador.BackColor = System.Drawing.Color.SteelBlue;
+            this.csmColaborador.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.csmColaborador.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem6});
+            this.csmColaborador.Name = "cmsAgenda";
+            this.csmColaborador.Size = new System.Drawing.Size(150, 70);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem4.Text = "Inserir";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem5.Text = "Consultar";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem6.Text = "Alterar";
+            // 
+            // cmsAgenda
+            // 
+            this.cmsAgenda.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsAgenda.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsAgenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem,
+            this.consultarToolStripMenuItem,
+            this.alterarToolStripMenuItem});
+            this.cmsAgenda.Name = "cmsAgenda";
+            this.cmsAgenda.Size = new System.Drawing.Size(150, 70);
+            // 
+            // inserirToolStripMenuItem
+            // 
+            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem.Text = "Inserir";
+            this.inserirToolStripMenuItem.Click += new System.EventHandler(this.inserirToolStripMenuItem_Click);
+            // 
+            // consultarToolStripMenuItem
+            // 
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem.Text = "Consultar";
+            // 
+            // alterarToolStripMenuItem
+            // 
+            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem.Text = "Alterar";
+            // 
+            // cmsVenda
+            // 
+            this.cmsVenda.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsVenda.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsVenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
+            this.cmsVenda.Name = "cmsAgenda";
+            this.cmsVenda.Size = new System.Drawing.Size(150, 70);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem1.Text = "Inserir";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem2.Text = "Consultar";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem3.Text = "Alterar";
+            // 
+            // cmsProdutos
+            // 
+            this.cmsProdutos.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsProdutos.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsProdutos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem3,
+            this.consultarToolStripMenuItem3,
+            this.alterarToolStripMenuItem3});
+            this.cmsProdutos.Name = "cmsAgenda";
+            this.cmsProdutos.Size = new System.Drawing.Size(150, 70);
+            // 
+            // inserirToolStripMenuItem3
+            // 
+            this.inserirToolStripMenuItem3.Name = "inserirToolStripMenuItem3";
+            this.inserirToolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem3.Text = "Inserir";
+            this.inserirToolStripMenuItem3.Click += new System.EventHandler(this.inserirToolStripMenuItem3_Click);
+            // 
+            // consultarToolStripMenuItem3
+            // 
+            this.consultarToolStripMenuItem3.Name = "consultarToolStripMenuItem3";
+            this.consultarToolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem3.Text = "Consultar";
+            this.consultarToolStripMenuItem3.Click += new System.EventHandler(this.consultarToolStripMenuItem3_Click);
+            // 
+            // alterarToolStripMenuItem3
+            // 
+            this.alterarToolStripMenuItem3.Name = "alterarToolStripMenuItem3";
+            this.alterarToolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem3.Text = "Alterar";
+            // 
+            // cmsFornecedores
+            // 
+            this.cmsFornecedores.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsFornecedores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsFornecedores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem2,
+            this.consultarToolStripMenuItem2,
+            this.alterarToolStripMenuItem2});
+            this.cmsFornecedores.Name = "cmsAgenda";
+            this.cmsFornecedores.Size = new System.Drawing.Size(150, 70);
+            // 
+            // inserirToolStripMenuItem2
+            // 
+            this.inserirToolStripMenuItem2.Name = "inserirToolStripMenuItem2";
+            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem2.Text = "Inserir";
+            this.inserirToolStripMenuItem2.Click += new System.EventHandler(this.inserirToolStripMenuItem2_Click);
+            // 
+            // consultarToolStripMenuItem2
+            // 
+            this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
+            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem2.Text = "Consultar";
+            this.consultarToolStripMenuItem2.Click += new System.EventHandler(this.consultarToolStripMenuItem2_Click);
+            // 
+            // alterarToolStripMenuItem2
+            // 
+            this.alterarToolStripMenuItem2.Name = "alterarToolStripMenuItem2";
+            this.alterarToolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem2.Text = "Alterar";
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Cultura_Musical.Properties.Resources.printer;
+            this.pictureBox11.Location = new System.Drawing.Point(807, 72);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(53, 40);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 240;
+            this.pictureBox11.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -1517,79 +1729,19 @@
             this.pictureBox4.TabIndex = 108;
             this.pictureBox4.TabStop = false;
             // 
-            // cmsAgenda
-            // 
-            this.cmsAgenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirToolStripMenuItem,
-            this.consultarToolStripMenuItem});
-            this.cmsAgenda.Name = "cmsAgenda";
-            this.cmsAgenda.Size = new System.Drawing.Size(126, 48);
-            // 
-            // cmsColaborador
-            // 
-            this.cmsColaborador.Name = "cmsAgenda";
-            this.cmsColaborador.Size = new System.Drawing.Size(61, 4);
-            // 
-            // cmsFornecedores
-            // 
-            this.cmsFornecedores.Name = "cmsAgenda";
-            this.cmsFornecedores.Size = new System.Drawing.Size(61, 4);
-            // 
-            // cmsProdutos
-            // 
-            this.cmsProdutos.Name = "cmsAgenda";
-            this.cmsProdutos.Size = new System.Drawing.Size(61, 4);
-            // 
-            // cmsVenda
-            // 
-            this.cmsVenda.Name = "cmsAgenda";
-            this.cmsVenda.Size = new System.Drawing.Size(61, 4);
-            // 
-            // inserirToolStripMenuItem
-            // 
-            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.inserirToolStripMenuItem.Text = "Inserir";
-            // 
-            // consultarToolStripMenuItem
-            // 
-            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.consultarToolStripMenuItem.Text = "Consultar";
-            // 
-            // lblMinimizar
-            // 
-            this.lblMinimizar.AutoSize = true;
-            this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMinimizar.Location = new System.Drawing.Point(652, 0);
-            this.lblMinimizar.Name = "lblMinimizar";
-            this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
-            this.lblMinimizar.TabIndex = 241;
-            this.lblMinimizar.Text = "_";
-            // 
-            // lblFechar
-            // 
-            this.lblFechar.AutoSize = true;
-            this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechar.ForeColor = System.Drawing.Color.Red;
-            this.lblFechar.Location = new System.Drawing.Point(674, 3);
-            this.lblFechar.Name = "lblFechar";
-            this.lblFechar.Size = new System.Drawing.Size(20, 19);
-            this.lblFechar.TabIndex = 240;
-            this.lblFechar.Text = "X";
-            // 
             // frmGerarFolhaD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(874, 716);
+            this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGerarFolhaD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGerarFolhaD";
@@ -1618,6 +1770,12 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.csmColaborador.ResumeLayout(false);
+            this.cmsAgenda.ResumeLayout(false);
+            this.cmsVenda.ResumeLayout(false);
+            this.cmsProdutos.ResumeLayout(false);
+            this.cmsFornecedores.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -1628,7 +1786,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.cmsAgenda.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1747,14 +1904,29 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblMinimizar;
+        private System.Windows.Forms.Label lblFechar;
+        private System.Windows.Forms.ContextMenuStrip csmColaborador;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ContextMenuStrip cmsAgenda;
         private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
-        private System.Windows.Forms.ContextMenuStrip cmsColaborador;
-        private System.Windows.Forms.ContextMenuStrip cmsFornecedores;
-        private System.Windows.Forms.ContextMenuStrip cmsProdutos;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip cmsVenda;
-        private System.Windows.Forms.Label lblMinimizar;
-        private System.Windows.Forms.Label lblFechar;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ContextMenuStrip cmsProdutos;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem3;
+        private System.Windows.Forms.ContextMenuStrip cmsFornecedores;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem2;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }

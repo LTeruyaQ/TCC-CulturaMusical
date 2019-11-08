@@ -157,6 +157,26 @@ namespace Cultura_Musical.Telas.Planos
             this.Hide();
         }
 
-       
+        private void toolStripMenuItem10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Telas.Fornecedores.FrmAdicionarFornecedor tela = new Fornecedores.FrmAdicionarFornecedor();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void toolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
