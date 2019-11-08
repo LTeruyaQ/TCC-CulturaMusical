@@ -117,7 +117,7 @@
             // 
             // txtdesc
             // 
-            this.txtdesc.Location = new System.Drawing.Point(336, 357);
+            this.txtdesc.Location = new System.Drawing.Point(336, 340);
             this.txtdesc.Name = "txtdesc";
             this.txtdesc.Size = new System.Drawing.Size(334, 20);
             this.txtdesc.TabIndex = 16;
@@ -125,7 +125,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(267, 360);
+            this.label2.Location = new System.Drawing.Point(267, 343);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 15;
@@ -222,7 +222,7 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(192, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(572, 66);
+            this.panel2.Size = new System.Drawing.Size(631, 66);
             this.panel2.TabIndex = 9;
             // 
             // lblMinimizar
@@ -230,7 +230,7 @@
             this.lblMinimizar.AutoSize = true;
             this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMinimizar.Location = new System.Drawing.Point(525, 2);
+            this.lblMinimizar.Location = new System.Drawing.Point(582, -1);
             this.lblMinimizar.Name = "lblMinimizar";
             this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
             this.lblMinimizar.TabIndex = 101;
@@ -242,7 +242,7 @@
             this.lblFechar.AutoSize = true;
             this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechar.ForeColor = System.Drawing.Color.Red;
-            this.lblFechar.Location = new System.Drawing.Point(545, 7);
+            this.lblFechar.Location = new System.Drawing.Point(606, 2);
             this.lblFechar.Name = "lblFechar";
             this.lblFechar.Size = new System.Drawing.Size(20, 19);
             this.lblFechar.TabIndex = 100;
@@ -291,7 +291,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Cultura_Musical.Properties.Resources.temporary_offer;
-            this.pictureBox10.Location = new System.Drawing.Point(24, 376);
+            this.pictureBox10.Location = new System.Drawing.Point(33, 351);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(33, 24);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -301,7 +301,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Cultura_Musical.Properties.Resources.man;
-            this.pictureBox9.Location = new System.Drawing.Point(25, 176);
+            this.pictureBox9.Location = new System.Drawing.Point(34, 151);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(32, 21);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -311,7 +311,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Cultura_Musical.Properties.Resources.bow;
-            this.pictureBox8.Location = new System.Drawing.Point(27, 223);
+            this.pictureBox8.Location = new System.Drawing.Point(36, 198);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(33, 25);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -321,7 +321,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Cultura_Musical.Properties.Resources.calendar;
-            this.pictureBox7.Location = new System.Drawing.Point(27, 134);
+            this.pictureBox7.Location = new System.Drawing.Point(36, 109);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(32, 24);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -331,7 +331,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Cultura_Musical.Properties.Resources.gift_card;
-            this.pictureBox2.Location = new System.Drawing.Point(24, 278);
+            this.pictureBox2.Location = new System.Drawing.Point(34, 259);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 21);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -341,7 +341,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Cultura_Musical.Properties.Resources.barcode;
-            this.pictureBox6.Location = new System.Drawing.Point(25, 328);
+            this.pictureBox6.Location = new System.Drawing.Point(34, 303);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 22);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -351,7 +351,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Cultura_Musical.Properties.Resources.price;
-            this.pictureBox5.Location = new System.Drawing.Point(25, 481);
+            this.pictureBox5.Location = new System.Drawing.Point(34, 456);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(26, 22);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -361,7 +361,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Cultura_Musical.Properties.Resources.tag;
-            this.pictureBox4.Location = new System.Drawing.Point(25, 427);
+            this.pictureBox4.Location = new System.Drawing.Point(34, 402);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(26, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -374,7 +374,7 @@
             this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVendas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendas.ForeColor = System.Drawing.Color.White;
-            this.btnVendas.Location = new System.Drawing.Point(88, 471);
+            this.btnVendas.Location = new System.Drawing.Point(97, 446);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnVendas.Size = new System.Drawing.Size(86, 32);
@@ -389,7 +389,7 @@
             this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProdutos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdutos.ForeColor = System.Drawing.Color.White;
-            this.btnProdutos.Location = new System.Drawing.Point(24, 420);
+            this.btnProdutos.Location = new System.Drawing.Point(33, 395);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnProdutos.Size = new System.Drawing.Size(150, 32);
@@ -404,7 +404,7 @@
             this.btnLogistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogistica.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogistica.ForeColor = System.Drawing.Color.White;
-            this.btnLogistica.Location = new System.Drawing.Point(24, 368);
+            this.btnLogistica.Location = new System.Drawing.Point(33, 343);
             this.btnLogistica.Name = "btnLogistica";
             this.btnLogistica.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnLogistica.Size = new System.Drawing.Size(153, 32);
@@ -419,7 +419,7 @@
             this.btnHolerite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHolerite.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHolerite.ForeColor = System.Drawing.Color.White;
-            this.btnHolerite.Location = new System.Drawing.Point(88, 318);
+            this.btnHolerite.Location = new System.Drawing.Point(97, 293);
             this.btnHolerite.Name = "btnHolerite";
             this.btnHolerite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnHolerite.Size = new System.Drawing.Size(89, 32);
@@ -435,7 +435,7 @@
             this.btnCRM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCRM.ForeColor = System.Drawing.Color.White;
             this.btnCRM.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCRM.Location = new System.Drawing.Point(24, 216);
+            this.btnCRM.Location = new System.Drawing.Point(33, 191);
             this.btnCRM.Name = "btnCRM";
             this.btnCRM.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnCRM.Size = new System.Drawing.Size(150, 32);
@@ -451,10 +451,10 @@
             this.btnFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFornecedores.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFornecedores.ForeColor = System.Drawing.Color.White;
-            this.btnFornecedores.Location = new System.Drawing.Point(72, 267);
+            this.btnFornecedores.Location = new System.Drawing.Point(65, 248);
             this.btnFornecedores.Name = "btnFornecedores";
             this.btnFornecedores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnFornecedores.Size = new System.Drawing.Size(120, 32);
+            this.btnFornecedores.Size = new System.Drawing.Size(127, 32);
             this.btnFornecedores.TabIndex = 118;
             this.btnFornecedores.Text = "Fornecedores";
             this.btnFornecedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -467,7 +467,7 @@
             this.btnColaboradores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColaboradores.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnColaboradores.ForeColor = System.Drawing.Color.White;
-            this.btnColaboradores.Location = new System.Drawing.Point(24, 165);
+            this.btnColaboradores.Location = new System.Drawing.Point(33, 140);
             this.btnColaboradores.Name = "btnColaboradores";
             this.btnColaboradores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnColaboradores.Size = new System.Drawing.Size(156, 32);
@@ -483,7 +483,7 @@
             this.btnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgenda.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgenda.ForeColor = System.Drawing.Color.White;
-            this.btnAgenda.Location = new System.Drawing.Point(24, 126);
+            this.btnAgenda.Location = new System.Drawing.Point(33, 101);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnAgenda.Size = new System.Drawing.Size(153, 32);
@@ -496,7 +496,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.tag;
-            this.pictureBox3.Location = new System.Drawing.Point(46, 42);
+            this.pictureBox3.Location = new System.Drawing.Point(55, 17);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(96, 66);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -506,7 +506,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Yellow;
-            this.panel4.Location = new System.Drawing.Point(3, 42);
+            this.panel4.Location = new System.Drawing.Point(12, 17);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(19, 45);
             this.panel4.TabIndex = 98;
@@ -527,7 +527,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(764, 522);
+            this.ClientSize = new System.Drawing.Size(823, 522);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.txtduração);
             this.Controls.Add(this.panel3);

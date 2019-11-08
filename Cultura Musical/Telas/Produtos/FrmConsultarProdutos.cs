@@ -139,7 +139,7 @@ namespace Cultura_Musical.Telas.Pedidos
 
         private void btnHolerite_Click(object sender, EventArgs e)
         {
-            Holerite.FrmAddHolerite tela = new Holerite.FrmAddHolerite();
+            Telas.Folha_Pagamento.frmGerarFolhaD tela = new Folha_Pagamento.frmGerarFolhaD();
             tela.Show();
             this.Hide();
         }
@@ -163,6 +163,11 @@ namespace Cultura_Musical.Telas.Pedidos
             Planos.cbo tela = new Planos.cbo();
             tela.Show();
             this.Hide();
+        }
+
+        private void FrmConsultarProdutos_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Cultura_Musical.Telas
                 string nome  = txtUsuario.Text;
                 string Senha = txtSenha.Text;
 
-                Bus.
+                //Bus.
             }
 
             catch (ArgumentException ex)

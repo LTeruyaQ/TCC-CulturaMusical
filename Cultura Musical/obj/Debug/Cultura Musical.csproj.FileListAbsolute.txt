@@ -1715,8 +1715,6 @@ C:\Users\lucas\Source\Repos\tcc-cultura-musical51\Cultura Musical\obj\Debug\Cult
 C:\Users\lucas\Source\Repos\tcc-cultura-musical51\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionario.FrmJornadaDeTrabalho.resources
 C:\Users\lucas\Source\Repos\tcc-cultura-musical51\Cultura Musical\obj\Debug\Cultura_Musical.Telas.CRM.FrmAdicionarCliente.resources
 C:\Users\lucas\Source\Repos\tcc-cultura-musical51\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Fornecedores.FrmAdicionarFornecedor.resources
-C:\Users\lucas\Source\Repos\tcc-cultura-musical51\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Folha_de_Pagamento.Inserir.resources
-C:\Users\lucas\Source\Repos\tcc-cultura-musical51\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Holerite.FrmAddHolerite.resources
 C:\Users\lucas\Source\Repos\tcc-cultura-musical51\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Inicialização.FrmCadastroFuncionarioLogin.resources
 C:\Users\lucas\Source\Repos\tcc-cultura-musical51\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmHomePage.resources
 C:\Users\lucas\Source\Repos\tcc-cultura-musical51\Cultura Musical\obj\Debug\Cultura_Musical.Telas.FrmLogin.resources

@@ -38,10 +38,10 @@ namespace Cultura_Musical.Business
 
         public void login (string usuario, string senha)
         {
-            Database.Entity.tb_login confirmacao = db.procura(Login);
+            //Database.Entity.tb_login confirmacao = db.procura(Login);
 
-            if (confirmacao.nm_usuario == null || confirmacao.sen_usuario == null)
-                throw new ArgumentException("Usuario ou senha incorreta");
+            //if (confirmacao.nm_usuario == null || confirmacao.sen_usuario == null)
+            //    throw new ArgumentException("Usuario ou senha incorreta");
         }
     }
 }

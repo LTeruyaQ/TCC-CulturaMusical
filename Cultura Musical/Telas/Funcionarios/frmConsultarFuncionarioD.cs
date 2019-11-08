@@ -19,39 +19,7 @@ namespace Cultura_Musical.Telas.Funcionarios
         Business.Business_Funcionarios Bus = new Business.Business_Funcionarios();
         private void frmConsultarFuncionarioD_Load(object sender, EventArgs e)
         {
-            int n = 0;
-
-            for (int i = 0; i < 5; i++)
-            {
-                n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = "------------------";
-                dataGridView1.Rows[n].Cells[1].Value = "------------------ ";
-                dataGridView1.Rows[n].Cells[2].Value = "-------------------";
-                dataGridView1.Rows[n].Cells[3].Value = "-------------------";
-                dataGridView1.Rows[n].Cells[4].Value = "-------------------";
-
-                n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = "------------------";
-                dataGridView1.Rows[n].Cells[1].Value = "------------------ ";
-                dataGridView1.Rows[n].Cells[2].Value = "-------------------";
-                dataGridView1.Rows[n].Cells[3].Value = "-------------------";
-                dataGridView1.Rows[n].Cells[4].Value = "-------------------";
-
-                n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = "------------------";
-                dataGridView1.Rows[n].Cells[1].Value = "------------------ ";
-                dataGridView1.Rows[n].Cells[2].Value = "-------------------";
-                dataGridView1.Rows[n].Cells[3].Value = "-------------------";
-                dataGridView1.Rows[n].Cells[4].Value = "-------------------";
-
-                n = dataGridView1.Rows.Add();
-                dataGridView1.Rows[n].Cells[0].Value = "------------------";
-                dataGridView1.Rows[n].Cells[1].Value = "------------------ ";
-                dataGridView1.Rows[n].Cells[2].Value = "-------------------";
-                dataGridView1.Rows[n].Cells[3].Value = "-------------------";
-                dataGridView1.Rows[n].Cells[4].Value = "-------------------";
-            }
-
+            
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
@@ -132,7 +100,7 @@ namespace Cultura_Musical.Telas.Funcionarios
 
         private void btnHolerite_Click(object sender, EventArgs e)
         {
-            Holerite.FrmAddHolerite tela = new Holerite.FrmAddHolerite();
+            Telas.Folha_Pagamento.frmGerarFolhaD tela = new Folha_Pagamento.frmGerarFolhaD();
             tela.Show();
             this.Hide();
         }
