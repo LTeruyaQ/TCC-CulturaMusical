@@ -46,7 +46,7 @@ namespace Cultura_Musical.Business
             if (forn.ds_email.Contains("@") == false || forn.ds_email == string.Empty)
                 throw new ArgumentException("O campo de email está incorreto");
 
-            else if (forn.inscicao_estadual == string.Empty || forn.inscicao_estadual.Length > 13)
+            else if (forn.inscicao_estadual == string.Empty || forn.inscicao_estadual.Length > 15)
 
                 throw new ArgumentException("O campo de Inscrição Estadual está incorreto");
 

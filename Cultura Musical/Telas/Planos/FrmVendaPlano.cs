@@ -78,7 +78,7 @@ namespace Cultura_Musical.Telas.Planos
             string nm_cliente = txtnome.Text;
             Business.Business_Cliente bus = new Business.Business_Cliente();
             List<Database.Entity.tb_cliente> cliente = bus.listapornome(nm_cliente);
-            dgvlista.DataSource = cliente;
+            dgvFuncionario.DataSource = cliente;
         }
 
         private void lblFechar_Click(object sender, EventArgs e)
