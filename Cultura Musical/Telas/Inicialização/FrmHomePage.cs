@@ -70,77 +70,84 @@ namespace Cultura_Musical.Telas
             //lblFalar.Text = texto;            
         }
 
-        private void btnAgenda_Click(object sender, EventArgs e)
+        private void lblFalar_TextChanged(object sender, EventArgs e)
         {
-            Agenda.FrmAlterarAgenda tela = new Agenda.FrmAlterarAgenda();
+
+        }
+
+        private void inserirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmCadastroFuncionarioD tela = new Funcionarios.frmCadastroFuncionarioD();
+            tela.Show();
+            this.Hide();
+
+        }
+
+        private void consultarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Telas.Funcionarios.frmConsultarFuncionarioD tela = new Funcionarios.frmConsultarFuncionarioD();
             tela.Show();
             this.Hide();
         }
 
-        private void btnColaboradores_Click(object sender, EventArgs e)
+        private void alterarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Funcionarios.frmCadastroFuncionarioD tela = new Funcionarios.frmCadastroFuncionarioD();
+            
+        }
+
+        private void removerToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inserirToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Telas.Produtos.frmAdicionarPedidoD tela = new Produtos.frmAdicionarPedidoD();
             tela.Show();
             this.Hide();
         }
 
-        private void btnCRM_Click(object sender, EventArgs e)
+        private void consultarToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            CRM.FrmAdicionarCliente tela = new CRM.FrmAdicionarCliente();
+            Telas.Produtos.frmConsultarPedidoD tela = new Produtos.frmConsultarPedidoD();
             tela.Show();
             this.Hide();
         }
 
-        private void btnFornecedores_Click(object sender, EventArgs e)
+        private void inserirToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            Fornecedores.FrmAdicionarFornecedor tela = new Fornecedores.FrmAdicionarFornecedor();
+            Telas.Fornecedores.FrmAdicionarFornecedor tela = new Fornecedores.FrmAdicionarFornecedor();
             tela.Show();
             this.Hide();
         }
 
-        private void btnHolerite_Click(object sender, EventArgs e)
+        private void consultarToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            Holerite.FrmAddHolerite tela = new Holerite.FrmAddHolerite();
+            Telas.Fornecedores.FrmConsultarFornecedores tela = new Fornecedores.FrmConsultarFornecedores();
             tela.Show();
             this.Hide();
         }
 
-        private void btnLogistica_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            Logistica.Fluxo_de_Caixa.frmFluxoD tela = new Logistica.Fluxo_de_Caixa.frmFluxoD();
+            Telas.Folha_Pagamento.frmGerarFolhaD tela = new Folha_Pagamento.frmGerarFolhaD();
             tela.Show();
             this.Hide();
         }
 
-        private void btnProdutos_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
-            Produtos.frmAdicionarPedidoD tela = new Produtos.frmAdicionarPedidoD();
-            tela.Show();
-            this.Hide();
+            
         }
 
-        private void btnVendas_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Planos.cbo tela = new Planos.cbo();
-            tela.Show();
-            this.Hide();
+
         }
 
-        private void lblMinimizar_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
-        private void lblFechar_Click(object sender, EventArgs e)
-        {
-            DialogResult r = MessageBox.Show("Realmente deseja fechar o sistema ?", "Cultura Musical",
-                      MessageBoxButtons.YesNo,
-                      MessageBoxIcon.Warning);
-
-            if (r == DialogResult.Yes)
-            {
-                Application.Exit();
-            }
         }
     }
 }

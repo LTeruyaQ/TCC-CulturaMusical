@@ -32,14 +32,14 @@ namespace Cultura_Musical.Telas.Fornecedores
                 forn.rua = txtRua.Text;
                 forn.bairro = txtBairro.Text;
                 forn.cidade = txtCidade.Text;
-                forn.ds_cnpj = txtCNPJ.Text;
+                forn.ds_cnpj = mstCNPJ.Text;
 
                 Business.Business_Fornecedores forne = new Business.Business_Fornecedores();
                 forne.AddForn(forn);
 
                 MessageBox.Show("Fornecedor adicionado com sucesso.");
             }
-              
+
             catch (ArgumentException ex)
             {
                 MessageBox.Show(ex.Message);
@@ -91,7 +91,7 @@ namespace Cultura_Musical.Telas.Fornecedores
 
         private void btnHolerite_Click(object sender, EventArgs e)
         {
-            Holerite.FrmAddHolerite tela = new Holerite.FrmAddHolerite();
+            Telas.Folha_Pagamento.frmGerarFolhaD tela = new Folha_Pagamento.frmGerarFolhaD();
             tela.Show();
             this.Hide();
         }
@@ -115,6 +115,24 @@ namespace Cultura_Musical.Telas.Fornecedores
             Planos.cbo tela = new Planos.cbo();
             tela.Show();
             this.Hide();
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void mskCEP_Leave(object sender, EventArgs e)
+        {
+
+            API_s.Correio__API api = new API_s.Correio__API();
+            dynamic resp = api.Buscar(mskCEP.Text);
+
+            txtRua.Text = resp.logradouro;
+            txtCidade.Text = resp.localidade;
+            txtBairro.Text = resp.bairro;
         }
     }
 }

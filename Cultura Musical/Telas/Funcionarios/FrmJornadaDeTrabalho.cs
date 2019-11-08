@@ -94,7 +94,7 @@ namespace Cultura_Musical.Telas.Funcionario
 
         private void btnHolerite_Click(object sender, EventArgs e)
         {
-            Holerite.FrmAddHolerite tela = new Holerite.FrmAddHolerite();
+            Telas.Folha_Pagamento.frmGerarFolhaD tela = new Folha_Pagamento.frmGerarFolhaD();
             tela.Show();
             this.Hide();
         }

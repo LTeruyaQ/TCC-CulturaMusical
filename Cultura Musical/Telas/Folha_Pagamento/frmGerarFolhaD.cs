@@ -203,8 +203,8 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            Business.ImprimirTela p = new Business.ImprimirTela();
-            p.Imprimir(this, panel5);
+            //Business.ImprimirTela p = new Business.ImprimirTela();
+            //p.Imprimir(this, panel5);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -242,7 +242,7 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
 
         private void btnHolerite_Click(object sender, EventArgs e)
         {
-            Holerite.FrmAddHolerite tela = new Holerite.FrmAddHolerite();
+            Telas.Folha_Pagamento.frmGerarFolhaD tela = new Folha_Pagamento.frmGerarFolhaD();
             tela.Show();
             this.Hide();
         }

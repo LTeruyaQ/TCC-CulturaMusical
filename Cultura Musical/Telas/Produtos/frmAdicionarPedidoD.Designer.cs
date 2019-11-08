@@ -121,54 +121,57 @@
             // 
             // dtpEntrega
             // 
+            this.dtpEntrega.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpEntrega.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpEntrega.Location = new System.Drawing.Point(202, 167);
+            this.dtpEntrega.Location = new System.Drawing.Point(194, 170);
             this.dtpEntrega.Name = "dtpEntrega";
-            this.dtpEntrega.Size = new System.Drawing.Size(99, 20);
+            this.dtpEntrega.Size = new System.Drawing.Size(99, 22);
             this.dtpEntrega.TabIndex = 35;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(45, 51);
+            this.label8.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(28, 51);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(91, 16);
+            this.label8.Size = new System.Drawing.Size(111, 19);
             this.label8.TabIndex = 25;
             this.label8.Text = "Quantidade:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(58, 114);
+            this.label3.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(41, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 16);
+            this.label3.Size = new System.Drawing.Size(63, 19);
             this.label3.TabIndex = 30;
             this.label3.Text = "Preço:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(45, 172);
+            this.label7.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(28, 172);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 16);
+            this.label7.Size = new System.Drawing.Size(152, 19);
             this.label7.TabIndex = 34;
             this.label7.Text = "Data da entrega:";
             // 
             // nudQtd
             // 
-            this.nudQtd.Location = new System.Drawing.Point(201, 47);
+            this.nudQtd.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudQtd.Location = new System.Drawing.Point(193, 51);
             this.nudQtd.Name = "nudQtd";
-            this.nudQtd.Size = new System.Drawing.Size(100, 20);
+            this.nudQtd.Size = new System.Drawing.Size(100, 22);
             this.nudQtd.TabIndex = 29;
             // 
             // nudPreco
             // 
-            this.nudPreco.Location = new System.Drawing.Point(201, 110);
+            this.nudPreco.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudPreco.Location = new System.Drawing.Point(193, 110);
             this.nudPreco.Name = "nudPreco";
-            this.nudPreco.Size = new System.Drawing.Size(100, 20);
+            this.nudPreco.Size = new System.Drawing.Size(100, 22);
             this.nudPreco.TabIndex = 31;
             // 
             // groupBox1
@@ -188,55 +191,58 @@
             // 
             // cboFornecedor
             // 
+            this.cboFornecedor.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboFornecedor.FormattingEnabled = true;
-            this.cboFornecedor.Location = new System.Drawing.Point(162, 110);
+            this.cboFornecedor.Location = new System.Drawing.Point(174, 110);
             this.cboFornecedor.Name = "cboFornecedor";
-            this.cboFornecedor.Size = new System.Drawing.Size(100, 21);
+            this.cboFornecedor.Size = new System.Drawing.Size(100, 22);
             this.cboFornecedor.TabIndex = 33;
             // 
             // txtProduto
             // 
-            this.txtProduto.Location = new System.Drawing.Point(162, 45);
+            this.txtProduto.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProduto.Location = new System.Drawing.Point(174, 45);
             this.txtProduto.Name = "txtProduto";
-            this.txtProduto.Size = new System.Drawing.Size(100, 20);
+            this.txtProduto.Size = new System.Drawing.Size(100, 22);
             this.txtProduto.TabIndex = 28;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(6, 108);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 16);
+            this.label4.Size = new System.Drawing.Size(113, 19);
             this.label4.TabIndex = 26;
             this.label4.Text = "Fornecedor:";
             // 
             // dtpCompra
             // 
+            this.dtpCompra.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpCompra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpCompra.Location = new System.Drawing.Point(162, 175);
+            this.dtpCompra.Location = new System.Drawing.Point(174, 175);
             this.dtpCompra.Name = "dtpCompra";
-            this.dtpCompra.Size = new System.Drawing.Size(99, 20);
+            this.dtpCompra.Size = new System.Drawing.Size(99, 22);
             this.dtpCompra.TabIndex = 32;
             this.dtpCompra.ValueChanged += new System.EventHandler(this.dtpCompra_ValueChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(6, 46);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(61, 16);
+            this.label9.Size = new System.Drawing.Size(86, 19);
             this.label9.TabIndex = 24;
             this.label9.Text = "Produto:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 175);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 16);
+            this.label5.Size = new System.Drawing.Size(145, 19);
             this.label5.TabIndex = 27;
             this.label5.Text = "Data da compra:";
             // 
@@ -280,6 +286,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.logo_Cultura_Musical_PNG;
             this.pictureBox1.Location = new System.Drawing.Point(17, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(94, 72);

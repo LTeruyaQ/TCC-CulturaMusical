@@ -73,7 +73,7 @@ namespace Cultura_Musical.Telas.Fornecedores
 
         private void btnHolerite_Click(object sender, EventArgs e)
         {
-            Holerite.FrmAddHolerite tela = new Holerite.FrmAddHolerite();
+            Telas.Folha_Pagamento.frmGerarFolhaD tela = new Folha_Pagamento.frmGerarFolhaD();
             tela.Show();
             this.Hide();
         }
@@ -97,6 +97,67 @@ namespace Cultura_Musical.Telas.Fornecedores
             Planos.cbo tela = new Planos.cbo();
             tela.Show();
             this.Hide();
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void FrmConsultarFornecedores_Load(object sender, EventArgs e)
+        {
+            dgvNMFornecedor.BorderStyle = BorderStyle.None;
+            dgvNMFornecedor.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            dgvNMFornecedor.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgvNMFornecedor.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            dgvNMFornecedor.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            dgvNMFornecedor.BackgroundColor = Color.White;
+
+
+            dgvNMFornecedor.EnableHeadersVisualStyles = false;
+            dgvNMFornecedor.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgvNMFornecedor.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            dgvNMFornecedor.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+
+            int n = 0;
+
+            for (int i = 0; i < 12; i++)
+            {
+                n = dgvNMFornecedor.Rows.Add();
+                dgvNMFornecedor.Rows[n].Cells[0].Value = "------------------";
+                dgvNMFornecedor.Rows[n].Cells[1].Value = "------------------ ";
+                dgvNMFornecedor.Rows[n].Cells[2].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[3].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[4].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[5].Value = "------------------";
+                dgvNMFornecedor.Rows[n].Cells[6].Value = "------------------ ";
+                dgvNMFornecedor.Rows[n].Cells[7].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[8].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[9].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[10].Value = "------------------";
+                dgvNMFornecedor.Rows[n].Cells[11].Value = "------------------ ";
+            
+
+                n = dgvNMFornecedor.Rows.Add();
+                dgvNMFornecedor.Rows[n].Cells[0].Value = "------------------";
+                dgvNMFornecedor.Rows[n].Cells[1].Value = "------------------ ";
+                dgvNMFornecedor.Rows[n].Cells[2].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[3].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[4].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[5].Value = "------------------";
+                dgvNMFornecedor.Rows[n].Cells[6].Value = "------------------ ";
+                dgvNMFornecedor.Rows[n].Cells[7].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[8].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[9].Value = "-------------------";
+                dgvNMFornecedor.Rows[n].Cells[10].Value = "------------------";
+                dgvNMFornecedor.Rows[n].Cells[11].Value = "------------------ ";
+            }
+      
+
+
+            
         }
     }
 }

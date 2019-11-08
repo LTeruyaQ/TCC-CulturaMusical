@@ -2,12 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Cultura Musical",
-    "\\Cultura Musical\\bin",
-    "\\Cultura Musical\\obj",
-    "\\Cultura Musical\\Properties",
     "\\Cultura Musical\\Telas",
-    "\\Cultura Musical\\Telas\\Agenda"
+    "\\Cultura Musical\\Telas\\Agenda",
+    "\\Cultura Musical\\Telas\\Fornecedores"
   ],
-  "SelectedNode": "\\Cultura Musical\\Telas\\Agenda\\FrmAlterarAgenda.cs",
+  "SelectedNode": "\\Cultura Musical\\Telas\\Fornecedores\\FrmAdicionarFornecedor.resx",
   "PreviewInSolutionExplorer": false
 }
