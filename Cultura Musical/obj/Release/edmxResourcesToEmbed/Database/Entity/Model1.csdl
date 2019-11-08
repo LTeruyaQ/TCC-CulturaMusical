@@ -1,0 +1,636 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="culturamusicalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="culturamusicalEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tb_agenda_estudio" EntityType="culturamusicalModel.tb_agenda_estudio" />
+    <EntitySet Name="tb_aula" EntityType="culturamusicalModel.tb_aula" />
+    <EntitySet Name="tb_beneficio" EntityType="culturamusicalModel.tb_beneficio" />
+    <EntitySet Name="tb_cliente" EntityType="culturamusicalModel.tb_cliente" />
+    <EntitySet Name="tb_colaborador" EntityType="culturamusicalModel.tb_colaborador" />
+    <EntitySet Name="tb_compra" EntityType="culturamusicalModel.tb_compra" />
+    <EntitySet Name="tb_conta" EntityType="culturamusicalModel.tb_conta" />
+    <EntitySet Name="tb_estoque" EntityType="culturamusicalModel.tb_estoque" />
+    <EntitySet Name="tb_financeiro" EntityType="culturamusicalModel.tb_financeiro" />
+    <EntitySet Name="tb_folha_pagamento" EntityType="culturamusicalModel.tb_folha_pagamento" />
+    <EntitySet Name="tb_fornecedor" EntityType="culturamusicalModel.tb_fornecedor" />
+    <EntitySet Name="tb_funcionario" EntityType="culturamusicalModel.tb_funcionario" />
+    <EntitySet Name="tb_holerite" EntityType="culturamusicalModel.tb_holerite" />
+    <EntitySet Name="tb_jornada" EntityType="culturamusicalModel.tb_jornada" />
+    <EntitySet Name="tb_login" EntityType="culturamusicalModel.tb_login" />
+    <EntitySet Name="tb_plano" EntityType="culturamusicalModel.tb_plano" />
+    <EntitySet Name="tb_ponto" EntityType="culturamusicalModel.tb_ponto" />
+    <EntitySet Name="tb_produto" EntityType="culturamusicalModel.tb_produto" />
+    <EntitySet Name="tb_prolabore" EntityType="culturamusicalModel.tb_prolabore" />
+    <EntitySet Name="tb_sala" EntityType="culturamusicalModel.tb_sala" />
+    <EntitySet Name="tb_tipo_conta" EntityType="culturamusicalModel.tb_tipo_conta" />
+    <EntitySet Name="tb_venda_plano" EntityType="culturamusicalModel.tb_venda_plano" />
+    <EntitySet Name="fluxo_de_caixa" EntityType="culturamusicalModel.fluxo_de_caixa" />
+    <AssociationSet Name="fk_tb_agenda_estudio_tb_cliente1" Association="culturamusicalModel.fk_tb_agenda_estudio_tb_cliente1">
+      <End EntitySet="tb_cliente" Role="tb_cliente" />
+      <End EntitySet="tb_agenda_estudio" Role="tb_agenda_estudio" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_cliente_aula_tb_cliente1" Association="culturamusicalModel.fk_tb_cliente_aula_tb_cliente1">
+      <End EntitySet="tb_cliente" Role="tb_cliente" />
+      <End EntitySet="tb_aula" Role="tb_aula" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_cliente_aula_tb_funcionario1" Association="culturamusicalModel.fk_tb_cliente_aula_tb_funcionario1">
+      <End EntitySet="tb_funcionario" Role="tb_funcionario" />
+      <End EntitySet="tb_aula" Role="tb_aula" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_cliente_aula_tb_sala1" Association="culturamusicalModel.fk_tb_cliente_aula_tb_sala1">
+      <End EntitySet="tb_sala" Role="tb_sala" />
+      <End EntitySet="tb_aula" Role="tb_aula" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_cliente_aula_tb_venda_plano1" Association="culturamusicalModel.fk_tb_cliente_aula_tb_venda_plano1">
+      <End EntitySet="tb_venda_plano" Role="tb_venda_plano" />
+      <End EntitySet="tb_aula" Role="tb_aula" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_funcionario_tb_beneficio1" Association="culturamusicalModel.fk_tb_funcionario_tb_beneficio1">
+      <End EntitySet="tb_beneficio" Role="tb_beneficio" />
+      <End EntitySet="tb_funcionario" Role="tb_funcionario" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_venda_plano_tb_cliente1" Association="culturamusicalModel.fk_tb_venda_plano_tb_cliente1">
+      <End EntitySet="tb_cliente" Role="tb_cliente" />
+      <End EntitySet="tb_venda_plano" Role="tb_venda_plano" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_compra_tb_fornecedor1" Association="culturamusicalModel.fk_tb_compra_tb_fornecedor1">
+      <End EntitySet="tb_fornecedor" Role="tb_fornecedor" />
+      <End EntitySet="tb_compra" Role="tb_compra" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_produto_tb_compra1" Association="culturamusicalModel.fk_tb_produto_tb_compra1">
+      <End EntitySet="tb_compra" Role="tb_compra" />
+      <End EntitySet="tb_produto" Role="tb_produto" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_conta_tb_tipo_conta1" Association="culturamusicalModel.fk_tb_conta_tb_tipo_conta1">
+      <End EntitySet="tb_tipo_conta" Role="tb_tipo_conta" />
+      <End EntitySet="tb_conta" Role="tb_conta" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_estoque_tb_produto1" Association="culturamusicalModel.fk_tb_estoque_tb_produto1">
+      <End EntitySet="tb_produto" Role="tb_produto" />
+      <End EntitySet="tb_estoque" Role="tb_estoque" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_folha_pagamento_tb_financeiro1" Association="culturamusicalModel.fk_tb_folha_pagamento_tb_financeiro1">
+      <End EntitySet="tb_financeiro" Role="tb_financeiro" />
+      <End EntitySet="tb_folha_pagamento" Role="tb_folha_pagamento" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_folha_pagamento_tb_funcionario1" Association="culturamusicalModel.fk_tb_folha_pagamento_tb_funcionario1">
+      <End EntitySet="tb_funcionario" Role="tb_funcionario" />
+      <End EntitySet="tb_folha_pagamento" Role="tb_folha_pagamento" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_login_tb_funcionario1" Association="culturamusicalModel.fk_tb_login_tb_funcionario1">
+      <End EntitySet="tb_funcionario" Role="tb_funcionario" />
+      <End EntitySet="tb_login" Role="tb_login" />
+    </AssociationSet>
+    <AssociationSet Name="tb_jornada_ibfk_1" Association="culturamusicalModel.tb_jornada_ibfk_1">
+      <End EntitySet="tb_funcionario" Role="tb_funcionario" />
+      <End EntitySet="tb_jornada" Role="tb_jornada" />
+    </AssociationSet>
+    <AssociationSet Name="tb_ponto_ibfk_1" Association="culturamusicalModel.tb_ponto_ibfk_1">
+      <End EntitySet="tb_funcionario" Role="tb_funcionario" />
+      <End EntitySet="tb_ponto" Role="tb_ponto" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_prolabore_tb_login1" Association="culturamusicalModel.fk_tb_prolabore_tb_login1">
+      <End EntitySet="tb_login" Role="tb_login" />
+      <End EntitySet="tb_prolabore" Role="tb_prolabore" />
+    </AssociationSet>
+    <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="culturamusicalModel.fk_tb_venda_plano_tb_plano1">
+      <End EntitySet="tb_plano" Role="tb_plano" />
+      <End EntitySet="tb_venda_plano" Role="tb_venda_plano" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tb_agenda_estudio">
+    <Key>
+      <PropertyRef Name="id_agenda_estudio" />
+    </Key>
+    <Property Name="id_agenda_estudio" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="hr_entrada" Nullable="false" Type="Time" />
+    <Property Name="hr_saida" Nullable="false" Type="Time" />
+    <Property Name="qtd_pessoa" Nullable="false" Type="Int32" />
+    <Property Name="dt_estudio" Nullable="false" Type="DateTime" />
+    <Property Name="id_cliente" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="tb_cliente" Relationship="culturamusicalModel.fk_tb_agenda_estudio_tb_cliente1" FromRole="tb_agenda_estudio" ToRole="tb_cliente" />
+  </EntityType>
+  <EntityType Name="tb_aula">
+    <Key>
+      <PropertyRef Name="id_aula" />
+    </Key>
+    <Property Name="id_aula" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="dt_aula" Nullable="false" Type="DateTime" />
+    <Property Name="hr_aula" Nullable="false" Type="Time" />
+    <Property Name="tp_aula" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="id_funcionario" Nullable="false" Type="Int32" />
+    <Property Name="id_cliente" Nullable="false" Type="Int32" />
+    <Property Name="id_venda_plano" Nullable="false" Type="Int32" />
+    <Property Name="id_sala" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="tb_cliente" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_cliente1" FromRole="tb_aula" ToRole="tb_cliente" />
+    <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_aula" ToRole="tb_funcionario" />
+    <NavigationProperty Name="tb_sala" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_sala1" FromRole="tb_aula" ToRole="tb_sala" />
+    <NavigationProperty Name="tb_venda_plano" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_venda_plano1" FromRole="tb_aula" ToRole="tb_venda_plano" />
+  </EntityType>
+  <EntityType Name="tb_beneficio">
+    <Key>
+      <PropertyRef Name="id_beneficio" />
+    </Key>
+    <Property Name="id_beneficio" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="ds_vt" Nullable="false" Type="Decimal" />
+    <Property Name="ds_va" Nullable="false" Type="Decimal" />
+    <Property Name="ds_vr" Nullable="false" Type="Decimal" />
+    <Property Name="ds_convenio" Nullable="false" Type="Decimal" />
+    <Property Name="ds_gratificacao" Nullable="false" Type="Decimal" />
+    <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.fk_tb_funcionario_tb_beneficio1" FromRole="tb_beneficio" ToRole="tb_funcionario" />
+  </EntityType>
+  <EntityType Name="tb_cliente">
+    <Key>
+      <PropertyRef Name="id_cliente" />
+    </Key>
+    <Property Name="id_cliente" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="nm_cliente" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="dt_nascimento" Nullable="false" Type="DateTime" />
+    <Property Name="ds_telefone" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_email" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_rg" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_cpf" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_cep" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_observacao" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_estado" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_bairro" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_periodo" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="nm_responsavel" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_nivel" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="nmr_cliente" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="tb_agenda_estudio" Relationship="culturamusicalModel.fk_tb_agenda_estudio_tb_cliente1" FromRole="tb_cliente" ToRole="tb_agenda_estudio" />
+    <NavigationProperty Name="tb_aula" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_cliente1" FromRole="tb_cliente" ToRole="tb_aula" />
+    <NavigationProperty Name="tb_venda_plano" Relationship="culturamusicalModel.fk_tb_venda_plano_tb_cliente1" FromRole="tb_cliente" ToRole="tb_venda_plano" />
+  </EntityType>
+  <EntityType Name="tb_colaborador">
+    <Key>
+      <PropertyRef Name="id_funcionario" />
+    </Key>
+    <Property Name="id_funcionario" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="nm_funcionario" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_rg" Nullable="false" Type="Int32" />
+    <Property Name="ds_cpf" Nullable="false" Type="Int32" />
+    <Property Name="ds_cep" Type="Int32" />
+    <Property Name="ds_endereco" MaxLength="100" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="dt_nascimento" Type="DateTime" />
+    <Property Name="dt_contratacao" Type="DateTime" />
+    <Property Name="dt_demicao" Type="DateTime" />
+    <Property Name="vl_salario" Type="Decimal" />
+    <Property Name="ds_falta" Type="Int32" />
+    <Property Name="ds_telefone" Type="Int32" />
+    <Property Name="ds_email" MaxLength="100" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="genero_funcionario" MaxLength="1" FixedLength="false" Unicode="false" Type="String" />
+  </EntityType>
+  <EntityType Name="tb_compra">
+    <Key>
+      <PropertyRef Name="id_compra" />
+    </Key>
+    <Property Name="id_compra" Nullable="false" Type="Int32" />
+    <Property Name="dt_entrega" Nullable="false" Type="DateTime" />
+    <Property Name="dt_compra" Nullable="false" Type="DateTime" />
+    <Property Name="vl_pagar" Nullable="false" Type="Decimal" />
+    <Property Name="id_fornecedor" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="tb_fornecedor" Relationship="culturamusicalModel.fk_tb_compra_tb_fornecedor1" FromRole="tb_compra" ToRole="tb_fornecedor" />
+    <NavigationProperty Name="tb_produto" Relationship="culturamusicalModel.fk_tb_produto_tb_compra1" FromRole="tb_compra" ToRole="tb_produto" />
+  </EntityType>
+  <EntityType Name="tb_conta">
+    <Key>
+      <PropertyRef Name="id_conta" />
+    </Key>
+    <Property Name="id_conta" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="vl_pagar" Nullable="false" Type="Decimal" />
+    <Property Name="id_tipo_conta" Nullable="false" Type="Int32" />
+    <Property Name="dt_conta" Nullable="false" Type="DateTime" />
+    <Property Name="dt_pagamento" Nullable="false" Type="DateTime" />
+    <NavigationProperty Name="tb_tipo_conta" Relationship="culturamusicalModel.fk_tb_conta_tb_tipo_conta1" FromRole="tb_conta" ToRole="tb_tipo_conta" />
+  </EntityType>
+  <EntityType Name="tb_estoque">
+    <Key>
+      <PropertyRef Name="id_estoque" />
+    </Key>
+    <Property Name="id_estoque" Nullable="false" Type="Int32" />
+    <Property Name="qtd_estoque" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="id_produto" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="tb_produto" Relationship="culturamusicalModel.fk_tb_estoque_tb_produto1" FromRole="tb_estoque" ToRole="tb_produto" />
+  </EntityType>
+  <EntityType Name="tb_financeiro">
+    <Key>
+      <PropertyRef Name="id_financeiro" />
+    </Key>
+    <Property Name="id_financeiro" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="ds_fgts" Nullable="false" Type="Decimal" />
+    <Property Name="ds_inss" Nullable="false" Type="Decimal" />
+    <Property Name="ds_irrf" Nullable="false" Type="Decimal" />
+    <NavigationProperty Name="tb_folha_pagamento" Relationship="culturamusicalModel.fk_tb_folha_pagamento_tb_financeiro1" FromRole="tb_financeiro" ToRole="tb_folha_pagamento" />
+  </EntityType>
+  <EntityType Name="tb_folha_pagamento">
+    <Key>
+      <PropertyRef Name="id_folha" />
+    </Key>
+    <Property Name="id_folha" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="vl_salario_bruto" Nullable="false" Type="Decimal" />
+    <Property Name="vl_salario_liquido" Nullable="false" Type="Decimal" />
+    <Property Name="id_funcionario" Nullable="false" Type="Int32" />
+    <Property Name="id_financeiro" Nullable="false" Type="Int32" />
+    <Property Name="dt_folha" Nullable="false" Type="DateTime" />
+    <Property Name="hr_extra" Nullable="false" Type="Time" />
+    <NavigationProperty Name="tb_financeiro" Relationship="culturamusicalModel.fk_tb_folha_pagamento_tb_financeiro1" FromRole="tb_folha_pagamento" ToRole="tb_financeiro" />
+    <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_folha_pagamento" ToRole="tb_funcionario" />
+  </EntityType>
+  <EntityType Name="tb_fornecedor">
+    <Key>
+      <PropertyRef Name="id_fornecedor" />
+    </Key>
+    <Property Name="id_fornecedor" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="nm_fornecedor" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="tell_contato" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="tell_contato2" MaxLength="11" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="rua" MaxLength="25" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="estado" MaxLength="3" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="cidade" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="bairro" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="cep" MaxLength="9" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_cnpj" Nullable="false" MaxLength="14" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_email" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="inscicao_estadual" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="nmr_fornecedor" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="tb_compra" Relationship="culturamusicalModel.fk_tb_compra_tb_fornecedor1" FromRole="tb_fornecedor" ToRole="tb_compra" />
+  </EntityType>
+  <EntityType Name="tb_funcionario">
+    <Key>
+      <PropertyRef Name="id_funcionario" />
+    </Key>
+    <Property Name="id_funcionario" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="nm_funcionario" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="dt_nascimento" Nullable="false" Type="DateTime" />
+    <Property Name="dt_contratacao" Nullable="false" Type="DateTime" />
+    <Property Name="dt_demicao" Type="DateTime" />
+    <Property Name="vl_salario" Nullable="false" Type="Decimal" />
+    <Property Name="ds_telefone" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_email" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_genero" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_rg" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_cpf" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_cep" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_cargo" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_rua" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_estado" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_bairro" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_numero" Nullable="false" Type="Int32" />
+    <Property Name="ds_complemento" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="vl_13_salario" Type="Decimal" />
+    <Property Name="id_beneficio" Nullable="false" Type="Int32" />
+    <Property Name="ds_cidade" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="nmr_funcionario" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="tb_aula" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_aula" />
+    <NavigationProperty Name="tb_beneficio" Relationship="culturamusicalModel.fk_tb_funcionario_tb_beneficio1" FromRole="tb_funcionario" ToRole="tb_beneficio" />
+    <NavigationProperty Name="tb_folha_pagamento" Relationship="culturamusicalModel.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_folha_pagamento" />
+    <NavigationProperty Name="tb_login" Relationship="culturamusicalModel.fk_tb_login_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_login" />
+    <NavigationProperty Name="tb_jornada" Relationship="culturamusicalModel.tb_jornada_ibfk_1" FromRole="tb_funcionario" ToRole="tb_jornada" />
+    <NavigationProperty Name="tb_ponto" Relationship="culturamusicalModel.tb_ponto_ibfk_1" FromRole="tb_funcionario" ToRole="tb_ponto" />
+  </EntityType>
+  <EntityType Name="tb_holerite">
+    <Key>
+      <PropertyRef Name="id_holerite" />
+    </Key>
+    <Property Name="id_holerite" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="vl_salario_liquido" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" Type="String" />
+  </EntityType>
+  <EntityType Name="tb_jornada">
+    <Key>
+      <PropertyRef Name="id_jornada" />
+    </Key>
+    <Property Name="id_jornada" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="id_funcionario" Nullable="false" Type="Int32" />
+    <Property Name="hr_entrada" Type="Time" />
+    <Property Name="hr_intervalo" Type="Time" />
+    <Property Name="hr_volta_intervalo" Type="Time" />
+    <Property Name="hr_saida" Type="Time" />
+    <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.tb_jornada_ibfk_1" FromRole="tb_jornada" ToRole="tb_funcionario" />
+  </EntityType>
+  <EntityType Name="tb_login">
+    <Key>
+      <PropertyRef Name="id_login" />
+    </Key>
+    <Property Name="id_login" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="nm_usuario" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="sen_usuario" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="dt_login" Nullable="false" Type="DateTime" />
+    <Property Name="nv_login" Nullable="false" Type="Int32" />
+    <Property Name="id_funcionario" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.fk_tb_login_tb_funcionario1" FromRole="tb_login" ToRole="tb_funcionario" />
+    <NavigationProperty Name="tb_prolabore" Relationship="culturamusicalModel.fk_tb_prolabore_tb_login1" FromRole="tb_login" ToRole="tb_prolabore" />
+  </EntityType>
+  <EntityType Name="tb_plano">
+    <Key>
+      <PropertyRef Name="id_plano" />
+    </Key>
+    <Property Name="id_plano" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="nm_plano" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_duracao" Nullable="false" Type="Int32" />
+    <Property Name="vl_preco" Nullable="false" Type="Decimal" />
+    <Property Name="ds_descricao" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="qtd_aula_semana" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="tb_venda_plano" Relationship="culturamusicalModel.fk_tb_venda_plano_tb_plano1" FromRole="tb_plano" ToRole="tb_venda_plano" />
+  </EntityType>
+  <EntityType Name="tb_ponto">
+    <Key>
+      <PropertyRef Name="id_ponto" />
+    </Key>
+    <Property Name="id_ponto" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="id_funcionario" Nullable="false" Type="Int32" />
+    <Property Name="dt_entrada" Type="DateTime" />
+    <Property Name="hr_entrada" Type="Time" />
+    <Property Name="hr_saida_intervalo" Type="Time" />
+    <Property Name="hr_volta_intervalo" Type="Time" />
+    <Property Name="dt_saida" Type="DateTime" />
+    <NavigationProperty Name="tb_funcionario" Relationship="culturamusicalModel.tb_ponto_ibfk_1" FromRole="tb_ponto" ToRole="tb_funcionario" />
+  </EntityType>
+  <EntityType Name="tb_produto">
+    <Key>
+      <PropertyRef Name="id_produto" />
+    </Key>
+    <Property Name="id_produto" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="nm_produto" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="vl_preco" Nullable="false" Type="Decimal" />
+    <Property Name="qtd_produto" Nullable="false" Type="Int32" />
+    <Property Name="id_compra" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="tb_compra" Relationship="culturamusicalModel.fk_tb_produto_tb_compra1" FromRole="tb_produto" ToRole="tb_compra" />
+    <NavigationProperty Name="tb_estoque" Relationship="culturamusicalModel.fk_tb_estoque_tb_produto1" FromRole="tb_produto" ToRole="tb_estoque" />
+  </EntityType>
+  <EntityType Name="tb_prolabore">
+    <Key>
+      <PropertyRef Name="id_prolabore" />
+    </Key>
+    <Property Name="id_prolabore" Nullable="false" Type="Int32" />
+    <Property Name="nm_prolabore" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="dt_nascimento" Nullable="false" Type="DateTime" />
+    <Property Name="ds_rg" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_cpf" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="nmr_telefone" Nullable="false" MaxLength="13" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_email" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_bairro" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_rua" Nullable="false" MaxLength="35" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_cidade" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_estado" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_cep" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="ds_genero" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" Type="String" />
+    <Property Name="id_login" Nullable="false" Type="Int32" />
+    <NavigationProperty Name="tb_login" Relationship="culturamusicalModel.fk_tb_prolabore_tb_login1" FromRole="tb_prolabore" ToRole="tb_login" />
+  </EntityType>
+  <EntityType Name="tb_sala">
+    <Key>
+      <PropertyRef Name="id_sala" />
+    </Key>
+    <Property Name="id_sala" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="nr_sala" Nullable="false" Type="Int32" />
+    <Property Name="qtd_max_alunos" Nullable="false" Type="Int32" />
+    <Property Name="tp_instrumento" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" Type="String" />
+    <NavigationProperty Name="tb_aula" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_sala1" FromRole="tb_sala" ToRole="tb_aula" />
+  </EntityType>
+  <EntityType Name="tb_tipo_conta">
+    <Key>
+      <PropertyRef Name="id_tipo_conta" />
+    </Key>
+    <Property Name="id_tipo_conta" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="tp_conta" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" Type="String" />
+    <NavigationProperty Name="tb_conta" Relationship="culturamusicalModel.fk_tb_conta_tb_tipo_conta1" FromRole="tb_tipo_conta" ToRole="tb_conta" />
+  </EntityType>
+  <EntityType Name="tb_venda_plano">
+    <Key>
+      <PropertyRef Name="id_venda_plano" />
+    </Key>
+    <Property Name="id_venda_plano" Nullable="false" annotation:StoreGeneratedPattern="Identity" Type="Int32" />
+    <Property Name="id_plano" Nullable="false" Type="Int32" />
+    <Property Name="id_cliente" Nullable="false" Type="Int32" />
+    <Property Name="dt_inicio" Nullable="false" Type="DateTime" />
+    <Property Name="dt_fim" Nullable="false" Type="DateTime" />
+    <NavigationProperty Name="tb_aula" Relationship="culturamusicalModel.fk_tb_cliente_aula_tb_venda_plano1" FromRole="tb_venda_plano" ToRole="tb_aula" />
+    <NavigationProperty Name="tb_cliente" Relationship="culturamusicalModel.fk_tb_venda_plano_tb_cliente1" FromRole="tb_venda_plano" ToRole="tb_cliente" />
+    <NavigationProperty Name="tb_plano" Relationship="culturamusicalModel.fk_tb_venda_plano_tb_plano1" FromRole="tb_venda_plano" ToRole="tb_plano" />
+  </EntityType>
+  <EntityType Name="fluxo_de_caixa">
+    <Key>
+      <PropertyRef Name="data_pagamento" />
+      <PropertyRef Name="tipo_operação" />
+    </Key>
+    <Property Name="data_pagamento" Nullable="false" Type="DateTime" />
+    <Property Name="valor_pago" Type="Decimal" />
+    <Property Name="tipo_operação" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" Type="String" />
+  </EntityType>
+  <Association Name="fk_tb_agenda_estudio_tb_cliente1">
+    <End Type="culturamusicalModel.tb_cliente" Multiplicity="1" Role="tb_cliente" />
+    <End Type="culturamusicalModel.tb_agenda_estudio" Multiplicity="*" Role="tb_agenda_estudio" />
+    <ReferentialConstraint>
+      <Principal Role="tb_cliente">
+        <PropertyRef Name="id_cliente" />
+      </Principal>
+      <Dependent Role="tb_agenda_estudio">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_cliente_aula_tb_cliente1">
+    <End Type="culturamusicalModel.tb_cliente" Multiplicity="1" Role="tb_cliente" />
+    <End Type="culturamusicalModel.tb_aula" Multiplicity="*" Role="tb_aula" />
+    <ReferentialConstraint>
+      <Principal Role="tb_cliente">
+        <PropertyRef Name="id_cliente" />
+      </Principal>
+      <Dependent Role="tb_aula">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_cliente_aula_tb_funcionario1">
+    <End Type="culturamusicalModel.tb_funcionario" Multiplicity="1" Role="tb_funcionario" />
+    <End Type="culturamusicalModel.tb_aula" Multiplicity="*" Role="tb_aula" />
+    <ReferentialConstraint>
+      <Principal Role="tb_funcionario">
+        <PropertyRef Name="id_funcionario" />
+      </Principal>
+      <Dependent Role="tb_aula">
+        <PropertyRef Name="id_funcionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_cliente_aula_tb_sala1">
+    <End Type="culturamusicalModel.tb_sala" Multiplicity="1" Role="tb_sala" />
+    <End Type="culturamusicalModel.tb_aula" Multiplicity="*" Role="tb_aula" />
+    <ReferentialConstraint>
+      <Principal Role="tb_sala">
+        <PropertyRef Name="id_sala" />
+      </Principal>
+      <Dependent Role="tb_aula">
+        <PropertyRef Name="id_sala" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_cliente_aula_tb_venda_plano1">
+    <End Type="culturamusicalModel.tb_venda_plano" Multiplicity="1" Role="tb_venda_plano" />
+    <End Type="culturamusicalModel.tb_aula" Multiplicity="*" Role="tb_aula" />
+    <ReferentialConstraint>
+      <Principal Role="tb_venda_plano">
+        <PropertyRef Name="id_venda_plano" />
+      </Principal>
+      <Dependent Role="tb_aula">
+        <PropertyRef Name="id_venda_plano" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_funcionario_tb_beneficio1">
+    <End Type="culturamusicalModel.tb_beneficio" Multiplicity="1" Role="tb_beneficio" />
+    <End Type="culturamusicalModel.tb_funcionario" Multiplicity="*" Role="tb_funcionario" />
+    <ReferentialConstraint>
+      <Principal Role="tb_beneficio">
+        <PropertyRef Name="id_beneficio" />
+      </Principal>
+      <Dependent Role="tb_funcionario">
+        <PropertyRef Name="id_beneficio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_venda_plano_tb_cliente1">
+    <End Type="culturamusicalModel.tb_cliente" Multiplicity="1" Role="tb_cliente" />
+    <End Type="culturamusicalModel.tb_venda_plano" Multiplicity="*" Role="tb_venda_plano" />
+    <ReferentialConstraint>
+      <Principal Role="tb_cliente">
+        <PropertyRef Name="id_cliente" />
+      </Principal>
+      <Dependent Role="tb_venda_plano">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_compra_tb_fornecedor1">
+    <End Type="culturamusicalModel.tb_fornecedor" Multiplicity="1" Role="tb_fornecedor" />
+    <End Type="culturamusicalModel.tb_compra" Multiplicity="*" Role="tb_compra" />
+    <ReferentialConstraint>
+      <Principal Role="tb_fornecedor">
+        <PropertyRef Name="id_fornecedor" />
+      </Principal>
+      <Dependent Role="tb_compra">
+        <PropertyRef Name="id_fornecedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_produto_tb_compra1">
+    <End Type="culturamusicalModel.tb_compra" Multiplicity="1" Role="tb_compra" />
+    <End Type="culturamusicalModel.tb_produto" Multiplicity="*" Role="tb_produto" />
+    <ReferentialConstraint>
+      <Principal Role="tb_compra">
+        <PropertyRef Name="id_compra" />
+      </Principal>
+      <Dependent Role="tb_produto">
+        <PropertyRef Name="id_compra" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_conta_tb_tipo_conta1">
+    <End Type="culturamusicalModel.tb_tipo_conta" Multiplicity="1" Role="tb_tipo_conta" />
+    <End Type="culturamusicalModel.tb_conta" Multiplicity="*" Role="tb_conta" />
+    <ReferentialConstraint>
+      <Principal Role="tb_tipo_conta">
+        <PropertyRef Name="id_tipo_conta" />
+      </Principal>
+      <Dependent Role="tb_conta">
+        <PropertyRef Name="id_tipo_conta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_estoque_tb_produto1">
+    <End Type="culturamusicalModel.tb_produto" Multiplicity="1" Role="tb_produto" />
+    <End Type="culturamusicalModel.tb_estoque" Multiplicity="*" Role="tb_estoque" />
+    <ReferentialConstraint>
+      <Principal Role="tb_produto">
+        <PropertyRef Name="id_produto" />
+      </Principal>
+      <Dependent Role="tb_estoque">
+        <PropertyRef Name="id_produto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_folha_pagamento_tb_financeiro1">
+    <End Type="culturamusicalModel.tb_financeiro" Multiplicity="1" Role="tb_financeiro" />
+    <End Type="culturamusicalModel.tb_folha_pagamento" Multiplicity="*" Role="tb_folha_pagamento" />
+    <ReferentialConstraint>
+      <Principal Role="tb_financeiro">
+        <PropertyRef Name="id_financeiro" />
+      </Principal>
+      <Dependent Role="tb_folha_pagamento">
+        <PropertyRef Name="id_financeiro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_folha_pagamento_tb_funcionario1">
+    <End Type="culturamusicalModel.tb_funcionario" Multiplicity="1" Role="tb_funcionario" />
+    <End Type="culturamusicalModel.tb_folha_pagamento" Multiplicity="*" Role="tb_folha_pagamento" />
+    <ReferentialConstraint>
+      <Principal Role="tb_funcionario">
+        <PropertyRef Name="id_funcionario" />
+      </Principal>
+      <Dependent Role="tb_folha_pagamento">
+        <PropertyRef Name="id_funcionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_login_tb_funcionario1">
+    <End Type="culturamusicalModel.tb_funcionario" Multiplicity="1" Role="tb_funcionario" />
+    <End Type="culturamusicalModel.tb_login" Multiplicity="*" Role="tb_login" />
+    <ReferentialConstraint>
+      <Principal Role="tb_funcionario">
+        <PropertyRef Name="id_funcionario" />
+      </Principal>
+      <Dependent Role="tb_login">
+        <PropertyRef Name="id_funcionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_jornada_ibfk_1">
+    <End Type="culturamusicalModel.tb_funcionario" Multiplicity="1" Role="tb_funcionario" />
+    <End Type="culturamusicalModel.tb_jornada" Multiplicity="*" Role="tb_jornada" />
+    <ReferentialConstraint>
+      <Principal Role="tb_funcionario">
+        <PropertyRef Name="id_funcionario" />
+      </Principal>
+      <Dependent Role="tb_jornada">
+        <PropertyRef Name="id_funcionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tb_ponto_ibfk_1">
+    <End Type="culturamusicalModel.tb_funcionario" Multiplicity="1" Role="tb_funcionario" />
+    <End Type="culturamusicalModel.tb_ponto" Multiplicity="*" Role="tb_ponto" />
+    <ReferentialConstraint>
+      <Principal Role="tb_funcionario">
+        <PropertyRef Name="id_funcionario" />
+      </Principal>
+      <Dependent Role="tb_ponto">
+        <PropertyRef Name="id_funcionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_prolabore_tb_login1">
+    <End Type="culturamusicalModel.tb_login" Multiplicity="1" Role="tb_login" />
+    <End Type="culturamusicalModel.tb_prolabore" Multiplicity="*" Role="tb_prolabore" />
+    <ReferentialConstraint>
+      <Principal Role="tb_login">
+        <PropertyRef Name="id_login" />
+      </Principal>
+      <Dependent Role="tb_prolabore">
+        <PropertyRef Name="id_login" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_tb_venda_plano_tb_plano1">
+    <End Type="culturamusicalModel.tb_plano" Multiplicity="1" Role="tb_plano" />
+    <End Type="culturamusicalModel.tb_venda_plano" Multiplicity="*" Role="tb_venda_plano" />
+    <ReferentialConstraint>
+      <Principal Role="tb_plano">
+        <PropertyRef Name="id_plano" />
+      </Principal>
+      <Dependent Role="tb_venda_plano">
+        <PropertyRef Name="id_plano" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
