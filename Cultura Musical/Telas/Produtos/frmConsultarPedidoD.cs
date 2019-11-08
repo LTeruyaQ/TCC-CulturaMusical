@@ -190,9 +190,9 @@ namespace Cultura_Musical.Telas.Produtos
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            Telas.Funcionarios.frmAlterarColaborador tela = new Funcionarios.frmAlterarColaborador();
-            tela.Show();
-            this.Hide();
+            //Telas.Funcionarios.frmAlterarColaborador tela = new Funcionarios.frmAlterarColaborador();
+            //tela.Show();
+            //this.Hide();
         }
 
         private void toolStripMenuItem4_Click(object sender, EventArgs e)

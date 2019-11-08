@@ -42,49 +42,19 @@
             this.cboplanos = new System.Windows.Forms.ComboBox();
             this.lblplano = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.dgvlista = new System.Windows.Forms.DataGridView();
+            this.dgvFuncionario = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
             this.txtnome = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblMinimizar = new System.Windows.Forms.Label();
             this.lblFechar = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnVendas = new System.Windows.Forms.Button();
-            this.btnProdutos = new System.Windows.Forms.Button();
-            this.btnLogistica = new System.Windows.Forms.Button();
-            this.btnHolerite = new System.Windows.Forms.Button();
-            this.btnCRM = new System.Windows.Forms.Button();
-            this.btnFornecedores = new System.Windows.Forms.Button();
-            this.btnColaboradores = new System.Windows.Forms.Button();
-            this.bbtAgenda = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.csmColaboradores = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsProdutos = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsVendas = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsAgenda = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsFornecedores = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -93,19 +63,44 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnVendas = new System.Windows.Forms.Button();
+            this.cmsVendas = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnProdutos = new System.Windows.Forms.Button();
+            this.cmsProdutos = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnLogistica = new System.Windows.Forms.Button();
+            this.btnHolerite = new System.Windows.Forms.Button();
+            this.btnCRM = new System.Windows.Forms.Button();
+            this.btnFornecedores = new System.Windows.Forms.Button();
+            this.cmsFornecedores = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnColaboradores = new System.Windows.Forms.Button();
+            this.csmColaboradores = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.bbtAgenda = new System.Windows.Forms.Button();
+            this.cmsAgenda = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvlista)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.csmColaboradores.SuspendLayout();
-            this.cmsProdutos.SuspendLayout();
-            this.cmsVendas.SuspendLayout();
-            this.cmsAgenda.SuspendLayout();
-            this.cmsFornecedores.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -114,6 +109,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.cmsVendas.SuspendLayout();
+            this.cmsProdutos.SuspendLayout();
+            this.cmsFornecedores.SuspendLayout();
+            this.csmColaboradores.SuspendLayout();
+            this.cmsAgenda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -228,7 +228,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dgvlista);
+            this.groupBox2.Controls.Add(this.dgvFuncionario);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.txtnome);
             this.groupBox2.Location = new System.Drawing.Point(480, 165);
@@ -238,13 +238,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
-            // dgvlista
+            // dgvFuncionario
             // 
-            this.dgvlista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvlista.Location = new System.Drawing.Point(9, 70);
-            this.dgvlista.Name = "dgvlista";
-            this.dgvlista.Size = new System.Drawing.Size(388, 150);
-            this.dgvlista.TabIndex = 26;
+            this.dgvFuncionario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFuncionario.Location = new System.Drawing.Point(9, 70);
+            this.dgvFuncionario.Name = "dgvFuncionario";
+            this.dgvFuncionario.Size = new System.Drawing.Size(388, 150);
+            this.dgvFuncionario.TabIndex = 26;
             // 
             // label4
             // 
@@ -310,6 +310,18 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Cultura";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.logo_Cultura_Musical_PNG;
+            this.pictureBox1.Location = new System.Drawing.Point(17, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(94, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -387,316 +399,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(192, 554);
             this.panel1.TabIndex = 25;
-            // 
-            // btnVendas
-            // 
-            this.btnVendas.ContextMenuStrip = this.cmsVendas;
-            this.btnVendas.FlatAppearance.BorderSize = 0;
-            this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVendas.ForeColor = System.Drawing.Color.White;
-            this.btnVendas.Location = new System.Drawing.Point(88, 471);
-            this.btnVendas.Name = "btnVendas";
-            this.btnVendas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnVendas.Size = new System.Drawing.Size(86, 32);
-            this.btnVendas.TabIndex = 123;
-            this.btnVendas.Text = "Vendas";
-            this.btnVendas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVendas.UseVisualStyleBackColor = true;
-            // 
-            // btnProdutos
-            // 
-            this.btnProdutos.ContextMenuStrip = this.cmsProdutos;
-            this.btnProdutos.FlatAppearance.BorderSize = 0;
-            this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProdutos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProdutos.ForeColor = System.Drawing.Color.White;
-            this.btnProdutos.Location = new System.Drawing.Point(24, 420);
-            this.btnProdutos.Name = "btnProdutos";
-            this.btnProdutos.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnProdutos.Size = new System.Drawing.Size(150, 32);
-            this.btnProdutos.TabIndex = 122;
-            this.btnProdutos.Text = "Produtos";
-            this.btnProdutos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProdutos.UseVisualStyleBackColor = true;
-            // 
-            // btnLogistica
-            // 
-            this.btnLogistica.FlatAppearance.BorderSize = 0;
-            this.btnLogistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogistica.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogistica.ForeColor = System.Drawing.Color.White;
-            this.btnLogistica.Location = new System.Drawing.Point(24, 368);
-            this.btnLogistica.Name = "btnLogistica";
-            this.btnLogistica.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnLogistica.Size = new System.Drawing.Size(153, 32);
-            this.btnLogistica.TabIndex = 121;
-            this.btnLogistica.Text = "Logistica";
-            this.btnLogistica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogistica.UseVisualStyleBackColor = true;
-            // 
-            // btnHolerite
-            // 
-            this.btnHolerite.FlatAppearance.BorderSize = 0;
-            this.btnHolerite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHolerite.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHolerite.ForeColor = System.Drawing.Color.White;
-            this.btnHolerite.Location = new System.Drawing.Point(88, 318);
-            this.btnHolerite.Name = "btnHolerite";
-            this.btnHolerite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnHolerite.Size = new System.Drawing.Size(89, 32);
-            this.btnHolerite.TabIndex = 120;
-            this.btnHolerite.Text = "Holerite";
-            this.btnHolerite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHolerite.UseVisualStyleBackColor = true;
-            // 
-            // btnCRM
-            // 
-            this.btnCRM.FlatAppearance.BorderSize = 0;
-            this.btnCRM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCRM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCRM.ForeColor = System.Drawing.Color.White;
-            this.btnCRM.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCRM.Location = new System.Drawing.Point(24, 216);
-            this.btnCRM.Name = "btnCRM";
-            this.btnCRM.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnCRM.Size = new System.Drawing.Size(150, 32);
-            this.btnCRM.TabIndex = 119;
-            this.btnCRM.Text = "CRM";
-            this.btnCRM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCRM.UseVisualStyleBackColor = true;
-            // 
-            // btnFornecedores
-            // 
-            this.btnFornecedores.ContextMenuStrip = this.cmsFornecedores;
-            this.btnFornecedores.FlatAppearance.BorderSize = 0;
-            this.btnFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFornecedores.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFornecedores.ForeColor = System.Drawing.Color.White;
-            this.btnFornecedores.Location = new System.Drawing.Point(72, 267);
-            this.btnFornecedores.Name = "btnFornecedores";
-            this.btnFornecedores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnFornecedores.Size = new System.Drawing.Size(120, 32);
-            this.btnFornecedores.TabIndex = 118;
-            this.btnFornecedores.Text = "Fornecedores";
-            this.btnFornecedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFornecedores.UseVisualStyleBackColor = true;
-            // 
-            // btnColaboradores
-            // 
-            this.btnColaboradores.ContextMenuStrip = this.csmColaboradores;
-            this.btnColaboradores.FlatAppearance.BorderSize = 0;
-            this.btnColaboradores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnColaboradores.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnColaboradores.ForeColor = System.Drawing.Color.White;
-            this.btnColaboradores.Location = new System.Drawing.Point(24, 165);
-            this.btnColaboradores.Name = "btnColaboradores";
-            this.btnColaboradores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnColaboradores.Size = new System.Drawing.Size(156, 32);
-            this.btnColaboradores.TabIndex = 117;
-            this.btnColaboradores.Text = "Colaboradores";
-            this.btnColaboradores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnColaboradores.UseVisualStyleBackColor = true;
-            // 
-            // bbtAgenda
-            // 
-            this.bbtAgenda.ContextMenuStrip = this.cmsAgenda;
-            this.bbtAgenda.FlatAppearance.BorderSize = 0;
-            this.bbtAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bbtAgenda.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbtAgenda.ForeColor = System.Drawing.Color.White;
-            this.bbtAgenda.Location = new System.Drawing.Point(24, 126);
-            this.bbtAgenda.Name = "bbtAgenda";
-            this.bbtAgenda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.bbtAgenda.Size = new System.Drawing.Size(153, 32);
-            this.bbtAgenda.TabIndex = 116;
-            this.bbtAgenda.Text = "Agenda";
-            this.bbtAgenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bbtAgenda.UseVisualStyleBackColor = true;
-            this.bbtAgenda.Click += new System.EventHandler(this.bbtAgenda_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Yellow;
-            this.panel4.Location = new System.Drawing.Point(3, 42);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(19, 45);
-            this.panel4.TabIndex = 98;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(333, 69);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(56, 14);
-            this.label17.TabIndex = 249;
-            this.label17.Text = "VOLTAR";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
-            // 
-            // csmColaboradores
-            // 
-            this.csmColaboradores.BackColor = System.Drawing.Color.SkyBlue;
-            this.csmColaboradores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.csmColaboradores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
-            this.csmColaboradores.Name = "cmsAgenda";
-            this.csmColaboradores.Size = new System.Drawing.Size(150, 70);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem1.Text = "Inserir";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem2.Text = "Consultar";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem3.Text = "Alterar";
-            // 
-            // cmsProdutos
-            // 
-            this.cmsProdutos.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsProdutos.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsProdutos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem7,
-            this.toolStripMenuItem8,
-            this.toolStripMenuItem9});
-            this.cmsProdutos.Name = "cmsAgenda";
-            this.cmsProdutos.Size = new System.Drawing.Size(150, 70);
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem7.Text = "Inserir";
-            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
-            // 
-            // toolStripMenuItem8
-            // 
-            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem8.Text = "Consultar";
-            // 
-            // toolStripMenuItem9
-            // 
-            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem9.Text = "Alterar";
-            // 
-            // cmsVendas
-            // 
-            this.cmsVendas.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsVendas.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsVendas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem10,
-            this.toolStripMenuItem11,
-            this.toolStripMenuItem12});
-            this.cmsVendas.Name = "cmsAgenda";
-            this.cmsVendas.Size = new System.Drawing.Size(150, 70);
-            // 
-            // toolStripMenuItem10
-            // 
-            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem10.Text = "Inserir";
-            this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
-            // 
-            // toolStripMenuItem11
-            // 
-            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem11.Text = "Consultar";
-            this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
-            // 
-            // toolStripMenuItem12
-            // 
-            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem12.Text = "Alterar";
-            // 
-            // cmsAgenda
-            // 
-            this.cmsAgenda.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsAgenda.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsAgenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirToolStripMenuItem,
-            this.consultarToolStripMenuItem,
-            this.alterarToolStripMenuItem});
-            this.cmsAgenda.Name = "cmsAgenda";
-            this.cmsAgenda.Size = new System.Drawing.Size(150, 70);
-            // 
-            // inserirToolStripMenuItem
-            // 
-            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.inserirToolStripMenuItem.Text = "Inserir";
-            // 
-            // consultarToolStripMenuItem
-            // 
-            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.consultarToolStripMenuItem.Text = "Consultar";
-            // 
-            // alterarToolStripMenuItem
-            // 
-            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
-            this.alterarToolStripMenuItem.Text = "Alterar";
-            // 
-            // cmsFornecedores
-            // 
-            this.cmsFornecedores.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsFornecedores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsFornecedores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5,
-            this.toolStripMenuItem6});
-            this.cmsFornecedores.Name = "cmsAgenda";
-            this.cmsFornecedores.Size = new System.Drawing.Size(150, 70);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem4.Text = "Inserir";
-            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem5.Text = "Consultar";
-            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(149, 22);
-            this.toolStripMenuItem6.Text = "Alterar";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::Cultura_Musical.Properties.Resources.logo_Cultura_Musical_PNG;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 72);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // pictureBox10
             // 
@@ -778,6 +480,285 @@
             this.pictureBox4.TabIndex = 124;
             this.pictureBox4.TabStop = false;
             // 
+            // btnVendas
+            // 
+            this.btnVendas.ContextMenuStrip = this.cmsVendas;
+            this.btnVendas.FlatAppearance.BorderSize = 0;
+            this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVendas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendas.ForeColor = System.Drawing.Color.White;
+            this.btnVendas.Location = new System.Drawing.Point(88, 471);
+            this.btnVendas.Name = "btnVendas";
+            this.btnVendas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnVendas.Size = new System.Drawing.Size(86, 32);
+            this.btnVendas.TabIndex = 123;
+            this.btnVendas.Text = "Vendas";
+            this.btnVendas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVendas.UseVisualStyleBackColor = true;
+            // 
+            // cmsVendas
+            // 
+            this.cmsVendas.BackColor = System.Drawing.Color.SkyBlue;
+            this.cmsVendas.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsVendas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem10,
+            this.toolStripMenuItem11,
+            this.toolStripMenuItem12});
+            this.cmsVendas.Name = "cmsAgenda";
+            this.cmsVendas.Size = new System.Drawing.Size(150, 70);
+            // 
+            // toolStripMenuItem10
+            // 
+            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem10.Text = "Inserir";
+            this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
+            // 
+            // toolStripMenuItem11
+            // 
+            this.toolStripMenuItem11.Name = "toolStripMenuItem11";
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem11.Text = "Consultar";
+            this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
+            // 
+            // toolStripMenuItem12
+            // 
+            this.toolStripMenuItem12.Name = "toolStripMenuItem12";
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem12.Text = "Alterar";
+            // 
+            // btnProdutos
+            // 
+            this.btnProdutos.ContextMenuStrip = this.cmsProdutos;
+            this.btnProdutos.FlatAppearance.BorderSize = 0;
+            this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProdutos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProdutos.ForeColor = System.Drawing.Color.White;
+            this.btnProdutos.Location = new System.Drawing.Point(24, 420);
+            this.btnProdutos.Name = "btnProdutos";
+            this.btnProdutos.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnProdutos.Size = new System.Drawing.Size(150, 32);
+            this.btnProdutos.TabIndex = 122;
+            this.btnProdutos.Text = "Produtos";
+            this.btnProdutos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProdutos.UseVisualStyleBackColor = true;
+            // 
+            // cmsProdutos
+            // 
+            this.cmsProdutos.BackColor = System.Drawing.Color.SkyBlue;
+            this.cmsProdutos.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsProdutos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem7,
+            this.toolStripMenuItem8,
+            this.toolStripMenuItem9});
+            this.cmsProdutos.Name = "cmsAgenda";
+            this.cmsProdutos.Size = new System.Drawing.Size(150, 70);
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem7.Text = "Inserir";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem8.Text = "Consultar";
+            // 
+            // toolStripMenuItem9
+            // 
+            this.toolStripMenuItem9.Name = "toolStripMenuItem9";
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem9.Text = "Alterar";
+            // 
+            // btnLogistica
+            // 
+            this.btnLogistica.FlatAppearance.BorderSize = 0;
+            this.btnLogistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogistica.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogistica.ForeColor = System.Drawing.Color.White;
+            this.btnLogistica.Location = new System.Drawing.Point(24, 368);
+            this.btnLogistica.Name = "btnLogistica";
+            this.btnLogistica.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnLogistica.Size = new System.Drawing.Size(153, 32);
+            this.btnLogistica.TabIndex = 121;
+            this.btnLogistica.Text = "Logistica";
+            this.btnLogistica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogistica.UseVisualStyleBackColor = true;
+            // 
+            // btnHolerite
+            // 
+            this.btnHolerite.FlatAppearance.BorderSize = 0;
+            this.btnHolerite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHolerite.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHolerite.ForeColor = System.Drawing.Color.White;
+            this.btnHolerite.Location = new System.Drawing.Point(88, 318);
+            this.btnHolerite.Name = "btnHolerite";
+            this.btnHolerite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnHolerite.Size = new System.Drawing.Size(89, 32);
+            this.btnHolerite.TabIndex = 120;
+            this.btnHolerite.Text = "Holerite";
+            this.btnHolerite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHolerite.UseVisualStyleBackColor = true;
+            // 
+            // btnCRM
+            // 
+            this.btnCRM.FlatAppearance.BorderSize = 0;
+            this.btnCRM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCRM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCRM.ForeColor = System.Drawing.Color.White;
+            this.btnCRM.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCRM.Location = new System.Drawing.Point(24, 216);
+            this.btnCRM.Name = "btnCRM";
+            this.btnCRM.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnCRM.Size = new System.Drawing.Size(150, 32);
+            this.btnCRM.TabIndex = 119;
+            this.btnCRM.Text = "CRM";
+            this.btnCRM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCRM.UseVisualStyleBackColor = true;
+            // 
+            // btnFornecedores
+            // 
+            this.btnFornecedores.ContextMenuStrip = this.cmsFornecedores;
+            this.btnFornecedores.FlatAppearance.BorderSize = 0;
+            this.btnFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFornecedores.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFornecedores.ForeColor = System.Drawing.Color.White;
+            this.btnFornecedores.Location = new System.Drawing.Point(72, 267);
+            this.btnFornecedores.Name = "btnFornecedores";
+            this.btnFornecedores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnFornecedores.Size = new System.Drawing.Size(120, 32);
+            this.btnFornecedores.TabIndex = 118;
+            this.btnFornecedores.Text = "Fornecedores";
+            this.btnFornecedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFornecedores.UseVisualStyleBackColor = true;
+            // 
+            // cmsFornecedores
+            // 
+            this.cmsFornecedores.BackColor = System.Drawing.Color.SkyBlue;
+            this.cmsFornecedores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsFornecedores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem6});
+            this.cmsFornecedores.Name = "cmsAgenda";
+            this.cmsFornecedores.Size = new System.Drawing.Size(150, 70);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem4.Text = "Inserir";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem5.Text = "Consultar";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem6.Text = "Alterar";
+            // 
+            // btnColaboradores
+            // 
+            this.btnColaboradores.ContextMenuStrip = this.csmColaboradores;
+            this.btnColaboradores.FlatAppearance.BorderSize = 0;
+            this.btnColaboradores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnColaboradores.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColaboradores.ForeColor = System.Drawing.Color.White;
+            this.btnColaboradores.Location = new System.Drawing.Point(24, 165);
+            this.btnColaboradores.Name = "btnColaboradores";
+            this.btnColaboradores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.btnColaboradores.Size = new System.Drawing.Size(156, 32);
+            this.btnColaboradores.TabIndex = 117;
+            this.btnColaboradores.Text = "Colaboradores";
+            this.btnColaboradores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnColaboradores.UseVisualStyleBackColor = true;
+            // 
+            // csmColaboradores
+            // 
+            this.csmColaboradores.BackColor = System.Drawing.Color.SkyBlue;
+            this.csmColaboradores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.csmColaboradores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
+            this.csmColaboradores.Name = "cmsAgenda";
+            this.csmColaboradores.Size = new System.Drawing.Size(150, 70);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem1.Text = "Inserir";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem2.Text = "Consultar";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem3.Text = "Alterar";
+            // 
+            // bbtAgenda
+            // 
+            this.bbtAgenda.ContextMenuStrip = this.cmsAgenda;
+            this.bbtAgenda.FlatAppearance.BorderSize = 0;
+            this.bbtAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bbtAgenda.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bbtAgenda.ForeColor = System.Drawing.Color.White;
+            this.bbtAgenda.Location = new System.Drawing.Point(24, 126);
+            this.bbtAgenda.Name = "bbtAgenda";
+            this.bbtAgenda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.bbtAgenda.Size = new System.Drawing.Size(153, 32);
+            this.bbtAgenda.TabIndex = 116;
+            this.bbtAgenda.Text = "Agenda";
+            this.bbtAgenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bbtAgenda.UseVisualStyleBackColor = true;
+            this.bbtAgenda.Click += new System.EventHandler(this.bbtAgenda_Click);
+            // 
+            // cmsAgenda
+            // 
+            this.cmsAgenda.BackColor = System.Drawing.Color.SkyBlue;
+            this.cmsAgenda.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsAgenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem,
+            this.consultarToolStripMenuItem,
+            this.alterarToolStripMenuItem});
+            this.cmsAgenda.Name = "cmsAgenda";
+            this.cmsAgenda.Size = new System.Drawing.Size(150, 70);
+            // 
+            // inserirToolStripMenuItem
+            // 
+            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem.Text = "Inserir";
+            // 
+            // consultarToolStripMenuItem
+            // 
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem.Text = "Consultar";
+            // 
+            // alterarToolStripMenuItem
+            // 
+            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem.Text = "Alterar";
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.price;
@@ -787,6 +768,25 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 99;
             this.pictureBox3.TabStop = false;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Yellow;
+            this.panel4.Location = new System.Drawing.Point(3, 42);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(19, 45);
+            this.panel4.TabIndex = 98;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(333, 69);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(56, 14);
+            this.label17.TabIndex = 249;
+            this.label17.Text = "VOLTAR";
+            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // cbo
             // 
@@ -811,17 +811,12 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvlista)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFuncionario)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            this.csmColaboradores.ResumeLayout(false);
-            this.cmsProdutos.ResumeLayout(false);
-            this.cmsVendas.ResumeLayout(false);
-            this.cmsAgenda.ResumeLayout(false);
-            this.cmsFornecedores.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -830,6 +825,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.cmsVendas.ResumeLayout(false);
+            this.cmsProdutos.ResumeLayout(false);
+            this.cmsFornecedores.ResumeLayout(false);
+            this.csmColaboradores.ResumeLayout(false);
+            this.cmsAgenda.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -852,7 +852,7 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtpfinal;
-        private System.Windows.Forms.DataGridView dgvlista;
+        private System.Windows.Forms.DataGridView dgvFuncionario;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
