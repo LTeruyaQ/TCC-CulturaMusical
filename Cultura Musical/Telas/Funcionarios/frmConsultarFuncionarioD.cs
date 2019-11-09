@@ -74,7 +74,7 @@ namespace Cultura_Musical.Telas.Funcionarios
         }
         private void EditarFuncionario()
         {
-            Telas.Funcionarios.AlterarFuncionario tela = new Funcionarios.AlterarFuncionario();
+            Telas.Funcionarios.frmAlterarFuncionario tela = new Funcionarios.frmAlterarFuncionario();
             tela.Show();
             this.Hide();
             

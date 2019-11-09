@@ -56,15 +56,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_bairro = txtBairro.Text;
                 funcionario.id_beneficio = Beneficios.id_beneficio;               
                 funcionario.nmr_funcionario = Convert.ToInt32(nudNumero.Value);
-                
-                
-
-                FileStream fs = new FileStream(caminho,FileMode.Open, FileAccess.Read);
-                BinaryReader br = new BinaryReader(fs);
-
-                byte[] image = br.ReadBytes((int)fs.Length);
-
-                funcionario.ft_funcionario = image;
+                funcionario.ft_funcionario = this.LerImagem();
              
                 string genero = cboGenero.Text;
 
@@ -90,19 +82,11 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 MessageBox.Show("Funcionário cadastrado com sucesso.");
 
-                DialogResult r = MessageBox.Show("Funcionário cadastrado com sucesso. Deseja cadastrar outro?", "Cultura Musical",
-                  MessageBoxButtons.YesNo,
-                  MessageBoxIcon.Warning);
+                DialogResult r = MessageBox.Show("Funcionário cadastrado com sucesso.", "Cultura Musical",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Information);
 
-                if (r == DialogResult.Yes)
-                {
-                    this.LimparCampos();
-                }
-                else if(r == DialogResult.No)
-                {
-                    this.Hide();
-                }
-             
+                this.LimparCampos();
             }
 
             catch (ArgumentException ex)
@@ -111,6 +95,21 @@ namespace Cultura_Musical.Telas.Funcionarios
             }
 
            
+        }
+
+        private byte[] LerImagem()
+        {
+            if(picFoto.Image == null)
+            {
+                return null;
+            }
+
+            using (var ms = new System.IO.MemoryStream())
+            {
+                picFoto.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                return ms.ToArray();
+            }
+
         }
 
         private void LimparCampos()
@@ -267,18 +266,18 @@ namespace Cultura_Musical.Telas.Funcionarios
 
         private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            OpenFileDialog file = new OpenFileDialog();
+            //OpenFileDialog file = new OpenFileDialog();
 
-            file.Filter = "JPG Files(*.jpg)| * .jpg | PNG Files (* .png) | *.png | AllFiles(*.*) | *.*";
+            //file.Filter = "JPG Files(*.jpg)| * .jpg | PNG Files (* .png) | *.png | AllFiles(*.*) | *.*";
 
-            if (file.ShowDialog() == DialogResult.OK)
-            {
-                string foto = file.FileName.ToString();
-                picFoto.ImageLocation = foto;
-                
+            //if (file.ShowDialog() == DialogResult.OK)
+            //{
+            //    string foto = file.FileName.ToString();
+            //    picFoto.ImageLocation = foto;
 
-                caminho = foto;
-            }
+
+            //    caminho = foto;
+            //}
         }
 
         private void inserirToolStripMenuItem2_Click(object sender, EventArgs e)
