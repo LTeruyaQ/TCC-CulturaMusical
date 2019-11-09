@@ -24,7 +24,8 @@ namespace Cultura_Musical.Database
 
         public List<Entity.tb_cliente> ListarPorNome(string nome)
         {
-            List<Entity.tb_cliente> cliente = DB.tb_cliente.Where(T => T.nm_cliente.Contains(nome))
+            int tamanho = nome.Length;
+            List<Entity.tb_cliente> cliente = DB.tb_cliente.Where(T => T.nm_cliente.Substring(1,tamanho).Contains(nome))
                                                                       .ToList();
             return cliente;
         }

@@ -24,7 +24,9 @@ namespace Cultura_Musical.Database
 
         public List<Entity.tb_funcionario> ListarPorNome(string nome)
         {
-            List<Entity.tb_funcionario> funcionarios = DB.tb_funcionario.Where(T => T.nm_funcionario.Contains(nome))
+            int tamanho = nome.Length;
+
+            List<Entity.tb_funcionario> funcionarios = DB.tb_funcionario.Where(T => T.nm_funcionario.Substring(1,tamanho).Contains(nome))
                                                                         .ToList();
             return funcionarios;
         }
@@ -38,7 +40,11 @@ namespace Cultura_Musical.Database
 
         public List<Entity.tb_funcionario> ListarPorNomeECargo(string nome, string cargo)
         {
-            List<Entity.tb_funcionario> funcionarios = DB.tb_funcionario.Where(T => T.nm_funcionario.Contains(nome) ||T.ds_cargo.Contains(cargo))
+            int tamanhocargo = cargo.Length;
+            int tamanhonome = nome.Length;
+
+            List<Entity.tb_funcionario> funcionarios = DB.tb_funcionario.Where(T => T.nm_funcionario.Substring(1,tamanhonome).Contains(nome) ||
+                                                                                       T.ds_cargo.Substring(1,tamanhocargo).Contains(cargo))
                                                                         .ToList();
             return funcionarios;
         }
