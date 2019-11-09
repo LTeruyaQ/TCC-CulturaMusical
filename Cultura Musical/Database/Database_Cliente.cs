@@ -71,5 +71,12 @@ namespace Cultura_Musical.Database
             return cliente;
 
         }
+
+        public List<Database.Entity.tb_cliente> ListarPorId(int id)
+        {
+              List<Database.Entity.tb_cliente> lista =  DB.tb_cliente.Where(t => t.id_cliente == id).ToList();
+
+            return lista;
+        }
     }
 }

@@ -24,5 +24,13 @@ namespace Cultura_Musical.Business
             db.cadastrar(cliente);
 
         }
+
+        public List<Database.Entity.tb_cliente> ListarPorId(int id)
+        {
+            List<Database.Entity.tb_cliente> lista = db.ListarPorId(id);
+
+            return lista;
+
+        }
     }
 }

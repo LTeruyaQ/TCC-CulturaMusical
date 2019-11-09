@@ -433,6 +433,12 @@
     <Compile Include="Telas\Logistica\FrmConsultarSaldo.Designer.cs">
       <DependentUpon>FrmConsultarSaldo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Planos\ConsultarVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Planos\ConsultarVendas.Designer.cs">
+      <DependentUpon>ConsultarVendas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Planos\frmAdicionarPlano.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -569,6 +575,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Logistica\FrmConsultarSaldo.resx">
       <DependentUpon>FrmConsultarSaldo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Planos\ConsultarVendas.resx">
+      <DependentUpon>ConsultarVendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Planos\frmAdicionarPlano.resx">
       <DependentUpon>frmAdicionarPlano.cs</DependentUpon>
