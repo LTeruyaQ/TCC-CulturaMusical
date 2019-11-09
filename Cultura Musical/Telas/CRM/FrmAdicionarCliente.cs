@@ -29,6 +29,9 @@ namespace Cultura_Musical.Telas.CRM
             cliente.ds_telefone = mskTel1.Text;
             cliente.dt_nascimento = dtpNascimento.Value.Date;
             cliente.ds_estado = txtEstado.Text;
+
+            Business.Business_Cliente bus = new Business.Business_Cliente();
+            bus.CadastrarCliente(cliente);
         }
     }
 }

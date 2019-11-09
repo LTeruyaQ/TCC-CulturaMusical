@@ -8,13 +8,21 @@ namespace Cultura_Musical.Business
 {
     class Business_Cliente
     {
+
+
+        Database.Database_Cliente db = new Database.Database_Cliente();
         public List<Database.Entity.tb_cliente> listapornome(string nome)
         {
-
-            Database.Database_Cliente cliente = new Database.Database_Cliente();
-            List<Database.Entity.tb_cliente> lista = cliente.ListarPorNome(nome);
+            List<Database.Entity.tb_cliente> lista = db.ListarPorNome(nome);
 
             return lista;
+        }
+
+        public void CadastrarCliente(Database.Entity.tb_cliente cliente)
+        {
+
+            db.cadastrar(cliente);
+
         }
     }
 }
