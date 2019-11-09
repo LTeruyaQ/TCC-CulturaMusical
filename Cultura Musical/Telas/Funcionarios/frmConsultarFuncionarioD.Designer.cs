@@ -41,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblMinimizar = new System.Windows.Forms.Label();
             this.lblFechar = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -79,18 +80,36 @@
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label17 = new System.Windows.Forms.Label();
             this.cmsVendas = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Contratação = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gênero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CPF = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alterar = new System.Windows.Forms.DataGridViewImageColumn();
             this.Excluir = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -114,6 +133,24 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Contratação,
+            this.Column3,
+            this.Column10,
+            this.Column4,
+            this.Column5,
+            this.Column6,
+            this.Column13,
+            this.Column11,
+            this.Column12,
+            this.Gênero,
+            this.RG,
+            this.CPF,
+            this.Column7,
+            this.Column8,
+            this.Column9,
+            this.alterar,
             this.Excluir});
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
@@ -124,11 +161,11 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.Location = new System.Drawing.Point(188, 138);
+            this.dataGridView1.Location = new System.Drawing.Point(219, 138);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(618, 401);
+            this.dataGridView1.Size = new System.Drawing.Size(754, 401);
             this.dataGridView1.TabIndex = 94;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -164,7 +201,7 @@
             // 
             this.txtCargo.Location = new System.Drawing.Point(680, 87);
             this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(100, 20);
+            this.txtCargo.Size = new System.Drawing.Size(122, 20);
             this.txtCargo.TabIndex = 99;
             // 
             // panel3
@@ -216,6 +253,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.lblMinimizar);
             this.panel2.Controls.Add(this.lblFechar);
             this.panel2.Controls.Add(this.label6);
@@ -223,9 +261,20 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(177, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(680, 66);
+            this.panel2.Size = new System.Drawing.Size(832, 66);
             this.panel2.TabIndex = 242;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
+            this.pictureBox3.Location = new System.Drawing.Point(156, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(41, 34);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 249;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // lblMinimizar
             // 
@@ -260,7 +309,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(436, 60);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Cadastro de Funcionarios";
+            this.label6.Text = "Consultar Funcionarios";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -407,32 +456,32 @@
             // cmsProdutos
             // 
             this.cmsProdutos.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsProdutos.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsProdutos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem7,
             this.toolStripMenuItem8,
             this.toolStripMenuItem9});
             this.cmsProdutos.Name = "cmsAgenda";
-            this.cmsProdutos.Size = new System.Drawing.Size(150, 70);
+            this.cmsProdutos.Size = new System.Drawing.Size(133, 70);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem7.Text = "Inserir";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem8.Text = "Consultar";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem9.Text = "Alterar";
             // 
             // button7
@@ -516,32 +565,32 @@
             // cmsFornecedores
             // 
             this.cmsFornecedores.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsFornecedores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsFornecedores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem4,
             this.toolStripMenuItem5,
             this.toolStripMenuItem6});
             this.cmsFornecedores.Name = "cmsAgenda";
-            this.cmsFornecedores.Size = new System.Drawing.Size(150, 70);
+            this.cmsFornecedores.Size = new System.Drawing.Size(133, 70);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem4.Text = "Inserir";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem5.Text = "Consultar";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem6.Text = "Alterar";
             // 
             // button2
@@ -563,32 +612,32 @@
             // csmColaboradores
             // 
             this.csmColaboradores.BackColor = System.Drawing.Color.SkyBlue;
-            this.csmColaboradores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.csmColaboradores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.csmColaboradores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.toolStripMenuItem2,
             this.toolStripMenuItem3});
             this.csmColaboradores.Name = "cmsAgenda";
-            this.csmColaboradores.Size = new System.Drawing.Size(150, 70);
+            this.csmColaboradores.Size = new System.Drawing.Size(133, 70);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem1.Text = "Inserir";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem2.Text = "Consultar";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem3.Text = "Alterar";
             // 
             // button1
@@ -610,72 +659,61 @@
             // cmsAgenda
             // 
             this.cmsAgenda.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsAgenda.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsAgenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserirToolStripMenuItem,
             this.consultarToolStripMenuItem,
             this.alterarToolStripMenuItem});
             this.cmsAgenda.Name = "cmsAgenda";
-            this.cmsAgenda.Size = new System.Drawing.Size(150, 70);
+            this.cmsAgenda.Size = new System.Drawing.Size(133, 70);
             // 
             // inserirToolStripMenuItem
             // 
             this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.inserirToolStripMenuItem.Text = "Inserir";
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(333, 69);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(56, 14);
-            this.label17.TabIndex = 246;
-            this.label17.Text = "VOLTAR";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // cmsVendas
             // 
             this.cmsVendas.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsVendas.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsVendas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem10,
             this.toolStripMenuItem11,
             this.toolStripMenuItem12});
             this.cmsVendas.Name = "cmsAgenda";
-            this.cmsVendas.Size = new System.Drawing.Size(150, 70);
+            this.cmsVendas.Size = new System.Drawing.Size(133, 70);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem10.Text = "Inserir";
             this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem11.Text = "Consultar";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem12.Text = "Alterar";
             // 
             // dataGridViewImageColumn1
@@ -694,22 +732,145 @@
             this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             this.dataGridViewImageColumn2.Width = 20;
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "nm_funcionario";
+            this.Column1.HeaderText = "Funcionário";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "ds_rg";
+            this.Column2.HeaderText = "RG";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Contratação
+            // 
+            this.Contratação.DataPropertyName = "ds_cpf";
+            this.Contratação.HeaderText = "CPF";
+            this.Contratação.Name = "Contratação";
+            this.Contratação.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "ds_cargo";
+            this.Column3.HeaderText = "Cargo";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "vl_salario";
+            this.Column10.HeaderText = "Salário";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "ds_genero";
+            this.Column4.HeaderText = "Gênero";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "ds_telefone";
+            this.Column5.HeaderText = "Telefone";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "ds_email";
+            this.Column6.HeaderText = "Email";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.DataPropertyName = "dt_nascimento";
+            this.Column13.HeaderText = "Nascimento";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.DataPropertyName = "dt_contratacao";
+            this.Column11.HeaderText = "Contratação";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.DataPropertyName = "dt_demicao";
+            this.Column12.HeaderText = "Demissão";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
+            // Gênero
+            // 
+            this.Gênero.DataPropertyName = "ds_cep";
+            this.Gênero.HeaderText = "CEP";
+            this.Gênero.Name = "Gênero";
+            this.Gênero.ReadOnly = true;
+            // 
+            // RG
+            // 
+            this.RG.DataPropertyName = "ds_rua";
+            this.RG.HeaderText = "Rua";
+            this.RG.Name = "RG";
+            this.RG.ReadOnly = true;
+            // 
+            // CPF
+            // 
+            this.CPF.DataPropertyName = "ds_bairro";
+            this.CPF.HeaderText = "Bairro";
+            this.CPF.Name = "CPF";
+            this.CPF.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "ds_cidade";
+            this.Column7.HeaderText = "Cidade";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "ds_estado";
+            this.Column8.HeaderText = "Estado";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "nmr_funcionario";
+            this.Column9.HeaderText = "Numero";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // alterar
+            // 
+            this.alterar.HeaderText = "";
+            this.alterar.Image = global::Cultura_Musical.Properties.Resources.lapis1;
+            this.alterar.Name = "alterar";
+            this.alterar.ReadOnly = true;
+            // 
             // Excluir
             // 
-            this.Excluir.HeaderText = "Column5";
-            this.Excluir.Image = global::Cultura_Musical.Properties.Resources.lixeira;
-            this.Excluir.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Excluir.HeaderText = "";
+            this.Excluir.Image = global::Cultura_Musical.Properties.Resources.exlcuir;
             this.Excluir.Name = "Excluir";
             this.Excluir.ReadOnly = true;
-            this.Excluir.Width = 20;
             // 
             // frmConsultarFuncionarioD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(857, 551);
-            this.Controls.Add(this.label17);
+            this.ClientSize = new System.Drawing.Size(1009, 551);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -729,6 +890,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -780,7 +942,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ContextMenuStrip cmsFornecedores;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
@@ -805,6 +966,25 @@
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.Label lblMinimizar;
         private System.Windows.Forms.Label lblFechar;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Contratação;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gênero;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CPF;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
+        private System.Windows.Forms.DataGridViewImageColumn alterar;
         private System.Windows.Forms.DataGridViewImageColumn Excluir;
     }
 }

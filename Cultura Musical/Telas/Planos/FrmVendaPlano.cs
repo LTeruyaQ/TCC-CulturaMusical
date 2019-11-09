@@ -224,5 +224,12 @@ namespace Cultura_Musical.Telas.Planos
             dgvlista.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
             dgvlista.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

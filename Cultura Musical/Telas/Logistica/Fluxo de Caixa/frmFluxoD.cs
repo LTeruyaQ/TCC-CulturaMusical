@@ -161,5 +161,12 @@ namespace Cultura_Musical.Telas.Logistica.Fluxo_de_Caixa
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

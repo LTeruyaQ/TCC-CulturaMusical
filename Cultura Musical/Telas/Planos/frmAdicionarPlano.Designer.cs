@@ -88,6 +88,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnCadastar = new System.Windows.Forms.Button();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.nudpreço)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nudqtd)).BeginInit();
             this.panel3.SuspendLayout();
@@ -108,6 +109,7 @@
             this.csmColaboradores.SuspendLayout();
             this.cmsAgenda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // txtduração
@@ -120,20 +122,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(544, 246);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 16);
+            this.label4.Size = new System.Drawing.Size(63, 16);
             this.label4.TabIndex = 19;
             this.label4.Text = "Duração:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(545, 190);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 16);
+            this.label3.Size = new System.Drawing.Size(43, 16);
             this.label3.TabIndex = 18;
             this.label3.Text = "Valor:";
             // 
@@ -155,20 +157,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(244, 323);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 16);
+            this.label2.Size = new System.Drawing.Size(73, 16);
             this.label2.TabIndex = 15;
             this.label2.Text = "Descrição:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(202, 247);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 16);
+            this.label1.Size = new System.Drawing.Size(123, 16);
             this.label1.TabIndex = 14;
             this.label1.Text = " Aulas por semana:";
             // 
@@ -189,10 +191,10 @@
             // txtnome
             // 
             this.txtnome.AutoSize = true;
-            this.txtnome.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtnome.Location = new System.Drawing.Point(238, 193);
             this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(47, 16);
+            this.txtnome.Size = new System.Drawing.Size(48, 16);
             this.txtnome.TabIndex = 11;
             this.txtnome.Text = "Nome:";
             // 
@@ -211,7 +213,7 @@
             // label10
             // 
             this.label10.BackColor = System.Drawing.Color.Black;
-            this.label10.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(17, 107);
             this.label10.Name = "label10";
@@ -223,7 +225,7 @@
             // label11
             // 
             this.label11.BackColor = System.Drawing.Color.Black;
-            this.label11.Font = new System.Drawing.Font("Century", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(17, 85);
             this.label11.Name = "label11";
@@ -248,6 +250,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.lblMinimizar);
             this.panel2.Controls.Add(this.lblFechar);
             this.panel2.Controls.Add(this.label12);
@@ -285,7 +288,7 @@
             // label12
             // 
             this.label12.BackColor = System.Drawing.Color.Black;
-            this.label12.Font = new System.Drawing.Font("Stencil", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(143, 0);
             this.label12.Name = "label12";
@@ -406,7 +409,7 @@
             this.btnVendas.ContextMenuStrip = this.cmsVendas;
             this.btnVendas.FlatAppearance.BorderSize = 0;
             this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendas.ForeColor = System.Drawing.Color.White;
             this.btnVendas.Location = new System.Drawing.Point(97, 446);
             this.btnVendas.Name = "btnVendas";
@@ -420,32 +423,32 @@
             // cmsVendas
             // 
             this.cmsVendas.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsVendas.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsVendas.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem10,
             this.toolStripMenuItem11,
             this.toolStripMenuItem12});
             this.cmsVendas.Name = "cmsAgenda";
-            this.cmsVendas.Size = new System.Drawing.Size(150, 70);
+            this.cmsVendas.Size = new System.Drawing.Size(133, 70);
             // 
             // toolStripMenuItem10
             // 
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem10.Text = "Inserir";
             this.toolStripMenuItem10.Click += new System.EventHandler(this.toolStripMenuItem10_Click);
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem11.Text = "Consultar";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem12.Text = "Alterar";
             // 
             // btnProdutos
@@ -453,7 +456,7 @@
             this.btnProdutos.ContextMenuStrip = this.cmsProdutos;
             this.btnProdutos.FlatAppearance.BorderSize = 0;
             this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProdutos.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdutos.ForeColor = System.Drawing.Color.White;
             this.btnProdutos.Location = new System.Drawing.Point(33, 395);
             this.btnProdutos.Name = "btnProdutos";
@@ -467,37 +470,37 @@
             // cmsProdutos
             // 
             this.cmsProdutos.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsProdutos.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsProdutos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem7,
             this.toolStripMenuItem8,
             this.toolStripMenuItem9});
             this.cmsProdutos.Name = "cmsAgenda";
-            this.cmsProdutos.Size = new System.Drawing.Size(150, 70);
+            this.cmsProdutos.Size = new System.Drawing.Size(133, 70);
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem7.Text = "Inserir";
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
-            this.toolStripMenuItem8.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem8.Text = "Consultar";
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem9.Text = "Alterar";
             // 
             // btnLogistica
             // 
             this.btnLogistica.FlatAppearance.BorderSize = 0;
             this.btnLogistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogistica.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogistica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogistica.ForeColor = System.Drawing.Color.White;
             this.btnLogistica.Location = new System.Drawing.Point(33, 343);
             this.btnLogistica.Name = "btnLogistica";
@@ -512,7 +515,7 @@
             // 
             this.btnHolerite.FlatAppearance.BorderSize = 0;
             this.btnHolerite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHolerite.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHolerite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHolerite.ForeColor = System.Drawing.Color.White;
             this.btnHolerite.Location = new System.Drawing.Point(97, 293);
             this.btnHolerite.Name = "btnHolerite";
@@ -527,7 +530,7 @@
             // 
             this.btnCRM.FlatAppearance.BorderSize = 0;
             this.btnCRM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCRM.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCRM.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCRM.ForeColor = System.Drawing.Color.White;
             this.btnCRM.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCRM.Location = new System.Drawing.Point(33, 191);
@@ -545,7 +548,7 @@
             this.btnFornecedores.ContextMenuStrip = this.cmsFornecedores;
             this.btnFornecedores.FlatAppearance.BorderSize = 0;
             this.btnFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFornecedores.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFornecedores.ForeColor = System.Drawing.Color.White;
             this.btnFornecedores.Location = new System.Drawing.Point(65, 248);
             this.btnFornecedores.Name = "btnFornecedores";
@@ -560,32 +563,32 @@
             // cmsFornecedores
             // 
             this.cmsFornecedores.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsFornecedores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsFornecedores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem4,
             this.toolStripMenuItem5,
             this.toolStripMenuItem6});
             this.cmsFornecedores.Name = "cmsAgenda";
-            this.cmsFornecedores.Size = new System.Drawing.Size(150, 70);
+            this.cmsFornecedores.Size = new System.Drawing.Size(133, 70);
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem4.Text = "Inserir";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem5.Text = "Consultar";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem6.Text = "Alterar";
             // 
             // btnColaboradores
@@ -593,7 +596,7 @@
             this.btnColaboradores.ContextMenuStrip = this.csmColaboradores;
             this.btnColaboradores.FlatAppearance.BorderSize = 0;
             this.btnColaboradores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnColaboradores.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnColaboradores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnColaboradores.ForeColor = System.Drawing.Color.White;
             this.btnColaboradores.Location = new System.Drawing.Point(33, 140);
             this.btnColaboradores.Name = "btnColaboradores";
@@ -608,30 +611,30 @@
             // csmColaboradores
             // 
             this.csmColaboradores.BackColor = System.Drawing.Color.SkyBlue;
-            this.csmColaboradores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.csmColaboradores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.csmColaboradores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.toolStripMenuItem2,
             this.toolStripMenuItem3});
             this.csmColaboradores.Name = "cmsAgenda";
-            this.csmColaboradores.Size = new System.Drawing.Size(150, 70);
+            this.csmColaboradores.Size = new System.Drawing.Size(133, 70);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem1.Text = "Inserir";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem2.Text = "Consultar";
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem3.Text = "Alterar";
             // 
             // btnAgenda
@@ -639,7 +642,7 @@
             this.btnAgenda.ContextMenuStrip = this.cmsAgenda;
             this.btnAgenda.FlatAppearance.BorderSize = 0;
             this.btnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgenda.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgenda.ForeColor = System.Drawing.Color.White;
             this.btnAgenda.Location = new System.Drawing.Point(33, 101);
             this.btnAgenda.Name = "btnAgenda";
@@ -654,30 +657,30 @@
             // cmsAgenda
             // 
             this.cmsAgenda.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmsAgenda.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsAgenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserirToolStripMenuItem,
             this.consultarToolStripMenuItem,
             this.alterarToolStripMenuItem});
             this.cmsAgenda.Name = "cmsAgenda";
-            this.cmsAgenda.Size = new System.Drawing.Size(150, 70);
+            this.cmsAgenda.Size = new System.Drawing.Size(133, 70);
             // 
             // inserirToolStripMenuItem
             // 
             this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.inserirToolStripMenuItem.Text = "Inserir";
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             // 
             // pictureBox3
@@ -707,6 +710,17 @@
             this.btnCadastar.Text = "Cadastrar";
             this.btnCadastar.UseVisualStyleBackColor = true;
             this.btnCadastar.Click += new System.EventHandler(this.btnCadastar_Click);
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
+            this.pictureBox11.Location = new System.Drawing.Point(131, -1);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(41, 34);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 249;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // frmAdicionarPlano
             // 
@@ -754,6 +768,7 @@
             this.csmColaboradores.ResumeLayout(false);
             this.cmsAgenda.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -818,5 +833,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem11;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem12;
         private System.Windows.Forms.Button btnCadastar;
+        private System.Windows.Forms.PictureBox pictureBox11;
     }
 }

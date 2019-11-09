@@ -19,15 +19,9 @@ namespace Cultura_Musical.Business
             
         }
 
-        public List<Database.Entity.tb_funcionario> ListarPorNome (string nome)
+        public List<Database.Entity.tb_funcionario> ListarTudo()
         {
-            List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorNome(nome);
-            return colaborador;
-        }
-
-        public List<Database.Entity.tb_funcionario> ListarPorCargo(string cargo)
-        {
-            List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorNome(cargo);
+            List<Database.Entity.tb_funcionario> colaborador = DB.ListarTodos();
             return colaborador;
         }
 
@@ -44,8 +38,8 @@ namespace Cultura_Musical.Business
         }
 
         public void Remover(int id)
-        {
-            
+        {         
+            DB.Excluir(id);
             DB.Excluir(id);
         }
 

@@ -12,11 +12,24 @@ namespace Cultura_Musical.Telas.Funcionarios
 {
     public partial class frmConsultarFuncionarioD : Form
     {
+        Business.Business_Funcionarios Bus = new Business.Business_Funcionarios();
+
         public frmConsultarFuncionarioD()
         {
             InitializeComponent();
+
+
+            this.CarregarGrid();     
         }
-        Business.Business_Funcionarios Bus = new Business.Business_Funcionarios();
+
+        private void CarregarGrid()
+        {
+            List<Database.Entity.tb_funcionario> func = Bus.ListarTudo();
+
+            dataGridView1.DataSource = func;
+            dataGridView1.AutoGenerateColumns = false;
+        }
+        
         private void frmConsultarFuncionarioD_Load(object sender, EventArgs e)
         {
             
@@ -38,23 +51,48 @@ namespace Cultura_Musical.Telas.Funcionarios
         {
             if (dataGridView1.CurrentCell.ColumnIndex == Excluir.Index)
             {
-                Database.Entity.tb_funcionario cul = dataGridView1.CurrentRow.DataBoundItem as
+                var func = dataGridView1.CurrentRow.DataBoundItem as
                     Database.Entity.tb_funcionario;
 
-                var id = cul.id_funcionario;
+                if (e.ColumnIndex == 17)
+                {
+                    this.EditarFuncionario();
+                }
 
-                Business.Business_Funcionarios business_Fornecedores = new Business.Business_Funcionarios();
-                business_Fornecedores.Remover(id);
+                if (e.ColumnIndex == 18)
+                {
+                    this.ExcluirFuncionario(func);
 
+                }
 
-
-
+               
+          
             }
-            else
+
+
+        
+        }
+        private void EditarFuncionario()
+        {
+            Telas.Funcionarios.AlterarFuncionario tela = new Funcionarios.AlterarFuncionario();
+            tela.Show();
+            this.Hide();
+            
+        }
+
+
+        private void ExcluirFuncionario(Database.Entity.tb_funcionario func)
+        {
+            DialogResult resposta = MessageBox.Show("Deseja remover o funcionário?", "Cultura Musical",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if(resposta == DialogResult.Yes)
             {
-                return;
+                Bus.Remover(func.id_funcionario);
+                this.CarregarGrid();
             }
         }
+
 
         private void lblFechar_Click(object sender, EventArgs e)
         {
@@ -225,6 +263,13 @@ namespace Cultura_Musical.Telas.Funcionarios
         private void lblMinimizar_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
         }
     }
 }

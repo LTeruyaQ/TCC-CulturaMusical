@@ -325,6 +325,12 @@
     <Compile Include="Telas\Folha_Pagamento\frmGerarFolhaD.Designer.cs">
       <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Funcionarios\frmAlterarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Funcionarios\frmAlterarFuncionario.Designer.cs">
+      <DependentUpon>frmAlterarFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Funcionarios\frmCadastroFuncionarioD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -445,12 +451,6 @@
     <Compile Include="Telas\Planos\frmAdicionarPlano.Designer.cs">
       <DependentUpon>frmAdicionarPlano.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Planos\FrmConsultarPlanos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Planos\FrmConsultarPlanos.Designer.cs">
-      <DependentUpon>FrmConsultarPlanos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Produtos\frmAdicionarPedidoD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -537,6 +537,9 @@
     <EmbeddedResource Include="Telas\Fornecedores\FrmConsultarFornecedores.resx">
       <DependentUpon>FrmConsultarFornecedores.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Funcionarios\frmAlterarFuncionario.resx">
+      <DependentUpon>frmAlterarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Funcionarios\frmCadastroFuncionarioD.resx">
       <DependentUpon>frmCadastroFuncionarioD.cs</DependentUpon>
     </EmbeddedResource>
@@ -581,9 +584,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Planos\frmAdicionarPlano.resx">
       <DependentUpon>frmAdicionarPlano.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Planos\FrmConsultarPlanos.resx">
-      <DependentUpon>FrmConsultarPlanos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Produtos\frmAdicionarPedidoD.resx">
       <DependentUpon>frmAdicionarPedidoD.cs</DependentUpon>
@@ -661,6 +661,8 @@
       <DependentUpon>BancoOnline.edmx</DependentUpon>
       <LastGenOutput>BancoOnline.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\left-arrow.png" />
+    <None Include="Resources\previous.png" />
     <None Include="Resources\calendar1.png" />
     <None Include="Resources\barcode1.png" />
     <None Include="Resources\printer.png" />

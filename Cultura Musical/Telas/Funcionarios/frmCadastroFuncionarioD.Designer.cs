@@ -35,10 +35,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtCidade = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
             this.txtComplemento = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.nudNumero = new System.Windows.Forms.NumericUpDown();
@@ -88,6 +88,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblMinimizar = new System.Windows.Forms.Label();
             this.lblFechar = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -130,7 +131,6 @@
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label17 = new System.Windows.Forms.Label();
             this.tabPage4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudNumero)).BeginInit();
@@ -145,6 +145,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -208,10 +209,10 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.SkyBlue;
+            this.groupBox5.Controls.Add(this.cboEstado);
             this.groupBox5.Controls.Add(this.label14);
             this.groupBox5.Controls.Add(this.txtCidade);
             this.groupBox5.Controls.Add(this.label15);
-            this.groupBox5.Controls.Add(this.txtEstado);
             this.groupBox5.Controls.Add(this.txtComplemento);
             this.groupBox5.Controls.Add(this.label21);
             this.groupBox5.Controls.Add(this.nudNumero);
@@ -225,6 +226,44 @@
             this.groupBox5.Size = new System.Drawing.Size(575, 255);
             this.groupBox5.TabIndex = 88;
             this.groupBox5.TabStop = false;
+            // 
+            // cboEstado
+            // 
+            this.cboEstado.BackColor = System.Drawing.Color.SkyBlue;
+            this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO"});
+            this.cboEstado.Location = new System.Drawing.Point(81, 162);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(117, 23);
+            this.cboEstado.TabIndex = 90;
             // 
             // label14
             // 
@@ -250,13 +289,6 @@
             this.label15.Size = new System.Drawing.Size(49, 15);
             this.label15.TabIndex = 65;
             this.label15.Text = "Cidade:";
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(81, 157);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(223, 21);
-            this.txtEstado.TabIndex = 68;
             // 
             // txtComplemento
             // 
@@ -742,6 +774,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.lblMinimizar);
             this.panel2.Controls.Add(this.lblFechar);
             this.panel2.Controls.Add(this.label6);
@@ -751,6 +784,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(661, 66);
             this.panel2.TabIndex = 239;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
+            this.pictureBox3.Location = new System.Drawing.Point(156, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(43, 37);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 246;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // lblMinimizar
             // 
@@ -932,32 +976,32 @@
             // cmsVenda
             // 
             this.cmsVenda.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsVenda.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsVenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.toolStripMenuItem2,
             this.toolStripMenuItem3});
             this.cmsVenda.Name = "cmsAgenda";
-            this.cmsVenda.Size = new System.Drawing.Size(150, 70);
+            this.cmsVenda.Size = new System.Drawing.Size(133, 70);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem1.Text = "Inserir";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem2.Text = "Consultar";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem3.Text = "Alterar";
             // 
             // button7
@@ -979,32 +1023,32 @@
             // cmsProdutos
             // 
             this.cmsProdutos.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsProdutos.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsProdutos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserirToolStripMenuItem3,
             this.consultarToolStripMenuItem3,
             this.alterarToolStripMenuItem3});
             this.cmsProdutos.Name = "cmsAgenda";
-            this.cmsProdutos.Size = new System.Drawing.Size(150, 70);
+            this.cmsProdutos.Size = new System.Drawing.Size(133, 70);
             // 
             // inserirToolStripMenuItem3
             // 
             this.inserirToolStripMenuItem3.Name = "inserirToolStripMenuItem3";
-            this.inserirToolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
             this.inserirToolStripMenuItem3.Text = "Inserir";
             this.inserirToolStripMenuItem3.Click += new System.EventHandler(this.inserirToolStripMenuItem3_Click);
             // 
             // consultarToolStripMenuItem3
             // 
             this.consultarToolStripMenuItem3.Name = "consultarToolStripMenuItem3";
-            this.consultarToolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
             this.consultarToolStripMenuItem3.Text = "Consultar";
             this.consultarToolStripMenuItem3.Click += new System.EventHandler(this.consultarToolStripMenuItem3_Click);
             // 
             // alterarToolStripMenuItem3
             // 
             this.alterarToolStripMenuItem3.Name = "alterarToolStripMenuItem3";
-            this.alterarToolStripMenuItem3.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
             this.alterarToolStripMenuItem3.Text = "Alterar";
             // 
             // button6
@@ -1072,32 +1116,32 @@
             // cmsFornecedores
             // 
             this.cmsFornecedores.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsFornecedores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsFornecedores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserirToolStripMenuItem2,
             this.consultarToolStripMenuItem2,
             this.alterarToolStripMenuItem2});
             this.cmsFornecedores.Name = "cmsAgenda";
-            this.cmsFornecedores.Size = new System.Drawing.Size(150, 70);
+            this.cmsFornecedores.Size = new System.Drawing.Size(133, 70);
             // 
             // inserirToolStripMenuItem2
             // 
             this.inserirToolStripMenuItem2.Name = "inserirToolStripMenuItem2";
-            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
             this.inserirToolStripMenuItem2.Text = "Inserir";
             this.inserirToolStripMenuItem2.Click += new System.EventHandler(this.inserirToolStripMenuItem2_Click);
             // 
             // consultarToolStripMenuItem2
             // 
             this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
-            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
             this.consultarToolStripMenuItem2.Text = "Consultar";
             this.consultarToolStripMenuItem2.Click += new System.EventHandler(this.consultarToolStripMenuItem2_Click);
             // 
             // alterarToolStripMenuItem2
             // 
             this.alterarToolStripMenuItem2.Name = "alterarToolStripMenuItem2";
-            this.alterarToolStripMenuItem2.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
             this.alterarToolStripMenuItem2.Text = "Alterar";
             // 
             // button2
@@ -1119,32 +1163,32 @@
             // cmsColaboradores
             // 
             this.cmsColaboradores.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsColaboradores.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsColaboradores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsColaboradores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserirToolStripMenuItem1,
             this.consultarToolStripMenuItem1,
             this.alterarToolStripMenuItem1});
             this.cmsColaboradores.Name = "cmsAgenda";
-            this.cmsColaboradores.Size = new System.Drawing.Size(150, 70);
+            this.cmsColaboradores.Size = new System.Drawing.Size(133, 70);
             // 
             // inserirToolStripMenuItem1
             // 
             this.inserirToolStripMenuItem1.Name = "inserirToolStripMenuItem1";
-            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.inserirToolStripMenuItem1.Text = "Inserir";
             this.inserirToolStripMenuItem1.Click += new System.EventHandler(this.inserirToolStripMenuItem1_Click);
             // 
             // consultarToolStripMenuItem1
             // 
             this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
-            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.consultarToolStripMenuItem1.Text = "Consultar";
             this.consultarToolStripMenuItem1.Click += new System.EventHandler(this.consultarToolStripMenuItem1_Click);
             // 
             // alterarToolStripMenuItem1
             // 
             this.alterarToolStripMenuItem1.Name = "alterarToolStripMenuItem1";
-            this.alterarToolStripMenuItem1.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.alterarToolStripMenuItem1.Text = "Alterar";
             // 
             // button1
@@ -1166,46 +1210,35 @@
             // cmsAgenda
             // 
             this.cmsAgenda.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsAgenda.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmsAgenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.inserirToolStripMenuItem,
             this.consultarToolStripMenuItem,
             this.alterarToolStripMenuItem});
             this.cmsAgenda.Name = "cmsAgenda";
-            this.cmsAgenda.Size = new System.Drawing.Size(150, 70);
+            this.cmsAgenda.Size = new System.Drawing.Size(133, 70);
             this.cmsAgenda.Opening += new System.ComponentModel.CancelEventHandler(this.cmsAgenda_Opening);
             // 
             // inserirToolStripMenuItem
             // 
             this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.inserirToolStripMenuItem.Text = "Inserir";
             this.inserirToolStripMenuItem.Click += new System.EventHandler(this.inserirToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
             this.consultarToolStripMenuItem.Click += new System.EventHandler(this.consultarToolStripMenuItem_Click);
             // 
             // alterarToolStripMenuItem
             // 
             this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(149, 22);
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             this.alterarToolStripMenuItem.Click += new System.EventHandler(this.alterarToolStripMenuItem_Click);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(333, 85);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(56, 14);
-            this.label17.TabIndex = 245;
-            this.label17.Text = "VOLTAR";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // frmCadastroFuncionarioD
             // 
@@ -1213,7 +1246,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(838, 581);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -1244,6 +1276,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -1260,7 +1293,6 @@
             this.cmsColaboradores.ResumeLayout(false);
             this.cmsAgenda.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1271,7 +1303,6 @@
         private System.Windows.Forms.MaskedTextBox txtCEP;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.TextBox txtComplemento;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.NumericUpDown nudNumero;
@@ -1350,7 +1381,6 @@
         private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem2;
@@ -1366,5 +1396,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.Label lblMinimizar;
         private System.Windows.Forms.Label lblFechar;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.ComboBox cboEstado;
     }
 }

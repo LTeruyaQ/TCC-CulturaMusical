@@ -240,6 +240,16 @@ namespace Cultura_Musical.Telas.Produtos
         private void toolStripMenuItem11_Click(object sender, EventArgs e)
         {
             Telas.Planos.cbo tela = new Planos.cbo();
+            tela.Show();
+            this.Hide();
+        
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
         }
     }
 }

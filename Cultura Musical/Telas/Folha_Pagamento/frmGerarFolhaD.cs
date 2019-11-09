@@ -345,5 +345,12 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

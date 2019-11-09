@@ -215,5 +215,12 @@ namespace Cultura_Musical.Telas.Fornecedores
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

@@ -193,5 +193,12 @@ namespace Cultura_Musical.Telas.Planos
         {
 
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

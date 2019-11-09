@@ -22,22 +22,6 @@ namespace Cultura_Musical.Database
             return funcionarios;
         }
 
-        public List<Entity.tb_funcionario> ListarPorNome(string nome)
-        {
-            int tamanho = nome.Length;
-
-            List<Entity.tb_funcionario> funcionarios = DB.tb_funcionario.Where(T => T.nm_funcionario.Substring(1,tamanho).Contains(nome))
-                                                                        .ToList();
-            return funcionarios;
-        }
-
-        public List<Entity.tb_funcionario> ListarPorCargo(string cargo)
-        {
-            List<Entity.tb_funcionario> funcionarios = DB.tb_funcionario.Where(T => T.ds_cargo.Contains(cargo))
-                                                                        .ToList();
-            return funcionarios;
-        }
-
         public List<Entity.tb_funcionario> ListarPorNomeECargo(string nome, string cargo)
         {
             int tamanhocargo = cargo.Length;

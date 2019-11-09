@@ -50,7 +50,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_cep = txtCEP.Text;
                 funcionario.ds_cargo = txtCargo.Text;
                 funcionario.ds_rua = txtRua.Text;
-                funcionario.ds_estado = txtEstado.Text;
+                funcionario.ds_estado = cboEstado.Text;
                 funcionario.ds_cidade = txtCidade.Text;
                 funcionario.ds_complemento = txtComplemento.Text;
                 funcionario.ds_bairro = txtBairro.Text;
@@ -89,6 +89,20 @@ namespace Cultura_Musical.Telas.Funcionarios
                 JornadaBus.InserirJornada(Jornada);
 
                 MessageBox.Show("Funcionário cadastrado com sucesso.");
+
+                DialogResult r = MessageBox.Show("Funcionário cadastrado com sucesso. Deseja cadastrar outro?", "Cultura Musical",
+                  MessageBoxButtons.YesNo,
+                  MessageBoxIcon.Warning);
+
+                if (r == DialogResult.Yes)
+                {
+                    this.LimparCampos();
+                }
+                else if(r == DialogResult.No)
+                {
+                    this.Hide();
+                }
+             
             }
 
             catch (ArgumentException ex)
@@ -97,6 +111,27 @@ namespace Cultura_Musical.Telas.Funcionarios
             }
 
            
+        }
+
+        private void LimparCampos()
+        {
+
+            txtNome.Text = string.Empty;
+            dtpNascimento.Value = DateTime.Today;
+            dtpContratacao.Value = DateTime.Today;
+            nudSalario.Value = 0;
+            txtTelefone.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtRG.Text = string.Empty;
+            txtMascara.Text = string.Empty;
+            txtCEP.Text = string.Empty;
+            txtCargo.Text = string.Empty;
+            txtRua.Text = string.Empty;
+            cboEstado.Text = string.Empty;
+            txtCidade.Text = string.Empty;
+            txtComplemento.Text = string.Empty;
+            txtBairro.Text = string.Empty;
+            nudNumero.Value = 0;
         }
 
         private void txtCEP_Leave(object sender, EventArgs e)
@@ -227,9 +262,7 @@ namespace Cultura_Musical.Telas.Funcionarios
 
         private void label17_Click(object sender, EventArgs e)
         {
-            Telas.FrmHomePage tela = new FrmHomePage();
-            tela.Show();
-            this.Hide();
+           
         }
 
         private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
@@ -317,6 +350,18 @@ namespace Cultura_Musical.Telas.Funcionarios
         private void lblMinimizar_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
+
+        private void txtEstado_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
