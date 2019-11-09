@@ -2386,3 +2386,6 @@ C:\Users\lucas\Source\Repos\tcc-cultura-musical50\Cultura Musical\bin\Debug\Stan
 C:\Users\lucas\Source\Repos\tcc-cultura-musical50\Cultura Musical\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\lucas\Source\Repos\tcc-cultura-musical50\Cultura Musical\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\lucas\Source\Repos\tcc-cultura-musical50\Cultura Musical\obj\Debug\Cultura Musical.csproj.CopyComplete
+C:\Users\gabriel.Marcelo-PC\Source\Repos\tcc-cultura-musical\Cultura Musical\bin\Debug\Cultura Musical.exe.config
+C:\Users\gabriel.Marcelo-PC\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.exe
+C:\Users\gabriel.Marcelo-PC\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.pdb
