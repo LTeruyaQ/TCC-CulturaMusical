@@ -21,31 +21,31 @@ namespace Cultura_Musical.Business
 
             db.CadastrarNovoTipoDePlano(plano);
         }
-        public List<Database.Entity.tb_plano> Plano ()
+        public List<Database.Entity.tb_plano> Plano()
         {
-            
+
             List<Database.Entity.tb_plano> lista = db.ListarTodos();
 
             return lista;
-        }   
+        }
 
-        public void Altera (Database.Entity.tb_plano plano)
+        public void Altera(Database.Entity.tb_plano plano)
         {
             this.validacao(plano);
             db.Alterar(plano);
         }
 
-        public Database.Entity.tb_plano ProcurarPlano (Database.Entity.tb_plano plano)
+        public Database.Entity.tb_plano ProcurarPlano(Database.Entity.tb_plano plano)
         {
             return db.ProcurarPlano(plano);
         }
 
-        public void Deletar (Database.Entity.tb_plano plano)
+        public void Deletar(Database.Entity.tb_plano plano)
         {
             db.Excluir(plano.id_plano);
         }
 
-        private void validacao (Database.Entity.tb_plano plano)
+        private void validacao(Database.Entity.tb_plano plano)
         {
 
             if (plano.ds_descricao == string.Empty)
@@ -64,7 +64,19 @@ namespace Cultura_Musical.Business
                 throw new ArgumentException("É necessario atribuir um valor valido ao plano");
         }
 
-       
+
+        public List<Database.Entity.tb_plano> ConsultarNome (string nome)
+        {
+            List<Database.Entity.tb_plano>  lista =db.ListarPorNome(nome);
+
+            return lista;
+
+
+        }
+
+           
+
+
 
 
 

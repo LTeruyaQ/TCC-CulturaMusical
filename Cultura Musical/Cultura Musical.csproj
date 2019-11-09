@@ -439,6 +439,12 @@
     <Compile Include="Telas\Planos\frmAdicionarPlano.Designer.cs">
       <DependentUpon>frmAdicionarPlano.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Planos\FrmConsultarPlanos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Planos\FrmConsultarPlanos.Designer.cs">
+      <DependentUpon>FrmConsultarPlanos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Produtos\frmAdicionarPedidoD.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -566,6 +572,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Planos\frmAdicionarPlano.resx">
       <DependentUpon>frmAdicionarPlano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Planos\FrmConsultarPlanos.resx">
+      <DependentUpon>FrmConsultarPlanos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Produtos\frmAdicionarPedidoD.resx">
       <DependentUpon>frmAdicionarPedidoD.cs</DependentUpon>

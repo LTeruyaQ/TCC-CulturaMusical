@@ -64,6 +64,14 @@ namespace Cultura_Musical.Database
             DB.tb_venda_plano.Add(plano);
             DB.SaveChanges();
         }
-       
+
+        public List<Entity.tb_plano> ProcurarPlanoNome(string nome)
+        {
+            int tamanho = nome.Length;
+            List<Entity.tb_plano> Procura = DB.tb_plano.Where(t => t.nm_plano.Substring(1, tamanho).Contains(nome)).ToList();
+
+            return Procura;
+        }
+
     }
 }
