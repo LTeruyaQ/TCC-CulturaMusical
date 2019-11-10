@@ -8,31 +8,31 @@ namespace Cultura_Musical.Business
 {
     class Business_Logistica
     {
-        Database.Database_Logistica DB = new Database.Database_Logistica();
-        public List<Database.Entity.fluxo_de_caixa> FluxodeCaixa()
-        {
+        //Database.Database_Logistica DB = new Database.Database_Logistica();
+        //public List<Database.Entity.fluxo_de_caixa> FluxodeCaixa()
+        //{
 
-            List<Database.Entity.fluxo_de_caixa> lista = DB.ConsultarFluxodeCaixa();
-            if (lista == null)
-            {
-                throw new ArgumentException("Nada encontrado");
-            }
+        //    List<Database.Entity.fluxo_de_caixa> lista = DB.ConsultarFluxodeCaixa();
+        //    if (lista == null)
+        //    {
+        //        throw new ArgumentException("Nada encontrado");
+        //    }
 
-            return lista;
+        //    return lista;
 
-        }
+        //}
 
-        public List<Database.Entity.fluxo_de_caixa> ConsultarPorData(DateTime data)
-        {
+        //public List<Database.Entity.fluxo_de_caixa> ConsultarPorData(DateTime data)
+        //{
 
-            List<Database.Entity.fluxo_de_caixa> lista = DB.FluxoPorData(data);
+        //    List<Database.Entity.fluxo_de_caixa> lista = DB.FluxoPorData(data);
 
-            if (lista == null)
-            {
-                throw new ArgumentException("Nada encontrado nesta data");
-            }
-            return lista;
+        //    if (lista == null)
+        //    {
+        //        throw new ArgumentException("Nada encontrado nesta data");
+        //    }
+        //    return lista;
 
-        }
+        //}
     }
 }

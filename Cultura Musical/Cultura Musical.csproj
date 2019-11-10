@@ -160,9 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API%27s\Correio__API.cs" />
-    <Compile Include="API%27s\IbmVoiceResult.cs" />
-    <Compile Include="API%27s\IBM_Voice.cs" />
-    <Compile Include="API%27s\IBM_Voice_Result.cs" />
     <Compile Include="Business\Business_Agenda.cs" />
     <Compile Include="Business\Business_Beneficio.cs" />
     <Compile Include="Business\Business_Cliente.cs" />
@@ -628,7 +625,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Imagens\giphy.gif" />

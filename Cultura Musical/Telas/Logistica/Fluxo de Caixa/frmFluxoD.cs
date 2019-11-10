@@ -18,17 +18,17 @@ namespace Cultura_Musical.Telas.Logistica.Fluxo_de_Caixa
         {
             InitializeComponent();
 
-            try
-            {
-                List<Database.Entity.fluxo_de_caixa> lista = bus.FluxodeCaixa();
+            //try
+            //{
+            //    List<Database.Entity.fluxo_de_caixa> lista = bus.FluxodeCaixa();
 
-                dataGridView1.DataSource = lista;
-            }
-            catch (Exception ex)
-            {
+            //    dataGridView1.DataSource = lista;
+            //}
+            //catch (Exception ex)
+            //{
 
-                MessageBox.Show(ex.Message);
-            }
+            //    MessageBox.Show(ex.Message);
+            //}
 
 
 
@@ -71,19 +71,19 @@ namespace Cultura_Musical.Telas.Logistica.Fluxo_de_Caixa
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            try
-            {
-                DateTime data = dateTimePicker1.Value;
+            //try
+            //{
+            //    DateTime data = dateTimePicker1.Value;
 
-                List<Database.Entity.fluxo_de_caixa> lista = bus.ConsultarPorData(data);
+            //    List<Database.Entity.fluxo_de_caixa> lista = bus.ConsultarPorData(data);
 
-                dataGridView1.DataSource = lista;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+            //    dataGridView1.DataSource = lista;
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
 
-            }
+            //}
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)

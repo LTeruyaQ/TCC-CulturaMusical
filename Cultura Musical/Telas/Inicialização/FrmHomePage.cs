@@ -1,8 +1,12 @@
-﻿using System;
+﻿using IBM.Cloud.SDK.Core.Authentication.Iam;
+using IBM.Watson.TextToSpeech.v1;
+using Stannieman.AudioPlayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,7 +21,7 @@ namespace Cultura_Musical.Telas
             InitializeComponent();
         }
 
-        API_s.IBM_Voice ibm = new API_s.IBM_Voice();
+        //API_s.IBM_Voice ibm = new API_s.IBM_Voice();
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
@@ -61,7 +65,7 @@ namespace Cultura_Musical.Telas
 
         private void btnFalar_Click(object sender, EventArgs e)
         {
-            ibm.IniciarOuvir();
+            //ibm.IniciarOuvir();
         }
 
         private void btnParar_Click(object sender, EventArgs e)
@@ -218,6 +222,41 @@ namespace Cultura_Musical.Telas
         private void pictureBox14_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOuvir_Click(object sender, EventArgs e)
+        {
+            string texto = txtFrase.Text;
+
+            this.FalarTextoDigitado(texto);
+        }
+
+        private async void FalarTextoDigitado(string texto)
+        {
+            
+
+            IamAuthenticator authenticator = new IamAuthenticator(
+                apikey: "o2 - D_Y6DWPSK_Wtm519CBijV_BcA19Uo0hw4Ia6q0_pa");
+
+            TextToSpeechService service = new TextToSpeechService(authenticator);
+            service.SetServiceUrl("https://stream.watsonplatform.net/text-to-speech/api");
+
+            var result = service.Synthesize(
+                text: texto,
+                accept: "audio/wav",
+                voice: "pt-BR_IsabelaVoice"
+                );
+
+            using (FileStream fs = File.Create("culturamusical_texto_voz.wav"))
+            {
+                result.Result.WriteTo(fs);
+                fs.Close();
+                result.Result.Close();
+            }
+
+            AudioPlayer player = new AudioPlayer();
+            await player.SetFileAsync("culturamusical_texto_voz.wav", "culturamusical_texto_voz.wav");
+            await player.PlayAsync();
         }
     }
 }
