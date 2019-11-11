@@ -29,14 +29,17 @@ namespace Cultura_Musical.Database.Entity
         public string ds_email { get; set; }
         public string ds_rg { get; set; }
         public string ds_cpf { get; set; }
+        public string ds_genero { get; set; }
         public string ds_cep { get; set; }
         public string ds_observacao { get; set; }
         public string ds_estado { get; set; }
         public string ds_bairro { get; set; }
+        public string ds_cidade { get; set; }
         public string ds_periodo { get; set; }
         public string nm_responsavel { get; set; }
         public string ds_nivel { get; set; }
         public int nmr_cliente { get; set; }
+        public Nullable<bool> ds_prioridade { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_agenda_estudio> tb_agenda_estudio { get; set; }

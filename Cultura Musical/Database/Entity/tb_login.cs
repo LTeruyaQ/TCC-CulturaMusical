@@ -14,11 +14,21 @@ namespace Cultura_Musical.Database.Entity
     
     public partial class tb_login
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public tb_login()
+        {
+            this.tb_prolabore = new HashSet<tb_prolabore>();
+        }
+    
         public int id_login { get; set; }
         public string nm_usuario { get; set; }
         public string sen_usuario { get; set; }
         public System.DateTime dt_login { get; set; }
-        public Nullable<bool> ds_ADM { get; set; }
+        public int nv_login { get; set; }
         public int id_funcionario { get; set; }
+    
+        public virtual tb_funcionario tb_funcionario { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<tb_prolabore> tb_prolabore { get; set; }
     }
 }

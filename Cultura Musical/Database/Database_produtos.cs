@@ -8,7 +8,8 @@ namespace Cultura_Musical.Database
 {
     class Database_produtos
     {
-        Entity.db_a4f9ad_stormprEntities DB = new Entity.db_a4f9ad_stormprEntities();
+        //Entity.db_a4f9ad_stormprEntities DB = new Entity.db_a4f9ad_stormprEntities();
+        Entity.db_a4f9ad_stormprEntities1 DB = new Entity.db_a4f9ad_stormprEntities1();
 
         public void Cadastrar(Database.Entity.tb_produto addprod)
         {

@@ -16,16 +16,15 @@ namespace Cultura_Musical.Database.Entity
     {
         public int id_aula { get; set; }
         public System.DateTime dt_aula { get; set; }
-        public System.TimeSpan hr_aula { get; set; }
+        public System.TimeSpan hr_incio { get; set; }
+        public System.TimeSpan hr_fim { get; set; }
         public string tp_aula { get; set; }
         public int id_funcionario { get; set; }
         public int id_cliente { get; set; }
-        public int id_venda_plano { get; set; }
         public int id_sala { get; set; }
     
         public virtual tb_cliente tb_cliente { get; set; }
         public virtual tb_funcionario tb_funcionario { get; set; }
         public virtual tb_sala tb_sala { get; set; }
-        public virtual tb_venda_plano tb_venda_plano { get; set; }
     }
 }

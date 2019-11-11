@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7aa1bf4e6dee4567a46cf1c8d2b4faa3" Name="Diagram1">
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_agenda_estudio" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_aula" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_beneficio" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_cliente" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_colaborador" Width="1.5" PointX="10.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_compra" Width="1.5" PointX="13" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_conta" Width="1.5" PointX="11" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_estado" Width="1.5" PointX="7.75" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_estoque" Width="1.5" PointX="17.5" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_financeiro" Width="1.5" PointX="6" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_folha_pagamento" Width="1.5" PointX="8.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_fornecedor" Width="1.5" PointX="10.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_funcionario" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_holerite" Width="1.5" PointX="12.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_jornada" Width="1.5" PointX="5.25" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_login" Width="1.5" PointX="5.25" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_plano" Width="1.5" PointX="6" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_ponto" Width="1.5" PointX="5.25" PointY="20.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_produto" Width="1.5" PointX="15.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_prolabore" Width="1.5" PointX="7.5" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_sala" Width="1.5" PointX="3" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_tipo_conta" Width="1.5" PointX="8.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_venda_plano" Width="1.5" PointX="8.25" PointY="2.125" IsExpanded="true" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_agenda_estudio_tb_cliente1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_cliente_aula_tb_cliente1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_cliente_aula_tb_funcionario1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_cliente_aula_tb_sala1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_funcionario_tb_beneficio1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_venda_plano_tb_cliente1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_compra_tb_fornecedor1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_produto_tb_compra1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_conta_tb_tipo_conta1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_estoque_tb_produto1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_folha_pagamento_tb_financeiro1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_folha_pagamento_tb_funcionario1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_login_tb_funcionario1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.tb_jornada_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.tb_ponto_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_prolabore_tb_login1" ManuallyRouted="false" />
+        <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_venda_plano_tb_plano1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

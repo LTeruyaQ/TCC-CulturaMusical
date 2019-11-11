@@ -195,6 +195,21 @@
     <Compile Include="Database\Database_Estoque.cs" />
     <Compile Include="Database\Database_produtos.cs" />
     <Compile Include="Database\Database_Vendas.cs" />
+    <Compile Include="Database\Entity\BancoLocal.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoLocal.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\BancoLocal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\BancoLocal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoLocal.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Database\Entity\BancoOnline.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -211,72 +226,75 @@
       <DependentUpon>BancoOnline.edmx</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_agenda_estudio.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
+      <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_aula.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
+      <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_beneficio.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
+      <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_cliente.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
+      <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_colaborador.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
+      <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_compra.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
+      <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_conta.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
+      <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_estado.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_estoque.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_financeiro.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_folha_pagamento.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_fornecedor.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_funcionario.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_holerite.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_jornada.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_login.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_plano.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_ponto.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_produto.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_sala.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_tipo_conta.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Database\Entity\tb_venda_plano.cs">
-      <DependentUpon>BancoOnline.tt</DependentUpon>
+      <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Database_Financeiro.cs" />
+    <Compile Include="Database\Entity\tb_estoque.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_financeiro.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_folha_pagamento.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_fornecedor.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_funcionario.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_holerite.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_jornada.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_login.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_plano.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_ponto.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_produto.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_prolabore.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_sala.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_tipo_conta.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Entity\tb_venda_plano.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
     <Compile Include="Database\Model\ModelosExtendidos.cs" />
     <Compile Include="Interfaces\Interface_Crud.cs" />
     <Compile Include="Program.cs" />
@@ -610,6 +628,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BancoOnline.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="Database\Entity\BancoLocal.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BancoLocal.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Database\Entity\BancoLocal.edmx.diagram">
+      <DependentUpon>BancoLocal.edmx</DependentUpon>
+    </None>
     <None Include="Database\Entity\BancoOnline.edmx.diagram">
       <DependentUpon>BancoOnline.edmx</DependentUpon>
     </None>
@@ -650,6 +675,16 @@
     <None Include="Resources\Imagens\musica.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Database\Entity\BancoLocal.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BancoLocal.edmx</DependentUpon>
+      <LastGenOutput>BancoLocal.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Database\Entity\BancoLocal.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>BancoLocal.edmx</DependentUpon>
+      <LastGenOutput>BancoLocal.cs</LastGenOutput>
+    </Content>
     <Content Include="Database\Entity\BancoOnline.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>BancoOnline.edmx</DependentUpon>
