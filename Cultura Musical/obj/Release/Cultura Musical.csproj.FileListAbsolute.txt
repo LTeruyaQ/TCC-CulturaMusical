@@ -208,3 +208,6 @@ C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical5\Cultura Musical\bin\Release
 C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical5\Cultura Musical\obj\Release\Cultura Musical.csproj.CopyComplete
 C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical5\Cultura Musical\obj\Release\Cultura Musical.exe
 C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical5\Cultura Musical\obj\Release\Cultura Musical.pdb
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\bin\Release\Cultura Musical.exe.config
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Release\Cultura Musical.exe
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Release\Cultura Musical.pdb
