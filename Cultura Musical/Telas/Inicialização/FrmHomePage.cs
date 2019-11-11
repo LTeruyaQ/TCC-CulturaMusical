@@ -235,28 +235,28 @@ namespace Cultura_Musical.Telas
         {
             
 
-            IamAuthenticator authenticator = new IamAuthenticator(
-                apikey: "o2 - D_Y6DWPSK_Wtm519CBijV_BcA19Uo0hw4Ia6q0_pa");
+            //IamAuthenticator authenticator = new IamAuthenticator(
+            //    apikey: "o2 - D_Y6DWPSK_Wtm519CBijV_BcA19Uo0hw4Ia6q0_pa");
 
-            TextToSpeechService service = new TextToSpeechService(authenticator);
-            service.SetServiceUrl("https://stream.watsonplatform.net/text-to-speech/api");
+            //TextToSpeechService service = new TextToSpeechService(authenticator);
+            //service.SetServiceUrl("https://stream.watsonplatform.net/text-to-speech/api");
 
-            var result = service.Synthesize(
-                text: texto,
-                accept: "audio/wav",
-                voice: "pt-BR_IsabelaVoice"
-                );
+            //var result = service.Synthesize(
+            //    text: texto,
+            //    accept: "audio/wav",
+            //    voice: "pt-BR_IsabelaVoice"
+            //    );
 
-            using (FileStream fs = File.Create("culturamusical_texto_voz.wav"))
-            {
-                result.Result.WriteTo(fs);
-                fs.Close();
-                result.Result.Close();
-            }
+            //using (FileStream fs = File.Create("culturamusical_texto_voz.wav"))
+            //{
+            //    result.Result.WriteTo(fs);
+            //    fs.Close();
+            //    result.Result.Close();
+            //}
 
-            AudioPlayer player = new AudioPlayer();
-            await player.SetFileAsync("culturamusical_texto_voz.wav", "culturamusical_texto_voz.wav");
-            await player.PlayAsync();
+            //AudioPlayer player = new AudioPlayer();
+            //await player.SetFileAsync("culturamusical_texto_voz.wav", "culturamusical_texto_voz.wav");
+            //await player.PlayAsync();
         }
     }
 }
