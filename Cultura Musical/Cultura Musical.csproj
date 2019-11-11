@@ -225,6 +225,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BancoOnline.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Database\Database_Financeiro.cs" />
+    <Compile Include="Database\Entity\fluxo_de_caixa.cs">
+      <DependentUpon>BancoLocal.tt</DependentUpon>
+    </Compile>
     <Compile Include="Database\Entity\tb_agenda_estudio.cs">
       <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>
@@ -249,7 +253,6 @@
     <Compile Include="Database\Entity\tb_estado.cs">
       <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>
-    <Compile Include="Database\Database_Financeiro.cs" />
     <Compile Include="Database\Entity\tb_estoque.cs">
       <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>

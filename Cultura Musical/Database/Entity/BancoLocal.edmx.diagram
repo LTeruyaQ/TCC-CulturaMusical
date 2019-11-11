@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7aa1bf4e6dee4567a46cf1c8d2b4faa3" Name="Diagram1">
+      <Diagram DiagramId="5c117bdbe9c643bd94513aa85c2886d2" Name="Diagram1" ZoomLevel="247">
         <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_agenda_estudio" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_aula" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
         <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.tb_beneficio" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
@@ -45,6 +45,7 @@
         <AssociationConnector Association="db_a4f9ad_stormprModel1.tb_ponto_ibfk_1" ManuallyRouted="false" />
         <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_prolabore_tb_login1" ManuallyRouted="false" />
         <AssociationConnector Association="db_a4f9ad_stormprModel1.fk_tb_venda_plano_tb_plano1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="db_a4f9ad_stormprModel1.fluxo_de_caixa" Width="1.5" PointX="13.375" PointY="5.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -13,10 +13,10 @@ namespace Cultura_Musical.Database.Entity
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class db_a4f9ad_stormprEntities1 : DbContext
+    public partial class db_a4f9ad_stormprEntities2 : DbContext
     {
-        public db_a4f9ad_stormprEntities1()
-            : base("name=db_a4f9ad_stormprEntities1")
+        public db_a4f9ad_stormprEntities2()
+            : base("name=db_a4f9ad_stormprEntities2")
         {
         }
     
@@ -48,5 +48,6 @@ namespace Cultura_Musical.Database.Entity
         public virtual DbSet<tb_sala> tb_sala { get; set; }
         public virtual DbSet<tb_tipo_conta> tb_tipo_conta { get; set; }
         public virtual DbSet<tb_venda_plano> tb_venda_plano { get; set; }
+        public virtual DbSet<fluxo_de_caixa> fluxo_de_caixa { get; set; }
     }
 }

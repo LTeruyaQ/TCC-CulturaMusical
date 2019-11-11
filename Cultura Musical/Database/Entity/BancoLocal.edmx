@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="db_a4f9ad_stormprModel1.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="db_a4f9ad_stormprModel1.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tb_agenda_estudio">
           <Key>
             <PropertyRef Name="id_agenda_estudio" />
@@ -288,6 +288,17 @@
           <Property Name="dt_inicio" Type="date" Nullable="false" />
           <Property Name="dt_fim" Type="date" Nullable="false" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'def.db_a4f9ad_stormpr.fluxo_de_caixa' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="fluxo_de_caixa">
+          <Key>
+            <PropertyRef Name="data_pagamento" />
+            <PropertyRef Name="tipo_operação" />
+          </Key>
+          <Property Name="data_pagamento" Type="date" Nullable="false" />
+          <Property Name="valor_pago" Type="decimal" Precision="54" Scale="0" />
+          <Property Name="tipo_operação" Type="varchar" MaxLength="7" Nullable="false" />
+        </EntityType>
         <Association Name="fk_tb_agenda_estudio_tb_cliente1">
           <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
           <End Role="tb_agenda_estudio" Type="Self.tb_agenda_estudio" Multiplicity="*" />
@@ -516,6 +527,13 @@
           <EntitySet Name="tb_sala" EntityType="Self.tb_sala" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
           <EntitySet Name="tb_tipo_conta" EntityType="Self.tb_tipo_conta" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
           <EntitySet Name="tb_venda_plano" EntityType="Self.tb_venda_plano" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
+          <EntitySet Name="fluxo_de_caixa" EntityType="Self.fluxo_de_caixa" store:Type="Views" store:Schema="db_a4f9ad_stormpr">
+            <DefiningQuery>SELECT
+`fluxo_de_caixa`.`data_pagamento`, 
+`fluxo_de_caixa`.`valor_pago`, 
+`fluxo_de_caixa`.`tipo_operação`
+FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="fk_tb_agenda_estudio_tb_cliente1" Association="Self.fk_tb_agenda_estudio_tb_cliente1">
             <End Role="tb_cliente" EntitySet="tb_cliente" />
             <End Role="tb_agenda_estudio" EntitySet="tb_agenda_estudio" />
@@ -585,8 +603,7 @@
             <End Role="tb_ponto" EntitySet="tb_ponto" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="db_a4f9ad_stormprModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -1111,7 +1128,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="db_a4f9ad_stormprEntities1" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="db_a4f9ad_stormprEntities2" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tb_agenda_estudio" EntityType="Self.tb_agenda_estudio" />
           <EntitySet Name="tb_aula" EntityType="Self.tb_aula" />
           <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
@@ -1203,13 +1220,23 @@
             <End Role="tb_plano" EntitySet="tb_plano" />
             <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
           </AssociationSet>
+          <EntitySet Name="fluxo_de_caixa" EntityType="db_a4f9ad_stormprModel1.fluxo_de_caixa" />
         </EntityContainer>
+        <EntityType Name="fluxo_de_caixa">
+          <Key>
+            <PropertyRef Name="data_pagamento" />
+            <PropertyRef Name="tipo_operação" />
+          </Key>
+          <Property Name="data_pagamento" Type="DateTime" Nullable="false" />
+          <Property Name="valor_pago" Type="Decimal" />
+          <Property Name="tipo_operação" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="db_a4f9ad_stormprModel1StoreContainer" CdmEntityContainer="db_a4f9ad_stormprEntities1">
+        <EntityContainerMapping StorageEntityContainer="db_a4f9ad_stormprModel1StoreContainer" CdmEntityContainer="db_a4f9ad_stormprEntities2">
           <EntitySetMapping Name="tb_agenda_estudio">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel1.tb_agenda_estudio">
               <MappingFragment StoreEntitySet="tb_agenda_estudio">
@@ -1513,6 +1540,15 @@
                 <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
                 <ScalarProperty Name="dt_inicio" ColumnName="dt_inicio" />
                 <ScalarProperty Name="dt_fim" ColumnName="dt_fim" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="fluxo_de_caixa">
+            <EntityTypeMapping TypeName="db_a4f9ad_stormprModel1.fluxo_de_caixa">
+              <MappingFragment StoreEntitySet="fluxo_de_caixa">
+                <ScalarProperty Name="tipo_operação" ColumnName="tipo_operação" />
+                <ScalarProperty Name="valor_pago" ColumnName="valor_pago" />
+                <ScalarProperty Name="data_pagamento" ColumnName="data_pagamento" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

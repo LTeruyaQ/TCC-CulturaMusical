@@ -8,8 +8,10 @@ namespace Cultura_Musical.Database
 {
     class Database_Jornada
     {
+
         //Entity.db_a4f9ad_stormprEntities DB = new Entity.db_a4f9ad_stormprEntities();
-        Entity.db_a4f9ad_stormprEntities1 DB = new Entity.db_a4f9ad_stormprEntities1();
+        Entity.db_a4f9ad_stormprEntities2 DB = new Entity.db_a4f9ad_stormprEntities2();
+
         public void InserirJornada (Entity.tb_jornada Jornada)
         {
             DB.tb_jornada.Add(Jornada);
