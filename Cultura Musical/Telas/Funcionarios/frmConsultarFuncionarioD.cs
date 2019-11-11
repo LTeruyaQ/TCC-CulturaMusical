@@ -49,6 +49,8 @@ namespace Cultura_Musical.Telas.Funcionarios
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            dataGridView1.AutoGenerateColumns = false;
+
             if (dataGridView1.CurrentCell.ColumnIndex == Excluir.Index)
             {
                 var func = dataGridView1.CurrentRow.DataBoundItem as

@@ -2389,3 +2389,14 @@ C:\Users\lucas\Source\Repos\tcc-cultura-musical50\Cultura Musical\obj\Debug\Cult
 C:\Users\gabriel.Marcelo-PC\Source\Repos\tcc-cultura-musical\Cultura Musical\bin\Debug\Cultura Musical.exe.config
 C:\Users\gabriel.Marcelo-PC\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.exe
 C:\Users\gabriel.Marcelo-PC\Source\Repos\tcc-cultura-musical\Cultura Musical\obj\Debug\Cultura Musical.pdb
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura Musical.csproj.Cultura Musical.exe.config
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Folha_Pagamento.frmGerarFolhaD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionarios.frmAlterarFuncionario.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionarios.frmCadastroFuncionarioD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Funcionarios.frmConsultarFuncionarioD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Logistica.Fluxo_de_Caixa.frmFluxoD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Planos.ConsultarVendas.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Planos.frmAdicionarPlano.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Produtos.frmAdicionarPedidoD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Produtos.frmConsultarPedidoD.resources
+C:\Users\infoc35\Source\Repos\tcc-cultura-musical4\Cultura Musical\obj\Debug\Cultura_Musical.Telas.Planos.cbo.resources

@@ -12,6 +12,8 @@ namespace Cultura_Musical.Telas.Fornecedores
 {
     public partial class FrmConsultarFornecedores : Form
     {
+        Business.Business_Fornecedores Bus = new Business.Business_Fornecedores();
+
         public FrmConsultarFornecedores()
         {
             InitializeComponent();
@@ -162,23 +164,37 @@ namespace Cultura_Musical.Telas.Fornecedores
 
         private void dgvNMFornecedor_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            dgvNMFornecedor.AutoGenerateColumns = false;
+
             if (dgvNMFornecedor.CurrentCell.ColumnIndex == remover.Index)
             {
-                Database.Entity.tb_funcionario cul = dgvNMFornecedor.CurrentRow.DataBoundItem as
-                    Database.Entity.tb_funcionario;
+                var func = dgvNMFornecedor.CurrentRow.DataBoundItem as
+                   Database.Entity.tb_fornecedor;
 
-                var id = cul.id_funcionario;
+                if (e.ColumnIndex == 17)
+                {
+                    this.EditarFuncionario();
+                }
 
-                Business.Business_Fornecedores business_Fornecedores = new Business.Business_Fornecedores();
-                business_Fornecedores.Remover(id);
+                if (e.ColumnIndex == 18)
+                {
+                    this.ExcluirFuncionario(func);
 
+                }
 
+            }       
 
+    }
 
-            }
-            else
+        private void ExcluirFuncionario(Database.Entity.tb_funcionario func)
+        {
+            DialogResult resposta = MessageBox.Show("Deseja remover o funcionário?", "Cultura Musical",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (resposta == DialogResult.Yes)
             {
-                return;
+                Bus.Remover(func.id_funcionario);
+                this.CarregarGrid();
             }
         }
 
@@ -266,6 +282,11 @@ namespace Cultura_Musical.Telas.Fornecedores
             Telas.FrmHomePage tela = new FrmHomePage();
             tela.Show();
             this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

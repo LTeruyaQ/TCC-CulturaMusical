@@ -322,6 +322,12 @@
     <Compile Include="Telas\Folha_Pagamento\frmGerarFolhaD.Designer.cs">
       <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
     </Compile>
+    <Compile Include="Telas\Fornecedores\frmAlterarFornecedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telas\Fornecedores\frmAlterarFornecedor.Designer.cs">
+      <DependentUpon>frmAlterarFornecedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Telas\Funcionarios\frmAlterarFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -530,6 +536,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Folha_Pagamento\frmGerarFolhaD.resx">
       <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telas\Fornecedores\frmAlterarFornecedor.resx">
+      <DependentUpon>frmAlterarFornecedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Fornecedores\FrmConsultarFornecedores.resx">
       <DependentUpon>FrmConsultarFornecedores.cs</DependentUpon>
