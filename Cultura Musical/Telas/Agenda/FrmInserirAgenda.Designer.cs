@@ -54,6 +54,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboCliente = new System.Windows.Forms.ComboBox();
+            this.cboSala = new System.Windows.Forms.ComboBox();
+            this.cboProfessor = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -67,6 +74,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label16
@@ -147,7 +155,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(400, 64);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Inserir Agenda";
+            this.label6.Text = "Inserir Compromisso";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -396,12 +404,78 @@
             this.panel4.Size = new System.Drawing.Size(19, 45);
             this.panel4.TabIndex = 98;
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(275, 47);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(110, 20);
+            this.dateTimePicker2.TabIndex = 98;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(446, 69);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 99;
+            this.label3.Text = "label3";
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(661, 112);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 100;
+            this.button9.Text = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.cboProfessor);
+            this.groupBox1.Controls.Add(this.cboSala);
+            this.groupBox1.Controls.Add(this.cboCliente);
+            this.groupBox1.Controls.Add(this.dateTimePicker2);
+            this.groupBox1.Location = new System.Drawing.Point(248, 176);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(596, 181);
+            this.groupBox1.TabIndex = 101;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Dados da Aula";
+            // 
+            // cboCliente
+            // 
+            this.cboCliente.FormattingEnabled = true;
+            this.cboCliente.Location = new System.Drawing.Point(81, 48);
+            this.cboCliente.Name = "cboCliente";
+            this.cboCliente.Size = new System.Drawing.Size(121, 21);
+            this.cboCliente.TabIndex = 102;
+            // 
+            // cboSala
+            // 
+            this.cboSala.FormattingEnabled = true;
+            this.cboSala.Location = new System.Drawing.Point(81, 128);
+            this.cboSala.Name = "cboSala";
+            this.cboSala.Size = new System.Drawing.Size(121, 21);
+            this.cboSala.TabIndex = 103;
+            // 
+            // cboProfessor
+            // 
+            this.cboProfessor.FormattingEnabled = true;
+            this.cboProfessor.Location = new System.Drawing.Point(81, 91);
+            this.cboProfessor.Name = "cboProfessor";
+            this.cboProfessor.Size = new System.Drawing.Size(121, 21);
+            this.cboProfessor.TabIndex = 104;
+            // 
             // FrmAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(919, 560);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -422,6 +496,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -454,5 +529,12 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cboProfessor;
+        private System.Windows.Forms.ComboBox cboSala;
+        private System.Windows.Forms.ComboBox cboCliente;
     }
 }

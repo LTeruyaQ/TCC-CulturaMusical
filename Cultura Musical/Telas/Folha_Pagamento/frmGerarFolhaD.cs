@@ -203,8 +203,8 @@ namespace Cultura_Musical.Telas.Folha_Pagamento
 
         private void btnImprimir_Click(object sender, EventArgs e)
         {
-            //Business.ImprimirTela p = new Business.ImprimirTela();
-            //p.Imprimir(this, panel5);
+            Business.ImprimirTela p = new Business.ImprimirTela();
+            p.Imprimir(this, panel5);
         }
 
         private void label3_Click(object sender, EventArgs e)
