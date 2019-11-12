@@ -19,7 +19,9 @@ namespace Cultura_Musical.Telas.Funcionarios
             InitializeComponent();
 
 
-            this.CarregarGrid();     
+            this.CarregarGrid();
+
+            dataGridView1.AutoGenerateColumns = false;
         }
 
         private void CarregarGrid()
@@ -56,12 +58,12 @@ namespace Cultura_Musical.Telas.Funcionarios
                 var func = dataGridView1.CurrentRow.DataBoundItem as
                     Database.Entity.tb_funcionario;
 
-                if (e.ColumnIndex == 17)
+                if (e.ColumnIndex == 18)
                 {
                     this.EditarFuncionario();
                 }
 
-                if (e.ColumnIndex == 18)
+                if (e.ColumnIndex == 19)
                 {
                     this.ExcluirFuncionario(func);
 

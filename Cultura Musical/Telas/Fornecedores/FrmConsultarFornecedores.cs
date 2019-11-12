@@ -18,6 +18,11 @@ namespace Cultura_Musical.Telas.Fornecedores
         {
             InitializeComponent();
 
+            this.CarregarGrid();     
+        }
+
+        private void CarregarGrid()
+        {
             Business.Business_Fornecedores forn = new Business.Business_Fornecedores();
             List<Database.Entity.tb_fornecedor> ok = forn.ListarForn();
 
@@ -110,53 +115,20 @@ namespace Cultura_Musical.Telas.Fornecedores
 
         private void FrmConsultarFornecedores_Load(object sender, EventArgs e)
         {
-            dgvNMFornecedor.BorderStyle = BorderStyle.None;
-            dgvNMFornecedor.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            dgvNMFornecedor.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dgvNMFornecedor.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
-            dgvNMFornecedor.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dgvNMFornecedor.BackgroundColor = Color.White;
+            //dgvNMFornecedor.BorderStyle = BorderStyle.None;
+            //dgvNMFornecedor.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            //dgvNMFornecedor.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            //dgvNMFornecedor.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            //dgvNMFornecedor.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            //dgvNMFornecedor.BackgroundColor = Color.White;
 
 
-            dgvNMFornecedor.EnableHeadersVisualStyles = false;
-            dgvNMFornecedor.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dgvNMFornecedor.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-            dgvNMFornecedor.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            //dgvNMFornecedor.EnableHeadersVisualStyles = false;
+            //dgvNMFornecedor.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            //dgvNMFornecedor.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            //dgvNMFornecedor.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
 
-            int n = 0;
-
-            for (int i = 0; i < 12; i++)
-            {
-                n = dgvNMFornecedor.Rows.Add();
-                dgvNMFornecedor.Rows[n].Cells[0].Value = "------------------";
-                dgvNMFornecedor.Rows[n].Cells[1].Value = "------------------ ";
-                dgvNMFornecedor.Rows[n].Cells[2].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[3].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[4].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[5].Value = "------------------";
-                dgvNMFornecedor.Rows[n].Cells[6].Value = "------------------ ";
-                dgvNMFornecedor.Rows[n].Cells[7].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[8].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[9].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[10].Value = "------------------";
-                dgvNMFornecedor.Rows[n].Cells[11].Value = "------------------ ";
-            
-
-                n = dgvNMFornecedor.Rows.Add();
-                dgvNMFornecedor.Rows[n].Cells[0].Value = "------------------";
-                dgvNMFornecedor.Rows[n].Cells[1].Value = "------------------ ";
-                dgvNMFornecedor.Rows[n].Cells[2].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[3].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[4].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[5].Value = "------------------";
-                dgvNMFornecedor.Rows[n].Cells[6].Value = "------------------ ";
-                dgvNMFornecedor.Rows[n].Cells[7].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[8].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[9].Value = "-------------------";
-                dgvNMFornecedor.Rows[n].Cells[10].Value = "------------------";
-                dgvNMFornecedor.Rows[n].Cells[11].Value = "------------------ ";
-            }
-      
+           
 
 
             
@@ -164,39 +136,49 @@ namespace Cultura_Musical.Telas.Fornecedores
 
         private void dgvNMFornecedor_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            dgvNMFornecedor.AutoGenerateColumns = false;
+           
 
             if (dgvNMFornecedor.CurrentCell.ColumnIndex == remover.Index)
             {
-                var func = dgvNMFornecedor.CurrentRow.DataBoundItem as
+                var forn = dgvNMFornecedor.CurrentRow.DataBoundItem as
                    Database.Entity.tb_fornecedor;
 
-                if (e.ColumnIndex == 17)
+                if (e.ColumnIndex == 12)
                 {
-                    this.EditarFuncionario();
+                    this.EditarFornecedor(forn);
                 }
 
-                if (e.ColumnIndex == 18)
+                if (e.ColumnIndex == 13)
                 {
-                    this.ExcluirFuncionario(func);
+                    this.ExcluirFornecedor(forn);
 
                 }
 
             }       
 
-    }
+        }
 
-        private void ExcluirFuncionario(Database.Entity.tb_funcionario func)
+        private void EditarFornecedor(Database.Entity.tb_fornecedor forn)
         {
-            DialogResult resposta = MessageBox.Show("Deseja remover o funcionário?", "Cultura Musical",
+            Telas.Fornecedores.frmAlterarFornecedor tela = new Fornecedores.frmAlterarFornecedor();
+            tela.Show();
+            this.Hide();
+
+        }
+
+
+        private void ExcluirFornecedor(Database.Entity.tb_fornecedor forn)
+        {
+            DialogResult resposta = MessageBox.Show("Deseja remover o fornecedor?", "Cultura Musical",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (resposta == DialogResult.Yes)
             {
-                Bus.Remover(func.id_funcionario);
+                Bus.Remover(forn.id_fornecedor);
                 this.CarregarGrid();
             }
         }
+
 
         private void inserirToolStripMenuItem2_Click(object sender, EventArgs e)
         {

@@ -48,10 +48,10 @@ namespace Cultura_Musical.Telas.Fornecedores
                 MessageBox.Show(ex.Message);
             }
 
-            //catch (Exception)
-            //{
-            //    MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
-            //}
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
+            }
         }
 
         private void button9_MouseEnter(object sender, EventArgs e)

@@ -49,6 +49,12 @@ namespace Cultura_Musical.Database
             DB.SaveChanges();
         }
 
+        public Database.Entity.tb_fornecedor ProcurarFornecedor(Database.Entity.tb_fornecedor forn)
+        {
+            Database.Entity.tb_fornecedor Procura = DB.tb_fornecedor.FirstOrDefault(t => t.nm_fornecedor == forn.nm_fornecedor && t.ds_cnpj == forn.ds_cnpj);
+            return Procura;
+        }
+
         public void excluir(int id)
         {
             Entity.tb_fornecedor fornecedor = DB.tb_fornecedor.FirstOrDefault(t => t.id_fornecedor == id);

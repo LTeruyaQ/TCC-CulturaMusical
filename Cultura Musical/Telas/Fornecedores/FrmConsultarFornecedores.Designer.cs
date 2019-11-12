@@ -29,10 +29,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarFornecedores));
             this.label1 = new System.Windows.Forms.Label();
             this.txtNFornecedor = new System.Windows.Forms.TextBox();
             this.dgvNMFornecedor = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNPJ = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alterar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.remover = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -83,20 +98,6 @@
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CNPJ = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Rua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.alterar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.remover = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNMFornecedor)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -142,6 +143,11 @@
             // 
             this.dgvNMFornecedor.AllowUserToAddRows = false;
             this.dgvNMFornecedor.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.dgvNMFornecedor.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvNMFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNMFornecedor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -164,6 +170,107 @@
             this.dgvNMFornecedor.Size = new System.Drawing.Size(735, 382);
             this.dgvNMFornecedor.TabIndex = 2;
             this.dgvNMFornecedor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNMFornecedor_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "nm_fornecedor";
+            this.Column1.HeaderText = "Fornecedor";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // CNPJ
+            // 
+            this.CNPJ.DataPropertyName = "ds_cnpj";
+            this.CNPJ.HeaderText = "CNPJ";
+            this.CNPJ.Name = "CNPJ";
+            this.CNPJ.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "inscicao_estadual";
+            this.Column3.HeaderText = "Inscrição Estadual";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "ds_email";
+            this.Column2.HeaderText = "Email";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "tell_contato";
+            this.Column7.HeaderText = "Telefone(1)";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "tell_contato2";
+            this.Column8.HeaderText = "Telefone(2)";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "cep";
+            this.Column4.HeaderText = "CEP";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Rua
+            // 
+            this.Rua.DataPropertyName = "rua";
+            this.Rua.HeaderText = "Rua";
+            this.Rua.Name = "Rua";
+            this.Rua.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "bairro";
+            this.Column5.HeaderText = "Bairro";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Cidade
+            // 
+            this.Cidade.DataPropertyName = "cidade";
+            this.Cidade.HeaderText = "Cidade";
+            this.Cidade.Name = "Cidade";
+            this.Cidade.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "estado";
+            this.Column6.HeaderText = "Estado";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.DataPropertyName = "nmr_fornecedor";
+            this.Column9.HeaderText = "Número";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // alterar
+            // 
+            this.alterar.HeaderText = "";
+            this.alterar.Image = global::Cultura_Musical.Properties.Resources.lapis1;
+            this.alterar.Name = "alterar";
+            this.alterar.ReadOnly = true;
+            // 
+            // remover
+            // 
+            this.remover.HeaderText = "";
+            this.remover.Image = global::Cultura_Musical.Properties.Resources.exlcuir;
+            this.remover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.remover.Name = "remover";
+            this.remover.ReadOnly = true;
+            this.remover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.remover.Width = 20;
             // 
             // panel3
             // 
@@ -697,107 +804,6 @@
             this.dataGridViewImageColumn2.ReadOnly = true;
             this.dataGridViewImageColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewImageColumn2.Width = 20;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "nm_fornecedor";
-            this.Column1.HeaderText = "Fornecedor";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // CNPJ
-            // 
-            this.CNPJ.DataPropertyName = "ds_cnpj";
-            this.CNPJ.HeaderText = "CNPJ";
-            this.CNPJ.Name = "CNPJ";
-            this.CNPJ.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "inscicao_estadual";
-            this.Column3.HeaderText = "Inscrição Estadual";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "ds_email";
-            this.Column2.HeaderText = "Email";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "tell_contato";
-            this.Column7.HeaderText = "Telefone(1)";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "tell_contato2";
-            this.Column8.HeaderText = "Telefone(2)";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "cep";
-            this.Column4.HeaderText = "CEP";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Rua
-            // 
-            this.Rua.DataPropertyName = "rua";
-            this.Rua.HeaderText = "Rua";
-            this.Rua.Name = "Rua";
-            this.Rua.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "bairro";
-            this.Column5.HeaderText = "Bairro";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Cidade
-            // 
-            this.Cidade.DataPropertyName = "cidade";
-            this.Cidade.HeaderText = "Cidade";
-            this.Cidade.Name = "Cidade";
-            this.Cidade.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "estado";
-            this.Column6.HeaderText = "Estado";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column9
-            // 
-            this.Column9.DataPropertyName = "nmr_fornecedor";
-            this.Column9.HeaderText = "Número";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            // 
-            // alterar
-            // 
-            this.alterar.HeaderText = "";
-            this.alterar.Image = global::Cultura_Musical.Properties.Resources.lapis1;
-            this.alterar.Name = "alterar";
-            this.alterar.ReadOnly = true;
-            // 
-            // remover
-            // 
-            this.remover.HeaderText = "";
-            this.remover.Image = global::Cultura_Musical.Properties.Resources.exlcuir;
-            this.remover.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.remover.Name = "remover";
-            this.remover.ReadOnly = true;
-            this.remover.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.remover.Width = 20;
             // 
             // FrmConsultarFornecedores
             // 

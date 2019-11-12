@@ -30,6 +30,14 @@ namespace Cultura_Musical.Business
             return ok;
         }
 
+
+        public Database.Entity.tb_fornecedor BuscarFornecedor(Database.Entity.tb_fornecedor forn)
+        {
+            Database.Entity.tb_fornecedor Procura = DB.ProcurarFornecedor(forn);
+            return Procura;
+        }
+
+
         public void Remover(int id)
         {
             DB.excluir(id);

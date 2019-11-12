@@ -63,6 +63,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.lblMinimizar = new System.Windows.Forms.Label();
             this.lblFechar = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -105,12 +106,10 @@
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label17 = new System.Windows.Forms.Label();
             this.csmColaborador = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).BeginInit();
@@ -118,6 +117,7 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
@@ -134,7 +134,6 @@
             this.cmsColaboradores.SuspendLayout();
             this.cmsAgenda.SuspendLayout();
             this.csmColaborador.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -481,6 +480,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(686, 66);
             this.panel2.TabIndex = 236;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
+            this.pictureBox11.Location = new System.Drawing.Point(156, 3);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(41, 34);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 250;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
             // lblMinimizar
             // 
@@ -921,17 +931,6 @@
             this.alterarToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.alterarToolStripMenuItem.Text = "Alterar";
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(491, 92);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(59, 15);
-            this.label17.TabIndex = 246;
-            this.label17.Text = "VOLTAR";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
-            // 
             // csmColaborador
             // 
             this.csmColaborador.BackColor = System.Drawing.Color.SteelBlue;
@@ -963,22 +962,10 @@
             this.toolStripMenuItem6.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem6.Text = "Alterar";
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
-            this.pictureBox11.Location = new System.Drawing.Point(156, 3);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(41, 34);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 250;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
-            // 
             // FrmAdicionarFornecedor
             // 
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(863, 554);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -1002,6 +989,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
@@ -1018,9 +1006,7 @@
             this.cmsColaboradores.ResumeLayout(false);
             this.cmsAgenda.ResumeLayout(false);
             this.csmColaborador.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -1074,7 +1060,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.MaskedTextBox mstCNPJ;
         private System.Windows.Forms.Label lblMinimizar;
         private System.Windows.Forms.Label lblFechar;

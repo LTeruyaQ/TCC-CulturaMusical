@@ -2,9 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\Cultura Musical",
-    "\\Cultura Musical\\Telas",
-    "\\Cultura Musical\\Telas\\Agenda",
-    "\\Cultura Musical\\Telas\\Fornecedores"
+    "\\Cultura Musical\\Telas"
   ],
   "SelectedNode": "\\Cultura Musical\\Program.cs",
   "PreviewInSolutionExplorer": false

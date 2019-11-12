@@ -50,8 +50,8 @@ namespace Cultura_Musical.Business
             if (aula.dt_aula == null)
                 throw new ArgumentException("É necessario declarar a data da aula");
 
-            if (aula.hr_aula == null)
-                throw new ArgumentException("É necessario declarar o horario da aula");
+            ////if (aula.hr_aula == null)
+            ////    throw new ArgumentException("É necessario declarar o horario da aula");
 
             if (aula.tp_aula == string.Empty)
                 throw new ArgumentException("É necessario declarar o tipo da aula");
@@ -65,8 +65,8 @@ namespace Cultura_Musical.Business
             if (aula.id_sala == validar_sala.id_sala)
                 throw new ArgumentException("Esta sala já esta em uso neste horario");
 
-            if (aula.id_venda_plano == validar_contrato.id_venda_plano)
-                throw new ArgumentException("O plano em deste aluno não possibilita esta ação");
+            //if (aula.id_venda_plano == validar_contrato.id_venda_plano)
+            //    throw new ArgumentException("O plano em deste aluno não possibilita esta ação");
         }
     }
 }
