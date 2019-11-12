@@ -25,9 +25,15 @@ namespace Cultura_Musical.Business
             return colaborador;
         }
 
-        public List<Database.Entity.tb_funcionario> ListarPorCargoENome(string nome ,string cargo)
+        public List<Database.Entity.tb_funcionario> ListarPorNome(string nome )
         {
-            List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorNomeECargo(nome,cargo);
+            List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorNome(nome);
+            return colaborador;
+        }
+
+        public List<Database.Entity.tb_funcionario> ListarCargo(string cargo)
+        {
+            List<Database.Entity.tb_funcionario> colaborador = DB.ListarPorCargo(cargo);
             return colaborador;
         }
 

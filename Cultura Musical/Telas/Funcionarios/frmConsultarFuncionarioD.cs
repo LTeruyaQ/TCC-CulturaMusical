@@ -20,8 +20,7 @@ namespace Cultura_Musical.Telas.Funcionarios
 
 
             this.CarregarGrid();
-
-            dataGridView1.AutoGenerateColumns = false;
+            
         }
 
         private void CarregarGrid()
@@ -35,18 +34,18 @@ namespace Cultura_Musical.Telas.Funcionarios
         private void frmConsultarFuncionarioD_Load(object sender, EventArgs e)
         {
             
-            dataGridView1.BorderStyle = BorderStyle.None;
-            dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
-            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
-            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
-            dataGridView1.BackgroundColor = Color.White;
+            //dataGridView1.BorderStyle = BorderStyle.None;
+            //dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(238, 239, 249);
+            //dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            //dataGridView1.DefaultCellStyle.SelectionBackColor = Color.DarkTurquoise;
+            //dataGridView1.DefaultCellStyle.SelectionForeColor = Color.WhiteSmoke;
+            //dataGridView1.BackgroundColor = Color.White;
         
 
-            dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
-            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            //dataGridView1.EnableHeadersVisualStyles = false;
+            //dataGridView1.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            //dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(20, 25, 72);
+            //dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -58,12 +57,12 @@ namespace Cultura_Musical.Telas.Funcionarios
                 var func = dataGridView1.CurrentRow.DataBoundItem as
                     Database.Entity.tb_funcionario;
 
-                if (e.ColumnIndex == 18)
+                if (e.ColumnIndex == 5)
                 {
                     this.EditarFuncionario();
                 }
 
-                if (e.ColumnIndex == 19)
+                if (e.ColumnIndex == 4)
                 {
                     this.ExcluirFuncionario(func);
 
@@ -184,9 +183,9 @@ namespace Cultura_Musical.Telas.Funcionarios
         private void txtNome_TextChanged(object sender, EventArgs e)
         {
             string nome = txtNome.Text;
-            string cargo = txtCargo.Text;
+      
 
-            List<Database.Entity.tb_funcionario> funcionario = Bus.ListarPorCargoENome(nome, cargo);
+            List<Database.Entity.tb_funcionario> funcionario = Bus.ListarPorNome(nome);
 
             dataGridView1.DataSource = funcionario;
         }
@@ -274,6 +273,16 @@ namespace Cultura_Musical.Telas.Funcionarios
             Telas.FrmHomePage tela = new FrmHomePage();
             tela.Show();
             this.Hide();
+        }
+
+        private void txtCargo_TextChanged(object sender, EventArgs e)
+        {
+            string cargo = txtCargo.Text;
+
+
+            List<Database.Entity.tb_funcionario> funcionario = Bus.ListarCargo(cargo);
+
+            dataGridView1.DataSource = funcionario;
         }
     }
 }

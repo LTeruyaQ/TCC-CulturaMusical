@@ -49,6 +49,13 @@ namespace Cultura_Musical.Business
             DB.alterar(forn);
         }
 
+        public List<Database.Entity.tb_fornecedor> ListarCombo()
+        {
+            List<Database.Entity.tb_fornecedor> ok = DB.ListarCombo();
+
+            return ok;
+        }
+
         private void validacao(Database.Entity.tb_fornecedor forn)
         {
             if (forn.ds_email.Contains("@") == false || forn.ds_email == string.Empty)

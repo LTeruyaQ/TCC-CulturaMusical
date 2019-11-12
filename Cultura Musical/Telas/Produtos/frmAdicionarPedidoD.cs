@@ -15,6 +15,18 @@ namespace Cultura_Musical.Telas.Produtos
         public frmAdicionarPedidoD()
         {
             InitializeComponent();
+
+            this.CarregarCombo();
+        }
+        
+
+        private void CarregarCombo()
+        {
+            cboFornecedor.DisplayMember = nameof(Database.Entity.tb_fornecedor.nm_fornecedor);
+            cboFornecedor.ValueMember = nameof(Database.Entity.tb_fornecedor.id_fornecedor);
+
+            Business.Business_Fornecedores ListarCombo = new Business.Business_Fornecedores();
+            cboFornecedor.DataSource = ListarCombo.ListarCombo();
         }
 
         private void dtpCompra_ValueChanged(object sender, EventArgs e)

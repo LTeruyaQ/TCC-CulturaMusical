@@ -55,6 +55,12 @@ namespace Cultura_Musical.Database
             return Procura;
         }
 
+        public List<Entity.tb_fornecedor> ListarCombo()
+        {
+            List<Entity.tb_fornecedor> fornecedores = DB.tb_fornecedor.ToList();
+            return fornecedores;
+        }
+
         public void excluir(int id)
         {
             Entity.tb_fornecedor fornecedor = DB.tb_fornecedor.FirstOrDefault(t => t.id_fornecedor == id);

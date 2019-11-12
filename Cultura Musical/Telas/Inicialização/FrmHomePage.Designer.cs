@@ -80,7 +80,6 @@
             this.removerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnFalar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
@@ -97,11 +96,11 @@
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.btnOuvir = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -666,19 +665,6 @@
             this.panel4.Size = new System.Drawing.Size(19, 45);
             this.panel4.TabIndex = 98;
             // 
-            // btnFalar
-            // 
-            this.btnFalar.BackColor = System.Drawing.Color.Transparent;
-            this.btnFalar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFalar.BackgroundImage")));
-            this.btnFalar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFalar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnFalar.Location = new System.Drawing.Point(24, 183);
-            this.btnFalar.Name = "btnFalar";
-            this.btnFalar.Size = new System.Drawing.Size(34, 34);
-            this.btnFalar.TabIndex = 220;
-            this.btnFalar.UseVisualStyleBackColor = false;
-            this.btnFalar.Click += new System.EventHandler(this.btnFalar_Click);
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -702,7 +688,6 @@
             this.panel5.Controls.Add(this.pictureBox17);
             this.panel5.Controls.Add(this.pictureBox16);
             this.panel5.Controls.Add(this.pictureBox15);
-            this.panel5.Controls.Add(this.btnFalar);
             this.panel5.Controls.Add(this.pictureBox14);
             this.panel5.Controls.Add(this.pictureBox13);
             this.panel5.Controls.Add(this.pictureBox12);
@@ -867,23 +852,17 @@
             this.pictureBox11.TabStop = false;
             this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(639, 108);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(165, 20);
-            this.textBox1.TabIndex = 235;
-            // 
             // button9
             // 
             this.button9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button9.BackgroundImage")));
             this.button9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Location = new System.Drawing.Point(729, 141);
+            this.button9.Location = new System.Drawing.Point(746, 137);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(34, 34);
             this.button9.TabIndex = 234;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -891,11 +870,12 @@
             this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Location = new System.Drawing.Point(656, 141);
+            this.button10.Location = new System.Drawing.Point(688, 137);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(34, 34);
             this.button10.TabIndex = 233;
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // label13
             // 
@@ -920,6 +900,13 @@
             this.btnOuvir.TabIndex = 236;
             this.btnOuvir.UseVisualStyleBackColor = false;
             this.btnOuvir.Click += new System.EventHandler(this.btnOuvir_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(639, 108);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(165, 20);
+            this.textBox1.TabIndex = 235;
             // 
             // FrmHomePage
             // 
@@ -982,7 +969,6 @@
 
         #endregion
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnFalar;
         private System.Windows.Forms.TextBox txtFrase;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
@@ -1048,10 +1034,10 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button btnOuvir;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

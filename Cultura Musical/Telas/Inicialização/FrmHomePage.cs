@@ -1,4 +1,5 @@
 ﻿using IBM.Cloud.SDK.Core.Authentication.Iam;
+using IBM.Watson.SpeechToText.v1;
 using IBM.Watson.TextToSpeech.v1;
 using Stannieman.AudioPlayer;
 using System;
@@ -257,6 +258,41 @@ namespace Cultura_Musical.Telas
             AudioPlayer player = new AudioPlayer();
             await player.SetFileAsync("culturamusical_texto_voz.wav", "culturamusical_texto_voz.wav");
             await player.PlayAsync();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            mciSendString("open new Type waveaudio alias meuaudio", null, 0, IntPtr.Zero);
+            mciSendString("record meuaudio", null,0,IntPtr.Zero);
+
+            IamAuthenticator authenticator = new IamAuthenticator(
+                apikey: "4noTfRXdr0y33fvxNlAMiWH8oE2_DPbnBZ78sz_LvlKx");
+
+            SpeechToTextService service = new SpeechToTextService(authenticator);
+            service.SetServiceUrl("https://stream.watsonplatform.net/speech-to-text/api ");
+
+            var result = service.Recognize(
+                audio: File.ReadAllBytes("culturamusical_texto_voz.wav"),
+                contentType: "audio/wav",
+               model: "pt-BR_NarrowbandModel"
+                );
+
+            string textoIbm = result.Result.Results.First().Alternatives.First().Transcript;
+
+            txtFrase.Text = textoIbm;
+
+               
+
+        }
+
+        [System.Runtime.InteropServices.DllImport("winm.dll")]
+
+        private static extern long mciSendString(string comando, StringBuilder sb, int length, IntPtr cb);
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            mciSendString("save meuaudio cultura_voz.wav", null, 0, IntPtr.Zero);
+            mciSendString("close meuaudio", null, 0, IntPtr.Zero);
         }
     }
 }
