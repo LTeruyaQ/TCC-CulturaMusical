@@ -34,7 +34,6 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.mskTel2 = new System.Windows.Forms.MaskedTextBox();
             this.mskTel1 = new System.Windows.Forms.MaskedTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -42,7 +41,6 @@
             this.nudnumero = new System.Windows.Forms.NumericUpDown();
             this.lblNumero = new System.Windows.Forms.Label();
             this.lblEstado = new System.Windows.Forms.Label();
-            this.txtEstado = new System.Windows.Forms.TextBox();
             this.mskCEP = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -53,7 +51,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.mstCNPJ = new System.Windows.Forms.MaskedTextBox();
-            this.txtInscricao = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtRSocial = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
@@ -110,6 +107,9 @@
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
+            this.txtInscricao = new System.Windows.Forms.TextBox();
+            this.mskTel2 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).BeginInit();
@@ -178,18 +178,10 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             // 
-            // mskTel2
-            // 
-            this.mskTel2.Location = new System.Drawing.Point(107, 102);
-            this.mskTel2.Mask = "(00)0000-00000";
-            this.mskTel2.Name = "mskTel2";
-            this.mskTel2.Size = new System.Drawing.Size(181, 20);
-            this.mskTel2.TabIndex = 15;
-            // 
             // mskTel1
             // 
             this.mskTel1.Location = new System.Drawing.Point(107, 62);
-            this.mskTel1.Mask = "(00)0000-00000";
+            this.mskTel1.Mask = "(00)00000-0000";
             this.mskTel1.Name = "mskTel1";
             this.mskTel1.Size = new System.Drawing.Size(181, 20);
             this.mskTel1.TabIndex = 14;
@@ -217,10 +209,10 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.SkyBlue;
+            this.groupBox2.Controls.Add(this.cboEstado);
             this.groupBox2.Controls.Add(this.nudnumero);
             this.groupBox2.Controls.Add(this.lblNumero);
             this.groupBox2.Controls.Add(this.lblEstado);
-            this.groupBox2.Controls.Add(this.txtEstado);
             this.groupBox2.Controls.Add(this.mskCEP);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label11);
@@ -266,13 +258,6 @@
             this.lblEstado.TabIndex = 20;
             this.lblEstado.Text = "Estados:";
             this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtEstado
-            // 
-            this.txtEstado.Location = new System.Drawing.Point(81, 161);
-            this.txtEstado.Name = "txtEstado";
-            this.txtEstado.Size = new System.Drawing.Size(181, 20);
-            this.txtEstado.TabIndex = 19;
             // 
             // mskCEP
             // 
@@ -348,8 +333,8 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.SkyBlue;
-            this.groupBox3.Controls.Add(this.mstCNPJ);
             this.groupBox3.Controls.Add(this.txtInscricao);
+            this.groupBox3.Controls.Add(this.mstCNPJ);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.txtRSocial);
             this.groupBox3.Controls.Add(this.label14);
@@ -368,14 +353,6 @@
             this.mstCNPJ.Name = "mstCNPJ";
             this.mstCNPJ.Size = new System.Drawing.Size(177, 20);
             this.mstCNPJ.TabIndex = 247;
-            // 
-            // txtInscricao
-            // 
-            this.txtInscricao.Location = new System.Drawing.Point(191, 95);
-            this.txtInscricao.Mask = "000.000.000.000";
-            this.txtInscricao.Name = "txtInscricao";
-            this.txtInscricao.Size = new System.Drawing.Size(97, 20);
-            this.txtInscricao.TabIndex = 69;
             // 
             // label7
             // 
@@ -962,6 +939,59 @@
             this.toolStripMenuItem6.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem6.Text = "Alterar";
             // 
+            // cboEstado
+            // 
+            this.cboEstado.BackColor = System.Drawing.Color.SkyBlue;
+            this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO"});
+            this.cboEstado.Location = new System.Drawing.Point(83, 161);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(108, 21);
+            this.cboEstado.TabIndex = 91;
+            // 
+            // txtInscricao
+            // 
+            this.txtInscricao.Location = new System.Drawing.Point(161, 99);
+            this.txtInscricao.Name = "txtInscricao";
+            this.txtInscricao.Size = new System.Drawing.Size(143, 20);
+            this.txtInscricao.TabIndex = 248;
+            // 
+            // mskTel2
+            // 
+            this.mskTel2.Location = new System.Drawing.Point(107, 102);
+            this.mskTel2.Mask = "(00)00000-0000";
+            this.mskTel2.Name = "mskTel2";
+            this.mskTel2.Size = new System.Drawing.Size(181, 20);
+            this.mskTel2.TabIndex = 16;
+            // 
             // FrmAdicionarFornecedor
             // 
             this.BackColor = System.Drawing.Color.SkyBlue;
@@ -1029,8 +1059,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnInserir;
-        private System.Windows.Forms.MaskedTextBox txtInscricao;
-        private System.Windows.Forms.MaskedTextBox mskTel2;
         private System.Windows.Forms.MaskedTextBox mskTel1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label12;
@@ -1064,7 +1092,6 @@
         private System.Windows.Forms.Label lblMinimizar;
         private System.Windows.Forms.Label lblFechar;
         private System.Windows.Forms.Label lblEstado;
-        private System.Windows.Forms.TextBox txtEstado;
         private System.Windows.Forms.NumericUpDown nudnumero;
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.ContextMenuStrip cmsAgenda;
@@ -1092,5 +1119,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.ComboBox cboEstado;
+        private System.Windows.Forms.TextBox txtInscricao;
+        private System.Windows.Forms.MaskedTextBox mskTel2;
     }
 }
