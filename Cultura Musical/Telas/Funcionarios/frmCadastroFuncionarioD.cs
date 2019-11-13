@@ -54,7 +54,7 @@ namespace Cultura_Musical.Telas.Funcionarios
                 funcionario.ds_cidade = txtCidade.Text;
                 funcionario.ds_complemento = txtComplemento.Text;
                 funcionario.ds_bairro = txtBairro.Text;
-                funcionario.id_beneficio = Beneficios.id_beneficio;               
+                funcionario.id_beneficio = Beneficios.id_beneficio;                
                 funcionario.nmr_funcionario = Convert.ToInt32(nudNumero.Value);
                 funcionario.ft_funcionario = this.LerImagem();
              
@@ -84,11 +84,13 @@ namespace Cultura_Musical.Telas.Funcionarios
                   MessageBoxButtons.OK,
                   MessageBoxIcon.Information);
 
-                this.LimparCampos();
-
                 string assunto = "Confirmação de Cadastro - Cultura";
                 string emailPara = txtEmail.Text;
                 string mensagem = "Parabéns, você é o novo funcionário da empresa Cultura Musical. Seja bem vindo!";
+
+                this.LimparCampos(); 
+
+                
 
                 API_s.GmailSender_API gmail = new API_s.GmailSender_API();
                 gmail.ConfigurarCredenciais("stormproject19@gmail.com", "tempestade123");
