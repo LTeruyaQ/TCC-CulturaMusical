@@ -41,7 +41,7 @@ namespace Cultura_Musical.Telas
 
             catch (ArgumentException ex)
             {
-                MessageBox.Show(ex.Message);
+                lblaviso.Text = ex.Message;
             }
 
             catch (Exception)
@@ -68,6 +68,11 @@ namespace Cultura_Musical.Telas
             {
                 Application.Exit();
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
