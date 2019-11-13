@@ -34,10 +34,12 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.mskTel2 = new System.Windows.Forms.MaskedTextBox();
             this.mskTel1 = new System.Windows.Forms.MaskedTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
             this.nudnumero = new System.Windows.Forms.NumericUpDown();
             this.lblNumero = new System.Windows.Forms.Label();
             this.lblEstado = new System.Windows.Forms.Label();
@@ -50,6 +52,7 @@
             this.txtRua = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txtInscricao = new System.Windows.Forms.TextBox();
             this.mstCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtRSocial = new System.Windows.Forms.TextBox();
@@ -107,9 +110,6 @@
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cboEstado = new System.Windows.Forms.ComboBox();
-            this.txtInscricao = new System.Windows.Forms.TextBox();
-            this.mskTel2 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).BeginInit();
@@ -178,6 +178,14 @@
             this.groupBox1.TabIndex = 14;
             this.groupBox1.TabStop = false;
             // 
+            // mskTel2
+            // 
+            this.mskTel2.Location = new System.Drawing.Point(107, 102);
+            this.mskTel2.Mask = "(00)00000-0000";
+            this.mskTel2.Name = "mskTel2";
+            this.mskTel2.Size = new System.Drawing.Size(181, 20);
+            this.mskTel2.TabIndex = 16;
+            // 
             // mskTel1
             // 
             this.mskTel1.Location = new System.Drawing.Point(107, 62);
@@ -227,6 +235,44 @@
             this.groupBox2.TabIndex = 15;
             this.groupBox2.TabStop = false;
             // 
+            // cboEstado
+            // 
+            this.cboEstado.BackColor = System.Drawing.Color.SkyBlue;
+            this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Items.AddRange(new object[] {
+            "AC",
+            "AL",
+            "AP",
+            "AM",
+            "BA",
+            "CE",
+            "DF",
+            "ES",
+            "GO",
+            "MA",
+            "MT",
+            "MS",
+            "MG",
+            "PA",
+            "PB",
+            "PR",
+            "PE",
+            "PI",
+            "RJ",
+            "RN",
+            "RS",
+            "RO",
+            "RR",
+            "SC",
+            "SP",
+            "SE",
+            "TO"});
+            this.cboEstado.Location = new System.Drawing.Point(83, 161);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(108, 21);
+            this.cboEstado.TabIndex = 91;
+            // 
             // nudnumero
             // 
             this.nudnumero.Location = new System.Drawing.Point(81, 191);
@@ -256,7 +302,7 @@
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(68, 18);
             this.lblEstado.TabIndex = 20;
-            this.lblEstado.Text = "Estados:";
+            this.lblEstado.Text = "]";
             this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mskCEP
@@ -345,6 +391,13 @@
             this.groupBox3.Size = new System.Drawing.Size(321, 155);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
+            // 
+            // txtInscricao
+            // 
+            this.txtInscricao.Location = new System.Drawing.Point(161, 99);
+            this.txtInscricao.Name = "txtInscricao";
+            this.txtInscricao.Size = new System.Drawing.Size(143, 20);
+            this.txtInscricao.TabIndex = 248;
             // 
             // mstCNPJ
             // 
@@ -938,59 +991,6 @@
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem6.Text = "Alterar";
-            // 
-            // cboEstado
-            // 
-            this.cboEstado.BackColor = System.Drawing.Color.SkyBlue;
-            this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstado.FormattingEnabled = true;
-            this.cboEstado.Items.AddRange(new object[] {
-            "AC",
-            "AL",
-            "AP",
-            "AM",
-            "BA",
-            "CE",
-            "DF",
-            "ES",
-            "GO",
-            "MA",
-            "MT",
-            "MS",
-            "MG",
-            "PA",
-            "PB",
-            "PR",
-            "PE",
-            "PI",
-            "RJ",
-            "RN",
-            "RS",
-            "RO",
-            "RR",
-            "SC",
-            "SP",
-            "SE",
-            "TO"});
-            this.cboEstado.Location = new System.Drawing.Point(83, 161);
-            this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(108, 21);
-            this.cboEstado.TabIndex = 91;
-            // 
-            // txtInscricao
-            // 
-            this.txtInscricao.Location = new System.Drawing.Point(161, 99);
-            this.txtInscricao.Name = "txtInscricao";
-            this.txtInscricao.Size = new System.Drawing.Size(143, 20);
-            this.txtInscricao.TabIndex = 248;
-            // 
-            // mskTel2
-            // 
-            this.mskTel2.Location = new System.Drawing.Point(107, 102);
-            this.mskTel2.Mask = "(00)00000-0000";
-            this.mskTel2.Name = "mskTel2";
-            this.mskTel2.Size = new System.Drawing.Size(181, 20);
-            this.mskTel2.TabIndex = 16;
             // 
             // FrmAdicionarFornecedor
             // 

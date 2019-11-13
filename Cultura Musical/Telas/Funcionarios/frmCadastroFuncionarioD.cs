@@ -18,7 +18,7 @@ namespace Cultura_Musical.Telas.Funcionarios
             InitializeComponent();
         }
 
-        string caminho;
+
 
         Business.Business_Funcionarios colaboradorBus = new Business.Business_Funcionarios();
         Business.Business_Jornada JornadaBus = new Business.Business_Jornada();
@@ -80,13 +80,23 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 JornadaBus.InserirJornada(Jornada);
 
-                MessageBox.Show("Funcionário cadastrado com sucesso.");
-
                 DialogResult r = MessageBox.Show("Funcionário cadastrado com sucesso.", "Cultura Musical",
                   MessageBoxButtons.OK,
                   MessageBoxIcon.Information);
 
                 this.LimparCampos();
+
+                string assunto = "Confirmação de Cadastro - Cultura";
+                string emailPara = txtEmail.Text;
+                string mensagem = "Parabéns, você é o novo funcionário da empresa Cultura Musical. Seja bem vindo!";
+
+                API_s.GmailSender_API gmail = new API_s.GmailSender_API();
+                gmail.ConfigurarCredenciais("stormproject19@gmail.com", "tempestade123");
+                gmail.Enviar(emailPara,assunto, mensagem);
+
+                
+
+
             }
 
             catch (ArgumentException ex)
@@ -361,6 +371,17 @@ namespace Cultura_Musical.Telas.Funcionarios
         private void txtEstado_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void picFoto_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog janela = new OpenFileDialog();
+            DialogResult resposta = janela.ShowDialog();
+
+            if(resposta == DialogResult.OK)
+            {
+                picFoto.ImageLocation = janela.FileName;
+            }
         }
     }
 }
