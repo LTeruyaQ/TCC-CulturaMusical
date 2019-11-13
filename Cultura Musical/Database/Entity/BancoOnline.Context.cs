@@ -44,8 +44,10 @@ namespace Cultura_Musical.Database.Entity
         public virtual DbSet<tb_plano> tb_plano { get; set; }
         public virtual DbSet<tb_ponto> tb_ponto { get; set; }
         public virtual DbSet<tb_produto> tb_produto { get; set; }
+        public virtual DbSet<tb_prolabore> tb_prolabore { get; set; }
         public virtual DbSet<tb_sala> tb_sala { get; set; }
         public virtual DbSet<tb_tipo_conta> tb_tipo_conta { get; set; }
         public virtual DbSet<tb_venda_plano> tb_venda_plano { get; set; }
+        public virtual DbSet<fluxo_de_caixa> fluxo_de_caixa { get; set; }
     }
 }

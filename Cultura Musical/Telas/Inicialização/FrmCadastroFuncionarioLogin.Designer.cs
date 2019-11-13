@@ -42,6 +42,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.chkADM = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,10 +64,11 @@
             this.txtSenha.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtSenha.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtSenha.Location = new System.Drawing.Point(201, 156);
+            this.txtSenha.Location = new System.Drawing.Point(201, 127);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(141, 26);
             this.txtSenha.TabIndex = 8;
+            this.txtSenha.UseSystemPasswordChar = true;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // txtUsuario
@@ -86,7 +88,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(126, 161);
+            this.label2.Location = new System.Drawing.Point(126, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 16);
             this.label2.TabIndex = 6;
@@ -112,9 +114,9 @@
             this.btnConfirmar_Login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnConfirmar_Login.Font = new System.Drawing.Font("Stencil", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar_Login.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnConfirmar_Login.Location = new System.Drawing.Point(221, 257);
+            this.btnConfirmar_Login.Location = new System.Drawing.Point(201, 233);
             this.btnConfirmar_Login.Name = "btnConfirmar_Login";
-            this.btnConfirmar_Login.Size = new System.Drawing.Size(104, 32);
+            this.btnConfirmar_Login.Size = new System.Drawing.Size(139, 33);
             this.btnConfirmar_Login.TabIndex = 10;
             this.btnConfirmar_Login.Text = "Confirmar";
             this.btnConfirmar_Login.UseVisualStyleBackColor = false;
@@ -125,10 +127,11 @@
             this.txtconfirmar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtconfirmar.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtconfirmar.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtconfirmar.Location = new System.Drawing.Point(201, 205);
+            this.txtconfirmar.Location = new System.Drawing.Point(201, 159);
             this.txtconfirmar.Name = "txtconfirmar";
             this.txtconfirmar.Size = new System.Drawing.Size(141, 26);
             this.txtconfirmar.TabIndex = 12;
+            this.txtconfirmar.UseSystemPasswordChar = true;
             this.txtconfirmar.TextChanged += new System.EventHandler(this.txtconfirmar_TextChanged);
             // 
             // label4
@@ -137,7 +140,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label4.Location = new System.Drawing.Point(65, 210);
+            this.label4.Location = new System.Drawing.Point(65, 164);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(130, 16);
             this.label4.TabIndex = 11;
@@ -216,12 +219,23 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Cadastro";
             // 
+            // chkADM
+            // 
+            this.chkADM.AutoSize = true;
+            this.chkADM.Location = new System.Drawing.Point(185, 200);
+            this.chkADM.Name = "chkADM";
+            this.chkADM.Size = new System.Drawing.Size(166, 17);
+            this.chkADM.TabIndex = 109;
+            this.chkADM.Text = "Este usuario é adiministrador?";
+            this.chkADM.UseVisualStyleBackColor = true;
+            // 
             // FrmCadastroFuncionarioLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(494, 320);
+            this.ClientSize = new System.Drawing.Size(494, 291);
+            this.Controls.Add(this.chkADM);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblMinimizar);
             this.Controls.Add(this.lblFechar);
@@ -260,5 +274,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckBox chkADM;
     }
 }

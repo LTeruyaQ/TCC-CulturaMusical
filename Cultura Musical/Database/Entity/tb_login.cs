@@ -23,11 +23,9 @@ namespace Cultura_Musical.Database.Entity
         public int id_login { get; set; }
         public string nm_usuario { get; set; }
         public string sen_usuario { get; set; }
-        public System.DateTime dt_login { get; set; }
-        public int nv_login { get; set; }
-        public int id_funcionario { get; set; }
+        public Nullable<bool> ds_admin { get; set; }
+        public Nullable<System.DateTime> dt_login { get; set; }
     
-        public virtual tb_funcionario tb_funcionario { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_prolabore> tb_prolabore { get; set; }
     }

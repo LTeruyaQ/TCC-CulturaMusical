@@ -19,7 +19,6 @@ namespace Cultura_Musical.Database.Entity
         {
             this.tb_aula = new HashSet<tb_aula>();
             this.tb_folha_pagamento = new HashSet<tb_folha_pagamento>();
-            this.tb_login = new HashSet<tb_login>();
             this.tb_jornada = new HashSet<tb_jornada>();
             this.tb_ponto = new HashSet<tb_ponto>();
         }
@@ -51,8 +50,6 @@ namespace Cultura_Musical.Database.Entity
         public virtual tb_beneficio tb_beneficio { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_folha_pagamento> tb_folha_pagamento { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tb_login> tb_login { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<tb_jornada> tb_jornada { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
