@@ -23,12 +23,24 @@ namespace Cultura_Musical.Telas.Funcionarios
             
         }
 
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+            string nome = txtNome.Text;
+
+
+            List<Database.Entity.tb_funcionario> funcionario = Bus.ListarPorNome(nome);
+            dataGridView1.AutoGenerateColumns = false;
+            dataGridView1.DataSource = funcionario;
+        }
+
         private void CarregarGrid()
         {
             List<Database.Entity.tb_funcionario> func = Bus.ListarTudo();
 
-            dataGridView1.DataSource = func;
             dataGridView1.AutoGenerateColumns = false;
+
+            dataGridView1.DataSource = func;
+            
         }
         
         private void frmConsultarFuncionarioD_Load(object sender, EventArgs e)
@@ -180,15 +192,7 @@ namespace Cultura_Musical.Telas.Funcionarios
 
         }
 
-        private void txtNome_TextChanged(object sender, EventArgs e)
-        {
-            string nome = txtNome.Text;
       
-
-            List<Database.Entity.tb_funcionario> funcionario = Bus.ListarPorNome(nome);
-
-            dataGridView1.DataSource = funcionario;
-        }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {

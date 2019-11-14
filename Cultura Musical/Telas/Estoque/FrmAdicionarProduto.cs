@@ -133,5 +133,10 @@ namespace Cultura_Musical.Telas.Produtos
         {
 
         }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
