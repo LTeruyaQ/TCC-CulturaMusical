@@ -383,3 +383,10 @@ C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical6\Cultura Musical\bin\Release
 C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical6\Cultura Musical\bin\Release\System.Diagnostics.DiagnosticSource.xml
 C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical6\Cultura Musical\bin\Release\System.Net.Http.Formatting.xml
 C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical6\Cultura Musical\obj\Release\Cultura Musical.csproj.CopyComplete
+C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical6\Cultura Musical\bin\Release\Microsoft.IdentityModel.Logging.dll
+C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical6\Cultura Musical\bin\Release\Microsoft.IdentityModel.Tokens.dll
+C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical6\Cultura Musical\bin\Release\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical6\Cultura Musical\bin\Release\Twilio.dll
+C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical6\Cultura Musical\bin\Release\Microsoft.IdentityModel.Tokens.xml
+C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical6\Cultura Musical\bin\Release\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\OtoVictor\Source\Repos\tcc-cultura-musical6\Cultura Musical\bin\Release\Twilio.xml

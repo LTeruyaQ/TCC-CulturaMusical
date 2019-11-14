@@ -239,6 +239,7 @@
             // 
             this.cboEstado.BackColor = System.Drawing.Color.SkyBlue;
             this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboEstado.FormattingEnabled = true;
             this.cboEstado.Items.AddRange(new object[] {
             "AC",
@@ -270,7 +271,7 @@
             "TO"});
             this.cboEstado.Location = new System.Drawing.Point(83, 161);
             this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(108, 21);
+            this.cboEstado.Size = new System.Drawing.Size(99, 21);
             this.cboEstado.TabIndex = 91;
             // 
             // nudnumero
@@ -302,7 +303,7 @@
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(68, 18);
             this.lblEstado.TabIndex = 20;
-            this.lblEstado.Text = "]";
+            this.lblEstado.Text = "Estado";
             this.lblEstado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // mskCEP
@@ -402,7 +403,7 @@
             // mstCNPJ
             // 
             this.mstCNPJ.Location = new System.Drawing.Point(111, 26);
-            this.mstCNPJ.Mask = "000000000/0000-00";
+            this.mstCNPJ.Mask = "00.000.000/0000-00";
             this.mstCNPJ.Name = "mstCNPJ";
             this.mstCNPJ.Size = new System.Drawing.Size(177, 20);
             this.mstCNPJ.TabIndex = 247;
@@ -500,7 +501,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.lblMinimizar);
             this.panel2.Controls.Add(this.lblFechar);
             this.panel2.Controls.Add(this.label5);
@@ -514,7 +514,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
-            this.pictureBox11.Location = new System.Drawing.Point(156, 3);
+            this.pictureBox11.Location = new System.Drawing.Point(4, 6);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(41, 34);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -561,6 +561,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox11);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pictureBox10);

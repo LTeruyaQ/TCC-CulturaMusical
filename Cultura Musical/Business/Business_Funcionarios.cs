@@ -77,7 +77,7 @@ namespace Cultura_Musical.Business
                 throw new ArgumentException("O campo de Telefone está vazio");
             }
 
-            else if (funcionario.ds_telefone.Length != 14)
+            else if (funcionario.ds_telefone.Length > 18)
             {
                 throw new ArgumentException("O campo de Telefone está incorreto");
             }
@@ -99,10 +99,7 @@ namespace Cultura_Musical.Business
             }
 
 
-            else if (funcionario.ds_cpf.Length != 12)
-            {
-                throw new ArgumentException("O campo de CPF esta incorreto");
-            }
+
 
             else if (funcionario.dt_nascimento == DateTime.Today)
             {

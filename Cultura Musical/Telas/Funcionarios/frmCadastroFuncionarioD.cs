@@ -8,6 +8,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Twilio;
+using Twilio.Rest.Api.V2010.Account;
+using Twilio.Types;
 
 namespace Cultura_Musical.Telas.Funcionarios
 {
@@ -80,25 +83,26 @@ namespace Cultura_Musical.Telas.Funcionarios
 
                 JornadaBus.InserirJornada(Jornada);
 
-                DialogResult r = MessageBox.Show("Funcionário cadastrado com sucesso.", "Cultura Musical",
-                  MessageBoxButtons.OK,
-                  MessageBoxIcon.Information);
-
-                this.LimparCampos();
-
                 string assunto = "Confirmação de Cadastro - Cultura";
                 string emailPara = txtEmail.Text;
                 string mensagem = "Parabéns, você é o novo funcionário da empresa Cultura Musical. Seja bem vindo!";
 
                 API_s.GmailSender_API gmail = new API_s.GmailSender_API();
                 gmail.ConfigurarCredenciais("stormproject19@gmail.com", "tempestade123");
-                gmail.Enviar(emailPara,assunto, mensagem);
+                gmail.Enviar(emailPara, assunto, mensagem);
 
-                
+                DialogResult r = MessageBox.Show("Funcionário cadastrado com sucesso.", "Cultura Musical",
+                  MessageBoxButtons.OK,
+                  MessageBoxIcon.Information);
+      
+                this.LimparCampos();
 
+                string telPara = txtTelefone.Text;
+                string sms = "Parabéns, você é o novo funcionário da empresa Cultura Musical. Seja bem vindo!";
+
+                //this.EnviarSMS(telPara, mensagem);
 
             }
-
             catch (ArgumentException ex)
             {
                 MessageBox.Show(ex.Message);
@@ -151,6 +155,18 @@ namespace Cultura_Musical.Telas.Funcionarios
             txtRua.Text = resp.logradouro;
             txtCidade.Text = resp.localidade;
             txtBairro.Text = resp.bairro;
+        }
+
+        private void EnviarSMS(string telPara, string mensagem)
+        {
+            telPara = telPara.Replace("(", "").Replace(")", "").Replace(" ", "").Replace("-", "");
+
+            TwilioClient.Init("AC1c6753c65cef738313909039bc459e88", "80f072ff1d038d228d6ad2d38d9701f3");
+
+            var message = MessageResource.Create(
+            new PhoneNumber(telPara),
+            from: new PhoneNumber("+12565107596"),
+            body: mensagem);
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

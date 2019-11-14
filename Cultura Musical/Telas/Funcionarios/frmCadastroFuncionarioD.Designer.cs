@@ -388,16 +388,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(333, 34);
+            this.label3.Location = new System.Drawing.Point(285, 48);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 15);
             this.label3.TabIndex = 39;
-            this.label3.Text = "Data de Inicio:";
+            this.label3.Text = "Data de Início:";
             // 
             // dtpContratacao
             // 
             this.dtpContratacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpContratacao.Location = new System.Drawing.Point(336, 50);
+            this.dtpContratacao.Location = new System.Drawing.Point(376, 48);
             this.dtpContratacao.Name = "dtpContratacao";
             this.dtpContratacao.Size = new System.Drawing.Size(100, 21);
             this.dtpContratacao.TabIndex = 56;
@@ -460,7 +460,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(16, 55);
+            this.label12.Location = new System.Drawing.Point(16, 35);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(114, 15);
             this.label12.TabIndex = 90;
@@ -494,7 +494,7 @@
             // dtpEntrada
             // 
             this.dtpEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpEntrada.Location = new System.Drawing.Point(155, 49);
+            this.dtpEntrada.Location = new System.Drawing.Point(155, 35);
             this.dtpEntrada.Name = "dtpEntrada";
             this.dtpEntrada.Size = new System.Drawing.Size(100, 21);
             this.dtpEntrada.TabIndex = 92;
@@ -502,7 +502,7 @@
             // dtpAlmoco
             // 
             this.dtpAlmoco.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dtpAlmoco.Location = new System.Drawing.Point(416, 49);
+            this.dtpAlmoco.Location = new System.Drawing.Point(416, 35);
             this.dtpAlmoco.Name = "dtpAlmoco";
             this.dtpAlmoco.Size = new System.Drawing.Size(101, 21);
             this.dtpAlmoco.TabIndex = 93;
@@ -519,7 +519,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(273, 55);
+            this.label11.Location = new System.Drawing.Point(274, 35);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(112, 15);
             this.label11.TabIndex = 89;
@@ -565,9 +565,9 @@
             // txtMascara
             // 
             this.txtMascara.Location = new System.Drawing.Point(286, 258);
-            this.txtMascara.Mask = "000000000/00";
+            this.txtMascara.Mask = "000.000.000/00";
             this.txtMascara.Name = "txtMascara";
-            this.txtMascara.Size = new System.Drawing.Size(109, 22);
+            this.txtMascara.Size = new System.Drawing.Size(118, 22);
             this.txtMascara.TabIndex = 67;
             // 
             // label4
@@ -583,9 +583,9 @@
             // picFoto
             // 
             this.picFoto.Image = global::Cultura_Musical.Properties.Resources.user;
-            this.picFoto.Location = new System.Drawing.Point(446, 79);
+            this.picFoto.Location = new System.Drawing.Point(438, 80);
             this.picFoto.Name = "picFoto";
-            this.picFoto.Size = new System.Drawing.Size(100, 64);
+            this.picFoto.Size = new System.Drawing.Size(117, 104);
             this.picFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFoto.TabIndex = 91;
             this.picFoto.TabStop = false;
@@ -674,9 +674,9 @@
             // txtTelefone
             // 
             this.txtTelefone.Location = new System.Drawing.Point(286, 213);
-            this.txtTelefone.Mask = "(99)00000-0000";
+            this.txtTelefone.Mask = "+55(99)00000-0000";
             this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(100, 22);
+            this.txtTelefone.Size = new System.Drawing.Size(118, 22);
             this.txtTelefone.TabIndex = 85;
             // 
             // cboGenero
