@@ -43,6 +43,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblaviso = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +55,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(112, 171);
+            this.label1.Location = new System.Drawing.Point(115, 154);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 0;
@@ -65,7 +67,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(125, 227);
+            this.label2.Location = new System.Drawing.Point(128, 210);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 16);
             this.label2.TabIndex = 1;
@@ -76,7 +78,7 @@
             this.txtSenha.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtSenha.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtSenha.Location = new System.Drawing.Point(185, 222);
+            this.txtSenha.Location = new System.Drawing.Point(188, 205);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(129, 26);
             this.txtSenha.TabIndex = 3;
@@ -99,7 +101,7 @@
             this.txtUsuario.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtUsuario.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtUsuario.Location = new System.Drawing.Point(185, 166);
+            this.txtUsuario.Location = new System.Drawing.Point(188, 149);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(129, 26);
             this.txtUsuario.TabIndex = 2;
@@ -124,7 +126,7 @@
             this.linkLabel2.BackColor = System.Drawing.Color.Transparent;
             this.linkLabel2.ForeColor = System.Drawing.Color.DarkBlue;
             this.linkLabel2.LinkColor = System.Drawing.Color.Blue;
-            this.linkLabel2.Location = new System.Drawing.Point(201, 263);
+            this.linkLabel2.Location = new System.Drawing.Point(205, 249);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(88, 13);
             this.linkLabel2.TabIndex = 8;
@@ -214,12 +216,34 @@
             this.pictureBox1.TabIndex = 108;
             this.pictureBox1.TabStop = false;
             // 
+            // lblaviso
+            // 
+            this.lblaviso.AutoSize = true;
+            this.lblaviso.ForeColor = System.Drawing.Color.DarkRed;
+            this.lblaviso.Location = new System.Drawing.Point(174, 273);
+            this.lblaviso.Name = "lblaviso";
+            this.lblaviso.Size = new System.Drawing.Size(11, 13);
+            this.lblaviso.TabIndex = 109;
+            this.lblaviso.Text = "*";
+            this.lblaviso.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(334, 313);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 110;
+            this.label7.Text = "label7";
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(467, 351);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lblaviso);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblMinimizar);
@@ -260,5 +284,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblaviso;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -26,30 +26,30 @@ namespace Cultura_Musical.Telas
 
         private void btnConfirmar_Login_Click_1(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    string nome  = txtUsuario.Text;
-            //    string Senha = txtSenha.Text;
-
-            //    Bus.login(nome, Senha);
-            //}
-
-            //catch (ArgumentException ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
-
-            //catch (Exception)
-            //{
-            //    MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
-            //}
-
-            if (txtUsuario.Text == "culturamusical" && txtSenha.Text == "1234")
+            try
             {
+                string nome  = txtUsuario.Text;
+                string Senha = txtSenha.Text;
+
+                Bus.login(nome, Senha);
+
+              
                 Telas.FrmHomePage tela = new FrmHomePage();
                 tela.Show();
                 this.Hide();
             }
+
+            catch (ArgumentException ex)
+            {
+                lblaviso.Text = ex.Message;
+            }
+
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
+            }
+
+            
 
         }
 
@@ -68,6 +68,11 @@ namespace Cultura_Musical.Telas
             {
                 Application.Exit();
             }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

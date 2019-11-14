@@ -16,16 +16,22 @@ namespace Cultura_Musical.Telas.Inicialização
         {
             InitializeComponent();
         }
+        Business.Business_Inicialização bus = new Business.Business_Inicialização();
+
 
         private void btnConfirmar_Login_Click(object sender, EventArgs e)
         {
             try
             {
                 Database.Entity.tb_login cadastro = new Database.Entity.tb_login();
+
+
                 cadastro.nm_usuario = txtUsuario.Text;
                 cadastro.sen_usuario = txtSenha.Text;
+                cadastro.ds_admin = chkADM.Checked;
+                cadastro.dt_login = DateTime.Now.Date;
                 string conf = txtconfirmar.Text;
-                Business.Business_Inicialização bus = new Business.Business_Inicialização();
+                
                 bus.Cadastro(cadastro, conf);
 
                 MessageBox.Show("Funcionário cadastrado com sucesso!");

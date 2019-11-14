@@ -83,6 +83,7 @@
     <Reference Include="NAudio.Vorbis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\NAudio.Vorbis.1.0.0.0\lib\net35\NAudio.Vorbis.dll</HintPath>
     </Reference>
+    <Reference Include="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -241,76 +242,76 @@
     </Compile>
     <Compile Include="Database\Database_Financeiro.cs" />
     <Compile Include="Database\Entity\fluxo_de_caixa.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_agenda_estudio.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_aula.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_beneficio.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_cliente.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_colaborador.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_compra.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_conta.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_estado.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_estoque.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_financeiro.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_folha_pagamento.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_fornecedor.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_funcionario.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_holerite.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_jornada.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_login.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_plano.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_ponto.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_produto.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_prolabore.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_sala.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_tipo_conta.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_venda_plano.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Model\ModelosExtendidos.cs" />
     <Compile Include="Interfaces\Interface_Crud.cs" />
