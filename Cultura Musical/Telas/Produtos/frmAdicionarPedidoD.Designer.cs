@@ -125,7 +125,7 @@
             this.btnInserir.FlatAppearance.BorderSize = 20;
             this.btnInserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInserir.ForeColor = System.Drawing.Color.Black;
-            this.btnInserir.Location = new System.Drawing.Point(409, 444);
+            this.btnInserir.Location = new System.Drawing.Point(400, 459);
             this.btnInserir.Name = "btnInserir";
             this.btnInserir.Size = new System.Drawing.Size(321, 73);
             this.btnInserir.TabIndex = 20;
@@ -142,9 +142,9 @@
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.nudQtd);
             this.groupBox2.Controls.Add(this.nudPreco);
-            this.groupBox2.Location = new System.Drawing.Point(562, 141);
+            this.groupBox2.Location = new System.Drawing.Point(560, 162);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(321, 297);
+            this.groupBox2.Size = new System.Drawing.Size(321, 260);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             // 
@@ -212,9 +212,9 @@
             this.groupBox1.Controls.Add(this.dtpCompra);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Location = new System.Drawing.Point(235, 141);
+            this.groupBox1.Location = new System.Drawing.Point(233, 162);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(321, 297);
+            this.groupBox1.Size = new System.Drawing.Size(321, 260);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             // 
@@ -328,7 +328,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.lblMinimizar);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.lblFechar);
@@ -336,13 +335,13 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(192, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(771, 66);
+            this.panel2.Size = new System.Drawing.Size(716, 66);
             this.panel2.TabIndex = 25;
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
-            this.pictureBox11.Location = new System.Drawing.Point(140, 3);
+            this.pictureBox11.Location = new System.Drawing.Point(0, 0);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(35, 33);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -355,7 +354,7 @@
             this.lblMinimizar.AutoSize = true;
             this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMinimizar.Location = new System.Drawing.Point(726, -3);
+            this.lblMinimizar.Location = new System.Drawing.Point(671, -3);
             this.lblMinimizar.Name = "lblMinimizar";
             this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
             this.lblMinimizar.TabIndex = 101;
@@ -367,7 +366,7 @@
             this.label10.BackColor = System.Drawing.Color.Black;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(209, 2);
+            this.label10.Location = new System.Drawing.Point(222, 2);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(400, 64);
             this.label10.TabIndex = 7;
@@ -379,7 +378,7 @@
             this.lblFechar.AutoSize = true;
             this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechar.ForeColor = System.Drawing.Color.Red;
-            this.lblFechar.Location = new System.Drawing.Point(746, 2);
+            this.lblFechar.Location = new System.Drawing.Point(691, 2);
             this.lblFechar.Name = "lblFechar";
             this.lblFechar.Size = new System.Drawing.Size(20, 19);
             this.lblFechar.TabIndex = 100;
@@ -389,6 +388,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox11);
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.pictureBox8);
@@ -416,7 +416,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::Cultura_Musical.Properties.Resources.temporary_offer;
-            this.pictureBox10.Location = new System.Drawing.Point(28, 366);
+            this.pictureBox10.Location = new System.Drawing.Point(28, 377);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(33, 24);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -426,7 +426,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Cultura_Musical.Properties.Resources.man;
-            this.pictureBox9.Location = new System.Drawing.Point(29, 166);
+            this.pictureBox9.Location = new System.Drawing.Point(29, 184);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(32, 21);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -436,7 +436,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::Cultura_Musical.Properties.Resources.bow;
-            this.pictureBox8.Location = new System.Drawing.Point(31, 213);
+            this.pictureBox8.Location = new System.Drawing.Point(31, 231);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(33, 25);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -446,7 +446,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Cultura_Musical.Properties.Resources.calendar;
-            this.pictureBox7.Location = new System.Drawing.Point(31, 124);
+            this.pictureBox7.Location = new System.Drawing.Point(31, 142);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(32, 24);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -456,7 +456,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Cultura_Musical.Properties.Resources.gift_card;
-            this.pictureBox2.Location = new System.Drawing.Point(28, 268);
+            this.pictureBox2.Location = new System.Drawing.Point(28, 279);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(32, 21);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -466,7 +466,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Cultura_Musical.Properties.Resources.barcode;
-            this.pictureBox6.Location = new System.Drawing.Point(29, 318);
+            this.pictureBox6.Location = new System.Drawing.Point(29, 329);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(31, 22);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -476,7 +476,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Cultura_Musical.Properties.Resources.price;
-            this.pictureBox5.Location = new System.Drawing.Point(29, 471);
+            this.pictureBox5.Location = new System.Drawing.Point(29, 482);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(26, 22);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -486,7 +486,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Cultura_Musical.Properties.Resources.tag;
-            this.pictureBox4.Location = new System.Drawing.Point(29, 417);
+            this.pictureBox4.Location = new System.Drawing.Point(29, 428);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(26, 25);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -500,7 +500,7 @@
             this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVendas.ForeColor = System.Drawing.Color.White;
-            this.btnVendas.Location = new System.Drawing.Point(92, 461);
+            this.btnVendas.Location = new System.Drawing.Point(92, 472);
             this.btnVendas.Name = "btnVendas";
             this.btnVendas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnVendas.Size = new System.Drawing.Size(86, 32);
@@ -547,7 +547,7 @@
             this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdutos.ForeColor = System.Drawing.Color.White;
-            this.btnProdutos.Location = new System.Drawing.Point(28, 410);
+            this.btnProdutos.Location = new System.Drawing.Point(28, 421);
             this.btnProdutos.Name = "btnProdutos";
             this.btnProdutos.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnProdutos.Size = new System.Drawing.Size(150, 32);
@@ -593,7 +593,7 @@
             this.btnLogistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogistica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogistica.ForeColor = System.Drawing.Color.White;
-            this.btnLogistica.Location = new System.Drawing.Point(28, 358);
+            this.btnLogistica.Location = new System.Drawing.Point(28, 369);
             this.btnLogistica.Name = "btnLogistica";
             this.btnLogistica.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnLogistica.Size = new System.Drawing.Size(153, 32);
@@ -608,7 +608,7 @@
             this.btnHolerite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHolerite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHolerite.ForeColor = System.Drawing.Color.White;
-            this.btnHolerite.Location = new System.Drawing.Point(92, 308);
+            this.btnHolerite.Location = new System.Drawing.Point(92, 319);
             this.btnHolerite.Name = "btnHolerite";
             this.btnHolerite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnHolerite.Size = new System.Drawing.Size(89, 32);
@@ -624,7 +624,7 @@
             this.btnCRM.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCRM.ForeColor = System.Drawing.Color.White;
             this.btnCRM.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCRM.Location = new System.Drawing.Point(28, 206);
+            this.btnCRM.Location = new System.Drawing.Point(28, 224);
             this.btnCRM.Name = "btnCRM";
             this.btnCRM.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnCRM.Size = new System.Drawing.Size(150, 32);
@@ -640,7 +640,7 @@
             this.btnFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFornecedores.ForeColor = System.Drawing.Color.White;
-            this.btnFornecedores.Location = new System.Drawing.Point(76, 257);
+            this.btnFornecedores.Location = new System.Drawing.Point(76, 268);
             this.btnFornecedores.Name = "btnFornecedores";
             this.btnFornecedores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnFornecedores.Size = new System.Drawing.Size(120, 32);
@@ -687,7 +687,7 @@
             this.btnColaboradores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnColaboradores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnColaboradores.ForeColor = System.Drawing.Color.White;
-            this.btnColaboradores.Location = new System.Drawing.Point(28, 155);
+            this.btnColaboradores.Location = new System.Drawing.Point(28, 173);
             this.btnColaboradores.Name = "btnColaboradores";
             this.btnColaboradores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnColaboradores.Size = new System.Drawing.Size(156, 32);
@@ -733,7 +733,7 @@
             this.btnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgenda.ForeColor = System.Drawing.Color.White;
-            this.btnAgenda.Location = new System.Drawing.Point(28, 116);
+            this.btnAgenda.Location = new System.Drawing.Point(28, 134);
             this.btnAgenda.Name = "btnAgenda";
             this.btnAgenda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.btnAgenda.Size = new System.Drawing.Size(153, 32);
@@ -775,7 +775,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.price;
-            this.pictureBox3.Location = new System.Drawing.Point(52, 23);
+            this.pictureBox3.Location = new System.Drawing.Point(76, 30);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(96, 66);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -785,7 +785,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Yellow;
-            this.panel4.Location = new System.Drawing.Point(7, 32);
+            this.panel4.Location = new System.Drawing.Point(31, 39);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(19, 45);
             this.panel4.TabIndex = 98;
@@ -795,7 +795,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(963, 559);
+            this.ClientSize = new System.Drawing.Size(908, 559);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnInserir);
             this.Controls.Add(this.panel2);

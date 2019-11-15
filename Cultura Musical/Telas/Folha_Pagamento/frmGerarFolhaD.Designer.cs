@@ -693,7 +693,7 @@
             this.label8.Location = new System.Drawing.Point(206, 14);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 23);
+            this.label8.Size = new System.Drawing.Size(80, 23);
             this.label8.TabIndex = 11;
             this.label8.Text = "FUNÇÃO";
             // 

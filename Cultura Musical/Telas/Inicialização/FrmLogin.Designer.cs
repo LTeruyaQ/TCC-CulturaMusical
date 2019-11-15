@@ -33,8 +33,6 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.btnConfirmar_Login = new System.Windows.Forms.Button();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
-            this.lblMinimizar = new System.Windows.Forms.Label();
-            this.lblFechar = new System.Windows.Forms.Label();
             this.lblaviso = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -100,30 +98,6 @@
             this.linkLabel2.Text = "Novo funcionário";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
-            // lblMinimizar
-            // 
-            this.lblMinimizar.AutoSize = true;
-            this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMinimizar.Location = new System.Drawing.Point(849, 4);
-            this.lblMinimizar.Name = "lblMinimizar";
-            this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
-            this.lblMinimizar.TabIndex = 101;
-            this.lblMinimizar.Text = "_";
-            this.lblMinimizar.Click += new System.EventHandler(this.lblMinimizar_Click);
-            // 
-            // lblFechar
-            // 
-            this.lblFechar.AutoSize = true;
-            this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFechar.ForeColor = System.Drawing.Color.Red;
-            this.lblFechar.Location = new System.Drawing.Point(869, 9);
-            this.lblFechar.Name = "lblFechar";
-            this.lblFechar.Size = new System.Drawing.Size(20, 19);
-            this.lblFechar.TabIndex = 100;
-            this.lblFechar.Text = "X";
-            this.lblFechar.Click += new System.EventHandler(this.lblFechar_Click);
-            // 
             // lblaviso
             // 
             this.lblaviso.AutoSize = true;
@@ -156,9 +130,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Cultura_Musical.Properties.Resources.musica_home;
-            this.pictureBox2.Location = new System.Drawing.Point(263, -1);
+            this.pictureBox2.Location = new System.Drawing.Point(254, -1);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(638, 558);
+            this.pictureBox2.Size = new System.Drawing.Size(648, 575);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 112;
             this.pictureBox2.TabStop = false;
@@ -203,8 +177,6 @@
             this.ClientSize = new System.Drawing.Size(901, 554);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lblMinimizar);
-            this.Controls.Add(this.lblFechar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmLogin";
@@ -217,7 +189,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -226,8 +197,6 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Button btnConfirmar_Login;
         private System.Windows.Forms.LinkLabel linkLabel2;
-        private System.Windows.Forms.Label lblMinimizar;
-        private System.Windows.Forms.Label lblFechar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblaviso;
         private System.Windows.Forms.Panel panel1;
