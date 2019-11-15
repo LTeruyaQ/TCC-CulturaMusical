@@ -16,14 +16,14 @@ namespace Cultura_Musical.Telas.Produtos
         {
             InitializeComponent();
 
-            Database.Entity.tb_produto pedido = new Database.Entity.tb_produto();
+            //Database.Entity.tb_produto pedido = new Database.Entity.tb_produto();
 
-            Business.Business_Pedidos pedidoo = new Business.Business_Pedidos();
+            //Business.Business_Pedidos pedidoo = new Business.Business_Pedidos();
 
 
-            List<Database.Entity.tb_produto> con = pedidoo.ListarTudo(pedido);
+            //List<Database.Entity.tb_produto> con = pedidoo.ListarTudo(pedido);
 
-            dgvListar_Pedidos.DataSource = con;
+            //dgvListar_Pedidos.DataSource = con;
         }
         private void txtProduto_TextChanged(object sender, EventArgs e)
         {
