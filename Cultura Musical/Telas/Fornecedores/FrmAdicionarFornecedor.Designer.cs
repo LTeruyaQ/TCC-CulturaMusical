@@ -250,7 +250,7 @@
             // 
             this.cboEstado.BackColor = System.Drawing.Color.SkyBlue;
             this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboEstado.FormattingEnabled = true;
             this.cboEstado.Items.AddRange(new object[] {
             "AC",
@@ -519,7 +519,7 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(192, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(671, 66);
+            this.panel2.Size = new System.Drawing.Size(697, 66);
             this.panel2.TabIndex = 236;
             // 
             // lblMinimizar
@@ -1054,7 +1054,7 @@
             // FrmAdicionarFornecedor
             // 
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(863, 554);
+            this.ClientSize = new System.Drawing.Size(889, 554);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

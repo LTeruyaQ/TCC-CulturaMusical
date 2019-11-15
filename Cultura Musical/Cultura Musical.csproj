@@ -722,6 +722,9 @@
       <DependentUpon>BancoOnline.edmx</DependentUpon>
       <LastGenOutput>BancoOnline.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\cadeado.png" />
+    <None Include="Resources\musica-home.jpg" />
     <None Include="Resources\left-arrow.png" />
     <None Include="Resources\previous.png" />
     <None Include="Resources\calendar1.png" />

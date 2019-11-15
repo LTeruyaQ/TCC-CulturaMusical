@@ -74,5 +74,24 @@ namespace Cultura_Musical.Telas
         {
 
         }
+
+        private void btnConfirmar_Login_MouseEnter(object sender, EventArgs e)
+        {
+            btnConfirmar_Login.BackColor = Color.SkyBlue;
+            btnConfirmar_Login.ForeColor = Color.Black;
+
+
+        }
+
+        private void btnConfirmar_Login_MouseLeave(object sender, EventArgs e)
+        {
+            btnConfirmar_Login.BackColor = Color.SkyBlue;
+            btnConfirmar_Login.ForeColor = Color.Black;
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
