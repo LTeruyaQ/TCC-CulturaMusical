@@ -58,26 +58,6 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.csmColaborador = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsAgenda = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsVenda = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsProdutos = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.inserirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.cmsFornecedores = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.inserirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -167,6 +147,34 @@
             this.label52 = new System.Windows.Forms.Label();
             this.lblValorLiquido = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
+            this.cmsVenda = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsCRM = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsHolerites = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.gerarHoleriteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsProduto = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsFornecedores = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsAgenda = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsLogistica = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.fluxoDeCaixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsColaboradores = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -181,11 +189,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.csmColaborador.SuspendLayout();
-            this.cmsAgenda.SuspendLayout();
-            this.cmsVenda.SuspendLayout();
-            this.cmsProdutos.SuspendLayout();
-            this.cmsFornecedores.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel5.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -207,6 +210,14 @@
             this.groupBox14.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox16.SuspendLayout();
+            this.cmsVenda.SuspendLayout();
+            this.cmsCRM.SuspendLayout();
+            this.cmsHolerites.SuspendLayout();
+            this.cmsProduto.SuspendLayout();
+            this.cmsFornecedores.SuspendLayout();
+            this.cmsAgenda.SuspendLayout();
+            this.cmsLogistica.SuspendLayout();
+            this.cmsColaboradores.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -264,9 +275,9 @@
             this.panel2.Controls.Add(this.lblFechar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(177, 0);
+            this.panel2.Location = new System.Drawing.Point(192, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(697, 66);
+            this.panel2.Size = new System.Drawing.Size(682, 66);
             this.panel2.TabIndex = 233;
             // 
             // pictureBox12
@@ -285,7 +296,7 @@
             this.lblMinimizar.AutoSize = true;
             this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMinimizar.Location = new System.Drawing.Point(652, 0);
+            this.lblMinimizar.Location = new System.Drawing.Point(630, 0);
             this.lblMinimizar.Name = "lblMinimizar";
             this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
             this.lblMinimizar.TabIndex = 241;
@@ -295,7 +306,7 @@
             // label3
             // 
             this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Stencil", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(199, 3);
             this.label3.Name = "label3";
@@ -309,7 +320,7 @@
             this.lblFechar.AutoSize = true;
             this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechar.ForeColor = System.Drawing.Color.Red;
-            this.lblFechar.Location = new System.Drawing.Point(674, 3);
+            this.lblFechar.Location = new System.Drawing.Point(662, 3);
             this.lblFechar.Name = "lblFechar";
             this.lblFechar.Size = new System.Drawing.Size(20, 19);
             this.lblFechar.TabIndex = 240;
@@ -340,7 +351,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(177, 716);
+            this.panel1.Size = new System.Drawing.Size(192, 716);
             this.panel1.TabIndex = 232;
             // 
             // pictureBox3
@@ -562,160 +573,6 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // csmColaborador
-            // 
-            this.csmColaborador.BackColor = System.Drawing.Color.SteelBlue;
-            this.csmColaborador.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.csmColaborador.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5,
-            this.toolStripMenuItem6});
-            this.csmColaborador.Name = "cmsAgenda";
-            this.csmColaborador.Size = new System.Drawing.Size(133, 70);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(132, 22);
-            this.toolStripMenuItem4.Text = "Inserir";
-            this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(132, 22);
-            this.toolStripMenuItem5.Text = "Consultar";
-            this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(132, 22);
-            this.toolStripMenuItem6.Text = "Alterar";
-            // 
-            // cmsAgenda
-            // 
-            this.cmsAgenda.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsAgenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirToolStripMenuItem,
-            this.consultarToolStripMenuItem,
-            this.alterarToolStripMenuItem});
-            this.cmsAgenda.Name = "cmsAgenda";
-            this.cmsAgenda.Size = new System.Drawing.Size(133, 70);
-            // 
-            // inserirToolStripMenuItem
-            // 
-            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
-            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.inserirToolStripMenuItem.Text = "Inserir";
-            this.inserirToolStripMenuItem.Click += new System.EventHandler(this.inserirToolStripMenuItem_Click);
-            // 
-            // consultarToolStripMenuItem
-            // 
-            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.consultarToolStripMenuItem.Text = "Consultar";
-            // 
-            // alterarToolStripMenuItem
-            // 
-            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
-            this.alterarToolStripMenuItem.Text = "Alterar";
-            // 
-            // cmsVenda
-            // 
-            this.cmsVenda.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsVenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
-            this.cmsVenda.Name = "cmsAgenda";
-            this.cmsVenda.Size = new System.Drawing.Size(133, 70);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
-            this.toolStripMenuItem1.Text = "Inserir";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
-            this.toolStripMenuItem2.Text = "Consultar";
-            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
-            this.toolStripMenuItem3.Text = "Alterar";
-            // 
-            // cmsProdutos
-            // 
-            this.cmsProdutos.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsProdutos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirToolStripMenuItem3,
-            this.consultarToolStripMenuItem3,
-            this.alterarToolStripMenuItem3});
-            this.cmsProdutos.Name = "cmsAgenda";
-            this.cmsProdutos.Size = new System.Drawing.Size(133, 70);
-            // 
-            // inserirToolStripMenuItem3
-            // 
-            this.inserirToolStripMenuItem3.Name = "inserirToolStripMenuItem3";
-            this.inserirToolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
-            this.inserirToolStripMenuItem3.Text = "Inserir";
-            this.inserirToolStripMenuItem3.Click += new System.EventHandler(this.inserirToolStripMenuItem3_Click);
-            // 
-            // consultarToolStripMenuItem3
-            // 
-            this.consultarToolStripMenuItem3.Name = "consultarToolStripMenuItem3";
-            this.consultarToolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
-            this.consultarToolStripMenuItem3.Text = "Consultar";
-            this.consultarToolStripMenuItem3.Click += new System.EventHandler(this.consultarToolStripMenuItem3_Click);
-            // 
-            // alterarToolStripMenuItem3
-            // 
-            this.alterarToolStripMenuItem3.Name = "alterarToolStripMenuItem3";
-            this.alterarToolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
-            this.alterarToolStripMenuItem3.Text = "Alterar";
-            // 
-            // cmsFornecedores
-            // 
-            this.cmsFornecedores.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsFornecedores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirToolStripMenuItem2,
-            this.consultarToolStripMenuItem2,
-            this.alterarToolStripMenuItem2});
-            this.cmsFornecedores.Name = "cmsAgenda";
-            this.cmsFornecedores.Size = new System.Drawing.Size(133, 70);
-            // 
-            // inserirToolStripMenuItem2
-            // 
-            this.inserirToolStripMenuItem2.Name = "inserirToolStripMenuItem2";
-            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
-            this.inserirToolStripMenuItem2.Text = "Inserir";
-            this.inserirToolStripMenuItem2.Click += new System.EventHandler(this.inserirToolStripMenuItem2_Click);
-            // 
-            // consultarToolStripMenuItem2
-            // 
-            this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
-            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
-            this.consultarToolStripMenuItem2.Text = "Consultar";
-            this.consultarToolStripMenuItem2.Click += new System.EventHandler(this.consultarToolStripMenuItem2_Click);
-            // 
-            // alterarToolStripMenuItem2
-            // 
-            this.alterarToolStripMenuItem2.Name = "alterarToolStripMenuItem2";
-            this.alterarToolStripMenuItem2.Size = new System.Drawing.Size(132, 22);
-            this.alterarToolStripMenuItem2.Text = "Alterar";
-            // 
             // printDialog1
             // 
             this.printDialog1.UseEXDialog = true;
@@ -774,7 +631,7 @@
             // 
             // label9
             // 
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Stencil", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(5, 14);
             this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
@@ -803,7 +660,7 @@
             this.btnProcurar.BackColor = System.Drawing.Color.SkyBlue;
             this.btnProcurar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnProcurar.FlatAppearance.BorderSize = 20;
-            this.btnProcurar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProcurar.Font = new System.Drawing.Font("Stencil", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProcurar.ForeColor = System.Drawing.Color.Black;
             this.btnProcurar.Location = new System.Drawing.Point(321, 23);
             this.btnProcurar.Name = "btnProcurar";
@@ -832,17 +689,17 @@
             // 
             // label8
             // 
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Stencil", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(206, 14);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 23);
+            this.label8.Size = new System.Drawing.Size(80, 23);
             this.label8.TabIndex = 11;
             this.label8.Text = "FUNÇÃO";
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Stencil", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(27, 14);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
@@ -871,7 +728,7 @@
             // 
             // lblFGTS
             // 
-            this.lblFGTS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFGTS.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFGTS.Location = new System.Drawing.Point(12, 178);
             this.lblFGTS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFGTS.Name = "lblFGTS";
@@ -881,7 +738,7 @@
             // 
             // lblReferenciaIRRF
             // 
-            this.lblReferenciaIRRF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReferenciaIRRF.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReferenciaIRRF.Location = new System.Drawing.Point(9, 155);
             this.lblReferenciaIRRF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReferenciaIRRF.Name = "lblReferenciaIRRF";
@@ -891,7 +748,7 @@
             // 
             // lblINSS
             // 
-            this.lblINSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSS.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblINSS.Location = new System.Drawing.Point(9, 134);
             this.lblINSS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSS.Name = "lblINSS";
@@ -901,7 +758,7 @@
             // 
             // lblGratificação
             // 
-            this.lblGratificação.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGratificação.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGratificação.Location = new System.Drawing.Point(7, 61);
             this.lblGratificação.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGratificação.Name = "lblGratificação";
@@ -911,7 +768,7 @@
             // 
             // lblVT
             // 
-            this.lblVT.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVT.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVT.Location = new System.Drawing.Point(7, 111);
             this.lblVT.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVT.Name = "lblVT";
@@ -921,7 +778,7 @@
             // 
             // lblVA
             // 
-            this.lblVA.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVA.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVA.Location = new System.Drawing.Point(7, 86);
             this.lblVA.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVA.Name = "lblVA";
@@ -931,7 +788,7 @@
             // 
             // lblSalario
             // 
-            this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalario.Location = new System.Drawing.Point(7, 36);
             this.lblSalario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSalario.Name = "lblSalario";
@@ -941,11 +798,11 @@
             // 
             // label13
             // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(32, 10);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(85, 17);
+            this.label13.Size = new System.Drawing.Size(93, 17);
             this.label13.TabIndex = 23;
             this.label13.Text = "DESCRIÇÃO";
             // 
@@ -964,7 +821,7 @@
             // 
             // label16
             // 
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(11, 28);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
@@ -975,7 +832,7 @@
             // 
             // label17
             // 
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.Location = new System.Drawing.Point(30, 15);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
@@ -996,7 +853,7 @@
             this.groupBox8.Controls.Add(this.label19);
             this.groupBox8.Controls.Add(this.label20);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(460, 116);
+            this.groupBox8.Location = new System.Drawing.Point(474, 117);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
@@ -1006,7 +863,7 @@
             // 
             // lblIRRFDesconto
             // 
-            this.lblIRRFDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIRRFDesconto.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIRRFDesconto.Location = new System.Drawing.Point(4, 156);
             this.lblIRRFDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIRRFDesconto.Name = "lblIRRFDesconto";
@@ -1017,7 +874,7 @@
             // 
             // lblFGTSDesconto
             // 
-            this.lblFGTSDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFGTSDesconto.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFGTSDesconto.Location = new System.Drawing.Point(4, 179);
             this.lblFGTSDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFGTSDesconto.Name = "lblFGTSDesconto";
@@ -1028,7 +885,7 @@
             // 
             // lblINSSDesconto
             // 
-            this.lblINSSDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSSDesconto.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblINSSDesconto.Location = new System.Drawing.Point(4, 129);
             this.lblINSSDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSSDesconto.Name = "lblINSSDesconto";
@@ -1039,7 +896,7 @@
             // 
             // lblVTDesconto
             // 
-            this.lblVTDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVTDesconto.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVTDesconto.Location = new System.Drawing.Point(4, 104);
             this.lblVTDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVTDesconto.Name = "lblVTDesconto";
@@ -1060,7 +917,7 @@
             // 
             // lblVADesconto
             // 
-            this.lblVADesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVADesconto.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVADesconto.Location = new System.Drawing.Point(4, 79);
             this.lblVADesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVADesconto.Name = "lblVADesconto";
@@ -1071,7 +928,7 @@
             // 
             // label12
             // 
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(4, 54);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
@@ -1082,7 +939,7 @@
             // 
             // label19
             // 
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(4, 29);
             this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label19.Name = "label19";
@@ -1093,7 +950,7 @@
             // 
             // label20
             // 
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(4, 10);
             this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label20.Name = "label20";
@@ -1117,7 +974,7 @@
             // 
             // lblCalcIRRF
             // 
-            this.lblCalcIRRF.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCalcIRRF.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCalcIRRF.Location = new System.Drawing.Point(4, 28);
             this.lblCalcIRRF.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCalcIRRF.Name = "lblCalcIRRF";
@@ -1128,7 +985,7 @@
             // 
             // label64
             // 
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label64.Location = new System.Drawing.Point(23, 15);
             this.label64.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label64.Name = "label64";
@@ -1152,13 +1009,13 @@
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Size = new System.Drawing.Size(93, 210);
+            this.groupBox6.Size = new System.Drawing.Size(109, 210);
             this.groupBox6.TabIndex = 86;
             this.groupBox6.TabStop = false;
             // 
             // lblFGTSReferencia
             // 
-            this.lblFGTSReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFGTSReferencia.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFGTSReferencia.Location = new System.Drawing.Point(5, 178);
             this.lblFGTSReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFGTSReferencia.Name = "lblFGTSReferencia";
@@ -1169,7 +1026,7 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(5, 155);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -1180,7 +1037,7 @@
             // 
             // lblGratificacaoReferencia
             // 
-            this.lblGratificacaoReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGratificacaoReferencia.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGratificacaoReferencia.Location = new System.Drawing.Point(5, 59);
             this.lblGratificacaoReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGratificacaoReferencia.Name = "lblGratificacaoReferencia";
@@ -1191,7 +1048,7 @@
             // 
             // lblINSSReferencia
             // 
-            this.lblINSSReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSSReferencia.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblINSSReferencia.Location = new System.Drawing.Point(5, 128);
             this.lblINSSReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSSReferencia.Name = "lblINSSReferencia";
@@ -1202,7 +1059,7 @@
             // 
             // lblVTReferencia
             // 
-            this.lblVTReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVTReferencia.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVTReferencia.Location = new System.Drawing.Point(5, 105);
             this.lblVTReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVTReferencia.Name = "lblVTReferencia";
@@ -1213,7 +1070,7 @@
             // 
             // lblVAReferencia
             // 
-            this.lblVAReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVAReferencia.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVAReferencia.Location = new System.Drawing.Point(5, 82);
             this.lblVAReferencia.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVAReferencia.Name = "lblVAReferencia";
@@ -1224,7 +1081,7 @@
             // 
             // lblReferenciaSalario
             // 
-            this.lblReferenciaSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReferenciaSalario.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReferenciaSalario.Location = new System.Drawing.Point(5, 36);
             this.lblReferenciaSalario.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblReferenciaSalario.Name = "lblReferenciaSalario";
@@ -1235,11 +1092,11 @@
             // 
             // label23
             // 
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(4, 9);
+            this.label23.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(5, 12);
             this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(90, 18);
+            this.label23.Size = new System.Drawing.Size(98, 18);
             this.label23.TabIndex = 26;
             this.label23.Text = "REFERÊNCIA";
             this.label23.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1259,7 +1116,7 @@
             // 
             // lblFGTSdoMes
             // 
-            this.lblFGTSdoMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFGTSdoMes.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFGTSdoMes.Location = new System.Drawing.Point(9, 27);
             this.lblFGTSdoMes.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFGTSdoMes.Name = "lblFGTSdoMes";
@@ -1270,7 +1127,7 @@
             // 
             // label62
             // 
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label62.Location = new System.Drawing.Point(4, 10);
             this.label62.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label62.Name = "label62";
@@ -1291,7 +1148,7 @@
             this.groupBox7.Controls.Add(this.lblSalarioProvento);
             this.groupBox7.Controls.Add(this.label32);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(360, 117);
+            this.groupBox7.Location = new System.Drawing.Point(379, 117);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
@@ -1301,7 +1158,7 @@
             // 
             // label6
             // 
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(6, 178);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -1312,7 +1169,7 @@
             // 
             // label5
             // 
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(6, 155);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
@@ -1323,7 +1180,7 @@
             // 
             // lblINSSProvento
             // 
-            this.lblINSSProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblINSSProvento.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblINSSProvento.Location = new System.Drawing.Point(4, 130);
             this.lblINSSProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblINSSProvento.Name = "lblINSSProvento";
@@ -1334,7 +1191,7 @@
             // 
             // lblVTProvento
             // 
-            this.lblVTProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVTProvento.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVTProvento.Location = new System.Drawing.Point(4, 105);
             this.lblVTProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVTProvento.Name = "lblVTProvento";
@@ -1355,7 +1212,7 @@
             // 
             // lblVAProvento
             // 
-            this.lblVAProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVAProvento.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVAProvento.Location = new System.Drawing.Point(4, 81);
             this.lblVAProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblVAProvento.Name = "lblVAProvento";
@@ -1366,7 +1223,7 @@
             // 
             // lblGratificaçãoProvento
             // 
-            this.lblGratificaçãoProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGratificaçãoProvento.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGratificaçãoProvento.Location = new System.Drawing.Point(4, 57);
             this.lblGratificaçãoProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblGratificaçãoProvento.Name = "lblGratificaçãoProvento";
@@ -1377,7 +1234,7 @@
             // 
             // lblSalarioProvento
             // 
-            this.lblSalarioProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalarioProvento.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalarioProvento.Location = new System.Drawing.Point(4, 29);
             this.lblSalarioProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSalarioProvento.Name = "lblSalarioProvento";
@@ -1388,7 +1245,7 @@
             // 
             // label32
             // 
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(4, 9);
             this.label32.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label32.Name = "label32";
@@ -1412,7 +1269,7 @@
             // 
             // label18
             // 
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.Location = new System.Drawing.Point(6, 29);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
@@ -1423,7 +1280,7 @@
             // 
             // label21
             // 
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(25, 15);
             this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label21.Name = "label21";
@@ -1449,7 +1306,7 @@
             // 
             // lblTotalDesconto
             // 
-            this.lblTotalDesconto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalDesconto.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalDesconto.Location = new System.Drawing.Point(5, 30);
             this.lblTotalDesconto.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalDesconto.Name = "lblTotalDesconto";
@@ -1524,7 +1381,7 @@
             // 
             // label45
             // 
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.Location = new System.Drawing.Point(4, 11);
             this.label45.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label45.Name = "label45";
@@ -1548,7 +1405,7 @@
             // 
             // lblControlINSS
             // 
-            this.lblControlINSS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblControlINSS.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblControlINSS.Location = new System.Drawing.Point(4, 27);
             this.lblControlINSS.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblControlINSS.Name = "lblControlINSS";
@@ -1559,7 +1416,7 @@
             // 
             // label58
             // 
-            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label58.Location = new System.Drawing.Point(4, 10);
             this.label58.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label58.Name = "label58";
@@ -1583,7 +1440,7 @@
             // 
             // lblTotalProvento
             // 
-            this.lblTotalProvento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalProvento.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalProvento.Location = new System.Drawing.Point(5, 27);
             this.lblTotalProvento.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTotalProvento.Name = "lblTotalProvento";
@@ -1594,7 +1451,7 @@
             // 
             // label15
             // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(4, 8);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
@@ -1618,7 +1475,7 @@
             // 
             // lblSalarioBase
             // 
-            this.lblSalarioBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalarioBase.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalarioBase.Location = new System.Drawing.Point(7, 28);
             this.lblSalarioBase.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSalarioBase.Name = "lblSalarioBase";
@@ -1629,7 +1486,7 @@
             // 
             // label56
             // 
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.Location = new System.Drawing.Point(4, 11);
             this.label56.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label56.Name = "label56";
@@ -1719,7 +1576,7 @@
             // 
             // lblValorLiquido
             // 
-            this.lblValorLiquido.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorLiquido.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValorLiquido.Location = new System.Drawing.Point(48, 30);
             this.lblValorLiquido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblValorLiquido.Name = "lblValorLiquido";
@@ -1730,7 +1587,7 @@
             // 
             // label54
             // 
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Font = new System.Drawing.Font("Stencil", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.Location = new System.Drawing.Point(48, 12);
             this.label54.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label54.Name = "label54";
@@ -1738,6 +1595,211 @@
             this.label54.TabIndex = 26;
             this.label54.Text = "VALOR LÍQUIDO";
             this.label54.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // cmsVenda
+            // 
+            this.cmsVenda.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsVenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem4,
+            this.consultarToolStripMenuItem4,
+            this.alterarToolStripMenuItem4});
+            this.cmsVenda.Name = "cmsVenda";
+            this.cmsVenda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cmsVenda.Size = new System.Drawing.Size(183, 70);
+            // 
+            // inserirToolStripMenuItem4
+            // 
+            this.inserirToolStripMenuItem4.Name = "inserirToolStripMenuItem4";
+            this.inserirToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
+            this.inserirToolStripMenuItem4.Text = "Inserir Venda";
+            // 
+            // consultarToolStripMenuItem4
+            // 
+            this.consultarToolStripMenuItem4.Name = "consultarToolStripMenuItem4";
+            this.consultarToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
+            this.consultarToolStripMenuItem4.Text = "Consultar Vendas";
+            // 
+            // alterarToolStripMenuItem4
+            // 
+            this.alterarToolStripMenuItem4.Name = "alterarToolStripMenuItem4";
+            this.alterarToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
+            this.alterarToolStripMenuItem4.Text = "Alterar";
+            // 
+            // cmsCRM
+            // 
+            this.cmsCRM.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsCRM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirAlunoToolStripMenuItem,
+            this.consultarClientesToolStripMenuItem});
+            this.cmsCRM.Name = "cmsCRM";
+            this.cmsCRM.Size = new System.Drawing.Size(171, 48);
+            // 
+            // inserirAlunoToolStripMenuItem
+            // 
+            this.inserirAlunoToolStripMenuItem.Name = "inserirAlunoToolStripMenuItem";
+            this.inserirAlunoToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.inserirAlunoToolStripMenuItem.Text = "Inserir Aluno ";
+            // 
+            // consultarClientesToolStripMenuItem
+            // 
+            this.consultarClientesToolStripMenuItem.Name = "consultarClientesToolStripMenuItem";
+            this.consultarClientesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.consultarClientesToolStripMenuItem.Text = "Consultar Clientes";
+            // 
+            // cmsHolerites
+            // 
+            this.cmsHolerites.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsHolerites.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gerarHoleriteToolStripMenuItem});
+            this.cmsHolerites.Name = "cmsHolerites";
+            this.cmsHolerites.Size = new System.Drawing.Size(148, 26);
+            // 
+            // gerarHoleriteToolStripMenuItem
+            // 
+            this.gerarHoleriteToolStripMenuItem.Name = "gerarHoleriteToolStripMenuItem";
+            this.gerarHoleriteToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.gerarHoleriteToolStripMenuItem.Text = "Gerar Holerite";
+            // 
+            // cmsProduto
+            // 
+            this.cmsProduto.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsProduto.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem2,
+            this.consultarToolStripMenuItem2,
+            this.alterarToolStripMenuItem3});
+            this.cmsProduto.Name = "cmsProduto";
+            this.cmsProduto.Size = new System.Drawing.Size(190, 70);
+            // 
+            // inserirToolStripMenuItem2
+            // 
+            this.inserirToolStripMenuItem2.Name = "inserirToolStripMenuItem2";
+            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(189, 22);
+            this.inserirToolStripMenuItem2.Text = "Inserir Produto";
+            // 
+            // consultarToolStripMenuItem2
+            // 
+            this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
+            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(189, 22);
+            this.consultarToolStripMenuItem2.Text = "Consultar Produtos";
+            // 
+            // alterarToolStripMenuItem3
+            // 
+            this.alterarToolStripMenuItem3.Name = "alterarToolStripMenuItem3";
+            this.alterarToolStripMenuItem3.Size = new System.Drawing.Size(189, 22);
+            this.alterarToolStripMenuItem3.Text = "Alterar";
+            // 
+            // cmsFornecedores
+            // 
+            this.cmsFornecedores.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsFornecedores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem3,
+            this.consultarToolStripMenuItem3,
+            this.alterarToolStripMenuItem2});
+            this.cmsFornecedores.Name = "cmsAgenda";
+            this.cmsFornecedores.Size = new System.Drawing.Size(221, 70);
+            // 
+            // inserirToolStripMenuItem3
+            // 
+            this.inserirToolStripMenuItem3.Name = "inserirToolStripMenuItem3";
+            this.inserirToolStripMenuItem3.Size = new System.Drawing.Size(220, 22);
+            this.inserirToolStripMenuItem3.Text = "Inserir Fornecedor";
+            // 
+            // consultarToolStripMenuItem3
+            // 
+            this.consultarToolStripMenuItem3.Name = "consultarToolStripMenuItem3";
+            this.consultarToolStripMenuItem3.Size = new System.Drawing.Size(220, 22);
+            this.consultarToolStripMenuItem3.Text = "Consultar Fornecedores";
+            // 
+            // alterarToolStripMenuItem2
+            // 
+            this.alterarToolStripMenuItem2.Name = "alterarToolStripMenuItem2";
+            this.alterarToolStripMenuItem2.Size = new System.Drawing.Size(220, 22);
+            this.alterarToolStripMenuItem2.Text = "Alterar";
+            // 
+            // cmsAgenda
+            // 
+            this.cmsAgenda.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsAgenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem,
+            this.consultarToolStripMenuItem,
+            this.alterarToolStripMenuItem,
+            this.removerToolStripMenuItem});
+            this.cmsAgenda.Name = "cmsAgenda";
+            this.cmsAgenda.Size = new System.Drawing.Size(186, 92);
+            // 
+            // inserirToolStripMenuItem
+            // 
+            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.inserirToolStripMenuItem.Text = "Agendar Aula";
+            // 
+            // consultarToolStripMenuItem
+            // 
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.consultarToolStripMenuItem.Text = "Visualizar Agenda";
+            // 
+            // alterarToolStripMenuItem
+            // 
+            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.alterarToolStripMenuItem.Text = "Alterar";
+            // 
+            // removerToolStripMenuItem
+            // 
+            this.removerToolStripMenuItem.Name = "removerToolStripMenuItem";
+            this.removerToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.removerToolStripMenuItem.Text = "Remover";
+            // 
+            // cmsLogistica
+            // 
+            this.cmsLogistica.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsLogistica.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fluxoDeCaixaToolStripMenuItem});
+            this.cmsLogistica.Name = "cmsLogistica";
+            this.cmsLogistica.Size = new System.Drawing.Size(148, 26);
+            // 
+            // fluxoDeCaixaToolStripMenuItem
+            // 
+            this.fluxoDeCaixaToolStripMenuItem.Name = "fluxoDeCaixaToolStripMenuItem";
+            this.fluxoDeCaixaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.fluxoDeCaixaToolStripMenuItem.Text = "Fluxo de caixa";
+            // 
+            // cmsColaboradores
+            // 
+            this.cmsColaboradores.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsColaboradores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem1,
+            this.consultarToolStripMenuItem1,
+            this.alterarToolStripMenuItem1});
+            this.cmsColaboradores.Name = "cmsAgenda";
+            this.cmsColaboradores.Size = new System.Drawing.Size(226, 70);
+            // 
+            // inserirToolStripMenuItem1
+            // 
+            this.inserirToolStripMenuItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inserirToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.inserirToolStripMenuItem1.Name = "inserirToolStripMenuItem1";
+            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(225, 22);
+            this.inserirToolStripMenuItem1.Text = "Inserir Colaborador";
+            // 
+            // consultarToolStripMenuItem1
+            // 
+            this.consultarToolStripMenuItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
+            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(225, 22);
+            this.consultarToolStripMenuItem1.Text = "Consultar Colaboradores";
+            // 
+            // alterarToolStripMenuItem1
+            // 
+            this.alterarToolStripMenuItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alterarToolStripMenuItem1.Name = "alterarToolStripMenuItem1";
+            this.alterarToolStripMenuItem1.Size = new System.Drawing.Size(225, 22);
+            this.alterarToolStripMenuItem1.Text = "Alterar";
             // 
             // frmGerarFolhaD
             // 
@@ -1770,11 +1832,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.csmColaborador.ResumeLayout(false);
-            this.cmsAgenda.ResumeLayout(false);
-            this.cmsVenda.ResumeLayout(false);
-            this.cmsProdutos.ResumeLayout(false);
-            this.cmsFornecedores.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel5.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -1797,6 +1854,14 @@
             this.groupBox14.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
             this.groupBox16.ResumeLayout(false);
+            this.cmsVenda.ResumeLayout(false);
+            this.cmsCRM.ResumeLayout(false);
+            this.cmsHolerites.ResumeLayout(false);
+            this.cmsProduto.ResumeLayout(false);
+            this.cmsFornecedores.ResumeLayout(false);
+            this.cmsAgenda.ResumeLayout(false);
+            this.cmsLogistica.ResumeLayout(false);
+            this.cmsColaboradores.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1829,26 +1894,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblMinimizar;
         private System.Windows.Forms.Label lblFechar;
-        private System.Windows.Forms.ContextMenuStrip csmColaborador;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
-        private System.Windows.Forms.ContextMenuStrip cmsAgenda;
-        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
-        private System.Windows.Forms.ContextMenuStrip cmsVenda;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.ContextMenuStrip cmsProdutos;
-        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem3;
-        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem3;
-        private System.Windows.Forms.ContextMenuStrip cmsFornecedores;
-        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem2;
         private System.Windows.Forms.PrintDialog printDialog1;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
@@ -1939,5 +1984,33 @@
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label lblValorLiquido;
         private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.ContextMenuStrip cmsVenda;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem4;
+        private System.Windows.Forms.ContextMenuStrip cmsCRM;
+        private System.Windows.Forms.ToolStripMenuItem inserirAlunoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarClientesToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsHolerites;
+        private System.Windows.Forms.ToolStripMenuItem gerarHoleriteToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsProduto;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem3;
+        private System.Windows.Forms.ContextMenuStrip cmsFornecedores;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem2;
+        private System.Windows.Forms.ContextMenuStrip cmsAgenda;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removerToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsLogistica;
+        private System.Windows.Forms.ToolStripMenuItem fluxoDeCaixaToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsColaboradores;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem1;
     }
 }

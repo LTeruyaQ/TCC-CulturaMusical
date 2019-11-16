@@ -294,5 +294,146 @@ namespace Cultura_Musical.Telas
             mciSendString("save meuaudio cultura_voz.wav", null, 0, IntPtr.Zero);
             mciSendString("close meuaudio", null, 0, IntPtr.Zero);
         }
+
+        private void button1_MouseEnter(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.SkyBlue;
+            button1.ForeColor = Color.Black;
+        }
+
+        private void button1_MouseLeave(object sender, EventArgs e)
+        {
+            button1.BackColor = Color.Black;
+            button1.ForeColor = Color.White;
+        }
+
+        private void button2_MouseEnter(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.SkyBlue;
+            button2.ForeColor = Color.Black;
+        }
+
+        private void button2_MouseLeave(object sender, EventArgs e)
+        {
+            button2.BackColor = Color.Black;
+            button2.ForeColor = Color.White;
+        }
+
+        private void button4_MouseEnter(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.SkyBlue;
+            button4.ForeColor = Color.Black;
+        }
+
+        private void button4_MouseLeave(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.Black;
+            button4.ForeColor = Color.White;
+        }
+
+        private void button3_MouseEnter(object sender, EventArgs e)
+        {
+            button3.BackColor = Color.SkyBlue;
+            button3.ForeColor = Color.Black;
+        }
+
+        private void button3_MouseLeave(object sender, EventArgs e)
+        {
+            button3.BackColor = Color.Black;
+            button3.ForeColor = Color.White;
+        }
+
+        private void button5_MouseEnter(object sender, EventArgs e)
+        {
+            button5.BackColor = Color.SkyBlue;
+            button5.ForeColor = Color.Black;
+        }
+
+        private void button5_MouseLeave(object sender, EventArgs e)
+        {
+            button5.BackColor = Color.Black;
+            button5.ForeColor = Color.White;
+        }
+
+        private void button6_MouseEnter(object sender, EventArgs e)
+        {
+            button6.BackColor = Color.SkyBlue;
+            button6.ForeColor = Color.Black;
+        }
+
+        private void button6_MouseLeave(object sender, EventArgs e)
+        {
+            button6.BackColor = Color.Black;
+            button6.ForeColor = Color.White;
+        }
+
+        private void button7_MouseEnter(object sender, EventArgs e)
+        {
+            button7.BackColor = Color.SkyBlue;
+            button7.ForeColor = Color.Black;
+        }
+
+        private void button7_MouseLeave(object sender, EventArgs e)
+        {
+            button7.BackColor = Color.Black;
+            button7.ForeColor = Color.White;
+        }
+
+        private void button8_MouseEnter(object sender, EventArgs e)
+        {
+            button8.BackColor = Color.SkyBlue;
+            button8.ForeColor = Color.Black;
+        }
+
+        private void button8_MouseLeave(object sender, EventArgs e)
+        {
+            button8.BackColor = Color.Black;
+            button8.ForeColor = Color.White;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

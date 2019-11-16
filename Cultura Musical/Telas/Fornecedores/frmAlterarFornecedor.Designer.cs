@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -84,6 +85,34 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnInserir = new System.Windows.Forms.Button();
+            this.cmsVenda = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsCRM = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsHolerites = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.gerarHoleriteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsProduto = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsFornecedores = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsAgenda = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsLogistica = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.fluxoDeCaixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsColaboradores = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -102,6 +131,14 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.cmsVenda.SuspendLayout();
+            this.cmsCRM.SuspendLayout();
+            this.cmsHolerites.SuspendLayout();
+            this.cmsProduto.SuspendLayout();
+            this.cmsFornecedores.SuspendLayout();
+            this.cmsAgenda.SuspendLayout();
+            this.cmsLogistica.SuspendLayout();
+            this.cmsColaboradores.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -153,21 +190,20 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.lblMinimizar);
             this.panel2.Controls.Add(this.lblFechar);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(177, 0);
+            this.panel2.Location = new System.Drawing.Point(192, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(693, 66);
+            this.panel2.Size = new System.Drawing.Size(694, 66);
             this.panel2.TabIndex = 251;
             // 
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
-            this.pictureBox11.Location = new System.Drawing.Point(156, 3);
+            this.pictureBox11.Location = new System.Drawing.Point(3, 6);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(41, 34);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -179,7 +215,7 @@
             this.lblMinimizar.AutoSize = true;
             this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMinimizar.Location = new System.Drawing.Point(644, 3);
+            this.lblMinimizar.Location = new System.Drawing.Point(628, 3);
             this.lblMinimizar.Name = "lblMinimizar";
             this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
             this.lblMinimizar.TabIndex = 117;
@@ -190,7 +226,7 @@
             this.lblFechar.AutoSize = true;
             this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechar.ForeColor = System.Drawing.Color.Red;
-            this.lblFechar.Location = new System.Drawing.Point(666, 6);
+            this.lblFechar.Location = new System.Drawing.Point(652, 6);
             this.lblFechar.Name = "lblFechar";
             this.lblFechar.Size = new System.Drawing.Size(20, 19);
             this.lblFechar.TabIndex = 116;
@@ -199,7 +235,7 @@
             // label5
             // 
             this.label5.BackColor = System.Drawing.Color.Black;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Stencil", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(176, 6);
             this.label5.Name = "label5";
@@ -211,6 +247,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox11);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.pictureBox10);
@@ -232,7 +269,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(177, 502);
+            this.panel1.Size = new System.Drawing.Size(192, 502);
             this.panel1.TabIndex = 250;
             // 
             // pictureBox3
@@ -480,7 +517,7 @@
             // 
             // label14
             // 
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(61, 65);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(52, 23);
@@ -498,7 +535,7 @@
             // 
             // label7
             // 
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(36, 95);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(192, 26);
@@ -515,7 +552,7 @@
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(28, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(83, 23);
@@ -558,7 +595,7 @@
             // 
             // lblNumero
             // 
-            this.lblNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumero.Location = new System.Drawing.Point(9, 193);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(68, 18);
@@ -568,7 +605,7 @@
             // 
             // lblEstado
             // 
-            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.Location = new System.Drawing.Point(9, 161);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(68, 18);
@@ -593,7 +630,7 @@
             // 
             // label12
             // 
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(11, 19);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(66, 18);
@@ -603,7 +640,7 @@
             // 
             // label11
             // 
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(9, 126);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(68, 18);
@@ -627,7 +664,7 @@
             // 
             // label8
             // 
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(4, 89);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 18);
@@ -645,7 +682,7 @@
             // 
             // label10
             // 
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(27, 51);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(50, 23);
@@ -686,7 +723,7 @@
             // 
             // label15
             // 
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(4, 102);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(161, 18);
@@ -696,7 +733,7 @@
             // 
             // label13
             // 
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(33, 23);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(50, 26);
@@ -706,7 +743,7 @@
             // 
             // label4
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(4, 62);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 18);
@@ -726,22 +763,227 @@
             this.btnInserir.BackColor = System.Drawing.Color.SkyBlue;
             this.btnInserir.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnInserir.FlatAppearance.BorderSize = 20;
-            this.btnInserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInserir.Font = new System.Drawing.Font("Stencil", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInserir.ForeColor = System.Drawing.Color.Black;
-            this.btnInserir.Location = new System.Drawing.Point(524, 391);
+            this.btnInserir.Location = new System.Drawing.Point(526, 391);
             this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(321, 73);
+            this.btnInserir.Size = new System.Drawing.Size(312, 67);
             this.btnInserir.TabIndex = 253;
             this.btnInserir.Text = "Salvar";
             this.btnInserir.UseVisualStyleBackColor = false;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
+            // 
+            // cmsVenda
+            // 
+            this.cmsVenda.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsVenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem4,
+            this.consultarToolStripMenuItem4,
+            this.alterarToolStripMenuItem4});
+            this.cmsVenda.Name = "cmsVenda";
+            this.cmsVenda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cmsVenda.Size = new System.Drawing.Size(183, 70);
+            // 
+            // inserirToolStripMenuItem4
+            // 
+            this.inserirToolStripMenuItem4.Name = "inserirToolStripMenuItem4";
+            this.inserirToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
+            this.inserirToolStripMenuItem4.Text = "Inserir Venda";
+            // 
+            // consultarToolStripMenuItem4
+            // 
+            this.consultarToolStripMenuItem4.Name = "consultarToolStripMenuItem4";
+            this.consultarToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
+            this.consultarToolStripMenuItem4.Text = "Consultar Vendas";
+            // 
+            // alterarToolStripMenuItem4
+            // 
+            this.alterarToolStripMenuItem4.Name = "alterarToolStripMenuItem4";
+            this.alterarToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
+            this.alterarToolStripMenuItem4.Text = "Alterar";
+            // 
+            // cmsCRM
+            // 
+            this.cmsCRM.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsCRM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirAlunoToolStripMenuItem,
+            this.consultarClientesToolStripMenuItem});
+            this.cmsCRM.Name = "cmsCRM";
+            this.cmsCRM.Size = new System.Drawing.Size(171, 48);
+            // 
+            // inserirAlunoToolStripMenuItem
+            // 
+            this.inserirAlunoToolStripMenuItem.Name = "inserirAlunoToolStripMenuItem";
+            this.inserirAlunoToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.inserirAlunoToolStripMenuItem.Text = "Inserir Aluno ";
+            // 
+            // consultarClientesToolStripMenuItem
+            // 
+            this.consultarClientesToolStripMenuItem.Name = "consultarClientesToolStripMenuItem";
+            this.consultarClientesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.consultarClientesToolStripMenuItem.Text = "Consultar Clientes";
+            // 
+            // cmsHolerites
+            // 
+            this.cmsHolerites.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsHolerites.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gerarHoleriteToolStripMenuItem});
+            this.cmsHolerites.Name = "cmsHolerites";
+            this.cmsHolerites.Size = new System.Drawing.Size(148, 26);
+            // 
+            // gerarHoleriteToolStripMenuItem
+            // 
+            this.gerarHoleriteToolStripMenuItem.Name = "gerarHoleriteToolStripMenuItem";
+            this.gerarHoleriteToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.gerarHoleriteToolStripMenuItem.Text = "Gerar Holerite";
+            // 
+            // cmsProduto
+            // 
+            this.cmsProduto.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsProduto.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem2,
+            this.consultarToolStripMenuItem2,
+            this.alterarToolStripMenuItem3});
+            this.cmsProduto.Name = "cmsProduto";
+            this.cmsProduto.Size = new System.Drawing.Size(190, 70);
+            // 
+            // inserirToolStripMenuItem2
+            // 
+            this.inserirToolStripMenuItem2.Name = "inserirToolStripMenuItem2";
+            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(189, 22);
+            this.inserirToolStripMenuItem2.Text = "Inserir Produto";
+            // 
+            // consultarToolStripMenuItem2
+            // 
+            this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
+            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(189, 22);
+            this.consultarToolStripMenuItem2.Text = "Consultar Produtos";
+            // 
+            // alterarToolStripMenuItem3
+            // 
+            this.alterarToolStripMenuItem3.Name = "alterarToolStripMenuItem3";
+            this.alterarToolStripMenuItem3.Size = new System.Drawing.Size(189, 22);
+            this.alterarToolStripMenuItem3.Text = "Alterar";
+            // 
+            // cmsFornecedores
+            // 
+            this.cmsFornecedores.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsFornecedores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem3,
+            this.consultarToolStripMenuItem3,
+            this.alterarToolStripMenuItem2});
+            this.cmsFornecedores.Name = "cmsAgenda";
+            this.cmsFornecedores.Size = new System.Drawing.Size(221, 70);
+            // 
+            // inserirToolStripMenuItem3
+            // 
+            this.inserirToolStripMenuItem3.Name = "inserirToolStripMenuItem3";
+            this.inserirToolStripMenuItem3.Size = new System.Drawing.Size(220, 22);
+            this.inserirToolStripMenuItem3.Text = "Inserir Fornecedor";
+            // 
+            // consultarToolStripMenuItem3
+            // 
+            this.consultarToolStripMenuItem3.Name = "consultarToolStripMenuItem3";
+            this.consultarToolStripMenuItem3.Size = new System.Drawing.Size(220, 22);
+            this.consultarToolStripMenuItem3.Text = "Consultar Fornecedores";
+            // 
+            // alterarToolStripMenuItem2
+            // 
+            this.alterarToolStripMenuItem2.Name = "alterarToolStripMenuItem2";
+            this.alterarToolStripMenuItem2.Size = new System.Drawing.Size(220, 22);
+            this.alterarToolStripMenuItem2.Text = "Alterar";
+            // 
+            // cmsAgenda
+            // 
+            this.cmsAgenda.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsAgenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem,
+            this.consultarToolStripMenuItem,
+            this.alterarToolStripMenuItem,
+            this.removerToolStripMenuItem});
+            this.cmsAgenda.Name = "cmsAgenda";
+            this.cmsAgenda.Size = new System.Drawing.Size(186, 92);
+            // 
+            // inserirToolStripMenuItem
+            // 
+            this.inserirToolStripMenuItem.Name = "inserirToolStripMenuItem";
+            this.inserirToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.inserirToolStripMenuItem.Text = "Agendar Aula";
+            // 
+            // consultarToolStripMenuItem
+            // 
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.consultarToolStripMenuItem.Text = "Visualizar Agenda";
+            // 
+            // alterarToolStripMenuItem
+            // 
+            this.alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
+            this.alterarToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.alterarToolStripMenuItem.Text = "Alterar";
+            // 
+            // removerToolStripMenuItem
+            // 
+            this.removerToolStripMenuItem.Name = "removerToolStripMenuItem";
+            this.removerToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
+            this.removerToolStripMenuItem.Text = "Remover";
+            // 
+            // cmsLogistica
+            // 
+            this.cmsLogistica.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsLogistica.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fluxoDeCaixaToolStripMenuItem});
+            this.cmsLogistica.Name = "cmsLogistica";
+            this.cmsLogistica.Size = new System.Drawing.Size(148, 26);
+            // 
+            // fluxoDeCaixaToolStripMenuItem
+            // 
+            this.fluxoDeCaixaToolStripMenuItem.Name = "fluxoDeCaixaToolStripMenuItem";
+            this.fluxoDeCaixaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.fluxoDeCaixaToolStripMenuItem.Text = "Fluxo de caixa";
+            // 
+            // cmsColaboradores
+            // 
+            this.cmsColaboradores.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsColaboradores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem1,
+            this.consultarToolStripMenuItem1,
+            this.alterarToolStripMenuItem1});
+            this.cmsColaboradores.Name = "cmsAgenda";
+            this.cmsColaboradores.Size = new System.Drawing.Size(226, 70);
+            // 
+            // inserirToolStripMenuItem1
+            // 
+            this.inserirToolStripMenuItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inserirToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.inserirToolStripMenuItem1.Name = "inserirToolStripMenuItem1";
+            this.inserirToolStripMenuItem1.Size = new System.Drawing.Size(225, 22);
+            this.inserirToolStripMenuItem1.Text = "Inserir Colaborador";
+            // 
+            // consultarToolStripMenuItem1
+            // 
+            this.consultarToolStripMenuItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consultarToolStripMenuItem1.Name = "consultarToolStripMenuItem1";
+            this.consultarToolStripMenuItem1.Size = new System.Drawing.Size(225, 22);
+            this.consultarToolStripMenuItem1.Text = "Consultar Colaboradores";
+            // 
+            // alterarToolStripMenuItem1
+            // 
+            this.alterarToolStripMenuItem1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.alterarToolStripMenuItem1.Name = "alterarToolStripMenuItem1";
+            this.alterarToolStripMenuItem1.Size = new System.Drawing.Size(225, 22);
+            this.alterarToolStripMenuItem1.Text = "Alterar";
             // 
             // frmAlterarFornecedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(870, 502);
+            this.ClientSize = new System.Drawing.Size(886, 502);
             this.Controls.Add(this.btnInserir);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -775,6 +1017,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.nudnumero)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.cmsVenda.ResumeLayout(false);
+            this.cmsCRM.ResumeLayout(false);
+            this.cmsHolerites.ResumeLayout(false);
+            this.cmsProduto.ResumeLayout(false);
+            this.cmsFornecedores.ResumeLayout(false);
+            this.cmsAgenda.ResumeLayout(false);
+            this.cmsLogistica.ResumeLayout(false);
+            this.cmsColaboradores.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -836,5 +1086,33 @@
         private System.Windows.Forms.MaskedTextBox mstCNPJ;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Button btnInserir;
+        private System.Windows.Forms.ContextMenuStrip cmsVenda;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem4;
+        private System.Windows.Forms.ContextMenuStrip cmsCRM;
+        private System.Windows.Forms.ToolStripMenuItem inserirAlunoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarClientesToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsHolerites;
+        private System.Windows.Forms.ToolStripMenuItem gerarHoleriteToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsProduto;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem3;
+        private System.Windows.Forms.ContextMenuStrip cmsFornecedores;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem2;
+        private System.Windows.Forms.ContextMenuStrip cmsAgenda;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removerToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsLogistica;
+        private System.Windows.Forms.ToolStripMenuItem fluxoDeCaixaToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip cmsColaboradores;
+        private System.Windows.Forms.ToolStripMenuItem inserirToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem1;
     }
 }

@@ -63,6 +63,16 @@ namespace Cultura_Musical.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _lock {
+            get {
+                object obj = ResourceManager.GetObject("lock", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aGENDA {
             get {
                 object obj = ResourceManager.GetObject("aGENDA", resourceCulture);
@@ -156,6 +166,16 @@ namespace Cultura_Musical.Properties {
         internal static System.Drawing.Bitmap bow {
             get {
                 object obj = ResourceManager.GetObject("bow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cadeado {
+            get {
+                object obj = ResourceManager.GetObject("cadeado", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -326,6 +346,16 @@ namespace Cultura_Musical.Properties {
         internal static System.Drawing.Bitmap musica {
             get {
                 object obj = ResourceManager.GetObject("musica", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap musica_home {
+            get {
+                object obj = ResourceManager.GetObject("musica-home", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

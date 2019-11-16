@@ -26,7 +26,7 @@ namespace Cultura_Musical.Database
 
         public List<Entity.tb_funcionario> ListarPorNome(string nome)
         {
-    
+            int tamanho = nome.Length;
 
             List<Entity.tb_funcionario> funcionarios = DB.tb_funcionario.Where(T => T.nm_funcionario.Contains(nome))
                                                                                       
