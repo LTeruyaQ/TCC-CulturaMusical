@@ -88,8 +88,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.dgvNMFornecedor = new System.Windows.Forms.DataGridView();
-            this.txtNFornecedor = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Responsavel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -100,6 +98,8 @@
             this.Telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Alterar = new System.Windows.Forms.DataGridViewImageColumn();
             this.Deletar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.txtNFornecedor = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.cmsVenda.SuspendLayout();
             this.cmsCRM.SuspendLayout();
             this.cmsHolerites.SuspendLayout();
@@ -683,7 +683,7 @@
             // 
             // dgvNMFornecedor
             // 
-            this.dgvNMFornecedor.AllowUserToDeleteRows = false;
+            this.dgvNMFornecedor.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -711,9 +711,64 @@
             this.dgvNMFornecedor.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvNMFornecedor.Location = new System.Drawing.Point(210, 154);
             this.dgvNMFornecedor.Name = "dgvNMFornecedor";
-            this.dgvNMFornecedor.ReadOnly = true;
             this.dgvNMFornecedor.Size = new System.Drawing.Size(735, 382);
             this.dgvNMFornecedor.TabIndex = 243;
+            // 
+            // Nome
+            // 
+            this.Nome.HeaderText = "Nome";
+            this.Nome.Name = "Nome";
+            // 
+            // Responsavel
+            // 
+            this.Responsavel.HeaderText = "Responsavel";
+            this.Responsavel.Name = "Responsavel";
+            // 
+            // Genero
+            // 
+            this.Genero.HeaderText = "Genero";
+            this.Genero.Name = "Genero";
+            // 
+            // RG
+            // 
+            this.RG.HeaderText = "RG";
+            this.RG.Name = "RG";
+            // 
+            // Nascimento
+            // 
+            this.Nascimento.HeaderText = "Nascimento";
+            this.Nascimento.Name = "Nascimento";
+            // 
+            // Cep
+            // 
+            this.Cep.HeaderText = "Cep";
+            this.Cep.Name = "Cep";
+            // 
+            // Email
+            // 
+            this.Email.HeaderText = "Email";
+            this.Email.Name = "Email";
+            // 
+            // Telefone
+            // 
+            this.Telefone.HeaderText = "Teledone";
+            this.Telefone.Name = "Telefone";
+            // 
+            // Alterar
+            // 
+            this.Alterar.HeaderText = "";
+            this.Alterar.Image = global::Cultura_Musical.Properties.Resources.lapis;
+            this.Alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Alterar.Name = "Alterar";
+            this.Alterar.Width = 20;
+            // 
+            // Deletar
+            // 
+            this.Deletar.HeaderText = "";
+            this.Deletar.Image = global::Cultura_Musical.Properties.Resources.lixeira;
+            this.Deletar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Deletar.Name = "Deletar";
+            this.Deletar.Width = 20;
             // 
             // txtNFornecedor
             // 
@@ -732,72 +787,6 @@
             this.label1.TabIndex = 241;
             this.label1.Text = "Cliente:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Nome
-            // 
-            this.Nome.HeaderText = "Nome";
-            this.Nome.Name = "Nome";
-            this.Nome.ReadOnly = true;
-            // 
-            // Responsavel
-            // 
-            this.Responsavel.HeaderText = "Responsavel";
-            this.Responsavel.Name = "Responsavel";
-            this.Responsavel.ReadOnly = true;
-            // 
-            // Genero
-            // 
-            this.Genero.HeaderText = "Genero";
-            this.Genero.Name = "Genero";
-            this.Genero.ReadOnly = true;
-            // 
-            // RG
-            // 
-            this.RG.HeaderText = "RG";
-            this.RG.Name = "RG";
-            this.RG.ReadOnly = true;
-            // 
-            // Nascimento
-            // 
-            this.Nascimento.HeaderText = "Nascimento";
-            this.Nascimento.Name = "Nascimento";
-            this.Nascimento.ReadOnly = true;
-            // 
-            // Cep
-            // 
-            this.Cep.HeaderText = "Cep";
-            this.Cep.Name = "Cep";
-            this.Cep.ReadOnly = true;
-            // 
-            // Email
-            // 
-            this.Email.HeaderText = "Email";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            // 
-            // Telefone
-            // 
-            this.Telefone.HeaderText = "Teledone";
-            this.Telefone.Name = "Telefone";
-            this.Telefone.ReadOnly = true;
-            // 
-            // Alterar
-            // 
-            this.Alterar.HeaderText = "";
-            this.Alterar.Image = global::Cultura_Musical.Properties.Resources.lapis;
-            this.Alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Alterar.Name = "Alterar";
-            this.Alterar.ReadOnly = true;
-            this.Alterar.Width = 20;
-            // 
-            // Deletar
-            // 
-            this.Deletar.HeaderText = "";
-            this.Deletar.Image = global::Cultura_Musical.Properties.Resources.lixeira;
-            this.Deletar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
-            this.Deletar.Name = "Deletar";
-            this.Deletar.ReadOnly = true;
-            this.Deletar.Width = 20;
             // 
             // FrmConsultarCliente
             // 

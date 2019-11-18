@@ -95,12 +95,13 @@ namespace Cultura_Musical.Telas.Funcionarios
                   MessageBoxButtons.OK,
                   MessageBoxIcon.Information);
       
-                this.LimparCampos();
+               
 
                 string telPara = txtTelefone.Text;
-                string sms = "Parabéns, você é o novo funcionário da empresa Cultura Musical. Seja bem vindo!";
+                
 
-                //this.EnviarSMS(telPara, mensagem);
+                this.EnviarSMS(telPara, mensagem);
+                this.LimparCampos();
 
             }
             catch (ArgumentException ex)

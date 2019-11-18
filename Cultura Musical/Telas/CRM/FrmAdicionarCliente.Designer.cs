@@ -91,48 +91,48 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.txtBairro = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtRua = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.nudNumero = new System.Windows.Forms.NumericUpDown();
-            this.label21 = new System.Windows.Forms.Label();
-            this.txtComplemento = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtCidade = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.cboEstado = new System.Windows.Forms.ComboBox();
-            this.txtCEP = new System.Windows.Forms.MaskedTextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtCEP = new System.Windows.Forms.MaskedTextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtCidade = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtComplemento = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.nudNumero = new System.Windows.Forms.NumericUpDown();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtRua = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtBairro = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cboGenero = new System.Windows.Forms.ComboBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtRG = new System.Windows.Forms.MaskedTextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.dtpNascimento = new System.Windows.Forms.DateTimePicker();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.picFoto = new System.Windows.Forms.PictureBox();
-            this.txtresponsavel = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblResponsavel = new System.Windows.Forms.Label();
+            this.txtresponsavel = new System.Windows.Forms.TextBox();
+            this.picFoto = new System.Windows.Forms.PictureBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.dtpNascimento = new System.Windows.Forms.DateTimePicker();
+            this.label24 = new System.Windows.Forms.Label();
+            this.txtRG = new System.Windows.Forms.MaskedTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.cboGenero = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label27 = new System.Windows.Forms.Label();
-            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.txtTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.cmsProdutos.SuspendLayout();
             this.cmsVenda.SuspendLayout();
             this.cmsProduto.SuspendLayout();
@@ -164,8 +164,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmsProdutos
@@ -492,7 +492,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(501, 60);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Cadastro de Funcionarios";
+            this.label6.Text = "Cadastro de Cliente";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -783,6 +783,23 @@
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Informações Residenciais";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(28, 23);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(33, 14);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "CEP:";
+            // 
+            // txtCEP
+            // 
+            this.txtCEP.Location = new System.Drawing.Point(67, 20);
+            this.txtCEP.Mask = "00000-000";
+            this.txtCEP.Name = "txtCEP";
+            this.txtCEP.Size = new System.Drawing.Size(100, 22);
+            this.txtCEP.TabIndex = 57;
+            // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.Color.SkyBlue;
@@ -803,100 +820,6 @@
             this.groupBox5.Size = new System.Drawing.Size(575, 255);
             this.groupBox5.TabIndex = 88;
             this.groupBox5.TabStop = false;
-            // 
-            // txtBairro
-            // 
-            this.txtBairro.Location = new System.Drawing.Point(81, 71);
-            this.txtBairro.Name = "txtBairro";
-            this.txtBairro.Size = new System.Drawing.Size(223, 22);
-            this.txtBairro.TabIndex = 67;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(25, 76);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(55, 14);
-            this.label16.TabIndex = 66;
-            this.label16.Text = "Bairro:";
-            // 
-            // txtRua
-            // 
-            this.txtRua.Location = new System.Drawing.Point(81, 28);
-            this.txtRua.Name = "txtRua";
-            this.txtRua.Size = new System.Drawing.Size(223, 22);
-            this.txtRua.TabIndex = 69;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(37, 35);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 14);
-            this.label5.TabIndex = 64;
-            this.label5.Text = "Rua:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(20, 201);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(95, 14);
-            this.label22.TabIndex = 86;
-            this.label22.Text = "Complemento:";
-            // 
-            // nudNumero
-            // 
-            this.nudNumero.Location = new System.Drawing.Point(420, 34);
-            this.nudNumero.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.nudNumero.Name = "nudNumero";
-            this.nudNumero.Size = new System.Drawing.Size(100, 22);
-            this.nudNumero.TabIndex = 85;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(336, 36);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(59, 14);
-            this.label21.TabIndex = 83;
-            this.label21.Text = "Número:";
-            // 
-            // txtComplemento
-            // 
-            this.txtComplemento.Location = new System.Drawing.Point(23, 221);
-            this.txtComplemento.Name = "txtComplemento";
-            this.txtComplemento.Size = new System.Drawing.Size(281, 22);
-            this.txtComplemento.TabIndex = 87;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(15, 121);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 14);
-            this.label15.TabIndex = 65;
-            this.label15.Text = "Cidade:";
-            // 
-            // txtCidade
-            // 
-            this.txtCidade.Location = new System.Drawing.Point(81, 116);
-            this.txtCidade.Name = "txtCidade";
-            this.txtCidade.Size = new System.Drawing.Size(223, 22);
-            this.txtCidade.TabIndex = 88;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(19, 162);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(55, 14);
-            this.label14.TabIndex = 89;
-            this.label14.Text = "Estado:";
             // 
             // cboEstado
             // 
@@ -936,22 +859,99 @@
             this.cboEstado.Size = new System.Drawing.Size(117, 22);
             this.cboEstado.TabIndex = 90;
             // 
-            // txtCEP
+            // label14
             // 
-            this.txtCEP.Location = new System.Drawing.Point(67, 20);
-            this.txtCEP.Mask = "00000-000";
-            this.txtCEP.Name = "txtCEP";
-            this.txtCEP.Size = new System.Drawing.Size(100, 22);
-            this.txtCEP.TabIndex = 57;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(19, 162);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(55, 14);
+            this.label14.TabIndex = 89;
+            this.label14.Text = "Estado:";
             // 
-            // label8
+            // txtCidade
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(28, 23);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 14);
-            this.label8.TabIndex = 44;
-            this.label8.Text = "CEP:";
+            this.txtCidade.Location = new System.Drawing.Point(81, 116);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(223, 22);
+            this.txtCidade.TabIndex = 88;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(15, 121);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(53, 14);
+            this.label15.TabIndex = 65;
+            this.label15.Text = "Cidade:";
+            // 
+            // txtComplemento
+            // 
+            this.txtComplemento.Location = new System.Drawing.Point(23, 221);
+            this.txtComplemento.Name = "txtComplemento";
+            this.txtComplemento.Size = new System.Drawing.Size(281, 22);
+            this.txtComplemento.TabIndex = 87;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(336, 36);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(59, 14);
+            this.label21.TabIndex = 83;
+            this.label21.Text = "Número:";
+            // 
+            // nudNumero
+            // 
+            this.nudNumero.Location = new System.Drawing.Point(420, 34);
+            this.nudNumero.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.nudNumero.Name = "nudNumero";
+            this.nudNumero.Size = new System.Drawing.Size(100, 22);
+            this.nudNumero.TabIndex = 85;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(20, 201);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(95, 14);
+            this.label22.TabIndex = 86;
+            this.label22.Text = "Complemento:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(37, 35);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 14);
+            this.label5.TabIndex = 64;
+            this.label5.Text = "Rua:";
+            // 
+            // txtRua
+            // 
+            this.txtRua.Location = new System.Drawing.Point(81, 28);
+            this.txtRua.Name = "txtRua";
+            this.txtRua.Size = new System.Drawing.Size(223, 22);
+            this.txtRua.TabIndex = 69;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(25, 76);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(55, 14);
+            this.label16.TabIndex = 66;
+            this.label16.Text = "Bairro:";
+            // 
+            // txtBairro
+            // 
+            this.txtBairro.Location = new System.Drawing.Point(81, 71);
+            this.txtBairro.Name = "txtBairro";
+            this.txtBairro.Size = new System.Drawing.Size(223, 22);
+            this.txtBairro.TabIndex = 67;
             // 
             // tabPage2
             // 
@@ -989,80 +989,39 @@
             this.groupBox2.Text = "Dados pessoais";
             this.groupBox2.Enter += new System.EventHandler(this.GroupBox2_Enter);
             // 
-            // cboGenero
+            // label4
             // 
-            this.cboGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboGenero.FormattingEnabled = true;
-            this.cboGenero.Items.AddRange(new object[] {
-            "Masculino",
-            "Feminino"});
-            this.cboGenero.Location = new System.Drawing.Point(112, 200);
-            this.cboGenero.Name = "cboGenero";
-            this.cboGenero.Size = new System.Drawing.Size(101, 24);
-            this.cboGenero.TabIndex = 58;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(32, 277);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 16);
+            this.label4.TabIndex = 97;
+            this.label4.Text = "Observação:";
             // 
-            // label25
+            // textBox2
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(253, 200);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(33, 16);
-            this.label25.TabIndex = 83;
-            this.label25.Text = "R.G:";
+            this.textBox2.Location = new System.Drawing.Point(126, 273);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(431, 22);
+            this.textBox2.TabIndex = 96;
             // 
-            // label10
+            // lblResponsavel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(50, 203);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(62, 16);
-            this.label10.TabIndex = 46;
-            this.label10.Text = "Genêro:";
+            this.lblResponsavel.AutoSize = true;
+            this.lblResponsavel.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResponsavel.Location = new System.Drawing.Point(6, 145);
+            this.lblResponsavel.Name = "lblResponsavel";
+            this.lblResponsavel.Size = new System.Drawing.Size(99, 16);
+            this.lblResponsavel.TabIndex = 94;
+            this.lblResponsavel.Text = "Responsavel:";
             // 
-            // txtRG
+            // txtresponsavel
             // 
-            this.txtRG.Location = new System.Drawing.Point(298, 200);
-            this.txtRG.Mask = "00.000.000-0";
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(106, 22);
-            this.txtRG.TabIndex = 86;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(419, 180);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(146, 16);
-            this.label24.TabIndex = 87;
-            this.label24.Text = "Data de Nascimento:";
-            // 
-            // dtpNascimento
-            // 
-            this.dtpNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNascimento.Location = new System.Drawing.Point(445, 199);
-            this.dtpNascimento.Name = "dtpNascimento";
-            this.dtpNascimento.Size = new System.Drawing.Size(100, 22);
-            this.dtpNascimento.TabIndex = 88;
-            // 
-            // txtNome
-            // 
-            this.txtNome.Location = new System.Drawing.Point(113, 92);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(291, 22);
-            this.txtNome.TabIndex = 80;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(60, 96);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(47, 16);
-            this.label28.TabIndex = 79;
-            this.label28.Text = "Nome:";
+            this.txtresponsavel.Location = new System.Drawing.Point(113, 141);
+            this.txtresponsavel.Name = "txtresponsavel";
+            this.txtresponsavel.Size = new System.Drawing.Size(291, 22);
+            this.txtresponsavel.TabIndex = 95;
             // 
             // picFoto
             // 
@@ -1074,22 +1033,80 @@
             this.picFoto.TabIndex = 91;
             this.picFoto.TabStop = false;
             // 
-            // txtresponsavel
+            // label28
             // 
-            this.txtresponsavel.Location = new System.Drawing.Point(113, 141);
-            this.txtresponsavel.Name = "txtresponsavel";
-            this.txtresponsavel.Size = new System.Drawing.Size(291, 22);
-            this.txtresponsavel.TabIndex = 95;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(60, 96);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(47, 16);
+            this.label28.TabIndex = 79;
+            this.label28.Text = "Nome:";
             // 
-            // lblResponsavel
+            // txtNome
             // 
-            this.lblResponsavel.AutoSize = true;
-            this.lblResponsavel.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResponsavel.Location = new System.Drawing.Point(6, 145);
-            this.lblResponsavel.Name = "lblResponsavel";
-            this.lblResponsavel.Size = new System.Drawing.Size(99, 16);
-            this.lblResponsavel.TabIndex = 94;
-            this.lblResponsavel.Text = "Responsavel:";
+            this.txtNome.Location = new System.Drawing.Point(113, 92);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(291, 22);
+            this.txtNome.TabIndex = 80;
+            // 
+            // dtpNascimento
+            // 
+            this.dtpNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpNascimento.Location = new System.Drawing.Point(445, 199);
+            this.dtpNascimento.Name = "dtpNascimento";
+            this.dtpNascimento.Size = new System.Drawing.Size(100, 22);
+            this.dtpNascimento.TabIndex = 88;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(419, 180);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(146, 16);
+            this.label24.TabIndex = 87;
+            this.label24.Text = "Data de Nascimento:";
+            // 
+            // txtRG
+            // 
+            this.txtRG.Location = new System.Drawing.Point(298, 200);
+            this.txtRG.Mask = "00.000.000-0";
+            this.txtRG.Name = "txtRG";
+            this.txtRG.Size = new System.Drawing.Size(106, 22);
+            this.txtRG.TabIndex = 86;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(50, 203);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(62, 16);
+            this.label10.TabIndex = 46;
+            this.label10.Text = "Genêro:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(253, 200);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(33, 16);
+            this.label25.TabIndex = 83;
+            this.label25.Text = "R.G:";
+            // 
+            // cboGenero
+            // 
+            this.cboGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboGenero.FormattingEnabled = true;
+            this.cboGenero.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino"});
+            this.cboGenero.Location = new System.Drawing.Point(112, 200);
+            this.cboGenero.Name = "cboGenero";
+            this.cboGenero.Size = new System.Drawing.Size(101, 24);
+            this.cboGenero.TabIndex = 58;
             // 
             // tabControl1
             // 
@@ -1115,40 +1132,18 @@
             this.tabPage1.TabIndex = 5;
             this.tabPage1.Text = "Contato";
             // 
-            // label27
+            // groupBox3
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(33, 70);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(75, 16);
-            this.label27.TabIndex = 248;
-            this.label27.Text = "Telefone:";
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.Location = new System.Drawing.Point(114, 68);
-            this.txtTelefone.Mask = "+55(99)00000-0000";
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(118, 22);
-            this.txtTelefone.TabIndex = 249;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(55, 34);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(53, 16);
-            this.label26.TabIndex = 246;
-            this.label26.Text = "E-mail:";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(114, 30);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(291, 22);
-            this.txtEmail.TabIndex = 247;
+            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.maskedTextBox1);
+            this.groupBox3.Location = new System.Drawing.Point(8, 172);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(544, 100);
+            this.groupBox3.TabIndex = 255;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Responsavel";
             // 
             // textBox1
             // 
@@ -1198,35 +1193,40 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Aluno";
             // 
-            // groupBox3
+            // txtEmail
             // 
-            this.groupBox3.Controls.Add(this.textBox1);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.maskedTextBox1);
-            this.groupBox3.Location = new System.Drawing.Point(8, 172);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(544, 100);
-            this.groupBox3.TabIndex = 255;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Responsavel";
+            this.txtEmail.Location = new System.Drawing.Point(114, 30);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(291, 22);
+            this.txtEmail.TabIndex = 247;
             // 
-            // textBox2
+            // label26
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 273);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(431, 22);
-            this.textBox2.TabIndex = 96;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(55, 34);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(53, 16);
+            this.label26.TabIndex = 246;
+            this.label26.Text = "E-mail:";
             // 
-            // label4
+            // txtTelefone
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(32, 277);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 16);
-            this.label4.TabIndex = 97;
-            this.label4.Text = "Observação:";
+            this.txtTelefone.Location = new System.Drawing.Point(114, 68);
+            this.txtTelefone.Mask = "+55(99)00000-0000";
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(118, 22);
+            this.txtTelefone.TabIndex = 249;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(33, 70);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(75, 16);
+            this.label27.TabIndex = 248;
+            this.label27.Text = "Telefone:";
             // 
             // FrmAdicionarCliente
             // 
@@ -1277,10 +1277,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.picFoto)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
