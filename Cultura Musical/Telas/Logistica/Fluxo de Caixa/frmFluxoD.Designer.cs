@@ -41,61 +41,53 @@
             this.label5 = new System.Windows.Forms.Label();
             this.lblFechar = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.btnVendas = new System.Windows.Forms.Button();
             this.cmsVendas = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem11 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem12 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnProdutos = new System.Windows.Forms.Button();
             this.cmsProdutos = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem9 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnLogistica = new System.Windows.Forms.Button();
-            this.btnHolerite = new System.Windows.Forms.Button();
-            this.btnCRM = new System.Windows.Forms.Button();
-            this.btnFornecedores = new System.Windows.Forms.Button();
             this.cmsFornecedores = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnColaboradores = new System.Windows.Forms.Button();
             this.csmColaboradores = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnAgenda = new System.Windows.Forms.Button();
             this.cmsAgenda = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.inserirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.cmsVendas.SuspendLayout();
             this.cmsProdutos.SuspendLayout();
             this.cmsFornecedores.SuspendLayout();
@@ -103,6 +95,14 @@
             this.cmsAgenda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -169,7 +169,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.lblMinimizar);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.lblFechar);
@@ -183,7 +182,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
-            this.pictureBox11.Location = new System.Drawing.Point(140, 3);
+            this.pictureBox11.Location = new System.Drawing.Point(3, 4);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(41, 34);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -230,125 +229,30 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.pictureBox18);
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.pictureBox9);
-            this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.pictureBox7);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
-            this.panel1.Controls.Add(this.btnVendas);
-            this.panel1.Controls.Add(this.btnProdutos);
-            this.panel1.Controls.Add(this.btnLogistica);
-            this.panel1.Controls.Add(this.btnHolerite);
-            this.panel1.Controls.Add(this.btnCRM);
-            this.panel1.Controls.Add(this.btnFornecedores);
-            this.panel1.Controls.Add(this.btnColaboradores);
-            this.panel1.Controls.Add(this.btnAgenda);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.pictureBox11);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(192, 603);
             this.panel1.TabIndex = 24;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Cultura_Musical.Properties.Resources.temporary_offer;
-            this.pictureBox10.Location = new System.Drawing.Point(24, 376);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(33, 24);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 130;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Cultura_Musical.Properties.Resources.man;
-            this.pictureBox9.Location = new System.Drawing.Point(25, 176);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(32, 21);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 131;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Cultura_Musical.Properties.Resources.bow;
-            this.pictureBox8.Location = new System.Drawing.Point(27, 223);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(33, 25);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 126;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::Cultura_Musical.Properties.Resources.calendar;
-            this.pictureBox7.Location = new System.Drawing.Point(27, 134);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(32, 24);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 127;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Cultura_Musical.Properties.Resources.gift_card;
-            this.pictureBox2.Location = new System.Drawing.Point(24, 278);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 21);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 125;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Cultura_Musical.Properties.Resources.barcode;
-            this.pictureBox6.Location = new System.Drawing.Point(25, 328);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(31, 22);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 128;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Cultura_Musical.Properties.Resources.price;
-            this.pictureBox5.Location = new System.Drawing.Point(25, 481);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(26, 22);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 129;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Cultura_Musical.Properties.Resources.tag;
-            this.pictureBox4.Location = new System.Drawing.Point(25, 427);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(26, 25);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 124;
-            this.pictureBox4.TabStop = false;
-            // 
-            // btnVendas
-            // 
-            this.btnVendas.ContextMenuStrip = this.cmsVendas;
-            this.btnVendas.FlatAppearance.BorderSize = 0;
-            this.btnVendas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVendas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVendas.ForeColor = System.Drawing.Color.White;
-            this.btnVendas.Location = new System.Drawing.Point(88, 471);
-            this.btnVendas.Name = "btnVendas";
-            this.btnVendas.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnVendas.Size = new System.Drawing.Size(86, 32);
-            this.btnVendas.TabIndex = 123;
-            this.btnVendas.Text = "Vendas";
-            this.btnVendas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVendas.UseVisualStyleBackColor = true;
             // 
             // cmsVendas
             // 
@@ -379,22 +283,6 @@
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
             this.toolStripMenuItem12.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem12.Text = "Alterar";
-            // 
-            // btnProdutos
-            // 
-            this.btnProdutos.ContextMenuStrip = this.cmsProdutos;
-            this.btnProdutos.FlatAppearance.BorderSize = 0;
-            this.btnProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProdutos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProdutos.ForeColor = System.Drawing.Color.White;
-            this.btnProdutos.Location = new System.Drawing.Point(24, 420);
-            this.btnProdutos.Name = "btnProdutos";
-            this.btnProdutos.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnProdutos.Size = new System.Drawing.Size(150, 32);
-            this.btnProdutos.TabIndex = 122;
-            this.btnProdutos.Text = "Produtos";
-            this.btnProdutos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProdutos.UseVisualStyleBackColor = true;
             // 
             // cmsProdutos
             // 
@@ -427,68 +315,6 @@
             this.toolStripMenuItem9.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem9.Text = "Alterar";
             // 
-            // btnLogistica
-            // 
-            this.btnLogistica.FlatAppearance.BorderSize = 0;
-            this.btnLogistica.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogistica.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogistica.ForeColor = System.Drawing.Color.White;
-            this.btnLogistica.Location = new System.Drawing.Point(24, 368);
-            this.btnLogistica.Name = "btnLogistica";
-            this.btnLogistica.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnLogistica.Size = new System.Drawing.Size(153, 32);
-            this.btnLogistica.TabIndex = 121;
-            this.btnLogistica.Text = "Logistica";
-            this.btnLogistica.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogistica.UseVisualStyleBackColor = true;
-            // 
-            // btnHolerite
-            // 
-            this.btnHolerite.FlatAppearance.BorderSize = 0;
-            this.btnHolerite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHolerite.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHolerite.ForeColor = System.Drawing.Color.White;
-            this.btnHolerite.Location = new System.Drawing.Point(88, 318);
-            this.btnHolerite.Name = "btnHolerite";
-            this.btnHolerite.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnHolerite.Size = new System.Drawing.Size(89, 32);
-            this.btnHolerite.TabIndex = 120;
-            this.btnHolerite.Text = "Holerite";
-            this.btnHolerite.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHolerite.UseVisualStyleBackColor = true;
-            // 
-            // btnCRM
-            // 
-            this.btnCRM.FlatAppearance.BorderSize = 0;
-            this.btnCRM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCRM.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCRM.ForeColor = System.Drawing.Color.White;
-            this.btnCRM.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCRM.Location = new System.Drawing.Point(24, 216);
-            this.btnCRM.Name = "btnCRM";
-            this.btnCRM.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnCRM.Size = new System.Drawing.Size(150, 32);
-            this.btnCRM.TabIndex = 119;
-            this.btnCRM.Text = "CRM";
-            this.btnCRM.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCRM.UseVisualStyleBackColor = true;
-            // 
-            // btnFornecedores
-            // 
-            this.btnFornecedores.ContextMenuStrip = this.cmsFornecedores;
-            this.btnFornecedores.FlatAppearance.BorderSize = 0;
-            this.btnFornecedores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFornecedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFornecedores.ForeColor = System.Drawing.Color.White;
-            this.btnFornecedores.Location = new System.Drawing.Point(72, 267);
-            this.btnFornecedores.Name = "btnFornecedores";
-            this.btnFornecedores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnFornecedores.Size = new System.Drawing.Size(120, 32);
-            this.btnFornecedores.TabIndex = 118;
-            this.btnFornecedores.Text = "Fornecedores";
-            this.btnFornecedores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFornecedores.UseVisualStyleBackColor = true;
-            // 
             // cmsFornecedores
             // 
             this.cmsFornecedores.BackColor = System.Drawing.Color.SkyBlue;
@@ -519,22 +345,6 @@
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem6.Text = "Alterar";
-            // 
-            // btnColaboradores
-            // 
-            this.btnColaboradores.ContextMenuStrip = this.csmColaboradores;
-            this.btnColaboradores.FlatAppearance.BorderSize = 0;
-            this.btnColaboradores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnColaboradores.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnColaboradores.ForeColor = System.Drawing.Color.White;
-            this.btnColaboradores.Location = new System.Drawing.Point(24, 165);
-            this.btnColaboradores.Name = "btnColaboradores";
-            this.btnColaboradores.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnColaboradores.Size = new System.Drawing.Size(156, 32);
-            this.btnColaboradores.TabIndex = 117;
-            this.btnColaboradores.Text = "Colaboradores";
-            this.btnColaboradores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnColaboradores.UseVisualStyleBackColor = true;
             // 
             // csmColaboradores
             // 
@@ -567,22 +377,6 @@
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(132, 22);
             this.toolStripMenuItem3.Text = "Alterar";
-            // 
-            // btnAgenda
-            // 
-            this.btnAgenda.ContextMenuStrip = this.cmsAgenda;
-            this.btnAgenda.FlatAppearance.BorderSize = 0;
-            this.btnAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgenda.ForeColor = System.Drawing.Color.White;
-            this.btnAgenda.Location = new System.Drawing.Point(24, 126);
-            this.btnAgenda.Name = "btnAgenda";
-            this.btnAgenda.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.btnAgenda.Size = new System.Drawing.Size(153, 32);
-            this.btnAgenda.TabIndex = 116;
-            this.btnAgenda.Text = "Agenda";
-            this.btnAgenda.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgenda.UseVisualStyleBackColor = true;
             // 
             // cmsAgenda
             // 
@@ -623,14 +417,6 @@
             this.pictureBox3.TabIndex = 99;
             this.pictureBox3.TabStop = false;
             // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Yellow;
-            this.panel4.Location = new System.Drawing.Point(3, 42);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(19, 45);
-            this.panel4.TabIndex = 98;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -663,14 +449,224 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.CustomFormat = "MM-yyyy";
+            this.dateTimePicker1.CustomFormat = "MM";
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(476, 93);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(102, 26);
             this.dateTimePicker1.TabIndex = 31;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // pictureBox18
+            // 
+            this.pictureBox18.Image = global::Cultura_Musical.Properties.Resources.bow;
+            this.pictureBox18.Location = new System.Drawing.Point(25, 512);
+            this.pictureBox18.Name = "pictureBox18";
+            this.pictureBox18.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox18.TabIndex = 265;
+            this.pictureBox18.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(25, 512);
+            this.button4.Name = "button4";
+            this.button4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button4.Size = new System.Drawing.Size(164, 32);
+            this.button4.TabIndex = 264;
+            this.button4.Text = "CRM";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Cultura_Musical.Properties.Resources.temporary_offer;
+            this.pictureBox10.Location = new System.Drawing.Point(25, 357);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 262;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Cultura_Musical.Properties.Resources.man;
+            this.pictureBox9.Location = new System.Drawing.Point(25, 208);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 263;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::Cultura_Musical.Properties.Resources.calendar;
+            this.pictureBox7.Location = new System.Drawing.Point(25, 157);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 259;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Cultura_Musical.Properties.Resources.gift_card;
+            this.pictureBox2.Location = new System.Drawing.Point(25, 259);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 258;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Cultura_Musical.Properties.Resources.barcode;
+            this.pictureBox6.Location = new System.Drawing.Point(25, 307);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 260;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Cultura_Musical.Properties.Resources.price;
+            this.pictureBox5.Location = new System.Drawing.Point(25, 456);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 261;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Cultura_Musical.Properties.Resources.tag;
+            this.pictureBox4.Location = new System.Drawing.Point(25, 405);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(35, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 257;
+            this.pictureBox4.TabStop = false;
+            // 
+            // button8
+            // 
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Location = new System.Drawing.Point(25, 456);
+            this.button8.Name = "button8";
+            this.button8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button8.Size = new System.Drawing.Size(164, 32);
+            this.button8.TabIndex = 256;
+            this.button8.Text = "Vendas";
+            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(25, 405);
+            this.button7.Name = "button7";
+            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button7.Size = new System.Drawing.Size(164, 32);
+            this.button7.TabIndex = 255;
+            this.button7.Text = "Produtos";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Location = new System.Drawing.Point(25, 357);
+            this.button6.Name = "button6";
+            this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button6.Size = new System.Drawing.Size(167, 32);
+            this.button6.TabIndex = 254;
+            this.button6.Text = "Financeiro";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(25, 307);
+            this.button5.Name = "button5";
+            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button5.Size = new System.Drawing.Size(167, 32);
+            this.button5.TabIndex = 253;
+            this.button5.Text = "Holerite";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.ContextMenuStrip = this.cmsFornecedores;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(25, 259);
+            this.button3.Name = "button3";
+            this.button3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button3.Size = new System.Drawing.Size(170, 32);
+            this.button3.TabIndex = 252;
+            this.button3.Text = "Fornecedores";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(25, 208);
+            this.button2.Name = "button2";
+            this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button2.Size = new System.Drawing.Size(167, 32);
+            this.button2.TabIndex = 251;
+            this.button2.Text = "Colaboradores";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.ContextMenuStrip = this.cmsAgenda;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(25, 157);
+            this.button9.Name = "button9";
+            this.button9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button9.Size = new System.Drawing.Size(164, 32);
+            this.button9.TabIndex = 250;
+            this.button9.Text = "Agenda";
+            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Yellow;
+            this.panel4.Location = new System.Drawing.Point(4, 357);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(15, 32);
+            this.panel4.TabIndex = 266;
             // 
             // frmFluxoD
             // 
@@ -698,14 +694,6 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.cmsVendas.ResumeLayout(false);
             this.cmsProdutos.ResumeLayout(false);
             this.cmsFornecedores.ResumeLayout(false);
@@ -713,6 +701,14 @@
             this.cmsAgenda.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -728,24 +724,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button btnVendas;
-        private System.Windows.Forms.Button btnProdutos;
-        private System.Windows.Forms.Button btnLogistica;
-        private System.Windows.Forms.Button btnHolerite;
-        private System.Windows.Forms.Button btnCRM;
-        private System.Windows.Forms.Button btnFornecedores;
-        private System.Windows.Forms.Button btnColaboradores;
-        private System.Windows.Forms.Button btnAgenda;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblMinimizar;
         private System.Windows.Forms.Label lblFechar;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -773,5 +752,22 @@
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alterarToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox18;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Panel panel4;
     }
 }

@@ -440,5 +440,22 @@ namespace Cultura_Musical.Telas
         {
 
         }
+
+        private void button4_MouseEnter_1(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.SkyBlue;
+            button4.ForeColor = Color.Black;
+        }
+
+        private void button4_MouseLeave_1(object sender, EventArgs e)
+        {
+            button4.BackColor = Color.Black;
+            button4.ForeColor = Color.White;
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

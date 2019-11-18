@@ -298,7 +298,7 @@
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button6.Size = new System.Drawing.Size(153, 32);
             this.button6.TabIndex = 121;
-            this.button6.Text = "Logistica";
+            this.button6.Text = "Financeiro";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
             // 
@@ -380,7 +380,7 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.barcode;
+            this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.temporary_offer;
             this.pictureBox3.Location = new System.Drawing.Point(46, 42);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(96, 66);

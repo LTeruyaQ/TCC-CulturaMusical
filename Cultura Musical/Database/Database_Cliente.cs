@@ -10,8 +10,8 @@ namespace Cultura_Musical.Database
     {
 
         //Entity.db_a4f9ad_stormprEntities DB = new Entity.db_a4f9ad_stormprEntities();
-        Entity.db_a4f9ad_stormprEntities2 DB = new Entity.db_a4f9ad_stormprEntities2();
 
+        Entity.db_a4f9ad_stormprEntities3 DB = new Entity.db_a4f9ad_stormprEntities3();
 
         public void cadastrar(Entity.tb_cliente cliente)
         {
@@ -42,7 +42,6 @@ namespace Cultura_Musical.Database
             NovoCliente.ds_telefone = cliente.ds_telefone;
             NovoCliente.ds_cep = cliente.ds_cep;
             NovoCliente.ds_bairro = cliente.ds_bairro;
-            NovoCliente.ds_cpf = cliente.ds_cpf;
             NovoCliente.ds_email = cliente.ds_email;
             NovoCliente.ds_nivel = cliente.ds_nivel;
             NovoCliente.ds_periodo = cliente.ds_periodo;

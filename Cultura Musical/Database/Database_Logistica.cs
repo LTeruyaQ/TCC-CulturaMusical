@@ -9,7 +9,7 @@ namespace Cultura_Musical.Database
     class Database_Logistica
     {
         //Entity.db_a4f9ad_stormprEntities DB = new Entity.db_a4f9ad_stormprEntities();
-        Entity.db_a4f9ad_stormprEntities2 DB = new Entity.db_a4f9ad_stormprEntities2();
+        Entity.db_a4f9ad_stormprEntities3 DB = new Entity.db_a4f9ad_stormprEntities3();
 
         public List<Database.Entity.fluxo_de_caixa> ConsultarFluxodeCaixa()
         {

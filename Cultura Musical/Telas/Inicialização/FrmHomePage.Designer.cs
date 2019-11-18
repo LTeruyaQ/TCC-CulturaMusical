@@ -43,10 +43,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.cmsVenda = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.inserirToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cmsProduto = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -55,11 +55,11 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.button8 = new System.Windows.Forms.Button();
+            this.cmsVenda = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.alterarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.button7 = new System.Windows.Forms.Button();
-            this.cmsProduto = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.inserirToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.alterarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.button6 = new System.Windows.Forms.Button();
             this.cmsLogistica = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.fluxoDeCaixaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,11 +83,13 @@
             this.alterarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.cmsCRM = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -104,9 +106,6 @@
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.cmsCRM = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.inserirAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnOuvir = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
@@ -115,7 +114,7 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            this.cmsVenda.SuspendLayout();
+            this.cmsProduto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -123,7 +122,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.cmsProduto.SuspendLayout();
+            this.cmsVenda.SuspendLayout();
             this.cmsLogistica.SuspendLayout();
             this.cmsHolerites.SuspendLayout();
             this.cmsFornecedores.SuspendLayout();
@@ -132,6 +131,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.cmsCRM.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
@@ -139,7 +139,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            this.cmsCRM.SuspendLayout();
             this.SuspendLayout();
             // 
             // label3
@@ -280,12 +279,12 @@
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(192, 554);
             this.panel1.TabIndex = 223;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox18
             // 
@@ -314,36 +313,38 @@
             this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            this.button4.MouseEnter += new System.EventHandler(this.button4_MouseEnter_1);
+            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave_1);
             // 
-            // cmsVenda
+            // cmsProduto
             // 
-            this.cmsVenda.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsVenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirToolStripMenuItem4,
-            this.consultarToolStripMenuItem4,
-            this.alterarToolStripMenuItem4});
-            this.cmsVenda.Name = "cmsVenda";
-            this.cmsVenda.Size = new System.Drawing.Size(183, 70);
+            this.cmsProduto.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsProduto.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem2,
+            this.consultarToolStripMenuItem2,
+            this.alterarToolStripMenuItem3});
+            this.cmsProduto.Name = "cmsProduto";
+            this.cmsProduto.Size = new System.Drawing.Size(190, 70);
             // 
-            // inserirToolStripMenuItem4
+            // inserirToolStripMenuItem2
             // 
-            this.inserirToolStripMenuItem4.Name = "inserirToolStripMenuItem4";
-            this.inserirToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
-            this.inserirToolStripMenuItem4.Text = "Inserir Venda";
-            this.inserirToolStripMenuItem4.Click += new System.EventHandler(this.inserirToolStripMenuItem4_Click);
+            this.inserirToolStripMenuItem2.Name = "inserirToolStripMenuItem2";
+            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(189, 22);
+            this.inserirToolStripMenuItem2.Text = "Inserir Produto";
+            this.inserirToolStripMenuItem2.Click += new System.EventHandler(this.inserirToolStripMenuItem2_Click_1);
             // 
-            // consultarToolStripMenuItem4
+            // consultarToolStripMenuItem2
             // 
-            this.consultarToolStripMenuItem4.Name = "consultarToolStripMenuItem4";
-            this.consultarToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
-            this.consultarToolStripMenuItem4.Text = "Consultar Vendas";
+            this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
+            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(189, 22);
+            this.consultarToolStripMenuItem2.Text = "Consultar Produtos";
             // 
-            // alterarToolStripMenuItem4
+            // alterarToolStripMenuItem3
             // 
-            this.alterarToolStripMenuItem4.Name = "alterarToolStripMenuItem4";
-            this.alterarToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
-            this.alterarToolStripMenuItem4.Text = "Alterar";
+            this.alterarToolStripMenuItem3.Name = "alterarToolStripMenuItem3";
+            this.alterarToolStripMenuItem3.Size = new System.Drawing.Size(189, 22);
+            this.alterarToolStripMenuItem3.Text = "Alterar";
             // 
             // pictureBox10
             // 
@@ -359,7 +360,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::Cultura_Musical.Properties.Resources.man;
-            this.pictureBox9.Location = new System.Drawing.Point(22, 177);
+            this.pictureBox9.Location = new System.Drawing.Point(22, 174);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(35, 32);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -369,7 +370,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Cultura_Musical.Properties.Resources.calendar;
-            this.pictureBox7.Location = new System.Drawing.Point(22, 126);
+            this.pictureBox7.Location = new System.Drawing.Point(22, 125);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(35, 32);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -438,6 +439,36 @@
             this.button8.MouseEnter += new System.EventHandler(this.button8_MouseEnter);
             this.button8.MouseLeave += new System.EventHandler(this.button8_MouseLeave);
             // 
+            // cmsVenda
+            // 
+            this.cmsVenda.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsVenda.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirToolStripMenuItem4,
+            this.consultarToolStripMenuItem4,
+            this.alterarToolStripMenuItem4});
+            this.cmsVenda.Name = "cmsVenda";
+            this.cmsVenda.Size = new System.Drawing.Size(183, 70);
+            // 
+            // inserirToolStripMenuItem4
+            // 
+            this.inserirToolStripMenuItem4.Name = "inserirToolStripMenuItem4";
+            this.inserirToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
+            this.inserirToolStripMenuItem4.Text = "Inserir Venda";
+            this.inserirToolStripMenuItem4.Click += new System.EventHandler(this.inserirToolStripMenuItem4_Click);
+            // 
+            // consultarToolStripMenuItem4
+            // 
+            this.consultarToolStripMenuItem4.Name = "consultarToolStripMenuItem4";
+            this.consultarToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
+            this.consultarToolStripMenuItem4.Text = "Consultar Vendas";
+            // 
+            // alterarToolStripMenuItem4
+            // 
+            this.alterarToolStripMenuItem4.Name = "alterarToolStripMenuItem4";
+            this.alterarToolStripMenuItem4.Size = new System.Drawing.Size(182, 22);
+            this.alterarToolStripMenuItem4.Text = "Alterar";
+            // 
             // button7
             // 
             this.button7.ContextMenuStrip = this.cmsProduto;
@@ -457,36 +488,6 @@
             this.button7.MouseEnter += new System.EventHandler(this.button7_MouseEnter);
             this.button7.MouseLeave += new System.EventHandler(this.button7_MouseLeave);
             // 
-            // cmsProduto
-            // 
-            this.cmsProduto.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsProduto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsProduto.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirToolStripMenuItem2,
-            this.consultarToolStripMenuItem2,
-            this.alterarToolStripMenuItem3});
-            this.cmsProduto.Name = "cmsProduto";
-            this.cmsProduto.Size = new System.Drawing.Size(190, 70);
-            // 
-            // inserirToolStripMenuItem2
-            // 
-            this.inserirToolStripMenuItem2.Name = "inserirToolStripMenuItem2";
-            this.inserirToolStripMenuItem2.Size = new System.Drawing.Size(189, 22);
-            this.inserirToolStripMenuItem2.Text = "Inserir Produto";
-            this.inserirToolStripMenuItem2.Click += new System.EventHandler(this.inserirToolStripMenuItem2_Click_1);
-            // 
-            // consultarToolStripMenuItem2
-            // 
-            this.consultarToolStripMenuItem2.Name = "consultarToolStripMenuItem2";
-            this.consultarToolStripMenuItem2.Size = new System.Drawing.Size(189, 22);
-            this.consultarToolStripMenuItem2.Text = "Consultar Produtos";
-            // 
-            // alterarToolStripMenuItem3
-            // 
-            this.alterarToolStripMenuItem3.Name = "alterarToolStripMenuItem3";
-            this.alterarToolStripMenuItem3.Size = new System.Drawing.Size(189, 22);
-            this.alterarToolStripMenuItem3.Text = "Alterar";
-            // 
             // button6
             // 
             this.button6.ContextMenuStrip = this.cmsLogistica;
@@ -499,7 +500,7 @@
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button6.Size = new System.Drawing.Size(167, 32);
             this.button6.TabIndex = 105;
-            this.button6.Text = "Logistica";
+            this.button6.Text = "Financeiro";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -610,7 +611,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(22, 177);
+            this.button2.Location = new System.Drawing.Point(25, 174);
             this.button2.Name = "button2";
             this.button2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button2.Size = new System.Drawing.Size(167, 32);
@@ -664,7 +665,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(22, 126);
+            this.button1.Location = new System.Drawing.Point(22, 125);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button1.Size = new System.Drawing.Size(164, 32);
@@ -715,20 +716,12 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Cultura_Musical.Properties.Resources.store;
-            this.pictureBox3.Location = new System.Drawing.Point(47, 32);
+            this.pictureBox3.Location = new System.Drawing.Point(48, 32);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(96, 66);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 99;
             this.pictureBox3.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Yellow;
-            this.panel4.Location = new System.Drawing.Point(22, 36);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(19, 62);
-            this.panel4.TabIndex = 98;
             // 
             // label4
             // 
@@ -787,6 +780,29 @@
             this.pictureBox8.TabIndex = 129;
             this.pictureBox8.TabStop = false;
             // 
+            // cmsCRM
+            // 
+            this.cmsCRM.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsCRM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirAlunoToolStripMenuItem,
+            this.consultarClientesToolStripMenuItem});
+            this.cmsCRM.Name = "cmsCRM";
+            this.cmsCRM.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.cmsCRM.Size = new System.Drawing.Size(171, 48);
+            // 
+            // inserirAlunoToolStripMenuItem
+            // 
+            this.inserirAlunoToolStripMenuItem.Name = "inserirAlunoToolStripMenuItem";
+            this.inserirAlunoToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.inserirAlunoToolStripMenuItem.Text = "Inserir Aluno ";
+            this.inserirAlunoToolStripMenuItem.Click += new System.EventHandler(this.InserirAlunoToolStripMenuItem_Click);
+            // 
+            // consultarClientesToolStripMenuItem
+            // 
+            this.consultarClientesToolStripMenuItem.Name = "consultarClientesToolStripMenuItem";
+            this.consultarClientesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.consultarClientesToolStripMenuItem.Text = "Consultar Clientes";
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -817,9 +833,9 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(72, 288);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 16);
+            this.label9.Size = new System.Drawing.Size(81, 16);
             this.label9.TabIndex = 126;
-            this.label9.Text = "Logística";
+            this.label9.Text = "Financeiro";
             // 
             // label8
             // 
@@ -962,29 +978,6 @@
             this.textBox1.Size = new System.Drawing.Size(165, 20);
             this.textBox1.TabIndex = 235;
             // 
-            // cmsCRM
-            // 
-            this.cmsCRM.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsCRM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirAlunoToolStripMenuItem,
-            this.consultarClientesToolStripMenuItem});
-            this.cmsCRM.Name = "cmsCRM";
-            this.cmsCRM.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.cmsCRM.Size = new System.Drawing.Size(171, 48);
-            // 
-            // inserirAlunoToolStripMenuItem
-            // 
-            this.inserirAlunoToolStripMenuItem.Name = "inserirAlunoToolStripMenuItem";
-            this.inserirAlunoToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.inserirAlunoToolStripMenuItem.Text = "Inserir Aluno ";
-            this.inserirAlunoToolStripMenuItem.Click += new System.EventHandler(this.InserirAlunoToolStripMenuItem_Click);
-            // 
-            // consultarClientesToolStripMenuItem
-            // 
-            this.consultarClientesToolStripMenuItem.Name = "consultarClientesToolStripMenuItem";
-            this.consultarClientesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.consultarClientesToolStripMenuItem.Text = "Consultar Clientes";
-            // 
             // btnOuvir
             // 
             this.btnOuvir.BackColor = System.Drawing.Color.Transparent;
@@ -1055,7 +1048,7 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
-            this.cmsVenda.ResumeLayout(false);
+            this.cmsProduto.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -1063,7 +1056,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.cmsProduto.ResumeLayout(false);
+            this.cmsVenda.ResumeLayout(false);
             this.cmsLogistica.ResumeLayout(false);
             this.cmsHolerites.ResumeLayout(false);
             this.cmsFornecedores.ResumeLayout(false);
@@ -1073,6 +1066,7 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.cmsCRM.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
@@ -1080,7 +1074,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            this.cmsCRM.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1111,7 +1104,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblMinimizar;
         private System.Windows.Forms.Label lblFechar;
         private System.Windows.Forms.ContextMenuStrip cmsFornecedores;

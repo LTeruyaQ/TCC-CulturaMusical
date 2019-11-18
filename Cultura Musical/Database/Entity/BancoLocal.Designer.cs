@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\Adriana\Source\Repos\tcc-cultura-musical\Cultura Musical\Database\Entity\BancoLocal.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\infoc11\Source\Repos\tcc-cultura-musical2\Cultura Musical\Database\Entity\BancoLocal.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

@@ -209,7 +209,6 @@
     <Compile Include="Database\Database_Fornecedores.cs" />
     <Compile Include="Database\Database_Funcionarios.cs" />
     <Compile Include="Database\Database_Folha_Pagamento.cs" />
-    <Compile Include="Database\Database_Holerite.cs" />
     <Compile Include="Database\Database_Inicialização.cs" />
     <Compile Include="Database\Database_Jornada.cs" />
     <Compile Include="Database\Database_Logistica.cs" />
@@ -233,6 +232,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BancoLocal.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Database\Database_Financeiro.cs" />
     <Compile Include="Database\Entity\BancoOnline.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -248,79 +248,79 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BancoOnline.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Database\Database_Financeiro.cs" />
     <Compile Include="Database\Entity\fluxo_de_caixa.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_agenda_estudio.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_aula.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_beneficio.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_cliente.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_colaborador.cs">
       <DependentUpon>BancoLocal.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_compra.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_conta.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_estado.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_estoque.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_financeiro.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_folha_pagamento.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_fornecedor.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_funcionario.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_holerite.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_jornada.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_login.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_plano.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_ponto.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_produto.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_prolabore.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_sala.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_tipo_conta.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
     <Compile Include="Database\Entity\tb_venda_plano.cs">
-      <DependentUpon>BancoLocal.tt</DependentUpon>
+      <DependentUpon>BancoOnline.tt</DependentUpon>
     </Compile>
+    <Compile Include="Database\Model\FluxoDeCaixa.cs" />
     <Compile Include="Database\Model\ModelosExtendidos.cs" />
     <Compile Include="Interfaces\Interface_Crud.cs" />
     <Compile Include="Program.cs" />
@@ -330,29 +330,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Agenda\FrmAlterarAgenda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Agenda\FrmAlterarAgenda.Designer.cs">
-      <DependentUpon>FrmAlterarAgenda.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\Agenda\FrmConsultarAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Telas\Agenda\FrmConsultarAgenda.Designer.cs">
       <DependentUpon>FrmConsultarAgenda.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Agenda\FrmConsultarDisponibilidade.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Agenda\FrmConsultarDisponibilidade.Designer.cs">
-      <DependentUpon>FrmConsultarDisponibilidade.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\Agenda\FrmDeletarAgenda.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Agenda\FrmDeletarAgenda.Designer.cs">
-      <DependentUpon>FrmDeletarAgenda.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Agenda\FrmInserirAgenda.cs">
       <SubType>Form</SubType>
@@ -402,12 +384,6 @@
     <Compile Include="Telas\CRM\FrmAdicionarCliente.Designer.cs">
       <DependentUpon>FrmAdicionarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\CRM\FrmAlterarClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\CRM\FrmAlterarClientes.Designer.cs">
-      <DependentUpon>FrmAlterarClientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Telas\CRM\FrmAnalisarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -419,12 +395,6 @@
     </Compile>
     <Compile Include="Telas\CRM\FrmConsultarCliente.Designer.cs">
       <DependentUpon>FrmConsultarCliente.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Telas\CRM\FrmDeletarCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\CRM\FrmDeletarCliente.Designer.cs">
-      <DependentUpon>FrmDeletarCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Telas\Fornecedores\FrmAdicionarFornecedor.cs">
       <SubType>Form</SubType>
@@ -534,12 +504,6 @@
     <Compile Include="Telas\Estoque\FrmConsultarProduto.Designer.cs">
       <DependentUpon>FrmConsultarProduto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Telas\Estoque\FrmDeletarProduto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Telas\Estoque\FrmDeletarProduto.Designer.cs">
-      <DependentUpon>FrmDeletarProduto.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -551,32 +515,17 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Agenda\FrmAlterarAgenda.resx">
-      <DependentUpon>FrmAlterarAgenda.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Agenda\FrmConsultarAgenda.resx">
       <DependentUpon>FrmConsultarAgenda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Agenda\FrmConsultarDisponibilidade.resx">
-      <DependentUpon>FrmConsultarDisponibilidade.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Agenda\FrmDeletarAgenda.resx">
-      <DependentUpon>FrmDeletarAgenda.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Telas\Agenda\FrmInserirAgenda.resx">
       <DependentUpon>FrmInserirAgenda.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\CRM\FrmAlterarClientes.resx">
-      <DependentUpon>FrmAlterarClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\CRM\FrmAnalisarCliente.resx">
       <DependentUpon>FrmAnalisarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\CRM\FrmConsultarCliente.resx">
       <DependentUpon>FrmConsultarCliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Telas\CRM\FrmDeletarCliente.resx">
-      <DependentUpon>FrmDeletarCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Telas\Folha_Pagamento\frmGerarFolhaD.resx">
       <DependentUpon>frmGerarFolhaD.cs</DependentUpon>
@@ -653,16 +602,9 @@
     <EmbeddedResource Include="Telas\Estoque\FrmConsultarProduto.resx">
       <DependentUpon>FrmConsultarProduto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Telas\Estoque\FrmDeletarProduto.resx">
-      <DependentUpon>FrmDeletarProduto.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Database\Entity\BancoOnline.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BancoOnline.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <EntityDeploy Include="Database\Entity\BancoLocal.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>BancoLocal.Designer.cs</LastGenOutput>
@@ -670,6 +612,10 @@
     <None Include="Database\Entity\BancoLocal.edmx.diagram">
       <DependentUpon>BancoLocal.edmx</DependentUpon>
     </None>
+    <EntityDeploy Include="Database\Entity\BancoOnline.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BancoOnline.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="Database\Entity\BancoOnline.edmx.diagram">
       <DependentUpon>BancoOnline.edmx</DependentUpon>
     </None>

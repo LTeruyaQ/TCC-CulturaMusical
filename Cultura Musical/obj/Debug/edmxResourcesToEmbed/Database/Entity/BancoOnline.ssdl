@@ -42,38 +42,20 @@
     <Property Name="nm_cliente" Type="varchar" MaxLength="200" Nullable="false" />
     <Property Name="dt_nascimento" Type="date" Nullable="false" />
     <Property Name="ds_telefone" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="ds_telefone2" Type="varchar" MaxLength="14" />
     <Property Name="ds_email" Type="varchar" MaxLength="150" Nullable="false" />
     <Property Name="ds_rg" Type="varchar" MaxLength="12" Nullable="false" />
-    <Property Name="ds_cpf" Type="varchar" MaxLength="11" Nullable="false" />
     <Property Name="ds_genero" Type="varchar" MaxLength="1" />
     <Property Name="ds_cep" Type="varchar" MaxLength="9" Nullable="false" />
     <Property Name="ds_observacao" Type="varchar" MaxLength="200" Nullable="false" />
     <Property Name="ds_estado" Type="varchar" MaxLength="3" Nullable="false" />
     <Property Name="ds_bairro" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="ds_cidade" Type="varchar" MaxLength="30" />
-    <Property Name="ds_periodo" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="ds_periodo" Type="varchar" MaxLength="5" />
     <Property Name="nm_responsavel" Type="varchar" MaxLength="200" Nullable="false" />
     <Property Name="ds_nivel" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="nmr_cliente" Type="int" Nullable="false" />
-  </EntityType>
-  <EntityType Name="tb_colaborador">
-    <Key>
-      <PropertyRef Name="id_funcionario" />
-    </Key>
-    <Property Name="id_funcionario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nm_funcionario" Type="varchar" MaxLength="100" Nullable="false" />
-    <Property Name="ds_rg" Type="int" Nullable="false" />
-    <Property Name="ds_cpf" Type="int" Nullable="false" />
-    <Property Name="ds_cep" Type="int" />
-    <Property Name="ds_endereco" Type="varchar" MaxLength="100" />
-    <Property Name="dt_nascimento" Type="date" />
-    <Property Name="dt_contratacao" Type="date" />
-    <Property Name="dt_demicao" Type="date" />
-    <Property Name="vl_salario" Type="decimal" Precision="10" Scale="0" />
-    <Property Name="ds_falta" Type="int" />
-    <Property Name="ds_telefone" Type="int" />
-    <Property Name="ds_email" Type="varchar" MaxLength="100" />
-    <Property Name="genero_funcionario" Type="varchar" MaxLength="1" />
+    <Property Name="ds_prioridade" Type="bool" />
   </EntityType>
   <EntityType Name="tb_compra">
     <Key>
@@ -136,16 +118,16 @@
       <PropertyRef Name="id_fornecedor" />
     </Key>
     <Property Name="id_fornecedor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nm_fornecedor" Type="varchar" MaxLength="90" Nullable="false" />
-    <Property Name="tell_contato" Type="varchar" MaxLength="11" Nullable="false" />
-    <Property Name="tell_contato2" Type="varchar" MaxLength="11" />
-    <Property Name="rua" Type="varchar" MaxLength="150" />
-    <Property Name="estado" Type="varchar" MaxLength="2" />
-    <Property Name="cidade" Type="varchar" MaxLength="100" Nullable="false" />
-    <Property Name="bairro" Type="varchar" MaxLength="90" />
+    <Property Name="nm_fornecedor" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="tell_contato" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="tell_contato2" Type="varchar" MaxLength="13" />
+    <Property Name="rua" Type="varchar" MaxLength="25" />
+    <Property Name="estado" Type="varchar" MaxLength="3" />
+    <Property Name="cidade" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="bairro" Type="varchar" MaxLength="30" />
     <Property Name="cep" Type="varchar" MaxLength="9" />
-    <Property Name="ds_cnpj" Type="varchar" MaxLength="18" Nullable="false" />
-    <Property Name="ds_email" Type="varchar" MaxLength="90" />
+    <Property Name="ds_cnpj" Type="varchar" MaxLength="14" Nullable="false" />
+    <Property Name="ds_email" Type="varchar" MaxLength="30" />
     <Property Name="inscicao_estadual" Type="varchar" MaxLength="9" Nullable="false" />
     <Property Name="nmr_fornecedor" Type="int" Nullable="false" />
   </EntityType>
@@ -489,7 +471,6 @@ warning 6002: The table/view 'def.db_a4f9ad_stormpr.fluxo_de_caixa' does not hav
     <EntitySet Name="tb_aula" EntityType="Self.tb_aula" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
     <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
     <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
-    <EntitySet Name="tb_colaborador" EntityType="Self.tb_colaborador" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
     <EntitySet Name="tb_compra" EntityType="Self.tb_compra" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
     <EntitySet Name="tb_conta" EntityType="Self.tb_conta" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
     <EntitySet Name="tb_estado" EntityType="Self.tb_estado" Schema="db_a4f9ad_stormpr" store:Type="Tables" />

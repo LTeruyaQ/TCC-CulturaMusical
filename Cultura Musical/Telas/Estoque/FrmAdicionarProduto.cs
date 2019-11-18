@@ -19,33 +19,6 @@ namespace Cultura_Musical.Telas.Produtos
 
         Database.Database_Estoque DB = new Database.Database_Estoque();
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Database.Entity.tb_produto addprod = new Database.Entity.tb_produto();
-
-                addprod.nm_produto = txtProduto.Text;
-                addprod.vl_preco = Convert.ToInt32(nudPreco.Value);
-                addprod.qtd_produto = Convert.ToInt32(nudQtd.Value);
-
-                Business.Business_Estoque produtos = new Business.Business_Estoque();
-                produtos.CadastrarProduto(addprod);
-
-                MessageBox.Show("Produto cadastrado com sucesso");
-            }
-
-            catch (ArgumentException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-
-            catch (Exception)
-            {
-                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
-            }
-        }
-
         private void label6_Click(object sender, EventArgs e)
         {
 

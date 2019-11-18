@@ -47,38 +47,20 @@
           <Property Name="nm_cliente" Type="varchar" MaxLength="200" Nullable="false" />
           <Property Name="dt_nascimento" Type="date" Nullable="false" />
           <Property Name="ds_telefone" Type="varchar" MaxLength="14" Nullable="false" />
+          <Property Name="ds_telefone2" Type="varchar" MaxLength="14" />
           <Property Name="ds_email" Type="varchar" MaxLength="150" Nullable="false" />
           <Property Name="ds_rg" Type="varchar" MaxLength="12" Nullable="false" />
-          <Property Name="ds_cpf" Type="varchar" MaxLength="11" Nullable="false" />
           <Property Name="ds_genero" Type="varchar" MaxLength="1" />
           <Property Name="ds_cep" Type="varchar" MaxLength="9" Nullable="false" />
           <Property Name="ds_observacao" Type="varchar" MaxLength="200" Nullable="false" />
           <Property Name="ds_estado" Type="varchar" MaxLength="3" Nullable="false" />
           <Property Name="ds_bairro" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="ds_cidade" Type="varchar" MaxLength="30" />
-          <Property Name="ds_periodo" Type="varchar" MaxLength="5" Nullable="false" />
+          <Property Name="ds_periodo" Type="varchar" MaxLength="5" />
           <Property Name="nm_responsavel" Type="varchar" MaxLength="200" Nullable="false" />
           <Property Name="ds_nivel" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="nmr_cliente" Type="int" Nullable="false" />
-        </EntityType>
-        <EntityType Name="tb_colaborador">
-          <Key>
-            <PropertyRef Name="id_funcionario" />
-          </Key>
-          <Property Name="id_funcionario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nm_funcionario" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="ds_rg" Type="int" Nullable="false" />
-          <Property Name="ds_cpf" Type="int" Nullable="false" />
-          <Property Name="ds_cep" Type="int" />
-          <Property Name="ds_endereco" Type="varchar" MaxLength="100" />
-          <Property Name="dt_nascimento" Type="date" />
-          <Property Name="dt_contratacao" Type="date" />
-          <Property Name="dt_demicao" Type="date" />
-          <Property Name="vl_salario" Type="decimal" Precision="10" Scale="0" />
-          <Property Name="ds_falta" Type="int" />
-          <Property Name="ds_telefone" Type="int" />
-          <Property Name="ds_email" Type="varchar" MaxLength="100" />
-          <Property Name="genero_funcionario" Type="varchar" MaxLength="1" />
+          <Property Name="ds_prioridade" Type="bool" />
         </EntityType>
         <EntityType Name="tb_compra">
           <Key>
@@ -141,16 +123,16 @@
             <PropertyRef Name="id_fornecedor" />
           </Key>
           <Property Name="id_fornecedor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="nm_fornecedor" Type="varchar" MaxLength="90" Nullable="false" />
-          <Property Name="tell_contato" Type="varchar" MaxLength="11" Nullable="false" />
-          <Property Name="tell_contato2" Type="varchar" MaxLength="11" />
-          <Property Name="rua" Type="varchar" MaxLength="150" />
-          <Property Name="estado" Type="varchar" MaxLength="2" />
-          <Property Name="cidade" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="bairro" Type="varchar" MaxLength="90" />
+          <Property Name="nm_fornecedor" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="tell_contato" Type="varchar" MaxLength="14" Nullable="false" />
+          <Property Name="tell_contato2" Type="varchar" MaxLength="13" />
+          <Property Name="rua" Type="varchar" MaxLength="25" />
+          <Property Name="estado" Type="varchar" MaxLength="3" />
+          <Property Name="cidade" Type="varchar" MaxLength="25" Nullable="false" />
+          <Property Name="bairro" Type="varchar" MaxLength="30" />
           <Property Name="cep" Type="varchar" MaxLength="9" />
-          <Property Name="ds_cnpj" Type="varchar" MaxLength="18" Nullable="false" />
-          <Property Name="ds_email" Type="varchar" MaxLength="90" />
+          <Property Name="ds_cnpj" Type="varchar" MaxLength="14" Nullable="false" />
+          <Property Name="ds_email" Type="varchar" MaxLength="30" />
           <Property Name="inscicao_estadual" Type="varchar" MaxLength="9" Nullable="false" />
           <Property Name="nmr_fornecedor" Type="int" Nullable="false" />
         </EntityType>
@@ -494,7 +476,6 @@ warning 6002: The table/view 'def.db_a4f9ad_stormpr.fluxo_de_caixa' does not hav
           <EntitySet Name="tb_aula" EntityType="Self.tb_aula" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
           <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
           <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
-          <EntitySet Name="tb_colaborador" EntityType="Self.tb_colaborador" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
           <EntitySet Name="tb_compra" EntityType="Self.tb_compra" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
           <EntitySet Name="tb_conta" EntityType="Self.tb_conta" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
           <EntitySet Name="tb_estado" EntityType="Self.tb_estado" Schema="db_a4f9ad_stormpr" store:Type="Tables" />
@@ -589,96 +570,6 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="db_a4f9ad_stormprModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="db_a4f9ad_stormprEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="tb_agenda_estudio" EntityType="db_a4f9ad_stormprModel.tb_agenda_estudio" />
-          <EntitySet Name="tb_aula" EntityType="db_a4f9ad_stormprModel.tb_aula" />
-          <EntitySet Name="tb_beneficio" EntityType="db_a4f9ad_stormprModel.tb_beneficio" />
-          <EntitySet Name="tb_cliente" EntityType="db_a4f9ad_stormprModel.tb_cliente" />
-          <EntitySet Name="tb_colaborador" EntityType="db_a4f9ad_stormprModel.tb_colaborador" />
-          <EntitySet Name="tb_compra" EntityType="db_a4f9ad_stormprModel.tb_compra" />
-          <EntitySet Name="tb_conta" EntityType="db_a4f9ad_stormprModel.tb_conta" />
-          <EntitySet Name="tb_estado" EntityType="db_a4f9ad_stormprModel.tb_estado" />
-          <EntitySet Name="tb_estoque" EntityType="db_a4f9ad_stormprModel.tb_estoque" />
-          <EntitySet Name="tb_financeiro" EntityType="db_a4f9ad_stormprModel.tb_financeiro" />
-          <EntitySet Name="tb_folha_pagamento" EntityType="db_a4f9ad_stormprModel.tb_folha_pagamento" />
-          <EntitySet Name="tb_funcionario" EntityType="db_a4f9ad_stormprModel.tb_funcionario" />
-          <EntitySet Name="tb_holerite" EntityType="db_a4f9ad_stormprModel.tb_holerite" />
-          <EntitySet Name="tb_jornada" EntityType="db_a4f9ad_stormprModel.tb_jornada" />
-          <EntitySet Name="tb_login" EntityType="db_a4f9ad_stormprModel.tb_login" />
-          <EntitySet Name="tb_plano" EntityType="db_a4f9ad_stormprModel.tb_plano" />
-          <EntitySet Name="tb_ponto" EntityType="db_a4f9ad_stormprModel.tb_ponto" />
-          <EntitySet Name="tb_produto" EntityType="db_a4f9ad_stormprModel.tb_produto" />
-          <EntitySet Name="tb_prolabore" EntityType="db_a4f9ad_stormprModel.tb_prolabore" />
-          <EntitySet Name="tb_sala" EntityType="db_a4f9ad_stormprModel.tb_sala" />
-          <EntitySet Name="tb_tipo_conta" EntityType="db_a4f9ad_stormprModel.tb_tipo_conta" />
-          <EntitySet Name="tb_venda_plano" EntityType="db_a4f9ad_stormprModel.tb_venda_plano" />
-          <AssociationSet Name="fk_tb_agenda_estudio_tb_cliente1" Association="db_a4f9ad_stormprModel.fk_tb_agenda_estudio_tb_cliente1">
-            <End Role="tb_cliente" EntitySet="tb_cliente" />
-            <End Role="tb_agenda_estudio" EntitySet="tb_agenda_estudio" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_cliente_aula_tb_cliente1" Association="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_cliente1">
-            <End Role="tb_cliente" EntitySet="tb_cliente" />
-            <End Role="tb_aula" EntitySet="tb_aula" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_cliente_aula_tb_funcionario1" Association="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_funcionario1">
-            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-            <End Role="tb_aula" EntitySet="tb_aula" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_cliente_aula_tb_sala1" Association="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_sala1">
-            <End Role="tb_sala" EntitySet="tb_sala" />
-            <End Role="tb_aula" EntitySet="tb_aula" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_funcionario_tb_beneficio1" Association="db_a4f9ad_stormprModel.fk_tb_funcionario_tb_beneficio1">
-            <End Role="tb_beneficio" EntitySet="tb_beneficio" />
-            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_venda_plano_tb_cliente1" Association="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_cliente1">
-            <End Role="tb_cliente" EntitySet="tb_cliente" />
-            <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_produto_tb_compra1" Association="db_a4f9ad_stormprModel.fk_tb_produto_tb_compra1">
-            <End Role="tb_compra" EntitySet="tb_compra" />
-            <End Role="tb_produto" EntitySet="tb_produto" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_conta_tb_tipo_conta1" Association="db_a4f9ad_stormprModel.fk_tb_conta_tb_tipo_conta1">
-            <End Role="tb_tipo_conta" EntitySet="tb_tipo_conta" />
-            <End Role="tb_conta" EntitySet="tb_conta" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_estoque_tb_produto1" Association="db_a4f9ad_stormprModel.fk_tb_estoque_tb_produto1">
-            <End Role="tb_produto" EntitySet="tb_produto" />
-            <End Role="tb_estoque" EntitySet="tb_estoque" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_folha_pagamento_tb_financeiro1" Association="db_a4f9ad_stormprModel.fk_tb_folha_pagamento_tb_financeiro1">
-            <End Role="tb_financeiro" EntitySet="tb_financeiro" />
-            <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_folha_pagamento_tb_funcionario1" Association="db_a4f9ad_stormprModel.fk_tb_folha_pagamento_tb_funcionario1">
-            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-            <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
-          </AssociationSet>
-          <AssociationSet Name="tb_jornada_ibfk_1" Association="db_a4f9ad_stormprModel.tb_jornada_ibfk_1">
-            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-            <End Role="tb_jornada" EntitySet="tb_jornada" />
-          </AssociationSet>
-          <AssociationSet Name="tb_ponto_ibfk_1" Association="db_a4f9ad_stormprModel.tb_ponto_ibfk_1">
-            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
-            <End Role="tb_ponto" EntitySet="tb_ponto" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_prolabore_tb_login1" Association="db_a4f9ad_stormprModel.fk_tb_prolabore_tb_login1">
-            <End Role="tb_login" EntitySet="tb_login" />
-            <End Role="tb_prolabore" EntitySet="tb_prolabore" />
-          </AssociationSet>
-          <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_plano1">
-            <End Role="tb_plano" EntitySet="tb_plano" />
-            <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
-          </AssociationSet>
-          <EntitySet Name="fluxo_de_caixa" EntityType="db_a4f9ad_stormprModel.fluxo_de_caixa" />
-          <EntitySet Name="tb_fornecedor" EntityType="db_a4f9ad_stormprModel.tb_fornecedor" />
-          <AssociationSet Name="fk_tb_compra_tb_fornecedor1" Association="db_a4f9ad_stormprModel.fk_tb_compra_tb_fornecedor1">
-            <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
-            <End Role="tb_compra" EntitySet="tb_compra" />
-          </AssociationSet>
-        </EntityContainer>
         <EntityType Name="tb_agenda_estudio">
           <Key>
             <PropertyRef Name="id_agenda_estudio" />
@@ -689,7 +580,7 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="qtd_pessoa" Type="Int32" Nullable="false" />
           <Property Name="dt_estudio" Type="DateTime" Nullable="false" />
           <Property Name="id_cliente" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_cliente" Relationship="db_a4f9ad_stormprModel.fk_tb_agenda_estudio_tb_cliente1" FromRole="tb_agenda_estudio" ToRole="tb_cliente" />
+          <NavigationProperty Name="tb_cliente" Relationship="Self.fk_tb_agenda_estudio_tb_cliente1" FromRole="tb_agenda_estudio" ToRole="tb_cliente" />
         </EntityType>
         <EntityType Name="tb_aula">
           <Key>
@@ -699,13 +590,13 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="dt_aula" Type="DateTime" Nullable="false" />
           <Property Name="hr_incio" Type="Time" Nullable="false" />
           <Property Name="hr_fim" Type="Time" Nullable="false" />
-          <Property Name="tp_aula" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Name="tp_aula" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="id_funcionario" Type="Int32" Nullable="false" />
           <Property Name="id_cliente" Type="Int32" Nullable="false" />
           <Property Name="id_sala" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_cliente" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_cliente1" FromRole="tb_aula" ToRole="tb_cliente" />
-          <NavigationProperty Name="tb_funcionario" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_aula" ToRole="tb_funcionario" />
-          <NavigationProperty Name="tb_sala" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_sala1" FromRole="tb_aula" ToRole="tb_sala" />
+          <NavigationProperty Name="tb_cliente" Relationship="Self.fk_tb_cliente_aula_tb_cliente1" FromRole="tb_aula" ToRole="tb_cliente" />
+          <NavigationProperty Name="tb_funcionario" Relationship="Self.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_aula" ToRole="tb_funcionario" />
+          <NavigationProperty Name="tb_sala" Relationship="Self.fk_tb_cliente_aula_tb_sala1" FromRole="tb_aula" ToRole="tb_sala" />
         </EntityType>
         <EntityType Name="tb_beneficio">
           <Key>
@@ -716,51 +607,33 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="ds_va" Type="Decimal" Nullable="false" />
           <Property Name="ds_convenio" Type="Decimal" Nullable="false" />
           <Property Name="ds_gratificacao" Type="Decimal" Nullable="false" />
-          <NavigationProperty Name="tb_funcionario" Relationship="db_a4f9ad_stormprModel.fk_tb_funcionario_tb_beneficio1" FromRole="tb_beneficio" ToRole="tb_funcionario" />
+          <NavigationProperty Name="tb_funcionario" Relationship="Self.fk_tb_funcionario_tb_beneficio1" FromRole="tb_beneficio" ToRole="tb_funcionario" />
         </EntityType>
         <EntityType Name="tb_cliente">
           <Key>
             <PropertyRef Name="id_cliente" />
           </Key>
           <Property Name="id_cliente" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_cliente" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="nm_cliente" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
-          <Property Name="ds_telefone" Type="String" Nullable="false" MaxLength="14" FixedLength="false" Unicode="false" />
-          <Property Name="ds_email" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
-          <Property Name="ds_rg" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
-          <Property Name="ds_cpf" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+          <Property Name="ds_telefone" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_telefone2" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+          <Property Name="ds_email" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_rg" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_genero" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
-          <Property Name="ds_cep" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
-          <Property Name="ds_observacao" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
-          <Property Name="ds_estado" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
-          <Property Name="ds_bairro" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ds_cep" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_observacao" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_estado" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_bairro" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_cidade" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="ds_periodo" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
-          <Property Name="nm_responsavel" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
-          <Property Name="ds_nivel" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="ds_periodo" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+          <Property Name="nm_responsavel" Type="String" MaxLength="200" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_nivel" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="nmr_cliente" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_agenda_estudio" Relationship="db_a4f9ad_stormprModel.fk_tb_agenda_estudio_tb_cliente1" FromRole="tb_cliente" ToRole="tb_agenda_estudio" />
-          <NavigationProperty Name="tb_aula" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_cliente1" FromRole="tb_cliente" ToRole="tb_aula" />
-          <NavigationProperty Name="tb_venda_plano" Relationship="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_cliente1" FromRole="tb_cliente" ToRole="tb_venda_plano" />
-        </EntityType>
-        <EntityType Name="tb_colaborador">
-          <Key>
-            <PropertyRef Name="id_funcionario" />
-          </Key>
-          <Property Name="id_funcionario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_funcionario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="ds_rg" Type="Int32" Nullable="false" />
-          <Property Name="ds_cpf" Type="Int32" Nullable="false" />
-          <Property Name="ds_cep" Type="Int32" />
-          <Property Name="ds_endereco" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="dt_nascimento" Type="DateTime" />
-          <Property Name="dt_contratacao" Type="DateTime" />
-          <Property Name="dt_demicao" Type="DateTime" />
-          <Property Name="vl_salario" Type="Decimal" />
-          <Property Name="ds_falta" Type="Int32" />
-          <Property Name="ds_telefone" Type="Int32" />
-          <Property Name="ds_email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="genero_funcionario" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="ds_prioridade" Type="Boolean" />
+          <NavigationProperty Name="tb_agenda_estudio" Relationship="Self.fk_tb_agenda_estudio_tb_cliente1" FromRole="tb_cliente" ToRole="tb_agenda_estudio" />
+          <NavigationProperty Name="tb_aula" Relationship="Self.fk_tb_cliente_aula_tb_cliente1" FromRole="tb_cliente" ToRole="tb_aula" />
+          <NavigationProperty Name="tb_venda_plano" Relationship="Self.fk_tb_venda_plano_tb_cliente1" FromRole="tb_cliente" ToRole="tb_venda_plano" />
         </EntityType>
         <EntityType Name="tb_compra">
           <Key>
@@ -771,8 +644,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="dt_compra" Type="DateTime" Nullable="false" />
           <Property Name="vl_pagar" Type="Decimal" Nullable="false" />
           <Property Name="id_fornecedor" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_produto" Relationship="db_a4f9ad_stormprModel.fk_tb_produto_tb_compra1" FromRole="tb_compra" ToRole="tb_produto" />
-          <NavigationProperty Name="tb_fornecedor" Relationship="db_a4f9ad_stormprModel.fk_tb_compra_tb_fornecedor1" FromRole="tb_compra" ToRole="tb_fornecedor" />
+          <NavigationProperty Name="tb_fornecedor" Relationship="Self.fk_tb_compra_tb_fornecedor1" FromRole="tb_compra" ToRole="tb_fornecedor" />
+          <NavigationProperty Name="tb_produto" Relationship="Self.fk_tb_produto_tb_compra1" FromRole="tb_compra" ToRole="tb_produto" />
         </EntityType>
         <EntityType Name="tb_conta">
           <Key>
@@ -783,7 +656,7 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="id_tipo_conta" Type="Int32" Nullable="false" />
           <Property Name="dt_conta" Type="DateTime" Nullable="false" />
           <Property Name="dt_pagamento" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="tb_tipo_conta" Relationship="db_a4f9ad_stormprModel.fk_tb_conta_tb_tipo_conta1" FromRole="tb_conta" ToRole="tb_tipo_conta" />
+          <NavigationProperty Name="tb_tipo_conta" Relationship="Self.fk_tb_conta_tb_tipo_conta1" FromRole="tb_conta" ToRole="tb_tipo_conta" />
         </EntityType>
         <EntityType Name="tb_estado">
           <Key>
@@ -797,9 +670,9 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
             <PropertyRef Name="id_estoque" />
           </Key>
           <Property Name="id_estoque" Type="Int32" Nullable="false" />
-          <Property Name="qtd_estoque" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="qtd_estoque" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="id_produto" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_produto" Relationship="db_a4f9ad_stormprModel.fk_tb_estoque_tb_produto1" FromRole="tb_estoque" ToRole="tb_produto" />
+          <NavigationProperty Name="tb_produto" Relationship="Self.fk_tb_estoque_tb_produto1" FromRole="tb_estoque" ToRole="tb_produto" />
         </EntityType>
         <EntityType Name="tb_financeiro">
           <Key>
@@ -809,7 +682,7 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="ds_fgts" Type="Decimal" Nullable="false" />
           <Property Name="ds_inss" Type="Decimal" Nullable="false" />
           <Property Name="ds_irrf" Type="Decimal" Nullable="false" />
-          <NavigationProperty Name="tb_folha_pagamento" Relationship="db_a4f9ad_stormprModel.fk_tb_folha_pagamento_tb_financeiro1" FromRole="tb_financeiro" ToRole="tb_folha_pagamento" />
+          <NavigationProperty Name="tb_folha_pagamento" Relationship="Self.fk_tb_folha_pagamento_tb_financeiro1" FromRole="tb_financeiro" ToRole="tb_folha_pagamento" />
         </EntityType>
         <EntityType Name="tb_folha_pagamento">
           <Key>
@@ -822,46 +695,65 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="id_financeiro" Type="Int32" Nullable="false" />
           <Property Name="dt_folha" Type="DateTime" Nullable="false" />
           <Property Name="hr_extra" Type="Time" Nullable="false" />
-          <NavigationProperty Name="tb_financeiro" Relationship="db_a4f9ad_stormprModel.fk_tb_folha_pagamento_tb_financeiro1" FromRole="tb_folha_pagamento" ToRole="tb_financeiro" />
-          <NavigationProperty Name="tb_funcionario" Relationship="db_a4f9ad_stormprModel.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_folha_pagamento" ToRole="tb_funcionario" />
+          <NavigationProperty Name="tb_financeiro" Relationship="Self.fk_tb_folha_pagamento_tb_financeiro1" FromRole="tb_folha_pagamento" ToRole="tb_financeiro" />
+          <NavigationProperty Name="tb_funcionario" Relationship="Self.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_folha_pagamento" ToRole="tb_funcionario" />
+        </EntityType>
+        <EntityType Name="tb_fornecedor">
+          <Key>
+            <PropertyRef Name="id_fornecedor" />
+          </Key>
+          <Property Name="id_fornecedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="nm_fornecedor" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tell_contato" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="tell_contato2" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+          <Property Name="rua" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Name="estado" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="cidade" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="bairro" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="cep" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+          <Property Name="ds_cnpj" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="inscicao_estadual" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nmr_fornecedor" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tb_compra" Relationship="Self.fk_tb_compra_tb_fornecedor1" FromRole="tb_fornecedor" ToRole="tb_compra" />
         </EntityType>
         <EntityType Name="tb_funcionario">
           <Key>
             <PropertyRef Name="id_funcionario" />
           </Key>
           <Property Name="id_funcionario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_funcionario" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="nm_funcionario" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
           <Property Name="dt_contratacao" Type="DateTime" Nullable="false" />
           <Property Name="dt_demicao" Type="DateTime" />
           <Property Name="vl_salario" Type="Decimal" Nullable="false" />
-          <Property Name="ds_telefone" Type="String" Nullable="false" MaxLength="14" FixedLength="false" Unicode="false" />
-          <Property Name="ds_email" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
-          <Property Name="ds_genero" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
-          <Property Name="ds_rg" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
-          <Property Name="ds_cpf" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
-          <Property Name="ds_cep" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
-          <Property Name="ds_cargo" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
-          <Property Name="ds_rua" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="ds_estado" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
-          <Property Name="ds_bairro" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="ds_complemento" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ds_telefone" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_email" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_genero" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_rg" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_cpf" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_cep" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_cargo" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_rua" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_estado" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_bairro" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_complemento" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="id_beneficio" Type="Int32" Nullable="false" />
-          <Property Name="ds_cidade" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+          <Property Name="ds_cidade" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ft_funcionario" Type="Binary" MaxLength="Max" FixedLength="false" />
           <Property Name="nmr_funcionario" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_aula" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_aula" />
-          <NavigationProperty Name="tb_beneficio" Relationship="db_a4f9ad_stormprModel.fk_tb_funcionario_tb_beneficio1" FromRole="tb_funcionario" ToRole="tb_beneficio" />
-          <NavigationProperty Name="tb_folha_pagamento" Relationship="db_a4f9ad_stormprModel.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_folha_pagamento" />
-          <NavigationProperty Name="tb_jornada" Relationship="db_a4f9ad_stormprModel.tb_jornada_ibfk_1" FromRole="tb_funcionario" ToRole="tb_jornada" />
-          <NavigationProperty Name="tb_ponto" Relationship="db_a4f9ad_stormprModel.tb_ponto_ibfk_1" FromRole="tb_funcionario" ToRole="tb_ponto" />
+          <NavigationProperty Name="tb_aula" Relationship="Self.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_aula" />
+          <NavigationProperty Name="tb_beneficio" Relationship="Self.fk_tb_funcionario_tb_beneficio1" FromRole="tb_funcionario" ToRole="tb_beneficio" />
+          <NavigationProperty Name="tb_folha_pagamento" Relationship="Self.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_funcionario" ToRole="tb_folha_pagamento" />
+          <NavigationProperty Name="tb_jornada" Relationship="Self.tb_jornada_ibfk_1" FromRole="tb_funcionario" ToRole="tb_jornada" />
+          <NavigationProperty Name="tb_ponto" Relationship="Self.tb_ponto_ibfk_1" FromRole="tb_funcionario" ToRole="tb_ponto" />
         </EntityType>
         <EntityType Name="tb_holerite">
           <Key>
             <PropertyRef Name="id_holerite" />
           </Key>
           <Property Name="id_holerite" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="vl_salario_liquido" Type="String" Nullable="false" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="vl_salario_liquido" Type="String" MaxLength="45" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
         <EntityType Name="tb_jornada">
           <Key>
@@ -873,30 +765,30 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="hr_intervalo" Type="Time" />
           <Property Name="hr_volta_intervalo" Type="Time" />
           <Property Name="hr_saida" Type="Time" />
-          <NavigationProperty Name="tb_funcionario" Relationship="db_a4f9ad_stormprModel.tb_jornada_ibfk_1" FromRole="tb_jornada" ToRole="tb_funcionario" />
+          <NavigationProperty Name="tb_funcionario" Relationship="Self.tb_jornada_ibfk_1" FromRole="tb_jornada" ToRole="tb_funcionario" />
         </EntityType>
         <EntityType Name="tb_login">
           <Key>
             <PropertyRef Name="id_login" />
           </Key>
           <Property Name="id_login" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_usuario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="sen_usuario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="nm_usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="sen_usuario" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_admin" Type="Boolean" />
           <Property Name="dt_login" Type="DateTime" />
-          <NavigationProperty Name="tb_prolabore" Relationship="db_a4f9ad_stormprModel.fk_tb_prolabore_tb_login1" FromRole="tb_login" ToRole="tb_prolabore" />
+          <NavigationProperty Name="tb_prolabore" Relationship="Self.fk_tb_prolabore_tb_login1" FromRole="tb_login" ToRole="tb_prolabore" />
         </EntityType>
         <EntityType Name="tb_plano">
           <Key>
             <PropertyRef Name="id_plano" />
           </Key>
           <Property Name="id_plano" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_plano" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="nm_plano" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ds_duracao" Type="Int32" Nullable="false" />
           <Property Name="vl_preco" Type="Decimal" Nullable="false" />
-          <Property Name="ds_descricao" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="ds_descricao" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="qtd_aula_semana" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_venda_plano" Relationship="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_plano1" FromRole="tb_plano" ToRole="tb_venda_plano" />
+          <NavigationProperty Name="tb_venda_plano" Relationship="Self.fk_tb_venda_plano_tb_plano1" FromRole="tb_plano" ToRole="tb_venda_plano" />
         </EntityType>
         <EntityType Name="tb_ponto">
           <Key>
@@ -909,39 +801,39 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="hr_saida_intervalo" Type="Time" />
           <Property Name="hr_volta_intervalo" Type="Time" />
           <Property Name="dt_saida" Type="DateTime" />
-          <NavigationProperty Name="tb_funcionario" Relationship="db_a4f9ad_stormprModel.tb_ponto_ibfk_1" FromRole="tb_ponto" ToRole="tb_funcionario" />
+          <NavigationProperty Name="tb_funcionario" Relationship="Self.tb_ponto_ibfk_1" FromRole="tb_ponto" ToRole="tb_funcionario" />
         </EntityType>
         <EntityType Name="tb_produto">
           <Key>
             <PropertyRef Name="id_produto" />
           </Key>
           <Property Name="id_produto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_produto" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="nm_produto" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="vl_preco" Type="Decimal" Nullable="false" />
           <Property Name="qtd_produto" Type="Int32" Nullable="false" />
           <Property Name="id_compra" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_compra" Relationship="db_a4f9ad_stormprModel.fk_tb_produto_tb_compra1" FromRole="tb_produto" ToRole="tb_compra" />
-          <NavigationProperty Name="tb_estoque" Relationship="db_a4f9ad_stormprModel.fk_tb_estoque_tb_produto1" FromRole="tb_produto" ToRole="tb_estoque" />
+          <NavigationProperty Name="tb_compra" Relationship="Self.fk_tb_produto_tb_compra1" FromRole="tb_produto" ToRole="tb_compra" />
+          <NavigationProperty Name="tb_estoque" Relationship="Self.fk_tb_estoque_tb_produto1" FromRole="tb_produto" ToRole="tb_estoque" />
         </EntityType>
         <EntityType Name="tb_prolabore">
           <Key>
             <PropertyRef Name="id_prolabore" />
           </Key>
           <Property Name="id_prolabore" Type="Int32" Nullable="false" />
-          <Property Name="nm_prolabore" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="nm_prolabore" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
-          <Property Name="ds_rg" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
-          <Property Name="ds_cpf" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
-          <Property Name="nmr_telefone" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="false" />
-          <Property Name="ds_email" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="ds_bairro" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="ds_rua" Type="String" Nullable="false" MaxLength="35" FixedLength="false" Unicode="false" />
-          <Property Name="ds_cidade" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-          <Property Name="ds_estado" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
-          <Property Name="ds_cep" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
-          <Property Name="ds_genero" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+          <Property Name="ds_rg" Type="String" MaxLength="11" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_cpf" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="nmr_telefone" Type="String" MaxLength="13" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_bairro" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_rua" Type="String" MaxLength="35" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_cidade" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_estado" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_cep" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ds_genero" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="id_login" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_login" Relationship="db_a4f9ad_stormprModel.fk_tb_prolabore_tb_login1" FromRole="tb_prolabore" ToRole="tb_login" />
+          <NavigationProperty Name="tb_login" Relationship="Self.fk_tb_prolabore_tb_login1" FromRole="tb_prolabore" ToRole="tb_login" />
         </EntityType>
         <EntityType Name="tb_sala">
           <Key>
@@ -950,16 +842,16 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="id_sala" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="nr_sala" Type="Int32" Nullable="false" />
           <Property Name="qtd_max_alunos" Type="Int32" Nullable="false" />
-          <Property Name="tp_instrumento" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="tb_aula" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_sala1" FromRole="tb_sala" ToRole="tb_aula" />
+          <Property Name="tp_instrumento" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tb_aula" Relationship="Self.fk_tb_cliente_aula_tb_sala1" FromRole="tb_sala" ToRole="tb_aula" />
         </EntityType>
         <EntityType Name="tb_tipo_conta">
           <Key>
             <PropertyRef Name="id_tipo_conta" />
           </Key>
           <Property Name="id_tipo_conta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="tp_conta" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="tb_conta" Relationship="db_a4f9ad_stormprModel.fk_tb_conta_tb_tipo_conta1" FromRole="tb_tipo_conta" ToRole="tb_conta" />
+          <Property Name="tp_conta" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="tb_conta" Relationship="Self.fk_tb_conta_tb_tipo_conta1" FromRole="tb_tipo_conta" ToRole="tb_conta" />
         </EntityType>
         <EntityType Name="tb_venda_plano">
           <Key>
@@ -970,12 +862,12 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="id_cliente" Type="Int32" Nullable="false" />
           <Property Name="dt_inicio" Type="DateTime" Nullable="false" />
           <Property Name="dt_fim" Type="DateTime" Nullable="false" />
-          <NavigationProperty Name="tb_cliente" Relationship="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_cliente1" FromRole="tb_venda_plano" ToRole="tb_cliente" />
-          <NavigationProperty Name="tb_plano" Relationship="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_plano1" FromRole="tb_venda_plano" ToRole="tb_plano" />
+          <NavigationProperty Name="tb_cliente" Relationship="Self.fk_tb_venda_plano_tb_cliente1" FromRole="tb_venda_plano" ToRole="tb_cliente" />
+          <NavigationProperty Name="tb_plano" Relationship="Self.fk_tb_venda_plano_tb_plano1" FromRole="tb_venda_plano" ToRole="tb_plano" />
         </EntityType>
         <Association Name="fk_tb_agenda_estudio_tb_cliente1">
-          <End Type="db_a4f9ad_stormprModel.tb_cliente" Role="tb_cliente" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_agenda_estudio" Role="tb_agenda_estudio" Multiplicity="*" />
+          <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
+          <End Role="tb_agenda_estudio" Type="Self.tb_agenda_estudio" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_cliente">
               <PropertyRef Name="id_cliente" />
@@ -986,8 +878,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_tb_cliente_aula_tb_cliente1">
-          <End Type="db_a4f9ad_stormprModel.tb_cliente" Role="tb_cliente" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_aula" Role="tb_aula" Multiplicity="*" />
+          <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
+          <End Role="tb_aula" Type="Self.tb_aula" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_cliente">
               <PropertyRef Name="id_cliente" />
@@ -998,8 +890,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_tb_cliente_aula_tb_funcionario1">
-          <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_aula" Role="tb_aula" Multiplicity="*" />
+          <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
+          <End Role="tb_aula" Type="Self.tb_aula" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_funcionario">
               <PropertyRef Name="id_funcionario" />
@@ -1010,8 +902,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_tb_cliente_aula_tb_sala1">
-          <End Type="db_a4f9ad_stormprModel.tb_sala" Role="tb_sala" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_aula" Role="tb_aula" Multiplicity="*" />
+          <End Role="tb_sala" Type="Self.tb_sala" Multiplicity="1" />
+          <End Role="tb_aula" Type="Self.tb_aula" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_sala">
               <PropertyRef Name="id_sala" />
@@ -1022,8 +914,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_tb_funcionario_tb_beneficio1">
-          <End Type="db_a4f9ad_stormprModel.tb_beneficio" Role="tb_beneficio" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="*" />
+          <End Role="tb_beneficio" Type="Self.tb_beneficio" Multiplicity="1" />
+          <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_beneficio">
               <PropertyRef Name="id_beneficio" />
@@ -1034,8 +926,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_tb_venda_plano_tb_cliente1">
-          <End Type="db_a4f9ad_stormprModel.tb_cliente" Role="tb_cliente" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_venda_plano" Role="tb_venda_plano" Multiplicity="*" />
+          <End Role="tb_cliente" Type="Self.tb_cliente" Multiplicity="1" />
+          <End Role="tb_venda_plano" Type="Self.tb_venda_plano" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_cliente">
               <PropertyRef Name="id_cliente" />
@@ -1045,9 +937,21 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="fk_tb_compra_tb_fornecedor1">
+          <End Role="tb_fornecedor" Type="Self.tb_fornecedor" Multiplicity="1" />
+          <End Role="tb_compra" Type="Self.tb_compra" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tb_fornecedor">
+              <PropertyRef Name="id_fornecedor" />
+            </Principal>
+            <Dependent Role="tb_compra">
+              <PropertyRef Name="id_fornecedor" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="fk_tb_produto_tb_compra1">
-          <End Type="db_a4f9ad_stormprModel.tb_compra" Role="tb_compra" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_produto" Role="tb_produto" Multiplicity="*" />
+          <End Role="tb_compra" Type="Self.tb_compra" Multiplicity="1" />
+          <End Role="tb_produto" Type="Self.tb_produto" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_compra">
               <PropertyRef Name="id_compra" />
@@ -1058,8 +962,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_tb_conta_tb_tipo_conta1">
-          <End Type="db_a4f9ad_stormprModel.tb_tipo_conta" Role="tb_tipo_conta" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_conta" Role="tb_conta" Multiplicity="*" />
+          <End Role="tb_tipo_conta" Type="Self.tb_tipo_conta" Multiplicity="1" />
+          <End Role="tb_conta" Type="Self.tb_conta" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_tipo_conta">
               <PropertyRef Name="id_tipo_conta" />
@@ -1070,8 +974,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_tb_estoque_tb_produto1">
-          <End Type="db_a4f9ad_stormprModel.tb_produto" Role="tb_produto" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_estoque" Role="tb_estoque" Multiplicity="*" />
+          <End Role="tb_produto" Type="Self.tb_produto" Multiplicity="1" />
+          <End Role="tb_estoque" Type="Self.tb_estoque" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_produto">
               <PropertyRef Name="id_produto" />
@@ -1082,8 +986,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_tb_folha_pagamento_tb_financeiro1">
-          <End Type="db_a4f9ad_stormprModel.tb_financeiro" Role="tb_financeiro" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_folha_pagamento" Role="tb_folha_pagamento" Multiplicity="*" />
+          <End Role="tb_financeiro" Type="Self.tb_financeiro" Multiplicity="1" />
+          <End Role="tb_folha_pagamento" Type="Self.tb_folha_pagamento" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_financeiro">
               <PropertyRef Name="id_financeiro" />
@@ -1094,8 +998,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_tb_folha_pagamento_tb_funcionario1">
-          <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_folha_pagamento" Role="tb_folha_pagamento" Multiplicity="*" />
+          <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
+          <End Role="tb_folha_pagamento" Type="Self.tb_folha_pagamento" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_funcionario">
               <PropertyRef Name="id_funcionario" />
@@ -1106,8 +1010,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="tb_jornada_ibfk_1">
-          <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_jornada" Role="tb_jornada" Multiplicity="*" />
+          <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
+          <End Role="tb_jornada" Type="Self.tb_jornada" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_funcionario">
               <PropertyRef Name="id_funcionario" />
@@ -1118,8 +1022,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="tb_ponto_ibfk_1">
-          <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_ponto" Role="tb_ponto" Multiplicity="*" />
+          <End Role="tb_funcionario" Type="Self.tb_funcionario" Multiplicity="1" />
+          <End Role="tb_ponto" Type="Self.tb_ponto" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_funcionario">
               <PropertyRef Name="id_funcionario" />
@@ -1130,8 +1034,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_tb_prolabore_tb_login1">
-          <End Type="db_a4f9ad_stormprModel.tb_login" Role="tb_login" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_prolabore" Role="tb_prolabore" Multiplicity="*" />
+          <End Role="tb_login" Type="Self.tb_login" Multiplicity="1" />
+          <End Role="tb_prolabore" Type="Self.tb_prolabore" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_login">
               <PropertyRef Name="id_login" />
@@ -1142,8 +1046,8 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           </ReferentialConstraint>
         </Association>
         <Association Name="fk_tb_venda_plano_tb_plano1">
-          <End Type="db_a4f9ad_stormprModel.tb_plano" Role="tb_plano" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_venda_plano" Role="tb_venda_plano" Multiplicity="*" />
+          <End Role="tb_plano" Type="Self.tb_plano" Multiplicity="1" />
+          <End Role="tb_venda_plano" Type="Self.tb_venda_plano" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="tb_plano">
               <PropertyRef Name="id_plano" />
@@ -1153,6 +1057,95 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityContainer Name="db_a4f9ad_stormprEntities3" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tb_agenda_estudio" EntityType="Self.tb_agenda_estudio" />
+          <EntitySet Name="tb_aula" EntityType="Self.tb_aula" />
+          <EntitySet Name="tb_beneficio" EntityType="Self.tb_beneficio" />
+          <EntitySet Name="tb_cliente" EntityType="Self.tb_cliente" />
+          <EntitySet Name="tb_compra" EntityType="Self.tb_compra" />
+          <EntitySet Name="tb_conta" EntityType="Self.tb_conta" />
+          <EntitySet Name="tb_estado" EntityType="Self.tb_estado" />
+          <EntitySet Name="tb_estoque" EntityType="Self.tb_estoque" />
+          <EntitySet Name="tb_financeiro" EntityType="Self.tb_financeiro" />
+          <EntitySet Name="tb_folha_pagamento" EntityType="Self.tb_folha_pagamento" />
+          <EntitySet Name="tb_fornecedor" EntityType="Self.tb_fornecedor" />
+          <EntitySet Name="tb_funcionario" EntityType="Self.tb_funcionario" />
+          <EntitySet Name="tb_holerite" EntityType="Self.tb_holerite" />
+          <EntitySet Name="tb_jornada" EntityType="Self.tb_jornada" />
+          <EntitySet Name="tb_login" EntityType="Self.tb_login" />
+          <EntitySet Name="tb_plano" EntityType="Self.tb_plano" />
+          <EntitySet Name="tb_ponto" EntityType="Self.tb_ponto" />
+          <EntitySet Name="tb_produto" EntityType="Self.tb_produto" />
+          <EntitySet Name="tb_prolabore" EntityType="Self.tb_prolabore" />
+          <EntitySet Name="tb_sala" EntityType="Self.tb_sala" />
+          <EntitySet Name="tb_tipo_conta" EntityType="Self.tb_tipo_conta" />
+          <EntitySet Name="tb_venda_plano" EntityType="Self.tb_venda_plano" />
+          <AssociationSet Name="fk_tb_agenda_estudio_tb_cliente1" Association="Self.fk_tb_agenda_estudio_tb_cliente1">
+            <End Role="tb_cliente" EntitySet="tb_cliente" />
+            <End Role="tb_agenda_estudio" EntitySet="tb_agenda_estudio" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_cliente_aula_tb_cliente1" Association="Self.fk_tb_cliente_aula_tb_cliente1">
+            <End Role="tb_cliente" EntitySet="tb_cliente" />
+            <End Role="tb_aula" EntitySet="tb_aula" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_cliente_aula_tb_funcionario1" Association="Self.fk_tb_cliente_aula_tb_funcionario1">
+            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+            <End Role="tb_aula" EntitySet="tb_aula" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_cliente_aula_tb_sala1" Association="Self.fk_tb_cliente_aula_tb_sala1">
+            <End Role="tb_sala" EntitySet="tb_sala" />
+            <End Role="tb_aula" EntitySet="tb_aula" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_funcionario_tb_beneficio1" Association="Self.fk_tb_funcionario_tb_beneficio1">
+            <End Role="tb_beneficio" EntitySet="tb_beneficio" />
+            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_venda_plano_tb_cliente1" Association="Self.fk_tb_venda_plano_tb_cliente1">
+            <End Role="tb_cliente" EntitySet="tb_cliente" />
+            <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_compra_tb_fornecedor1" Association="Self.fk_tb_compra_tb_fornecedor1">
+            <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
+            <End Role="tb_compra" EntitySet="tb_compra" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_produto_tb_compra1" Association="Self.fk_tb_produto_tb_compra1">
+            <End Role="tb_compra" EntitySet="tb_compra" />
+            <End Role="tb_produto" EntitySet="tb_produto" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_conta_tb_tipo_conta1" Association="Self.fk_tb_conta_tb_tipo_conta1">
+            <End Role="tb_tipo_conta" EntitySet="tb_tipo_conta" />
+            <End Role="tb_conta" EntitySet="tb_conta" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_estoque_tb_produto1" Association="Self.fk_tb_estoque_tb_produto1">
+            <End Role="tb_produto" EntitySet="tb_produto" />
+            <End Role="tb_estoque" EntitySet="tb_estoque" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_folha_pagamento_tb_financeiro1" Association="Self.fk_tb_folha_pagamento_tb_financeiro1">
+            <End Role="tb_financeiro" EntitySet="tb_financeiro" />
+            <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_folha_pagamento_tb_funcionario1" Association="Self.fk_tb_folha_pagamento_tb_funcionario1">
+            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+            <End Role="tb_folha_pagamento" EntitySet="tb_folha_pagamento" />
+          </AssociationSet>
+          <AssociationSet Name="tb_jornada_ibfk_1" Association="Self.tb_jornada_ibfk_1">
+            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+            <End Role="tb_jornada" EntitySet="tb_jornada" />
+          </AssociationSet>
+          <AssociationSet Name="tb_ponto_ibfk_1" Association="Self.tb_ponto_ibfk_1">
+            <End Role="tb_funcionario" EntitySet="tb_funcionario" />
+            <End Role="tb_ponto" EntitySet="tb_ponto" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_prolabore_tb_login1" Association="Self.fk_tb_prolabore_tb_login1">
+            <End Role="tb_login" EntitySet="tb_login" />
+            <End Role="tb_prolabore" EntitySet="tb_prolabore" />
+          </AssociationSet>
+          <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="Self.fk_tb_venda_plano_tb_plano1">
+            <End Role="tb_plano" EntitySet="tb_plano" />
+            <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
+          </AssociationSet>
+          <EntitySet Name="fluxo_de_caixa" EntityType="db_a4f9ad_stormprModel.fluxo_de_caixa" />
+        </EntityContainer>
         <EntityType Name="fluxo_de_caixa">
           <Key>
             <PropertyRef Name="data_pagamento" />
@@ -1162,325 +1155,294 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
           <Property Name="valor_pago" Type="Decimal" />
           <Property Name="tipo_operação" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
         </EntityType>
-        <EntityType Name="tb_fornecedor">
-          <Key>
-            <PropertyRef Name="id_fornecedor" />
-          </Key>
-          <Property Name="id_fornecedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="nm_fornecedor" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
-          <Property Name="tell_contato" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
-          <Property Name="tell_contato2" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
-          <Property Name="rua" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
-          <Property Name="estado" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
-          <Property Name="cidade" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
-          <Property Name="bairro" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
-          <Property Name="cep" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
-          <Property Name="ds_cnpj" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
-          <Property Name="ds_email" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
-          <Property Name="inscicao_estadual" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
-          <Property Name="nmr_fornecedor" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tb_compra" Relationship="db_a4f9ad_stormprModel.fk_tb_compra_tb_fornecedor1" FromRole="tb_fornecedor" ToRole="tb_compra" />
-        </EntityType>
-        <Association Name="fk_tb_compra_tb_fornecedor1">
-          <End Type="db_a4f9ad_stormprModel.tb_fornecedor" Role="tb_fornecedor" Multiplicity="1" />
-          <End Type="db_a4f9ad_stormprModel.tb_compra" Role="tb_compra" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tb_fornecedor">
-              <PropertyRef Name="id_fornecedor" />
-            </Principal>
-            <Dependent Role="tb_compra">
-              <PropertyRef Name="id_fornecedor" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        </Schema>
+      </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="db_a4f9ad_stormprModelStoreContainer" CdmEntityContainer="db_a4f9ad_stormprEntities">
+        <EntityContainerMapping StorageEntityContainer="db_a4f9ad_stormprModelStoreContainer" CdmEntityContainer="db_a4f9ad_stormprEntities3">
           <EntitySetMapping Name="tb_agenda_estudio">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_agenda_estudio">
               <MappingFragment StoreEntitySet="tb_agenda_estudio">
-                <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
-                <ScalarProperty Name="dt_estudio" ColumnName="dt_estudio" />
-                <ScalarProperty Name="qtd_pessoa" ColumnName="qtd_pessoa" />
-                <ScalarProperty Name="hr_saida" ColumnName="hr_saida" />
-                <ScalarProperty Name="hr_entrada" ColumnName="hr_entrada" />
                 <ScalarProperty Name="id_agenda_estudio" ColumnName="id_agenda_estudio" />
+                <ScalarProperty Name="hr_entrada" ColumnName="hr_entrada" />
+                <ScalarProperty Name="hr_saida" ColumnName="hr_saida" />
+                <ScalarProperty Name="qtd_pessoa" ColumnName="qtd_pessoa" />
+                <ScalarProperty Name="dt_estudio" ColumnName="dt_estudio" />
+                <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_aula">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_aula">
               <MappingFragment StoreEntitySet="tb_aula">
-                <ScalarProperty Name="id_sala" ColumnName="id_sala" />
-                <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
-                <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
-                <ScalarProperty Name="tp_aula" ColumnName="tp_aula" />
-                <ScalarProperty Name="hr_fim" ColumnName="hr_fim" />
-                <ScalarProperty Name="hr_incio" ColumnName="hr_incio" />
-                <ScalarProperty Name="dt_aula" ColumnName="dt_aula" />
                 <ScalarProperty Name="id_aula" ColumnName="id_aula" />
+                <ScalarProperty Name="dt_aula" ColumnName="dt_aula" />
+                <ScalarProperty Name="hr_incio" ColumnName="hr_incio" />
+                <ScalarProperty Name="hr_fim" ColumnName="hr_fim" />
+                <ScalarProperty Name="tp_aula" ColumnName="tp_aula" />
+                <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
+                <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+                <ScalarProperty Name="id_sala" ColumnName="id_sala" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_beneficio">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_beneficio">
               <MappingFragment StoreEntitySet="tb_beneficio">
-                <ScalarProperty Name="ds_gratificacao" ColumnName="ds_gratificacao" />
-                <ScalarProperty Name="ds_convenio" ColumnName="ds_convenio" />
-                <ScalarProperty Name="ds_va" ColumnName="ds_va" />
-                <ScalarProperty Name="ds_vt" ColumnName="ds_vt" />
                 <ScalarProperty Name="id_beneficio" ColumnName="id_beneficio" />
+                <ScalarProperty Name="ds_vt" ColumnName="ds_vt" />
+                <ScalarProperty Name="ds_va" ColumnName="ds_va" />
+                <ScalarProperty Name="ds_convenio" ColumnName="ds_convenio" />
+                <ScalarProperty Name="ds_gratificacao" ColumnName="ds_gratificacao" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_cliente">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_cliente">
               <MappingFragment StoreEntitySet="tb_cliente">
-                <ScalarProperty Name="nmr_cliente" ColumnName="nmr_cliente" />
-                <ScalarProperty Name="ds_nivel" ColumnName="ds_nivel" />
-                <ScalarProperty Name="nm_responsavel" ColumnName="nm_responsavel" />
-                <ScalarProperty Name="ds_periodo" ColumnName="ds_periodo" />
-                <ScalarProperty Name="ds_cidade" ColumnName="ds_cidade" />
-                <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
-                <ScalarProperty Name="ds_estado" ColumnName="ds_estado" />
-                <ScalarProperty Name="ds_observacao" ColumnName="ds_observacao" />
-                <ScalarProperty Name="ds_cep" ColumnName="ds_cep" />
-                <ScalarProperty Name="ds_genero" ColumnName="ds_genero" />
-                <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
-                <ScalarProperty Name="ds_rg" ColumnName="ds_rg" />
-                <ScalarProperty Name="ds_email" ColumnName="ds_email" />
-                <ScalarProperty Name="ds_telefone" ColumnName="ds_telefone" />
-                <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
-                <ScalarProperty Name="nm_cliente" ColumnName="nm_cliente" />
                 <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="tb_colaborador">
-            <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_colaborador">
-              <MappingFragment StoreEntitySet="tb_colaborador">
-                <ScalarProperty Name="genero_funcionario" ColumnName="genero_funcionario" />
-                <ScalarProperty Name="ds_email" ColumnName="ds_email" />
-                <ScalarProperty Name="ds_telefone" ColumnName="ds_telefone" />
-                <ScalarProperty Name="ds_falta" ColumnName="ds_falta" />
-                <ScalarProperty Name="vl_salario" ColumnName="vl_salario" />
-                <ScalarProperty Name="dt_demicao" ColumnName="dt_demicao" />
-                <ScalarProperty Name="dt_contratacao" ColumnName="dt_contratacao" />
+                <ScalarProperty Name="nm_cliente" ColumnName="nm_cliente" />
                 <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
-                <ScalarProperty Name="ds_endereco" ColumnName="ds_endereco" />
-                <ScalarProperty Name="ds_cep" ColumnName="ds_cep" />
-                <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
+                <ScalarProperty Name="ds_telefone" ColumnName="ds_telefone" />
+                <ScalarProperty Name="ds_telefone2" ColumnName="ds_telefone2" />
+                <ScalarProperty Name="ds_email" ColumnName="ds_email" />
                 <ScalarProperty Name="ds_rg" ColumnName="ds_rg" />
-                <ScalarProperty Name="nm_funcionario" ColumnName="nm_funcionario" />
-                <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
+                <ScalarProperty Name="ds_genero" ColumnName="ds_genero" />
+                <ScalarProperty Name="ds_cep" ColumnName="ds_cep" />
+                <ScalarProperty Name="ds_observacao" ColumnName="ds_observacao" />
+                <ScalarProperty Name="ds_estado" ColumnName="ds_estado" />
+                <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
+                <ScalarProperty Name="ds_cidade" ColumnName="ds_cidade" />
+                <ScalarProperty Name="ds_periodo" ColumnName="ds_periodo" />
+                <ScalarProperty Name="nm_responsavel" ColumnName="nm_responsavel" />
+                <ScalarProperty Name="ds_nivel" ColumnName="ds_nivel" />
+                <ScalarProperty Name="nmr_cliente" ColumnName="nmr_cliente" />
+                <ScalarProperty Name="ds_prioridade" ColumnName="ds_prioridade" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_compra">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_compra">
               <MappingFragment StoreEntitySet="tb_compra">
-                <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
-                <ScalarProperty Name="vl_pagar" ColumnName="vl_pagar" />
-                <ScalarProperty Name="dt_compra" ColumnName="dt_compra" />
-                <ScalarProperty Name="dt_entrega" ColumnName="dt_entrega" />
                 <ScalarProperty Name="id_compra" ColumnName="id_compra" />
+                <ScalarProperty Name="dt_entrega" ColumnName="dt_entrega" />
+                <ScalarProperty Name="dt_compra" ColumnName="dt_compra" />
+                <ScalarProperty Name="vl_pagar" ColumnName="vl_pagar" />
+                <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_conta">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_conta">
               <MappingFragment StoreEntitySet="tb_conta">
-                <ScalarProperty Name="dt_pagamento" ColumnName="dt_pagamento" />
-                <ScalarProperty Name="dt_conta" ColumnName="dt_conta" />
-                <ScalarProperty Name="id_tipo_conta" ColumnName="id_tipo_conta" />
-                <ScalarProperty Name="vl_pagar" ColumnName="vl_pagar" />
                 <ScalarProperty Name="id_conta" ColumnName="id_conta" />
+                <ScalarProperty Name="vl_pagar" ColumnName="vl_pagar" />
+                <ScalarProperty Name="id_tipo_conta" ColumnName="id_tipo_conta" />
+                <ScalarProperty Name="dt_conta" ColumnName="dt_conta" />
+                <ScalarProperty Name="dt_pagamento" ColumnName="dt_pagamento" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_estado">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_estado">
               <MappingFragment StoreEntitySet="tb_estado">
-                <ScalarProperty Name="nm_estado" ColumnName="nm_estado" />
                 <ScalarProperty Name="id_estado" ColumnName="id_estado" />
+                <ScalarProperty Name="nm_estado" ColumnName="nm_estado" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_estoque">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_estoque">
               <MappingFragment StoreEntitySet="tb_estoque">
-                <ScalarProperty Name="id_produto" ColumnName="id_produto" />
-                <ScalarProperty Name="qtd_estoque" ColumnName="qtd_estoque" />
                 <ScalarProperty Name="id_estoque" ColumnName="id_estoque" />
+                <ScalarProperty Name="qtd_estoque" ColumnName="qtd_estoque" />
+                <ScalarProperty Name="id_produto" ColumnName="id_produto" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_financeiro">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_financeiro">
               <MappingFragment StoreEntitySet="tb_financeiro">
-                <ScalarProperty Name="ds_irrf" ColumnName="ds_irrf" />
-                <ScalarProperty Name="ds_inss" ColumnName="ds_inss" />
-                <ScalarProperty Name="ds_fgts" ColumnName="ds_fgts" />
                 <ScalarProperty Name="id_financeiro" ColumnName="id_financeiro" />
+                <ScalarProperty Name="ds_fgts" ColumnName="ds_fgts" />
+                <ScalarProperty Name="ds_inss" ColumnName="ds_inss" />
+                <ScalarProperty Name="ds_irrf" ColumnName="ds_irrf" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_folha_pagamento">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_folha_pagamento">
               <MappingFragment StoreEntitySet="tb_folha_pagamento">
-                <ScalarProperty Name="hr_extra" ColumnName="hr_extra" />
-                <ScalarProperty Name="dt_folha" ColumnName="dt_folha" />
-                <ScalarProperty Name="id_financeiro" ColumnName="id_financeiro" />
-                <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
-                <ScalarProperty Name="vl_salario_liquido" ColumnName="vl_salario_liquido" />
-                <ScalarProperty Name="vl_salario_bruto" ColumnName="vl_salario_bruto" />
                 <ScalarProperty Name="id_folha" ColumnName="id_folha" />
+                <ScalarProperty Name="vl_salario_bruto" ColumnName="vl_salario_bruto" />
+                <ScalarProperty Name="vl_salario_liquido" ColumnName="vl_salario_liquido" />
+                <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
+                <ScalarProperty Name="id_financeiro" ColumnName="id_financeiro" />
+                <ScalarProperty Name="dt_folha" ColumnName="dt_folha" />
+                <ScalarProperty Name="hr_extra" ColumnName="hr_extra" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tb_fornecedor">
+            <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_fornecedor">
+              <MappingFragment StoreEntitySet="tb_fornecedor">
+                <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
+                <ScalarProperty Name="nm_fornecedor" ColumnName="nm_fornecedor" />
+                <ScalarProperty Name="tell_contato" ColumnName="tell_contato" />
+                <ScalarProperty Name="tell_contato2" ColumnName="tell_contato2" />
+                <ScalarProperty Name="rua" ColumnName="rua" />
+                <ScalarProperty Name="estado" ColumnName="estado" />
+                <ScalarProperty Name="cidade" ColumnName="cidade" />
+                <ScalarProperty Name="bairro" ColumnName="bairro" />
+                <ScalarProperty Name="cep" ColumnName="cep" />
+                <ScalarProperty Name="ds_cnpj" ColumnName="ds_cnpj" />
+                <ScalarProperty Name="ds_email" ColumnName="ds_email" />
+                <ScalarProperty Name="inscicao_estadual" ColumnName="inscicao_estadual" />
+                <ScalarProperty Name="nmr_fornecedor" ColumnName="nmr_fornecedor" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_funcionario">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_funcionario">
               <MappingFragment StoreEntitySet="tb_funcionario">
-                <ScalarProperty Name="nmr_funcionario" ColumnName="nmr_funcionario" />
-                <ScalarProperty Name="ft_funcionario" ColumnName="ft_funcionario" />
-                <ScalarProperty Name="ds_cidade" ColumnName="ds_cidade" />
-                <ScalarProperty Name="id_beneficio" ColumnName="id_beneficio" />
-                <ScalarProperty Name="ds_complemento" ColumnName="ds_complemento" />
-                <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
-                <ScalarProperty Name="ds_estado" ColumnName="ds_estado" />
-                <ScalarProperty Name="ds_rua" ColumnName="ds_rua" />
-                <ScalarProperty Name="ds_cargo" ColumnName="ds_cargo" />
-                <ScalarProperty Name="ds_cep" ColumnName="ds_cep" />
-                <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
-                <ScalarProperty Name="ds_rg" ColumnName="ds_rg" />
-                <ScalarProperty Name="ds_genero" ColumnName="ds_genero" />
-                <ScalarProperty Name="ds_email" ColumnName="ds_email" />
-                <ScalarProperty Name="ds_telefone" ColumnName="ds_telefone" />
-                <ScalarProperty Name="vl_salario" ColumnName="vl_salario" />
-                <ScalarProperty Name="dt_demicao" ColumnName="dt_demicao" />
-                <ScalarProperty Name="dt_contratacao" ColumnName="dt_contratacao" />
-                <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
-                <ScalarProperty Name="nm_funcionario" ColumnName="nm_funcionario" />
                 <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
+                <ScalarProperty Name="nm_funcionario" ColumnName="nm_funcionario" />
+                <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
+                <ScalarProperty Name="dt_contratacao" ColumnName="dt_contratacao" />
+                <ScalarProperty Name="dt_demicao" ColumnName="dt_demicao" />
+                <ScalarProperty Name="vl_salario" ColumnName="vl_salario" />
+                <ScalarProperty Name="ds_telefone" ColumnName="ds_telefone" />
+                <ScalarProperty Name="ds_email" ColumnName="ds_email" />
+                <ScalarProperty Name="ds_genero" ColumnName="ds_genero" />
+                <ScalarProperty Name="ds_rg" ColumnName="ds_rg" />
+                <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
+                <ScalarProperty Name="ds_cep" ColumnName="ds_cep" />
+                <ScalarProperty Name="ds_cargo" ColumnName="ds_cargo" />
+                <ScalarProperty Name="ds_rua" ColumnName="ds_rua" />
+                <ScalarProperty Name="ds_estado" ColumnName="ds_estado" />
+                <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
+                <ScalarProperty Name="ds_complemento" ColumnName="ds_complemento" />
+                <ScalarProperty Name="id_beneficio" ColumnName="id_beneficio" />
+                <ScalarProperty Name="ds_cidade" ColumnName="ds_cidade" />
+                <ScalarProperty Name="ft_funcionario" ColumnName="ft_funcionario" />
+                <ScalarProperty Name="nmr_funcionario" ColumnName="nmr_funcionario" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_holerite">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_holerite">
               <MappingFragment StoreEntitySet="tb_holerite">
-                <ScalarProperty Name="vl_salario_liquido" ColumnName="vl_salario_liquido" />
                 <ScalarProperty Name="id_holerite" ColumnName="id_holerite" />
+                <ScalarProperty Name="vl_salario_liquido" ColumnName="vl_salario_liquido" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_jornada">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_jornada">
               <MappingFragment StoreEntitySet="tb_jornada">
-                <ScalarProperty Name="hr_saida" ColumnName="hr_saida" />
-                <ScalarProperty Name="hr_volta_intervalo" ColumnName="hr_volta_intervalo" />
-                <ScalarProperty Name="hr_intervalo" ColumnName="hr_intervalo" />
-                <ScalarProperty Name="hr_entrada" ColumnName="hr_entrada" />
-                <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
                 <ScalarProperty Name="id_jornada" ColumnName="id_jornada" />
+                <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
+                <ScalarProperty Name="hr_entrada" ColumnName="hr_entrada" />
+                <ScalarProperty Name="hr_intervalo" ColumnName="hr_intervalo" />
+                <ScalarProperty Name="hr_volta_intervalo" ColumnName="hr_volta_intervalo" />
+                <ScalarProperty Name="hr_saida" ColumnName="hr_saida" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_login">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_login">
               <MappingFragment StoreEntitySet="tb_login">
-                <ScalarProperty Name="dt_login" ColumnName="dt_login" />
-                <ScalarProperty Name="ds_admin" ColumnName="ds_admin" />
-                <ScalarProperty Name="sen_usuario" ColumnName="sen_usuario" />
-                <ScalarProperty Name="nm_usuario" ColumnName="nm_usuario" />
                 <ScalarProperty Name="id_login" ColumnName="id_login" />
+                <ScalarProperty Name="nm_usuario" ColumnName="nm_usuario" />
+                <ScalarProperty Name="sen_usuario" ColumnName="sen_usuario" />
+                <ScalarProperty Name="ds_admin" ColumnName="ds_admin" />
+                <ScalarProperty Name="dt_login" ColumnName="dt_login" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_plano">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_plano">
               <MappingFragment StoreEntitySet="tb_plano">
-                <ScalarProperty Name="qtd_aula_semana" ColumnName="qtd_aula_semana" />
-                <ScalarProperty Name="ds_descricao" ColumnName="ds_descricao" />
-                <ScalarProperty Name="vl_preco" ColumnName="vl_preco" />
-                <ScalarProperty Name="ds_duracao" ColumnName="ds_duracao" />
-                <ScalarProperty Name="nm_plano" ColumnName="nm_plano" />
                 <ScalarProperty Name="id_plano" ColumnName="id_plano" />
+                <ScalarProperty Name="nm_plano" ColumnName="nm_plano" />
+                <ScalarProperty Name="ds_duracao" ColumnName="ds_duracao" />
+                <ScalarProperty Name="vl_preco" ColumnName="vl_preco" />
+                <ScalarProperty Name="ds_descricao" ColumnName="ds_descricao" />
+                <ScalarProperty Name="qtd_aula_semana" ColumnName="qtd_aula_semana" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_ponto">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_ponto">
               <MappingFragment StoreEntitySet="tb_ponto">
-                <ScalarProperty Name="dt_saida" ColumnName="dt_saida" />
-                <ScalarProperty Name="hr_volta_intervalo" ColumnName="hr_volta_intervalo" />
-                <ScalarProperty Name="hr_saida_intervalo" ColumnName="hr_saida_intervalo" />
-                <ScalarProperty Name="hr_entrada" ColumnName="hr_entrada" />
-                <ScalarProperty Name="dt_entrada" ColumnName="dt_entrada" />
-                <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
                 <ScalarProperty Name="id_ponto" ColumnName="id_ponto" />
+                <ScalarProperty Name="id_funcionario" ColumnName="id_funcionario" />
+                <ScalarProperty Name="dt_entrada" ColumnName="dt_entrada" />
+                <ScalarProperty Name="hr_entrada" ColumnName="hr_entrada" />
+                <ScalarProperty Name="hr_saida_intervalo" ColumnName="hr_saida_intervalo" />
+                <ScalarProperty Name="hr_volta_intervalo" ColumnName="hr_volta_intervalo" />
+                <ScalarProperty Name="dt_saida" ColumnName="dt_saida" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_produto">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_produto">
               <MappingFragment StoreEntitySet="tb_produto">
-                <ScalarProperty Name="id_compra" ColumnName="id_compra" />
-                <ScalarProperty Name="qtd_produto" ColumnName="qtd_produto" />
-                <ScalarProperty Name="vl_preco" ColumnName="vl_preco" />
-                <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
                 <ScalarProperty Name="id_produto" ColumnName="id_produto" />
+                <ScalarProperty Name="nm_produto" ColumnName="nm_produto" />
+                <ScalarProperty Name="vl_preco" ColumnName="vl_preco" />
+                <ScalarProperty Name="qtd_produto" ColumnName="qtd_produto" />
+                <ScalarProperty Name="id_compra" ColumnName="id_compra" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_prolabore">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_prolabore">
               <MappingFragment StoreEntitySet="tb_prolabore">
-                <ScalarProperty Name="id_login" ColumnName="id_login" />
-                <ScalarProperty Name="ds_genero" ColumnName="ds_genero" />
-                <ScalarProperty Name="ds_cep" ColumnName="ds_cep" />
-                <ScalarProperty Name="ds_estado" ColumnName="ds_estado" />
-                <ScalarProperty Name="ds_cidade" ColumnName="ds_cidade" />
-                <ScalarProperty Name="ds_rua" ColumnName="ds_rua" />
-                <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
-                <ScalarProperty Name="ds_email" ColumnName="ds_email" />
-                <ScalarProperty Name="nmr_telefone" ColumnName="nmr_telefone" />
-                <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
-                <ScalarProperty Name="ds_rg" ColumnName="ds_rg" />
-                <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
-                <ScalarProperty Name="nm_prolabore" ColumnName="nm_prolabore" />
                 <ScalarProperty Name="id_prolabore" ColumnName="id_prolabore" />
+                <ScalarProperty Name="nm_prolabore" ColumnName="nm_prolabore" />
+                <ScalarProperty Name="dt_nascimento" ColumnName="dt_nascimento" />
+                <ScalarProperty Name="ds_rg" ColumnName="ds_rg" />
+                <ScalarProperty Name="ds_cpf" ColumnName="ds_cpf" />
+                <ScalarProperty Name="nmr_telefone" ColumnName="nmr_telefone" />
+                <ScalarProperty Name="ds_email" ColumnName="ds_email" />
+                <ScalarProperty Name="ds_bairro" ColumnName="ds_bairro" />
+                <ScalarProperty Name="ds_rua" ColumnName="ds_rua" />
+                <ScalarProperty Name="ds_cidade" ColumnName="ds_cidade" />
+                <ScalarProperty Name="ds_estado" ColumnName="ds_estado" />
+                <ScalarProperty Name="ds_cep" ColumnName="ds_cep" />
+                <ScalarProperty Name="ds_genero" ColumnName="ds_genero" />
+                <ScalarProperty Name="id_login" ColumnName="id_login" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_sala">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_sala">
               <MappingFragment StoreEntitySet="tb_sala">
-                <ScalarProperty Name="tp_instrumento" ColumnName="tp_instrumento" />
-                <ScalarProperty Name="qtd_max_alunos" ColumnName="qtd_max_alunos" />
-                <ScalarProperty Name="nr_sala" ColumnName="nr_sala" />
                 <ScalarProperty Name="id_sala" ColumnName="id_sala" />
+                <ScalarProperty Name="nr_sala" ColumnName="nr_sala" />
+                <ScalarProperty Name="qtd_max_alunos" ColumnName="qtd_max_alunos" />
+                <ScalarProperty Name="tp_instrumento" ColumnName="tp_instrumento" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_tipo_conta">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_tipo_conta">
               <MappingFragment StoreEntitySet="tb_tipo_conta">
-                <ScalarProperty Name="tp_conta" ColumnName="tp_conta" />
                 <ScalarProperty Name="id_tipo_conta" ColumnName="id_tipo_conta" />
+                <ScalarProperty Name="tp_conta" ColumnName="tp_conta" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="tb_venda_plano">
             <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_venda_plano">
               <MappingFragment StoreEntitySet="tb_venda_plano">
-                <ScalarProperty Name="dt_fim" ColumnName="dt_fim" />
-                <ScalarProperty Name="dt_inicio" ColumnName="dt_inicio" />
-                <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
-                <ScalarProperty Name="id_plano" ColumnName="id_plano" />
                 <ScalarProperty Name="id_venda_plano" ColumnName="id_venda_plano" />
+                <ScalarProperty Name="id_plano" ColumnName="id_plano" />
+                <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+                <ScalarProperty Name="dt_inicio" ColumnName="dt_inicio" />
+                <ScalarProperty Name="dt_fim" ColumnName="dt_fim" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1490,25 +1452,6 @@ FROM `fluxo_de_caixa` AS `fluxo_de_caixa`</DefiningQuery>
                 <ScalarProperty Name="tipo_operação" ColumnName="tipo_operação" />
                 <ScalarProperty Name="valor_pago" ColumnName="valor_pago" />
                 <ScalarProperty Name="data_pagamento" ColumnName="data_pagamento" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="tb_fornecedor">
-            <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_fornecedor">
-              <MappingFragment StoreEntitySet="tb_fornecedor">
-                <ScalarProperty Name="nmr_fornecedor" ColumnName="nmr_fornecedor" />
-                <ScalarProperty Name="inscicao_estadual" ColumnName="inscicao_estadual" />
-                <ScalarProperty Name="ds_email" ColumnName="ds_email" />
-                <ScalarProperty Name="ds_cnpj" ColumnName="ds_cnpj" />
-                <ScalarProperty Name="cep" ColumnName="cep" />
-                <ScalarProperty Name="bairro" ColumnName="bairro" />
-                <ScalarProperty Name="cidade" ColumnName="cidade" />
-                <ScalarProperty Name="estado" ColumnName="estado" />
-                <ScalarProperty Name="rua" ColumnName="rua" />
-                <ScalarProperty Name="tell_contato2" ColumnName="tell_contato2" />
-                <ScalarProperty Name="tell_contato" ColumnName="tell_contato" />
-                <ScalarProperty Name="nm_fornecedor" ColumnName="nm_fornecedor" />
-                <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
