@@ -16,8 +16,8 @@ namespace Cultura_Musical.Telas.Planos
         public frmAdicionarPlano()
         {
             InitializeComponent();
-            Database.Database_Planos planos = new Database.Database_Planos();
-            List<Database.Entity.tb_plano> lista = planos.ListarTodos();
+            //Database.Database_Planos planos = new Database.Database_Planos();
+            //List<Database.Entity.tb_plano> lista = planos.ListarTodos();
 
 
         }

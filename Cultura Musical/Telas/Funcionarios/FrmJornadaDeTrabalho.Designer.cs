@@ -56,6 +56,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.lblMinimizar = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.lblFechar = new System.Windows.Forms.Label();
@@ -106,11 +107,11 @@
             this.inserirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.alterarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -129,7 +130,6 @@
             this.cmsAgenda.SuspendLayout();
             this.cmsLogistica.SuspendLayout();
             this.cmsColaboradores.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -399,7 +399,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.pictureBox11);
             this.panel2.Controls.Add(this.lblMinimizar);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.lblFechar);
@@ -409,6 +408,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(660, 66);
             this.panel2.TabIndex = 51;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
+            this.pictureBox11.Location = new System.Drawing.Point(10, 9);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(41, 34);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 250;
+            this.pictureBox11.TabStop = false;
             // 
             // lblMinimizar
             // 
@@ -449,6 +458,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox11);
             this.panel1.Controls.Add(this.pictureBox10);
             this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.pictureBox8);
@@ -898,16 +908,6 @@
             this.alterarToolStripMenuItem1.Size = new System.Drawing.Size(225, 22);
             this.alterarToolStripMenuItem1.Text = "Alterar";
             // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
-            this.pictureBox11.Location = new System.Drawing.Point(142, 11);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(41, 34);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 250;
-            this.pictureBox11.TabStop = false;
-            // 
             // FrmJornadaDeTrabalho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -944,6 +944,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -962,7 +963,6 @@
             this.cmsAgenda.ResumeLayout(false);
             this.cmsLogistica.ResumeLayout(false);
             this.cmsColaboradores.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

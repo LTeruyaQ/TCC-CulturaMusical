@@ -34,6 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.lblMinimizar = new System.Windows.Forms.Label();
             this.lblFechar = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -86,10 +87,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.cboProfessores = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.cmsCRM = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.inserirAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.consultarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -99,10 +96,14 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Alterar = new System.Windows.Forms.DataGridViewImageColumn();
             this.Deletar = new System.Windows.Forms.DataGridViewImageColumn();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.cmsCRM = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.inserirAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             this.cmsVenda.SuspendLayout();
@@ -122,7 +123,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.cmsCRM.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -178,7 +178,6 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Controls.Add(this.lblMinimizar);
             this.panel2.Controls.Add(this.lblFechar);
             this.panel2.Controls.Add(this.label6);
@@ -188,6 +187,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(784, 66);
             this.panel2.TabIndex = 99;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
+            this.pictureBox8.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(41, 34);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 251;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.PictureBox8_Click);
             // 
             // lblMinimizar
             // 
@@ -228,6 +238,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Controls.Add(this.pictureBox8);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.pictureBox18);
             this.panel1.Controls.Add(this.button4);
@@ -725,35 +736,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(738, 241);
             this.dataGridView1.TabIndex = 106;
             // 
-            // cmsCRM
-            // 
-            this.cmsCRM.BackColor = System.Drawing.Color.SteelBlue;
-            this.cmsCRM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inserirAlunoToolStripMenuItem,
-            this.consultarClientesToolStripMenuItem});
-            this.cmsCRM.Name = "cmsCRM";
-            this.cmsCRM.Size = new System.Drawing.Size(171, 48);
-            // 
-            // inserirAlunoToolStripMenuItem
-            // 
-            this.inserirAlunoToolStripMenuItem.Name = "inserirAlunoToolStripMenuItem";
-            this.inserirAlunoToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.inserirAlunoToolStripMenuItem.Text = "Inserir Aluno ";
-            // 
-            // consultarClientesToolStripMenuItem
-            // 
-            this.consultarClientesToolStripMenuItem.Name = "consultarClientesToolStripMenuItem";
-            this.consultarClientesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
-            this.consultarClientesToolStripMenuItem.Text = "Consultar Clientes";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(687, 171);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
-            this.dateTimePicker1.TabIndex = 107;
-            // 
             // Column1
             // 
             this.Column1.HeaderText = "Aluno";
@@ -812,16 +794,34 @@
             this.Deletar.Name = "Deletar";
             this.Deletar.Width = 20;
             // 
-            // pictureBox8
+            // cmsCRM
             // 
-            this.pictureBox8.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
-            this.pictureBox8.Location = new System.Drawing.Point(150, 18);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(41, 34);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 251;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.Click += new System.EventHandler(this.PictureBox8_Click);
+            this.cmsCRM.BackColor = System.Drawing.Color.SteelBlue;
+            this.cmsCRM.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inserirAlunoToolStripMenuItem,
+            this.consultarClientesToolStripMenuItem});
+            this.cmsCRM.Name = "cmsCRM";
+            this.cmsCRM.Size = new System.Drawing.Size(171, 48);
+            // 
+            // inserirAlunoToolStripMenuItem
+            // 
+            this.inserirAlunoToolStripMenuItem.Name = "inserirAlunoToolStripMenuItem";
+            this.inserirAlunoToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.inserirAlunoToolStripMenuItem.Text = "Inserir Aluno ";
+            // 
+            // consultarClientesToolStripMenuItem
+            // 
+            this.consultarClientesToolStripMenuItem.Name = "consultarClientesToolStripMenuItem";
+            this.consultarClientesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
+            this.consultarClientesToolStripMenuItem.Text = "Consultar Clientes";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(687, 171);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
+            this.dateTimePicker1.TabIndex = 107;
             // 
             // FrmConsultarAgenda
             // 
@@ -845,6 +845,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             this.cmsVenda.ResumeLayout(false);
@@ -864,7 +865,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.cmsCRM.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
