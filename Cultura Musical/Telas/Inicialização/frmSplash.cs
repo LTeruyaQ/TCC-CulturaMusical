@@ -19,8 +19,7 @@ namespace Cultura_Musical.Telas.Inicialização
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            FrmLogin tela = new FrmLogin();
-            tela.Show();
+            Telas.FrmHomePage tela = new FrmHomePage();
             timer1.Stop();
             this.Hide();
         }

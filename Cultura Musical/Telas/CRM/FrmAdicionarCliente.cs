@@ -16,22 +16,27 @@ namespace Cultura_Musical.Telas.CRM
         {
             InitializeComponent();
 
-            Database.Entity.tb_cliente cliente = new Database.Entity.tb_cliente();
-            cliente.nmr_cliente = Convert.ToInt32(nudnumero.Value);
-            cliente.nm_cliente = txtnome.Text;
-            cliente.nm_responsavel = txtresponsavel.Text;
-            cliente.ds_bairro = txtBairro.Text;
-            cliente.ds_cep = mskCEP.Text;
-            cliente.ds_cpf = txtcpf.Text;
-            cliente.ds_periodo = cboperiodo.Text;
-            cliente.ds_observacao = txtobservacao.Text;
-            cliente.ds_rg = txtRG.Text;
-            cliente.ds_telefone = mskTel1.Text;
-            cliente.dt_nascimento = dtpNascimento.Value.Date;
-            cliente.ds_estado = txtEstado.Text;
+            //Database.Entity.tb_cliente cliente = new Database.Entity.tb_cliente();
+            //cliente.nmr_cliente = Convert.ToInt32(nudnumero.Value);
+            //cliente.nm_cliente = txtnome.Text;
+            //cliente.nm_responsavel = txtresponsavel.Text;
+            //cliente.ds_bairro = txtBairro.Text;
+            //cliente.ds_cep = mskCEP.Text;
+            //cliente.ds_cpf = txtcpf.Text;
+            //cliente.ds_periodo = cboperiodo.Text;
+            //cliente.ds_observacao = txtobservacao.Text;
+            //cliente.ds_rg = txtRG.Text;
+            //cliente.ds_telefone = mskTel1.Text;
+            //cliente.dt_nascimento = dtpNascimento.Value.Date;
+            //cliente.ds_estado = txtEstado.Text;
 
-            Business.Business_Cliente bus = new Business.Business_Cliente();
-            bus.CadastrarCliente(cliente);
+            //Business.Business_Cliente bus = new Business.Business_Cliente();
+            //bus.CadastrarCliente(cliente);
+        }
+
+        private void GroupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,5 +16,10 @@ namespace Cultura_Musical.Telas.CRM
         {
             InitializeComponent();
         }
+
+        private void LblFechar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

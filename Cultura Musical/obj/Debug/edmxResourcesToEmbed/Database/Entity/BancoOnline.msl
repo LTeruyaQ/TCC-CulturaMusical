@@ -143,25 +143,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tb_fornecedor">
-      <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_fornecedor">
-        <MappingFragment StoreEntitySet="tb_fornecedor">
-          <ScalarProperty Name="nmr_fornecedor" ColumnName="nmr_fornecedor" />
-          <ScalarProperty Name="inscicao_estadual" ColumnName="inscicao_estadual" />
-          <ScalarProperty Name="ds_email" ColumnName="ds_email" />
-          <ScalarProperty Name="ds_cnpj" ColumnName="ds_cnpj" />
-          <ScalarProperty Name="cep" ColumnName="cep" />
-          <ScalarProperty Name="bairro" ColumnName="bairro" />
-          <ScalarProperty Name="cidade" ColumnName="cidade" />
-          <ScalarProperty Name="estado" ColumnName="estado" />
-          <ScalarProperty Name="rua" ColumnName="rua" />
-          <ScalarProperty Name="tell_contato2" ColumnName="tell_contato2" />
-          <ScalarProperty Name="tell_contato" ColumnName="tell_contato" />
-          <ScalarProperty Name="nm_fornecedor" ColumnName="nm_fornecedor" />
-          <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="tb_funcionario">
       <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_funcionario">
         <MappingFragment StoreEntitySet="tb_funcionario">
@@ -311,6 +292,25 @@
           <ScalarProperty Name="tipo_operação" ColumnName="tipo_operação" />
           <ScalarProperty Name="valor_pago" ColumnName="valor_pago" />
           <ScalarProperty Name="data_pagamento" ColumnName="data_pagamento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_fornecedor">
+      <EntityTypeMapping TypeName="db_a4f9ad_stormprModel.tb_fornecedor">
+        <MappingFragment StoreEntitySet="tb_fornecedor">
+          <ScalarProperty Name="nmr_fornecedor" ColumnName="nmr_fornecedor" />
+          <ScalarProperty Name="inscicao_estadual" ColumnName="inscicao_estadual" />
+          <ScalarProperty Name="ds_email" ColumnName="ds_email" />
+          <ScalarProperty Name="ds_cnpj" ColumnName="ds_cnpj" />
+          <ScalarProperty Name="cep" ColumnName="cep" />
+          <ScalarProperty Name="bairro" ColumnName="bairro" />
+          <ScalarProperty Name="cidade" ColumnName="cidade" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="rua" ColumnName="rua" />
+          <ScalarProperty Name="tell_contato2" ColumnName="tell_contato2" />
+          <ScalarProperty Name="tell_contato" ColumnName="tell_contato" />
+          <ScalarProperty Name="nm_fornecedor" ColumnName="nm_fornecedor" />
+          <ScalarProperty Name="id_fornecedor" ColumnName="id_fornecedor" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -28,5 +28,37 @@ namespace Cultura_Musical.Telas
                 MessageBox.Show("");
             }
         }
+
+        private void InserirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Telas.FrmAgenda Telas = new FrmAgenda();
+            Telas.Show();
+            this.Close();
+            
+        }
+
+        private void LblFechar_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Realmente deseja fechar o sistema ?", "Cultura Musical",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+            if (r == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void PictureBox8_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

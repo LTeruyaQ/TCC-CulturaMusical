@@ -19,7 +19,7 @@ namespace Cultura_Musical.Telas.Funcionarios
             InitializeComponent();
 
 
-            this.CarregarGrid();
+           
             
         }
 

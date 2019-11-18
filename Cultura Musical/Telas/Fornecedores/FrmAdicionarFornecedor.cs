@@ -34,7 +34,7 @@ namespace Cultura_Musical.Telas.Fornecedores
                 forn.cidade = txtCidade.Text.ToLower();
                 forn.estado = cboEstado.Text.ToLower();
                 forn.ds_cnpj = mstCNPJ.Text;
-                forn.nmr_fornecedor = Convert.ToInt32(nudnumero.Value);
+                forn.nmr_fornecedor =Convert.ToInt32(nudnumero.Value);
                 
 
                 Business.Business_Fornecedores forne = new Business.Business_Fornecedores();
@@ -48,10 +48,10 @@ namespace Cultura_Musical.Telas.Fornecedores
                 MessageBox.Show(ex.Message);
             }
 
-            //catch (Exception)
-            //{
-            //    MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
-            //}
+            catch (Exception)
+            {
+                MessageBox.Show("Ocorreu um erro. Tente mais tarde.");
+            }
         }
 
         private void button9_MouseEnter(object sender, EventArgs e)

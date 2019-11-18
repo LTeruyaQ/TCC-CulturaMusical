@@ -136,16 +136,16 @@
       <PropertyRef Name="id_fornecedor" />
     </Key>
     <Property Name="id_fornecedor" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="nm_fornecedor" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="nm_fornecedor" Type="varchar" MaxLength="90" Nullable="false" />
     <Property Name="tell_contato" Type="varchar" MaxLength="11" Nullable="false" />
     <Property Name="tell_contato2" Type="varchar" MaxLength="11" />
-    <Property Name="rua" Type="varchar" MaxLength="25" />
-    <Property Name="estado" Type="varchar" MaxLength="3" />
-    <Property Name="cidade" Type="varchar" MaxLength="25" Nullable="false" />
-    <Property Name="bairro" Type="varchar" MaxLength="30" />
+    <Property Name="rua" Type="varchar" MaxLength="150" />
+    <Property Name="estado" Type="varchar" MaxLength="2" />
+    <Property Name="cidade" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="bairro" Type="varchar" MaxLength="90" />
     <Property Name="cep" Type="varchar" MaxLength="9" />
-    <Property Name="ds_cnpj" Type="varchar" MaxLength="14" Nullable="false" />
-    <Property Name="ds_email" Type="varchar" MaxLength="30" />
+    <Property Name="ds_cnpj" Type="varchar" MaxLength="18" Nullable="false" />
+    <Property Name="ds_email" Type="varchar" MaxLength="90" />
     <Property Name="inscicao_estadual" Type="varchar" MaxLength="9" Nullable="false" />
     <Property Name="nmr_fornecedor" Type="int" Nullable="false" />
   </EntityType>
