@@ -82,7 +82,6 @@
             this.removerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.cboHorarios = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cboProfessores = new System.Windows.Forms.ComboBox();
@@ -90,6 +89,17 @@
             this.cmsCRM = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.inserirAlunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Alterar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Deletar = new System.Windows.Forms.DataGridViewImageColumn();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -112,6 +122,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.cmsCRM.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -153,6 +164,8 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::Cultura_Musical.Properties.Resources.logo_Cultura_Musical_PNG;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Location = new System.Drawing.Point(17, 2);
             this.pictureBox1.Name = "pictureBox1";
@@ -165,6 +178,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Controls.Add(this.lblMinimizar);
             this.panel2.Controls.Add(this.lblFechar);
             this.panel2.Controls.Add(this.label6);
@@ -172,7 +186,7 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.panel2.Location = new System.Drawing.Point(192, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(587, 66);
+            this.panel2.Size = new System.Drawing.Size(784, 66);
             this.panel2.TabIndex = 99;
             // 
             // lblMinimizar
@@ -180,7 +194,7 @@
             this.lblMinimizar.AutoSize = true;
             this.lblMinimizar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMinimizar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblMinimizar.Location = new System.Drawing.Point(540, 2);
+            this.lblMinimizar.Location = new System.Drawing.Point(727, 2);
             this.lblMinimizar.Name = "lblMinimizar";
             this.lblMinimizar.Size = new System.Drawing.Size(18, 19);
             this.lblMinimizar.TabIndex = 108;
@@ -192,7 +206,7 @@
             this.lblFechar.AutoSize = true;
             this.lblFechar.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechar.ForeColor = System.Drawing.Color.Red;
-            this.lblFechar.Location = new System.Drawing.Point(560, 7);
+            this.lblFechar.Location = new System.Drawing.Point(751, 8);
             this.lblFechar.Name = "lblFechar";
             this.lblFechar.Size = new System.Drawing.Size(20, 19);
             this.lblFechar.TabIndex = 107;
@@ -204,7 +218,7 @@
             this.label6.BackColor = System.Drawing.Color.Black;
             this.label6.Font = new System.Drawing.Font("Stencil", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(143, 0);
+            this.label6.Location = new System.Drawing.Point(197, -4);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(400, 64);
             this.label6.TabIndex = 7;
@@ -658,19 +672,11 @@
             this.label16.TabIndex = 97;
             this.label16.Text = "Inserir Agenda";
             // 
-            // cboHorarios
-            // 
-            this.cboHorarios.FormattingEnabled = true;
-            this.cboHorarios.Location = new System.Drawing.Point(574, 184);
-            this.cboHorarios.Name = "cboHorarios";
-            this.cboHorarios.Size = new System.Drawing.Size(121, 21);
-            this.cboHorarios.TabIndex = 105;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(490, 188);
+            this.label4.Location = new System.Drawing.Point(605, 175);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 16);
             this.label4.TabIndex = 104;
@@ -680,7 +686,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Stencil", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(225, 189);
+            this.label3.Location = new System.Drawing.Point(340, 176);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 16);
             this.label3.TabIndex = 103;
@@ -696,7 +702,7 @@
             "Elisa",
             "Vinicius",
             "Eduarda"});
-            this.cboProfessores.Location = new System.Drawing.Point(329, 185);
+            this.cboProfessores.Location = new System.Drawing.Point(444, 172);
             this.cboProfessores.Name = "cboProfessores";
             this.cboProfessores.Size = new System.Drawing.Size(121, 21);
             this.cboProfessores.TabIndex = 102;
@@ -704,9 +710,19 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(261, 267);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column5,
+            this.Column4,
+            this.Column6,
+            this.Column7,
+            this.Alterar,
+            this.Deletar});
+            this.dataGridView1.Location = new System.Drawing.Point(216, 222);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(434, 212);
+            this.dataGridView1.Size = new System.Drawing.Size(738, 241);
             this.dataGridView1.TabIndex = 106;
             // 
             // cmsCRM
@@ -730,14 +746,91 @@
             this.consultarClientesToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.consultarClientesToolStripMenuItem.Text = "Consultar Clientes";
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(687, 171);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(121, 20);
+            this.dateTimePicker1.TabIndex = 107;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Aluno";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 95;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Professor";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 95;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Sala";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 95;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Aula";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 95;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Data";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 95;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Início";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 95;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Termino";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 95;
+            // 
+            // Alterar
+            // 
+            this.Alterar.HeaderText = "";
+            this.Alterar.Image = global::Cultura_Musical.Properties.Resources.lapis;
+            this.Alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Alterar.Name = "Alterar";
+            this.Alterar.Width = 20;
+            // 
+            // Deletar
+            // 
+            this.Deletar.HeaderText = "";
+            this.Deletar.Image = global::Cultura_Musical.Properties.Resources.lixeira;
+            this.Deletar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
+            this.Deletar.Name = "Deletar";
+            this.Deletar.Width = 20;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Cultura_Musical.Properties.Resources.left_arrow;
+            this.pictureBox8.Location = new System.Drawing.Point(150, 18);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(41, 34);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 251;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Click += new System.EventHandler(this.PictureBox8_Click);
+            // 
             // FrmConsultarAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(779, 533);
+            this.ClientSize = new System.Drawing.Size(976, 533);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.cboHorarios);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cboProfessores);
@@ -771,6 +864,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.cmsCRM.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -786,7 +880,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox cboHorarios;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboProfessores;
@@ -839,5 +932,16 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewImageColumn Alterar;
+        private System.Windows.Forms.DataGridViewImageColumn Deletar;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }

@@ -12,7 +12,6 @@
     <EntitySet Name="tb_estoque" EntityType="db_a4f9ad_stormprModel.tb_estoque" />
     <EntitySet Name="tb_financeiro" EntityType="db_a4f9ad_stormprModel.tb_financeiro" />
     <EntitySet Name="tb_folha_pagamento" EntityType="db_a4f9ad_stormprModel.tb_folha_pagamento" />
-    <EntitySet Name="tb_fornecedor" EntityType="db_a4f9ad_stormprModel.tb_fornecedor" />
     <EntitySet Name="tb_funcionario" EntityType="db_a4f9ad_stormprModel.tb_funcionario" />
     <EntitySet Name="tb_holerite" EntityType="db_a4f9ad_stormprModel.tb_holerite" />
     <EntitySet Name="tb_jornada" EntityType="db_a4f9ad_stormprModel.tb_jornada" />
@@ -20,6 +19,7 @@
     <EntitySet Name="tb_plano" EntityType="db_a4f9ad_stormprModel.tb_plano" />
     <EntitySet Name="tb_ponto" EntityType="db_a4f9ad_stormprModel.tb_ponto" />
     <EntitySet Name="tb_produto" EntityType="db_a4f9ad_stormprModel.tb_produto" />
+    <EntitySet Name="tb_prolabore" EntityType="db_a4f9ad_stormprModel.tb_prolabore" />
     <EntitySet Name="tb_sala" EntityType="db_a4f9ad_stormprModel.tb_sala" />
     <EntitySet Name="tb_tipo_conta" EntityType="db_a4f9ad_stormprModel.tb_tipo_conta" />
     <EntitySet Name="tb_venda_plano" EntityType="db_a4f9ad_stormprModel.tb_venda_plano" />
@@ -39,10 +39,6 @@
       <End Role="tb_sala" EntitySet="tb_sala" />
       <End Role="tb_aula" EntitySet="tb_aula" />
     </AssociationSet>
-    <AssociationSet Name="fk_tb_cliente_aula_tb_venda_plano1" Association="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_venda_plano1">
-      <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
-      <End Role="tb_aula" EntitySet="tb_aula" />
-    </AssociationSet>
     <AssociationSet Name="fk_tb_funcionario_tb_beneficio1" Association="db_a4f9ad_stormprModel.fk_tb_funcionario_tb_beneficio1">
       <End Role="tb_beneficio" EntitySet="tb_beneficio" />
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
@@ -50,10 +46,6 @@
     <AssociationSet Name="fk_tb_venda_plano_tb_cliente1" Association="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_cliente1">
       <End Role="tb_cliente" EntitySet="tb_cliente" />
       <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
-    </AssociationSet>
-    <AssociationSet Name="fk_tb_compra_tb_fornecedor1" Association="db_a4f9ad_stormprModel.fk_tb_compra_tb_fornecedor1">
-      <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
-      <End Role="tb_compra" EntitySet="tb_compra" />
     </AssociationSet>
     <AssociationSet Name="fk_tb_produto_tb_compra1" Association="db_a4f9ad_stormprModel.fk_tb_produto_tb_compra1">
       <End Role="tb_compra" EntitySet="tb_compra" />
@@ -83,9 +75,19 @@
       <End Role="tb_funcionario" EntitySet="tb_funcionario" />
       <End Role="tb_ponto" EntitySet="tb_ponto" />
     </AssociationSet>
+    <AssociationSet Name="fk_tb_prolabore_tb_login1" Association="db_a4f9ad_stormprModel.fk_tb_prolabore_tb_login1">
+      <End Role="tb_login" EntitySet="tb_login" />
+      <End Role="tb_prolabore" EntitySet="tb_prolabore" />
+    </AssociationSet>
     <AssociationSet Name="fk_tb_venda_plano_tb_plano1" Association="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_plano1">
       <End Role="tb_plano" EntitySet="tb_plano" />
       <End Role="tb_venda_plano" EntitySet="tb_venda_plano" />
+    </AssociationSet>
+    <EntitySet Name="fluxo_de_caixa" EntityType="db_a4f9ad_stormprModel.fluxo_de_caixa" />
+    <EntitySet Name="tb_fornecedor" EntityType="db_a4f9ad_stormprModel.tb_fornecedor" />
+    <AssociationSet Name="fk_tb_compra_tb_fornecedor1" Association="db_a4f9ad_stormprModel.fk_tb_compra_tb_fornecedor1">
+      <End Role="tb_fornecedor" EntitySet="tb_fornecedor" />
+      <End Role="tb_compra" EntitySet="tb_compra" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="tb_agenda_estudio">
@@ -106,16 +108,15 @@
     </Key>
     <Property Name="id_aula" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="dt_aula" Type="DateTime" Nullable="false" />
-    <Property Name="hr_aula" Type="Time" Nullable="false" />
+    <Property Name="hr_incio" Type="Time" Nullable="false" />
+    <Property Name="hr_fim" Type="Time" Nullable="false" />
     <Property Name="tp_aula" Type="String" Nullable="false" MaxLength="8" FixedLength="false" Unicode="false" />
     <Property Name="id_funcionario" Type="Int32" Nullable="false" />
     <Property Name="id_cliente" Type="Int32" Nullable="false" />
-    <Property Name="id_venda_plano" Type="Int32" Nullable="false" />
     <Property Name="id_sala" Type="Int32" Nullable="false" />
     <NavigationProperty Name="tb_cliente" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_cliente1" FromRole="tb_aula" ToRole="tb_cliente" />
     <NavigationProperty Name="tb_funcionario" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_funcionario1" FromRole="tb_aula" ToRole="tb_funcionario" />
     <NavigationProperty Name="tb_sala" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_sala1" FromRole="tb_aula" ToRole="tb_sala" />
-    <NavigationProperty Name="tb_venda_plano" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_venda_plano1" FromRole="tb_aula" ToRole="tb_venda_plano" />
   </EntityType>
   <EntityType Name="tb_beneficio">
     <Key>
@@ -139,10 +140,12 @@
     <Property Name="ds_email" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
     <Property Name="ds_rg" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
     <Property Name="ds_cpf" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="ds_genero" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
     <Property Name="ds_cep" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
     <Property Name="ds_observacao" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
     <Property Name="ds_estado" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
     <Property Name="ds_bairro" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ds_cidade" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="ds_periodo" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
     <Property Name="nm_responsavel" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
     <Property Name="ds_nivel" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
@@ -179,8 +182,8 @@
     <Property Name="dt_compra" Type="DateTime" Nullable="false" />
     <Property Name="vl_pagar" Type="Decimal" Nullable="false" />
     <Property Name="id_fornecedor" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="tb_fornecedor" Relationship="db_a4f9ad_stormprModel.fk_tb_compra_tb_fornecedor1" FromRole="tb_compra" ToRole="tb_fornecedor" />
     <NavigationProperty Name="tb_produto" Relationship="db_a4f9ad_stormprModel.fk_tb_produto_tb_compra1" FromRole="tb_compra" ToRole="tb_produto" />
+    <NavigationProperty Name="tb_fornecedor" Relationship="db_a4f9ad_stormprModel.fk_tb_compra_tb_fornecedor1" FromRole="tb_compra" ToRole="tb_fornecedor" />
   </EntityType>
   <EntityType Name="tb_conta">
     <Key>
@@ -232,25 +235,6 @@
     <Property Name="hr_extra" Type="Time" Nullable="false" />
     <NavigationProperty Name="tb_financeiro" Relationship="db_a4f9ad_stormprModel.fk_tb_folha_pagamento_tb_financeiro1" FromRole="tb_folha_pagamento" ToRole="tb_financeiro" />
     <NavigationProperty Name="tb_funcionario" Relationship="db_a4f9ad_stormprModel.fk_tb_folha_pagamento_tb_funcionario1" FromRole="tb_folha_pagamento" ToRole="tb_funcionario" />
-  </EntityType>
-  <EntityType Name="tb_fornecedor">
-    <Key>
-      <PropertyRef Name="id_fornecedor" />
-    </Key>
-    <Property Name="id_fornecedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nm_fornecedor" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="tell_contato" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
-    <Property Name="tell_contato2" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
-    <Property Name="rua" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
-    <Property Name="estado" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
-    <Property Name="cidade" Type="String" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
-    <Property Name="bairro" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="cep" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
-    <Property Name="ds_cnpj" Type="String" Nullable="false" MaxLength="14" FixedLength="false" Unicode="false" />
-    <Property Name="ds_email" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="inscicao_estadual" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
-    <Property Name="nmr_fornecedor" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="tb_compra" Relationship="db_a4f9ad_stormprModel.fk_tb_compra_tb_fornecedor1" FromRole="tb_fornecedor" ToRole="tb_compra" />
   </EntityType>
   <EntityType Name="tb_funcionario">
     <Key>
@@ -307,11 +291,11 @@
       <PropertyRef Name="id_login" />
     </Key>
     <Property Name="id_login" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="nm_usuario" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="sen_usuario" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="dt_login" Type="DateTime" Nullable="false" />
-    <Property Name="ds_ADM" Type="Boolean" />
-    <Property Name="id_funcionario" Type="Int32" Nullable="false" />
+    <Property Name="nm_usuario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="sen_usuario" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="ds_admin" Type="Boolean" />
+    <Property Name="dt_login" Type="DateTime" />
+    <NavigationProperty Name="tb_prolabore" Relationship="db_a4f9ad_stormprModel.fk_tb_prolabore_tb_login1" FromRole="tb_login" ToRole="tb_prolabore" />
   </EntityType>
   <EntityType Name="tb_plano">
     <Key>
@@ -350,6 +334,26 @@
     <NavigationProperty Name="tb_compra" Relationship="db_a4f9ad_stormprModel.fk_tb_produto_tb_compra1" FromRole="tb_produto" ToRole="tb_compra" />
     <NavigationProperty Name="tb_estoque" Relationship="db_a4f9ad_stormprModel.fk_tb_estoque_tb_produto1" FromRole="tb_produto" ToRole="tb_estoque" />
   </EntityType>
+  <EntityType Name="tb_prolabore">
+    <Key>
+      <PropertyRef Name="id_prolabore" />
+    </Key>
+    <Property Name="id_prolabore" Type="Int32" Nullable="false" />
+    <Property Name="nm_prolabore" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="dt_nascimento" Type="DateTime" Nullable="false" />
+    <Property Name="ds_rg" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="ds_cpf" Type="String" Nullable="false" MaxLength="12" FixedLength="false" Unicode="false" />
+    <Property Name="nmr_telefone" Type="String" Nullable="false" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="ds_email" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ds_bairro" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ds_rua" Type="String" Nullable="false" MaxLength="35" FixedLength="false" Unicode="false" />
+    <Property Name="ds_cidade" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="ds_estado" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Name="ds_cep" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="ds_genero" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="id_login" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_login" Relationship="db_a4f9ad_stormprModel.fk_tb_prolabore_tb_login1" FromRole="tb_prolabore" ToRole="tb_login" />
+  </EntityType>
   <EntityType Name="tb_sala">
     <Key>
       <PropertyRef Name="id_sala" />
@@ -377,7 +381,6 @@
     <Property Name="id_cliente" Type="Int32" Nullable="false" />
     <Property Name="dt_inicio" Type="DateTime" Nullable="false" />
     <Property Name="dt_fim" Type="DateTime" Nullable="false" />
-    <NavigationProperty Name="tb_aula" Relationship="db_a4f9ad_stormprModel.fk_tb_cliente_aula_tb_venda_plano1" FromRole="tb_venda_plano" ToRole="tb_aula" />
     <NavigationProperty Name="tb_cliente" Relationship="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_cliente1" FromRole="tb_venda_plano" ToRole="tb_cliente" />
     <NavigationProperty Name="tb_plano" Relationship="db_a4f9ad_stormprModel.fk_tb_venda_plano_tb_plano1" FromRole="tb_venda_plano" ToRole="tb_plano" />
   </EntityType>
@@ -429,18 +432,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="fk_tb_cliente_aula_tb_venda_plano1">
-    <End Type="db_a4f9ad_stormprModel.tb_venda_plano" Role="tb_venda_plano" Multiplicity="1" />
-    <End Type="db_a4f9ad_stormprModel.tb_aula" Role="tb_aula" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_venda_plano">
-        <PropertyRef Name="id_venda_plano" />
-      </Principal>
-      <Dependent Role="tb_aula">
-        <PropertyRef Name="id_venda_plano" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="fk_tb_funcionario_tb_beneficio1">
     <End Type="db_a4f9ad_stormprModel.tb_beneficio" Role="tb_beneficio" Multiplicity="1" />
     <End Type="db_a4f9ad_stormprModel.tb_funcionario" Role="tb_funcionario" Multiplicity="*" />
@@ -462,18 +453,6 @@
       </Principal>
       <Dependent Role="tb_venda_plano">
         <PropertyRef Name="id_cliente" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="fk_tb_compra_tb_fornecedor1">
-    <End Type="db_a4f9ad_stormprModel.tb_fornecedor" Role="tb_fornecedor" Multiplicity="1" />
-    <End Type="db_a4f9ad_stormprModel.tb_compra" Role="tb_compra" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="tb_fornecedor">
-        <PropertyRef Name="id_fornecedor" />
-      </Principal>
-      <Dependent Role="tb_compra">
-        <PropertyRef Name="id_fornecedor" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -561,6 +540,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="fk_tb_prolabore_tb_login1">
+    <End Type="db_a4f9ad_stormprModel.tb_login" Role="tb_login" Multiplicity="1" />
+    <End Type="db_a4f9ad_stormprModel.tb_prolabore" Role="tb_prolabore" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_login">
+        <PropertyRef Name="id_login" />
+      </Principal>
+      <Dependent Role="tb_prolabore">
+        <PropertyRef Name="id_login" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="fk_tb_venda_plano_tb_plano1">
     <End Type="db_a4f9ad_stormprModel.tb_plano" Role="tb_plano" Multiplicity="1" />
     <End Type="db_a4f9ad_stormprModel.tb_venda_plano" Role="tb_venda_plano" Multiplicity="*" />
@@ -570,6 +561,46 @@
       </Principal>
       <Dependent Role="tb_venda_plano">
         <PropertyRef Name="id_plano" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="fluxo_de_caixa">
+    <Key>
+      <PropertyRef Name="data_pagamento" />
+      <PropertyRef Name="tipo_operação" />
+    </Key>
+    <Property Name="data_pagamento" Type="DateTime" Nullable="false" />
+    <Property Name="valor_pago" Type="Decimal" />
+    <Property Name="tipo_operação" Type="String" Nullable="false" MaxLength="7" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="tb_fornecedor">
+    <Key>
+      <PropertyRef Name="id_fornecedor" />
+    </Key>
+    <Property Name="id_fornecedor" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nm_fornecedor" Type="String" Nullable="false" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="tell_contato" Type="String" Nullable="false" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="tell_contato2" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="rua" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="cidade" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="bairro" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="cep" Type="String" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="ds_cnpj" Type="String" Nullable="false" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="ds_email" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="inscicao_estadual" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="nmr_fornecedor" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tb_compra" Relationship="db_a4f9ad_stormprModel.fk_tb_compra_tb_fornecedor1" FromRole="tb_fornecedor" ToRole="tb_compra" />
+  </EntityType>
+  <Association Name="fk_tb_compra_tb_fornecedor1">
+    <End Type="db_a4f9ad_stormprModel.tb_fornecedor" Role="tb_fornecedor" Multiplicity="1" />
+    <End Type="db_a4f9ad_stormprModel.tb_compra" Role="tb_compra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tb_fornecedor">
+        <PropertyRef Name="id_fornecedor" />
+      </Principal>
+      <Dependent Role="tb_compra">
+        <PropertyRef Name="id_fornecedor" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

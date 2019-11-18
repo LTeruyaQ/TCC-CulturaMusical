@@ -42,6 +42,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.chkadimin = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,10 +66,11 @@
             this.txtSenha.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtSenha.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtSenha.Location = new System.Drawing.Point(201, 156);
+            this.txtSenha.Location = new System.Drawing.Point(180, 136);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(141, 26);
             this.txtSenha.TabIndex = 8;
+            this.txtSenha.UseSystemPasswordChar = true;
             this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // txtUsuario
@@ -74,7 +78,7 @@
             this.txtUsuario.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtUsuario.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtUsuario.Location = new System.Drawing.Point(201, 95);
+            this.txtUsuario.Location = new System.Drawing.Point(180, 95);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(141, 26);
             this.txtUsuario.TabIndex = 7;
@@ -84,11 +88,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label2.Location = new System.Drawing.Point(126, 161);
+            this.label2.Location = new System.Drawing.Point(118, 140);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 16);
+            this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "Senha:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -97,11 +101,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(113, 100);
+            this.label1.Location = new System.Drawing.Point(108, 99);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 16);
+            this.label1.Size = new System.Drawing.Size(66, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "Usuário:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -112,7 +116,7 @@
             this.btnConfirmar_Login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnConfirmar_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConfirmar_Login.ForeColor = System.Drawing.Color.DarkBlue;
-            this.btnConfirmar_Login.Location = new System.Drawing.Point(221, 257);
+            this.btnConfirmar_Login.Location = new System.Drawing.Point(196, 259);
             this.btnConfirmar_Login.Name = "btnConfirmar_Login";
             this.btnConfirmar_Login.Size = new System.Drawing.Size(104, 32);
             this.btnConfirmar_Login.TabIndex = 10;
@@ -125,21 +129,22 @@
             this.txtconfirmar.BackColor = System.Drawing.SystemColors.HotTrack;
             this.txtconfirmar.Font = new System.Drawing.Font("Arial Black", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtconfirmar.ForeColor = System.Drawing.SystemColors.Info;
-            this.txtconfirmar.Location = new System.Drawing.Point(201, 205);
+            this.txtconfirmar.Location = new System.Drawing.Point(180, 179);
             this.txtconfirmar.Name = "txtconfirmar";
             this.txtconfirmar.Size = new System.Drawing.Size(141, 26);
             this.txtconfirmar.TabIndex = 12;
+            this.txtconfirmar.UseSystemPasswordChar = true;
             this.txtconfirmar.TextChanged += new System.EventHandler(this.txtconfirmar_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label4.Location = new System.Drawing.Point(65, 210);
+            this.label4.Location = new System.Drawing.Point(50, 183);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 16);
+            this.label4.Size = new System.Drawing.Size(124, 16);
             this.label4.TabIndex = 11;
             this.label4.Text = "Confirmar senha:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -172,6 +177,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label7);
@@ -210,11 +217,47 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(177, 8);
+            this.label7.Location = new System.Drawing.Point(164, 8);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(156, 37);
             this.label7.TabIndex = 12;
             this.label7.Text = "Cadastro";
+            // 
+            // chkadimin
+            // 
+            this.chkadimin.AutoSize = true;
+            this.chkadimin.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkadimin.ForeColor = System.Drawing.Color.DarkBlue;
+            this.chkadimin.Location = new System.Drawing.Point(187, 211);
+            this.chkadimin.Name = "chkadimin";
+            this.chkadimin.Size = new System.Drawing.Size(131, 30);
+            this.chkadimin.TabIndex = 109;
+            this.chkadimin.Text = "Este usuario é um \r\n  adiministrador?";
+            this.chkadimin.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label8.Location = new System.Drawing.Point(437, 3);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(18, 19);
+            this.label8.TabIndex = 116;
+            this.label8.Text = "_";
+            this.label8.Click += new System.EventHandler(this.Label8_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Red;
+            this.label9.Location = new System.Drawing.Point(461, 8);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(20, 19);
+            this.label9.TabIndex = 117;
+            this.label9.Text = "X";
+            this.label9.Click += new System.EventHandler(this.Label9_Click);
             // 
             // FrmCadastroFuncionarioLogin
             // 
@@ -222,6 +265,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(494, 320);
+            this.Controls.Add(this.chkadimin);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lblMinimizar);
             this.Controls.Add(this.lblFechar);
@@ -261,5 +305,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.CheckBox chkadimin;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

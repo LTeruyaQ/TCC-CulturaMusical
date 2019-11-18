@@ -32,7 +32,7 @@ namespace Cultura_Musical.Telas.Fornecedores
                 forn.rua = txtRua.Text.ToLower();
                 forn.bairro = txtBairro.Text.ToLower();
                 forn.cidade = txtCidade.Text.ToLower();
-                forn.estado = txtEstado.Text.ToLower();
+                forn.estado = cboEstado.Text.ToLower();
                 forn.ds_cnpj = mstCNPJ.Text;
                 forn.nmr_fornecedor =Convert.ToInt32(nudnumero.Value);
                 

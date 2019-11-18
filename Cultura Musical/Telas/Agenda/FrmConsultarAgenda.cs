@@ -89,5 +89,12 @@ namespace Cultura_Musical.Telas.Agenda
             tela.Show();
             this.Hide();
         }
+
+        private void PictureBox8_Click(object sender, EventArgs e)
+        {
+            Telas.FrmHomePage tela = new FrmHomePage();
+            tela.Show();
+            this.Hide();
+        }
     }
 }

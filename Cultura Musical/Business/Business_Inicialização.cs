@@ -45,7 +45,7 @@ namespace Cultura_Musical.Business
 
             Database.Entity.tb_login confirmacao = db.procura(login);
 
-            if (confirmacao.nm_usuario == null || confirmacao.sen_usuario == null)
+            if (confirmacao == null)
                  throw new ArgumentException("Usuario ou senha incorreta");
         }
     }

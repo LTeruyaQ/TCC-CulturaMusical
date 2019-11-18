@@ -33,8 +33,8 @@ namespace Cultura_Musical.Telas
 
                 Bus.login(nome, Senha);
 
-              
-                Telas.FrmHomePage tela = new FrmHomePage();
+
+                Telas.Inicialização.frmSplash tela = new Inicialização.frmSplash();
                 tela.Show();
                 this.Hide();
             }
@@ -92,6 +92,25 @@ namespace Cultura_Musical.Telas
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Label2_Click_1(object sender, EventArgs e)
+        {
+           
+                this.WindowState = FormWindowState.Minimized;
+            
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("Realmente deseja fechar o sistema ?", "Cultura Musical",
+                     MessageBoxButtons.YesNo,
+                     MessageBoxIcon.Warning);
+
+            if (r == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }
