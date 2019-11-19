@@ -119,12 +119,7 @@ namespace Cultura_Musical.Telas.Funcionarios
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void btnAgenda_Click(object sender, EventArgs e)
-        {
-            Agenda.FrmAlterarAgenda tela = new Agenda.FrmAlterarAgenda();
-            tela.Show();
-            this.Hide();
-        }
+
 
         private void btnColaboradores_Click(object sender, EventArgs e)
         {

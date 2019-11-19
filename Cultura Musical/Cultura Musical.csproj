@@ -648,9 +648,7 @@
     <None Include="Resources\Imagens\bateria.gif" />
     <None Include="Resources\Imagens\guitarra.gif" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Telas\Pedidos\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Imagens\giphy1.gif" />
     <None Include="Resources\Imagens\musica.jpg" />
